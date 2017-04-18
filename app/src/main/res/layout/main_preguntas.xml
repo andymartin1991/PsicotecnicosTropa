@@ -1,0 +1,313 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gris"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/bloque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/guardar"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:background="@drawable/boton_pregunta"
+            android:drawableLeft="@android:drawable/ic_menu_save"
+            android:text=""
+            android:visibility="gone"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/arreglo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/subcontenedor"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="9dp"
+            android:layout_marginStart="9dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/subcontenedor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gris"
+        android:layout_below="@+id/relativeLayout">
+
+        <Button
+            android:id="@+id/atras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/conta"
+            android:background="@drawable/boton_menu"
+            android:layout_margin="5dp"
+            android:text="&lt;--"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/alante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/atras"
+            android:layout_alignBottom="@+id/atras"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/conta"
+            android:background="@drawable/boton_menu"
+            android:layout_margin="5dp"
+            android:textColor="#fff"
+            android:text="-->" />
+
+        <TextView
+            android:id="@+id/conta"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/alante"
+            android:layout_below="@+id/estado"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#fff" />
+
+        <ScrollView
+            android:id="@+id/contenedor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/atras"
+            android:layout_alignLeft="@+id/atras"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/alante"
+            android:background="#fff">
+
+            <ViewFlipper
+                android:id="@+id/ViewFlipper1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="16dp">
+
+                    <TextView
+                        android:id="@+id/cuentatras"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="TextView"
+                        android:textColor="#FF0000"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:id="@+id/prohibido"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            app:srcCompat="@drawable/prohibido" />
+
+                        <TextView
+                            android:id="@+id/pregunta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:text="pregunta" />
+
+                        <ImageView
+                            android:id="@+id/imgpre"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal" />
+
+                        <RelativeLayout
+                            android:id="@+id/a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/boton_opt_preguntas"
+                            android:padding="4dp">
+
+                            <TextView
+                                android:id="@+id/resA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="6dp"
+                                android:paddingRight="6dp"
+                                android:text="respuesta A" />
+
+                            <ImageView
+                                android:id="@+id/imgA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="false"
+                                android:layout_alignParentTop="true" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/boton_opt_preguntas"
+                            android:padding="4dp">
+
+                            <TextView
+                                android:id="@+id/resB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="6dp"
+                                android:paddingRight="6dp"
+                                android:text="respuesta B" />
+
+                            <ImageView
+                                android:id="@+id/imgB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignRight="@+id/textView2"
+                                android:layout_centerVertical="true" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/c"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/boton_opt_preguntas"
+                            android:padding="4dp">
+
+                            <TextView
+                                android:id="@+id/resC"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="6dp"
+                                android:paddingRight="6dp"
+                                android:text="respuesta C" />
+
+                            <ImageView
+                                android:id="@+id/imgC"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/d"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/boton_opt_preguntas"
+                            android:padding="4dp">
+
+                            <TextView
+                                android:id="@+id/resD"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="6dp"
+                                android:paddingRight="6dp"
+                                android:text="respuesta D" />
+
+                            <ImageView
+                                android:id="@+id/imgD"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/solucion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/s"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/sol"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="respuesta correcta" />
+
+                            <ImageView
+                                android:id="@+id/imgSol"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/e"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/expl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="explicacion" />
+
+                            <ImageView
+                                android:id="@+id/imgExp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ViewFlipper>
+        </ScrollView>
+
+        
+
+        <TextView
+            android:id="@+id/cuentabloque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/atras"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#fff"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/estado"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/alante"
+            android:layout_toRightOf="@+id/atras"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#fff"
+            android:text="" />
+    </RelativeLayout>
+
+</RelativeLayout>

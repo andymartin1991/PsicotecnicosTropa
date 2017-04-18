@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <array name="preperceptiva">
+        <!--001--><item>¿Qué palabra tiene menos vocales (sin repetir)?</item>
+        <!--002--><item>¿Cuántas \'t\' hay?\n\nkshdktkshfhtjkshsjtksjftnsjdtnskstndkstnskstt</item>
+        <!--003--><item>¿Qué palabra tiene más consonantes (sin repetir)?</item>
+        <!--004--><item>¿Cómo se escribiría \'diccionario\' según los símbolos?</item>
+        <!--005--><item>¿Cuántos \'0\' hay?\n\n123485640163545600135465465446545546545054645465458</item>
+		<!--006--><item>¿Qué palabra tiene más vocales (sin repetir)?</item>
+        <!--007--><item>¿Cuál de las imágenes es igual a la dada?</item>
+        <!--008--><item>¿Cuál de las imágenes es igual a la dada?</item>
+        <!--009--><item>¿Cuánto suman el número de veces que aparece \'C\' y el número de veces que aparece \'A\'?\n\nCBHGBXANJHCAAMAJHGDFTUHHGFYCJGUUJCUAHHQP</item>
+        <!--010--><item>¿Cuántas \'M\' hay?\n\nMMMMMMWMMMMMWMMMMMWMNMMMMMWWMMWMMMWMMMW</item>
+        <!--011--><item>¿Qué pieza falta?</item>
+        <!--012--><item>¿Cómo se escribiría \'trompetista\' según los símbolos?</item>
+        <!--013--><item>¿Cuántos números pares hay?\n\n457851259365974486598624657932215966578459686353355771142998853259</item>
+        <!--014--><item>¿Cómo se escribiría \'psicotécnico\' según los símbolos?</item>
+        <!--015--><item>¿Qué pieza falta?</item>
+        <!--016--><item>¿Cuántos \'5\' hay en la columna A? ¿Cuántos \'6\' hay en la columna B?</item>
+        <!--017--><item>¿Cuál de las imágenes es igual a la dada?</item>
+        <!--018--><item>¿Qué palabra tiene menos consonantes (sin repetir)?</item>
+        <!--019--><item>¿Qué pieza falta?</item>
+        <!--020--><item>¿Qué palabra tiene más consonantes (sin repetir)?</item>
+		
+    </array>
+    
+    <array name="resAperceptiva">
+        <!--001--><item>A)Oasis</item>
+        <!--002--><item>A)6</item>
+        <!--003--><item>A)Estuche</item>
+        <!--004--><item>A)</item>
+        <!--005--><item>A)4</item>
+		<!--006--><item>A)Altramuces</item>
+        <!--007--><item>A)</item>
+        <!--008--><item>A)</item>
+        <!--009--><item>A)9</item>
+        <!--010--><item>A)23</item>
+        <!--011--><item>A)</item>
+        <!--012--><item>A)</item>
+        <!--013--><item>A)27</item>
+        <!--014--><item>A)</item>
+        <!--015--><item>A)</item>
+        <!--016--><item>A)13 y 20</item>
+        <!--017--><item>A)</item>
+        <!--018--><item>A)Coliflor</item>
+        <!--019--><item>A)</item>
+        <!--020--><item>A)Lámpara</item>
+		
+    </array>
+    
+    <array name="resBperceptiva">
+        <!--001--><item>B)Museo</item>
+        <!--002--><item>B)10</item>
+        <!--003--><item>B)Bolígrafo</item>
+        <!--004--><item>B)</item>
+        <!--005--><item>B)5</item>
+		<!--006--><item>B)Simpatía</item>
+        <!--007--><item>B)</item>
+        <!--008--><item>B)</item>
+        <!--009--><item>B)6</item>
+        <!--010--><item>B)30</item>
+        <!--011--><item>B)</item>
+        <!--012--><item>B)</item>
+        <!--013--><item>B)26</item>
+        <!--014--><item>B)</item>
+        <!--015--><item>B)</item>
+        <!--016--><item>B)17 y 20</item>
+        <!--017--><item>B)</item>
+        <!--018--><item>B)Altavoces</item>
+        <!--019--><item>B)</item>
+        <!--020--><item>B)Trompeta</item>
+		
+    </array>
+    
+    <array name="resCperceptiva">
+        <!--001--><item>C)Toro</item>
+        <!--002--><item>C)7</item>
+        <!--003--><item>C)Afilador</item>
+        <!--004--><item>C)</item>
+        <!--005--><item>C)2</item>
+		<!--006--><item>C)Exterminar</item>
+        <!--007--><item>C)</item>
+        <!--008--><item>C)</item>
+        <!--009--><item>C)10</item>
+        <!--010--><item>C)27</item>
+        <!--011--><item>C)</item>
+        <!--012--><item>C)</item>
+        <!--013--><item>C)31</item>
+        <!--014--><item>C)</item>
+        <!--015--><item>C)</item>
+        <!--016--><item>C)15 y 18</item>
+        <!--017--><item>C)</item>
+        <!--018--><item>C)Televisión</item>
+        <!--019--><item>C)</item>
+        <!--020--><item>C)Divergente</item>
+		
+    </array>
+    
+    <array name="resDperceptiva">
+        <!--001--><item>D)Cine</item>
+        <!--002--><item>D)9</item>
+        <!--003--><item>D)Libreta</item>
+        <!--004--><item>D)</item>
+        <!--005--><item>D)3</item>
+		<!--006--><item>D)Brujería</item>
+        <!--007--><item>D)</item>
+        <!--008--><item>D)</item>
+        <!--009--><item>D)12</item>
+        <!--010--><item>D)21</item>
+        <!--011--><item>D)</item>
+        <!--012--><item>D)</item>
+        <!--013--><item>D)28</item>
+        <!--014--><item>D)</item>
+        <!--015--><item>D)</item>
+        <!--016--><item>D)16 y 17</item>
+        <!--017--><item>D)</item>
+        <!--018--><item>D)Luciérnaga</item>
+        <!--019--><item>D)</item>
+        <!--020--><item>D)Ordenador</item>
+		
+    </array>
+    
+    <array name="solperceptiva">
+        <!--001--><item>C)Toro</item>
+        <!--002--><item>D)9</item>
+        <!--003--><item>B)Bolígrafo</item>
+        <!--004--><item>C)</item>
+        <!--005--><item>A)4</item>
+		<!--006--><item>D)Brujería</item>
+        <!--007--><item>D)</item>
+        <!--008--><item>C)</item>
+        <!--009--><item>A)9</item>
+        <!--010--><item>B)30</item>
+        <!--011--><item>A)</item>
+        <!--012--><item>B)</item>
+        <!--013--><item>A)27</item>
+        <!--014--><item>C)</item>
+        <!--015--><item>D)</item>
+        <!--016--><item>B)17 y 20</item>
+        <!--017--><item>D)</item>
+        <!--018--><item>A)Coliflor</item>
+        <!--019--><item>B)</item>
+        <!--020--><item>C)Divergente</item>
+		
+    </array>
+    
+    <array name="expliSolperceptiva">
+        <!--001--><item>Sólo tiene una vocal (sin repetir).</item>
+        <!--002--><item></item>
+        <!--003--><item>Tiene 5 consonantes sin repetir.</item>
+        <!--004--><item></item>
+        <!--005--><item></item>
+		<!--006--><item>Tiene 4 vocales sin repetir.</item>
+        <!--007--><item></item>
+        <!--008--><item></item>
+        <!--009--><item></item>
+        <!--010--><item></item>
+        <!--011--><item></item>
+        <!--012--><item></item>
+        <!--013--><item></item>
+        <!--014--><item></item>
+        <!--015--><item></item>
+        <!--016--><item></item>
+        <!--017--><item></item>
+        <!--018--><item>Tiene 4 consonantes sin repetir, mientras que las demás tienen 5.</item>
+        <!--019--><item></item>
+        <!--020--><item>Tiene 6 consonantes sin repetir.</item>
+
+    </array>
+    
+    
+    
+    
+    <array name="imgPreperceptiva">
+        <!--001--><item></item>
+        <!--002--><item></item>
+        <!--003--><item></item>
+        <!--004--><item>perp004</item>
+        <!--005--><item></item>
+		<!--006--><item></item>
+        <!--007--><item>perp007</item>
+        <!--008--><item>perp008</item>
+        <!--009--><item></item>
+        <!--010--><item></item>
+		<!--011--><item>perp011</item>
+        <!--012--><item>perp012</item>
+        <!--013--><item></item>
+        <!--014--><item>perp014</item>
+        <!--015--><item>perp015</item>
+		<!--016--><item>perp016</item>
+        <!--017--><item>perp017</item>
+        <!--018--><item></item>
+        <!--019--><item>perp019</item>
+        <!--020--><item></item>
+
+    </array>
+    
+    <array name="imgAperceptiva">
+        <!--001--><item></item>
+        <!--002--><item></item>
+        <!--003--><item></item>
+        <!--004--><item>perp004ra</item>
+        <!--005--><item></item>
+		<!--006--><item></item>
+        <!--007--><item>perp007ra</item>
+        <!--008--><item>perp008ra</item>
+        <!--009--><item></item>
+        <!--010--><item></item>
+        <!--011--><item>perp011ra</item>
+        <!--012--><item>perp012ra</item>
+        <!--013--><item></item>
+        <!--014--><item>perp014ra</item>
+        <!--015--><item>perp015ra</item>
+        <!--016--><item></item>
+        <!--017--><item>perp017ra</item>
+        <!--018--><item></item>
+        <!--019--><item>perp019ra</item>
+        <!--020--><item></item>
+
+    </array>
+    
+    <array name="imgBperceptiva">
+        <!--001--><item></item>
+        <!--002--><item></item>
+        <!--003--><item></item>
+        <!--004--><item>perp004rb</item>
+        <!--005--><item></item>
+		<!--006--><item></item>
+        <!--007--><item>perp007rb</item>
+        <!--008--><item>perp008rb</item>
+        <!--009--><item></item>
+        <!--010--><item></item>
+        <!--011--><item>perp011rb</item>
+        <!--012--><item>perp012rb</item>
+        <!--013--><item></item>
+        <!--014--><item>perp014rb</item>
+        <!--015--><item>perp015rb</item>
+        <!--016--><item></item>
+        <!--017--><item>perp017rb</item>
+        <!--018--><item></item>
+        <!--019--><item>perp019rb</item>
+        <!--020--><item></item>
+
+    </array>
+    
+    <array name="imgCperceptiva">
+        <!--001--><item></item>
+        <!--002--><item></item>
+        <!--003--><item></item>
+        <!--004--><item>perp004rc</item>
+        <!--005--><item></item>
+		<!--006--><item></item>
+        <!--007--><item>perp007rc</item>
+        <!--008--><item>perp008rc</item>
+        <!--009--><item></item>
+        <!--010--><item></item>
+        <!--011--><item>perp011rc</item>
+        <!--012--><item>perp012rc</item>
+        <!--013--><item></item>
+        <!--014--><item>perp014rc</item>
+        <!--015--><item>perp015rc</item>
+        <!--016--><item></item>
+        <!--017--><item>perp017rc</item>
+        <!--018--><item></item>
+        <!--019--><item>perp019rc</item>
+        <!--020--><item></item>
+
+    </array>
+    
+    <array name="imgDperceptiva">
+        <!--001--><item></item>
+        <!--002--><item></item>
+        <!--003--><item></item>
+        <!--004--><item>perp004rd</item>
+        <!--005--><item></item>
+		<!--006--><item></item>
+        <!--007--><item>perp007rd</item>
+        <!--008--><item>perp008rd</item>
+        <!--009--><item></item>
+        <!--010--><item></item>
+        <!--011--><item>perp011rd</item>
+        <!--012--><item>perp012rd</item>
+        <!--013--><item></item>
+        <!--014--><item>perp014rd</item>
+        <!--015--><item>perp015rd</item>
+        <!--016--><item></item>
+        <!--017--><item>perp017rd</item>
+        <!--018--><item></item>
+        <!--019--><item>perp019rd</item>
+        <!--020--><item></item>
+
+    </array>
+    
+    <array name="imgSolperceptiva">
+        <!--001--><item></item>
+        <!--002--><item></item>
+        <!--003--><item></item>
+        <!--004--><item>perp004rc</item>
+        <!--005--><item></item>
+		<!--006--><item></item>
+        <!--007--><item>perp007rd</item>
+        <!--008--><item>perp008rc</item>
+        <!--009--><item></item>
+        <!--010--><item></item>
+        <!--011--><item>perp011ra</item>
+        <!--012--><item>perp012rb</item>
+        <!--013--><item></item>
+        <!--014--><item>perp014rc</item>
+        <!--015--><item>perp015rd</item>
+        <!--016--><item></item>
+        <!--017--><item>perp017rd</item>
+        <!--018--><item></item>
+        <!--019--><item>perp019rb</item>
+        <!--020--><item></item>
+
+    </array>
+    
+    <array name="imgExpliperceptiva">
+        <!--001--><item></item>
+        <!--002--><item></item>
+        <!--003--><item></item>
+        <!--004--><item></item>
+        <!--005--><item></item>
+		<!--006--><item></item>
+        <!--007--><item></item>
+        <!--008--><item></item>
+        <!--009--><item></item>
+        <!--010--><item></item>
+		<!--011--><item></item>
+        <!--012--><item></item>
+        <!--013--><item></item>
+        <!--014--><item></item>
+        <!--015--><item></item>
+		<!--016--><item></item>
+        <!--017--><item></item>
+        <!--018--><item></item>
+        <!--019--><item></item>
+        <!--020--><item></item>
+
+    </array>
+</resources>
