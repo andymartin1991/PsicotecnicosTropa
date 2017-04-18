@@ -25,8 +25,7 @@
         <activity android:name=".main_optTipo"></activity>
         <activity android:name=".main_principal"></activity>
         <activity android:name=".main_examen"></activity>
-        <activity android:name=".main_resultado_exam"
-            android:windowSoftInputMode="stateHidden" ></activity>
+        <activity android:name=".main_resultado_exam" android:windowSoftInputMode="stateHidden" ></activity>
     </application>
 
 </manifest>
