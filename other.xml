@@ -1,6 +1,0 @@
-<application>
-  <component name="RefactoringSettings">
-    <option name="MOVE_PREVIEW_USAGES" value="false" />
-    <option name="INTRODUCE_FIELD_VISIBILITY" value="private" />
-  </component>
-</application>
