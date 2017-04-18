@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <array name="prememoria">
+        <!--001--><item>¿En cuál aparecía en el centro?</item>
+        <!--002--><item>¿Qué número apareció?</item>
+        <!--003--><item>¿Qué color se repetía más veces?</item>
+        <!--004--><item>¿Cuántos círculos habían?</item>
+        <!--005--> <item>¿Qué número apareció?</item>
+		<!--006--><item>¿Cuál correspondía a la última columna?</item>
+        <!--007--><item>¿Qué número apareció?</item>
+        <!--008--><item>¿Cuál aparecía en la esquina inferior derecha?</item>
+        <!--009--><item>¿Cuántas ramas tenía?</item>
+        <!--010--><item>¿Cuántos rombos transparentes habían?</item>
+        <!--011--> <item>¿Qué número apareció?</item>
+        <!--012--><item>¿Cuál aparece arriba en el centro?</item>
+        <!--013--><item>¿Qué color se repetía más?</item>
+        <!--014--><item>¿Cuántos cuadrados habían?</item>
+        <!--015--><item>¿Qué número apareció?</item>
+        <!--016--><item>¿Qué palabra había en la esquina inferior izquierda?</item>
+        <!--017--><item>¿Qué círculo estaba entre el naranja y el rosa?</item>
+        <!--018--><item>¿Qué número apareció?</item>
+        <!--019--><item>¿Qué cuadrado estaba en la esquina superior derecha?</item>
+        <!--020--><item>¿Cuántos círculos blancos habían?</item>
+    </array>
+    
+    <array name="resAmemoria">
+        <!--001--><item>A)Azul con letras amarillas</item>
+        <!--002--><item>A)156874634</item>
+        <!--003--><item>A)Azul</item>
+        <!--004--><item>A)16</item>
+        <!--005--><item>A)2468101214</item>
+		<!--006--><item>A)Buey, Vaca, Verdura</item>
+        <!--007--><item>A)225336112</item>
+        <!--008--><item>A)Verde con letras verde</item>
+        <!--009--><item>A)14</item>
+        <!--010--><item>A)4</item>
+        <!--011--><item>A)2456875415</item>
+        <!--012--><item>A)Táctica</item>
+        <!--013--><item>A)Rojo</item>
+        <!--014--><item>A)1</item>
+        <!--015--><item>A)30252151315</item>
+        <!--016--><item>A)Libreta</item>
+        <!--017--><item>A)El verde</item>
+        <!--018--><item>A)721143528</item>
+        <!--019--><item>A)El negro</item>
+        <!--020--><item>A)7</item>
+    </array>
+    
+    <array name="resBmemoria">
+        <!--001--><item>B)Amarillo con letras azules</item>
+        <!--002--><item>B)158674634</item>
+        <!--003--><item>B)Rojo</item>
+        <!--004--><item>B)18</item>
+        <!--005--><item>B)2641810124</item>
+		<!--006--><item>B)Buey, Vaca, Fruta</item>
+        <!--007--><item>B)242363121</item>
+        <!--008--><item>B)Verde con letras rosas</item>
+        <!--009--><item>B)10</item>
+        <!--010--><item>B)2</item>
+        <!--011--><item>B)2456784515</item>
+        <!--012--><item>B)Estática</item>
+        <!--013--><item>B)Verde</item>
+        <!--014--><item>B)2</item>
+        <!--015--><item>B)30252015105</item>
+        <!--016--><item>B)Cacharro</item>
+        <!--017--><item>B)El amarillo</item>
+        <!--018--><item>B)147212835</item>
+        <!--019--><item>B)El violeta</item>
+        <!--020--><item>B)8</item>
+    </array>
+    
+    <array name="resCmemoria">
+        <!--001--><item>C)Rojo con letras azules</item>
+        <!--002--><item>C)165847364</item>
+        <!--003--><item>C)Ninguno, dos tenían la misma cantidad.</item>
+        <!--004--><item>C)14</item>
+        <!--005--><item>C)2648101114</item>
+		<!--006--><item>C)Vaca, Buey, Verdura</item>
+        <!--007--><item>C)224366112</item>
+        <!--008--><item>C)Verde con letras amarillas</item>
+        <!--009--><item>C)16</item>
+        <!--010--><item>C)9</item>
+        <!--011--><item>C)2467845515</item>
+        <!--012--><item>C)Extática</item>
+        <!--013--><item>C)Negro</item>
+        <!--014--><item>C)No habían cuadrados</item>
+        <!--015--><item>C)3025101505</item>
+        <!--016--><item>C)Cachorro</item>
+        <!--017--><item>C)El azul</item>
+        <!--018--><item>C)714152350</item>
+        <!--019--><item>C)El marrón</item>
+        <!--020--><item>C)6</item>
+    </array>
+    
+    <array name="resDmemoria">
+        <!--001--><item>D)Amarillo con letras rojas</item>
+        <!--002--><item>D)156874635</item>
+        <!--003--><item>D)Amarillo</item>
+        <!--004--><item>D)20</item>
+        <!--005--><item>D)2468101114</item>
+		<!--006--><item>D)Vaca, Buey, Fruta</item>
+        <!--007--><item>D)224336112</item>
+        <!--008--><item>D)Rosa con letras verdes</item>
+        <!--009--><item>D)12</item>
+        <!--010--><item>D)6</item>
+        <!--011--><item>D)2456845715</item>
+        <!--012--><item>D)Infectar</item>
+        <!--013--><item>D)Ninguno, dos tenían la misma cantidad.</item>
+        <!--014--><item>D)Había un pequeño cuadrado por la mitad.</item>
+        <!--015--><item>D)303520251505</item>
+        <!--016--><item>D)Raqueta</item>
+        <!--017--><item>D)Ninguno de los anteriores</item>
+        <!--018--><item>D)714212835</item>
+        <!--019--><item>D)El rojo</item>
+        <!--020--><item>D)5</item>
+    </array>
+    
+    <array name="solmemoria">
+        <!--001--><item>B)Amarillo con letras azules</item>
+        <!--002--><item>A)156874634</item>
+        <!--003--><item>D)Amarillo</item>
+        <!--004--><item>A)16</item>
+        <!--005--><item>D)2468101114</item>
+		<!--006--><item>C)Vaca, Buey, Verdura</item>
+        <!--007--><item>D)224336112</item>
+        <!--008--><item>A)Verde con letras verde</item>
+        <!--009--><item>D)12</item>
+        <!--010--><item>A)4</item>
+        <!--011--><item>B)2456784515</item>
+        <!--012--><item>B)Estática</item>
+        <!--013--><item>C)Negro.</item>
+        <!--014--><item>C)No habían cuadrados.</item>
+        <!--015--><item>B)30252015105</item>
+        <!--016--><item>C)Cachorro</item>
+        <!--017--><item>A)El Verde.</item>
+        <!--018--><item>D)714212835</item>
+        <!--019--><item>B)El violeta</item>
+        <!--020--><item>A)7</item>
+		
+    </array>
+    
+    <array name="expliSolmemoria">
+        <!--001--><item></item>
+        <!--002--><item></item>
+        <!--003--><item></item>
+        <!--004--><item></item>
+        <!--005--><item></item>
+		<!--006--><item></item>
+        <!--007--><item></item>
+        <!--008--><item></item>
+        <!--009--><item></item>
+        <!--010--><item></item>
+		<!--011--><item></item>
+        <!--012--><item></item>
+        <!--013--><item></item>
+        <!--014--><item></item>
+        <!--015--><item></item>
+		<!--016--><item></item>
+        <!--017--><item></item>
+        <!--018--><item></item>
+        <!--019--><item></item>
+        <!--020--><item></item>
+    </array>
+    
+    
+    
+    
+    <array name="imgPrememoria">
+        <!--001--><item>memp001</item>
+        <!--002--><item>memp002</item>
+        <!--003--><item>memp003</item>
+        <!--004--><item>memp004</item>
+        <!--005--><item>memp005</item>
+		<!--006--><item>memp006</item>
+        <!--007--><item>memp007</item>
+        <!--008--><item>memp008</item>
+        <!--009--><item>memp009</item>
+        <!--010--><item>memp010</item>
+		<!--011--><item>memp011</item>
+        <!--012--><item>memp012</item>
+        <!--013--><item>memp013</item>
+        <!--014--><item>memp014</item>
+        <!--015--><item>memp015</item>
+		<!--016--><item>memp016</item>
+        <!--017--><item>memp017</item>
+        <!--018--><item>memp018</item>
+        <!--019--><item>memp019</item>
+        <!--020--><item>memp020</item>
+
+    </array>
+    
+    <array name="imgAmemoria">
+        <!--001--><item></item>
+        <!--002--><item></item>
+        <!--003--><item></item>
+        <!--004--><item></item>
+        <!--005--><item></item>
+		<!--006--><item></item>
+        <!--007--><item></item>
+        <!--008--><item></item>
+        <!--009--><item></item>
+        <!--010--><item></item>
+		<!--011--><item></item>
+        <!--012--><item></item>
+        <!--013--><item></item>
+        <!--014--><item></item>
+        <!--015--><item></item>
+		<!--016--><item></item>
+        <!--017--><item></item>
+        <!--018--><item></item>
+        <!--019--><item></item>
+        <!--020--><item></item>
+
+    </array>
+    
+    <array name="imgBmemoria">
+        <!--001--><item></item>
+        <!--002--><item></item>
+        <!--003--><item></item>
+        <!--004--><item></item>
+        <!--005--><item></item>
+		<!--006--><item></item>
+        <!--007--><item></item>
+        <!--008--><item></item>
+        <!--009--><item></item>
+        <!--010--><item></item>
+		<!--011--><item></item>
+        <!--012--><item></item>
+        <!--013--><item></item>
+        <!--014--><item></item>
+        <!--015--><item></item>
+		<!--016--><item></item>
+        <!--017--><item></item>
+        <!--018--><item></item>
+        <!--019--><item></item>
+        <!--020--><item></item>
+
+    </array>
+    
+    <array name="imgCmemoria">
+        <!--001--><item></item>
+        <!--002--><item></item>
+        <!--003--><item></item>
+        <!--004--><item></item>
+        <!--005--><item></item>
+		<!--006--><item></item>
+        <!--007--><item></item>
+        <!--008--><item></item>
+        <!--009--><item></item>
+        <!--010--><item></item>
+		<!--011--><item></item>
+        <!--012--><item></item>
+        <!--013--><item></item>
+        <!--014--><item></item>
+        <!--015--><item></item>
+		<!--016--><item></item>
+        <!--017--><item></item>
+        <!--018--><item></item>
+        <!--019--><item></item>
+        <!--020--><item></item>
+
+    </array>
+    
+    <array name="imgDmemoria">
+        <!--001--><item></item>
+        <!--002--><item></item>
+        <!--003--><item></item>
+        <!--004--><item></item>
+        <!--005--><item></item>
+		<!--006--><item></item>
+        <!--007--><item></item>
+        <!--008--><item></item>
+        <!--009--><item></item>
+        <!--010--><item></item>
+		<!--011--><item></item>
+        <!--012--><item></item>
+        <!--013--><item></item>
+        <!--014--><item></item>
+        <!--015--><item></item>
+		<!--016--><item></item>
+        <!--017--><item></item>
+        <!--018--><item></item>
+        <!--019--><item></item>
+        <!--020--><item></item>
+
+    </array>
+    
+    <array name="imgSolmemoria">
+        <!--001--><item></item>
+        <!--002--><item></item>
+        <!--003--><item></item>
+        <!--004--><item></item>
+        <!--005--><item></item>
+		<!--006--><item></item>
+        <!--007--><item></item>
+        <!--008--><item></item>
+        <!--009--><item></item>
+        <!--010--><item></item>
+		<!--011--><item></item>
+        <!--012--><item></item>
+        <!--013--><item></item>
+        <!--014--><item></item>
+        <!--015--><item></item>
+		<!--016--><item></item>
+        <!--017--><item></item>
+        <!--018--><item></item>
+        <!--019--><item></item>
+        <!--020--><item></item>
+
+    </array>
+    
+    <array name="imgExplimemoria">
+        <!--001--><item></item>
+        <!--002--><item></item>
+        <!--003--><item></item>
+        <!--004--><item></item>
+        <!--005--><item></item>
+		<!--006--><item></item>
+        <!--007--><item></item>
+        <!--008--><item></item>
+        <!--009--><item></item>
+        <!--010--><item></item>
+		<!--011--><item></item>
+        <!--012--><item></item>
+        <!--013--><item></item>
+        <!--014--><item></item>
+        <!--015--><item></item>
+		<!--016--><item></item>
+        <!--017--><item></item>
+        <!--018--><item></item>
+        <!--019--><item></item>
+        <!--020--><item></item>
+
+    </array>
+</resources>
