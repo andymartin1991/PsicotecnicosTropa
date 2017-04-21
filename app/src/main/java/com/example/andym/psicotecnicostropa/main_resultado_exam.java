@@ -1,16 +1,10 @@
 package com.example.andym.psicotecnicostropa;
 
 import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
-import android.text.InputType;
-import android.text.Layout;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,8 +18,7 @@ public class main_resultado_exam extends Activity {
 
     TextView mostrar, nota, notabar;
     EditText baremo;
-    LinearLayout pulsabar;
-    Button calcular;
+    Button calcular, compartir;
     double bar = 0;
     double notasobre10;
     double notaredondeadabar;
@@ -33,7 +26,7 @@ public class main_resultado_exam extends Activity {
     static Preguntas[] bloqueverbal, bloquenumerico, bloqueespacial, bloquemecanico, bloqueperceptiva, bloquememoria, bloqueabstrapto;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_resultado);
+        setContentView(R.layout.main_resultado_exam);
 
 
         baremo = (EditText)findViewById(R.id.baremo);
@@ -226,13 +219,13 @@ public class main_resultado_exam extends Activity {
         notabaremo();
         mostrar = (TextView)findViewById(R.id.mostrar);
         mostrar.setText(
-                getString(R.string.aptitud1)+": "+getString(R.string.aciertos)+" "+aciertosVerbal+", "+getString(R.string.Fallos)+" "+fallosVerbal+" "+getString(R.string.nocontestadas)+" "+sincontestarVerbal+"\n\n"+
-                getString(R.string.aptitud2)+": "+getString(R.string.aciertos)+" "+aciertosNumerico+", "+getString(R.string.Fallos)+" "+fallosNumerico+" "+getString(R.string.nocontestadas)+" "+sincontestarNumerico+"\n\n"+
-                getString(R.string.aptitud3)+": "+getString(R.string.aciertos)+" "+aciertosEspacial+", "+getString(R.string.Fallos)+" "+fallosEspacial+" "+getString(R.string.nocontestadas)+" "+sincontestarEspacial+"\n\n"+
-                getString(R.string.aptitud4)+": "+getString(R.string.aciertos)+" "+aciertosMecanico+", "+getString(R.string.Fallos)+" "+fallosMecanico+" "+getString(R.string.nocontestadas)+" "+sincontestarMecanico+"\n\n"+
-                getString(R.string.aptitud5)+": "+getString(R.string.aciertos)+" "+aciertosPerceptiva+", "+getString(R.string.Fallos)+" "+fallosPerceptiva+" "+getString(R.string.nocontestadas)+" "+sincontestarPerceptiva+"\n\n"+
+                getString(R.string.Verbal)+": "+getString(R.string.aciertos)+" "+aciertosVerbal+", "+getString(R.string.Fallos)+" "+fallosVerbal+" "+getString(R.string.nocontestadas)+" "+sincontestarVerbal+"\n\n"+
+                getString(R.string.Numerico)+": "+getString(R.string.aciertos)+" "+aciertosNumerico+", "+getString(R.string.Fallos)+" "+fallosNumerico+" "+getString(R.string.nocontestadas)+" "+sincontestarNumerico+"\n\n"+
+                getString(R.string.Espacial)+": "+getString(R.string.aciertos)+" "+aciertosEspacial+", "+getString(R.string.Fallos)+" "+fallosEspacial+" "+getString(R.string.nocontestadas)+" "+sincontestarEspacial+"\n\n"+
+                getString(R.string.Mecanico)+": "+getString(R.string.aciertos)+" "+aciertosMecanico+", "+getString(R.string.Fallos)+" "+fallosMecanico+" "+getString(R.string.nocontestadas)+" "+sincontestarMecanico+"\n\n"+
+                getString(R.string.Perceptiva)+": "+getString(R.string.aciertos)+" "+aciertosPerceptiva+", "+getString(R.string.Fallos)+" "+fallosPerceptiva+" "+getString(R.string.nocontestadas)+" "+sincontestarPerceptiva+"\n\n"+
                 getString(R.string.aptitud6)+": "+getString(R.string.aciertos)+" "+aciertosMemoria+", "+getString(R.string.Fallos)+" "+fallosMemoria+" "+getString(R.string.nocontestadas)+" "+sincontestarMemoria+"\n\n"+
-                getString(R.string.aptitud7)+": "+getString(R.string.aciertos)+" "+aciertosAbstrapto+", "+getString(R.string.Fallos)+" "+fallosAbstrapto+" "+getString(R.string.nocontestadas)+" "+sincontestarAbstrapto
+                getString(R.string.Abstrapto)+": "+getString(R.string.aciertos)+" "+aciertosAbstrapto+", "+getString(R.string.Fallos)+" "+fallosAbstrapto+" "+getString(R.string.nocontestadas)+" "+sincontestarAbstrapto
 
         );
 
@@ -266,6 +259,31 @@ public class main_resultado_exam extends Activity {
                         Toast toast1 =
                                 Toast.makeText(getApplicationContext(),
                                         getString(R.string.baremonovalido), Toast.LENGTH_SHORT);
+
+                        toast1.show();
+                    }
+                }
+            }
+        });
+
+        compartir = (Button)findViewById(R.id.compartir);
+        compartir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(baremo.getText().toString().equals("")){
+                    Toast toast1 =
+                            Toast.makeText(getApplicationContext(),
+                                    getString(R.string.compartirresul), Toast.LENGTH_SHORT);
+
+                    toast1.show();
+                }else {
+                    int kk = Integer.parseInt(baremo.getText().toString());
+                    if (kk > 0 && kk < 41) {
+                        //poner aqui el texto a compartir
+                    } else {
+                        Toast toast1 =
+                                Toast.makeText(getApplicationContext(),
+                                        getString(R.string.compartirresul), Toast.LENGTH_SHORT);
 
                         toast1.show();
                     }

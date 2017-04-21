@@ -26,7 +26,13 @@
     <string name="aptitud4">Razonamiento mecánico</string>
     <string name="aptitud5">Aptitud perceptiva</string>
     <string name="aptitud6">Memoria</string>
+    <string name="Verbal">Verbal</string>
+    <string name="Numerico">Numérico</string>
+    <string name="Espacial">Espacial</string>
     <string name="aptitud7">Razonamiento abstracto</string>
+    <string name="Mecanico">Mecánico</string>
+    <string name="Perceptiva">Perceptiva</string>
+    <string name="Abstrapto">Abstrapto</string>
     <string name="bloque1">Bloque 1</string>
     <string name="bloque2">Bloque 2</string>
     <string name="bloque3">Bloque 3</string>
@@ -76,4 +82,16 @@
     <string name="Aciertos">Aciertos</string>
     <string name="Fallos">fallos</string>
     <string name="nocontestadas">y no contestadas</string>
+    <string name="compartirresul">Necesitas introducir un baremo para compartir tu nota</string>
+    <string name="meritoacagene">Méritos Académicos y Méritos Generales</string>
+    <string name="meritomili">Méritos Militares (Fuerzas Armadas españolas) </string>
+    <string name="calculabaremo">Calcula tu baremo</string>
+
+    <string name="meritoaca">Méritos Académicos:</string>
+    <string name="mertitogene">Méritos Generales:</string>
+
+    <string name="empleoalcan">Empleos alcanzados:</string>
+    <string name="condecoraciones">Condecoraciones:</string>
+    <string name="misiones">Misiones fuera del territorio nacional y tiempo de servicio:</string>
+
 </resources>
