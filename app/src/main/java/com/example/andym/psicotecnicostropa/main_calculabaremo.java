@@ -43,7 +43,7 @@ public class main_calculabaremo extends Activity {
                 mostrar.setText(getString(R.string.baremototal)+" "+puntos);
             }
         });
-
+//
         meriA = (RadioGroup) findViewById(R.id.meriA);
         meriA.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 
