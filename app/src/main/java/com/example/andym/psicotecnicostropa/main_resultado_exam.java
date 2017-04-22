@@ -1,6 +1,7 @@
 package com.example.andym.psicotecnicostropa;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,7 +19,7 @@ public class main_resultado_exam extends Activity {
 
     TextView mostrar, nota, notabar;
     EditText baremo;
-    Button calcular, compartir;
+    Button calcular, compartir, introbar;
     double bar = 0;
     double notasobre10;
     double notaredondeadabar;
@@ -291,6 +292,14 @@ public class main_resultado_exam extends Activity {
             }
         });
 
+        introbar = (Button)findViewById(R.id.introbar);
+        introbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(main_resultado_exam.this, main_calculabaremo.class));
+                overridePendingTransition(R.anim.transpain, R.anim.transpaout);
+            }
+        });
 
     }
 

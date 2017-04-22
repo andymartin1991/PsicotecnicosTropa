@@ -1088,7 +1088,7 @@
         <!--278--><item>B) Encoger, Masa</item>
         <!--279--><item>B) Exonerar</item>
         <!--280--><item>B) Caña</item>
-        <!--279--><item>B) Viento</item>
+        <!--281--><item>B) Viento</item>
         <!--282--><item>B) Perseverante</item>
         <!--283--><item>B) Avanzar</item>
         <!--284--><item>B) Andrógeno</item>
@@ -1188,6 +1188,7 @@
         <!--378--><item>B) Manso</item>
         <!--379--><item>B) Evidente</item>
         <!--380--><item>B) Dañado</item>
+        <!--381--><item>B) Arisco</item>
         <!--382--><item>B) Zarcillo</item>
         <!--383--><item>B) Bonanza</item>
         <!--384--><item>B) Llamativo y bereber</item>
@@ -1207,7 +1208,6 @@
         <!--398--><item>B) Muy abundante y copioso.</item>
         <!--399--><item>B) Dicho de una palabra, de una doctrina, de una proposición, etc.: falaz (embustera, falsa).</item>
         <!--400--><item>B) Que manifiesta desdén.</item>
-        <item></item>
     </array>
     
     <array name="resCverbal">

@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gris"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/barcal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/gris"
+            android:gravity="right"
+            android:text="TextView"
+            android:textColor="#fff" />
+    </RelativeLayout>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -35,7 +56,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#fff"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:visibility="visible">
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
@@ -45,7 +67,10 @@
                         android:id="@+id/textView4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/meritoacagene" />
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/meritoacagene"
+                        android:textColor="#000" />
 
                 </RelativeLayout>
 
@@ -57,26 +82,131 @@
                     android:layout_alignParentTop="true"
                     android:visibility="visible">
 
-                    <TextView
-                        android:id="@+id/textView5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_marginLeft="24dp"
-                        android:layout_marginStart="24dp"
-                        android:text="@string/meritoaca" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_weight="1"
+                            android:text="@string/meritoaca" />
+
+                        <RadioGroup
+                            android:id="@+id/meriA"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/text"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/boton_menu"
+                            android:checkedButton="@+id/sound">
+
+                            <RadioButton
+                                android:id="@+id/a1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="MECES 4 Doctor -> 16 puntos "
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/b1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="MECES 3, Master -> 15 puntos"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/c1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="MECES 2, Grado -> 13 puntos"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/d1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="MECES 1, Técnico Superior -> 12 puntos"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/e1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Apto en la prueba de acceso a las enseñanzas universitarias oficiales de Grado -> 11 puntos"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/f1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Bachillerato LOE, COU y sus equivalentes a efectos académicos -> 8 puntos"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/g1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Título de BUP, 1er curso Bachillerato LOE -> 7 puntos"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/h1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Título de Técnico o equivalentes a efectos académicos -> 6 puntos"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/i1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Título de Graduado en Educación Secundaria Obligatoria o sus equivalentes a efectos académicos -> 4 puntos"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/j1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="NINGUNO"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
 
                 </RelativeLayout>
-
-                <Spinner
-                    android:id="@+id/meriaca"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:textSize="8dp"
-                    android:contextClickable="false" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -86,30 +216,166 @@
                     android:layout_alignParentTop="true"
                     android:visibility="visible">
 
-                    <TextView
-                        android:id="@+id/textView5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_marginLeft="24dp"
-                        android:layout_marginStart="24dp"
-                        android:text="@string/mertitogene" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginStart="24dp"
+                            android:text="@string/mertitogene" />
+
+                        <RadioGroup
+                            android:id="@+id/meriG1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/text"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/boton_menu"
+                            android:checkedButton="@+id/sound">
+
+                            <RadioButton
+                                android:id="@+id/a1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Estar en posesión del permiso de conducción de la clase C o superior -> 9 puntos"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/b1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Estar en posesión del permiso de conducción de la clase C1 -> 6 puntos"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/c1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Estar en posesión del permiso de conducción de la clase B -> 3 puntos"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/d1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Estar en posesión del permiso de conducción de las clases A2 o A -> 1 punto "
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/e1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="NINGUNO"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                        </RadioGroup>
+
+                        <RadioGroup
+                            android:id="@+id/meriG25"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/text"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/boton_menu"
+                            android:checkedButton="@+id/sound">
+
+                            <RadioButton
+                                android:id="@+id/a1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="(Últimos 5 años) Deportista de alto nivel -> 3 puntos"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/b1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="NINGUNO"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:checked="true"
+                                android:textSize="10dp" />
+
+                        </RadioGroup>
+
+                        <RadioGroup
+                            android:id="@+id/meriG2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/text"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/boton_menu"
+                            android:checkedButton="@+id/sound">
+
+                            <RadioButton
+                                android:id="@+id/a1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Estar en posesión del Certificado de Nivel C1 (o superior) del idioma inglés -> 8 puntos"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/b1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Estar en posesión del Certificado de Nivel Avanzado del idioma inglés -> 5 puntos"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/c1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Estar en posesión del Certificado de Nivel Intermedio del idioma inglés -> 3 puntos"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/d1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="NINGUNO"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
 
                 </RelativeLayout>
-
-                <Spinner
-                    android:id="@+id/meriaca2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp" />
-
-                <Spinner
-                    android:id="@+id/merigene"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -120,7 +386,9 @@
                         android:id="@+id/textView3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/meritomili" />
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/meritomili"
+                        android:textColor="#000" />
 
                 </RelativeLayout>
 
@@ -132,24 +400,83 @@
                     android:layout_alignParentTop="true"
                     android:visibility="visible">
 
-                    <TextView
-                        android:id="@+id/textView5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_marginLeft="24dp"
-                        android:layout_marginStart="24dp"
-                        android:text="@string/empleoalcan" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginStart="24dp"
+                            android:text="@string/empleoalcan" />
+
+                        <RadioGroup
+                            android:id="@+id/meriM1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/text"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/boton_menu"
+                            android:checkedButton="@+id/sound">
+
+                            <RadioButton
+                                android:id="@+id/a1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Haber sido Militar Profesional de Tropa y Marinería (MTM) con empleo de Cabo o superior -> 2 puntos"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/b1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Haber sido MTM con el antiguo grado de Soldado/Marinero de Primera -> 1,5 puntos"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/c1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Haber sido MTM con empleo de Soldado / Marinero -> 1 puntos"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/d1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Ser o haber sido Reservista Voluntario en cualquier categoría y empleo -> 0,25 puntos"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/e1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="NINGUNO"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                        </RadioGroup>
+                    </LinearLayout>
 
                 </RelativeLayout>
-
-                <Spinner
-                    android:id="@+id/emplealca"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -159,24 +486,92 @@
                     android:layout_alignParentTop="true"
                     android:visibility="visible">
 
-                    <TextView
-                        android:id="@+id/textView5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_marginLeft="24dp"
-                        android:layout_marginStart="24dp"
-                        android:text="@string/condecoraciones" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginStart="24dp"
+                            android:text="@string/condecoraciones" />
+
+                        <RadioGroup
+                            android:id="@+id/meriM2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/text"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/boton_menu"
+                            android:checkedButton="@+id/sound">
+
+                            <RadioButton
+                                android:id="@+id/a1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Cruz del Mérito Militar, Naval o Aeronáutico con distintivo rojo -> 2 puntos"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/b1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Cruz del Mérito Militar, Naval o Aeronáutico con distintivo azul o amarillo -> 1,75 puntos"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/c1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Cruz del Mérito Militar, Naval o Aeronáutico con distintivo blanco -> 1,5 puntos"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/d1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Citación como distinguido en la Orden General -> 0,5 puntos"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/e1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Mención Honorífica -> 0,25 puntos"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/f1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="NINGUNO"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                        </RadioGroup>
+                    </LinearLayout>
 
                 </RelativeLayout>
-
-                <Spinner
-                    android:id="@+id/condecoraciones"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -186,25 +581,85 @@
                     android:layout_alignParentTop="true"
                     android:visibility="visible">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_marginLeft="24dp"
-                        android:layout_marginStart="24dp"
-                        android:text="@string/misiones" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginStart="24dp"
+                            android:text="@string/misiones"
+                            android:textColorLink="@color/BLANCO" />
+
+                        <RadioGroup
+                            android:id="@+id/meriM3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/text"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/boton_menu"
+                            android:checkedButton="@+id/sound">
+
+                            <RadioButton
+                                android:id="@+id/a1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Por cada participación en misiones fuera del territorio nacional por un período igual o superior a dos meses ininterrumpidos -> 0,5 puntos "
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/b1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Por cada año (o fracción) de servicio en las Fuerzas Armadas -> 0,25 puntos "
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                            <RadioButton
+                                android:id="@+id/c1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="NINGUNO"
+                                android:textColor="@color/BLANCO"
+                                android:textColorLink="@color/BLANCO"
+                                android:textSize="10dp" />
+
+                        </RadioGroup>
+                    </LinearLayout>
 
                 </RelativeLayout>
-
-                <Spinner
-                    android:id="@+id/misiones"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp" />
 
             </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/calcular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/boton_menu"
+                    android:gravity="center"
+                    android:text="@string/calcular" />
+            </RelativeLayout>
 
         </LinearLayout>
     </ScrollView>
