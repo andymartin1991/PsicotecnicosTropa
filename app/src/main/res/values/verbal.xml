@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
+    <!--eres una caca pinchada en un palo-->
     <array name="preverbal">
         <!--001--><item>¿Qué palabra no tiene relación con las demás?</item>
         <!--002--><item>Sinónimo de Estafermo:</item>
