@@ -4,6 +4,9 @@
       <entry key="ChangesView">
         <PlaceSettings />
       </entry>
+      <entry key="CommitDialog">
+        <PlaceSettings />
+      </entry>
       <entry key="Default">
         <PlaceSettings />
       </entry>
@@ -22,7 +25,9 @@
         </PlaceSettings>
       </entry>
       <entry key="Default">
-        <PlaceSettings />
+        <PlaceSettings>
+          <option name="ENABLE_SYNC_SCROLL" value="false" />
+        </PlaceSettings>
       </entry>
     </option>
   </component>
