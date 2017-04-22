@@ -64,7 +64,6 @@ public class main_preguntas extends Activity {
     TextView solucion, estado, kk;
 
     LinearLayout Msolucion;
-    RelativeLayout contenedor;
     Button guardar;
     int aciertos = 0;
     int fallos = 0;
