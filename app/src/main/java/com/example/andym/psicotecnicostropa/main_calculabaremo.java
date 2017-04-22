@@ -32,6 +32,7 @@ public class main_calculabaremo extends Activity {
 
         mostrar = (TextView)findViewById(R.id.barcal);
         mostrar.setText(getString(R.string.baremototal)+" "+puntos);
+
         calcular = (Button)findViewById(R.id.calcular);
         calcular.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,7 +44,7 @@ public class main_calculabaremo extends Activity {
                 mostrar.setText(getString(R.string.baremototal)+" "+puntos);
             }
         });
-//
+
         meriA = (RadioGroup) findViewById(R.id.meriA);
         meriA.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 
