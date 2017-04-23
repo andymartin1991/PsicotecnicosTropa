@@ -1,7 +1,10 @@
 package com.example.andym.psicotecnicostropa;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
+import android.os.Environment;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -11,6 +14,12 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
 
 import static android.R.attr.checked;
 
@@ -42,6 +51,23 @@ public class main_calculabaremo extends Activity {
                     puntos=40;
                 }
                 mostrar.setText(getString(R.string.baremototal)+" "+puntos);
+                try
+                {
+                    File ruta_sd = getExternalFilesDir(null);
+                    File f = new File(ruta_sd.getAbsolutePath(), "baremo");
+                    OutputStreamWriter fout =
+                            new OutputStreamWriter(
+                                    new FileOutputStream(f));
+
+                    fout.write(puntos+"");
+                    fout.close();
+                    System.out.println(ruta_sd);
+                    System.out.println(f);
+                }
+                catch (Exception ex)
+                {
+                    Log.e("Ficheros", "Error al escribir fichero a tarjeta SD");
+                }
             }
         });
 

@@ -74,7 +74,7 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:gravity="right"
-                    android:inputType="number"
+                    android:inputType="numberDecimal"
                     android:textColor="#fff" />
 
             </LinearLayout>

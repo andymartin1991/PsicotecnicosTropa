@@ -3,6 +3,8 @@ package com.example.andym.psicotecnicostropa;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Environment;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -10,6 +12,16 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.andym.psicotecnicostropa.dto.Preguntas;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 
 /**
  * Created by andym on 08/04/2017.
@@ -29,8 +41,28 @@ public class main_resultado_exam extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_resultado_exam);
 
+        String baremorecu = null;
+        try
+        {
+            File ruta_sd = getExternalFilesDir(null);
+            File f = new File(ruta_sd.getAbsolutePath(), "baremo");
+
+            BufferedReader fin =
+                    new BufferedReader(
+                            new InputStreamReader(
+                                    new FileInputStream(f)));
+            baremorecu = fin.readLine();
+            fin.close();
+            System.out.println(ruta_sd);
+            System.out.println(f);
+        }
+        catch (Exception ex)
+        {
+            Log.e("Ficheros", "Error al leer fichero desde tarjeta SD");
+        }
 
         baremo = (EditText)findViewById(R.id.baremo);
+        baremo.setText(baremorecu);
 
         int aciertosVerbal = 0;
         int fallosVerbal = 0;
@@ -235,7 +267,13 @@ public class main_resultado_exam extends Activity {
         nota.setText(getString(R.string.sunotasobre10)+"\n"+notaredondeada);
 
         notabar = (TextView)findViewById(R.id.notabar);
-        notabar.setText(getString(R.string.sunotaconbaremo)+"\n"+notaredondeadabar);
+        if(baremorecu.equals(null)) {
+            notabar.setText(getString(R.string.sunotaconbaremo) + "\n" + "0.0");
+        }else{
+            bar = Double.parseDouble(baremo.getText().toString());
+            notabaremo();
+            notabar.setText(getString(R.string.sunotaconbaremo) + "\n" + notaredondeadabar);
+        }
 
         baremo = (EditText)findViewById(R.id.baremo);
 
@@ -251,7 +289,7 @@ public class main_resultado_exam extends Activity {
 
                     toast1.show();
                 }else {
-                    int kk = Integer.parseInt(baremo.getText().toString());
+                    double kk = Double.parseDouble(baremo.getText().toString());
                     if (kk > 0 && kk < 41) {
                         bar = Double.parseDouble(baremo.getText().toString());
                         notabaremo();
