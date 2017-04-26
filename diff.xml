@@ -25,7 +25,9 @@
         </PlaceSettings>
       </entry>
       <entry key="Default">
-        <PlaceSettings />
+        <PlaceSettings>
+          <option name="ENABLE_SYNC_SCROLL" value="false" />
+        </PlaceSettings>
       </entry>
     </option>
   </component>
