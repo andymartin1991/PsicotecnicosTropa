@@ -95,5 +95,7 @@
     <string name="misiones">Misiones fuera del territorio nacional y tiempo de servicio:</string>
 
     <string name="baremototal">Tus puntos de baremo es:</string>
+    <string name="minota">Mi nota en el examen ha sido: </string>
+    <string name="minotabare">Mi nota con baremo es de:</string>
 
 </resources>

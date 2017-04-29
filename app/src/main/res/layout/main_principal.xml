@@ -45,8 +45,8 @@
 
                                 <Button
                                     android:id="@+id/button1"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
                                     android:layout_margin="5dp"
                                     android:layout_weight="1"
                                     android:background="@drawable/boton_menu"
@@ -58,8 +58,8 @@
 
                                 <Button
                                     android:id="@+id/button2"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
                                     android:layout_margin="5dp"
                                     android:layout_weight="1"
                                     android:background="@drawable/boton_menu"
@@ -79,8 +79,8 @@
 
                                 <Button
                                     android:id="@+id/button3"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
                                     android:layout_margin="5dp"
                                     android:layout_weight="1"
                                     android:background="@drawable/boton_menu"
@@ -88,12 +88,12 @@
                                     android:padding="5dp"
                                     android:text="@string/Trucos"
                                     android:textColor="#fff"
-                                    android:textSize="10dp"  />
+                                    android:textSize="10dp" />
 
                                 <Button
                                     android:id="@+id/button4"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
                                     android:layout_margin="5dp"
                                     android:layout_weight="1"
                                     android:background="@drawable/boton_menu"
@@ -186,8 +186,8 @@
 
                                 <Button
                                     android:id="@+id/button11"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
                                     android:layout_margin="5dp"
                                     android:layout_weight="1"
                                     android:background="@drawable/boton_menu"
@@ -199,8 +199,8 @@
 
                                 <Button
                                     android:id="@+id/button12"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
                                     android:layout_margin="5dp"
                                     android:layout_weight="1"
                                     android:background="@drawable/boton_menu"
@@ -220,8 +220,8 @@
 
                                 <Button
                                     android:id="@+id/button13"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
                                     android:layout_margin="5dp"
                                     android:layout_weight="1"
                                     android:background="@drawable/boton_menu"
@@ -233,8 +233,8 @@
 
                                 <Button
                                     android:id="@+id/button14"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
                                     android:layout_margin="5dp"
                                     android:layout_weight="1"
                                     android:background="@drawable/boton_menu"
@@ -242,7 +242,7 @@
                                     android:padding="5dp"
                                     android:text="@string/Insta"
                                     android:textColor="#fff"
-                                    android:textSize="10dp"/>
+                                    android:textSize="10dp" />
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
@@ -272,8 +272,8 @@
 
                                 <Button
                                     android:id="@+id/button21"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
                                     android:layout_margin="5dp"
                                     android:layout_weight="1"
                                     android:background="@drawable/boton_menu"
@@ -285,8 +285,8 @@
 
                                 <Button
                                     android:id="@+id/button22"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
                                     android:layout_margin="5dp"
                                     android:layout_weight="1"
                                     android:background="@drawable/boton_menu"
@@ -306,8 +306,8 @@
 
                                 <Button
                                     android:id="@+id/button23"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
                                     android:layout_margin="5dp"
                                     android:layout_weight="1"
                                     android:background="@drawable/boton_menu"
@@ -319,8 +319,8 @@
 
                                 <Button
                                     android:id="@+id/button24"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
                                     android:layout_margin="5dp"
                                     android:layout_weight="1"
                                     android:background="@drawable/boton_menu"
@@ -328,7 +328,7 @@
                                     android:padding="5dp"
                                     android:text="@string/Ayuda"
                                     android:textColor="#fff"
-                                    android:textSize="10dp"/>
+                                    android:textSize="10dp" />
                             </LinearLayout>
                         </LinearLayout>
 
@@ -381,14 +381,14 @@
                             <Button
                                 android:id="@+id/button31"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_margin="5dp"
                                 android:background="@drawable/boton_menu"
                                 android:drawableTop="@drawable/compartir"
                                 android:padding="5dp"
                                 android:text="@string/Compartir"
                                 android:textColor="#fff"
-                                android:textSize="10dp"  />
+                                android:textSize="10dp" />
                         </LinearLayout>
 
                     </LinearLayout>

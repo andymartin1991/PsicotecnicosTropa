@@ -1,6 +1,8 @@
 package com.example.andym.psicotecnicostropa;
 
 import android.app.Activity;
+import android.app.ActivityManager;
+import android.content.ComponentName;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Environment;
@@ -20,8 +22,10 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
+import java.util.List;
 
 import static android.R.attr.checked;
+import static android.content.ContentValues.TAG;
 
 /**
  * Created by andym on 21/04/2017.
@@ -35,7 +39,7 @@ public class main_calculabaremo extends Activity {
     double meriAInt = 0, meriG1Int = 0, meriG2Int = 0, meriM1Int = 0, meriM2Int = 0, meriM3Int = 0, meriG25Int = 0;
     double puntos = 0;
 
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_calculabaremo);
 

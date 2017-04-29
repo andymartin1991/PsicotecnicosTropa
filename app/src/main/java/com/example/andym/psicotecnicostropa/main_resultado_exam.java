@@ -1,10 +1,13 @@
 package com.example.andym.psicotecnicostropa;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Environment;
+import android.os.CountDownTimer;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,10 +19,7 @@ import com.example.andym.psicotecnicostropa.dto.Preguntas;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.FileReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
@@ -36,12 +36,13 @@ public class main_resultado_exam extends Activity {
     double notasobre10;
     double notaredondeadabar;
     double baremoredondeado;
+    double notaredondeada;
     static Preguntas[] bloqueverbal, bloquenumerico, bloqueespacial, bloquemecanico, bloqueperceptiva, bloquememoria, bloqueabstrapto;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_resultado_exam);
 
-        String baremorecu = null;
+        final String[] baremorecu = {""};
         try
         {
             File ruta_sd = getExternalFilesDir(null);
@@ -51,7 +52,7 @@ public class main_resultado_exam extends Activity {
                     new BufferedReader(
                             new InputStreamReader(
                                     new FileInputStream(f)));
-            baremorecu = fin.readLine();
+            baremorecu[0] = fin.readLine();
             fin.close();
             System.out.println(ruta_sd);
             System.out.println(f);
@@ -62,7 +63,7 @@ public class main_resultado_exam extends Activity {
         }
 
         baremo = (EditText)findViewById(R.id.baremo);
-        baremo.setText(baremorecu);
+        baremo.setText(baremorecu[0]);
 
         int aciertosVerbal = 0;
         int fallosVerbal = 0;
@@ -248,7 +249,7 @@ public class main_resultado_exam extends Activity {
                         ((Double.parseDouble(String.valueOf(aciertosPerceptiva)) * 10) / 15) +
                         ((Double.parseDouble(String.valueOf(aciertosMemoria)) * 10) / 15) +
                         ((Double.parseDouble(String.valueOf(aciertosAbstrapto)) * 10) / 15)) / 7);
-        double notaredondeada = redondearDecimales(notasobre10,1);
+        notaredondeada = redondearDecimales(notasobre10,1);
         notabaremo();
         mostrar = (TextView)findViewById(R.id.mostrar);
         mostrar.setText(
@@ -267,12 +268,17 @@ public class main_resultado_exam extends Activity {
         nota.setText(getString(R.string.sunotasobre10)+"\n"+notaredondeada);
 
         notabar = (TextView)findViewById(R.id.notabar);
-        if(baremorecu.equals(null)) {
+        try {
+            if (!baremorecu[0].equals("")) {
+                baremo.setText(baremorecu[0]);
+                bar = Double.parseDouble(baremo.getText().toString());
+                notabaremo();
+                notabar.setText(getString(R.string.sunotaconbaremo) + "\n" + notaredondeadabar);
+            } else {
+                notabar.setText(getString(R.string.sunotaconbaremo) + "\n" + "0.0");
+            }
+        }catch(Exception e){
             notabar.setText(getString(R.string.sunotaconbaremo) + "\n" + "0.0");
-        }else{
-            bar = Double.parseDouble(baremo.getText().toString());
-            notabaremo();
-            notabar.setText(getString(R.string.sunotaconbaremo) + "\n" + notaredondeadabar);
         }
 
         baremo = (EditText)findViewById(R.id.baremo);
@@ -294,6 +300,23 @@ public class main_resultado_exam extends Activity {
                         bar = Double.parseDouble(baremo.getText().toString());
                         notabaremo();
                         notabar.setText(getString(R.string.sunotaconbaremo) + "\n" + notaredondeadabar);
+                        try
+                        {
+                            File ruta_sd = getExternalFilesDir(null);
+                            File f = new File(ruta_sd.getAbsolutePath(), "baremo");
+                            OutputStreamWriter fout =
+                                    new OutputStreamWriter(
+                                            new FileOutputStream(f));
+
+                            fout.write(baremo.getText()+"");
+                            fout.close();
+                            System.out.println(ruta_sd);
+                            System.out.println(f);
+                        }
+                        catch (Exception ex)
+                        {
+                            Log.e("Ficheros", "Error al escribir fichero a tarjeta SD");
+                        }
                     } else {
                         Toast toast1 =
                                 Toast.makeText(getApplicationContext(),
@@ -319,6 +342,13 @@ public class main_resultado_exam extends Activity {
                     int kk = Integer.parseInt(baremo.getText().toString());
                     if (kk > 0 && kk < 41) {
                         //poner aqui el texto a compartir
+                        Intent intentCompartir = new Intent(Intent.ACTION_SEND);
+                        intentCompartir.setType("text/plain");
+                        intentCompartir.putExtra(Intent.EXTRA_SUBJECT, "Psicotécnicos Tropa");
+                        //intentCompartir.putExtra(Intent.EXTRA_STREAM,  Uri.parse("android.resource://com.naroh.tropaPsicotecnicoTrial/drawable/icono"));
+                        intentCompartir.putExtra(Intent.EXTRA_TEXT, getString(R.string.minota) + " " + notaredondeada + "\n" + getString(R.string.minotabare) + " " + notaredondeadabar + "\n" + "https://play.google.com/store/apps/details?id=com.naroh.tropaPsicotecnicoOficial");
+                        intentCompartir.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(Intent.createChooser(intentCompartir, getString(R.string.compartiren)));
                     } else {
                         Toast toast1 =
                                 Toast.makeText(getApplicationContext(),
