@@ -98,4 +98,14 @@
     <string name="minota">Mi nota en el examen ha sido: </string>
     <string name="minotabare">Mi nota con baremo es de:</string>
 
+    <string name="asunto1">Ideas</string>
+    <string name="asunto2">Mejoras</string>
+    <string name="asunto3">Propuestas</string>
+    <string name="asunto4">Errores</string>
+    <string name="asunto5">Quejas</string>
+    <string name="Casunto">Asunto</string>
+    <string name="Cmensaje">Mensaje</string>
+    <string name="devesesc">Debes escribir el mensaje para enviar</string>
+    <string name="creditos">Créditos</string>
+
 </resources>

@@ -12,8 +12,8 @@
         android:layout_weight="1">
 
         <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="horizontal">
 
             <TableLayout
@@ -26,8 +26,8 @@
                     android:layout_height="match_parent">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:orientation="horizontal">
 
@@ -108,8 +108,8 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:orientation="horizontal">
 
@@ -141,8 +141,8 @@
                     android:layout_height="match_parent">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:orientation="horizontal">
 
@@ -166,8 +166,8 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_gravity="left"
                         android:layout_weight="1"
                         android:orientation="horizontal">
@@ -175,7 +175,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
+                            android:layout_weight="0"
                             android:orientation="vertical">
 
                             <LinearLayout
@@ -253,8 +253,8 @@
                     android:layout_height="match_parent">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:orientation="horizontal">
 
@@ -335,8 +335,8 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:orientation="horizontal">
 
@@ -367,8 +367,8 @@
                     android:layout_height="match_parent">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:orientation="horizontal">
 
@@ -394,8 +394,8 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:orientation="horizontal">
 

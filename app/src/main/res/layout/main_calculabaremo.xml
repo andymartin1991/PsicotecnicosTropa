@@ -658,6 +658,7 @@
                     android:layout_centerHorizontal="true"
                     android:background="@drawable/boton_menu"
                     android:gravity="center"
+                    android:padding="10dp"
                     android:text="@string/calcular" />
             </RelativeLayout>
 
