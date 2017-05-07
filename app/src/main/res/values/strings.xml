@@ -108,4 +108,6 @@
     <string name="devesesc">Debes escribir el mensaje para enviar</string>
     <string name="creditos">Créditos</string>
 
+    <string name="modofatiga">Modo Fatiga</string>
+
 </resources>

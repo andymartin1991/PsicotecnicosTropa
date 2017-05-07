@@ -135,6 +135,8 @@ public class main_principal extends Activity {
                             Thread.sleep(500);
                         } catch(InterruptedException e) {}
 
+                        startActivity(new Intent(main_principal.this, main_optTipoFatiga.class));
+                        overridePendingTransition(R.anim.transpain, R.anim.transpaout);
                     }
                 }).start();
             }
