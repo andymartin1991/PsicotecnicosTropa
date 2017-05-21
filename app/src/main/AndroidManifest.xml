@@ -30,6 +30,7 @@
         <activity android:name=".main_resultado_exam" android:windowSoftInputMode="stateHidden" ></activity>
         <activity android:name=".main_contacto" android:windowSoftInputMode="stateHidden" ></activity>
         <activity android:name=".main_calculabaremo"></activity>
+        <activity android:name=".main_preguntasAleatorio"></activity>
     </application>
 
 </manifest>
