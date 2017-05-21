@@ -571,6 +571,11 @@ public class main_preguntasFatiga extends Activity {
 
         cuenta.setText(cont.getCont() + 1 + "");
 
+        if(getIntent().getExtras().getString("tipo").equals("memoria")){
+            //PONER AQUI LA FUNCION DE MEMORIA
+
+        }
+
         if (pre[cont.getCont()].getImgPregunta().equals("")) {
             imgpregunta.setVisibility(View.GONE);
             imgpregunta.setImageResource(0);

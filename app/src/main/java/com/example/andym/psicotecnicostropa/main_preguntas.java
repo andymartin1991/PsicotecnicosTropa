@@ -576,6 +576,12 @@ public class main_preguntas extends Activity {
 
         cuenta.setText(cont.getCont() + 1 + "");
 
+        if(getIntent().getExtras().getString("tipo").equals("memoria")){
+            //PONER AQUI LA FUNCION DE MEMORIA
+
+        }
+
+
         if (imgPre[cont.getCont()].equals("")) {
             imgpregunta.setVisibility(View.GONE);
             imgpregunta.setImageResource(0);

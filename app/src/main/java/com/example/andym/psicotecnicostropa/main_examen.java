@@ -1156,6 +1156,10 @@ public class main_examen extends Activity {
                 break;
             case 6:
                 bloq.setText(getString(R.string.memoria));
+                //PONER AQUI LA FUNCION DE MEMORIA
+
+
+
                 if (main_resultado_exam.bloquememoria[nabst[posi]].getImgPregunta().equals("")) {
                     imgenPre.setVisibility(View.GONE);
                     imgenPre.setImageResource(0);
