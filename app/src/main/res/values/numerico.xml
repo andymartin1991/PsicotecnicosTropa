@@ -2,6 +2,7 @@
 <resources>
     
     <array name="prenumerico">
+
         <!--001--><item>¿Cuál tiene mayor área?</item>
         <!--002--><item>Un avión de pasajeros tiene capacidad de llevar a 400 personas, ¿cuántos pasajeros hay si hoy los pasajeros ocupan el 80<p>%</p>?</item>
         <!--003--><item>60 + 89 - 30 + 15 =</item>
