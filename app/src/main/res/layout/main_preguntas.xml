@@ -130,24 +130,31 @@
                         android:orientation="vertical"
                         android:weightSum="1">
 
-                        <ImageView
-                            android:id="@+id/prohibido"
+                        <LinearLayout
+                            android:id="@+id/pregun"
                             android:layout_width="match_parent"
-                            android:layout_height="48dp"
-                            app:srcCompat="@drawable/prohibido" />
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/pregunta"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="20dp"
-                            android:text="pregunta" />
+                            <ImageView
+                                android:id="@+id/prohibido"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                app:srcCompat="@drawable/prohibido" />
 
-                        <ImageView
-                            android:id="@+id/imgpre"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal" />
+                            <TextView
+                                android:id="@+id/pregunta"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20dp"
+                                android:text="pregunta" />
+
+                            <ImageView
+                                android:id="@+id/imgpre"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal" />
+                        </LinearLayout>
 
                         <RelativeLayout
                             android:id="@+id/a"
