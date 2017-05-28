@@ -80,8 +80,7 @@ public class main_preguntasFatiga extends Activity {
             public void onClick(View v) {
                 Toast toast1 =
                         Toast.makeText(getApplicationContext(),
-                                getString(R.string.aciertos)+" "+aciertos+" "+getString(R.string.de)+" "+(aciertos+fallos), Toast.LENGTH_SHORT);
-
+                                getString(R.string.aciertos) + " " + aciertos + " " + getString(R.string.de) + " " + (aciertos + fallos)+" "+getString(R.string.de)+" "+pregunta.length+" "+getString(R.string.preguntas), Toast.LENGTH_SHORT);
                 toast1.show();
             }
         });

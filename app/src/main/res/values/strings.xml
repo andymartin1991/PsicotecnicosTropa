@@ -111,4 +111,12 @@
     <string name="modofatiga">Modo Fatiga</string>
     <string name="modoaleatorio">Modo Aleatorio</string>
 
+    <string name="preguntas">preguntas</string>
+    <string name="errorguardar">Error al guardar</string>
+    <string name="guardado">Guardado</string>
+    <string name="errormemo">No se puede acceder a la memoria para guardar</string>
+    <string name="datosencontrado">Se han encontrado datos guardados de este bloque que ¿deseas hacer?</string>
+    <string name="cargar">Cargar</string>
+    <string name="borrar">Borrar</string>
+
 </resources>

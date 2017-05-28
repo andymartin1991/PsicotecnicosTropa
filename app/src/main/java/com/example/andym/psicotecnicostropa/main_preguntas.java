@@ -5,9 +5,12 @@ import com.example.andym.psicotecnicostropa.dto.Preguntas;
 import com.example.andym.psicotecnicostropa.dto.contador;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -26,6 +29,12 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.OutputStreamWriter;
+
 public class main_preguntas extends Activity {
 
     int arreglo = 0;
@@ -34,6 +43,7 @@ public class main_preguntas extends Activity {
     contador cont = new contador();
     int[] pos;
     int colocar = 0;
+    int comienzocarga = 3;
 
     String[] pregunta = null;
     String[] resA = null;
@@ -73,36 +83,31 @@ public class main_preguntas extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_preguntas);
 
-        ImageView prohibido = (ImageView)findViewById(R.id.prohibido);
+        ImageView prohibido = (ImageView) findViewById(R.id.prohibido);
         prohibido.setVisibility(View.GONE);
-        TextView cuentatras = (TextView)findViewById(R.id.cuentatras);
+        TextView cuentatras = (TextView) findViewById(R.id.cuentatras);
         cuentatras.setVisibility(View.GONE);
-        TextView bloque = (TextView)findViewById(R.id.bloque);
-        kk = (TextView)findViewById(R.id.arreglo);
+        TextView bloque = (TextView) findViewById(R.id.bloque);
+        kk = (TextView) findViewById(R.id.arreglo);
         kk.setVisibility(View.VISIBLE);
-        Msolucion = (LinearLayout)findViewById(R.id.solucion);
+        Msolucion = (LinearLayout) findViewById(R.id.solucion);
         Msolucion.setVisibility(View.GONE);
         guardar = (Button) findViewById(R.id.guardar);
         guardar.setVisibility(View.VISIBLE);
-        estado = (TextView)findViewById(R.id.estado);
+        estado = (TextView) findViewById(R.id.estado);
         estado.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast toast1 =
                         Toast.makeText(getApplicationContext(),
-                                getString(R.string.aciertos)+" "+aciertos+" "+getString(R.string.de)+" "+(aciertos+fallos), Toast.LENGTH_SHORT);
-
+                                getString(R.string.aciertos) + " " + aciertos + " " + getString(R.string.de) + " " + (aciertos + fallos) + " " + getString(R.string.de) + " " + pregunta.length + " " + getString(R.string.preguntas), Toast.LENGTH_SHORT);
                 toast1.show();
             }
         });
         guardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast toast1 =
-                        Toast.makeText(getApplicationContext(),
-                                "guardar", Toast.LENGTH_SHORT);
-
-                toast1.show();
+                guardar(getIntent().getExtras().getString("tipo"));
             }
         });
         switch (getIntent().getExtras().getString("tipo")) {
@@ -123,7 +128,6 @@ public class main_preguntas extends Activity {
                 imgD = getResources().getStringArray(R.array.imgDverbal);
                 imgSol = getResources().getStringArray(R.array.imgSolverbal);
                 imgExpli = getResources().getStringArray(R.array.imgExpliverbal);
-                bloque.setText(getString(R.string.verbal));
                 break;
 
             case "abstrapto":
@@ -247,12 +251,17 @@ public class main_preguntas extends Activity {
                 break;
 
         }
-        respulsada = new int[pregunta.length];
-        for(int i = 0; i<pregunta.length; i++){
-            respulsada[i]=0;
-        }
 
-        pos= new int[pregunta.length];
+        bloque.setText(getString(R.string.verbal));
+        carga(getIntent().getExtras().getString("tipo"));
+
+        respulsada = new int[pregunta.length];
+        for (int i = 0; i < pregunta.length; i++) {
+            respulsada[i] = 0;
+        }
+        if (pos == null) {
+            pos = new int[pregunta.length];
+        }
 
         pre = new Preguntas[pregunta.length];
         for (int i = 0; i < pregunta.length; i++) {
@@ -264,8 +273,14 @@ public class main_preguntas extends Activity {
 
         Button alante = (Button) findViewById(R.id.alante);
         Button atras = (Button) findViewById(R.id.atras);
+
+        /*if (cont.getCont() == 1) {
+            atras.setVisibility(View.INVISIBLE);
+        }*/
+
         avanza();
-        atras.setVisibility(View.INVISIBLE);
+        calcularestado();
+
         alante.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -293,6 +308,9 @@ public class main_preguntas extends Activity {
                     Toast.makeText(getApplicationContext(), "Fin", Toast.LENGTH_SHORT).show();
                 }
                 colocar--;
+                if (colocar == -1) {
+                    colocar = 0;
+                }
                 recolocar();
             }
         });
@@ -343,54 +361,360 @@ public class main_preguntas extends Activity {
         });
 
     }
-    private void calcularestado(){
-        double total = (fallos+aciertos);
-        double mitad = total/2;
-        double mitadsuperior = (total*0.75);
-        estado = (TextView)findViewById(R.id.estado);
-        if(aciertos < mitad) {
+
+    private void carga(final String tipo) {
+
+        try {
+            File ruta_sd = getExternalFilesDir(null);
+            final File a = new File(ruta_sd.getAbsolutePath(), tipo + "cont");
+            final File b = new File(ruta_sd.getAbsolutePath(), tipo + "aciertos");
+            final File c = new File(ruta_sd.getAbsolutePath(), tipo + "fallos");
+            final File d = new File(ruta_sd.getAbsolutePath(), tipo + "colocar");
+            final File e = new File(ruta_sd.getAbsolutePath(), tipo + "pos");
+            final File f = new File(ruta_sd.getAbsolutePath(), tipo + "arreglo");
+            if (a.exists() && b.exists() && c.exists() && d.exists() && e.exists()) {
+
+                new AlertDialog.Builder(this)
+                        .setIcon(android.R.drawable.ic_delete)
+                        .setTitle(getString(R.string.atencion))
+                        .setMessage(getString(R.string.datosencontrado))
+                        .setCancelable(false)
+                        .setNegativeButton(getString(R.string.borrar),
+                                new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog,
+                                                        int which) {
+
+                                    }
+                                })
+                        // sin listener
+                        .setPositiveButton(getString(R.string.cargar),
+                                new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog,
+                                                        int which) {
+                                        FileReader fr = null;
+                                        BufferedReader br = null;
+                                        try {
+                                            fr = new FileReader(a);
+                                            br = new BufferedReader(fr);
+                                            String linea;
+                                            while((linea=br.readLine())!=null)
+                                                if(!linea.isEmpty()){
+                                                    if(Integer.parseInt(linea)==0){
+                                                        comienzocarga = Integer.parseInt(linea);
+                                                    }
+                                                    cont.setCont(Integer.parseInt(linea)-1);
+                                                }
+                                        }
+                                        catch(Exception y){
+                                            y.printStackTrace();
+                                        }finally{
+                                            try{
+                                                if( null != fr ){
+                                                    fr.close();
+                                                }
+                                            }catch (Exception e2){
+                                                e2.printStackTrace();
+                                            }
+                                        }
+                                        try {
+                                            fr = new FileReader(b);
+                                            br = new BufferedReader(fr);
+                                            String linea;
+                                            while((linea=br.readLine())!=null)
+                                                if(!linea.isEmpty()){
+                                                    aciertos=Integer.parseInt(linea);
+                                                }
+                                        }
+                                        catch(Exception y){
+                                            y.printStackTrace();
+                                        }finally{
+                                            try{
+                                                if( null != fr ){
+                                                    fr.close();
+                                                }
+                                            }catch (Exception e2){
+                                                e2.printStackTrace();
+                                            }
+                                        }
+                                        try {
+                                            fr = new FileReader(c);
+                                            br = new BufferedReader(fr);
+                                            String linea;
+                                            while((linea=br.readLine())!=null)
+                                                if(!linea.isEmpty()){
+                                                    fallos=Integer.parseInt(linea);
+                                                }
+                                        }
+                                        catch(Exception y){
+                                            y.printStackTrace();
+                                        }finally{
+                                            try{
+                                                if( null != fr ){
+                                                    fr.close();
+                                                }
+                                            }catch (Exception e2){
+                                                e2.printStackTrace();
+                                            }
+                                        }
+                                        try {
+                                            fr = new FileReader(d);
+                                            br = new BufferedReader(fr);
+                                            String linea;
+                                            while((linea=br.readLine())!=null)
+                                                if(!linea.isEmpty()){
+                                                    colocar=Integer.parseInt(linea);
+                                                }
+                                        }
+                                        catch(Exception y){
+                                            y.printStackTrace();
+                                        }finally{
+                                            try{
+                                                if( null != fr ){
+                                                    fr.close();
+                                                }
+                                            }catch (Exception e2){
+                                                e2.printStackTrace();
+                                            }
+                                        }
+                                        try {
+                                            pos= new int[pregunta.length];
+                                            fr = new FileReader(e);
+                                            br = new BufferedReader(fr);
+                                            String linea;
+                                            int recorro = 0;
+                                            while((linea=br.readLine())!=null)
+                                                if(!linea.isEmpty()){
+                                                    pos[recorro]=Integer.parseInt(linea);
+                                                    recorro++;
+                                                }
+
+                                        }
+                                        catch(Exception y){
+                                            y.printStackTrace();
+                                            try{
+                                                if( null != fr ){
+                                                    fr.close();
+                                                }
+                                            }catch (Exception e2){
+                                                e2.printStackTrace();
+                                            }
+                                        }
+                                        try {
+                                            fr = new FileReader(f);
+                                            br = new BufferedReader(fr);
+                                            String linea;
+                                            while((linea=br.readLine())!=null)
+                                                if(!linea.isEmpty()){
+                                                    arreglo=Integer.parseInt(linea);
+                                                }
+                                        }
+                                        catch(Exception y){
+                                            y.printStackTrace();
+                                        }finally{
+                                            try{
+                                                if( null != fr ){
+                                                    fr.close();
+                                                }
+                                            }catch (Exception e2){
+                                                e2.printStackTrace();
+                                            }
+                                        }avanza();
+                                        if (comienzocarga != 0) {
+                                            recolocar();
+                                        }
+                                        calcularestado();
+
+                                    }
+
+
+                                }).show();
+            }
+
+            }catch(Exception e){
+
+            }
+
+    }
+
+    private void guardar(String tipo) {
+        boolean correcto[] = {true, true, true, true, true, true, true, true,};
+        try {
+            File ruta_sd = getExternalFilesDir(null);
+            File f = new File(ruta_sd.getAbsolutePath(), tipo + "aciertos");
+            OutputStreamWriter fout =
+                    new OutputStreamWriter(
+                            new FileOutputStream(f));
+
+            fout.write(aciertos + "");
+            fout.close();
+            System.out.println(ruta_sd);
+            System.out.println(f);
+        } catch (Exception ex) {
+            Log.e("Ficheros", "Error al escribir fichero a tarjeta SD");
+            correcto[0] = false;
+        }
+        try {
+            File ruta_sd = getExternalFilesDir(null);
+            File f = new File(ruta_sd.getAbsolutePath(), tipo + "fallos");
+            OutputStreamWriter fout =
+                    new OutputStreamWriter(
+                            new FileOutputStream(f));
+
+            fout.write(fallos + "");
+            fout.close();
+            System.out.println(ruta_sd);
+            System.out.println(f);
+        } catch (Exception ex) {
+            Log.e("Ficheros", "Error al escribir fichero a tarjeta SD");
+            correcto[1] = false;
+        }
+        try {
+            File ruta_sd = getExternalFilesDir(null);
+            File f = new File(ruta_sd.getAbsolutePath(), tipo + "colocar");
+            OutputStreamWriter fout =
+                    new OutputStreamWriter(
+                            new FileOutputStream(f));
+
+            fout.write(colocar + "");
+            fout.close();
+            System.out.println(ruta_sd);
+            System.out.println(f);
+        } catch (Exception ex) {
+            Log.e("Ficheros", "Error al escribir fichero a tarjeta SD");
+            correcto[2] = false;
+        }
+        try {
+            File ruta_sd = getExternalFilesDir(null);
+            File f = new File(ruta_sd.getAbsolutePath(), tipo + "cont");
+            OutputStreamWriter fout =
+                    new OutputStreamWriter(
+                            new FileOutputStream(f));
+
+            fout.write((cont.getCont()) + "");
+            fout.close();
+            System.out.println(ruta_sd);
+            System.out.println(f);
+        } catch (Exception ex) {
+            Log.e("Ficheros", "Error al escribir fichero a tarjeta SD");
+            correcto[3] = false;
+        }
+        try {
+            File ruta_sd = getExternalFilesDir(null);
+            File f = new File(ruta_sd.getAbsolutePath(), tipo + "pos");
+            OutputStreamWriter fout =
+                    new OutputStreamWriter(
+                            new FileOutputStream(f));
+            for (int i = 0; i < pos.length; i++) {
+                fout.write(pos[i] + "\n");
+                fout.flush();
+            }
+            fout.close();
+            System.out.println(ruta_sd);
+            System.out.println(f);
+        } catch (Exception ex) {
+            Log.e("Ficheros", "Error al escribir fichero a tarjeta SD");
+            correcto[4] = false;
+        }
+        try {
+            File ruta_sd = getExternalFilesDir(null);
+            File f = new File(ruta_sd.getAbsolutePath(), tipo + "arreglo");
+            OutputStreamWriter fout =
+                    new OutputStreamWriter(
+                            new FileOutputStream(f));
+
+            fout.write(arreglo + "");
+            fout.close();
+            System.out.println(ruta_sd);
+            System.out.println(f);
+        } catch (Exception ex) {
+            Log.e("Ficheros", "Error al escribir fichero a tarjeta SD");
+            correcto[5] = false;
+        }
+
+        if (!correcto[0] && !correcto[1] && !correcto[2] && !correcto[3] && !correcto[4]) {
+            Toast toast1 = Toast.makeText(getApplicationContext(), getString(R.string.errorguardar), Toast.LENGTH_SHORT);
+            toast1.show();
+            /*si falla borramos todo los archivos en caso de que exista*/
+            try {
+                File ruta_sd = getExternalFilesDir(null);
+                File a = new File(ruta_sd.getAbsolutePath(), tipo + "cont");
+                File b = new File(ruta_sd.getAbsolutePath(), tipo + "aciertos");
+                File c = new File(ruta_sd.getAbsolutePath(), tipo + "fallos");
+                File d = new File(ruta_sd.getAbsolutePath(), tipo + "colocar");
+                File e = new File(ruta_sd.getAbsolutePath(), tipo + "pos");
+                a.delete();
+                b.delete();
+                c.delete();
+                d.delete();
+                e.delete();
+            } catch (Exception e) {
+                Toast toast2 = Toast.makeText(getApplicationContext(), getString(R.string.errormemo), Toast.LENGTH_SHORT);
+                toast2.show();
+                toast2.show();
+            }
+
+        } else {
+            Toast toast1 =
+                    Toast.makeText(getApplicationContext(), getString(R.string.guardado), Toast.LENGTH_SHORT);
+            toast1.show();
+        }
+    }
+
+    private void calcularestado() {
+        double total = (fallos + aciertos);
+        double mitad = total / 2;
+        double mitadsuperior = (total * 0.75);
+        estado = (TextView) findViewById(R.id.estado);
+        if (aciertos < mitad) {
             estado.setBackgroundResource(R.drawable.boton_estado_rojo);
             estado.setText(getString(R.string.Mal));
-        }else {
+        } else {
             estado.setBackgroundResource(R.drawable.boton_estado_naranja);
             estado.setText(getString(R.string.Bien));
-            if (aciertos >= mitadsuperior){
+            if (aciertos >= mitadsuperior) {
                 estado.setBackgroundResource(R.drawable.boton_estado_verde);
                 estado.setText(getString(R.string.Genial));
             }
         }
 
     }
-    private void recolocar(){
-        Msolucion = (LinearLayout)findViewById(R.id.solucion);
-        RelativeLayout subcontenedor = (RelativeLayout)findViewById(R.id.subcontenedor);
-        ScrollView contenedor = (ScrollView)findViewById(R.id.contenedor);
-        ImageView prohibido = (ImageView)findViewById(R.id.prohibido);
-        if(pos[colocar]!= 0){
-            switch(pos[colocar]){
-                case 1:if(respuestaA.getText().equals(solucion.getText())){
-                    a.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                }else{
-                    a.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                }
+
+    private void recolocar() {
+        Msolucion = (LinearLayout) findViewById(R.id.solucion);
+        RelativeLayout subcontenedor = (RelativeLayout) findViewById(R.id.subcontenedor);
+        ScrollView contenedor = (ScrollView) findViewById(R.id.contenedor);
+        ImageView prohibido = (ImageView) findViewById(R.id.prohibido);
+        if (pos[colocar] != 0) {
+            switch (pos[colocar]) {
+                case 1:
+                    if (respuestaA.getText().equals(solucion.getText())) {
+                        a.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
+                    } else {
+                        a.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
+                    }
                     break;
-                case 2:if(respuestaB.getText().equals(solucion.getText())){
-                    b.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                }else{
-                    b.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                }
+                case 2:
+                    if (respuestaB.getText().equals(solucion.getText())) {
+                        b.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
+                    } else {
+                        b.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
+                    }
                     break;
-                case 3:if(respuestaC.getText().equals(solucion.getText())){
-                    c.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                }else{
-                    c.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                }
+                case 3:
+                    if (respuestaC.getText().equals(solucion.getText())) {
+                        c.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
+                    } else {
+                        c.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
+                    }
                     break;
-                case 4:if(respuestaD.getText().equals(solucion.getText())){
-                    d.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                }else{
-                    d.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                }
+                case 4:
+                    if (respuestaD.getText().equals(solucion.getText())) {
+                        d.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
+                    } else {
+                        d.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
+                    }
             }
             a.setEnabled(false);
             b.setEnabled(false);
@@ -400,7 +724,7 @@ public class main_preguntas extends Activity {
             contenedor.setBackgroundColor(Color.parseColor("#E8F0F1"));
             prohibido.setVisibility(View.VISIBLE);
             prohibido.setImageResource(getResources().getIdentifier("drawable/" + "prohibido", null, getPackageName()));
-        }else{
+        } else {
             a.setEnabled(true);
             b.setEnabled(true);
             c.setEnabled(true);
@@ -410,6 +734,7 @@ public class main_preguntas extends Activity {
             prohibido.setVisibility(View.GONE);
         }
     }
+
     private void verificarRes(String opt) {
         Msolucion.setVisibility(View.VISIBLE);
         switch (opt) {
@@ -445,7 +770,8 @@ public class main_preguntas extends Activity {
                     c.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     d.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     fallos++;
-                }break;
+                }
+                break;
 
             case "c":
 
@@ -461,7 +787,8 @@ public class main_preguntas extends Activity {
                     b.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     d.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     fallos++;
-                }break;
+                }
+                break;
 
             case "d":
 
@@ -517,7 +844,7 @@ public class main_preguntas extends Activity {
     private void ocultaralante() {
         Button alante = (Button) findViewById(R.id.alante);
         Button atras = (Button) findViewById(R.id.atras);
-        if (cont.getCont() == 0) {
+        if (cont.getCont() == 1) {
             atras.setVisibility(View.INVISIBLE);
             alante.setVisibility(View.VISIBLE);
         } else {
@@ -576,12 +903,14 @@ public class main_preguntas extends Activity {
 
         cuenta.setText(cont.getCont() + 1 + "");
 
-        if(getIntent().getExtras().getString("tipo").equals("memoria")){
+        if (getIntent().getExtras().getString("tipo").equals("memoria")) {
             //PONER AQUI LA FUNCION DE MEMORIA
 
         }
 
-
+        if (cont.getCont() == -1) {
+            cont.setCont(0);
+        }
         if (imgPre[cont.getCont()].equals("")) {
             imgpregunta.setVisibility(View.GONE);
             imgpregunta.setImageResource(0);
