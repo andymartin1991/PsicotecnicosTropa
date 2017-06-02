@@ -287,7 +287,10 @@ public class main_preguntas extends Activity {
                 atras.setVisibility(View.INVISIBLE);
             } else {
                 alante.setVisibility(View.VISIBLE);
+            }
+            if(pos[cont.getCont()]< pregunta.length && pos[cont.getCont()]>0){
                 atras.setVisibility(View.VISIBLE);
+                alante.setVisibility(View.VISIBLE);
             }
         }
         alante.setOnClickListener(new View.OnClickListener() {
@@ -302,7 +305,10 @@ public class main_preguntas extends Activity {
                     atras.setVisibility(View.INVISIBLE);
                 } else {
                     alante.setVisibility(View.VISIBLE);
+                }
+                if(pos[cont.getCont()]< pregunta.length && pos[cont.getCont()]>0){
                     atras.setVisibility(View.VISIBLE);
+                    alante.setVisibility(View.VISIBLE);
                 }
             }
             }
@@ -349,7 +355,10 @@ public class main_preguntas extends Activity {
                         atras.setVisibility(View.INVISIBLE);
                     } else {
                         alante.setVisibility(View.VISIBLE);
+                    }
+                    if(pos[cont.getCont()]< pregunta.length && pos[cont.getCont()]>0){
                         atras.setVisibility(View.VISIBLE);
+                        alante.setVisibility(View.VISIBLE);
                     }
                 }
             }
@@ -369,7 +378,10 @@ public class main_preguntas extends Activity {
                         atras.setVisibility(View.INVISIBLE);
                     } else {
                         alante.setVisibility(View.VISIBLE);
+                    }
+                    if(pos[cont.getCont()]< pregunta.length && pos[cont.getCont()]>0){
                         atras.setVisibility(View.VISIBLE);
+                        alante.setVisibility(View.VISIBLE);
                     }
                 }
             }
@@ -389,7 +401,10 @@ public class main_preguntas extends Activity {
                         atras.setVisibility(View.INVISIBLE);
                     } else {
                         alante.setVisibility(View.VISIBLE);
+                    }
+                    if(pos[cont.getCont()]< pregunta.length && pos[cont.getCont()]>0){
                         atras.setVisibility(View.VISIBLE);
+                        alante.setVisibility(View.VISIBLE);
                     }
                 }
             }
@@ -409,7 +424,10 @@ public class main_preguntas extends Activity {
                         atras.setVisibility(View.INVISIBLE);
                     } else {
                         alante.setVisibility(View.VISIBLE);
+                    }
+                    if(pos[cont.getCont()]< pregunta.length && pos[cont.getCont()]>0){
                         atras.setVisibility(View.VISIBLE);
+                        alante.setVisibility(View.VISIBLE);
                     }
                 }
             }
@@ -454,7 +472,10 @@ public class main_preguntas extends Activity {
                                                 atras.setVisibility(View.INVISIBLE);
                                             } else {
                                                 alante.setVisibility(View.VISIBLE);
+                                            }
+                                            if(pos[cont.getCont()]< pregunta.length && pos[cont.getCont()]>0){
                                                 atras.setVisibility(View.VISIBLE);
+                                                alante.setVisibility(View.VISIBLE);
                                             }
                                         }
                                         contenedor.setVisibility(View.VISIBLE);
@@ -608,7 +629,10 @@ public class main_preguntas extends Activity {
                                                 atras.setVisibility(View.INVISIBLE);
                                             } else {
                                                 alante.setVisibility(View.VISIBLE);
-                                                atras.setVisibility(View.VISIBLE);
+                                            }
+                                            if(pos[cont.getCont()]< pregunta.length && pos[cont.getCont()]>0){
+                                                atras.setVisibility(View.INVISIBLE);
+                                                alante.setVisibility(View.VISIBLE);
                                             }
                                         }
                                         contenedor.setVisibility(View.VISIBLE);
@@ -629,7 +653,10 @@ public class main_preguntas extends Activity {
                         atras.setVisibility(View.INVISIBLE);
                     } else {
                         alante.setVisibility(View.VISIBLE);
+                    }
+                    if(pos[cont.getCont()]< pregunta.length && pos[cont.getCont()]>0){
                         atras.setVisibility(View.VISIBLE);
+                        alante.setVisibility(View.VISIBLE);
                     }
                 }
             }
@@ -954,6 +981,9 @@ public class main_preguntas extends Activity {
             if (cont.getCont() == pregunta.length) {
                 alante.setVisibility(View.INVISIBLE);
             }
+        }
+        if (getIntent().getExtras().getString("tipo").equals("memoria")) {
+            atras.setVisibility(View.INVISIBLE);
         }
     }
 
