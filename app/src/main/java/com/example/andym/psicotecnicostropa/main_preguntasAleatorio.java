@@ -4,6 +4,7 @@ package com.example.andym.psicotecnicostropa;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -20,7 +21,7 @@ public class main_preguntasAleatorio extends Activity {
 
 
     int arreglo = 0;
-
+    boolean memoria = false;
     Preguntas[] pre;
     contador cont = new contador();
     int[] pos;
@@ -755,9 +756,32 @@ public class main_preguntasAleatorio extends Activity {
                     imgA[num[i]], imgB[num[i]], imgC[num[i]], imgD[num[i]], imgSol[num[i]], imgExpli[num[i]], respulsada[num[i]]);
         }
 
-        Button alante = (Button) findViewById(R.id.alante);
-        Button atras = (Button) findViewById(R.id.atras);
+        final Button alante = (Button) findViewById(R.id.alante);
+        final Button atras = (Button) findViewById(R.id.atras);
         avanza();
+        calcularestado();
+        if(num[cont.getCont()] > inmemo && num[cont.getCont()] <=outmemo && respulsada[cont.getCont()]==0){
+            // PONER AQUI LA FUNCION DE MEMORIA
+            if (pos[cont.getCont()] == 0) {
+                RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
+                RelativeLayout bmemo = (RelativeLayout) findViewById(R.id.b);
+                RelativeLayout cmemo = (RelativeLayout) findViewById(R.id.c);
+                RelativeLayout dmemo = (RelativeLayout) findViewById(R.id.d);
+                TextView pregunta = (TextView) findViewById(R.id.pregunta);
+                ImageView imgpre = (ImageView) findViewById(R.id.imgpre);
+                amemo.setVisibility(View.GONE);
+                bmemo.setVisibility(View.GONE);
+                cmemo.setVisibility(View.GONE);
+                dmemo.setVisibility(View.GONE);
+                imgpre.setVisibility(View.VISIBLE);
+                pregunta.setVisibility(View.GONE);
+                alante.setVisibility(View.INVISIBLE);
+                atras.setVisibility(View.INVISIBLE);
+                esperarYCerrar(2000);
+                memoria = true;
+            }
+
+        }
         atras.setVisibility(View.INVISIBLE);
         alante.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -776,10 +800,58 @@ public class main_preguntasAleatorio extends Activity {
                     cont.setCont(cont.getCont() - 1);
                     limpiarelementos();
                     ocultaratras();
+                    if(num[cont.getCont()] > inmemo && num[cont.getCont()] <=outmemo && respulsada[cont.getCont()]==0){
+                        // PONER AQUI LA FUNCION DE MEMORIA
+                        if (pos[cont.getCont()] == 0) {
+                            RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
+                            RelativeLayout bmemo = (RelativeLayout) findViewById(R.id.b);
+                            RelativeLayout cmemo = (RelativeLayout) findViewById(R.id.c);
+                            RelativeLayout dmemo = (RelativeLayout) findViewById(R.id.d);
+                            TextView pregunta = (TextView) findViewById(R.id.pregunta);
+                            ImageView imgpre = (ImageView) findViewById(R.id.imgpre);
+                            Button alante = (Button) findViewById(R.id.alante);
+                            Button atras = (Button) findViewById(R.id.atras);
+                            amemo.setVisibility(View.GONE);
+                            bmemo.setVisibility(View.GONE);
+                            cmemo.setVisibility(View.GONE);
+                            dmemo.setVisibility(View.GONE);
+                            imgpre.setVisibility(View.VISIBLE);
+                            pregunta.setVisibility(View.GONE);
+                            alante.setVisibility(View.INVISIBLE);
+                            atras.setVisibility(View.INVISIBLE);
+                            esperarYCerrar(2000);
+                            memoria = true;
+                        }
+
+                    }
                     if (arreglo == 1) {
                         cont.setCont(cont.getCont() - 1);
                         limpiarelementos();
                         ocultaratras();
+                        if(num[cont.getCont()] > inmemo && num[cont.getCont()] <=outmemo && respulsada[cont.getCont()]==0){
+                            // PONER AQUI LA FUNCION DE MEMORIA
+                            if (pos[cont.getCont()] == 0) {
+                                RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
+                                RelativeLayout bmemo = (RelativeLayout) findViewById(R.id.b);
+                                RelativeLayout cmemo = (RelativeLayout) findViewById(R.id.c);
+                                RelativeLayout dmemo = (RelativeLayout) findViewById(R.id.d);
+                                TextView pregunta = (TextView) findViewById(R.id.pregunta);
+                                ImageView imgpre = (ImageView) findViewById(R.id.imgpre);
+                                Button alante = (Button) findViewById(R.id.alante);
+                                Button atras = (Button) findViewById(R.id.atras);
+                                amemo.setVisibility(View.GONE);
+                                bmemo.setVisibility(View.GONE);
+                                cmemo.setVisibility(View.GONE);
+                                dmemo.setVisibility(View.GONE);
+                                imgpre.setVisibility(View.VISIBLE);
+                                pregunta.setVisibility(View.GONE);
+                                alante.setVisibility(View.INVISIBLE);
+                                atras.setVisibility(View.INVISIBLE);
+                                esperarYCerrar(2000);
+                                memoria = true;
+                            }
+
+                        }
                     }
                     arreglo = 2;
                 } else {
@@ -787,6 +859,7 @@ public class main_preguntasAleatorio extends Activity {
                 }
                 colocar--;
                 recolocar();
+
             }
         });
 
@@ -799,6 +872,19 @@ public class main_preguntasAleatorio extends Activity {
                 verificarRes(opt);
                 pos[colocar] = 1;
                 calcularestado();
+                if(memoria){
+                    if(cont.getCont()<pregunta.length && cont.getCont()>0){
+                        alante.setVisibility(View.VISIBLE);
+                        atras.setVisibility(View.VISIBLE);
+                    }
+                    if(cont.getCont()-1==0){
+                        atras.setVisibility(View.INVISIBLE);
+                    }
+                    if(cont.getCont()-1==pregunta.length){
+                        alante.setVisibility(View.INVISIBLE);
+                    }
+                }
+
             }
         });
         b = (RelativeLayout) findViewById(R.id.b);
@@ -810,6 +896,18 @@ public class main_preguntasAleatorio extends Activity {
                 verificarRes(opt);
                 pos[colocar] = 2;
                 calcularestado();
+                if(memoria){
+                    if(cont.getCont()<pregunta.length && cont.getCont()>0){
+                        alante.setVisibility(View.VISIBLE);
+                        atras.setVisibility(View.VISIBLE);
+                    }
+                    if(cont.getCont()-1==0){
+                        atras.setVisibility(View.INVISIBLE);
+                    }
+                    if(cont.getCont()-1==pregunta.length){
+                        alante.setVisibility(View.INVISIBLE);
+                    }
+                }
             }
         });
         c = (RelativeLayout) findViewById(R.id.c);
@@ -821,6 +919,18 @@ public class main_preguntasAleatorio extends Activity {
                 verificarRes(opt);
                 pos[colocar] = 3;
                 calcularestado();
+                if(memoria){
+                    if(cont.getCont()<pregunta.length && cont.getCont()>0){
+                        alante.setVisibility(View.VISIBLE);
+                        atras.setVisibility(View.VISIBLE);
+                    }
+                    if(cont.getCont()-1==0){
+                        atras.setVisibility(View.INVISIBLE);
+                    }
+                    if(cont.getCont()-1==pregunta.length){
+                        alante.setVisibility(View.INVISIBLE);
+                    }
+                }
             }
         });
         d = (RelativeLayout) findViewById(R.id.d);
@@ -832,6 +942,18 @@ public class main_preguntasAleatorio extends Activity {
                 verificarRes(opt);
                 pos[colocar] = 4;
                 calcularestado();
+                if(memoria){
+                    if(cont.getCont()<pregunta.length && cont.getCont()>0){
+                        alante.setVisibility(View.VISIBLE);
+                        atras.setVisibility(View.VISIBLE);
+                    }
+                    if(cont.getCont()-1==0){
+                        atras.setVisibility(View.INVISIBLE);
+                    }
+                    if(cont.getCont()-1==pregunta.length){
+                        alante.setVisibility(View.INVISIBLE);
+                    }
+                }
             }
         });
 
@@ -998,11 +1120,60 @@ public class main_preguntasAleatorio extends Activity {
             limpiarelementos();
             cont.setCont(cont.getCont() + 1);
             ocultaralante();
+            if(num[cont.getCont()-1] > inmemo && num[cont.getCont()-1] <=outmemo && respulsada[cont.getCont()-1]==0){
+                // PONER AQUI LA FUNCION DE MEMORIA
+                if (pos[cont.getCont()-1] == 0) {
+                    RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
+                    RelativeLayout bmemo = (RelativeLayout) findViewById(R.id.b);
+                    RelativeLayout cmemo = (RelativeLayout) findViewById(R.id.c);
+                    RelativeLayout dmemo = (RelativeLayout) findViewById(R.id.d);
+                    TextView pregunta = (TextView) findViewById(R.id.pregunta);
+                    ImageView imgpre = (ImageView) findViewById(R.id.imgpre);
+                    Button alante = (Button) findViewById(R.id.alante);
+                    Button atras = (Button) findViewById(R.id.atras);
+                    amemo.setVisibility(View.GONE);
+                    bmemo.setVisibility(View.GONE);
+                    cmemo.setVisibility(View.GONE);
+                    dmemo.setVisibility(View.GONE);
+                    imgpre.setVisibility(View.VISIBLE);
+                    pregunta.setVisibility(View.GONE);
+                    alante.setVisibility(View.INVISIBLE);
+                    atras.setVisibility(View.INVISIBLE);
+                    esperarYCerrar(2000);
+                    memoria = true;
+                }
+
+            }
             if (arreglo == 2) {
                 limpiarelementos();
                 cont.setCont(cont.getCont() + 1);
                 ocultaralante();
+                if(num[cont.getCont()-1] > inmemo && num[cont.getCont()-1] <=outmemo && respulsada[cont.getCont()-1]==0){
+                    // PONER AQUI LA FUNCION DE MEMORIA
+                    if (pos[cont.getCont()-1] == 0) {
+                        RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
+                        RelativeLayout bmemo = (RelativeLayout) findViewById(R.id.b);
+                        RelativeLayout cmemo = (RelativeLayout) findViewById(R.id.c);
+                        RelativeLayout dmemo = (RelativeLayout) findViewById(R.id.d);
+                        TextView pregunta = (TextView) findViewById(R.id.pregunta);
+                        ImageView imgpre = (ImageView) findViewById(R.id.imgpre);
+                        Button alante = (Button) findViewById(R.id.alante);
+                        Button atras = (Button) findViewById(R.id.atras);
+                        amemo.setVisibility(View.GONE);
+                        bmemo.setVisibility(View.GONE);
+                        cmemo.setVisibility(View.GONE);
+                        dmemo.setVisibility(View.GONE);
+                        imgpre.setVisibility(View.VISIBLE);
+                        pregunta.setVisibility(View.GONE);
+                        alante.setVisibility(View.INVISIBLE);
+                        atras.setVisibility(View.INVISIBLE);
+                        esperarYCerrar(2000);
+                        memoria = true;
+                    }
+
+                }
             }
+
             arreglo = 1;
         } else {
             Toast.makeText(getApplicationContext(), "Fin", Toast.LENGTH_SHORT).show();
@@ -1077,13 +1248,6 @@ public class main_preguntasAleatorio extends Activity {
 
 
         cuenta.setText(cont.getCont() + 1 + "");
-
-        if(num[cont.getCont()] > inmemo && num[cont.getCont()] <=outmemo){
-            // PONER AQUI LA FUNCION DE MEMORIA
-
-
-
-        }
 
 
         if (pre[cont.getCont()].getImgPregunta().equals("")) {
@@ -1196,6 +1360,28 @@ public class main_preguntasAleatorio extends Activity {
             solucion.setText(pre[cont.getCont()].getSolu());
         }
 
+
+
+    }
+    public void esperarYCerrar(int milisegundos) {
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            public void run() {
+                RelativeLayout amemo = (RelativeLayout)findViewById(R.id.a);
+                RelativeLayout bmemo = (RelativeLayout)findViewById(R.id.b);
+                RelativeLayout cmemo = (RelativeLayout)findViewById(R.id.c);
+                RelativeLayout dmemo = (RelativeLayout)findViewById(R.id.d);
+                TextView pregunta = (TextView)findViewById(R.id.pregunta);
+                ImageView imgpre = (ImageView)findViewById(R.id.imgpre);
+                amemo.setVisibility(View.VISIBLE);
+                bmemo.setVisibility(View.VISIBLE);
+                cmemo.setVisibility(View.VISIBLE);
+                dmemo.setVisibility(View.VISIBLE);
+                imgpre.setVisibility(View.GONE);
+                pregunta.setVisibility(View.VISIBLE);
+
+            }
+        }, milisegundos);
     }
 
 }

@@ -285,11 +285,9 @@ public class main_preguntas extends Activity {
             if (pos[cont.getCont()-1] == 0) {
                 alante.setVisibility(View.INVISIBLE);
                 atras.setVisibility(View.INVISIBLE);
-            } else {
-                alante.setVisibility(View.VISIBLE);
-            }
-            if(pos[cont.getCont()]< pregunta.length && pos[cont.getCont()]>0){
-                atras.setVisibility(View.VISIBLE);
+            } else  if(cont.getCont()== pregunta.length){
+                alante.setVisibility(View.INVISIBLE);
+            }else{
                 alante.setVisibility(View.VISIBLE);
             }
         }
@@ -303,11 +301,9 @@ public class main_preguntas extends Activity {
                 if (pos[cont.getCont()-1] == 0) {
                     alante.setVisibility(View.INVISIBLE);
                     atras.setVisibility(View.INVISIBLE);
-                } else {
-                    alante.setVisibility(View.VISIBLE);
-                }
-                if(pos[cont.getCont()]< pregunta.length && pos[cont.getCont()]>0){
-                    atras.setVisibility(View.VISIBLE);
+                } else  if(cont.getCont()== pregunta.length){
+                    alante.setVisibility(View.INVISIBLE);
+                }else{
                     alante.setVisibility(View.VISIBLE);
                 }
             }
@@ -353,11 +349,9 @@ public class main_preguntas extends Activity {
                     if (pos[cont.getCont()-1] == 0) {
                         alante.setVisibility(View.INVISIBLE);
                         atras.setVisibility(View.INVISIBLE);
-                    } else {
-                        alante.setVisibility(View.VISIBLE);
-                    }
-                    if(pos[cont.getCont()]< pregunta.length && pos[cont.getCont()]>0){
-                        atras.setVisibility(View.VISIBLE);
+                    } else  if(cont.getCont()== pregunta.length){
+                        alante.setVisibility(View.INVISIBLE);
+                    }else{
                         alante.setVisibility(View.VISIBLE);
                     }
                 }
@@ -376,11 +370,9 @@ public class main_preguntas extends Activity {
                     if (pos[cont.getCont()-1] == 0) {
                         alante.setVisibility(View.INVISIBLE);
                         atras.setVisibility(View.INVISIBLE);
-                    } else {
-                        alante.setVisibility(View.VISIBLE);
-                    }
-                    if(pos[cont.getCont()]< pregunta.length && pos[cont.getCont()]>0){
-                        atras.setVisibility(View.VISIBLE);
+                    } else  if(cont.getCont()== pregunta.length){
+                        alante.setVisibility(View.INVISIBLE);
+                    }else{
                         alante.setVisibility(View.VISIBLE);
                     }
                 }
@@ -399,11 +391,9 @@ public class main_preguntas extends Activity {
                     if (pos[cont.getCont()-1] == 0) {
                         alante.setVisibility(View.INVISIBLE);
                         atras.setVisibility(View.INVISIBLE);
-                    } else {
-                        alante.setVisibility(View.VISIBLE);
-                    }
-                    if(pos[cont.getCont()]< pregunta.length && pos[cont.getCont()]>0){
-                        atras.setVisibility(View.VISIBLE);
+                    } else  if(cont.getCont()== pregunta.length){
+                        alante.setVisibility(View.INVISIBLE);
+                    }else{
                         alante.setVisibility(View.VISIBLE);
                     }
                 }
@@ -422,11 +412,9 @@ public class main_preguntas extends Activity {
                     if (pos[cont.getCont()-1] == 0) {
                         alante.setVisibility(View.INVISIBLE);
                         atras.setVisibility(View.INVISIBLE);
-                    } else {
-                        alante.setVisibility(View.VISIBLE);
-                    }
-                    if(pos[cont.getCont()]< pregunta.length && pos[cont.getCont()]>0){
-                        atras.setVisibility(View.VISIBLE);
+                    } else  if(cont.getCont()== pregunta.length){
+                        alante.setVisibility(View.INVISIBLE);
+                    }else{
                         alante.setVisibility(View.VISIBLE);
                     }
                 }
@@ -470,11 +458,9 @@ public class main_preguntas extends Activity {
                                             if (pos[cont.getCont()-1] == 0) {
                                                 alante.setVisibility(View.INVISIBLE);
                                                 atras.setVisibility(View.INVISIBLE);
-                                            } else {
-                                                alante.setVisibility(View.VISIBLE);
-                                            }
-                                            if(pos[cont.getCont()]< pregunta.length && pos[cont.getCont()]>0){
-                                                atras.setVisibility(View.VISIBLE);
+                                            } else  if(cont.getCont()== pregunta.length){
+                                                alante.setVisibility(View.INVISIBLE);
+                                            }else{
                                                 alante.setVisibility(View.VISIBLE);
                                             }
                                         }
@@ -627,11 +613,9 @@ public class main_preguntas extends Activity {
                                             if (pos[cont.getCont()-1] == 0) {
                                                 alante.setVisibility(View.INVISIBLE);
                                                 atras.setVisibility(View.INVISIBLE);
-                                            } else {
-                                                alante.setVisibility(View.VISIBLE);
-                                            }
-                                            if(pos[cont.getCont()]< pregunta.length && pos[cont.getCont()]>0){
-                                                atras.setVisibility(View.INVISIBLE);
+                                            } else  if(cont.getCont()== pregunta.length){
+                                                alante.setVisibility(View.INVISIBLE);
+                                            }else{
                                                 alante.setVisibility(View.VISIBLE);
                                             }
                                         }
@@ -651,11 +635,9 @@ public class main_preguntas extends Activity {
                     if (pos[cont.getCont()-1] == 0) {
                         alante.setVisibility(View.INVISIBLE);
                         atras.setVisibility(View.INVISIBLE);
-                    } else {
-                        alante.setVisibility(View.VISIBLE);
-                    }
-                    if(pos[cont.getCont()]< pregunta.length && pos[cont.getCont()]>0){
-                        atras.setVisibility(View.VISIBLE);
+                    } else  if(cont.getCont()== pregunta.length){
+                        alante.setVisibility(View.INVISIBLE);
+                    }else{
                         alante.setVisibility(View.VISIBLE);
                     }
                 }
