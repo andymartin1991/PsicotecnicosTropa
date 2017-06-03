@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.util.Log;
@@ -339,13 +340,13 @@ public class main_resultado_exam extends Activity {
 
                     toast1.show();
                 }else {
-                    int kk = Integer.parseInt(baremo.getText().toString());
+                    Double kk = Double.parseDouble(baremo.getText().toString());
                     if (kk > 0 && kk < 41) {
                         //poner aqui el texto a compartir
                         Intent intentCompartir = new Intent(Intent.ACTION_SEND);
                         intentCompartir.setType("text/plain");
                         intentCompartir.putExtra(Intent.EXTRA_SUBJECT, "Psicotécnicos Tropa");
-                        //intentCompartir.putExtra(Intent.EXTRA_STREAM,  Uri.parse("android.resource://com.naroh.tropaPsicotecnicoTrial/drawable/icono"));
+                        intentCompartir.putExtra(Intent.EXTRA_STREAM,  Uri.parse("android.resource://com.example.andym.psicotecnicostropa/drawable/ic_launcher"));
                         intentCompartir.putExtra(Intent.EXTRA_TEXT, getString(R.string.minota) + " " + notaredondeada + "\n" + getString(R.string.minotabare) + " " + notaredondeadabar + "\n" + "https://play.google.com/store/apps/details?id=com.naroh.tropaPsicotecnicoOficial");
                         intentCompartir.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(Intent.createChooser(intentCompartir, getString(R.string.compartiren)));

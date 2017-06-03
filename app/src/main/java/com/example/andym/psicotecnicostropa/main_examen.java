@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Handler;
 import android.os.Parcelable;
 import android.text.InputType;
 import android.view.KeyEvent;
@@ -59,7 +60,7 @@ public class main_examen extends Activity {
     ScrollView contenedor;
     int bloque = 1;
     int posi = 0;
-    int tempo = 300;
+    int tempo = 5;//300
     long cuentatiempo = tempo*1000;
     long guardatiempo = 0;
     CountDownTimer th;
@@ -116,7 +117,6 @@ public class main_examen extends Activity {
                 }
             }
         }
-
 
         pregunta = getResources().getStringArray(R.array.prenumerico);
         resA = getResources().getStringArray(R.array.resAnumerico);
@@ -357,6 +357,7 @@ public class main_examen extends Activity {
             public void onTick(long millisUntilFinished) {
                 cuentatras.setText(getString(R.string.tiemporesdta)+" " + millisUntilFinished / 1000+  " "+getString(R.string.segundos));
                 guardatiempo = millisUntilFinished;
+                memoria();
             }
 
             public void onFinish() {
@@ -372,6 +373,7 @@ public class main_examen extends Activity {
                                 posi = 0;
                                 bloque++;
                                 if(bloque == 8){
+                                    acabar();
                                     Intent resultado = new Intent(main_examen.this, main_resultado_exam.class);
                                     startActivity(resultado);
                                     overridePendingTransition(R.anim.transpain, R.anim.transpaout);
@@ -417,6 +419,7 @@ public class main_examen extends Activity {
                                             public void onTick(long millisUntilFinished) {
                                                 cuentatras.setText(getString(R.string.tiemporesdta) + " " + millisUntilFinished / 1000 + " " + getString(R.string.segundos));
                                                 guardatiempo = millisUntilFinished;
+                                                memoria();
                                             }
 
                                             public void onFinish() {
@@ -432,7 +435,7 @@ public class main_examen extends Activity {
                                                                 posi = 0;
                                                                 bloque++;
                                                                 if (bloque == 8) {
-
+                                                                    acabar();
                                                                     Intent resultado = new Intent(main_examen.this, main_resultado_exam.class);
                                                                     startActivity(resultado);
                                                                     overridePendingTransition(R.anim.transpain, R.anim.transpaout);
@@ -455,35 +458,15 @@ public class main_examen extends Activity {
                                     @SuppressWarnings("deprecation")
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
-                                        siguiente.setEnabled(true);
-                                        if (acabar == false) {
-                                            //th.cancel();
-                                            th = null;
-                                        }
-                                        acabar = true;
-                                        th = null;
-                                        arregloacabar = true;
+                                        acabar();
                                         Intent resultado = new Intent(main_examen.this, main_resultado_exam.class);
                                         startActivity(resultado);
                                         overridePendingTransition(R.anim.transpain, R.anim.transpaout);
-                                        //mostrar respuesta y desabilitar opciones
-
-
-                                        a.setEnabled(false);
-                                        b.setEnabled(false);
-                                        c.setEnabled(false);
-                                        d.setEnabled(false);
-                                        Msolucion.setVisibility(View.VISIBLE);
-                                        contenedor.setBackgroundColor(Color.parseColor("#E8F0F1"));
-                                        ImageView prohibido = (ImageView)findViewById(R.id.prohibido);
-                                        prohibido.setVisibility(View.VISIBLE);
-                                        TextView cuentatras = (TextView)findViewById(R.id.cuentatras);
-                                        cuentatras.setVisibility(View.GONE);
-                                        prohibido.setImageResource(getResources().getIdentifier("drawable/" + "prohibido", null, getPackageName()));
 
                                     }
                                 }).create().show();
                     }else{
+                        acabar();
                         Intent resultado = new Intent(main_examen.this, main_resultado_exam.class);
                         startActivity(resultado);
                         overridePendingTransition(R.anim.transpain, R.anim.transpaout);
@@ -512,6 +495,7 @@ public class main_examen extends Activity {
                                                 cuentatras.setText(getString(R.string.tiemporesdta)+" " + millisUntilFinished / 1000+  " "+getString(R.string.segundos));
                                                 guardatiempo = millisUntilFinished;
                                                 siguiente.setEnabled(true);
+                                                memoria();
                                             }
 
                                             public void onFinish() {
@@ -527,7 +511,7 @@ public class main_examen extends Activity {
                                                                 posi = 0;
                                                                 bloque++;
                                                                 if(bloque == 8){
-
+                                                                    acabar();
                                                                     Intent resultado = new Intent(main_examen.this, main_resultado_exam.class);
                                                                     startActivity(resultado);
                                                                     overridePendingTransition(R.anim.transpain, R.anim.transpaout);
@@ -540,6 +524,7 @@ public class main_examen extends Activity {
                                                                     th.start();
                                                                 }
                                                                 siguiente.setEnabled(true);
+
                                                             }
                                                         }).create().show();
 
@@ -563,6 +548,7 @@ public class main_examen extends Activity {
                                                 public void onTick(long millisUntilFinished) {
                                                     cuentatras.setText(getString(R.string.tiemporesdta)+" " + millisUntilFinished / 1000+  " "+getString(R.string.segundos));
                                                     guardatiempo = millisUntilFinished;
+                                                    memoria();
                                                 }
 
                                                 public void onFinish() {
@@ -578,6 +564,7 @@ public class main_examen extends Activity {
                                                                     posi = 0;
                                                                     bloque++;
                                                                     if(bloque == 8){
+                                                                        acabar();
                                                                         Intent resultado = new Intent(main_examen.this, main_resultado_exam.class);
                                                                         startActivity(resultado);
                                                                         overridePendingTransition(R.anim.transpain, R.anim.transpaout);
@@ -596,6 +583,7 @@ public class main_examen extends Activity {
                                         }
                                     }
                                 }).create().show();
+                        memoria();
                     }
                 }else{
                     //cuando acabo el examen
@@ -615,6 +603,7 @@ public class main_examen extends Activity {
 
                 }
                 recolocar();
+                memoria();
             }
         });
 
@@ -1156,10 +1145,6 @@ public class main_examen extends Activity {
                 break;
             case 6:
                 bloq.setText(getString(R.string.memoria));
-                //PONER AQUI LA FUNCION DE MEMORIA
-
-
-
                 if (main_resultado_exam.bloquememoria[nabst[posi]].getImgPregunta().equals("")) {
                     imgenPre.setVisibility(View.GONE);
                     imgenPre.setImageResource(0);
@@ -1377,8 +1362,12 @@ public class main_examen extends Activity {
                         break;
                     case 7:main_resultado_exam.bloqueabstrapto[posi].setRespulsada(1);
                 }
-
-
+                Button alante = (Button)findViewById(R.id.alante);
+                alante.setVisibility(View.VISIBLE);
+                if(bloque != 6){
+                    Button atras = (Button)findViewById(R.id.atras);
+                    atras.setVisibility(View.VISIBLE);
+                }
             }
         });
         b = (RelativeLayout) findViewById(R.id.b);
@@ -1402,6 +1391,12 @@ public class main_examen extends Activity {
                     case 6:main_resultado_exam.bloquememoria[posi].setRespulsada(2);
                         break;
                     case 7:main_resultado_exam.bloqueabstrapto[posi].setRespulsada(2);
+                }
+                Button alante = (Button)findViewById(R.id.alante);
+                alante.setVisibility(View.VISIBLE);
+                if(bloque != 6){
+                    Button atras = (Button)findViewById(R.id.atras);
+                    atras.setVisibility(View.VISIBLE);
                 }
             }
         });
@@ -1427,6 +1422,12 @@ public class main_examen extends Activity {
                         break;
                     case 7:main_resultado_exam.bloqueabstrapto[posi].setRespulsada(3);
                 }
+                Button alante = (Button)findViewById(R.id.alante);
+                alante.setVisibility(View.VISIBLE);
+                if(bloque != 6){
+                    Button atras = (Button)findViewById(R.id.atras);
+                    atras.setVisibility(View.VISIBLE);
+                }
             }
         });
         d = (RelativeLayout) findViewById(R.id.d);
@@ -1450,6 +1451,12 @@ public class main_examen extends Activity {
                     case 6:main_resultado_exam.bloquememoria[posi].setRespulsada(4);
                         break;
                     case 7:main_resultado_exam.bloqueabstrapto[posi].setRespulsada(4);
+                }
+                Button alante = (Button)findViewById(R.id.alante);
+                alante.setVisibility(View.VISIBLE);
+                if(bloque != 6){
+                    Button atras = (Button)findViewById(R.id.atras);
+                    atras.setVisibility(View.VISIBLE);
                 }
             }
         });
@@ -1749,11 +1756,9 @@ public class main_examen extends Activity {
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             cuentatiempo = guardatiempo;
-            if(acabar ==false){
+            if(acabar == false) {
                 th.cancel();
                 th = null;
-            }
-            if(acabar == false) {
                 new AlertDialog.Builder(this)
                         .setIcon(R.drawable.pause)
                         .setTitle(getString(R.string.Pausa))
@@ -1782,6 +1787,7 @@ public class main_examen extends Activity {
                                                         posi = 0;
                                                         bloque++;
                                                         if (bloque == 8) {
+                                                            acabar();
                                                             Intent resultado = new Intent(main_examen.this, main_resultado_exam.class);
                                                             startActivity(resultado);
                                                             overridePendingTransition(R.anim.transpain, R.anim.transpaout);
@@ -1791,6 +1797,7 @@ public class main_examen extends Activity {
                                                             cuentabloque.setText(bloque + "/7");
                                                             cuentatiempo = tempo * 1000;
                                                             th.start();
+                                                            memoria();
                                                         }
                                                     }
                                                 }).create().show();
@@ -1821,5 +1828,115 @@ public class main_examen extends Activity {
 
     }
 
+    public void esperarYCerrar(int milisegundos) {
+        if(posi == 0){
+            cuentatiempo = tempo*1000;
+            cuentatras.setText(getString(R.string.tiemporesdta) + " " + ((cuentatiempo / 1000)-1) + " " + getString(R.string.segundos));
+        }else {
+            cuentatiempo = guardatiempo;
+        }
+        th.cancel();
+        th = null;
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            public void run() {
+                RelativeLayout amemo = (RelativeLayout)findViewById(R.id.a);
+                RelativeLayout bmemo = (RelativeLayout)findViewById(R.id.b);
+                RelativeLayout cmemo = (RelativeLayout)findViewById(R.id.c);
+                RelativeLayout dmemo = (RelativeLayout)findViewById(R.id.d);
+                TextView pregunta = (TextView)findViewById(R.id.pregunta);
+                ImageView imgpre = (ImageView)findViewById(R.id.imgpre);
+                amemo.setVisibility(View.VISIBLE);
+                bmemo.setVisibility(View.VISIBLE);
+                cmemo.setVisibility(View.VISIBLE);
+                dmemo.setVisibility(View.VISIBLE);
+                imgpre.setVisibility(View.GONE);
+                pregunta.setVisibility(View.VISIBLE);
+                th = new CountDownTimer(cuentatiempo, 1000) {
+                    public void onTick(long millisUntilFinished) {
+                        cuentatras.setText(getString(R.string.tiemporesdta) + " " + millisUntilFinished / 1000 + " " + getString(R.string.segundos));
+                        guardatiempo = millisUntilFinished;
+                    }
 
+                    public void onFinish() {
+                        cuentatras.setText(getString(R.string.tiemporesdta) + " " + "0" + " " + getString(R.string.segundos));
+                        new AlertDialog.Builder(main_examen.this)
+                                .setTitle(getString(R.string.atencion))
+                                .setMessage(getString(R.string.tiempoterminado))
+                                .setCancelable(false)
+                                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                                    @SuppressWarnings("deprecation")
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        posi = 0;
+                                        bloque++;
+                                        if (bloque == 8) {
+                                            acabar();
+                                            Intent resultado = new Intent(main_examen.this, main_resultado_exam.class);
+                                            startActivity(resultado);
+                                            overridePendingTransition(R.anim.transpain, R.anim.transpaout);
+                                        } else {
+                                            imprimir(bloque, posi);
+                                            contador.setText((posi + 1) + "/15");
+                                            cuentabloque.setText(bloque + "/7");
+                                            cuentatiempo = tempo * 1000;
+                                            th.start();
+                                            memoria();
+                                        }
+                                    }
+                                }).create().show();
+
+                    }
+                }.start();
+            }
+        }, milisegundos);
+    }
+    private void memoria(){
+        if(bloque == 6 && !acabar && posi<15){
+            RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
+            RelativeLayout bmemo = (RelativeLayout) findViewById(R.id.b);
+            RelativeLayout cmemo = (RelativeLayout) findViewById(R.id.c);
+            RelativeLayout dmemo = (RelativeLayout) findViewById(R.id.d);
+            TextView pregunta = (TextView) findViewById(R.id.pregunta);
+            ImageView imgpre = (ImageView) findViewById(R.id.imgpre);
+            Button atras = (Button)findViewById(R.id.atras);
+            Button alante = (Button)findViewById(R.id.alante);
+            amemo.setVisibility(View.GONE);
+            bmemo.setVisibility(View.GONE);
+            cmemo.setVisibility(View.GONE);
+            dmemo.setVisibility(View.GONE);
+            imgpre.setVisibility(View.VISIBLE);
+            pregunta.setVisibility(View.GONE);
+            atras.setVisibility(View.INVISIBLE);
+            alante.setVisibility(View.INVISIBLE);
+            esperarYCerrar(2000);
+        }
+        if(bloque != 6){
+            Button atras = (Button)findViewById(R.id.atras);
+            atras.setVisibility(View.VISIBLE);
+            Button alante = (Button)findViewById(R.id.alante);
+            alante.setVisibility(View.VISIBLE);
+        }
+    }
+    private void acabar(){
+        siguiente.setEnabled(true);
+        if (acabar == false) {
+            //th.cancel();
+            th = null;
+        }
+        acabar = true;
+        th = null;
+        arregloacabar = true;
+        a.setEnabled(false);
+        b.setEnabled(false);
+        c.setEnabled(false);
+        d.setEnabled(false);
+        Msolucion.setVisibility(View.VISIBLE);
+        contenedor.setBackgroundColor(Color.parseColor("#E8F0F1"));
+        ImageView prohibido = (ImageView)findViewById(R.id.prohibido);
+        prohibido.setVisibility(View.VISIBLE);
+        TextView cuentatras = (TextView)findViewById(R.id.cuentatras);
+        cuentatras.setVisibility(View.GONE);
+        prohibido.setImageResource(getResources().getIdentifier("drawable/" + "prohibido", null, getPackageName()));
+    }
 }
