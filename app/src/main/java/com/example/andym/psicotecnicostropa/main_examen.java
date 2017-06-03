@@ -66,7 +66,7 @@ public class main_examen extends Activity {
     CountDownTimer th;
     boolean acabar = false, arregloacabar = false;
     Button siguiente;
-
+//hola
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_preguntas);
