@@ -425,27 +425,27 @@ public class main_preguntasFatiga extends Activity {
         if(pos[colocar]!= 0){
             switch(pos[colocar]){
                 case 1:if(respuestaA.getText().equals(solucion.getText())){
-                    a.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
+                    a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);//true
                 }else{
-                    a.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
+                    a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);//false
                 }
                     break;
                 case 2:if(respuestaB.getText().equals(solucion.getText())){
-                    b.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
+                    b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);//true
                 }else{
-                    b.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
+                    b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);//false
                 }
                     break;
                 case 3:if(respuestaC.getText().equals(solucion.getText())){
-                    c.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
+                    c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);//true
                 }else{
-                    c.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
+                    c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);//false
                 }
                     break;
                 case 4:if(respuestaD.getText().equals(solucion.getText())){
-                    d.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
+                    d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);//true
                 }else{
-                    d.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
+                    d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);//false
                 }
             }
             a.setEnabled(false);
@@ -472,14 +472,14 @@ public class main_preguntasFatiga extends Activity {
             case "a":
 
                 if (respuestaA.getText().equals(solucion.getText())) {
-                    a.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
+                    a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);//true
 
                     b.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     c.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     d.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     aciertos++;
                 } else {
-                    a.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
+                    a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);//false
                     b.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     c.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     d.setBackgroundResource(R.drawable.boton_opt_preguntas);
@@ -490,13 +490,13 @@ public class main_preguntasFatiga extends Activity {
             case "b":
 
                 if (respuestaB.getText().equals(solucion.getText())) {
-                    b.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
+                    b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);//true
                     a.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     c.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     d.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     aciertos++;
                 } else {
-                    b.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
+                    b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);//false
                     a.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     c.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     d.setBackgroundResource(R.drawable.boton_opt_preguntas);
@@ -506,13 +506,13 @@ public class main_preguntasFatiga extends Activity {
             case "c":
 
                 if (respuestaC.getText().equals(solucion.getText())) {
-                    c.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
+                    c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);//true
                     a.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     b.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     d.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     aciertos++;
                 } else {
-                    c.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
+                    c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);//false
                     a.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     b.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     d.setBackgroundResource(R.drawable.boton_opt_preguntas);
@@ -522,13 +522,13 @@ public class main_preguntasFatiga extends Activity {
             case "d":
 
                 if (respuestaD.getText().equals(solucion.getText())) {
-                    d.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
+                    d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);//true
                     a.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     b.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     c.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     aciertos++;
                 } else {
-                    d.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
+                    d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);//false
                     a.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     b.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     c.setBackgroundResource(R.drawable.boton_opt_preguntas);
