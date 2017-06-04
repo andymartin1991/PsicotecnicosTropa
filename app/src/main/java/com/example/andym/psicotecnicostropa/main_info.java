@@ -2,7 +2,11 @@ package com.example.andym.psicotecnicostropa;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+
+import java.io.File;
 
 /**
  * Created by andym on 04/06/2017.
@@ -16,14 +20,13 @@ public class main_info extends Activity {
         setContentView(R.layout.main_info);
 
 
-
-        TextView num = (TextView)findViewById(R.id.num);
-        TextView verb = (TextView)findViewById(R.id.verb);
-        TextView meca = (TextView)findViewById(R.id.meca);
-        TextView abs = (TextView)findViewById(R.id.abs);
-        TextView memo = (TextView)findViewById(R.id.memo);
-        TextView espa = (TextView)findViewById(R.id.espa);
-        TextView perc = (TextView)findViewById(R.id.perc);
+        TextView num = (TextView) findViewById(R.id.num);
+        TextView verb = (TextView) findViewById(R.id.verb);
+        TextView meca = (TextView) findViewById(R.id.meca);
+        TextView abs = (TextView) findViewById(R.id.abs);
+        TextView memo = (TextView) findViewById(R.id.memo);
+        TextView espa = (TextView) findViewById(R.id.espa);
+        TextView perc = (TextView) findViewById(R.id.perc);
 
 
         int pregunta = getResources().getStringArray(R.array.preverbal).length;
@@ -41,59 +44,59 @@ public class main_info extends Activity {
         int imgSol = getResources().getStringArray(R.array.imgSolverbal).length;
         int imgExpli = getResources().getStringArray(R.array.imgExpliverbal).length;
 
-            if(resA == pregunta){
-                if(resB == pregunta){
-                    if(resC == pregunta){
-                        if(resD == pregunta){
-                            if(sol == pregunta){
-                                if(expliSol == pregunta){
-                                    if(imgPre == pregunta){
-                                        if(imgA == pregunta){
-                                            if(imgB == pregunta){
-                                                if(imgC == pregunta){
-                                                    if(imgD == pregunta){
-                                                        if(imgSol == pregunta){
-                                                            if(imgExpli == pregunta){
-                                                                verb.setText(getString(R.string.verbal)+" ("+pregunta+") Correcto");
-                                                            }else{
-                                                                verb.setText("Incoherencias con imagenes de explicaciones "+imgExpli+" de (" +pregunta+")");
-                                                            }
-                                                        }else{
-                                                            verb.setText("Incoherencias con imagenes de soluciones "+imgSol+" de (" +pregunta+")");
+        if (resA == pregunta) {
+            if (resB == pregunta) {
+                if (resC == pregunta) {
+                    if (resD == pregunta) {
+                        if (sol == pregunta) {
+                            if (expliSol == pregunta) {
+                                if (imgPre == pregunta) {
+                                    if (imgA == pregunta) {
+                                        if (imgB == pregunta) {
+                                            if (imgC == pregunta) {
+                                                if (imgD == pregunta) {
+                                                    if (imgSol == pregunta) {
+                                                        if (imgExpli == pregunta) {
+                                                            verb.setText(getString(R.string.verbal) + " (" + pregunta + ") Correcto");
+                                                        } else {
+                                                            verb.setText("Incoherencias con imagenes de explicaciones " + imgExpli + " de (" + pregunta + ")");
                                                         }
-                                                    }else{
-                                                        verb.setText("Incoherencias con imagenes D "+imgD+" de (" +pregunta+")");
+                                                    } else {
+                                                        verb.setText("Incoherencias con imagenes de soluciones " + imgSol + " de (" + pregunta + ")");
                                                     }
-                                                }else{
-                                                    verb.setText("Incoherencias con imagenes C "+imgC+" de (" +pregunta+")");
+                                                } else {
+                                                    verb.setText("Incoherencias con imagenes D " + imgD + " de (" + pregunta + ")");
                                                 }
-                                            }else{
-                                                verb.setText("Incoherencias con imagenes B "+imgB+" de (" +pregunta+")");
+                                            } else {
+                                                verb.setText("Incoherencias con imagenes C " + imgC + " de (" + pregunta + ")");
                                             }
-                                        }else{
-                                            verb.setText("Incoherencias con imagenes A "+imgA+" de (" +pregunta+")");
+                                        } else {
+                                            verb.setText("Incoherencias con imagenes B " + imgB + " de (" + pregunta + ")");
                                         }
-                                    }else{
-                                        verb.setText("Incoherencias con imagenes de preguntas "+imgPre+" de (" +pregunta+")");
+                                    } else {
+                                        verb.setText("Incoherencias con imagenes A " + imgA + " de (" + pregunta + ")");
                                     }
-                                }else{
-                                    verb.setText("Incoherencias con explicacones de soluciones "+expliSol+" de (" +pregunta+")");
+                                } else {
+                                    verb.setText("Incoherencias con imagenes de preguntas " + imgPre + " de (" + pregunta + ")");
                                 }
-                            }else{
-                                verb.setText("Incoherencias con soluciones "+sol+" de (" +pregunta+")");
+                            } else {
+                                verb.setText("Incoherencias con explicacones de soluciones " + expliSol + " de (" + pregunta + ")");
                             }
-                        }else{
-                            verb.setText("Incoherencias con respuestas D "+resD+" de (" +pregunta+")");
+                        } else {
+                            verb.setText("Incoherencias con soluciones " + sol + " de (" + pregunta + ")");
                         }
-                    }else{
-                        verb.setText("Incoherencias con respuestas C "+resC+" de (" +pregunta+")");
+                    } else {
+                        verb.setText("Incoherencias con respuestas D " + resD + " de (" + pregunta + ")");
                     }
-                }else{
-                    verb.setText("Incoherencias con respuestas B "+resB+" de (" +pregunta+")");
+                } else {
+                    verb.setText("Incoherencias con respuestas C " + resC + " de (" + pregunta + ")");
                 }
-            }else{
-                verb.setText("Incoherencias con respuestas A "+resA+" de (" +pregunta+")");
+            } else {
+                verb.setText("Incoherencias con respuestas B " + resB + " de (" + pregunta + ")");
             }
+        } else {
+            verb.setText("Incoherencias con respuestas A " + resA + " de (" + pregunta + ")");
+        }
 
 
         pregunta = getResources().getStringArray(R.array.prenumerico).length;
@@ -111,60 +114,59 @@ public class main_info extends Activity {
         imgSol = getResources().getStringArray(R.array.imgSolnumerico).length;
         imgExpli = getResources().getStringArray(R.array.imgExplinumerico).length;
 
-        if(resA == pregunta){
-            if(resB == pregunta){
-                if(resC == pregunta){
-                    if(resD == pregunta){
-                        if(sol == pregunta){
-                            if(expliSol == pregunta){
-                                if(imgPre == pregunta){
-                                    if(imgA == pregunta){
-                                        if(imgB == pregunta){
-                                            if(imgC == pregunta){
-                                                if(imgD == pregunta){
-                                                    if(imgSol == pregunta){
-                                                        if(imgExpli == pregunta){
-                                                            num.setText(getString(R.string.numerico)+" ("+pregunta+") Correcto");
-                                                        }else{
-                                                            num.setText("Incoherencias con imagenes de explicaciones "+imgExpli+" de (" +pregunta+")");
+        if (resA == pregunta) {
+            if (resB == pregunta) {
+                if (resC == pregunta) {
+                    if (resD == pregunta) {
+                        if (sol == pregunta) {
+                            if (expliSol == pregunta) {
+                                if (imgPre == pregunta) {
+                                    if (imgA == pregunta) {
+                                        if (imgB == pregunta) {
+                                            if (imgC == pregunta) {
+                                                if (imgD == pregunta) {
+                                                    if (imgSol == pregunta) {
+                                                        if (imgExpli == pregunta) {
+                                                            num.setText(getString(R.string.numerico) + " (" + pregunta + ") Correcto");
+                                                        } else {
+                                                            num.setText("Incoherencias con imagenes de explicaciones " + imgExpli + " de (" + pregunta + ")");
                                                         }
-                                                    }else{
-                                                        num.setText("Incoherencias con imagenes de soluciones "+imgSol+" de (" +pregunta+")");
+                                                    } else {
+                                                        num.setText("Incoherencias con imagenes de soluciones " + imgSol + " de (" + pregunta + ")");
                                                     }
-                                                }else{
-                                                    num.setText("Incoherencias con imagenes D "+imgD+" de (" +pregunta+")");
+                                                } else {
+                                                    num.setText("Incoherencias con imagenes D " + imgD + " de (" + pregunta + ")");
                                                 }
-                                            }else{
-                                                num.setText("Incoherencias con imagenes C "+imgC+" de (" +pregunta+")");
+                                            } else {
+                                                num.setText("Incoherencias con imagenes C " + imgC + " de (" + pregunta + ")");
                                             }
-                                        }else{
-                                            num.setText("Incoherencias con imagenes B "+imgB+" de (" +pregunta+")");
+                                        } else {
+                                            num.setText("Incoherencias con imagenes B " + imgB + " de (" + pregunta + ")");
                                         }
-                                    }else{
-                                        num.setText("Incoherencias con imagenes A "+imgA+" de (" +pregunta+")");
+                                    } else {
+                                        num.setText("Incoherencias con imagenes A " + imgA + " de (" + pregunta + ")");
                                     }
-                                }else{
-                                    num.setText("Incoherencias con imagenes de preguntas "+imgPre+" de (" +pregunta+")");
+                                } else {
+                                    num.setText("Incoherencias con imagenes de preguntas " + imgPre + " de (" + pregunta + ")");
                                 }
-                            }else{
-                                num.setText("Incoherencias con explicacones de soluciones "+expliSol+" de (" +pregunta+")");
+                            } else {
+                                num.setText("Incoherencias con explicacones de soluciones " + expliSol + " de (" + pregunta + ")");
                             }
-                        }else{
-                            num.setText("Incoherencias con soluciones "+sol+" de (" +pregunta+")");
+                        } else {
+                            num.setText("Incoherencias con soluciones " + sol + " de (" + pregunta + ")");
                         }
-                    }else{
-                        num.setText("Incoherencias con respuestas D "+resD+" de (" +pregunta+")");
+                    } else {
+                        num.setText("Incoherencias con respuestas D " + resD + " de (" + pregunta + ")");
                     }
-                }else{
-                    num.setText("Incoherencias con respuestas C "+resC+" de (" +pregunta+")");
+                } else {
+                    num.setText("Incoherencias con respuestas C " + resC + " de (" + pregunta + ")");
                 }
-            }else{
-                num.setText("Incoherencias con respuestas B "+resB+" de (" +pregunta+")");
+            } else {
+                num.setText("Incoherencias con respuestas B " + resB + " de (" + pregunta + ")");
             }
-        }else{
-            num.setText("Incoherencias con respuestas A "+resA+" de (" +pregunta+")");
+        } else {
+            num.setText("Incoherencias con respuestas A " + resA + " de (" + pregunta + ")");
         }
-
 
 
         pregunta = getResources().getStringArray(R.array.premecanico).length;
@@ -182,58 +184,58 @@ public class main_info extends Activity {
         imgSol = getResources().getStringArray(R.array.imgSolmecanico).length;
         imgExpli = getResources().getStringArray(R.array.imgExplimecanico).length;
 
-        if(resA == pregunta){
-            if(resB == pregunta){
-                if(resC == pregunta){
-                    if(resD == pregunta){
-                        if(sol == pregunta){
-                            if(expliSol == pregunta){
-                                if(imgPre == pregunta){
-                                    if(imgA == pregunta){
-                                        if(imgB == pregunta){
-                                            if(imgC == pregunta){
-                                                if(imgD == pregunta){
-                                                    if(imgSol == pregunta){
-                                                        if(imgExpli == pregunta){
-                                                            meca.setText(getString(R.string.mecanico)+" ("+pregunta+") Correcto");
-                                                        }else{
-                                                            meca.setText("Incoherencias con imagenes de explicaciones "+imgExpli+" de (" +pregunta+")");
+        if (resA == pregunta) {
+            if (resB == pregunta) {
+                if (resC == pregunta) {
+                    if (resD == pregunta) {
+                        if (sol == pregunta) {
+                            if (expliSol == pregunta) {
+                                if (imgPre == pregunta) {
+                                    if (imgA == pregunta) {
+                                        if (imgB == pregunta) {
+                                            if (imgC == pregunta) {
+                                                if (imgD == pregunta) {
+                                                    if (imgSol == pregunta) {
+                                                        if (imgExpli == pregunta) {
+                                                            meca.setText(getString(R.string.mecanico) + " (" + pregunta + ") Correcto");
+                                                        } else {
+                                                            meca.setText("Incoherencias con imagenes de explicaciones " + imgExpli + " de (" + pregunta + ")");
                                                         }
-                                                    }else{
-                                                        meca.setText("Incoherencias con imagenes de soluciones "+imgSol+" de (" +pregunta+")");
+                                                    } else {
+                                                        meca.setText("Incoherencias con imagenes de soluciones " + imgSol + " de (" + pregunta + ")");
                                                     }
-                                                }else{
-                                                    meca.setText("Incoherencias con imagenes D "+imgD+" de (" +pregunta+")");
+                                                } else {
+                                                    meca.setText("Incoherencias con imagenes D " + imgD + " de (" + pregunta + ")");
                                                 }
-                                            }else{
-                                                meca.setText("Incoherencias con imagenes C "+imgC+" de (" +pregunta+")");
+                                            } else {
+                                                meca.setText("Incoherencias con imagenes C " + imgC + " de (" + pregunta + ")");
                                             }
-                                        }else{
-                                            meca.setText("Incoherencias con imagenes B "+imgB+" de (" +pregunta+")");
+                                        } else {
+                                            meca.setText("Incoherencias con imagenes B " + imgB + " de (" + pregunta + ")");
                                         }
-                                    }else{
-                                        meca.setText("Incoherencias con imagenes A "+imgA+" de (" +pregunta+")");
+                                    } else {
+                                        meca.setText("Incoherencias con imagenes A " + imgA + " de (" + pregunta + ")");
                                     }
-                                }else{
-                                    meca.setText("Incoherencias con imagenes de preguntas "+imgPre+" de (" +pregunta+")");
+                                } else {
+                                    meca.setText("Incoherencias con imagenes de preguntas " + imgPre + " de (" + pregunta + ")");
                                 }
-                            }else{
-                                meca.setText("Incoherencias con explicacones de soluciones "+expliSol+" de (" +pregunta+")");
+                            } else {
+                                meca.setText("Incoherencias con explicacones de soluciones " + expliSol + " de (" + pregunta + ")");
                             }
-                        }else{
-                            meca.setText("Incoherencias con soluciones "+sol+" de (" +pregunta+")");
+                        } else {
+                            meca.setText("Incoherencias con soluciones " + sol + " de (" + pregunta + ")");
                         }
-                    }else{
-                        meca.setText("Incoherencias con respuestas D "+resD+" de (" +pregunta+")");
+                    } else {
+                        meca.setText("Incoherencias con respuestas D " + resD + " de (" + pregunta + ")");
                     }
-                }else{
-                    meca.setText("Incoherencias con respuestas C "+resC+" de (" +pregunta+")");
+                } else {
+                    meca.setText("Incoherencias con respuestas C " + resC + " de (" + pregunta + ")");
                 }
-            }else{
-                meca.setText("Incoherencias con respuestas B "+resB+" de (" +pregunta+")");
+            } else {
+                meca.setText("Incoherencias con respuestas B " + resB + " de (" + pregunta + ")");
             }
-        }else{
-            meca.setText("Incoherencias con respuestas A "+resA+" de (" +pregunta+")");
+        } else {
+            meca.setText("Incoherencias con respuestas A " + resA + " de (" + pregunta + ")");
         }
 
 
@@ -252,58 +254,58 @@ public class main_info extends Activity {
         imgSol = getResources().getStringArray(R.array.imgSolabstrapto).length;
         imgExpli = getResources().getStringArray(R.array.imgExpliabstrapto).length;
 
-        if(resA == pregunta){
-            if(resB == pregunta){
-                if(resC == pregunta){
-                    if(resD == pregunta){
-                        if(sol == pregunta){
-                            if(expliSol == pregunta){
-                                if(imgPre == pregunta){
-                                    if(imgA == pregunta){
-                                        if(imgB == pregunta){
-                                            if(imgC == pregunta){
-                                                if(imgD == pregunta){
-                                                    if(imgSol == pregunta){
-                                                        if(imgExpli == pregunta){
-                                                            abs.setText(getString(R.string.abstrapto)+" ("+pregunta+") Correcto");
-                                                        }else{
-                                                            abs.setText("Incoherencias con imagenes de explicaciones "+imgExpli+" de (" +pregunta+")");
+        if (resA == pregunta) {
+            if (resB == pregunta) {
+                if (resC == pregunta) {
+                    if (resD == pregunta) {
+                        if (sol == pregunta) {
+                            if (expliSol == pregunta) {
+                                if (imgPre == pregunta) {
+                                    if (imgA == pregunta) {
+                                        if (imgB == pregunta) {
+                                            if (imgC == pregunta) {
+                                                if (imgD == pregunta) {
+                                                    if (imgSol == pregunta) {
+                                                        if (imgExpli == pregunta) {
+                                                            abs.setText(getString(R.string.abstrapto) + " (" + pregunta + ") Correcto");
+                                                        } else {
+                                                            abs.setText("Incoherencias con imagenes de explicaciones " + imgExpli + " de (" + pregunta + ")");
                                                         }
-                                                    }else{
-                                                        abs.setText("Incoherencias con imagenes de soluciones "+imgSol+" de (" +pregunta+")");
+                                                    } else {
+                                                        abs.setText("Incoherencias con imagenes de soluciones " + imgSol + " de (" + pregunta + ")");
                                                     }
-                                                }else{
-                                                    abs.setText("Incoherencias con imagenes D "+imgD+" de (" +pregunta+")");
+                                                } else {
+                                                    abs.setText("Incoherencias con imagenes D " + imgD + " de (" + pregunta + ")");
                                                 }
-                                            }else{
-                                                abs.setText("Incoherencias con imagenes C "+imgC+" de (" +pregunta+")");
+                                            } else {
+                                                abs.setText("Incoherencias con imagenes C " + imgC + " de (" + pregunta + ")");
                                             }
-                                        }else{
-                                            abs.setText("Incoherencias con imagenes B "+imgB+" de (" +pregunta+")");
+                                        } else {
+                                            abs.setText("Incoherencias con imagenes B " + imgB + " de (" + pregunta + ")");
                                         }
-                                    }else{
-                                        abs.setText("Incoherencias con imagenes A "+imgA+" de (" +pregunta+")");
+                                    } else {
+                                        abs.setText("Incoherencias con imagenes A " + imgA + " de (" + pregunta + ")");
                                     }
-                                }else{
-                                    abs.setText("Incoherencias con imagenes de preguntas "+imgPre+" de (" +pregunta+")");
+                                } else {
+                                    abs.setText("Incoherencias con imagenes de preguntas " + imgPre + " de (" + pregunta + ")");
                                 }
-                            }else{
-                                abs.setText("Incoherencias con explicacones de soluciones "+expliSol+" de (" +pregunta+")");
+                            } else {
+                                abs.setText("Incoherencias con explicacones de soluciones " + expliSol + " de (" + pregunta + ")");
                             }
-                        }else{
-                            abs.setText("Incoherencias con soluciones "+sol+" de (" +pregunta+")");
+                        } else {
+                            abs.setText("Incoherencias con soluciones " + sol + " de (" + pregunta + ")");
                         }
-                    }else{
-                        abs.setText("Incoherencias con respuestas D "+resD+" de (" +pregunta+")");
+                    } else {
+                        abs.setText("Incoherencias con respuestas D " + resD + " de (" + pregunta + ")");
                     }
-                }else{
-                    abs.setText("Incoherencias con respuestas C "+resC+" de (" +pregunta+")");
+                } else {
+                    abs.setText("Incoherencias con respuestas C " + resC + " de (" + pregunta + ")");
                 }
-            }else{
-                abs.setText("Incoherencias con respuestas B "+resB+" de (" +pregunta+")");
+            } else {
+                abs.setText("Incoherencias con respuestas B " + resB + " de (" + pregunta + ")");
             }
-        }else{
-            abs.setText("Incoherencias con respuestas A "+resA+" de (" +pregunta+")");
+        } else {
+            abs.setText("Incoherencias con respuestas A " + resA + " de (" + pregunta + ")");
         }
 
 
@@ -322,58 +324,58 @@ public class main_info extends Activity {
         imgSol = getResources().getStringArray(R.array.imgSolmemoria).length;
         imgExpli = getResources().getStringArray(R.array.imgExplimemoria).length;
 
-        if(resA == pregunta){
-            if(resB == pregunta){
-                if(resC == pregunta){
-                    if(resD == pregunta){
-                        if(sol == pregunta){
-                            if(expliSol == pregunta){
-                                if(imgPre == pregunta){
-                                    if(imgA == pregunta){
-                                        if(imgB == pregunta){
-                                            if(imgC == pregunta){
-                                                if(imgD == pregunta){
-                                                    if(imgSol == pregunta){
-                                                        if(imgExpli == pregunta){
-                                                            memo.setText(getString(R.string.memoria)+" ("+pregunta+") Correcto");
-                                                        }else{
-                                                            memo.setText("Incoherencias con imagenes de explicaciones "+imgExpli+" de (" +pregunta+")");
+        if (resA == pregunta) {
+            if (resB == pregunta) {
+                if (resC == pregunta) {
+                    if (resD == pregunta) {
+                        if (sol == pregunta) {
+                            if (expliSol == pregunta) {
+                                if (imgPre == pregunta) {
+                                    if (imgA == pregunta) {
+                                        if (imgB == pregunta) {
+                                            if (imgC == pregunta) {
+                                                if (imgD == pregunta) {
+                                                    if (imgSol == pregunta) {
+                                                        if (imgExpli == pregunta) {
+                                                            memo.setText(getString(R.string.memoria) + " (" + pregunta + ") Correcto");
+                                                        } else {
+                                                            memo.setText("Incoherencias con imagenes de explicaciones " + imgExpli + " de (" + pregunta + ")");
                                                         }
-                                                    }else{
-                                                        memo.setText("Incoherencias con imagenes de soluciones "+imgSol+" de (" +pregunta+")");
+                                                    } else {
+                                                        memo.setText("Incoherencias con imagenes de soluciones " + imgSol + " de (" + pregunta + ")");
                                                     }
-                                                }else{
-                                                    memo.setText("Incoherencias con imagenes D "+imgD+" de (" +pregunta+")");
+                                                } else {
+                                                    memo.setText("Incoherencias con imagenes D " + imgD + " de (" + pregunta + ")");
                                                 }
-                                            }else{
-                                                memo.setText("Incoherencias con imagenes C "+imgC+" de (" +pregunta+")");
+                                            } else {
+                                                memo.setText("Incoherencias con imagenes C " + imgC + " de (" + pregunta + ")");
                                             }
-                                        }else{
-                                            memo.setText("Incoherencias con imagenes B "+imgB+" de (" +pregunta+")");
+                                        } else {
+                                            memo.setText("Incoherencias con imagenes B " + imgB + " de (" + pregunta + ")");
                                         }
-                                    }else{
-                                        memo.setText("Incoherencias con imagenes A "+imgA+" de (" +pregunta+")");
+                                    } else {
+                                        memo.setText("Incoherencias con imagenes A " + imgA + " de (" + pregunta + ")");
                                     }
-                                }else{
-                                    memo.setText("Incoherencias con imagenes de preguntas "+imgPre+" de (" +pregunta+")");
+                                } else {
+                                    memo.setText("Incoherencias con imagenes de preguntas " + imgPre + " de (" + pregunta + ")");
                                 }
-                            }else{
-                                memo.setText("Incoherencias con explicacones de soluciones "+expliSol+" de (" +pregunta+")");
+                            } else {
+                                memo.setText("Incoherencias con explicacones de soluciones " + expliSol + " de (" + pregunta + ")");
                             }
-                        }else{
-                            memo.setText("Incoherencias con soluciones "+sol+" de (" +pregunta+")");
+                        } else {
+                            memo.setText("Incoherencias con soluciones " + sol + " de (" + pregunta + ")");
                         }
-                    }else{
-                        memo.setText("Incoherencias con respuestas D "+resD+" de (" +pregunta+")");
+                    } else {
+                        memo.setText("Incoherencias con respuestas D " + resD + " de (" + pregunta + ")");
                     }
-                }else{
-                    memo.setText("Incoherencias con respuestas C "+resC+" de (" +pregunta+")");
+                } else {
+                    memo.setText("Incoherencias con respuestas C " + resC + " de (" + pregunta + ")");
                 }
-            }else{
-                memo.setText("Incoherencias con respuestas B "+resB+" de (" +pregunta+")");
+            } else {
+                memo.setText("Incoherencias con respuestas B " + resB + " de (" + pregunta + ")");
             }
-        }else{
-            memo.setText("Incoherencias con respuestas A "+resA+" de (" +pregunta+")");
+        } else {
+            memo.setText("Incoherencias con respuestas A " + resA + " de (" + pregunta + ")");
         }
 
         pregunta = getResources().getStringArray(R.array.preespacial).length;
@@ -391,58 +393,58 @@ public class main_info extends Activity {
         imgSol = getResources().getStringArray(R.array.imgSolespacial).length;
         imgExpli = getResources().getStringArray(R.array.imgExpliespacial).length;
 
-        if(resA == pregunta){
-            if(resB == pregunta){
-                if(resC == pregunta){
-                    if(resD == pregunta){
-                        if(sol == pregunta){
-                            if(expliSol == pregunta){
-                                if(imgPre == pregunta){
-                                    if(imgA == pregunta){
-                                        if(imgB == pregunta){
-                                            if(imgC == pregunta){
-                                                if(imgD == pregunta){
-                                                    if(imgSol == pregunta){
-                                                        if(imgExpli == pregunta){
-                                                            espa.setText(getString(R.string.espacial)+" ("+pregunta+") Correcto");
-                                                        }else{
-                                                            espa.setText("Incoherencias con imagenes de explicaciones "+imgExpli+" de (" +pregunta+")");
+        if (resA == pregunta) {
+            if (resB == pregunta) {
+                if (resC == pregunta) {
+                    if (resD == pregunta) {
+                        if (sol == pregunta) {
+                            if (expliSol == pregunta) {
+                                if (imgPre == pregunta) {
+                                    if (imgA == pregunta) {
+                                        if (imgB == pregunta) {
+                                            if (imgC == pregunta) {
+                                                if (imgD == pregunta) {
+                                                    if (imgSol == pregunta) {
+                                                        if (imgExpli == pregunta) {
+                                                            espa.setText(getString(R.string.espacial) + " (" + pregunta + ") Correcto");
+                                                        } else {
+                                                            espa.setText("Incoherencias con imagenes de explicaciones " + imgExpli + " de (" + pregunta + ")");
                                                         }
-                                                    }else{
-                                                        espa.setText("Incoherencias con imagenes de soluciones "+imgSol+" de (" +pregunta+")");
+                                                    } else {
+                                                        espa.setText("Incoherencias con imagenes de soluciones " + imgSol + " de (" + pregunta + ")");
                                                     }
-                                                }else{
-                                                    espa.setText("Incoherencias con imagenes D "+imgD+" de (" +pregunta+")");
+                                                } else {
+                                                    espa.setText("Incoherencias con imagenes D " + imgD + " de (" + pregunta + ")");
                                                 }
-                                            }else{
-                                                espa.setText("Incoherencias con imagenes C "+imgC+" de (" +pregunta+")");
+                                            } else {
+                                                espa.setText("Incoherencias con imagenes C " + imgC + " de (" + pregunta + ")");
                                             }
-                                        }else{
-                                            espa.setText("Incoherencias con imagenes B "+imgB+" de (" +pregunta+")");
+                                        } else {
+                                            espa.setText("Incoherencias con imagenes B " + imgB + " de (" + pregunta + ")");
                                         }
-                                    }else{
-                                        espa.setText("Incoherencias con imagenes A "+imgA+" de (" +pregunta+")");
+                                    } else {
+                                        espa.setText("Incoherencias con imagenes A " + imgA + " de (" + pregunta + ")");
                                     }
-                                }else{
-                                    espa.setText("Incoherencias con imagenes de preguntas "+imgPre+" de (" +pregunta+")");
+                                } else {
+                                    espa.setText("Incoherencias con imagenes de preguntas " + imgPre + " de (" + pregunta + ")");
                                 }
-                            }else{
-                                espa.setText("Incoherencias con explicacones de soluciones "+expliSol+" de (" +pregunta+")");
+                            } else {
+                                espa.setText("Incoherencias con explicacones de soluciones " + expliSol + " de (" + pregunta + ")");
                             }
-                        }else{
-                            espa.setText("Incoherencias con soluciones "+sol+" de (" +pregunta+")");
+                        } else {
+                            espa.setText("Incoherencias con soluciones " + sol + " de (" + pregunta + ")");
                         }
-                    }else{
-                        espa.setText("Incoherencias con respuestas D "+resD+" de (" +pregunta+")");
+                    } else {
+                        espa.setText("Incoherencias con respuestas D " + resD + " de (" + pregunta + ")");
                     }
-                }else{
-                    espa.setText("Incoherencias con respuestas C "+resC+" de (" +pregunta+")");
+                } else {
+                    espa.setText("Incoherencias con respuestas C " + resC + " de (" + pregunta + ")");
                 }
-            }else{
-                espa.setText("Incoherencias con respuestas B "+resB+" de (" +pregunta+")");
+            } else {
+                espa.setText("Incoherencias con respuestas B " + resB + " de (" + pregunta + ")");
             }
-        }else{
-            espa.setText("Incoherencias con respuestas A "+resA+" de (" +pregunta+")");
+        } else {
+            espa.setText("Incoherencias con respuestas A " + resA + " de (" + pregunta + ")");
         }
 
         pregunta = getResources().getStringArray(R.array.preperceptiva).length;
@@ -460,58 +462,274 @@ public class main_info extends Activity {
         imgSol = getResources().getStringArray(R.array.imgSolperceptiva).length;
         imgExpli = getResources().getStringArray(R.array.imgExpliperceptiva).length;
 
-        if(resA == pregunta){
-            if(resB == pregunta){
-                if(resC == pregunta){
-                    if(resD == pregunta){
-                        if(sol == pregunta){
-                            if(expliSol == pregunta){
-                                if(imgPre == pregunta){
-                                    if(imgA == pregunta){
-                                        if(imgB == pregunta){
-                                            if(imgC == pregunta){
-                                                if(imgD == pregunta){
-                                                    if(imgSol == pregunta){
-                                                        if(imgExpli == pregunta){
-                                                            perc.setText(getString(R.string.perceptiva)+" ("+pregunta+") Correcto");
-                                                        }else{
-                                                            perc.setText("Incoherencias con imagenes de explicaciones "+imgExpli+" de (" +pregunta+")");
+        if (resA == pregunta) {
+            if (resB == pregunta) {
+                if (resC == pregunta) {
+                    if (resD == pregunta) {
+                        if (sol == pregunta) {
+                            if (expliSol == pregunta) {
+                                if (imgPre == pregunta) {
+                                    if (imgA == pregunta) {
+                                        if (imgB == pregunta) {
+                                            if (imgC == pregunta) {
+                                                if (imgD == pregunta) {
+                                                    if (imgSol == pregunta) {
+                                                        if (imgExpli == pregunta) {
+                                                            perc.setText(getString(R.string.perceptiva) + " (" + pregunta + ") Correcto");
+                                                        } else {
+                                                            perc.setText("Incoherencias con imagenes de explicaciones " + imgExpli + " de (" + pregunta + ")");
                                                         }
-                                                    }else{
-                                                        perc.setText("Incoherencias con imagenes de soluciones "+imgSol+" de (" +pregunta+")");
+                                                    } else {
+                                                        perc.setText("Incoherencias con imagenes de soluciones " + imgSol + " de (" + pregunta + ")");
                                                     }
-                                                }else{
-                                                    perc.setText("Incoherencias con imagenes D "+imgD+" de (" +pregunta+")");
+                                                } else {
+                                                    perc.setText("Incoherencias con imagenes D " + imgD + " de (" + pregunta + ")");
                                                 }
-                                            }else{
-                                                perc.setText("Incoherencias con imagenes C "+imgC+" de (" +pregunta+")");
+                                            } else {
+                                                perc.setText("Incoherencias con imagenes C " + imgC + " de (" + pregunta + ")");
                                             }
-                                        }else{
-                                            perc.setText("Incoherencias con imagenes B "+imgB+" de (" +pregunta+")");
+                                        } else {
+                                            perc.setText("Incoherencias con imagenes B " + imgB + " de (" + pregunta + ")");
                                         }
-                                    }else{
-                                        perc.setText("Incoherencias con imagenes A "+imgA+" de (" +pregunta+")");
+                                    } else {
+                                        perc.setText("Incoherencias con imagenes A " + imgA + " de (" + pregunta + ")");
                                     }
-                                }else{
-                                    perc.setText("Incoherencias con imagenes de preguntas "+imgPre+" de (" +pregunta+")");
+                                } else {
+                                    perc.setText("Incoherencias con imagenes de preguntas " + imgPre + " de (" + pregunta + ")");
                                 }
-                            }else{
-                                perc.setText("Incoherencias con explicacones de soluciones "+expliSol+" de (" +pregunta+")");
+                            } else {
+                                perc.setText("Incoherencias con explicacones de soluciones " + expliSol + " de (" + pregunta + ")");
                             }
-                        }else{
-                            perc.setText("Incoherencias con soluciones "+sol+" de (" +pregunta+")");
+                        } else {
+                            perc.setText("Incoherencias con soluciones " + sol + " de (" + pregunta + ")");
                         }
-                    }else{
-                        perc.setText("Incoherencias con respuestas D "+resD+" de (" +pregunta+")");
+                    } else {
+                        perc.setText("Incoherencias con respuestas D " + resD + " de (" + pregunta + ")");
                     }
-                }else{
-                    perc.setText("Incoherencias con respuestas C "+resC+" de (" +pregunta+")");
+                } else {
+                    perc.setText("Incoherencias con respuestas C " + resC + " de (" + pregunta + ")");
                 }
-            }else{
-                perc.setText("Incoherencias con respuestas B "+resB+" de (" +pregunta+")");
+            } else {
+                perc.setText("Incoherencias con respuestas B " + resB + " de (" + pregunta + ")");
             }
-        }else{
-            perc.setText("Incoherencias con respuestas A "+resA+" de (" +pregunta+")");
+        } else {
+            perc.setText("Incoherencias con respuestas A " + resA + " de (" + pregunta + ")");
         }
+
+        final TextView dato = (TextView) findViewById(R.id.datos);
+        final TextView b = (TextView) findViewById(R.id.b);
+        final TextView c = (TextView) findViewById(R.id.c);
+        final TextView d = (TextView) findViewById(R.id.d);
+        final TextView e = (TextView) findViewById(R.id.e);
+        final TextView f = (TextView) findViewById(R.id.f);
+        final TextView g = (TextView) findViewById(R.id.g);
+        final TextView h = (TextView) findViewById(R.id.h);
+
+        final Button a1 = (Button)findViewById(R.id.a1);
+        final Button b1 = (Button)findViewById(R.id.b1);
+        final Button c1 = (Button)findViewById(R.id.c1);
+        final Button d1 = (Button)findViewById(R.id.d1);
+        final Button e1 = (Button)findViewById(R.id.e1);
+        final Button f1 = (Button)findViewById(R.id.f1);
+        final Button g1 = (Button)findViewById(R.id.g1);
+        final Button h1 = (Button)findViewById(R.id.h1);
+
+        dato.setVisibility(View.GONE);
+
+        if (datos("verbal") || datos("numerico") || datos("espacial") || datos("mecanico") || datos("perceptiva") || datos("memoria") || datos("abstrapto") || datobaremo()) {
+            if (datos("verbal")) {
+                dato.setVisibility(View.VISIBLE);
+                dato.setText("Archivos de datos de verbal encontrados");
+                a1.setVisibility(View.VISIBLE);
+            }
+            if (datos("numerico")) {
+                b.setVisibility(View.VISIBLE);
+                b.setText("Archivos de datos de numerico encontrados");
+                b1.setVisibility(View.VISIBLE);
+            }
+            if (datos("espacial")) {
+                c.setVisibility(View.VISIBLE);
+                c.setText("Archivos de datos de espacial encontrados");
+                c1.setVisibility(View.VISIBLE);
+            }
+            if (datos("mecanico")) {
+                d.setVisibility(View.VISIBLE);
+                d.setText("Archivos de datos de mecanico encontrados");
+                d1.setVisibility(View.VISIBLE);
+            }
+            if (datos("perceptiva")) {
+                e.setVisibility(View.VISIBLE);
+                e.setText("Archivos de datos de perceptiva encontrados");
+                e1.setVisibility(View.VISIBLE);
+            }
+            if (datos("memoria")) {
+                f.setVisibility(View.VISIBLE);
+                f.setText("Archivos de datos de memoria encontrados");
+                f1.setVisibility(View.VISIBLE);
+            }
+            if (datos("abstrapto")) {
+                g.setVisibility(View.VISIBLE);
+                g.setText("Archivos de datos de abstrapto encontrados");
+                g1.setVisibility(View.VISIBLE);
+            }
+            if(datobaremo()){
+                h.setVisibility(View.VISIBLE);
+                h.setText("Archivo de dato de baremo encontrados");
+                h1.setVisibility(View.VISIBLE);
+            }
+        } else {
+            dato.setVisibility(View.VISIBLE);
+            dato.setText("No se han encontrado archivos de datos guardado");
+        }
+
+
+        a1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                a1.setVisibility(View.GONE);
+                borrar("verbal");
+                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo()) {
+                    dato.setVisibility(View.VISIBLE);
+                    dato.setText("No se han encontrado archivos de datos guardado");
+                }else{
+                    dato.setVisibility(View.GONE);
+                }
+            }
+        });
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                b1.setVisibility(View.GONE);
+                b.setVisibility(View.GONE);
+                borrar("numerico");
+                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo()) {
+                    dato.setVisibility(View.VISIBLE);
+                    dato.setText("No se han encontrado archivos de datos guardado");
+                }
+            }
+        });
+        c1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                c1.setVisibility(View.GONE);
+                c.setVisibility(View.GONE);
+                borrar("espacial");
+                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo()) {
+                    dato.setVisibility(View.VISIBLE);
+                    dato.setText("No se han encontrado archivos de datos guardado");
+                }
+            }
+        });
+        d1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                d1.setVisibility(View.GONE);
+                d.setVisibility(View.GONE);
+                borrar("mecanico");
+                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo()) {
+                    dato.setVisibility(View.VISIBLE);
+                    dato.setText("No se han encontrado archivos de datos guardado");
+                }
+            }
+        });
+        e1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                e1.setVisibility(View.GONE);
+                e.setVisibility(View.GONE);
+                borrar("perceptiva");
+                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo()) {
+                    dato.setVisibility(View.VISIBLE);
+                    dato.setText("No se han encontrado archivos de datos guardado");
+                }
+            }
+        });
+        f1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                f1.setVisibility(View.GONE);
+                f.setVisibility(View.GONE);
+                borrar("memoria");
+                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo()) {
+                    dato.setVisibility(View.VISIBLE);
+                    dato.setText("No se han encontrado archivos de datos guardado");
+                }
+            }
+        });
+        g1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                g1.setVisibility(View.GONE);
+                g.setVisibility(View.GONE);
+                borrar("abstrapto");
+                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo()) {
+                    dato.setVisibility(View.VISIBLE);
+                    dato.setText("No se han encontrado archivos de datos guardado");
+                }
+            }
+        });
+        h1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                h1.setVisibility(View.GONE);
+                h.setVisibility(View.GONE);
+                borrarbar();
+                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo()) {
+                    dato.setVisibility(View.VISIBLE);
+                    dato.setText("No se han encontrado archivos de datos guardado");
+                }
+            }
+        });
+        String version = String.valueOf((BuildConfig.VERSION_CODE));
+        TextView versi = (TextView)findViewById(R.id.version);
+        versi.setText(version);
+
+    }
+
+    private boolean datos(String tipo) {
+        boolean encontrado = false;
+        File ruta_sd = getExternalFilesDir(null);
+        final File a = new File(ruta_sd.getAbsolutePath(), tipo + "cont");
+        final File b = new File(ruta_sd.getAbsolutePath(), tipo + "aciertos");
+        final File c = new File(ruta_sd.getAbsolutePath(), tipo + "fallos");
+        final File d = new File(ruta_sd.getAbsolutePath(), tipo + "colocar");
+        final File e = new File(ruta_sd.getAbsolutePath(), tipo + "pos");
+        final File f = new File(ruta_sd.getAbsolutePath(), tipo + "arreglo");
+
+        if (a.exists() || b.exists() || c.exists() || d.exists() || e.exists() || f.exists()) {
+            encontrado = true;
+        }
+        return encontrado;
+    }
+
+    private boolean datobaremo(){
+        boolean encontrado = false;
+        File ruta_sd = getExternalFilesDir(null);
+        File f = new File(ruta_sd.getAbsolutePath(), "baremo");
+        if(f.exists()){
+            encontrado = true;
+        }
+        return encontrado;
+    }
+
+    private void borrar(String tipo) {
+        File ruta_sd = getExternalFilesDir(null);
+        final File a = new File(ruta_sd.getAbsolutePath(), tipo + "cont");
+        final File b = new File(ruta_sd.getAbsolutePath(), tipo + "aciertos");
+        final File c = new File(ruta_sd.getAbsolutePath(), tipo + "fallos");
+        final File d = new File(ruta_sd.getAbsolutePath(), tipo + "colocar");
+        final File e = new File(ruta_sd.getAbsolutePath(), tipo + "pos");
+        final File f = new File(ruta_sd.getAbsolutePath(), tipo + "arreglo");
+        a.delete();
+        b.delete();
+        c.delete();
+        d.delete();
+        e.delete();
+        f.delete();
+    }
+    private void borrarbar() {
+        File ruta_sd = getExternalFilesDir(null);
+        File f = new File(ruta_sd.getAbsolutePath(), "baremo");
+        f.delete();
     }
 }

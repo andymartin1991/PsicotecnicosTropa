@@ -121,4 +121,6 @@
 
     <string name="estado">Estado</string>
     <string name="informacion">Información</string>
+    <string name="archivosdatos">Archivos de datos</string>
+    <string name="version">Versión</string>
 </resources>
