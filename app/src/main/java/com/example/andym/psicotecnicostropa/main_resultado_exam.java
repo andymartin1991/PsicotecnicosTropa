@@ -32,7 +32,7 @@ public class main_resultado_exam extends Activity {
 
     TextView mostrar, nota, notabar;
     EditText baremo;
-    Button calcular, compartir, introbar;
+    Button calcular, compartir, introbar, guardar;
     double bar = 0;
     double notasobre10;
     double notaredondeadabar;
@@ -91,6 +91,10 @@ public class main_resultado_exam extends Activity {
                 fallosVerbal++;
             }
         }
+        Preguntas.setAciertosVerbal(aciertosVerbal);
+        Preguntas.setFallosVerbal(fallosVerbal);
+        Preguntas.setSincontestarVerbal(sincontestarVerbal);
+
         int aciertosNumerico = 0;
         int fallosNumerico = 0;
         int sincontestarNumerico = 0;
@@ -116,6 +120,10 @@ public class main_resultado_exam extends Activity {
                 fallosNumerico++;
             }
         }
+        Preguntas.setAciertosNumerico(aciertosNumerico);
+        Preguntas.setFallosNumerico(fallosNumerico);
+        Preguntas.setSincontestarNumerico(sincontestarNumerico);
+
         int aciertosEspacial = 0;
         int fallosEspacial = 0;
         int sincontestarEspacial = 0;
@@ -141,6 +149,10 @@ public class main_resultado_exam extends Activity {
                 fallosEspacial++;
             }
         }
+        Preguntas.setAciertosEspacial(aciertosEspacial);
+        Preguntas.setFallosEspacial(fallosEspacial);
+        Preguntas.setSincontestarEspacial(sincontestarEspacial);
+
         int aciertosMecanico = 0;
         int fallosMecanico = 0;
         int sincontestarMecanico = 0;
@@ -166,6 +178,10 @@ public class main_resultado_exam extends Activity {
                 fallosMecanico++;
             }
         }
+        Preguntas.setAciertosMecanico(aciertosMecanico);
+        Preguntas.setFallosMecanico(fallosMecanico);
+        Preguntas.setSincontestarMecanico(sincontestarMecanico);
+
         int aciertosPerceptiva = 0;
         int fallosPerceptiva = 0;
         int sincontestarPerceptiva = 0;
@@ -191,6 +207,10 @@ public class main_resultado_exam extends Activity {
                 fallosPerceptiva++;
             }
         }
+        Preguntas.setAciertosPerceptiva(aciertosPerceptiva);
+        Preguntas.setFallosPerceptiva(fallosPerceptiva);
+        Preguntas.setSincontestarPerceptiva(sincontestarPerceptiva);
+
         int aciertosMemoria = 0;
         int fallosMemoria = 0;
         int sincontestarMemoria = 0;
@@ -216,6 +236,10 @@ public class main_resultado_exam extends Activity {
                 fallosMemoria++;
             }
         }
+        Preguntas.setAciertosMemoria(aciertosMemoria);
+        Preguntas.setFallosMemoria(fallosMemoria);
+        Preguntas.setSincontestarMemoria(sincontestarMemoria);
+
         int aciertosAbstrapto = 0;
         int fallosAbstrapto = 0;
         int sincontestarAbstrapto = 0;
@@ -241,6 +265,9 @@ public class main_resultado_exam extends Activity {
                 fallosAbstrapto++;
             }
         }
+        Preguntas.setAciertosAbstrapto(aciertosAbstrapto);
+        Preguntas.setFallosAbstrapto(fallosAbstrapto);
+        Preguntas.setSincontestarAbstrapto(sincontestarAbstrapto);
 
         notasobre10 =
                 ((((Double.parseDouble(String.valueOf(aciertosVerbal)) * 10) / 15) +
@@ -367,6 +394,33 @@ public class main_resultado_exam extends Activity {
             public void onClick(View v) {
                 startActivity(new Intent(main_resultado_exam.this, main_calculabaremo.class));
                 overridePendingTransition(R.anim.transpain, R.anim.transpaout);
+            }
+        });
+
+        guardar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(baremo.getText().toString().equals("")){
+                    Toast toast1 =
+                            Toast.makeText(getApplicationContext(),
+                                    getString(R.string.guardarresul), Toast.LENGTH_SHORT);
+
+                    toast1.show();
+                }else {
+                    Double kk = Double.parseDouble(baremo.getText().toString());
+                    if (kk > 0 && kk < 41) {
+                        //guardar el objeto
+
+
+
+                    } else {
+                        Toast toast1 =
+                                Toast.makeText(getApplicationContext(),
+                                        getString(R.string.guardarresul), Toast.LENGTH_SHORT);
+
+                        toast1.show();
+                    }
+                }
             }
         });
 

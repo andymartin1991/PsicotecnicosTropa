@@ -123,4 +123,5 @@
     <string name="informacion">Información</string>
     <string name="archivosdatos">Archivos de datos</string>
     <string name="version">Versión</string>
+    <string name="guardarresul">Necesitas introducir un baremo para guardar tu evolución</string>
 </resources>
