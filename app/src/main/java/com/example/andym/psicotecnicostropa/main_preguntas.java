@@ -763,7 +763,6 @@ public class main_preguntas extends Activity {
             } catch (Exception e) {
                 Toast toast2 = Toast.makeText(getApplicationContext(), getString(R.string.errormemo), Toast.LENGTH_SHORT);
                 toast2.show();
-                toast2.show();
             }
 
         } else {

@@ -32,6 +32,7 @@
         <activity android:name=".main_calculabaremo"></activity>
         <activity android:name=".main_preguntasAleatorio"></activity>
         <activity android:name=".main_info"></activity>
+        <activity android:name=".main_evolucion"></activity>
     </application>
 
 </manifest>

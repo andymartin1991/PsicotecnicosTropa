@@ -1,14 +1,10 @@
 package com.example.andym.psicotecnicostropa;
 
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,13 +12,19 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.andym.psicotecnicostropa.dto.Preguntas;
+import com.example.andym.psicotecnicostropa.dto.Notas;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.ObjectOutputStream;
 import java.io.OutputStreamWriter;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * Created by andym on 08/04/2017.
@@ -33,15 +35,13 @@ public class main_resultado_exam extends Activity {
     TextView mostrar, nota, notabar;
     EditText baremo;
     Button calcular, compartir, introbar, guardar;
-    double bar = 0;
-    double notasobre10;
-    double notaredondeadabar;
-    double baremoredondeado;
-    double notaredondeada;
+    Notas notas;
     static Preguntas[] bloqueverbal, bloquenumerico, bloqueespacial, bloquemecanico, bloqueperceptiva, bloquememoria, bloqueabstrapto;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_resultado_exam);
+
+        notas = new Notas();
 
         final String[] baremorecu = {""};
         try
@@ -91,9 +91,9 @@ public class main_resultado_exam extends Activity {
                 fallosVerbal++;
             }
         }
-        Preguntas.setAciertosVerbal(aciertosVerbal);
-        Preguntas.setFallosVerbal(fallosVerbal);
-        Preguntas.setSincontestarVerbal(sincontestarVerbal);
+        notas.setAciertosVerbal(aciertosVerbal);
+        notas.setFallosVerbal(fallosVerbal);
+        notas.setSincontestarVerbal(sincontestarVerbal);
 
         int aciertosNumerico = 0;
         int fallosNumerico = 0;
@@ -120,9 +120,9 @@ public class main_resultado_exam extends Activity {
                 fallosNumerico++;
             }
         }
-        Preguntas.setAciertosNumerico(aciertosNumerico);
-        Preguntas.setFallosNumerico(fallosNumerico);
-        Preguntas.setSincontestarNumerico(sincontestarNumerico);
+        notas.setAciertosNumerico(aciertosNumerico);
+        notas.setFallosNumerico(fallosNumerico);
+        notas.setSincontestarNumerico(sincontestarNumerico);
 
         int aciertosEspacial = 0;
         int fallosEspacial = 0;
@@ -149,9 +149,9 @@ public class main_resultado_exam extends Activity {
                 fallosEspacial++;
             }
         }
-        Preguntas.setAciertosEspacial(aciertosEspacial);
-        Preguntas.setFallosEspacial(fallosEspacial);
-        Preguntas.setSincontestarEspacial(sincontestarEspacial);
+        notas.setAciertosEspacial(aciertosEspacial);
+        notas.setFallosEspacial(fallosEspacial);
+        notas.setSincontestarEspacial(sincontestarEspacial);
 
         int aciertosMecanico = 0;
         int fallosMecanico = 0;
@@ -178,9 +178,9 @@ public class main_resultado_exam extends Activity {
                 fallosMecanico++;
             }
         }
-        Preguntas.setAciertosMecanico(aciertosMecanico);
-        Preguntas.setFallosMecanico(fallosMecanico);
-        Preguntas.setSincontestarMecanico(sincontestarMecanico);
+        notas.setAciertosMecanico(aciertosMecanico);
+        notas.setFallosMecanico(fallosMecanico);
+        notas.setSincontestarMecanico(sincontestarMecanico);
 
         int aciertosPerceptiva = 0;
         int fallosPerceptiva = 0;
@@ -207,9 +207,9 @@ public class main_resultado_exam extends Activity {
                 fallosPerceptiva++;
             }
         }
-        Preguntas.setAciertosPerceptiva(aciertosPerceptiva);
-        Preguntas.setFallosPerceptiva(fallosPerceptiva);
-        Preguntas.setSincontestarPerceptiva(sincontestarPerceptiva);
+        notas.setAciertosPerceptiva(aciertosPerceptiva);
+        notas.setFallosPerceptiva(fallosPerceptiva);
+        notas.setSincontestarPerceptiva(sincontestarPerceptiva);
 
         int aciertosMemoria = 0;
         int fallosMemoria = 0;
@@ -236,9 +236,9 @@ public class main_resultado_exam extends Activity {
                 fallosMemoria++;
             }
         }
-        Preguntas.setAciertosMemoria(aciertosMemoria);
-        Preguntas.setFallosMemoria(fallosMemoria);
-        Preguntas.setSincontestarMemoria(sincontestarMemoria);
+        notas.setAciertosMemoria(aciertosMemoria);
+        notas.setFallosMemoria(fallosMemoria);
+        notas.setSincontestarMemoria(sincontestarMemoria);
 
         int aciertosAbstrapto = 0;
         int fallosAbstrapto = 0;
@@ -265,11 +265,11 @@ public class main_resultado_exam extends Activity {
                 fallosAbstrapto++;
             }
         }
-        Preguntas.setAciertosAbstrapto(aciertosAbstrapto);
-        Preguntas.setFallosAbstrapto(fallosAbstrapto);
-        Preguntas.setSincontestarAbstrapto(sincontestarAbstrapto);
+        notas.setAciertosAbstrapto(aciertosAbstrapto);
+        notas.setFallosAbstrapto(fallosAbstrapto);
+        notas.setSincontestarAbstrapto(sincontestarAbstrapto);
 
-        notasobre10 =
+        notas.setNotasobre10
                 ((((Double.parseDouble(String.valueOf(aciertosVerbal)) * 10) / 15) +
                         ((Double.parseDouble(String.valueOf(aciertosNumerico)) * 10) / 15) +
                         ((Double.parseDouble(String.valueOf(aciertosEspacial)) * 10) / 15) +
@@ -277,7 +277,7 @@ public class main_resultado_exam extends Activity {
                         ((Double.parseDouble(String.valueOf(aciertosPerceptiva)) * 10) / 15) +
                         ((Double.parseDouble(String.valueOf(aciertosMemoria)) * 10) / 15) +
                         ((Double.parseDouble(String.valueOf(aciertosAbstrapto)) * 10) / 15)) / 7);
-        notaredondeada = redondearDecimales(notasobre10,1);
+        notas.setNotaredondeada(redondearDecimales(notas.getNotasobre10(),1));
         notabaremo();
         mostrar = (TextView)findViewById(R.id.mostrar);
         mostrar.setText(
@@ -293,15 +293,15 @@ public class main_resultado_exam extends Activity {
 
 
         nota = (TextView)findViewById(R.id.nota);
-        nota.setText(getString(R.string.sunotasobre10)+"\n"+notaredondeada);
+        nota.setText(getString(R.string.sunotasobre10)+"\n"+ notas.getNotaredondeada());
 
         notabar = (TextView)findViewById(R.id.notabar);
         try {
             if (!baremorecu[0].equals("")) {
                 baremo.setText(baremorecu[0]);
-                bar = Double.parseDouble(baremo.getText().toString());
+                notas.setBar(Double.parseDouble(baremo.getText().toString()));
                 notabaremo();
-                notabar.setText(getString(R.string.sunotaconbaremo) + "\n" + notaredondeadabar);
+                notabar.setText(getString(R.string.sunotaconbaremo) + "\n" + notas.getNotaredondeadabar());
             } else {
                 notabar.setText(getString(R.string.sunotaconbaremo) + "\n" + "0.0");
             }
@@ -325,9 +325,9 @@ public class main_resultado_exam extends Activity {
                 }else {
                     double kk = Double.parseDouble(baremo.getText().toString());
                     if (kk > 0 && kk < 41) {
-                        bar = Double.parseDouble(baremo.getText().toString());
+                        notas.setBar(Double.parseDouble(baremo.getText().toString()));
                         notabaremo();
-                        notabar.setText(getString(R.string.sunotaconbaremo) + "\n" + notaredondeadabar);
+                        notabar.setText(getString(R.string.sunotaconbaremo) + "\n" + notas.getNotaredondeadabar());
                         try
                         {
                             File ruta_sd = getExternalFilesDir(null);
@@ -374,7 +374,7 @@ public class main_resultado_exam extends Activity {
                         intentCompartir.setType("text/plain");
                         intentCompartir.putExtra(Intent.EXTRA_SUBJECT, "Psicotécnicos Tropa");
                         intentCompartir.putExtra(Intent.EXTRA_STREAM,  Uri.parse("android.resource://com.example.andym.psicotecnicostropa/drawable/ic_launcher"));
-                        intentCompartir.putExtra(Intent.EXTRA_TEXT, getString(R.string.minota) + " " + notaredondeada + "\n" + getString(R.string.minotabare) + " " + notaredondeadabar + "\n" + "https://play.google.com/store/apps/details?id=com.naroh.tropaPsicotecnicoOficial");
+                        intentCompartir.putExtra(Intent.EXTRA_TEXT, getString(R.string.minota) + " " + notas.getNotaredondeada() + "\n" + getString(R.string.minotabare) + " " + notas.getNotaredondeadabar() + "\n" + "https://play.google.com/store/apps/details?id=com.naroh.tropaPsicotecnicoOficial");
                         intentCompartir.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(Intent.createChooser(intentCompartir, getString(R.string.compartiren)));
                     } else {
@@ -397,6 +397,7 @@ public class main_resultado_exam extends Activity {
             }
         });
 
+        guardar = (Button)findViewById(R.id.guardar);
         guardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -409,10 +410,75 @@ public class main_resultado_exam extends Activity {
                 }else {
                     Double kk = Double.parseDouble(baremo.getText().toString());
                     if (kk > 0 && kk < 41) {
-                        //guardar el objeto
+                        if(notas.getNotaredondeadabar()!= 0) {
+                            //guardar el objeto
+                            // Obtenemos solamente la fecha pero usamos slash en lugar de guiones
+
+                            // Date puede se convertido a String con el método toString()
+                            // Usa una sintaxis general del tipo DD MM dd HH:mm:ss
+                            Date date = new Date();
+                            System.out.println(date.toString());
+
+                            // Se pueden definir formatos diferentes con la clase DateFormat
+                            // Obtenemos la fecha y la hora con el formato yyyy-MM-dd HH:mm:ss
+                            DateFormat fechaHora = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                            String convertido = fechaHora.format(date);
 
 
 
+                            File ruta_sd = getExternalFilesDir(null);
+                            File a = new File(ruta_sd.getAbsolutePath(), convertido+"bloqueverbalexamen");
+                            File b = new File(ruta_sd.getAbsolutePath(), convertido+"bloquenumericoexamen");
+                            File c = new File(ruta_sd.getAbsolutePath(), convertido+"bloqueespacialexamen");
+                            File d = new File(ruta_sd.getAbsolutePath(), convertido+"bloquemecanicoexamen");
+                            File e = new File(ruta_sd.getAbsolutePath(), convertido+"bloqueperceptivaexamen");
+                            File f = new File(ruta_sd.getAbsolutePath(), convertido+"bloquememoriaexamen");
+                            File g = new File(ruta_sd.getAbsolutePath(), convertido+"bloqueabstraptoexamen");
+                            File h = new File(ruta_sd.getAbsolutePath(), convertido+"notasexamen");
+                            try {
+                                ObjectOutputStream oosa = new ObjectOutputStream(new FileOutputStream(a));
+                                oosa.writeObject(bloqueverbal);
+                                oosa.close();
+                                ObjectOutputStream oosb = new ObjectOutputStream(new FileOutputStream(b));
+                                oosb.writeObject(bloquenumerico);
+                                oosb.close();
+                                ObjectOutputStream oosc = new ObjectOutputStream(new FileOutputStream(c));
+                                oosc.writeObject(bloqueespacial);
+                                oosc.close();
+                                ObjectOutputStream oosd = new ObjectOutputStream(new FileOutputStream(d));
+                                oosd.writeObject(bloquemecanico);
+                                oosd.close();
+                                ObjectOutputStream oose = new ObjectOutputStream(new FileOutputStream(e));
+                                oose.writeObject(bloqueperceptiva);
+                                oose.close();
+                                ObjectOutputStream oosf = new ObjectOutputStream(new FileOutputStream(f));
+                                oosf.writeObject(bloquememoria);
+                                oosf.close();
+                                ObjectOutputStream oosg = new ObjectOutputStream(new FileOutputStream(g));
+                                oosg.writeObject(bloqueabstrapto);
+                                oosg.close();
+                                ObjectOutputStream oosh = new ObjectOutputStream(new FileOutputStream(h));
+                                oosh.writeObject(notas);
+                                oosh.close();
+
+                                Toast toast1 =
+                                        Toast.makeText(getApplicationContext(), getString(R.string.guardado), Toast.LENGTH_SHORT);
+                                toast1.show();
+                            } catch (IOException ll) {
+                                Toast toast1 =
+                                        Toast.makeText(getApplicationContext(),
+                                                "Error al guardar su nota", Toast.LENGTH_SHORT);
+
+                                toast1.show();
+                            }
+
+                        }else{
+                            Toast toast1 =
+                                    Toast.makeText(getApplicationContext(),
+                                            "Necesitas calcular la nota con baremo", Toast.LENGTH_SHORT);
+
+                            toast1.show();
+                        }
                     } else {
                         Toast toast1 =
                                 Toast.makeText(getApplicationContext(),
@@ -427,11 +493,11 @@ public class main_resultado_exam extends Activity {
     }
 
     public void notabaremo(){
-        baremoredondeado = ((bar / 40) * 10) * 0.3;
-        double notabaremo = (notasobre10 * 0.7);
-        double a = redondearDecimales(baremoredondeado,5);
+        notas.setBaremoredondeado (((notas.getBar() / 40) * 10) * 0.3);
+        double notabaremo = (notas.getNotasobre10() * 0.7);
+        double a = redondearDecimales(notas.getBaremoredondeado(),5);
         double b = redondearDecimales(notabaremo,5);
-        notaredondeadabar = redondearDecimales(a+b,1);
+        notas.setNotaredondeadabar(redondearDecimales(a+b,1));
     }
     public static double redondearDecimales(double valorInicial, int numeroDecimales) {
         double parteEntera, resultado;
