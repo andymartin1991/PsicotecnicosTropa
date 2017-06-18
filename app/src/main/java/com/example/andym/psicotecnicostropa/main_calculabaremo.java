@@ -1,31 +1,16 @@
 package com.example.andym.psicotecnicostropa;
 
 import android.app.Activity;
-import android.app.ActivityManager;
-import android.content.ComponentName;
-import android.content.Context;
 import android.os.Bundle;
-import android.os.Environment;
 import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.io.OutputStreamWriter;
-import java.util.List;
-
-import static android.R.attr.checked;
-import static android.content.ContentValues.TAG;
 
 /**
  * Created by andym on 21/04/2017.
@@ -43,33 +28,30 @@ public class main_calculabaremo extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_calculabaremo);
 
-        mostrar = (TextView)findViewById(R.id.barcal);
-        mostrar.setText(getString(R.string.baremototal)+" "+puntos);
+        mostrar = (TextView) findViewById(R.id.barcal);
+        mostrar.setText(getString(R.string.baremototal) + " " + puntos);
 
-        calcular = (Button)findViewById(R.id.calcular);
+        calcular = (Button) findViewById(R.id.calcular);
         calcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                puntos = meriAInt + meriG1Int +  meriG25Int + meriG2Int + meriM1Int + meriM2Int + meriM3Int;
-                if(puntos>40){
-                    puntos=40;
+                puntos = meriAInt + meriG1Int + meriG25Int + meriG2Int + meriM1Int + meriM2Int + meriM3Int;
+                if (puntos > 40) {
+                    puntos = 40;
                 }
-                mostrar.setText(getString(R.string.baremototal)+" "+puntos);
-                try
-                {
+                mostrar.setText(getString(R.string.baremototal) + " " + puntos);
+                try {
                     File ruta_sd = getExternalFilesDir(null);
                     File f = new File(ruta_sd.getAbsolutePath(), "baremo");
                     OutputStreamWriter fout =
                             new OutputStreamWriter(
                                     new FileOutputStream(f));
 
-                    fout.write(puntos+"");
+                    fout.write(puntos + "");
                     fout.close();
                     System.out.println(ruta_sd);
                     System.out.println(f);
-                }
-                catch (Exception ex)
-                {
+                } catch (Exception ex) {
                     Log.e("Ficheros", "Error al escribir fichero a tarjeta SD");
                 }
             }
@@ -82,25 +64,25 @@ public class main_calculabaremo extends Activity {
 
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 // find which radio button is selected
-                if(checkedId == R.id.a1) {
+                if (checkedId == R.id.a1) {
                     meriAInt = 16;
-                } else if(checkedId == R.id.b1) {
+                } else if (checkedId == R.id.b1) {
                     meriAInt = 15;
-                }else if(checkedId == R.id.c1) {
+                } else if (checkedId == R.id.c1) {
                     meriAInt = 13;
-                }else if(checkedId == R.id.d1) {
+                } else if (checkedId == R.id.d1) {
                     meriAInt = 12;
-                }else if(checkedId == R.id.e1) {
+                } else if (checkedId == R.id.e1) {
                     meriAInt = 11;
-                }else if(checkedId == R.id.f1) {
+                } else if (checkedId == R.id.f1) {
                     meriAInt = 8;
-                }else if(checkedId == R.id.g1) {
+                } else if (checkedId == R.id.g1) {
                     meriAInt = 7;
-                }else if(checkedId == R.id.h1) {
+                } else if (checkedId == R.id.h1) {
                     meriAInt = 6;
-                }else if(checkedId == R.id.i1) {
+                } else if (checkedId == R.id.i1) {
                     meriAInt = 4;
-                }else if(checkedId == R.id.j1) {
+                } else if (checkedId == R.id.j1) {
                     meriAInt = 0;
                 }
             }
@@ -113,15 +95,15 @@ public class main_calculabaremo extends Activity {
 
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 // find which radio button is selected
-                if(checkedId == R.id.a1) {
+                if (checkedId == R.id.a1) {
                     meriG1Int = 9;
-                } else if(checkedId == R.id.b1) {
+                } else if (checkedId == R.id.b1) {
                     meriG1Int = 6;
-                }else if(checkedId == R.id.c1) {
+                } else if (checkedId == R.id.c1) {
                     meriG1Int = 3;
-                }else if(checkedId == R.id.d1) {
+                } else if (checkedId == R.id.d1) {
                     meriG1Int = 1;
-                }else if(checkedId == R.id.e1) {
+                } else if (checkedId == R.id.e1) {
                     meriG1Int = 0;
                 }
             }
@@ -134,9 +116,9 @@ public class main_calculabaremo extends Activity {
 
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 // find which radio button is selected
-                if(checkedId == R.id.a1) {
+                if (checkedId == R.id.a1) {
                     meriG25Int = 3;
-                } else if(checkedId == R.id.b1) {
+                } else if (checkedId == R.id.b1) {
                     meriG25Int = 0;
                 }
             }
@@ -149,13 +131,13 @@ public class main_calculabaremo extends Activity {
 
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 // find which radio button is selected
-                if(checkedId == R.id.a1) {
+                if (checkedId == R.id.a1) {
                     meriG2Int = 8;
-                } else if(checkedId == R.id.b1) {
+                } else if (checkedId == R.id.b1) {
                     meriG2Int = 5;
-                }else if(checkedId == R.id.c1) {
+                } else if (checkedId == R.id.c1) {
                     meriG2Int = 3;
-                }else if(checkedId == R.id.d1) {
+                } else if (checkedId == R.id.d1) {
                     meriG2Int = 0;
                 }
             }
@@ -168,15 +150,15 @@ public class main_calculabaremo extends Activity {
 
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 // find which radio button is selected
-                if(checkedId == R.id.a1) {
+                if (checkedId == R.id.a1) {
                     meriM1Int = 2;
-                } else if(checkedId == R.id.b1) {
+                } else if (checkedId == R.id.b1) {
                     meriM1Int = 1.5;
-                }else if(checkedId == R.id.c1) {
+                } else if (checkedId == R.id.c1) {
                     meriM1Int = 1;
-                }else if(checkedId == R.id.d1) {
+                } else if (checkedId == R.id.d1) {
                     meriM1Int = 0.25;
-                }else if(checkedId == R.id.e1) {
+                } else if (checkedId == R.id.e1) {
                     meriM1Int = 0;
                 }
             }
@@ -189,17 +171,17 @@ public class main_calculabaremo extends Activity {
 
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 // find which radio button is selected
-                if(checkedId == R.id.a1) {
+                if (checkedId == R.id.a1) {
                     meriM2Int = 2;
-                } else if(checkedId == R.id.b1) {
+                } else if (checkedId == R.id.b1) {
                     meriM2Int = 1.75;
-                }else if(checkedId == R.id.c1) {
+                } else if (checkedId == R.id.c1) {
                     meriM2Int = 1.5;
-                }else if(checkedId == R.id.d1) {
+                } else if (checkedId == R.id.d1) {
                     meriM1Int = 0.5;
-                }else if(checkedId == R.id.e1) {
+                } else if (checkedId == R.id.e1) {
                     meriM2Int = 0.25;
-                }else if(checkedId == R.id.f1) {
+                } else if (checkedId == R.id.f1) {
                     meriM2Int = 0;
                 }
             }
@@ -212,11 +194,11 @@ public class main_calculabaremo extends Activity {
 
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 // find which radio button is selected
-                if(checkedId == R.id.a1) {
+                if (checkedId == R.id.a1) {
                     meriM3Int = 0.5;
-                } else if(checkedId == R.id.b1) {
+                } else if (checkedId == R.id.b1) {
                     meriM3Int = 0.25;
-                }else if(checkedId == R.id.c1) {
+                } else if (checkedId == R.id.c1) {
                     meriM3Int = 0;
                 }
             }

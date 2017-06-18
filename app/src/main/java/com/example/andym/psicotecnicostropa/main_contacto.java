@@ -13,8 +13,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import static com.example.andym.psicotecnicostropa.R.styleable.View;
-
 /**
  * Created by xe63008 on 26/04/2017.
  */

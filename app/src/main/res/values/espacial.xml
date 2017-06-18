@@ -1,348 +1,625 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
+
     <array name="preespacial">
-        <!--001--><item>¿Cuál se corresponde con la imagen?</item>
-        <!--002--><item>¿Cómo quedaría el sobre formado?</item>
-        <!--003--><item>¿Cómo quedaría la pirámide?</item>
-        <!--004--><item>¿Cómo quedaría la figura?</item>
-        <!--005--><item>¿Cómo quedaría el cubo formado?</item>
-		<!--006--> <item>¿Cómo quedaría el cubo formado?</item>
-        <!--007--><item>¿Cuál corresponde a la figura?</item>
-        <!--008--><item>¿Cómo quedaría el cubo formado?</item>
-        <!--009--><item>¿Cuál se corresponde con la imagen?</item>
-        <!--010--><item>¿Cuál se corresponde con la imagen?</item>
-        <!--011--><item>¿Cuál corresponde a la figura?</item>
-        <!--012--><item>¿Cuál no coincide con las demás al girarlas?</item>
-        <!--013--><item>¿Cuál no coincide con las demás al girarlas?</item>
-        <!--014--><item>¿Cuál no coincide con las demás al girarlas?</item>
-        <!--015--><item>¿Cómo quedaría la figura?</item>
-        <!--016--><item>¿Cómo quedaría la pirámide?</item>
-        <!--017--><item>¿Cuál no coincide con las demás al girarlas?</item>
-        <!--018--><item>¿Cuál no coincide con las demás al girarlas?</item>
-        <!--019--><item>¿Qué imagen no se corresponde con las demás al girarlas?</item>
-        <!--020--><item>¿Qué imagen no se corresponde con las demás al girarlas?</item>
-        
+        <!--001-->
+        <item>¿Cuál se corresponde con la imagen?</item>
+        <!--002-->
+        <item>¿Cómo quedaría el sobre formado?</item>
+        <!--003-->
+        <item>¿Cómo quedaría la pirámide?</item>
+        <!--004-->
+        <item>¿Cómo quedaría la figura?</item>
+        <!--005-->
+        <item>¿Cómo quedaría el cubo formado?</item>
+        <!--006-->
+        <item>¿Cómo quedaría el cubo formado?</item>
+        <!--007-->
+        <item>¿Cuál corresponde a la figura?</item>
+        <!--008-->
+        <item>¿Cómo quedaría el cubo formado?</item>
+        <!--009-->
+        <item>¿Cuál se corresponde con la imagen?</item>
+        <!--010-->
+        <item>¿Cuál se corresponde con la imagen?</item>
+        <!--011-->
+        <item>¿Cuál corresponde a la figura?</item>
+        <!--012-->
+        <item>¿Cuál no coincide con las demás al girarlas?</item>
+        <!--013-->
+        <item>¿Cuál no coincide con las demás al girarlas?</item>
+        <!--014-->
+        <item>¿Cuál no coincide con las demás al girarlas?</item>
+        <!--015-->
+        <item>¿Cómo quedaría la figura?</item>
+        <!--016-->
+        <item>¿Cómo quedaría la pirámide?</item>
+        <!--017-->
+        <item>¿Cuál no coincide con las demás al girarlas?</item>
+        <!--018-->
+        <item>¿Cuál no coincide con las demás al girarlas?</item>
+        <!--019-->
+        <item>¿Qué imagen no se corresponde con las demás al girarlas?</item>
+        <!--020-->
+        <item>¿Qué imagen no se corresponde con las demás al girarlas?</item>
+
     </array>
-    
+
     <array name="resAespacial">
-        <!--001--><item>A)</item>
-        <!--002--><item>A)</item>
-        <!--003--><item>A)</item>
-        <!--004--><item>A)</item>
-        <!--005--><item>A)</item>
-		<!--006--><item>A)</item>
-        <!--007--><item>A)</item>
-        <!--008--><item>A)</item>
-        <!--009--><item>A)</item>
-        <!--010--><item>A)</item>
-        <!--011--><item>A)</item>
-        <!--012--><item>A)</item>
-        <!--013--><item>A)</item>
-        <!--014--><item>A)</item>
-        <!--015--><item>A)</item>
-        <!--016--><item>A)</item>
-        <!--017--><item>A)</item>
-        <!--018--><item>A)</item>
-        <!--019--><item>A)</item>
-        <!--020--><item>A)</item>
+        <!--001-->
+        <item>A)</item>
+        <!--002-->
+        <item>A)</item>
+        <!--003-->
+        <item>A)</item>
+        <!--004-->
+        <item>A)</item>
+        <!--005-->
+        <item>A)</item>
+        <!--006-->
+        <item>A)</item>
+        <!--007-->
+        <item>A)</item>
+        <!--008-->
+        <item>A)</item>
+        <!--009-->
+        <item>A)</item>
+        <!--010-->
+        <item>A)</item>
+        <!--011-->
+        <item>A)</item>
+        <!--012-->
+        <item>A)</item>
+        <!--013-->
+        <item>A)</item>
+        <!--014-->
+        <item>A)</item>
+        <!--015-->
+        <item>A)</item>
+        <!--016-->
+        <item>A)</item>
+        <!--017-->
+        <item>A)</item>
+        <!--018-->
+        <item>A)</item>
+        <!--019-->
+        <item>A)</item>
+        <!--020-->
+        <item>A)</item>
 
 
     </array>
-    
+
     <array name="resBespacial">
-        <!--001--><item>B)</item>
-        <!--002--><item>B)</item>
-        <!--003--><item>B)</item>
-        <!--004--><item>B)</item>
-        <!--005--><item>B)</item>
-		<!--006--><item>B)</item>
-        <!--007--><item>B)</item>
-        <!--008--><item>B)</item>
-        <!--009--><item>B)</item>
-        <!--010--><item>B)</item>
-        <!--011--><item>B)</item>
-        <!--012--><item>B)</item>
-        <!--013--><item>B)</item>
-        <!--014--><item>B)</item>
-        <!--015--><item>B)</item>
-        <!--016--><item>B)</item>
-        <!--017--><item>B)</item>
-        <!--018--><item>B)</item>
-        <!--019--><item>B)</item>
-        <!--020--><item>B)</item>
+        <!--001-->
+        <item>B)</item>
+        <!--002-->
+        <item>B)</item>
+        <!--003-->
+        <item>B)</item>
+        <!--004-->
+        <item>B)</item>
+        <!--005-->
+        <item>B)</item>
+        <!--006-->
+        <item>B)</item>
+        <!--007-->
+        <item>B)</item>
+        <!--008-->
+        <item>B)</item>
+        <!--009-->
+        <item>B)</item>
+        <!--010-->
+        <item>B)</item>
+        <!--011-->
+        <item>B)</item>
+        <!--012-->
+        <item>B)</item>
+        <!--013-->
+        <item>B)</item>
+        <!--014-->
+        <item>B)</item>
+        <!--015-->
+        <item>B)</item>
+        <!--016-->
+        <item>B)</item>
+        <!--017-->
+        <item>B)</item>
+        <!--018-->
+        <item>B)</item>
+        <!--019-->
+        <item>B)</item>
+        <!--020-->
+        <item>B)</item>
 
 
     </array>
-    
+
     <array name="resCespacial">
-        <!--001--><item>C)</item>
-        <!--002--><item>C)</item>
-        <!--003--><item>C)</item>
-        <!--004--><item>C)</item>
-        <!--005--><item>C)</item>
-		<!--006--><item>C)</item>
-        <!--007--><item>C)</item>
-        <!--008--><item>C)</item>
-        <!--009--><item>C)</item>
-        <!--010--><item>C)</item>
-        <!--011--><item>C)</item>
-        <!--012--><item>C)</item>
-        <!--013--><item>C)</item>
-        <!--014--><item>C)</item>
-        <!--015--><item>C)</item>
-        <!--016--><item>C)</item>
-        <!--017--><item>C)</item>
-        <!--018--><item>C)</item>
-        <!--019--><item>C)</item>
-        <!--020--><item>C)</item>
+        <!--001-->
+        <item>C)</item>
+        <!--002-->
+        <item>C)</item>
+        <!--003-->
+        <item>C)</item>
+        <!--004-->
+        <item>C)</item>
+        <!--005-->
+        <item>C)</item>
+        <!--006-->
+        <item>C)</item>
+        <!--007-->
+        <item>C)</item>
+        <!--008-->
+        <item>C)</item>
+        <!--009-->
+        <item>C)</item>
+        <!--010-->
+        <item>C)</item>
+        <!--011-->
+        <item>C)</item>
+        <!--012-->
+        <item>C)</item>
+        <!--013-->
+        <item>C)</item>
+        <!--014-->
+        <item>C)</item>
+        <!--015-->
+        <item>C)</item>
+        <!--016-->
+        <item>C)</item>
+        <!--017-->
+        <item>C)</item>
+        <!--018-->
+        <item>C)</item>
+        <!--019-->
+        <item>C)</item>
+        <!--020-->
+        <item>C)</item>
 
 
     </array>
-    
+
     <array name="resDespacial">
-        <!--001--><item>D)</item>
-        <!--002--><item>D)</item>
-        <!--003--><item>D)</item>
-        <!--004--><item>D)</item>
-        <!--005--><item>D)</item>
-		<!--006--><item>D)</item>
-        <!--007--><item>D)</item>
-        <!--008--><item>D)</item>
-        <!--009--><item>D)</item>
-        <!--010--><item />
-        <!--011--><item>D)</item>
-        <!--012--><item>D)</item>
-        <!--013--><item>D)</item>
-        <!--014--><item>D)</item>
-        <!--015--><item>D)</item>
-        <!--016--><item>D)</item>
-        <!--017--><item>D)</item>
-        <!--018--><item>D)</item>
-        <!--019--><item>D)</item>
-        <!--020--><item>D)</item>
+        <!--001-->
+        <item>D)</item>
+        <!--002-->
+        <item>D)</item>
+        <!--003-->
+        <item>D)</item>
+        <!--004-->
+        <item>D)</item>
+        <!--005-->
+        <item>D)</item>
+        <!--006-->
+        <item>D)</item>
+        <!--007-->
+        <item>D)</item>
+        <!--008-->
+        <item>D)</item>
+        <!--009-->
+        <item>D)</item>
+        <!--010-->
+        <item />
+        <!--011-->
+        <item>D)</item>
+        <!--012-->
+        <item>D)</item>
+        <!--013-->
+        <item>D)</item>
+        <!--014-->
+        <item>D)</item>
+        <!--015-->
+        <item>D)</item>
+        <!--016-->
+        <item>D)</item>
+        <!--017-->
+        <item>D)</item>
+        <!--018-->
+        <item>D)</item>
+        <!--019-->
+        <item>D)</item>
+        <!--020-->
+        <item>D)</item>
 
 
     </array>
-    
+
     <array name="solespacial">
-        <!--001--><item>D)</item>
-        <!--002--><item>C)</item>
-        <!--003--><item>D)</item>
-        <!--004--><item>A)</item>
-        <!--005--><item>B)</item>
-		<!--006--><item>A)</item>
-        <!--007--><item>A)</item>
-        <!--008--><item>A)</item>
-        <!--009--><item>D)</item>
-        <!--010--><item>B)</item>
-        <!--011--><item>A)</item>
-        <!--012--><item>C)</item>
-        <!--013--><item>D)</item>
-        <!--014--><item>C)</item>
-        <!--015--><item>A)</item>
-        <!--016--><item>B)</item>
-        <!--017--><item>A)</item>
-        <!--018--><item>B)</item>
-        <!--019--><item>C)</item>
-        <!--020--><item>B)</item>
+        <!--001-->
+        <item>D)</item>
+        <!--002-->
+        <item>C)</item>
+        <!--003-->
+        <item>D)</item>
+        <!--004-->
+        <item>A)</item>
+        <!--005-->
+        <item>B)</item>
+        <!--006-->
+        <item>A)</item>
+        <!--007-->
+        <item>A)</item>
+        <!--008-->
+        <item>A)</item>
+        <!--009-->
+        <item>D)</item>
+        <!--010-->
+        <item>B)</item>
+        <!--011-->
+        <item>A)</item>
+        <!--012-->
+        <item>C)</item>
+        <!--013-->
+        <item>D)</item>
+        <!--014-->
+        <item>C)</item>
+        <!--015-->
+        <item>A)</item>
+        <!--016-->
+        <item>B)</item>
+        <!--017-->
+        <item>A)</item>
+        <!--018-->
+        <item>B)</item>
+        <!--019-->
+        <item>C)</item>
+        <!--020-->
+        <item>B)</item>
 
 
-		
     </array>
-    
+
     <array name="expliSolespacial">
-        <!--001--><item></item>
-        <!--002--><item></item>
-        <!--003--><item></item>
-        <!--004--><item></item>
-        <!--005--><item></item>
-		<!--006--><item></item>
-        <!--007--><item>Tras doblar las puntas se queda como la imagen A.</item>
-        <!--008--><item></item>
-        <!--009--><item></item>
-        <!--010--><item></item>
-        <!--011--><item></item>
-        <!--012--><item></item>
-        <!--013--><item></item>
-        <!--014--><item></item>
-        <!--015--><item></item>
-        <!--016--><item></item>
-        <!--017--><item></item>
-        <!--018--><item></item>
-        <!--019--><item></item>
-        <!--020--><item></item>
+        <!--001-->
+        <item></item>
+        <!--002-->
+        <item></item>
+        <!--003-->
+        <item></item>
+        <!--004-->
+        <item></item>
+        <!--005-->
+        <item></item>
+        <!--006-->
+        <item></item>
+        <!--007-->
+        <item>Tras doblar las puntas se queda como la imagen A.</item>
+        <!--008-->
+        <item></item>
+        <!--009-->
+        <item></item>
+        <!--010-->
+        <item></item>
+        <!--011-->
+        <item></item>
+        <!--012-->
+        <item></item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item></item>
+        <!--015-->
+        <item></item>
+        <!--016-->
+        <item></item>
+        <!--017-->
+        <item></item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item></item>
+        <!--020-->
+        <item></item>
 
     </array>
-    
-    
-    
-    
+
+
     <array name="imgPreespacial">
-        <!--001--><item>espp001</item>
-        <!--002--><item>espp002</item>
-        <!--003--><item>espp003</item>
-        <!--004--><item>espp004</item>
-        <!--005--><item>espp005</item>
-		<!--006--><item>espp006</item>
-        <!--007--><item>espp007</item>
-        <!--008--><item>espp008</item>
-        <!--009--><item>espp009</item>
-        <!--010--><item>espp010</item>
-		<!--011--><item>espp011</item>
-        <!--012--><item></item>
-        <!--013--><item></item>
-        <!--014--><item></item>
-        <!--015--><item>espp015</item>
-		<!--016--><item>espp016</item>
-        <!--017--><item></item>
-        <!--018--><item></item>
-        <!--019--><item></item>
-        <!--020--><item></item>
+        <!--001-->
+        <item>espp001</item>
+        <!--002-->
+        <item>espp002</item>
+        <!--003-->
+        <item>espp003</item>
+        <!--004-->
+        <item>espp004</item>
+        <!--005-->
+        <item>espp005</item>
+        <!--006-->
+        <item>espp006</item>
+        <!--007-->
+        <item>espp007</item>
+        <!--008-->
+        <item>espp008</item>
+        <!--009-->
+        <item>espp009</item>
+        <!--010-->
+        <item>espp010</item>
+        <!--011-->
+        <item>espp011</item>
+        <!--012-->
+        <item></item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item></item>
+        <!--015-->
+        <item>espp015</item>
+        <!--016-->
+        <item>espp016</item>
+        <!--017-->
+        <item></item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item></item>
+        <!--020-->
+        <item></item>
 
     </array>
-    
+
     <array name="imgAespacial">
-        <!--001--><item>espp001ra</item>
-        <!--002--><item>espp002ra</item>
-        <!--003--><item>espp003ra</item>
-        <!--004--><item>espp004ra</item>
-        <!--005--><item>espp005ra</item>
-		<!--006--><item>espp006ra</item>
-        <!--007--><item>espp007ra</item>
-        <!--008--><item>espp008ra</item>
-        <!--009--><item>espp009ra</item>
-        <!--010--><item>espp010ra</item>
-        <!--011--><item>espp011ra</item>
-        <!--012--><item>espp012ra</item>
-        <!--013--><item>espp013ra</item>
-        <!--014--><item>espp014ra</item>
-        <!--015--><item>espp015ra</item>
-        <!--016--><item>espp016ra</item>
-        <!--017--><item>espp017ra</item>
-        <!--018--><item>espp018ra</item>
-        <!--019--><item>espp019ra</item>
-        <!--020--><item>espp020ra</item>
+        <!--001-->
+        <item>espp001ra</item>
+        <!--002-->
+        <item>espp002ra</item>
+        <!--003-->
+        <item>espp003ra</item>
+        <!--004-->
+        <item>espp004ra</item>
+        <!--005-->
+        <item>espp005ra</item>
+        <!--006-->
+        <item>espp006ra</item>
+        <!--007-->
+        <item>espp007ra</item>
+        <!--008-->
+        <item>espp008ra</item>
+        <!--009-->
+        <item>espp009ra</item>
+        <!--010-->
+        <item>espp010ra</item>
+        <!--011-->
+        <item>espp011ra</item>
+        <!--012-->
+        <item>espp012ra</item>
+        <!--013-->
+        <item>espp013ra</item>
+        <!--014-->
+        <item>espp014ra</item>
+        <!--015-->
+        <item>espp015ra</item>
+        <!--016-->
+        <item>espp016ra</item>
+        <!--017-->
+        <item>espp017ra</item>
+        <!--018-->
+        <item>espp018ra</item>
+        <!--019-->
+        <item>espp019ra</item>
+        <!--020-->
+        <item>espp020ra</item>
 
     </array>
-    
+
     <array name="imgBespacial">
-        <!--001--><item>espp001rb</item>
-        <!--002--><item>espp002rb</item>
-        <!--003--><item>espp003rb</item>
-        <!--004--><item>espp004rb</item>
-        <!--005--><item>espp005rb</item>
-		<!--006--><item>espp006rb</item>
-        <!--007--><item>espp007rb</item>
-        <!--008--><item>espp008rb</item>
-        <!--009--><item>espp009rb</item>
-        <!--010--><item>espp010rb</item>
-        <!--011--><item>espp011rb</item>
-        <!--012--><item>espp012rb</item>
-        <!--013--><item>espp013rb</item>
-        <!--014--><item>espp014rb</item>
-        <!--015--><item>espp015rb</item>
-        <!--016--><item>espp016rb</item>
-        <!--017--><item>espp017rb</item>
-        <!--018--><item>espp018rb</item>
-        <!--019--><item>espp019rb</item>
-        <!--020--><item>espp020rb</item>
+        <!--001-->
+        <item>espp001rb</item>
+        <!--002-->
+        <item>espp002rb</item>
+        <!--003-->
+        <item>espp003rb</item>
+        <!--004-->
+        <item>espp004rb</item>
+        <!--005-->
+        <item>espp005rb</item>
+        <!--006-->
+        <item>espp006rb</item>
+        <!--007-->
+        <item>espp007rb</item>
+        <!--008-->
+        <item>espp008rb</item>
+        <!--009-->
+        <item>espp009rb</item>
+        <!--010-->
+        <item>espp010rb</item>
+        <!--011-->
+        <item>espp011rb</item>
+        <!--012-->
+        <item>espp012rb</item>
+        <!--013-->
+        <item>espp013rb</item>
+        <!--014-->
+        <item>espp014rb</item>
+        <!--015-->
+        <item>espp015rb</item>
+        <!--016-->
+        <item>espp016rb</item>
+        <!--017-->
+        <item>espp017rb</item>
+        <!--018-->
+        <item>espp018rb</item>
+        <!--019-->
+        <item>espp019rb</item>
+        <!--020-->
+        <item>espp020rb</item>
 
     </array>
-    
+
     <array name="imgCespacial">
-        <!--001--><item>espp001rc</item>
-        <!--002--><item>espp002rc</item>
-        <!--003--><item>espp003rc</item>
-        <!--004--><item>espp004rc</item>
-        <!--005--><item>espp005rc</item>
-		<!--006--><item>espp006rc</item>
-        <!--007--><item>espp007rc</item>
-        <!--008--><item>espp008rc</item>
-        <!--009--><item>espp009rc</item>
-        <!--010--><item>espp010rc</item>
-        <!--011--><item>espp011rc</item>
-        <!--012--><item>espp012rc</item>
-        <!--013--><item>espp013rc</item>
-        <!--014--><item>espp014rc</item>
-        <!--015--><item>espp015rc</item>
-        <!--016--><item>espp016rc</item>
-        <!--017--><item>espp017rc</item>
-        <!--018--><item>espp018rc</item>
-        <!--019--><item>espp019rc</item>
-        <!--020--><item>espp020rc</item>
+        <!--001-->
+        <item>espp001rc</item>
+        <!--002-->
+        <item>espp002rc</item>
+        <!--003-->
+        <item>espp003rc</item>
+        <!--004-->
+        <item>espp004rc</item>
+        <!--005-->
+        <item>espp005rc</item>
+        <!--006-->
+        <item>espp006rc</item>
+        <!--007-->
+        <item>espp007rc</item>
+        <!--008-->
+        <item>espp008rc</item>
+        <!--009-->
+        <item>espp009rc</item>
+        <!--010-->
+        <item>espp010rc</item>
+        <!--011-->
+        <item>espp011rc</item>
+        <!--012-->
+        <item>espp012rc</item>
+        <!--013-->
+        <item>espp013rc</item>
+        <!--014-->
+        <item>espp014rc</item>
+        <!--015-->
+        <item>espp015rc</item>
+        <!--016-->
+        <item>espp016rc</item>
+        <!--017-->
+        <item>espp017rc</item>
+        <!--018-->
+        <item>espp018rc</item>
+        <!--019-->
+        <item>espp019rc</item>
+        <!--020-->
+        <item>espp020rc</item>
 
     </array>
-    
+
     <array name="imgDespacial">
-        <!--001--><item>espp001rd</item>
-        <!--002--><item>espp002rd</item>
-        <!--003--><item>espp003rd</item>
-        <!--004--><item>espp004rd</item>
-        <!--005--><item>espp005rd</item>
-		<!--006--><item>espp006rd</item>
-        <!--007--><item>espp007rd</item>
-        <!--008--><item>espp008rd</item>
-        <!--009--><item>espp009rd</item>
-        <!--010--><item>espp010rd</item>
-        <!--011--><item>espp011rd</item>
-        <!--012--><item></item>
-        <!--013--><item>espp013rd</item>
-        <!--014--><item>espp014rd</item>
-        <!--015--><item>espp015rd</item>
-        <!--016--><item>espp016rd</item>
-        <!--017--><item>espp017rd</item>
-        <!--018--><item>espp018rd</item>
-        <!--019--><item>espp019rd</item>
-        <!--020--><item>espp020rd</item>
+        <!--001-->
+        <item>espp001rd</item>
+        <!--002-->
+        <item>espp002rd</item>
+        <!--003-->
+        <item>espp003rd</item>
+        <!--004-->
+        <item>espp004rd</item>
+        <!--005-->
+        <item>espp005rd</item>
+        <!--006-->
+        <item>espp006rd</item>
+        <!--007-->
+        <item>espp007rd</item>
+        <!--008-->
+        <item>espp008rd</item>
+        <!--009-->
+        <item>espp009rd</item>
+        <!--010-->
+        <item>espp010rd</item>
+        <!--011-->
+        <item>espp011rd</item>
+        <!--012-->
+        <item></item>
+        <!--013-->
+        <item>espp013rd</item>
+        <!--014-->
+        <item>espp014rd</item>
+        <!--015-->
+        <item>espp015rd</item>
+        <!--016-->
+        <item>espp016rd</item>
+        <!--017-->
+        <item>espp017rd</item>
+        <!--018-->
+        <item>espp018rd</item>
+        <!--019-->
+        <item>espp019rd</item>
+        <!--020-->
+        <item>espp020rd</item>
 
     </array>
-    
+
     <array name="imgSolespacial">
-        <!--001--><item>espp001rd</item>
-        <!--002--><item>espp002rc</item>
-        <!--003--><item>espp003rd</item>
-        <!--004--><item>espp004ra</item>
-        <!--005--><item>espp005rb</item>
-		<!--006--><item>espp006ra</item>
-        <!--007--><item>espp007ra</item>
-        <!--008--><item>espp008ra</item>
-        <!--009--><item>espp009rd</item>
-        <!--010--><item>espp010rb</item>
-        <!--011--><item>espp011ra</item>
-        <!--012--><item>espp012rc</item>
-        <!--013--><item>espp013rd</item>
-        <!--014--><item>espp014rc</item>
-        <!--015--><item>espp015ra</item>
-        <!--016--><item>espp016rb</item>
-        <!--017--><item>espp017ra</item>
-        <!--018--><item>espp018rb</item>
-        <!--019--><item>espp019rc</item>
-        <!--020--><item>espp020rb</item>
+        <!--001-->
+        <item>espp001rd</item>
+        <!--002-->
+        <item>espp002rc</item>
+        <!--003-->
+        <item>espp003rd</item>
+        <!--004-->
+        <item>espp004ra</item>
+        <!--005-->
+        <item>espp005rb</item>
+        <!--006-->
+        <item>espp006ra</item>
+        <!--007-->
+        <item>espp007ra</item>
+        <!--008-->
+        <item>espp008ra</item>
+        <!--009-->
+        <item>espp009rd</item>
+        <!--010-->
+        <item>espp010rb</item>
+        <!--011-->
+        <item>espp011ra</item>
+        <!--012-->
+        <item>espp012rc</item>
+        <!--013-->
+        <item>espp013rd</item>
+        <!--014-->
+        <item>espp014rc</item>
+        <!--015-->
+        <item>espp015ra</item>
+        <!--016-->
+        <item>espp016rb</item>
+        <!--017-->
+        <item>espp017ra</item>
+        <!--018-->
+        <item>espp018rb</item>
+        <!--019-->
+        <item>espp019rc</item>
+        <!--020-->
+        <item>espp020rb</item>
 
     </array>
-    
+
     <array name="imgExpliespacial">
-        <!--001--><item></item>
-        <!--002--><item></item>
-        <!--003--><item></item>
-        <!--004--><item></item>
-        <!--005--><item></item>
-		<!--006--><item></item>
-        <!--007--><item></item>
-        <!--008--><item></item>
-        <!--009--><item></item>
-        <!--010--><item></item>
-		<!--011--><item></item>
-        <!--012--><item></item>
-        <!--013--><item></item>
-        <!--014--><item></item>
-        <!--015--><item></item>
-		<!--016--><item></item>
-        <!--017--><item></item>
-        <!--018--><item></item>
-        <!--019--><item></item>
-        <!--020--><item></item>
+        <!--001-->
+        <item></item>
+        <!--002-->
+        <item></item>
+        <!--003-->
+        <item></item>
+        <!--004-->
+        <item></item>
+        <!--005-->
+        <item></item>
+        <!--006-->
+        <item></item>
+        <!--007-->
+        <item></item>
+        <!--008-->
+        <item></item>
+        <!--009-->
+        <item></item>
+        <!--010-->
+        <item></item>
+        <!--011-->
+        <item></item>
+        <!--012-->
+        <item></item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item></item>
+        <!--015-->
+        <item></item>
+        <!--016-->
+        <item></item>
+        <!--017-->
+        <item></item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item></item>
+        <!--020-->
+        <item></item>
 
     </array>
 </resources>

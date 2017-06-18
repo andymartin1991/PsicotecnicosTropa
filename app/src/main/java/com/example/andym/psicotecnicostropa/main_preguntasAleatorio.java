@@ -89,7 +89,7 @@ public class main_preguntasAleatorio extends Activity {
             public void onClick(View v) {
                 Toast toast1 =
                         Toast.makeText(getApplicationContext(),
-                                getString(R.string.aciertos) + " " + aciertos + " " + getString(R.string.de) + " " + (aciertos + fallos)+" "+getString(R.string.de)+" "+pregunta.length+" "+getString(R.string.preguntas), Toast.LENGTH_SHORT);
+                                getString(R.string.aciertos) + " " + aciertos + " " + getString(R.string.de) + " " + (aciertos + fallos) + " " + getString(R.string.de) + " " + pregunta.length + " " + getString(R.string.preguntas), Toast.LENGTH_SHORT);
                 toast1.show();
             }
         });
@@ -782,7 +782,7 @@ public class main_preguntasAleatorio extends Activity {
                     cont.setCont(cont.getCont() - 1);
                     limpiarelementos();
                     ocultaratras();
-                    if(num[cont.getCont()] > inmemo && num[cont.getCont()] <=outmemo && respulsada[cont.getCont()]==0){
+                    if (num[cont.getCont()] > inmemo && num[cont.getCont()] <= outmemo && respulsada[cont.getCont()] == 0) {
                         // PONER AQUI LA FUNCION DE MEMORIA
                         if (pos[cont.getCont()] == 0) {
                             RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
@@ -810,7 +810,7 @@ public class main_preguntasAleatorio extends Activity {
                         cont.setCont(cont.getCont() - 1);
                         limpiarelementos();
                         ocultaratras();
-                        if(num[cont.getCont()] > inmemo && num[cont.getCont()] <=outmemo && respulsada[cont.getCont()]==0){
+                        if (num[cont.getCont()] > inmemo && num[cont.getCont()] <= outmemo && respulsada[cont.getCont()] == 0) {
                             // PONER AQUI LA FUNCION DE MEMORIA
                             if (pos[cont.getCont()] == 0) {
                                 RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
@@ -854,17 +854,17 @@ public class main_preguntasAleatorio extends Activity {
                 verificarRes(opt);
                 pos[colocar] = 1;
                 calcularestado();
-                if(memoria){
-                    if(cont.getCont()<pregunta.length && cont.getCont()>=0){
+                if (memoria) {
+                    if (cont.getCont() < pregunta.length && cont.getCont() >= 0) {
                         alante.setVisibility(View.VISIBLE);
-                        if(cont.getCont()!=0) {
+                        if (cont.getCont() != 0) {
                             atras.setVisibility(View.VISIBLE);
                         }
                     }
-                    if(cont.getCont()-1==0){
+                    if (cont.getCont() - 1 == 0) {
                         atras.setVisibility(View.INVISIBLE);
                     }
-                    if(cont.getCont()-1==pregunta.length){
+                    if (cont.getCont() - 1 == pregunta.length) {
                         alante.setVisibility(View.INVISIBLE);
                     }
                 }
@@ -880,17 +880,17 @@ public class main_preguntasAleatorio extends Activity {
                 verificarRes(opt);
                 pos[colocar] = 2;
                 calcularestado();
-                if(memoria){
-                    if(cont.getCont()<pregunta.length && cont.getCont()>=0){
+                if (memoria) {
+                    if (cont.getCont() < pregunta.length && cont.getCont() >= 0) {
                         alante.setVisibility(View.VISIBLE);
-                        if(cont.getCont()!=0) {
+                        if (cont.getCont() != 0) {
                             atras.setVisibility(View.VISIBLE);
                         }
                     }
-                    if(cont.getCont()-1==0){
+                    if (cont.getCont() - 1 == 0) {
                         atras.setVisibility(View.INVISIBLE);
                     }
-                    if(cont.getCont()-1==pregunta.length){
+                    if (cont.getCont() - 1 == pregunta.length) {
                         alante.setVisibility(View.INVISIBLE);
                     }
                 }
@@ -905,17 +905,17 @@ public class main_preguntasAleatorio extends Activity {
                 verificarRes(opt);
                 pos[colocar] = 3;
                 calcularestado();
-                if(memoria){
-                    if(cont.getCont()<pregunta.length && cont.getCont()>=0){
+                if (memoria) {
+                    if (cont.getCont() < pregunta.length && cont.getCont() >= 0) {
                         alante.setVisibility(View.VISIBLE);
-                        if(cont.getCont()!=0) {
+                        if (cont.getCont() != 0) {
                             atras.setVisibility(View.VISIBLE);
                         }
                     }
-                    if(cont.getCont()-1==0){
+                    if (cont.getCont() - 1 == 0) {
                         atras.setVisibility(View.INVISIBLE);
                     }
-                    if(cont.getCont()-1==pregunta.length){
+                    if (cont.getCont() - 1 == pregunta.length) {
                         alante.setVisibility(View.INVISIBLE);
                     }
                 }
@@ -930,17 +930,17 @@ public class main_preguntasAleatorio extends Activity {
                 verificarRes(opt);
                 pos[colocar] = 4;
                 calcularestado();
-                if(memoria){
-                    if(cont.getCont()<pregunta.length && cont.getCont()>=0){
+                if (memoria) {
+                    if (cont.getCont() < pregunta.length && cont.getCont() >= 0) {
                         alante.setVisibility(View.VISIBLE);
-                        if(cont.getCont()!=0) {
+                        if (cont.getCont() != 0) {
                             atras.setVisibility(View.VISIBLE);
                         }
                     }
-                    if(cont.getCont()-1==0){
+                    if (cont.getCont() - 1 == 0) {
                         atras.setVisibility(View.INVISIBLE);
                     }
-                    if(cont.getCont()-1==pregunta.length){
+                    if (cont.getCont() - 1 == pregunta.length) {
                         alante.setVisibility(View.INVISIBLE);
                     }
                 }
@@ -1110,9 +1110,9 @@ public class main_preguntasAleatorio extends Activity {
             limpiarelementos();
             cont.setCont(cont.getCont() + 1);
             ocultaralante();
-            if(num[cont.getCont()-1] > inmemo && num[cont.getCont()-1] <=outmemo && respulsada[cont.getCont()-1]==0){
+            if (num[cont.getCont() - 1] > inmemo && num[cont.getCont() - 1] <= outmemo && respulsada[cont.getCont() - 1] == 0) {
                 // PONER AQUI LA FUNCION DE MEMORIA
-                if (pos[cont.getCont()-1] == 0) {
+                if (pos[cont.getCont() - 1] == 0) {
                     RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
                     RelativeLayout bmemo = (RelativeLayout) findViewById(R.id.b);
                     RelativeLayout cmemo = (RelativeLayout) findViewById(R.id.c);
@@ -1138,9 +1138,9 @@ public class main_preguntasAleatorio extends Activity {
                 limpiarelementos();
                 cont.setCont(cont.getCont() + 1);
                 ocultaralante();
-                if(num[cont.getCont()-1] > inmemo && num[cont.getCont()-1] <=outmemo && respulsada[cont.getCont()-1]==0){
+                if (num[cont.getCont() - 1] > inmemo && num[cont.getCont() - 1] <= outmemo && respulsada[cont.getCont() - 1] == 0) {
                     // PONER AQUI LA FUNCION DE MEMORIA
-                    if (pos[cont.getCont()-1] == 0) {
+                    if (pos[cont.getCont() - 1] == 0) {
                         RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
                         RelativeLayout bmemo = (RelativeLayout) findViewById(R.id.b);
                         RelativeLayout cmemo = (RelativeLayout) findViewById(R.id.c);
@@ -1351,18 +1351,18 @@ public class main_preguntasAleatorio extends Activity {
         }
 
 
-
     }
+
     public void esperarYCerrar(int milisegundos) {
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {
-                RelativeLayout amemo = (RelativeLayout)findViewById(R.id.a);
-                RelativeLayout bmemo = (RelativeLayout)findViewById(R.id.b);
-                RelativeLayout cmemo = (RelativeLayout)findViewById(R.id.c);
-                RelativeLayout dmemo = (RelativeLayout)findViewById(R.id.d);
-                TextView pregunta = (TextView)findViewById(R.id.pregunta);
-                ImageView imgpre = (ImageView)findViewById(R.id.imgpre);
+                RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
+                RelativeLayout bmemo = (RelativeLayout) findViewById(R.id.b);
+                RelativeLayout cmemo = (RelativeLayout) findViewById(R.id.c);
+                RelativeLayout dmemo = (RelativeLayout) findViewById(R.id.d);
+                TextView pregunta = (TextView) findViewById(R.id.pregunta);
+                ImageView imgpre = (ImageView) findViewById(R.id.imgpre);
                 amemo.setVisibility(View.VISIBLE);
                 bmemo.setVisibility(View.VISIBLE);
                 cmemo.setVisibility(View.VISIBLE);

@@ -8,7 +8,7 @@
         android:type="linear"
         android:centerColor="@color/gris"
         android:startColor="@color/gris"
-        android:endColor="@color/gris"/>
+        android:endColor="@color/gris" />
 
     <padding
         android:left="0dp"

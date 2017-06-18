@@ -11,8 +11,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.andym.psicotecnicostropa.dto.Preguntas;
 import com.example.andym.psicotecnicostropa.dto.Notas;
+import com.example.andym.psicotecnicostropa.dto.Preguntas;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -20,11 +23,13 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.ObjectOutputStream;
 import java.io.OutputStreamWriter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by andym on 08/04/2017.
@@ -36,16 +41,24 @@ public class main_resultado_exam extends Activity {
     EditText baremo;
     Button calcular, compartir, introbar, guardar;
     Notas notas;
+    Preguntas preguntas;
     static Preguntas[] bloqueverbal, bloquenumerico, bloqueespacial, bloquemecanico, bloqueperceptiva, bloquememoria, bloqueabstrapto;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_resultado_exam);
 
         notas = new Notas();
+        notas.setBloqueverbal(Arrays.asList(bloqueverbal));
+        notas.setBloquenumerico(Arrays.asList(bloquenumerico));
+        notas.setBloqueespacial(Arrays.asList(bloqueespacial));
+        notas.setBloquemecanico(Arrays.asList(bloquemecanico));
+        notas.setBloqueperceptiva(Arrays.asList(bloqueperceptiva));
+        notas.setBloquememoria(Arrays.asList(bloquememoria));
+        notas.setBloqueabstrapto(Arrays.asList(bloqueabstrapto));
 
         final String[] baremorecu = {""};
-        try
-        {
+        try {
             File ruta_sd = getExternalFilesDir(null);
             File f = new File(ruta_sd.getAbsolutePath(), "baremo");
 
@@ -57,37 +70,40 @@ public class main_resultado_exam extends Activity {
             fin.close();
             System.out.println(ruta_sd);
             System.out.println(f);
-        }
-        catch (Exception ex)
-        {
+        } catch (Exception ex) {
             Log.e("Ficheros", "Error al leer fichero desde tarjeta SD");
         }
 
-        baremo = (EditText)findViewById(R.id.baremo);
+        baremo = (EditText) findViewById(R.id.baremo);
         baremo.setText(baremorecu[0]);
 
         int aciertosVerbal = 0;
         int fallosVerbal = 0;
         int sincontestarVerbal = 0;
-        for(int i = 0; i<15;i++){
-            String respuestacorrecta= bloqueverbal[i].getSolu().substring(0,1);
+        for (int i = 0; i < 15; i++) {
+            String respuestacorrecta = bloqueverbal[i].getSolu().substring(0, 1);
             String respuestadada = null;
-            switch(bloqueverbal[i].getRespulsada()){
-                case 1:respuestadada = "A";
+            switch (bloqueverbal[i].getRespulsada()) {
+                case 1:
+                    respuestadada = "A";
                     break;
-                case 2:respuestadada = "B";
+                case 2:
+                    respuestadada = "B";
                     break;
-                case 3:respuestadada = "C";
+                case 3:
+                    respuestadada = "C";
                     break;
-                case 4:respuestadada = "D";
+                case 4:
+                    respuestadada = "D";
                     break;
-                default:respuestadada = "M";
+                default:
+                    respuestadada = "M";
             }
-            if(respuestadada.equals(respuestacorrecta)){
+            if (respuestadada.equals(respuestacorrecta)) {
                 aciertosVerbal++;
-            }else if(respuestadada.equals("M")){
+            } else if (respuestadada.equals("M")) {
                 sincontestarVerbal++;
-            }else{
+            } else {
                 fallosVerbal++;
             }
         }
@@ -98,25 +114,30 @@ public class main_resultado_exam extends Activity {
         int aciertosNumerico = 0;
         int fallosNumerico = 0;
         int sincontestarNumerico = 0;
-        for(int i = 0; i<15;i++){
-            String respuestacorrecta= bloquenumerico[i].getSolu().substring(0,1);
+        for (int i = 0; i < 15; i++) {
+            String respuestacorrecta = bloquenumerico[i].getSolu().substring(0, 1);
             String respuestadada = null;
-            switch(bloquenumerico[i].getRespulsada()){
-                case 1:respuestadada = "A";
+            switch (bloquenumerico[i].getRespulsada()) {
+                case 1:
+                    respuestadada = "A";
                     break;
-                case 2:respuestadada = "B";
+                case 2:
+                    respuestadada = "B";
                     break;
-                case 3:respuestadada = "C";
+                case 3:
+                    respuestadada = "C";
                     break;
-                case 4:respuestadada = "D";
+                case 4:
+                    respuestadada = "D";
                     break;
-                default:respuestadada = "M";
+                default:
+                    respuestadada = "M";
             }
-            if(respuestadada.equals(respuestacorrecta)){
+            if (respuestadada.equals(respuestacorrecta)) {
                 aciertosNumerico++;
-            }else if(respuestadada.equals("M")){
+            } else if (respuestadada.equals("M")) {
                 sincontestarNumerico++;
-            }else{
+            } else {
                 fallosNumerico++;
             }
         }
@@ -127,25 +148,30 @@ public class main_resultado_exam extends Activity {
         int aciertosEspacial = 0;
         int fallosEspacial = 0;
         int sincontestarEspacial = 0;
-        for(int i = 0; i<15;i++){
-            String respuestacorrecta= bloqueespacial[i].getSolu().substring(0,1);
+        for (int i = 0; i < 15; i++) {
+            String respuestacorrecta = bloqueespacial[i].getSolu().substring(0, 1);
             String respuestadada = null;
-            switch(bloqueespacial[i].getRespulsada()){
-                case 1:respuestadada = "A";
+            switch (bloqueespacial[i].getRespulsada()) {
+                case 1:
+                    respuestadada = "A";
                     break;
-                case 2:respuestadada = "B";
+                case 2:
+                    respuestadada = "B";
                     break;
-                case 3:respuestadada = "C";
+                case 3:
+                    respuestadada = "C";
                     break;
-                case 4:respuestadada = "D";
+                case 4:
+                    respuestadada = "D";
                     break;
-                default:respuestadada = "M";
+                default:
+                    respuestadada = "M";
             }
-            if(respuestadada.equals(respuestacorrecta)){
+            if (respuestadada.equals(respuestacorrecta)) {
                 aciertosEspacial++;
-            }else if(respuestadada.equals("M")){
+            } else if (respuestadada.equals("M")) {
                 sincontestarEspacial++;
-            }else{
+            } else {
                 fallosEspacial++;
             }
         }
@@ -156,25 +182,30 @@ public class main_resultado_exam extends Activity {
         int aciertosMecanico = 0;
         int fallosMecanico = 0;
         int sincontestarMecanico = 0;
-        for(int i = 0; i<15;i++){
-            String respuestacorrecta= bloquemecanico[i].getSolu().substring(0,1);
+        for (int i = 0; i < 15; i++) {
+            String respuestacorrecta = bloquemecanico[i].getSolu().substring(0, 1);
             String respuestadada = null;
-            switch(bloquemecanico[i].getRespulsada()){
-                case 1:respuestadada = "A";
+            switch (bloquemecanico[i].getRespulsada()) {
+                case 1:
+                    respuestadada = "A";
                     break;
-                case 2:respuestadada = "B";
+                case 2:
+                    respuestadada = "B";
                     break;
-                case 3:respuestadada = "C";
+                case 3:
+                    respuestadada = "C";
                     break;
-                case 4:respuestadada = "D";
+                case 4:
+                    respuestadada = "D";
                     break;
-                default:respuestadada = "M";
+                default:
+                    respuestadada = "M";
             }
-            if(respuestadada.equals(respuestacorrecta)){
+            if (respuestadada.equals(respuestacorrecta)) {
                 aciertosMecanico++;
-            }else if(respuestadada.equals("M")){
+            } else if (respuestadada.equals("M")) {
                 sincontestarMecanico++;
-            }else{
+            } else {
                 fallosMecanico++;
             }
         }
@@ -185,25 +216,30 @@ public class main_resultado_exam extends Activity {
         int aciertosPerceptiva = 0;
         int fallosPerceptiva = 0;
         int sincontestarPerceptiva = 0;
-        for(int i = 0; i<15;i++){
-            String respuestacorrecta= bloqueperceptiva[i].getSolu().substring(0,1);
+        for (int i = 0; i < 15; i++) {
+            String respuestacorrecta = bloqueperceptiva[i].getSolu().substring(0, 1);
             String respuestadada = null;
-            switch(bloqueperceptiva[i].getRespulsada()){
-                case 1:respuestadada = "A";
+            switch (bloqueperceptiva[i].getRespulsada()) {
+                case 1:
+                    respuestadada = "A";
                     break;
-                case 2:respuestadada = "B";
+                case 2:
+                    respuestadada = "B";
                     break;
-                case 3:respuestadada = "C";
+                case 3:
+                    respuestadada = "C";
                     break;
-                case 4:respuestadada = "D";
+                case 4:
+                    respuestadada = "D";
                     break;
-                default:respuestadada = "M";
+                default:
+                    respuestadada = "M";
             }
-            if(respuestadada.equals(respuestacorrecta)){
+            if (respuestadada.equals(respuestacorrecta)) {
                 aciertosPerceptiva++;
-            }else if(respuestadada.equals("M")){
+            } else if (respuestadada.equals("M")) {
                 sincontestarPerceptiva++;
-            }else{
+            } else {
                 fallosPerceptiva++;
             }
         }
@@ -214,25 +250,30 @@ public class main_resultado_exam extends Activity {
         int aciertosMemoria = 0;
         int fallosMemoria = 0;
         int sincontestarMemoria = 0;
-        for(int i = 0; i<15;i++){
-            String respuestacorrecta= bloquememoria[i].getSolu().substring(0,1);
+        for (int i = 0; i < 15; i++) {
+            String respuestacorrecta = bloquememoria[i].getSolu().substring(0, 1);
             String respuestadada = null;
-            switch(bloquememoria[i].getRespulsada()){
-                case 1:respuestadada = "A";
+            switch (bloquememoria[i].getRespulsada()) {
+                case 1:
+                    respuestadada = "A";
                     break;
-                case 2:respuestadada = "B";
+                case 2:
+                    respuestadada = "B";
                     break;
-                case 3:respuestadada = "C";
+                case 3:
+                    respuestadada = "C";
                     break;
-                case 4:respuestadada = "D";
+                case 4:
+                    respuestadada = "D";
                     break;
-                default:respuestadada = "M";
+                default:
+                    respuestadada = "M";
             }
-            if(respuestadada.equals(respuestacorrecta)){
+            if (respuestadada.equals(respuestacorrecta)) {
                 aciertosMemoria++;
-            }else if(respuestadada.equals("M")){
+            } else if (respuestadada.equals("M")) {
                 sincontestarMemoria++;
-            }else{
+            } else {
                 fallosMemoria++;
             }
         }
@@ -243,25 +284,30 @@ public class main_resultado_exam extends Activity {
         int aciertosAbstrapto = 0;
         int fallosAbstrapto = 0;
         int sincontestarAbstrapto = 0;
-        for(int i = 0; i<15;i++){
-            String respuestacorrecta= bloqueabstrapto[i].getSolu().substring(0,1);
+        for (int i = 0; i < 15; i++) {
+            String respuestacorrecta = bloqueabstrapto[i].getSolu().substring(0, 1);
             String respuestadada = null;
-            switch(bloqueabstrapto[i].getRespulsada()){
-                case 1:respuestadada = "A";
+            switch (bloqueabstrapto[i].getRespulsada()) {
+                case 1:
+                    respuestadada = "A";
                     break;
-                case 2:respuestadada = "B";
+                case 2:
+                    respuestadada = "B";
                     break;
-                case 3:respuestadada = "C";
+                case 3:
+                    respuestadada = "C";
                     break;
-                case 4:respuestadada = "D";
+                case 4:
+                    respuestadada = "D";
                     break;
-                default:respuestadada = "M";
+                default:
+                    respuestadada = "M";
             }
-            if(respuestadada.equals(respuestacorrecta)){
+            if (respuestadada.equals(respuestacorrecta)) {
                 aciertosAbstrapto++;
-            }else if(respuestadada.equals("M")){
+            } else if (respuestadada.equals("M")) {
                 sincontestarAbstrapto++;
-            }else{
+            } else {
                 fallosAbstrapto++;
             }
         }
@@ -277,25 +323,25 @@ public class main_resultado_exam extends Activity {
                         ((Double.parseDouble(String.valueOf(aciertosPerceptiva)) * 10) / 15) +
                         ((Double.parseDouble(String.valueOf(aciertosMemoria)) * 10) / 15) +
                         ((Double.parseDouble(String.valueOf(aciertosAbstrapto)) * 10) / 15)) / 7);
-        notas.setNotaredondeada(redondearDecimales(notas.getNotasobre10(),1));
+        notas.setNotaredondeada(redondearDecimales(notas.getNotasobre10(), 1));
         notabaremo();
-        mostrar = (TextView)findViewById(R.id.mostrar);
+        mostrar = (TextView) findViewById(R.id.mostrar);
         mostrar.setText(
-                getString(R.string.Verbal)+": "+getString(R.string.aciertos)+" "+aciertosVerbal+", "+getString(R.string.Fallos)+" "+fallosVerbal+" "+getString(R.string.nocontestadas)+" "+sincontestarVerbal+"\n\n"+
-                getString(R.string.Numerico)+": "+getString(R.string.aciertos)+" "+aciertosNumerico+", "+getString(R.string.Fallos)+" "+fallosNumerico+" "+getString(R.string.nocontestadas)+" "+sincontestarNumerico+"\n\n"+
-                getString(R.string.Espacial)+": "+getString(R.string.aciertos)+" "+aciertosEspacial+", "+getString(R.string.Fallos)+" "+fallosEspacial+" "+getString(R.string.nocontestadas)+" "+sincontestarEspacial+"\n\n"+
-                getString(R.string.Mecanico)+": "+getString(R.string.aciertos)+" "+aciertosMecanico+", "+getString(R.string.Fallos)+" "+fallosMecanico+" "+getString(R.string.nocontestadas)+" "+sincontestarMecanico+"\n\n"+
-                getString(R.string.Perceptiva)+": "+getString(R.string.aciertos)+" "+aciertosPerceptiva+", "+getString(R.string.Fallos)+" "+fallosPerceptiva+" "+getString(R.string.nocontestadas)+" "+sincontestarPerceptiva+"\n\n"+
-                getString(R.string.aptitud6)+": "+getString(R.string.aciertos)+" "+aciertosMemoria+", "+getString(R.string.Fallos)+" "+fallosMemoria+" "+getString(R.string.nocontestadas)+" "+sincontestarMemoria+"\n\n"+
-                getString(R.string.Abstrapto)+": "+getString(R.string.aciertos)+" "+aciertosAbstrapto+", "+getString(R.string.Fallos)+" "+fallosAbstrapto+" "+getString(R.string.nocontestadas)+" "+sincontestarAbstrapto
+                getString(R.string.Verbal) + ": " + getString(R.string.aciertos) + " " + aciertosVerbal + ", " + getString(R.string.Fallos) + " " + fallosVerbal + " " + getString(R.string.nocontestadas) + " " + sincontestarVerbal + "\n\n" +
+                        getString(R.string.Numerico) + ": " + getString(R.string.aciertos) + " " + aciertosNumerico + ", " + getString(R.string.Fallos) + " " + fallosNumerico + " " + getString(R.string.nocontestadas) + " " + sincontestarNumerico + "\n\n" +
+                        getString(R.string.Espacial) + ": " + getString(R.string.aciertos) + " " + aciertosEspacial + ", " + getString(R.string.Fallos) + " " + fallosEspacial + " " + getString(R.string.nocontestadas) + " " + sincontestarEspacial + "\n\n" +
+                        getString(R.string.Mecanico) + ": " + getString(R.string.aciertos) + " " + aciertosMecanico + ", " + getString(R.string.Fallos) + " " + fallosMecanico + " " + getString(R.string.nocontestadas) + " " + sincontestarMecanico + "\n\n" +
+                        getString(R.string.Perceptiva) + ": " + getString(R.string.aciertos) + " " + aciertosPerceptiva + ", " + getString(R.string.Fallos) + " " + fallosPerceptiva + " " + getString(R.string.nocontestadas) + " " + sincontestarPerceptiva + "\n\n" +
+                        getString(R.string.aptitud6) + ": " + getString(R.string.aciertos) + " " + aciertosMemoria + ", " + getString(R.string.Fallos) + " " + fallosMemoria + " " + getString(R.string.nocontestadas) + " " + sincontestarMemoria + "\n\n" +
+                        getString(R.string.Abstrapto) + ": " + getString(R.string.aciertos) + " " + aciertosAbstrapto + ", " + getString(R.string.Fallos) + " " + fallosAbstrapto + " " + getString(R.string.nocontestadas) + " " + sincontestarAbstrapto
 
         );
 
 
-        nota = (TextView)findViewById(R.id.nota);
-        nota.setText(getString(R.string.sunotasobre10)+"\n"+ notas.getNotaredondeada());
+        nota = (TextView) findViewById(R.id.nota);
+        nota.setText(getString(R.string.sunotasobre10) + "\n" + notas.getNotaredondeada());
 
-        notabar = (TextView)findViewById(R.id.notabar);
+        notabar = (TextView) findViewById(R.id.notabar);
         try {
             if (!baremorecu[0].equals("")) {
                 baremo.setText(baremorecu[0]);
@@ -305,44 +351,41 @@ public class main_resultado_exam extends Activity {
             } else {
                 notabar.setText(getString(R.string.sunotaconbaremo) + "\n" + "0.0");
             }
-        }catch(Exception e){
+        } catch (Exception e) {
             notabar.setText(getString(R.string.sunotaconbaremo) + "\n" + "0.0");
         }
 
-        baremo = (EditText)findViewById(R.id.baremo);
+        baremo = (EditText) findViewById(R.id.baremo);
 
-        calcular = (Button)findViewById(R.id.calcular);
+        calcular = (Button) findViewById(R.id.calcular);
         calcular.setText(getString(R.string.calcular));
         calcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(baremo.getText().toString().equals("")){
+                if (baremo.getText().toString().equals("")) {
                     Toast toast1 =
                             Toast.makeText(getApplicationContext(),
                                     getString(R.string.baremonovalido), Toast.LENGTH_SHORT);
 
                     toast1.show();
-                }else {
+                } else {
                     double kk = Double.parseDouble(baremo.getText().toString());
                     if (kk > 0 && kk < 41) {
                         notas.setBar(Double.parseDouble(baremo.getText().toString()));
                         notabaremo();
                         notabar.setText(getString(R.string.sunotaconbaremo) + "\n" + notas.getNotaredondeadabar());
-                        try
-                        {
+                        try {
                             File ruta_sd = getExternalFilesDir(null);
                             File f = new File(ruta_sd.getAbsolutePath(), "baremo");
                             OutputStreamWriter fout =
                                     new OutputStreamWriter(
                                             new FileOutputStream(f));
 
-                            fout.write(baremo.getText()+"");
+                            fout.write(baremo.getText() + "");
                             fout.close();
                             System.out.println(ruta_sd);
                             System.out.println(f);
-                        }
-                        catch (Exception ex)
-                        {
+                        } catch (Exception ex) {
                             Log.e("Ficheros", "Error al escribir fichero a tarjeta SD");
                         }
                     } else {
@@ -356,24 +399,24 @@ public class main_resultado_exam extends Activity {
             }
         });
 
-        compartir = (Button)findViewById(R.id.compartir);
+        compartir = (Button) findViewById(R.id.compartir);
         compartir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(baremo.getText().toString().equals("")){
+                if (baremo.getText().toString().equals("")) {
                     Toast toast1 =
                             Toast.makeText(getApplicationContext(),
                                     getString(R.string.compartirresul), Toast.LENGTH_SHORT);
 
                     toast1.show();
-                }else {
+                } else {
                     Double kk = Double.parseDouble(baremo.getText().toString());
                     if (kk > 0 && kk < 41) {
                         //poner aqui el texto a compartir
                         Intent intentCompartir = new Intent(Intent.ACTION_SEND);
                         intentCompartir.setType("text/plain");
                         intentCompartir.putExtra(Intent.EXTRA_SUBJECT, "Psicotécnicos Tropa");
-                        intentCompartir.putExtra(Intent.EXTRA_STREAM,  Uri.parse("android.resource://com.example.andym.psicotecnicostropa/drawable/ic_launcher"));
+                        intentCompartir.putExtra(Intent.EXTRA_STREAM, Uri.parse("android.resource://com.example.andym.psicotecnicostropa/drawable/ic_launcher"));
                         intentCompartir.putExtra(Intent.EXTRA_TEXT, getString(R.string.minota) + " " + notas.getNotaredondeada() + "\n" + getString(R.string.minotabare) + " " + notas.getNotaredondeadabar() + "\n" + "https://play.google.com/store/apps/details?id=com.naroh.tropaPsicotecnicoOficial");
                         intentCompartir.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(Intent.createChooser(intentCompartir, getString(R.string.compartiren)));
@@ -388,7 +431,7 @@ public class main_resultado_exam extends Activity {
             }
         });
 
-        introbar = (Button)findViewById(R.id.introbar);
+        introbar = (Button) findViewById(R.id.introbar);
         introbar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -397,69 +440,250 @@ public class main_resultado_exam extends Activity {
             }
         });
 
-        guardar = (Button)findViewById(R.id.guardar);
+        guardar = (Button) findViewById(R.id.guardar);
         guardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(baremo.getText().toString().equals("")){
+                if (baremo.getText().toString().equals("")) {
                     Toast toast1 =
                             Toast.makeText(getApplicationContext(),
                                     getString(R.string.guardarresul), Toast.LENGTH_SHORT);
 
                     toast1.show();
-                }else {
+                } else {
                     Double kk = Double.parseDouble(baremo.getText().toString());
                     if (kk > 0 && kk < 41) {
-                        if(notas.getNotaredondeadabar()!= 0) {
-                            //guardar el objeto
-                            // Obtenemos solamente la fecha pero usamos slash en lugar de guiones
-
-                            // Date puede se convertido a String con el método toString()
-                            // Usa una sintaxis general del tipo DD MM dd HH:mm:ss
+                        if (notas.getNotaredondeadabar() != 0) {
                             Date date = new Date();
-                            System.out.println(date.toString());
-
-                            // Se pueden definir formatos diferentes con la clase DateFormat
-                            // Obtenemos la fecha y la hora con el formato yyyy-MM-dd HH:mm:ss
                             DateFormat fechaHora = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                             String convertido = fechaHora.format(date);
 
-
-
                             File ruta_sd = getExternalFilesDir(null);
-                            File a = new File(ruta_sd.getAbsolutePath(), convertido+"bloqueverbalexamen");
-                            File b = new File(ruta_sd.getAbsolutePath(), convertido+"bloquenumericoexamen");
-                            File c = new File(ruta_sd.getAbsolutePath(), convertido+"bloqueespacialexamen");
-                            File d = new File(ruta_sd.getAbsolutePath(), convertido+"bloquemecanicoexamen");
-                            File e = new File(ruta_sd.getAbsolutePath(), convertido+"bloqueperceptivaexamen");
-                            File f = new File(ruta_sd.getAbsolutePath(), convertido+"bloquememoriaexamen");
-                            File g = new File(ruta_sd.getAbsolutePath(), convertido+"bloqueabstraptoexamen");
-                            File h = new File(ruta_sd.getAbsolutePath(), convertido+"notasexamen");
+                            File a = new File(ruta_sd.getAbsolutePath(), convertido + "examen");
                             try {
-                                ObjectOutputStream oosa = new ObjectOutputStream(new FileOutputStream(a));
-                                oosa.writeObject(bloqueverbal);
-                                oosa.close();
-                                ObjectOutputStream oosb = new ObjectOutputStream(new FileOutputStream(b));
-                                oosb.writeObject(bloquenumerico);
-                                oosb.close();
-                                ObjectOutputStream oosc = new ObjectOutputStream(new FileOutputStream(c));
-                                oosc.writeObject(bloqueespacial);
-                                oosc.close();
-                                ObjectOutputStream oosd = new ObjectOutputStream(new FileOutputStream(d));
-                                oosd.writeObject(bloquemecanico);
-                                oosd.close();
-                                ObjectOutputStream oose = new ObjectOutputStream(new FileOutputStream(e));
-                                oose.writeObject(bloqueperceptiva);
-                                oose.close();
-                                ObjectOutputStream oosf = new ObjectOutputStream(new FileOutputStream(f));
-                                oosf.writeObject(bloquememoria);
-                                oosf.close();
-                                ObjectOutputStream oosg = new ObjectOutputStream(new FileOutputStream(g));
-                                oosg.writeObject(bloqueabstrapto);
-                                oosg.close();
-                                ObjectOutputStream oosh = new ObjectOutputStream(new FileOutputStream(h));
-                                oosh.writeObject(notas);
-                                oosh.close();
+                                JSONObject jsonObject = new JSONObject();
+                                List<JSONObject> JSONObjectList;
+                                JSONObject jsonSub;
+                                try {
+                                    jsonObject.put("notaredondeadabar", notas.getNotaredondeadabar());
+                                    jsonObject.put("notaredondeada", notas.getNotaredondeada());
+                                    jsonObject.put("bar", notas.getBar());
+                                    jsonObject.put("notasobre10", notas.getNotasobre10());
+                                    jsonObject.put("baremoredondeado", notas.getBaremoredondeado());
+
+                                    jsonObject.put("aciertosVerbal", notas.aciertosVerbal);
+                                    jsonObject.put("fallosVerbal", notas.fallosVerbal);
+                                    jsonObject.put("sincontestarVerbal", notas.sincontestarVerbal);
+
+                                    jsonObject.put("aciertosNumerico", notas.aciertosNumerico);
+                                    jsonObject.put("fallosNumerico", notas.fallosNumerico);
+                                    jsonObject.put("sincontestarNumerico", notas.sincontestarNumerico);
+
+                                    jsonObject.put("aciertosEspacial", notas.aciertosEspacial);
+                                    jsonObject.put("fallosEspacial", notas.fallosEspacial);
+                                    jsonObject.put("sincontestarEspacial", notas.sincontestarEspacial);
+
+                                    jsonObject.put("aciertosMecanico", notas.aciertosMecanico);
+                                    jsonObject.put("fallosMecanico", notas.fallosMecanico);
+                                    jsonObject.put("sincontestarMecanico", notas.sincontestarMecanico);
+
+                                    jsonObject.put("aciertosPerceptiva", notas.aciertosPerceptiva);
+                                    jsonObject.put("fallosPerceptiva", notas.fallosPerceptiva);
+                                    jsonObject.put("sincontestarPerceptiva", notas.sincontestarPerceptiva);
+
+                                    jsonObject.put("aciertosMemoria", notas.aciertosMemoria);
+                                    jsonObject.put("fallosMemoria", notas.fallosMemoria);
+                                    jsonObject.put("sincontestarMemoria", notas.sincontestarMemoria);
+
+                                    jsonObject.put("aciertosAbstrapto", notas.aciertosAbstrapto);
+                                    jsonObject.put("fallosAbstrapto", notas.fallosAbstrapto);
+                                    jsonObject.put("sincontestarAbstrapto", notas.sincontestarAbstrapto);
+
+                                    JSONObjectList = new ArrayList<>();
+                                    jsonSub = new JSONObject();
+                                    for (Preguntas e : notas.getBloqueverbal()) {
+                                        jsonSub.put("cont", e.getCont() + "");
+                                        jsonSub.put("pregunta", e.getPregunta());
+                                        jsonSub.put("respuestaA", e.getRespuestaA());
+                                        jsonSub.put("respuestaB", e.getRespuestaB());
+                                        jsonSub.put("respuestaC", e.getRespuestaC());
+                                        jsonSub.put("respuestaD", e.getRespuestaD());
+                                        jsonSub.put("solu", e.getSolu());
+                                        jsonSub.put("expliSol", e.getExpliSol());
+                                        jsonSub.put("imgPregunta", e.getImgPregunta());
+                                        jsonSub.put("imgA", e.getImgA());
+                                        jsonSub.put("imgB", e.getImgB());
+                                        jsonSub.put("imgC", e.getImgC());
+                                        jsonSub.put("imgD", e.getImgD());
+                                        jsonSub.put("imgSol", e.getImgSol());
+                                        jsonSub.put("imgExpli", e.getImgExpli());
+                                        jsonSub.put("respulsada", e.getRespulsada() + "");
+                                        JSONObjectList.add(jsonSub);
+                                    }
+                                    jsonObject.put("bloqueverbal", JSONObjectList.toString());
+
+
+                                    JSONObjectList = new ArrayList<>();
+                                    jsonSub = new JSONObject();
+                                    for (Preguntas e : notas.getBloquenumerico()) {
+                                        jsonSub.put("cont", e.getCont());
+                                        jsonSub.put("pregunta", e.getPregunta());
+                                        jsonSub.put("respuestaA", e.getRespuestaA());
+                                        jsonSub.put("respuestaB", e.getRespuestaB());
+                                        jsonSub.put("respuestaC", e.getRespuestaC());
+                                        jsonSub.put("respuestaD", e.getRespuestaD());
+                                        jsonSub.put("solu", e.getSolu());
+                                        jsonSub.put("expliSol", e.getExpliSol());
+                                        jsonSub.put("imgPregunta", e.getImgPregunta());
+                                        jsonSub.put("imgA", e.getImgA());
+                                        jsonSub.put("imgB", e.getImgB());
+                                        jsonSub.put("imgC", e.getImgC());
+                                        jsonSub.put("imgD", e.getImgD());
+                                        jsonSub.put("imgSol", e.getImgSol());
+                                        jsonSub.put("imgExpli", e.getImgExpli());
+                                        jsonSub.put("respulsada", e.getRespulsada());
+                                        JSONObjectList.add(jsonSub);
+                                    }
+                                    jsonObject.put("bloquenumerico", JSONObjectList);
+
+
+                                    JSONObjectList = new ArrayList<>();
+                                    jsonSub = new JSONObject();
+                                    for (Preguntas e : notas.getBloqueespacial()) {
+                                        jsonSub.put("cont", e.getCont());
+                                        jsonSub.put("pregunta", e.getPregunta());
+                                        jsonSub.put("respuestaA", e.getRespuestaA());
+                                        jsonSub.put("respuestaB", e.getRespuestaB());
+                                        jsonSub.put("respuestaC", e.getRespuestaC());
+                                        jsonSub.put("respuestaD", e.getRespuestaD());
+                                        jsonSub.put("solu", e.getSolu());
+                                        jsonSub.put("expliSol", e.getExpliSol());
+                                        jsonSub.put("imgPregunta", e.getImgPregunta());
+                                        jsonSub.put("imgA", e.getImgA());
+                                        jsonSub.put("imgB", e.getImgB());
+                                        jsonSub.put("imgC", e.getImgC());
+                                        jsonSub.put("imgD", e.getImgD());
+                                        jsonSub.put("imgSol", e.getImgSol());
+                                        jsonSub.put("imgExpli", e.getImgExpli());
+                                        jsonSub.put("respulsada", e.getRespulsada());
+                                        JSONObjectList.add(jsonSub);
+                                    }
+                                    jsonObject.put("bloqueespacial", JSONObjectList);
+
+
+                                    JSONObjectList = new ArrayList<>();
+                                    jsonSub = new JSONObject();
+                                    for (Preguntas e : notas.getBloquemecanico()) {
+                                        jsonSub.put("cont", e.getCont());
+                                        jsonSub.put("pregunta", e.getPregunta());
+                                        jsonSub.put("respuestaA", e.getRespuestaA());
+                                        jsonSub.put("respuestaB", e.getRespuestaB());
+                                        jsonSub.put("respuestaC", e.getRespuestaC());
+                                        jsonSub.put("respuestaD", e.getRespuestaD());
+                                        jsonSub.put("solu", e.getSolu());
+                                        jsonSub.put("expliSol", e.getExpliSol());
+                                        jsonSub.put("imgPregunta", e.getImgPregunta());
+                                        jsonSub.put("imgA", e.getImgA());
+                                        jsonSub.put("imgB", e.getImgB());
+                                        jsonSub.put("imgC", e.getImgC());
+                                        jsonSub.put("imgD", e.getImgD());
+                                        jsonSub.put("imgSol", e.getImgSol());
+                                        jsonSub.put("imgExpli", e.getImgExpli());
+                                        jsonSub.put("respulsada", e.getRespulsada());
+                                        JSONObjectList.add(jsonSub);
+                                    }
+                                    jsonObject.put("bloquemecanico", JSONObjectList);
+
+
+                                    JSONObjectList = new ArrayList<>();
+                                    jsonSub = new JSONObject();
+                                    for (Preguntas e : notas.getBloqueperceptiva()) {
+                                        jsonSub.put("cont", e.getCont());
+                                        jsonSub.put("pregunta", e.getPregunta());
+                                        jsonSub.put("respuestaA", e.getRespuestaA());
+                                        jsonSub.put("respuestaB", e.getRespuestaB());
+                                        jsonSub.put("respuestaC", e.getRespuestaC());
+                                        jsonSub.put("respuestaD", e.getRespuestaD());
+                                        jsonSub.put("solu", e.getSolu());
+                                        jsonSub.put("expliSol", e.getExpliSol());
+                                        jsonSub.put("imgPregunta", e.getImgPregunta());
+                                        jsonSub.put("imgA", e.getImgA());
+                                        jsonSub.put("imgB", e.getImgB());
+                                        jsonSub.put("imgC", e.getImgC());
+                                        jsonSub.put("imgD", e.getImgD());
+                                        jsonSub.put("imgSol", e.getImgSol());
+                                        jsonSub.put("imgExpli", e.getImgExpli());
+                                        jsonSub.put("respulsada", e.getRespulsada());
+                                        JSONObjectList.add(jsonSub);
+                                    }
+                                    jsonObject.put("bloqueperceptiva", JSONObjectList);
+
+
+                                    JSONObjectList = new ArrayList<>();
+                                    jsonSub = new JSONObject();
+                                    for (Preguntas e : notas.getBloquememoria()) {
+                                        jsonSub.put("cont", e.getCont());
+                                        jsonSub.put("pregunta", e.getPregunta());
+                                        jsonSub.put("respuestaA", e.getRespuestaA());
+                                        jsonSub.put("respuestaB", e.getRespuestaB());
+                                        jsonSub.put("respuestaC", e.getRespuestaC());
+                                        jsonSub.put("respuestaD", e.getRespuestaD());
+                                        jsonSub.put("solu", e.getSolu());
+                                        jsonSub.put("expliSol", e.getExpliSol());
+                                        jsonSub.put("imgPregunta", e.getImgPregunta());
+                                        jsonSub.put("imgA", e.getImgA());
+                                        jsonSub.put("imgB", e.getImgB());
+                                        jsonSub.put("imgC", e.getImgC());
+                                        jsonSub.put("imgD", e.getImgD());
+                                        jsonSub.put("imgSol", e.getImgSol());
+                                        jsonSub.put("imgExpli", e.getImgExpli());
+                                        jsonSub.put("respulsada", e.getRespulsada());
+                                        JSONObjectList.add(jsonSub);
+                                    }
+                                    jsonObject.put("bloquememoria", JSONObjectList);
+
+
+                                    JSONObjectList = new ArrayList<>();
+                                    jsonSub = new JSONObject();
+                                    for (Preguntas e : notas.getBloqueabstrapto()) {
+                                        jsonSub.put("cont", e.getCont());
+                                        jsonSub.put("pregunta", e.getPregunta());
+                                        jsonSub.put("respuestaA", e.getRespuestaA());
+                                        jsonSub.put("respuestaB", e.getRespuestaB());
+                                        jsonSub.put("respuestaC", e.getRespuestaC());
+                                        jsonSub.put("respuestaD", e.getRespuestaD());
+                                        jsonSub.put("solu", e.getSolu());
+                                        jsonSub.put("expliSol", e.getExpliSol());
+                                        jsonSub.put("imgPregunta", e.getImgPregunta());
+                                        jsonSub.put("imgA", e.getImgA());
+                                        jsonSub.put("imgB", e.getImgB());
+                                        jsonSub.put("imgC", e.getImgC());
+                                        jsonSub.put("imgD", e.getImgD());
+                                        jsonSub.put("imgSol", e.getImgSol());
+                                        jsonSub.put("imgExpli", e.getImgExpli());
+                                        jsonSub.put("respulsada", e.getRespulsada());
+                                        JSONObjectList.add(jsonSub);
+                                    }
+                                    jsonObject.put("bloqueabstrapto", JSONObjectList);
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                }
+
+                                String arreglojson = jsonObject.toString();
+                                arreglojson = arreglojson.replace("\\n", "ppppp");
+                                arreglojson = arreglojson.replace("\\p", "p");
+                                arreglojson = arreglojson.replace("\"[", "[");
+                                arreglojson = arreglojson.replace("]\"", "]");
+                                arreglojson = arreglojson.replace("{\\", "{");
+                                arreglojson = arreglojson.replace("\\\"", "\"");
+                                arreglojson = arreglojson.replace("ppppp", "\\n");
+
+
+                                OutputStreamWriter fout = new OutputStreamWriter(new FileOutputStream(a));
+                                fout.write(arreglojson);
+                                fout.close();
+                                System.out.println(ruta_sd);
+                                System.out.println(a);
 
                                 Toast toast1 =
                                         Toast.makeText(getApplicationContext(), getString(R.string.guardado), Toast.LENGTH_SHORT);
@@ -472,7 +696,7 @@ public class main_resultado_exam extends Activity {
                                 toast1.show();
                             }
 
-                        }else{
+                        } else {
                             Toast toast1 =
                                     Toast.makeText(getApplicationContext(),
                                             "Necesitas calcular la nota con baremo", Toast.LENGTH_SHORT);
@@ -492,20 +716,21 @@ public class main_resultado_exam extends Activity {
 
     }
 
-    public void notabaremo(){
-        notas.setBaremoredondeado (((notas.getBar() / 40) * 10) * 0.3);
+    public void notabaremo() {
+        notas.setBaremoredondeado(((notas.getBar() / 40) * 10) * 0.3);
         double notabaremo = (notas.getNotasobre10() * 0.7);
-        double a = redondearDecimales(notas.getBaremoredondeado(),5);
-        double b = redondearDecimales(notabaremo,5);
-        notas.setNotaredondeadabar(redondearDecimales(a+b,1));
+        double a = redondearDecimales(notas.getBaremoredondeado(), 5);
+        double b = redondearDecimales(notabaremo, 5);
+        notas.setNotaredondeadabar(redondearDecimales(a + b, 1));
     }
+
     public static double redondearDecimales(double valorInicial, int numeroDecimales) {
         double parteEntera, resultado;
         resultado = valorInicial;
         parteEntera = Math.floor(resultado);
-        resultado=(resultado-parteEntera)*Math.pow(10, numeroDecimales);
-        resultado=Math.round(resultado);
-        resultado=(resultado/Math.pow(10, numeroDecimales))+parteEntera;
+        resultado = (resultado - parteEntera) * Math.pow(10, numeroDecimales);
+        resultado = Math.round(resultado);
+        resultado = (resultado / Math.pow(10, numeroDecimales)) + parteEntera;
         return resultado;
     }
 

@@ -525,14 +525,14 @@ public class main_info extends Activity {
         final TextView g = (TextView) findViewById(R.id.g);
         final TextView h = (TextView) findViewById(R.id.h);
 
-        final Button a1 = (Button)findViewById(R.id.a1);
-        final Button b1 = (Button)findViewById(R.id.b1);
-        final Button c1 = (Button)findViewById(R.id.c1);
-        final Button d1 = (Button)findViewById(R.id.d1);
-        final Button e1 = (Button)findViewById(R.id.e1);
-        final Button f1 = (Button)findViewById(R.id.f1);
-        final Button g1 = (Button)findViewById(R.id.g1);
-        final Button h1 = (Button)findViewById(R.id.h1);
+        final Button a1 = (Button) findViewById(R.id.a1);
+        final Button b1 = (Button) findViewById(R.id.b1);
+        final Button c1 = (Button) findViewById(R.id.c1);
+        final Button d1 = (Button) findViewById(R.id.d1);
+        final Button e1 = (Button) findViewById(R.id.e1);
+        final Button f1 = (Button) findViewById(R.id.f1);
+        final Button g1 = (Button) findViewById(R.id.g1);
+        final Button h1 = (Button) findViewById(R.id.h1);
 
         dato.setVisibility(View.GONE);
 
@@ -572,7 +572,7 @@ public class main_info extends Activity {
                 g.setText("Archivos de datos de abstrapto encontrados");
                 g1.setVisibility(View.VISIBLE);
             }
-            if(datobaremo()){
+            if (datobaremo()) {
                 h.setVisibility(View.VISIBLE);
                 h.setText("Archivo de dato de baremo encontrados");
                 h1.setVisibility(View.VISIBLE);
@@ -591,7 +591,7 @@ public class main_info extends Activity {
                 if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo()) {
                     dato.setVisibility(View.VISIBLE);
                     dato.setText("No se han encontrado archivos de datos guardado");
-                }else{
+                } else {
                     dato.setVisibility(View.GONE);
                 }
             }
@@ -681,7 +681,7 @@ public class main_info extends Activity {
             }
         });
         String version = String.valueOf((BuildConfig.VERSION_CODE));
-        TextView versi = (TextView)findViewById(R.id.version);
+        TextView versi = (TextView) findViewById(R.id.version);
         versi.setText(version);
 
     }
@@ -702,11 +702,11 @@ public class main_info extends Activity {
         return encontrado;
     }
 
-    private boolean datobaremo(){
+    private boolean datobaremo() {
         boolean encontrado = false;
         File ruta_sd = getExternalFilesDir(null);
         File f = new File(ruta_sd.getAbsolutePath(), "baremo");
-        if(f.exists()){
+        if (f.exists()) {
             encontrado = true;
         }
         return encontrado;
@@ -727,6 +727,7 @@ public class main_info extends Activity {
         e.delete();
         f.delete();
     }
+
     private void borrarbar() {
         File ruta_sd = getExternalFilesDir(null);
         File f = new File(ruta_sd.getAbsolutePath(), "baremo");

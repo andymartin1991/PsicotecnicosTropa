@@ -1,347 +1,660 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
+
     <array name="premecanico">
-        <!--001--><item>De las siguientes bolas, tras el golpe, ¿cuál sufrirá un mayor desplazamiento?</item>
-        <!--002--><item>Si desplazamos la cremallera a la izquierda, ¿qué pasará con el piñón?</item>
-        <!--003--><item>Se produce un incendio en tres habitaciones iguales, ¿en cuál tardaría más el fuego en propagarse?</item>
-        <!--004--><item>En una carrera de bicicletas, ¿cuál cree que correrá más rápido?</item>
-        <!--005--><item>Dos corredores hacen un circuito formado por dos elipses concéntricas en dos días consecutivos.\nA: Primer día en el circuito interno a 18m/s y segundo día en el circuito externo a 21m/s.\nB: Primer día en el circuito externo a 23m/s y segundo día en el interno a 22m/s.\n¿Cuál de los dos recorrió una distancia menor el primer día?</item>
-        <!--006--><item>Dos personas trasladan un peso entre los dos, ¿cuál de los dos soportará más peso?</item>
-        <!--007--><item>En un campeonato de natación para peces, el primer clasificado logró correr 240m sobre el agua en 40s, ¿cuál fue su velocidad media?</item>
-        <!--008--><item>Juan quiere levantar con una polea anclada al techo un baúl que pesa 70Kg. ¿Qué fuerza tiene que aplicar?</item>
-        <!--009--><item>¿En qué rampa es más fácil subir la carga?</item>
-        <!--010--><item>¿Cuál llegará antes a los 100Km/h  si todos estos vehículos parten desde cero con la siguiente velocidad de aceleración?</item>
-        <!--011--><item>¿Cuál de los dos está girando más rápido?</item>
-        <!--012--><item>¿Cuál de los dos soporta mayor peso?</item>
-        <!--013--><item>En una carrera, ¿cuál de los dos debe correr más para llegar llegar a la meta si mantienen esa posición?</item>
-        <!--014--><item>¿Cuál es la mejor manera de llevar el peso?</item>
-        <!--015--><item>Si la grande gira en esa dirección, ¿hacia dónde girará la más pequeña?</item>
-        <!--016--><item>¿Cuánto pesa A?</item>
-        <!--017--><item>¿Cuál de los siguientes coches tiene más fácil subir?</item>
-        <!--018--><item>¿Hacia qué lado girará la rueda de la polea?</item>
-        <!--019--><item>Para formar la siguiente figura, ¿cuántos hexágonos hacen falta?</item>
-        <!--020--><item>Se lanzan paracaídas con provisiones, ¿cuál tardará más en llegar a tierra?</item>
-		
+        <!--001-->
+        <item>De las siguientes bolas, tras el golpe, ¿cuál sufrirá un mayor desplazamiento?</item>
+        <!--002-->
+        <item>Si desplazamos la cremallera a la izquierda, ¿qué pasará con el piñón?</item>
+        <!--003-->
+        <item>Se produce un incendio en tres habitaciones iguales, ¿en cuál tardaría más el fuego en
+            propagarse?
+        </item>
+        <!--004-->
+        <item>En una carrera de bicicletas, ¿cuál cree que correrá más rápido?</item>
+        <!--005-->
+        <item>Dos corredores hacen un circuito formado por dos elipses concéntricas en dos días
+            consecutivos.\nA: Primer día en el circuito interno a 18m/s y segundo día en el circuito
+            externo a 21m/s.\nB: Primer día en el circuito externo a 23m/s y segundo día en el
+            interno a 22m/s.\n¿Cuál de los dos recorrió una distancia menor el primer día?
+        </item>
+        <!--006-->
+        <item>Dos personas trasladan un peso entre los dos, ¿cuál de los dos soportará más peso?
+        </item>
+        <!--007-->
+        <item>En un campeonato de natación para peces, el primer clasificado logró correr 240m sobre
+            el agua en 40s, ¿cuál fue su velocidad media?
+        </item>
+        <!--008-->
+        <item>Juan quiere levantar con una polea anclada al techo un baúl que pesa 70Kg. ¿Qué fuerza
+            tiene que aplicar?
+        </item>
+        <!--009-->
+        <item>¿En qué rampa es más fácil subir la carga?</item>
+        <!--010-->
+        <item>¿Cuál llegará antes a los 100Km/h si todos estos vehículos parten desde cero con la
+            siguiente velocidad de aceleración?
+        </item>
+        <!--011-->
+        <item>¿Cuál de los dos está girando más rápido?</item>
+        <!--012-->
+        <item>¿Cuál de los dos soporta mayor peso?</item>
+        <!--013-->
+        <item>En una carrera, ¿cuál de los dos debe correr más para llegar llegar a la meta si
+            mantienen esa posición?
+        </item>
+        <!--014-->
+        <item>¿Cuál es la mejor manera de llevar el peso?</item>
+        <!--015-->
+        <item>Si la grande gira en esa dirección, ¿hacia dónde girará la más pequeña?</item>
+        <!--016-->
+        <item>¿Cuánto pesa A?</item>
+        <!--017-->
+        <item>¿Cuál de los siguientes coches tiene más fácil subir?</item>
+        <!--018-->
+        <item>¿Hacia qué lado girará la rueda de la polea?</item>
+        <!--019-->
+        <item>Para formar la siguiente figura, ¿cuántos hexágonos hacen falta?</item>
+        <!--020-->
+        <item>Se lanzan paracaídas con provisiones, ¿cuál tardará más en llegar a tierra?</item>
+
     </array>
-    
+
     <array name="resAmecanico">
-        <!--001--><item>A)</item>
-        <!--002--><item>A)Girará en el sentido de las agujas del reloj.</item>
-        <!--003--><item>A)Una habitación con una ventana entreabierta.</item>
-        <!--004--><item>A)</item>
-        <!--005--><item>A)</item>
-		<!--006--><item>A)El alto.</item>
-        <!--007--><item>A)6Km/h</item>
-        <!--008--><item>A)El mismo que su propio peso.</item>
-        <!--009--><item>A)</item>
-        <!--010--><item>A)Coche: 13m/s</item>
-        <!--011--><item>A)El de la derecha.</item>
-        <!--012--><item>A)</item>
-        <!--013--><item>A)</item>
-        <!--014--><item>A)El de la derecha.</item>
-        <!--015--><item>A)Girará en sentido contrario a la grande.</item>
-        <!--016--><item>A)9Kg</item>
-        <!--017--><item>A)El que sube por una pendiente de 12º.</item>
-        <!--018--><item>A)Hacia la derecha.</item>
-        <!--019--><item>A)8</item>
-        <!--020--><item>A)El paracaídas cuyas provisiones pesan 8Kg.</item>
-		
+        <!--001-->
+        <item>A)</item>
+        <!--002-->
+        <item>A)Girará en el sentido de las agujas del reloj.</item>
+        <!--003-->
+        <item>A)Una habitación con una ventana entreabierta.</item>
+        <!--004-->
+        <item>A)</item>
+        <!--005-->
+        <item>A)</item>
+        <!--006-->
+        <item>A)El alto.</item>
+        <!--007-->
+        <item>A)6Km/h</item>
+        <!--008-->
+        <item>A)El mismo que su propio peso.</item>
+        <!--009-->
+        <item>A)</item>
+        <!--010-->
+        <item>A)Coche: 13m/s</item>
+        <!--011-->
+        <item>A)El de la derecha.</item>
+        <!--012-->
+        <item>A)</item>
+        <!--013-->
+        <item>A)</item>
+        <!--014-->
+        <item>A)El de la derecha.</item>
+        <!--015-->
+        <item>A)Girará en sentido contrario a la grande.</item>
+        <!--016-->
+        <item>A)9Kg</item>
+        <!--017-->
+        <item>A)El que sube por una pendiente de 12º.</item>
+        <!--018-->
+        <item>A)Hacia la derecha.</item>
+        <!--019-->
+        <item>A)8</item>
+        <!--020-->
+        <item>A)El paracaídas cuyas provisiones pesan 8Kg.</item>
+
     </array>
-    
+
     <array name="resBmecanico">
-        <!--001--><item>B)</item>
-        <!--002--><item>B)El piñón se desplazará con la cremallera.</item>
-        <!--003--><item>B)Una habitación con una ventana abierta.</item>
-        <!--004--><item>B)</item>
-        <!--005--><item>B)</item>
-		<!--006--><item>B)El bajo.</item>
-        <!--007--><item>B)6m/s</item>
-        <!--008--><item>B)Mayor que el peso del baúl.</item>
-        <!--009--><item>B)</item>
-        <!--010--><item>B)Moto: 16m/s</item>
-        <!--011--><item>B)El de la izquierda.</item>
-        <!--012--><item>B)</item>
-        <!--013--><item>B)</item>
-        <!--014--><item>B)El de la izquierda.</item>
-        <!--015--><item>B)Girará en la misma dirección que la grande.</item>
-        <!--016--><item>B)15Kg</item>
-        <!--017--><item>B)El que sube por una pendiente de 25º.</item>
-        <!--018--><item>B)Hacia la izquierda.</item>
-        <!--019--><item>B)5</item>
-        <!--020--><item>B)El paracaídas cuyas provisiones pesan 10Kg.</item>
-		
+        <!--001-->
+        <item>B)</item>
+        <!--002-->
+        <item>B)El piñón se desplazará con la cremallera.</item>
+        <!--003-->
+        <item>B)Una habitación con una ventana abierta.</item>
+        <!--004-->
+        <item>B)</item>
+        <!--005-->
+        <item>B)</item>
+        <!--006-->
+        <item>B)El bajo.</item>
+        <!--007-->
+        <item>B)6m/s</item>
+        <!--008-->
+        <item>B)Mayor que el peso del baúl.</item>
+        <!--009-->
+        <item>B)</item>
+        <!--010-->
+        <item>B)Moto: 16m/s</item>
+        <!--011-->
+        <item>B)El de la izquierda.</item>
+        <!--012-->
+        <item>B)</item>
+        <!--013-->
+        <item>B)</item>
+        <!--014-->
+        <item>B)El de la izquierda.</item>
+        <!--015-->
+        <item>B)Girará en la misma dirección que la grande.</item>
+        <!--016-->
+        <item>B)15Kg</item>
+        <!--017-->
+        <item>B)El que sube por una pendiente de 25º.</item>
+        <!--018-->
+        <item>B)Hacia la izquierda.</item>
+        <!--019-->
+        <item>B)5</item>
+        <!--020-->
+        <item>B)El paracaídas cuyas provisiones pesan 10Kg.</item>
+
     </array>
-    
+
     <array name="resCmecanico">
-        <!--001--><item>C)</item>
-        <!--002--><item>C)Girará al contrario de las agujas del reloj.</item>
-        <!--003--><item>C)Una habitación con una ventana cerrada.</item>
-        <!--004--><item>C)</item>
-        <!--005--><item>C)La misma distancia recorren los dos.</item>
-		<!--006--><item>C)Los dos por igual.</item>
-        <!--007--><item>C)60m/s</item>
-        <!--008--><item>C)Igual al peso del baúl.</item>
-        <!--009--><item>C)</item>
-        <!--010--><item>C)Trastor: 7m/s</item>
-        <!--011--><item>C)Los dos giran a la misma velocidad.</item>
-        <!--012--><item>C)Los dos por igual</item>
-        <!--013--><item>C)Ambos lo mismo</item>
-        <!--014--><item>C)Da lo mismo</item>
-        <!--015--><item>C)No gira</item>
-        <!--016--><item>C)11Kg</item>
-        <!--017--><item>C)El que sube por una pendiente de 5º.</item>
-        <!--018--><item>C)No girará a ningún lado, se queda quieto.</item>
-        <!--019--><item>C)7</item>
-        <!--020--><item>C)El paracaídas cuyas provisiones pesan 20Kg.</item>
-		
+        <!--001-->
+        <item>C)</item>
+        <!--002-->
+        <item>C)Girará al contrario de las agujas del reloj.</item>
+        <!--003-->
+        <item>C)Una habitación con una ventana cerrada.</item>
+        <!--004-->
+        <item>C)</item>
+        <!--005-->
+        <item>C)La misma distancia recorren los dos.</item>
+        <!--006-->
+        <item>C)Los dos por igual.</item>
+        <!--007-->
+        <item>C)60m/s</item>
+        <!--008-->
+        <item>C)Igual al peso del baúl.</item>
+        <!--009-->
+        <item>C)</item>
+        <!--010-->
+        <item>C)Trastor: 7m/s</item>
+        <!--011-->
+        <item>C)Los dos giran a la misma velocidad.</item>
+        <!--012-->
+        <item>C)Los dos por igual</item>
+        <!--013-->
+        <item>C)Ambos lo mismo</item>
+        <!--014-->
+        <item>C)Da lo mismo</item>
+        <!--015-->
+        <item>C)No gira</item>
+        <!--016-->
+        <item>C)11Kg</item>
+        <!--017-->
+        <item>C)El que sube por una pendiente de 5º.</item>
+        <!--018-->
+        <item>C)No girará a ningún lado, se queda quieto.</item>
+        <!--019-->
+        <item>C)7</item>
+        <!--020-->
+        <item>C)El paracaídas cuyas provisiones pesan 20Kg.</item>
+
     </array>
-    
+
     <array name="resDmecanico">
-        <!--001--><item/>
-        <!--002--><item>D)El piñón no se moverá.</item>
-        <!--003--><item/>
-        <!--004--><item/>
-        <!--005--><item/>
-		<!--006--><item/>
-        <!--007--><item>D) 60Km/h</item>
-        <!--008--><item>D) Menor que el peso del baúl porque se ayuda con la polea.</item>
-        <!--009--><item/>
-        <!--010--><item>D)Camión: 22m/s</item>
-        <!--011--><item/>
-        <!--012--><item/>
-        <!--013--><item/>
-        <!--014--><item/>
-        <!--015--><item/>
-        <!--016--><item>D)12Kg</item>
-        <!--017--><item>D)El que sube por una pendiente de 10º.</item>
-        <!--018--><item/>
-        <!--019--><item>D)6</item>
-        <!--020--><item>D)El paracaídas cuyas provisiones pesan 7Kg.</item>
+        <!--001-->
+        <item />
+        <!--002-->
+        <item>D)El piñón no se moverá.</item>
+        <!--003-->
+        <item />
+        <!--004-->
+        <item />
+        <!--005-->
+        <item />
+        <!--006-->
+        <item />
+        <!--007-->
+        <item>D) 60Km/h</item>
+        <!--008-->
+        <item>D) Menor que el peso del baúl porque se ayuda con la polea.</item>
+        <!--009-->
+        <item />
+        <!--010-->
+        <item>D)Camión: 22m/s</item>
+        <!--011-->
+        <item />
+        <!--012-->
+        <item />
+        <!--013-->
+        <item />
+        <!--014-->
+        <item />
+        <!--015-->
+        <item />
+        <!--016-->
+        <item>D)12Kg</item>
+        <!--017-->
+        <item>D)El que sube por una pendiente de 10º.</item>
+        <!--018-->
+        <item />
+        <!--019-->
+        <item>D)6</item>
+        <!--020-->
+        <item>D)El paracaídas cuyas provisiones pesan 7Kg.</item>
     </array>
-    
+
     <array name="solmecanico">
-        <!--001--><item>C)</item>
-        <!--002--><item>A)Girará en el sentido de las agujas del reloj.</item>
-        <!--003--><item>C)Una habitación con una ventana cerrada.</item>
-        <!--004--><item>C)</item>
-        <!--005--><item>A)</item>
-		<!--006--><item>B)El bajo.</item>
-        <!--007--><item>B)6m/s</item>
-        <!--008--><item>C)Igual al peso del baúl.</item>
-        <!--009--><item>A)</item>
-        <!--010--><item>D)Camión: 22m/s</item>
-        <!--011--><item>B)El de la izquierda.</item>
-        <!--012--><item>B)</item>
-        <!--013--><item>B)</item>
-        <!--014--><item>A)El de la derecha.</item>
-        <!--015--><item>B)Girará en la misma dirección que la grande.</item>
-        <!--016--><item>D)12Kg</item>
-        <!--017--><item>C)El que sube por una pendiente de 5º.</item>
-        <!--018--><item>A)Hacia la derecha.</item>
-        <!--019--><item>D)6</item>
-        <!--020--><item>D)El paracaídas cuyas provisiones pesan 7Kg.</item>
-		
+        <!--001-->
+        <item>C)</item>
+        <!--002-->
+        <item>A)Girará en el sentido de las agujas del reloj.</item>
+        <!--003-->
+        <item>C)Una habitación con una ventana cerrada.</item>
+        <!--004-->
+        <item>C)</item>
+        <!--005-->
+        <item>A)</item>
+        <!--006-->
+        <item>B)El bajo.</item>
+        <!--007-->
+        <item>B)6m/s</item>
+        <!--008-->
+        <item>C)Igual al peso del baúl.</item>
+        <!--009-->
+        <item>A)</item>
+        <!--010-->
+        <item>D)Camión: 22m/s</item>
+        <!--011-->
+        <item>B)El de la izquierda.</item>
+        <!--012-->
+        <item>B)</item>
+        <!--013-->
+        <item>B)</item>
+        <!--014-->
+        <item>A)El de la derecha.</item>
+        <!--015-->
+        <item>B)Girará en la misma dirección que la grande.</item>
+        <!--016-->
+        <item>D)12Kg</item>
+        <!--017-->
+        <item>C)El que sube por una pendiente de 5º.</item>
+        <!--018-->
+        <item>A)Hacia la derecha.</item>
+        <!--019-->
+        <item>D)6</item>
+        <!--020-->
+        <item>D)El paracaídas cuyas provisiones pesan 7Kg.</item>
+
     </array>
-    
+
     <array name="expliSolmecanico">
-        <!--001--><item>La que sufrirá un mayor desplazamiento será la última bola de la cadena.</item>
-        <!--002--><item>Si se mueve la cremallera, sus dientes empujan a los del piñón consiguiendo que este gire y obteniendo en su eje un movimiento giratorio, ya que el piñón engrana perfectamente en la cremallera.</item>
-        <!--003--><item>En los lugares con mayor cantidad de oxígeno se propaga antes el fuego.</item>
-        <!--004--><item>Si el disco conductor es de mayor diámentro que el del disco conducido, la velocidad de giro aumenta.\nSi los dos discos son iguales, se mantiene la velocidad de giro.\nSi el disco conductor es de menor diámetro que el del disco conducido, la velocidad será menor.</item>
-        <!--005--><item>El primer día, A recorre el circuito interno de la elipse, que obligatoriamente tiene una menor distancia, independientemente de la velocidad.</item>
-		<!--006--><item>El peso se desplaza hacida donde el bajo debido a que el alto eleva el punto medio de equilibrio.</item>
-        <!--007--><item>Distancia (D) = Velocidad Media (V) x Tiempo empleado (t)\n240 = V x 40 =&gt; V = 240/40 = 6m/s</item>
-        <!--008--><item>Las poleas fijas sólo permiten cambiar la dirección de la fuerza, no presenta ventaja mecánica alguna.</item>
-        <!--009--><item>En el plano menos inclinado se realiza menor esfuerzo, aunque se recorre mayor distancia.</item>
-        <!--010--><item>El que tiene mayor aceleración llegará antes a los 100Km/h.</item>
-        <!--011--><item>Las ramas están mucho más separadas del eje, eso indica que hay mayor velocidad.</item>
-        <!--012--><item>Porque el peso está totalmente en su lado.</item>
-        <!--013--><item>Porque está más alejado del borde interior.</item>
-        <!--014--><item>Porque el peso está más alejado de la persona.</item>
-        <!--015--><item>La cinta hará que la pequeña gire en el sentido de las agujas del reloj al igual que la grande, mientras que la mediana gire en contra.</item>
-        <!--016--><item>Pesa lo mismo que B ya que la balanza está equilibrada.</item>
-        <!--017--><item>A menos pendiente menos esfuerzo para subir.</item>
-        <!--018--><item>Porque el peso en ese lado es mayor.</item>
-        <!--019--><item>El hexágono central se forma con la unión de los 6.</item>
-        <!--020--><item>A menor peso, menor gravedad.</item>
+        <!--001-->
+        <item>La que sufrirá un mayor desplazamiento será la última bola de la cadena.</item>
+        <!--002-->
+        <item>Si se mueve la cremallera, sus dientes empujan a los del piñón consiguiendo que este
+            gire y obteniendo en su eje un movimiento giratorio, ya que el piñón engrana
+            perfectamente en la cremallera.
+        </item>
+        <!--003-->
+        <item>En los lugares con mayor cantidad de oxígeno se propaga antes el fuego.</item>
+        <!--004-->
+        <item>Si el disco conductor es de mayor diámentro que el del disco conducido, la velocidad
+            de giro aumenta.\nSi los dos discos son iguales, se mantiene la velocidad de giro.\nSi
+            el disco conductor es de menor diámetro que el del disco conducido, la velocidad será
+            menor.
+        </item>
+        <!--005-->
+        <item>El primer día, A recorre el circuito interno de la elipse, que obligatoriamente tiene
+            una menor distancia, independientemente de la velocidad.
+        </item>
+        <!--006-->
+        <item>El peso se desplaza hacida donde el bajo debido a que el alto eleva el punto medio de
+            equilibrio.
+        </item>
+        <!--007-->
+        <item>Distancia (D) = Velocidad Media (V) x Tiempo empleado (t)\n240 = V x 40 =&gt; V =
+            240/40 = 6m/s
+        </item>
+        <!--008-->
+        <item>Las poleas fijas sólo permiten cambiar la dirección de la fuerza, no presenta ventaja
+            mecánica alguna.
+        </item>
+        <!--009-->
+        <item>En el plano menos inclinado se realiza menor esfuerzo, aunque se recorre mayor
+            distancia.
+        </item>
+        <!--010-->
+        <item>El que tiene mayor aceleración llegará antes a los 100Km/h.</item>
+        <!--011-->
+        <item>Las ramas están mucho más separadas del eje, eso indica que hay mayor velocidad.
+        </item>
+        <!--012-->
+        <item>Porque el peso está totalmente en su lado.</item>
+        <!--013-->
+        <item>Porque está más alejado del borde interior.</item>
+        <!--014-->
+        <item>Porque el peso está más alejado de la persona.</item>
+        <!--015-->
+        <item>La cinta hará que la pequeña gire en el sentido de las agujas del reloj al igual que
+            la grande, mientras que la mediana gire en contra.
+        </item>
+        <!--016-->
+        <item>Pesa lo mismo que B ya que la balanza está equilibrada.</item>
+        <!--017-->
+        <item>A menos pendiente menos esfuerzo para subir.</item>
+        <!--018-->
+        <item>Porque el peso en ese lado es mayor.</item>
+        <!--019-->
+        <item>El hexágono central se forma con la unión de los 6.</item>
+        <!--020-->
+        <item>A menor peso, menor gravedad.</item>
 
     </array>
-    
-    
-    
-    
+
+
     <array name="imgPremecanico">
-        <!--001--><item>mecap001</item>
-        <!--002--><item>mecap002</item>
-        <!--003--><item></item>
-        <!--004--><item></item>
-        <!--005--><item>mecap005</item>
-		<!--006--><item>mecap6</item>
-        <!--007--><item></item>
-        <!--008--><item>mecap008</item>
-        <!--009--><item>mecap009</item>
-        <!--010--><item></item>
-		<!--011--><item>mecp011</item>
-        <!--012--><item>mecp012</item>
-        <!--013--><item>mecp013</item>
-        <!--014--><item>mecp014</item>
-        <!--015--><item>mecp015</item>
-		<!--016--><item>mecp016</item>
-        <!--017--><item></item>
-        <!--018--><item>mecp018</item>
-        <!--019--><item>mecp019</item>
-        <!--020--><item></item>
+        <!--001-->
+        <item>mecap001</item>
+        <!--002-->
+        <item>mecap002</item>
+        <!--003-->
+        <item></item>
+        <!--004-->
+        <item></item>
+        <!--005-->
+        <item>mecap005</item>
+        <!--006-->
+        <item>mecap6</item>
+        <!--007-->
+        <item></item>
+        <!--008-->
+        <item>mecap008</item>
+        <!--009-->
+        <item>mecap009</item>
+        <!--010-->
+        <item></item>
+        <!--011-->
+        <item>mecp011</item>
+        <!--012-->
+        <item>mecp012</item>
+        <!--013-->
+        <item>mecp013</item>
+        <!--014-->
+        <item>mecp014</item>
+        <!--015-->
+        <item>mecp015</item>
+        <!--016-->
+        <item>mecp016</item>
+        <!--017-->
+        <item></item>
+        <!--018-->
+        <item>mecp018</item>
+        <!--019-->
+        <item>mecp019</item>
+        <!--020-->
+        <item></item>
 
 
     </array>
-    
+
     <array name="imgAmecanico">
-        <!--001--><item></item>
-        <!--002--><item></item>
-        <!--003--><item></item>
-        <!--004--><item>mecap004ra</item>
-        <!--005--><item></item>
-		<!--006--><item></item>
-        <!--007--><item></item>
-        <!--008--><item></item>
-        <!--009--><item></item>
-        <!--010--><item></item>
-		<!--011--><item></item>
-        <!--012--><item></item>
-        <!--013--><item></item>
-        <!--014--><item></item>
-        <!--015--><item></item>
-		<!--016--><item></item>
-        <!--017--><item></item>
-        <!--018--><item></item>
-        <!--019--><item></item>
-        <!--020--><item></item>
+        <!--001-->
+        <item></item>
+        <!--002-->
+        <item></item>
+        <!--003-->
+        <item></item>
+        <!--004-->
+        <item>mecap004ra</item>
+        <!--005-->
+        <item></item>
+        <!--006-->
+        <item></item>
+        <!--007-->
+        <item></item>
+        <!--008-->
+        <item></item>
+        <!--009-->
+        <item></item>
+        <!--010-->
+        <item></item>
+        <!--011-->
+        <item></item>
+        <!--012-->
+        <item></item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item></item>
+        <!--015-->
+        <item></item>
+        <!--016-->
+        <item></item>
+        <!--017-->
+        <item></item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item></item>
+        <!--020-->
+        <item></item>
 
 
     </array>
-    
+
     <array name="imgBmecanico">
-        <!--001--><item></item>
-        <!--002--><item></item>
-        <!--003--><item></item>
-        <!--004--><item>mecap004rb</item>
-        <!--005--><item></item>
-		<!--006--><item></item>
-        <!--007--><item></item>
-        <!--008--><item></item>
-        <!--009--><item></item>
-        <!--010--><item></item>
-		<!--011--><item></item>
-        <!--012--><item></item>
-        <!--013--><item></item>
-        <!--014--><item></item>
-        <!--015--><item></item>
-		<!--016--><item></item>
-        <!--017--><item></item>
-        <!--018--><item></item>
-        <!--019--><item></item>
-        <!--020--><item></item>
+        <!--001-->
+        <item></item>
+        <!--002-->
+        <item></item>
+        <!--003-->
+        <item></item>
+        <!--004-->
+        <item>mecap004rb</item>
+        <!--005-->
+        <item></item>
+        <!--006-->
+        <item></item>
+        <!--007-->
+        <item></item>
+        <!--008-->
+        <item></item>
+        <!--009-->
+        <item></item>
+        <!--010-->
+        <item></item>
+        <!--011-->
+        <item></item>
+        <!--012-->
+        <item></item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item></item>
+        <!--015-->
+        <item></item>
+        <!--016-->
+        <item></item>
+        <!--017-->
+        <item></item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item></item>
+        <!--020-->
+        <item></item>
 
 
     </array>
-    
+
     <array name="imgCmecanico">
-        <!--001--><item></item>
-        <!--002--><item></item>
-        <!--003--><item></item>
-        <!--004--><item>mecap004rc</item>
-        <!--005--><item></item>
-		<!--006--><item></item>
-        <!--007--><item></item>
-        <!--008--><item></item>
-        <!--009--><item></item>
-        <!--010--><item></item>
-		<!--011--><item></item>
-        <!--012--><item></item>
-        <!--013--><item></item>
-        <!--014--><item></item>
-        <!--015--><item></item>
-		<!--016--><item></item>
-        <!--017--><item></item>
-        <!--018--><item></item>
-        <!--019--><item></item>
-        <!--020--><item></item>
+        <!--001-->
+        <item></item>
+        <!--002-->
+        <item></item>
+        <!--003-->
+        <item></item>
+        <!--004-->
+        <item>mecap004rc</item>
+        <!--005-->
+        <item></item>
+        <!--006-->
+        <item></item>
+        <!--007-->
+        <item></item>
+        <!--008-->
+        <item></item>
+        <!--009-->
+        <item></item>
+        <!--010-->
+        <item></item>
+        <!--011-->
+        <item></item>
+        <!--012-->
+        <item></item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item></item>
+        <!--015-->
+        <item></item>
+        <!--016-->
+        <item></item>
+        <!--017-->
+        <item></item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item></item>
+        <!--020-->
+        <item></item>
 
 
     </array>
-    
+
     <array name="imgDmecanico">
-        <!--001--><item></item>
-        <!--002--><item></item>
-        <!--003--><item></item>
-        <!--004--><item></item>
-        <!--005--><item></item>
-		<!--006--><item></item>
-        <!--007--><item></item>
-        <!--008--><item></item>
-        <!--009--><item></item>
-        <!--010--><item></item>
-		<!--011--><item></item>
-        <!--012--><item></item>
-        <!--013--><item></item>
-        <!--014--><item></item>
-        <!--015--><item></item>
-		<!--016--><item></item>
-        <!--017--><item></item>
-        <!--018--><item></item>
-        <!--019--><item></item>
-        <!--020--><item></item>
+        <!--001-->
+        <item></item>
+        <!--002-->
+        <item></item>
+        <!--003-->
+        <item></item>
+        <!--004-->
+        <item></item>
+        <!--005-->
+        <item></item>
+        <!--006-->
+        <item></item>
+        <!--007-->
+        <item></item>
+        <!--008-->
+        <item></item>
+        <!--009-->
+        <item></item>
+        <!--010-->
+        <item></item>
+        <!--011-->
+        <item></item>
+        <!--012-->
+        <item></item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item></item>
+        <!--015-->
+        <item></item>
+        <!--016-->
+        <item></item>
+        <!--017-->
+        <item></item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item></item>
+        <!--020-->
+        <item></item>
 
 
     </array>
-    
+
     <array name="imgSolmecanico">
-        <!--001--><item></item>
-        <!--002--><item></item>
-        <!--003--><item></item>
-        <!--004--><item>mecap004rc</item>
-        <!--005--><item></item>
-		<!--006--><item></item>
-        <!--007--><item></item>
-        <!--008--><item></item>
-        <!--009--><item></item>
-        <!--010--><item></item>
-		<!--011--><item></item>
-        <!--012--><item></item>
-        <!--013--><item></item>
-        <!--014--><item></item>
-        <!--015--><item></item>
-		<!--016--><item></item>
-        <!--017--><item></item>
-        <!--018--><item></item>
-        <!--019--><item></item>
-        <!--020--><item></item>
+        <!--001-->
+        <item></item>
+        <!--002-->
+        <item></item>
+        <!--003-->
+        <item></item>
+        <!--004-->
+        <item>mecap004rc</item>
+        <!--005-->
+        <item></item>
+        <!--006-->
+        <item></item>
+        <!--007-->
+        <item></item>
+        <!--008-->
+        <item></item>
+        <!--009-->
+        <item></item>
+        <!--010-->
+        <item></item>
+        <!--011-->
+        <item></item>
+        <!--012-->
+        <item></item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item></item>
+        <!--015-->
+        <item></item>
+        <!--016-->
+        <item></item>
+        <!--017-->
+        <item></item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item></item>
+        <!--020-->
+        <item></item>
 
 
     </array>
-    
+
     <array name="imgExplimecanico">
-        <!--001--><item></item>
-        <!--002--><item></item>
-        <!--003--><item></item>
-        <!--004--><item></item>
-        <!--005--><item></item>
-		<!--006--><item></item>
-        <!--007--><item></item>
-        <!--008--><item></item>
-        <!--009--><item></item>
-        <!--010--><item></item>
-		<!--011--><item></item>
-        <!--012--><item></item>
-        <!--013--><item></item>
-        <!--014--><item></item>
-        <!--015--><item></item>
-		<!--016--><item></item>
-        <!--017--><item></item>
-        <!--018--><item></item>
-        <!--019--><item></item>
-        <!--020--><item></item>
+        <!--001-->
+        <item></item>
+        <!--002-->
+        <item></item>
+        <!--003-->
+        <item></item>
+        <!--004-->
+        <item></item>
+        <!--005-->
+        <item></item>
+        <!--006-->
+        <item></item>
+        <!--007-->
+        <item></item>
+        <!--008-->
+        <item></item>
+        <!--009-->
+        <item></item>
+        <!--010-->
+        <item></item>
+        <!--011-->
+        <item></item>
+        <!--012-->
+        <item></item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item></item>
+        <!--015-->
+        <item></item>
+        <!--016-->
+        <item></item>
+        <!--017-->
+        <item></item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item></item>
+        <!--020-->
+        <item></item>
 
 
     </array>

@@ -1,337 +1,624 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
+
     <array name="preabstrapto">
-        <!--001--><item>¿Cuál sigue la serie?</item>
-        <!--002--><item>¿Cuál sigue la serie?</item>
-        <!--003--><item>¿Cuál sigue la serie?</item>
-        <!--004--><item>¿Qué operación corresponde a la casilla \'¿?\'?</item>
-        <!--005--><item>¿Qué figura continúa la serie?</item>
-		<!--006--><item>¿Qué figura le sigue al final de esta serie?</item>
-        <!--007--><item>¿Cuál correspondería a la última figura según la serie?</item>
-        <!--008--><item>¿Cuál correspondería a la última figura según la serie?</item>
-        <!--009--><item>¿Cuál sigue la serie?</item>
-        <!--010--><item>¿Cuál correspondería a la última casilla?</item>
-        <!--011--><item>¿Cuál sigue la serie?</item>
-        <!--012--><item>¿Cuál sigue la serie?</item>
-        <!--013--><item>¿Cuál sigue la serie?</item>
-        <!--014--><item>¿Cuál sigue la serie?</item>
-        <!--015--><item>¿Cuál sigue la serie?</item>
-        <!--016--><item>¿Cuál sigue la serie?</item>
-        <!--017--><item>¿Qué operación corresponde a la casilla \'¿?\'?</item>
-        <!--018--><item>¿Cuál sigue la serie?</item>
-        <!--019--><item>¿Cuál sigue la serie?</item>
-        <!--020--><item>¿Cuál sigue la serie?</item>
+        <!--001-->
+        <item>¿Cuál sigue la serie?</item>
+        <!--002-->
+        <item>¿Cuál sigue la serie?</item>
+        <!--003-->
+        <item>¿Cuál sigue la serie?</item>
+        <!--004-->
+        <item>¿Qué operación corresponde a la casilla \'¿?\'?</item>
+        <!--005-->
+        <item>¿Qué figura continúa la serie?</item>
+        <!--006-->
+        <item>¿Qué figura le sigue al final de esta serie?</item>
+        <!--007-->
+        <item>¿Cuál correspondería a la última figura según la serie?</item>
+        <!--008-->
+        <item>¿Cuál correspondería a la última figura según la serie?</item>
+        <!--009-->
+        <item>¿Cuál sigue la serie?</item>
+        <!--010-->
+        <item>¿Cuál correspondería a la última casilla?</item>
+        <!--011-->
+        <item>¿Cuál sigue la serie?</item>
+        <!--012-->
+        <item>¿Cuál sigue la serie?</item>
+        <!--013-->
+        <item>¿Cuál sigue la serie?</item>
+        <!--014-->
+        <item>¿Cuál sigue la serie?</item>
+        <!--015-->
+        <item>¿Cuál sigue la serie?</item>
+        <!--016-->
+        <item>¿Cuál sigue la serie?</item>
+        <!--017-->
+        <item>¿Qué operación corresponde a la casilla \'¿?\'?</item>
+        <!--018-->
+        <item>¿Cuál sigue la serie?</item>
+        <!--019-->
+        <item>¿Cuál sigue la serie?</item>
+        <!--020-->
+        <item>¿Cuál sigue la serie?</item>
     </array>
-    
+
     <array name="resAabstrapto">
-        <!--001--><item>A)4/4</item>
-        <!--002--><item>A)</item>
-        <!--003--><item>A)</item>
-        <!--004--><item>A)/3</item>
-        <!--005--><item>A)</item>
-		<!--006--><item>A)</item>
-        <!--007--><item>A)</item>
-        <!--008--><item>A)</item>
-        <!--009--><item>A)</item>
-        <!--010--><item>A)</item>
-        <!--011--><item>A)5/0</item>
-        <!--012--><item>A)</item>
-        <!--013--><item>A)2/6</item>
-        <!--014--><item>A)</item>
-        <!--015--><item>A)</item>
-        <!--016--><item>A)</item>
-        <!--017--><item>A)x10</item>
-        <!--018--><item>A)5/3</item>
-        <!--019--><item>A)</item>
-        <!--020--><item>A)</item>
+        <!--001-->
+        <item>A)4/4</item>
+        <!--002-->
+        <item>A)</item>
+        <!--003-->
+        <item>A)</item>
+        <!--004-->
+        <item>A)/3</item>
+        <!--005-->
+        <item>A)</item>
+        <!--006-->
+        <item>A)</item>
+        <!--007-->
+        <item>A)</item>
+        <!--008-->
+        <item>A)</item>
+        <!--009-->
+        <item>A)</item>
+        <!--010-->
+        <item>A)</item>
+        <!--011-->
+        <item>A)5/0</item>
+        <!--012-->
+        <item>A)</item>
+        <!--013-->
+        <item>A)2/6</item>
+        <!--014-->
+        <item>A)</item>
+        <!--015-->
+        <item>A)</item>
+        <!--016-->
+        <item>A)</item>
+        <!--017-->
+        <item>A)x10</item>
+        <!--018-->
+        <item>A)5/3</item>
+        <!--019-->
+        <item>A)</item>
+        <!--020-->
+        <item>A)</item>
     </array>
-    
+
     <array name="resBabstrapto">
-        <!--001--><item>B)4/5</item>
-        <!--002--><item>B)</item>
-        <!--003--><item>B)</item>
-        <!--004--><item>B)x4</item>
-        <!--005--><item>B)</item>
-		<!--006--><item>B)</item>
-        <!--007--><item>B)</item>
-        <!--008--><item>B)</item>
-        <!--009--><item>B)</item>
-        <!--010--><item>B)</item>
-        <!--011--><item>B)3/0</item>
-        <!--012--><item>B)</item>
-        <!--013--><item>B)3/6</item>
-        <!--014--><item>B)</item>
-        <!--015--><item>B)</item>
-        <!--016--><item>B)</item>
-        <!--017--><item>B)/110</item>
-        <!--018--><item>B)3/5</item>
-        <!--019--><item>B)</item>
-        <!--020--><item>B)</item>
+        <!--001-->
+        <item>B)4/5</item>
+        <!--002-->
+        <item>B)</item>
+        <!--003-->
+        <item>B)</item>
+        <!--004-->
+        <item>B)x4</item>
+        <!--005-->
+        <item>B)</item>
+        <!--006-->
+        <item>B)</item>
+        <!--007-->
+        <item>B)</item>
+        <!--008-->
+        <item>B)</item>
+        <!--009-->
+        <item>B)</item>
+        <!--010-->
+        <item>B)</item>
+        <!--011-->
+        <item>B)3/0</item>
+        <!--012-->
+        <item>B)</item>
+        <!--013-->
+        <item>B)3/6</item>
+        <!--014-->
+        <item>B)</item>
+        <!--015-->
+        <item>B)</item>
+        <!--016-->
+        <item>B)</item>
+        <!--017-->
+        <item>B)/110</item>
+        <!--018-->
+        <item>B)3/5</item>
+        <!--019-->
+        <item>B)</item>
+        <!--020-->
+        <item>B)</item>
     </array>
-    
+
     <array name="resCabstrapto">
-        <!--001--><item>C)4/0</item>
-        <!--002--><item>C)</item>
-        <!--003--><item>C)</item>
-        <!--004--><item>C)x2</item>
-        <!--005--><item>C)</item>
-		<!--006--><item>C)</item>
-        <!--007--><item>C)</item>
-        <!--008--><item>C)</item>
-        <!--009--><item>C)</item>
-        <!--010--><item>C)</item>
-        <!--011--><item>C)4/0</item>
-        <!--012--><item>C)</item>
-        <!--013--><item>C)0/6</item>
-        <!--014--><item>C)</item>
-        <!--015--><item>C)</item>
-        <!--016--><item>C)</item>
-        <!--017--><item>C)/50</item>
-        <!--018--><item>C)6/3</item>
-        <!--019--><item>C)</item>
-        <!--020--><item>C)</item>
+        <!--001-->
+        <item>C)4/0</item>
+        <!--002-->
+        <item>C)</item>
+        <!--003-->
+        <item>C)</item>
+        <!--004-->
+        <item>C)x2</item>
+        <!--005-->
+        <item>C)</item>
+        <!--006-->
+        <item>C)</item>
+        <!--007-->
+        <item>C)</item>
+        <!--008-->
+        <item>C)</item>
+        <!--009-->
+        <item>C)</item>
+        <!--010-->
+        <item>C)</item>
+        <!--011-->
+        <item>C)4/0</item>
+        <!--012-->
+        <item>C)</item>
+        <!--013-->
+        <item>C)0/6</item>
+        <!--014-->
+        <item>C)</item>
+        <!--015-->
+        <item>C)</item>
+        <!--016-->
+        <item>C)</item>
+        <!--017-->
+        <item>C)/50</item>
+        <!--018-->
+        <item>C)6/3</item>
+        <!--019-->
+        <item>C)</item>
+        <!--020-->
+        <item>C)</item>
     </array>
-    
+
     <array name="resDabstrapto">
-        <!--001--><item>D)1/0</item>
-        <!--002--><item>D)</item>
-        <!--003--><item>D)</item>
-        <!--004--><item>D)-4</item>
-        <!--005--><item>D)</item>
-		<!--006--><item>D)</item>
-        <!--007--><item>D)</item>
-        <!--008--><item>D)</item>
-        <!--009--><item>D)</item>
-        <!--010--><item>D)</item>
-        <!--011--><item>D)1/0</item>
-        <!--012--><item>D)</item>
-        <!--013--><item>D)5/6</item>
-        <!--014--><item>D)</item>
-        <!--015--><item>D)</item>
-        <!--016--><item>D)</item>
-        <!--017--><item>D)-540</item>
-        <!--018--><item>D)2/3</item>
-        <!--019--><item />
-        <!--020--><item>D)</item>
+        <!--001-->
+        <item>D)1/0</item>
+        <!--002-->
+        <item>D)</item>
+        <!--003-->
+        <item>D)</item>
+        <!--004-->
+        <item>D)-4</item>
+        <!--005-->
+        <item>D)</item>
+        <!--006-->
+        <item>D)</item>
+        <!--007-->
+        <item>D)</item>
+        <!--008-->
+        <item>D)</item>
+        <!--009-->
+        <item>D)</item>
+        <!--010-->
+        <item>D)</item>
+        <!--011-->
+        <item>D)1/0</item>
+        <!--012-->
+        <item>D)</item>
+        <!--013-->
+        <item>D)5/6</item>
+        <!--014-->
+        <item>D)</item>
+        <!--015-->
+        <item>D)</item>
+        <!--016-->
+        <item>D)</item>
+        <!--017-->
+        <item>D)-540</item>
+        <!--018-->
+        <item>D)2/3</item>
+        <!--019-->
+        <item />
+        <!--020-->
+        <item>D)</item>
     </array>
-    
+
     <array name="solabstrapto">
-        <!--001--><item>B)4/5</item>
-        <!--002--><item>B)</item>
-        <!--003--><item>C)</item>
-        <!--004--><item>C)x2</item>
-        <!--005--><item>A)</item>
-		<!--006--><item>C)</item>
-        <!--007--><item>B)</item>
-        <!--008--><item>D)</item>
-        <!--009--><item>A)</item>
-        <!--010--><item>C)</item>
-        <!--011--><item>B)3/0</item>
-        <!--012--><item>C)</item>
-        <!--013--><item>B)3/6</item>
-        <!--014--><item>C)</item>
-        <!--015--><item>B)Abajo</item>
-        <!--016--><item>D)</item>
-        <!--017--><item>C)/50</item>
-        <!--018--><item>A)5/3</item>
-        <!--019--><item>C)</item>
-        <!--020--><item>C)</item>
-        
+        <!--001-->
+        <item>B)4/5</item>
+        <!--002-->
+        <item>B)</item>
+        <!--003-->
+        <item>C)</item>
+        <!--004-->
+        <item>C)x2</item>
+        <!--005-->
+        <item>A)</item>
+        <!--006-->
+        <item>C)</item>
+        <!--007-->
+        <item>B)</item>
+        <!--008-->
+        <item>D)</item>
+        <!--009-->
+        <item>A)</item>
+        <!--010-->
+        <item>C)</item>
+        <!--011-->
+        <item>B)3/0</item>
+        <!--012-->
+        <item>C)</item>
+        <!--013-->
+        <item>B)3/6</item>
+        <!--014-->
+        <item>C)</item>
+        <!--015-->
+        <item>B)Abajo</item>
+        <!--016-->
+        <item>D)</item>
+        <!--017-->
+        <item>C)/50</item>
+        <!--018-->
+        <item>A)5/3</item>
+        <!--019-->
+        <item>C)</item>
+        <!--020-->
+        <item>C)</item>
+
     </array>
-    
+
     <array name="expliSolabstrapto">
-        <!--001--><item>Cada dominó impar se va añadiendo +1 en cada número mientras que en cada par se deja el mismo: 1/0.</item>
-        <!--002--><item>Va avanzando la zona pintada hacia la derecha, cuando finaliza, empieza de nuevo.</item>
-        <!--003--><item>La bola va rotando 180º en relación con el que le precede.</item>
-        <!--004--><item>14x2 = 28</item>
-        <!--005--><item>Se va añadiendo un segmento a la línea anterior con el fin de formar una cruz.</item>
-		<!--006--><item>Se van alternando las notas musicales 6 y 4 y también la figura interna.</item>
-        <!--007--><item>Las figuras de la derecha son la suma de las otras dos de la izquierda.</item>
-        <!--008--><item>Las figuras de la derecha son la suma de las otras dos de la izquierda.</item>
-        <!--009--><item>Las bolas de la derecha son el resultado de las multiplicaciones de las de la izquierda.</item>
-        <!--010--><item>Las casillas de la derecha son el resultado de las restas de las casillas de la izquierda.</item>
-        <!--011--><item>Se van alternando +1 y -1.</item>
-        <!--012--><item>Se va añadiendo cada figura alternativamente.</item>
-        <!--013--><item>En la parte de abajo se mantiene con las anteriores mientras que la parte de arriba se va alternando el 3, el 2 o el 5 sin repetir de lugar.</item>
-        <!--014--><item>Cada imagen se va añadiendo una punta.</item>
-        <!--015--><item>La tercera casilla es igual que la primera.</item>
-        <!--016--><item>Las casillas de la derecha son el resultado de la resta de las de la izquierda.</item>
-        <!--017--><item></item>
-        <!--018--><item>Se suman: 2+3=5 y 1+2=3 =&gt; 5/3</item>
-        <!--019--><item>La tercera figura es la unión de las dos anteriores.</item>
-        <!--020--><item>El patrón es diagonal, vertical y horizontal.</item>
+        <!--001-->
+        <item>Cada dominó impar se va añadiendo +1 en cada número mientras que en cada par se deja
+            el mismo: 1/0.
+        </item>
+        <!--002-->
+        <item>Va avanzando la zona pintada hacia la derecha, cuando finaliza, empieza de nuevo.
+        </item>
+        <!--003-->
+        <item>La bola va rotando 180º en relación con el que le precede.</item>
+        <!--004-->
+        <item>14x2 = 28</item>
+        <!--005-->
+        <item>Se va añadiendo un segmento a la línea anterior con el fin de formar una cruz.</item>
+        <!--006-->
+        <item>Se van alternando las notas musicales 6 y 4 y también la figura interna.</item>
+        <!--007-->
+        <item>Las figuras de la derecha son la suma de las otras dos de la izquierda.</item>
+        <!--008-->
+        <item>Las figuras de la derecha son la suma de las otras dos de la izquierda.</item>
+        <!--009-->
+        <item>Las bolas de la derecha son el resultado de las multiplicaciones de las de la
+            izquierda.
+        </item>
+        <!--010-->
+        <item>Las casillas de la derecha son el resultado de las restas de las casillas de la
+            izquierda.
+        </item>
+        <!--011-->
+        <item>Se van alternando +1 y -1.</item>
+        <!--012-->
+        <item>Se va añadiendo cada figura alternativamente.</item>
+        <!--013-->
+        <item>En la parte de abajo se mantiene con las anteriores mientras que la parte de arriba se
+            va alternando el 3, el 2 o el 5 sin repetir de lugar.
+        </item>
+        <!--014-->
+        <item>Cada imagen se va añadiendo una punta.</item>
+        <!--015-->
+        <item>La tercera casilla es igual que la primera.</item>
+        <!--016-->
+        <item>Las casillas de la derecha son el resultado de la resta de las de la izquierda.</item>
+        <!--017-->
+        <item></item>
+        <!--018-->
+        <item>Se suman: 2+3=5 y 1+2=3 =&gt; 5/3</item>
+        <!--019-->
+        <item>La tercera figura es la unión de las dos anteriores.</item>
+        <!--020-->
+        <item>El patrón es diagonal, vertical y horizontal.</item>
 
     </array>
-    
-    
-    
-    
+
+
     <array name="imgPreabstrapto">
-        <!--001--><item>absp001</item>
-        <!--002--><item>absp002</item>
-        <!--003--><item>absp003</item>
-        <!--004--><item>absp004</item>
-        <!--005--><item>absp005</item>
-		<!--006--><item>absp006</item>
-        <!--007--><item>absp007</item>
-        <!--008--><item>absp008</item>
-        <!--009--><item>absp009</item>
-        <!--010--><item>absp010</item>
-		<!--011--><item>absp011</item>
-        <!--012--><item>absp012</item>
-        <!--013--><item>absp013</item>
-        <!--014--><item>absp014</item>
-        <!--015--><item>absp015</item>
-		<!--016--><item>absp016</item>
-        <!--017--><item>absp017</item>
-        <!--018--><item>absp018</item>
-        <!--019--><item>absp019</item>
-        <!--020--><item>absp020</item>
+        <!--001-->
+        <item>absp001</item>
+        <!--002-->
+        <item>absp002</item>
+        <!--003-->
+        <item>absp003</item>
+        <!--004-->
+        <item>absp004</item>
+        <!--005-->
+        <item>absp005</item>
+        <!--006-->
+        <item>absp006</item>
+        <!--007-->
+        <item>absp007</item>
+        <!--008-->
+        <item>absp008</item>
+        <!--009-->
+        <item>absp009</item>
+        <!--010-->
+        <item>absp010</item>
+        <!--011-->
+        <item>absp011</item>
+        <!--012-->
+        <item>absp012</item>
+        <!--013-->
+        <item>absp013</item>
+        <!--014-->
+        <item>absp014</item>
+        <!--015-->
+        <item>absp015</item>
+        <!--016-->
+        <item>absp016</item>
+        <!--017-->
+        <item>absp017</item>
+        <!--018-->
+        <item>absp018</item>
+        <!--019-->
+        <item>absp019</item>
+        <!--020-->
+        <item>absp020</item>
 
     </array>
-    
+
     <array name="imgAabstrapto">
-        <!--001--><item></item>
-        <!--002--><item>absp002ra</item>
-        <!--003--><item>absp003ra</item>
-        <!--004--><item></item>
-        <!--005--><item>absp005ra</item>
-		<!--006--><item>absp006ra</item>
-        <!--007--><item>absp007ra</item>
-        <!--008--><item>absp008ra</item>
-        <!--009--><item>absp009ra</item>
-        <!--010--><item>absp010ra</item>
-        <!--011--><item></item>
-        <!--012--><item>absp012ra</item>
-        <!--013--><item></item>
-        <!--014--><item>absp014ra</item>
-        <!--015--><item>absp015ra</item>
-        <!--016--><item>absp016ra</item>
-        <!--017--><item></item>
-        <!--018--><item></item>
-        <!--019--><item>absp19ra</item>
-        <!--020--><item>absp20ra</item>
+        <!--001-->
+        <item></item>
+        <!--002-->
+        <item>absp002ra</item>
+        <!--003-->
+        <item>absp003ra</item>
+        <!--004-->
+        <item></item>
+        <!--005-->
+        <item>absp005ra</item>
+        <!--006-->
+        <item>absp006ra</item>
+        <!--007-->
+        <item>absp007ra</item>
+        <!--008-->
+        <item>absp008ra</item>
+        <!--009-->
+        <item>absp009ra</item>
+        <!--010-->
+        <item>absp010ra</item>
+        <!--011-->
+        <item></item>
+        <!--012-->
+        <item>absp012ra</item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item>absp014ra</item>
+        <!--015-->
+        <item>absp015ra</item>
+        <!--016-->
+        <item>absp016ra</item>
+        <!--017-->
+        <item></item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item>absp19ra</item>
+        <!--020-->
+        <item>absp20ra</item>
 
     </array>
-    
+
     <array name="imgBabstrapto">
-        <!--001--><item></item>
-        <!--002--><item>absp002rb</item>
-        <!--003--><item>absp003rb</item>
-        <!--004--><item></item>
-        <!--005--><item>absp005rb</item>
-		<!--006--><item>absp006rb</item>
-        <!--007--><item>absp007rb</item>
-        <!--008--><item>absp008rb</item>
-        <!--009--><item>absp009rb</item>
-        <!--010--><item>absp010rb</item>
-        <!--011--><item></item>
-        <!--012--><item>absp012rb</item>
-        <!--013--><item></item>
-        <!--014--><item>absp014rb</item>
-        <!--015--><item>absp015rb</item>
-        <!--016--><item>absp016rb</item>
-        <!--017--><item></item>
-        <!--018--><item></item>
-        <!--019--><item>absp019rb</item>
-        <!--020--><item>absp020rb</item>
+        <!--001-->
+        <item></item>
+        <!--002-->
+        <item>absp002rb</item>
+        <!--003-->
+        <item>absp003rb</item>
+        <!--004-->
+        <item></item>
+        <!--005-->
+        <item>absp005rb</item>
+        <!--006-->
+        <item>absp006rb</item>
+        <!--007-->
+        <item>absp007rb</item>
+        <!--008-->
+        <item>absp008rb</item>
+        <!--009-->
+        <item>absp009rb</item>
+        <!--010-->
+        <item>absp010rb</item>
+        <!--011-->
+        <item></item>
+        <!--012-->
+        <item>absp012rb</item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item>absp014rb</item>
+        <!--015-->
+        <item>absp015rb</item>
+        <!--016-->
+        <item>absp016rb</item>
+        <!--017-->
+        <item></item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item>absp019rb</item>
+        <!--020-->
+        <item>absp020rb</item>
 
     </array>
-    
+
     <array name="imgCabstrapto">
-        <!--001--><item></item>
-        <!--002--><item>absp002rc</item>
-        <!--003--><item>absp003rc</item>
-        <!--004--><item></item>
-        <!--005--><item>absp005rc</item>
-		<!--006--><item>absp006rc</item>
-        <!--007--><item>absp007rc</item>
-        <!--008--><item>absp008rc</item>
-        <!--009--><item>absp009rc</item>
-        <!--010--><item>absp010rc</item>
-        <!--011--><item></item>
-        <!--012--><item>absp012rc</item>
-        <!--013--><item></item>
-        <!--014--><item>absp014rc</item>
-        <!--015--><item>absp015rc</item>
-        <!--016--><item>absp016rc</item>
-        <!--017--><item></item>
-        <!--018--><item></item>
-        <!--019--><item>absp019rc</item>
-        <!--020--><item>absp020rc</item>
+        <!--001-->
+        <item></item>
+        <!--002-->
+        <item>absp002rc</item>
+        <!--003-->
+        <item>absp003rc</item>
+        <!--004-->
+        <item></item>
+        <!--005-->
+        <item>absp005rc</item>
+        <!--006-->
+        <item>absp006rc</item>
+        <!--007-->
+        <item>absp007rc</item>
+        <!--008-->
+        <item>absp008rc</item>
+        <!--009-->
+        <item>absp009rc</item>
+        <!--010-->
+        <item>absp010rc</item>
+        <!--011-->
+        <item></item>
+        <!--012-->
+        <item>absp012rc</item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item>absp014rc</item>
+        <!--015-->
+        <item>absp015rc</item>
+        <!--016-->
+        <item>absp016rc</item>
+        <!--017-->
+        <item></item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item>absp019rc</item>
+        <!--020-->
+        <item>absp020rc</item>
 
     </array>
-    
+
     <array name="imgDabstrapto">
-        <!--001--><item></item>
-        <!--002--><item>absp002rd</item>
-        <!--003--><item>absp003rd</item>
-        <!--004--><item></item>
-        <!--005--><item>absp005rd</item>
-		<!--006--><item>absp006rd</item>
-        <!--007--><item>absp007rd</item>
-        <!--008--><item>absp008rd</item>
-        <!--009--><item>absp009rd</item>
-        <!--010--><item>absp010rd</item>
-        <!--011--><item></item>
-        <!--012--><item>absp012rd</item>
-        <!--013--><item></item>
-        <!--014--><item>absp014rd</item>
-        <!--015--><item>absp015rd</item>
-        <!--016--><item>absp016rd</item>
-        <!--017--><item></item>
-        <!--018--><item></item>
-        <!--019--><item />
-        <!--020--><item>absp020rd</item>
+        <!--001-->
+        <item></item>
+        <!--002-->
+        <item>absp002rd</item>
+        <!--003-->
+        <item>absp003rd</item>
+        <!--004-->
+        <item></item>
+        <!--005-->
+        <item>absp005rd</item>
+        <!--006-->
+        <item>absp006rd</item>
+        <!--007-->
+        <item>absp007rd</item>
+        <!--008-->
+        <item>absp008rd</item>
+        <!--009-->
+        <item>absp009rd</item>
+        <!--010-->
+        <item>absp010rd</item>
+        <!--011-->
+        <item></item>
+        <!--012-->
+        <item>absp012rd</item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item>absp014rd</item>
+        <!--015-->
+        <item>absp015rd</item>
+        <!--016-->
+        <item>absp016rd</item>
+        <!--017-->
+        <item></item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item />
+        <!--020-->
+        <item>absp020rd</item>
 
     </array>
-    
+
     <array name="imgSolabstrapto">
-        <!--001--><item></item>
-        <!--002--><item>absp002ra</item>
-        <!--003--><item>absp003rc</item>
-        <!--004--><item></item>
-        <!--005--><item>absp005ra</item>
-		<!--006--><item>absp006rc</item>
-        <!--007--><item>absp007rb</item>
-        <!--008--><item>absp008rd</item>
-        <!--009--><item>absp009ra</item>
-        <!--010--><item>absp010rc</item>
-        <!--011--><item></item>
-        <!--012--><item>absp012rc</item>
-        <!--013--><item></item>
-        <!--014--><item>absp014rc</item>
-        <!--015--><item></item>
-        <!--016--><item>absp016rd</item>
-        <!--017--><item></item>
-        <!--018--><item></item>
-        <!--019--><item>absp19rc</item>
-        <!--020--><item>absp20rc</item>
+        <!--001-->
+        <item></item>
+        <!--002-->
+        <item>absp002ra</item>
+        <!--003-->
+        <item>absp003rc</item>
+        <!--004-->
+        <item></item>
+        <!--005-->
+        <item>absp005ra</item>
+        <!--006-->
+        <item>absp006rc</item>
+        <!--007-->
+        <item>absp007rb</item>
+        <!--008-->
+        <item>absp008rd</item>
+        <!--009-->
+        <item>absp009ra</item>
+        <!--010-->
+        <item>absp010rc</item>
+        <!--011-->
+        <item></item>
+        <!--012-->
+        <item>absp012rc</item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item>absp014rc</item>
+        <!--015-->
+        <item></item>
+        <!--016-->
+        <item>absp016rd</item>
+        <!--017-->
+        <item></item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item>absp19rc</item>
+        <!--020-->
+        <item>absp20rc</item>
 
     </array>
-    
+
     <array name="imgExpliabstrapto">
-        <!--001--><item></item>
-        <!--002--><item></item>
-        <!--003--><item></item>
-        <!--004--><item></item>
-        <!--005--><item></item>
-		<!--006--><item></item>
-        <!--007--><item></item>
-        <!--008--><item></item>
-        <!--009--><item></item>
-        <!--010--><item></item>
-		<!--011--><item></item>
-        <!--012--><item></item>
-        <!--013--><item></item>
-        <!--014--><item></item>
-        <!--015--><item></item>
-		<!--016--><item></item>
-        <!--017--><item></item>
-        <!--018--><item></item>
-        <!--019--><item></item>
-        <!--020--><item></item>
+        <!--001-->
+        <item></item>
+        <!--002-->
+        <item></item>
+        <!--003-->
+        <item></item>
+        <!--004-->
+        <item></item>
+        <!--005-->
+        <item></item>
+        <!--006-->
+        <item></item>
+        <!--007-->
+        <item></item>
+        <!--008-->
+        <item></item>
+        <!--009-->
+        <item></item>
+        <!--010-->
+        <item></item>
+        <!--011-->
+        <item></item>
+        <!--012-->
+        <item></item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item></item>
+        <!--015-->
+        <item></item>
+        <!--016-->
+        <item></item>
+        <!--017-->
+        <item></item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item></item>
+        <!--020-->
+        <item></item>
 
     </array>
 </resources>

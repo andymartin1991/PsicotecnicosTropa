@@ -8,6 +8,6 @@
         android:toDegrees="360"
         android:pivotY="50%"
         android:pivotX="50%"
-        android:interpolator="@android:anim/accelerate_interpolator"/>
+        android:interpolator="@android:anim/accelerate_interpolator" />
 
 </set>

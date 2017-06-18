@@ -40,7 +40,7 @@ public class main_principal extends Activity {
             @Override
             public void onClick(View v) {
                 if (entra[0] == true) {
-                    entra[0]=false;
+                    entra[0] = false;
                     Animation animation = AnimationUtils.loadAnimation(
                             getApplicationContext(), R.anim.rotar);
                     estudio.startAnimation(animation);
@@ -52,7 +52,7 @@ public class main_principal extends Activity {
                             }
                             startActivity(new Intent(main_principal.this, main_optTipo.class));
                             overridePendingTransition(R.anim.transpain, R.anim.transpaout);
-                            entra[0]= true;
+                            entra[0] = true;
                         }
                     }).start();
 
@@ -64,7 +64,7 @@ public class main_principal extends Activity {
             @Override
             public void onClick(View v) {
                 if (entra[0] == true) {
-                    entra[0]=false;
+                    entra[0] = false;
                     Animation animation = AnimationUtils.loadAnimation(
                             getApplicationContext(), R.anim.rotar);
                     aleatorio.startAnimation(animation);
@@ -76,7 +76,7 @@ public class main_principal extends Activity {
                             }
                             startActivity(new Intent(main_principal.this, main_preguntasAleatorio.class));
                             overridePendingTransition(R.anim.transpain, R.anim.transpaout);
-                            entra[0]= true;
+                            entra[0] = true;
                         }
                     }).start();
                 }
@@ -87,7 +87,7 @@ public class main_principal extends Activity {
             @Override
             public void onClick(View v) {
                 if (entra[0] == true) {
-                    entra[0]=false;
+                    entra[0] = false;
                     Animation animation = AnimationUtils.loadAnimation(
                             getApplicationContext(), R.anim.rotar);
                     trucos.startAnimation(animation);
@@ -97,7 +97,7 @@ public class main_principal extends Activity {
                                 Thread.sleep(500);
                             } catch (InterruptedException e) {
                             }
-                            entra[0]= true;
+                            entra[0] = true;
                         }
                     }).start();
                 }
@@ -108,7 +108,7 @@ public class main_principal extends Activity {
             @Override
             public void onClick(View v) {
                 if (entra[0] == true) {
-                    entra[0]=false;
+                    entra[0] = false;
                     Animation animation = AnimationUtils.loadAnimation(
                             getApplicationContext(), R.anim.rotar);
                     contacta.startAnimation(animation);
@@ -120,7 +120,7 @@ public class main_principal extends Activity {
                             }
                             startActivity(new Intent(main_principal.this, main_contacto.class));
                             overridePendingTransition(R.anim.transpain, R.anim.transpaout);
-                            entra[0]= true;
+                            entra[0] = true;
                         }
                     }).start();
                 }
@@ -131,7 +131,7 @@ public class main_principal extends Activity {
             @Override
             public void onClick(View v) {
                 if (entra[0] == true) {
-                    entra[0]=false;
+                    entra[0] = false;
                     Animation animation = AnimationUtils.loadAnimation(
                             getApplicationContext(), R.anim.rotar);
                     examen.startAnimation(animation);
@@ -143,7 +143,7 @@ public class main_principal extends Activity {
                             }
                             startActivity(new Intent(main_principal.this, main_examen.class));
                             overridePendingTransition(R.anim.transpain, R.anim.transpaout);
-                            entra[0]= true;
+                            entra[0] = true;
                         }
                     }).start();
                 }
@@ -154,7 +154,7 @@ public class main_principal extends Activity {
             @Override
             public void onClick(View v) {
                 if (entra[0] == true) {
-                    entra[0]=false;
+                    entra[0] = false;
                     Animation animation = AnimationUtils.loadAnimation(
                             getApplicationContext(), R.anim.rotar);
                     fatiga.startAnimation(animation);
@@ -166,7 +166,7 @@ public class main_principal extends Activity {
                             }
                             startActivity(new Intent(main_principal.this, main_optTipoFatiga.class));
                             overridePendingTransition(R.anim.transpain, R.anim.transpaout);
-                            entra[0]= true;
+                            entra[0] = true;
                         }
                     }).start();
                 }
@@ -177,7 +177,7 @@ public class main_principal extends Activity {
             @Override
             public void onClick(View v) {
                 if (entra[0] == true) {
-                    entra[0]=false;
+                    entra[0] = false;
                     Animation animation = AnimationUtils.loadAnimation(
                             getApplicationContext(), R.anim.rotar);
                     foro.startAnimation(animation);
@@ -192,7 +192,7 @@ public class main_principal extends Activity {
                             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                                     | Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
                             startActivity(intent);
-                            entra[0]= true;
+                            entra[0] = true;
                         }
                     }).start();
                 }
@@ -203,7 +203,7 @@ public class main_principal extends Activity {
             @Override
             public void onClick(View v) {
                 if (entra[0] == true) {
-                    entra[0]=false;
+                    entra[0] = false;
                     Animation animation = AnimationUtils.loadAnimation(
                             getApplicationContext(), R.anim.rotar);
                     facebook.startAnimation(animation);
@@ -218,7 +218,7 @@ public class main_principal extends Activity {
                             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                                     | Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
                             startActivity(intent);
-                            entra[0]= true;
+                            entra[0] = true;
                         }
                     }).start();
                 }
@@ -229,7 +229,7 @@ public class main_principal extends Activity {
             @Override
             public void onClick(View v) {
                 if (entra[0] == true) {
-                    entra[0]=false;
+                    entra[0] = false;
                     Animation animation = AnimationUtils.loadAnimation(
                             getApplicationContext(), R.anim.rotar);
                     twiter.startAnimation(animation);
@@ -244,7 +244,7 @@ public class main_principal extends Activity {
                             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                                     | Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
                             startActivity(intent);
-                            entra[0]= true;
+                            entra[0] = true;
                         }
                     }).start();
                 }
@@ -255,7 +255,7 @@ public class main_principal extends Activity {
             @Override
             public void onClick(View v) {
                 if (entra[0] == true) {
-                    entra[0]=false;
+                    entra[0] = false;
                     Animation animation = AnimationUtils.loadAnimation(
                             getApplicationContext(), R.anim.rotar);
                     instagran.startAnimation(animation);
@@ -270,7 +270,7 @@ public class main_principal extends Activity {
                             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                                     | Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
                             startActivity(intent);
-                            entra[0]= true;
+                            entra[0] = true;
                         }
                     }).start();
                 }
@@ -281,7 +281,7 @@ public class main_principal extends Activity {
             @Override
             public void onClick(View v) {
                 if (entra[0] == true) {
-                    entra[0]=false;
+                    entra[0] = false;
                     Animation animation = AnimationUtils.loadAnimation(
                             getApplicationContext(), R.anim.rotar);
                     informacion.startAnimation(animation);
@@ -293,7 +293,7 @@ public class main_principal extends Activity {
                             }
                             startActivity(new Intent(main_principal.this, main_info.class));
                             overridePendingTransition(R.anim.transpain, R.anim.transpaout);
-                            entra[0]= true;
+                            entra[0] = true;
                         }
                     }).start();
                 }
@@ -304,7 +304,7 @@ public class main_principal extends Activity {
             @Override
             public void onClick(View v) {
                 if (entra[0] == true) {
-                    entra[0]=false;
+                    entra[0] = false;
                     Animation animation = AnimationUtils.loadAnimation(
                             getApplicationContext(), R.anim.rotar);
                     evolucion.startAnimation(animation);
@@ -316,7 +316,7 @@ public class main_principal extends Activity {
                             }
                             startActivity(new Intent(main_principal.this, main_evolucion.class));
                             overridePendingTransition(R.anim.transpain, R.anim.transpaout);
-                            entra[0]= true;
+                            entra[0] = true;
                         }
                     }).start();
                 }
@@ -327,7 +327,7 @@ public class main_principal extends Activity {
             @Override
             public void onClick(View v) {
                 if (entra[0] == true) {
-                    entra[0]=false;
+                    entra[0] = false;
                     Animation animation = AnimationUtils.loadAnimation(
                             getApplicationContext(), R.anim.rotar);
                     calcular.startAnimation(animation);
@@ -339,7 +339,7 @@ public class main_principal extends Activity {
                             }
                             startActivity(new Intent(main_principal.this, main_calculabaremo.class));
                             overridePendingTransition(R.anim.transpain, R.anim.transpaout);
-                            entra[0]= true;
+                            entra[0] = true;
                         }
                     }).start();
                 }
@@ -350,7 +350,7 @@ public class main_principal extends Activity {
             @Override
             public void onClick(View v) {
                 if (entra[0] == true) {
-                    entra[0]=false;
+                    entra[0] = false;
                     Animation animation = AnimationUtils.loadAnimation(
                             getApplicationContext(), R.anim.rotar);
                     ayuda.startAnimation(animation);
@@ -360,7 +360,7 @@ public class main_principal extends Activity {
                                 Thread.sleep(500);
                             } catch (InterruptedException e) {
                             }
-                            entra[0]= true;
+                            entra[0] = true;
                         }
                     }).start();
                 }
@@ -371,7 +371,7 @@ public class main_principal extends Activity {
             @Override
             public void onClick(View v) {
                 if (entra[0] == true) {
-                    entra[0]=false;
+                    entra[0] = false;
                     Animation animation = AnimationUtils.loadAnimation(
                             getApplicationContext(), R.anim.rotar);
                     pruebafisica.startAnimation(animation);
@@ -381,7 +381,7 @@ public class main_principal extends Activity {
                                 Thread.sleep(500);
                             } catch (InterruptedException e) {
                             }
-                            entra[0]= true;
+                            entra[0] = true;
                         }
                     }).start();
                 }
@@ -392,7 +392,7 @@ public class main_principal extends Activity {
             @Override
             public void onClick(View v) {
                 if (entra[0] == true) {
-                    entra[0]=false;
+                    entra[0] = false;
                     Animation animation = AnimationUtils.loadAnimation(
                             getApplicationContext(), R.anim.rotar);
                     compartir.startAnimation(animation);
@@ -408,7 +408,7 @@ public class main_principal extends Activity {
                             intentCompartir.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=com.naroh.tropaPsicotecnicoOficial");
                             intentCompartir.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                             startActivity(Intent.createChooser(intentCompartir, getString(R.string.compartiren)));
-                            entra[0]= true;
+                            entra[0] = true;
                         }
                     }).start();
                 }
@@ -419,7 +419,7 @@ public class main_principal extends Activity {
             @Override
             public void onClick(View v) {
                 if (entra[0] == true) {
-                    entra[0]=false;
+                    entra[0] = false;
                     Animation animation = AnimationUtils.loadAnimation(
                             getApplicationContext(), R.anim.rotar);
                     votar.startAnimation(animation);
@@ -434,7 +434,7 @@ public class main_principal extends Activity {
                             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                                     | Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
                             startActivity(intent);
-                            entra[0]= true;
+                            entra[0] = true;
                         }
                     }).start();
                 }

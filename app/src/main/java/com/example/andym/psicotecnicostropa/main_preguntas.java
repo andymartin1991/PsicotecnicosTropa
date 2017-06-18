@@ -1,27 +1,14 @@
 package com.example.andym.psicotecnicostropa;
 
 
-import com.example.andym.psicotecnicostropa.dto.Preguntas;
-import com.example.andym.psicotecnicostropa.dto.contador;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
-import android.view.animation.Animation;
-import android.view.animation.AnimationSet;
-import android.view.animation.TranslateAnimation;
-import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -30,7 +17,8 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.w3c.dom.Text;
+import com.example.andym.psicotecnicostropa.dto.Preguntas;
+import com.example.andym.psicotecnicostropa.dto.contador;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -282,56 +270,56 @@ public class main_preguntas extends Activity {
         calcularestado();
 
         if (getIntent().getExtras().getString("tipo").equals("memoria")) {
-            if (pos[cont.getCont()-1] == 0) {
+            if (pos[cont.getCont() - 1] == 0) {
                 alante.setVisibility(View.INVISIBLE);
                 atras.setVisibility(View.INVISIBLE);
-            } else  if(cont.getCont()== pregunta.length){
+            } else if (cont.getCont() == pregunta.length) {
                 alante.setVisibility(View.INVISIBLE);
-            }else{
+            } else {
                 alante.setVisibility(View.VISIBLE);
             }
         }
         alante.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            avanza();
-            colocar++;
-            recolocar();
-            if (getIntent().getExtras().getString("tipo").equals("memoria")) {
-                if (pos[cont.getCont()-1] == 0) {
-                    alante.setVisibility(View.INVISIBLE);
-                    atras.setVisibility(View.INVISIBLE);
-                } else  if(cont.getCont()== pregunta.length){
-                    alante.setVisibility(View.INVISIBLE);
-                }else{
-                    alante.setVisibility(View.VISIBLE);
+                avanza();
+                colocar++;
+                recolocar();
+                if (getIntent().getExtras().getString("tipo").equals("memoria")) {
+                    if (pos[cont.getCont() - 1] == 0) {
+                        alante.setVisibility(View.INVISIBLE);
+                        atras.setVisibility(View.INVISIBLE);
+                    } else if (cont.getCont() == pregunta.length) {
+                        alante.setVisibility(View.INVISIBLE);
+                    } else {
+                        alante.setVisibility(View.VISIBLE);
+                    }
                 }
-            }
             }
         });
 
         atras.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            ocultaratras();
-            if (cont.getCont() > 0) {
-                cont.setCont(cont.getCont() - 1);
-                limpiarelementos();
                 ocultaratras();
-                if (arreglo == 1) {
+                if (cont.getCont() > 0) {
                     cont.setCont(cont.getCont() - 1);
                     limpiarelementos();
                     ocultaratras();
+                    if (arreglo == 1) {
+                        cont.setCont(cont.getCont() - 1);
+                        limpiarelementos();
+                        ocultaratras();
+                    }
+                    arreglo = 2;
+                } else {
+                    Toast.makeText(getApplicationContext(), "Fin", Toast.LENGTH_SHORT).show();
                 }
-                arreglo = 2;
-            } else {
-                Toast.makeText(getApplicationContext(), "Fin", Toast.LENGTH_SHORT).show();
-            }
-            colocar--;
-            if (colocar == -1) {
-                colocar = 0;
-            }
-            recolocar();
+                colocar--;
+                if (colocar == -1) {
+                    colocar = 0;
+                }
+                recolocar();
 
             }
         });
@@ -346,12 +334,12 @@ public class main_preguntas extends Activity {
                 pos[colocar] = 1;
                 calcularestado();
                 if (getIntent().getExtras().getString("tipo").equals("memoria")) {
-                    if (pos[cont.getCont()-1] == 0) {
+                    if (pos[cont.getCont() - 1] == 0) {
                         alante.setVisibility(View.INVISIBLE);
                         atras.setVisibility(View.INVISIBLE);
-                    } else  if(cont.getCont()== pregunta.length){
+                    } else if (cont.getCont() == pregunta.length) {
                         alante.setVisibility(View.INVISIBLE);
-                    }else{
+                    } else {
                         alante.setVisibility(View.VISIBLE);
                     }
                 }
@@ -367,12 +355,12 @@ public class main_preguntas extends Activity {
                 pos[colocar] = 2;
                 calcularestado();
                 if (getIntent().getExtras().getString("tipo").equals("memoria")) {
-                    if (pos[cont.getCont()-1] == 0) {
+                    if (pos[cont.getCont() - 1] == 0) {
                         alante.setVisibility(View.INVISIBLE);
                         atras.setVisibility(View.INVISIBLE);
-                    } else  if(cont.getCont()== pregunta.length){
+                    } else if (cont.getCont() == pregunta.length) {
                         alante.setVisibility(View.INVISIBLE);
-                    }else{
+                    } else {
                         alante.setVisibility(View.VISIBLE);
                     }
                 }
@@ -388,12 +376,12 @@ public class main_preguntas extends Activity {
                 pos[colocar] = 3;
                 calcularestado();
                 if (getIntent().getExtras().getString("tipo").equals("memoria")) {
-                    if (pos[cont.getCont()-1] == 0) {
+                    if (pos[cont.getCont() - 1] == 0) {
                         alante.setVisibility(View.INVISIBLE);
                         atras.setVisibility(View.INVISIBLE);
-                    } else  if(cont.getCont()== pregunta.length){
+                    } else if (cont.getCont() == pregunta.length) {
                         alante.setVisibility(View.INVISIBLE);
-                    }else{
+                    } else {
                         alante.setVisibility(View.VISIBLE);
                     }
                 }
@@ -409,12 +397,12 @@ public class main_preguntas extends Activity {
                 pos[colocar] = 4;
                 calcularestado();
                 if (getIntent().getExtras().getString("tipo").equals("memoria")) {
-                    if (pos[cont.getCont()-1] == 0) {
+                    if (pos[cont.getCont() - 1] == 0) {
                         alante.setVisibility(View.INVISIBLE);
                         atras.setVisibility(View.INVISIBLE);
-                    } else  if(cont.getCont()== pregunta.length){
+                    } else if (cont.getCont() == pregunta.length) {
                         alante.setVisibility(View.INVISIBLE);
-                    }else{
+                    } else {
                         alante.setVisibility(View.VISIBLE);
                     }
                 }
@@ -435,7 +423,7 @@ public class main_preguntas extends Activity {
             final File e = new File(ruta_sd.getAbsolutePath(), tipo + "pos");
             final File f = new File(ruta_sd.getAbsolutePath(), tipo + "arreglo");
             if (a.exists() && b.exists() && c.exists() && d.exists() && e.exists()) {
-                final ScrollView contenedor = (ScrollView)findViewById(R.id.contenedor);
+                final ScrollView contenedor = (ScrollView) findViewById(R.id.contenedor);
                 contenedor.setVisibility(View.INVISIBLE);
 
                 new AlertDialog.Builder(this)
@@ -453,14 +441,14 @@ public class main_preguntas extends Activity {
                                         avanza();
                                         calcularestado();
                                         if (getIntent().getExtras().getString("tipo").equals("memoria")) {
-                                            Button alante = (Button)findViewById(R.id.alante);
-                                            Button atras = (Button)findViewById(R.id.atras);
-                                            if (pos[cont.getCont()-1] == 0) {
+                                            Button alante = (Button) findViewById(R.id.alante);
+                                            Button atras = (Button) findViewById(R.id.atras);
+                                            if (pos[cont.getCont() - 1] == 0) {
                                                 alante.setVisibility(View.INVISIBLE);
                                                 atras.setVisibility(View.INVISIBLE);
-                                            } else  if(cont.getCont()== pregunta.length){
+                                            } else if (cont.getCont() == pregunta.length) {
                                                 alante.setVisibility(View.INVISIBLE);
-                                            }else{
+                                            } else {
                                                 alante.setVisibility(View.VISIBLE);
                                             }
                                         }
@@ -479,22 +467,21 @@ public class main_preguntas extends Activity {
                                             fr = new FileReader(a);
                                             br = new BufferedReader(fr);
                                             String linea;
-                                            while((linea=br.readLine())!=null)
-                                                if(!linea.isEmpty()){
-                                                    if(Integer.parseInt(linea)==0){
+                                            while ((linea = br.readLine()) != null)
+                                                if (!linea.isEmpty()) {
+                                                    if (Integer.parseInt(linea) == 0) {
                                                         comienzocarga = Integer.parseInt(linea);
                                                     }
-                                                    cont.setCont(Integer.parseInt(linea)-1);
+                                                    cont.setCont(Integer.parseInt(linea) - 1);
                                                 }
-                                        }
-                                        catch(Exception y){
+                                        } catch (Exception y) {
                                             y.printStackTrace();
-                                        }finally{
-                                            try{
-                                                if( null != fr ){
+                                        } finally {
+                                            try {
+                                                if (null != fr) {
                                                     fr.close();
                                                 }
-                                            }catch (Exception e2){
+                                            } catch (Exception e2) {
                                                 e2.printStackTrace();
                                             }
                                         }
@@ -502,19 +489,18 @@ public class main_preguntas extends Activity {
                                             fr = new FileReader(b);
                                             br = new BufferedReader(fr);
                                             String linea;
-                                            while((linea=br.readLine())!=null)
-                                                if(!linea.isEmpty()){
-                                                    aciertos=Integer.parseInt(linea);
+                                            while ((linea = br.readLine()) != null)
+                                                if (!linea.isEmpty()) {
+                                                    aciertos = Integer.parseInt(linea);
                                                 }
-                                        }
-                                        catch(Exception y){
+                                        } catch (Exception y) {
                                             y.printStackTrace();
-                                        }finally{
-                                            try{
-                                                if( null != fr ){
+                                        } finally {
+                                            try {
+                                                if (null != fr) {
                                                     fr.close();
                                                 }
-                                            }catch (Exception e2){
+                                            } catch (Exception e2) {
                                                 e2.printStackTrace();
                                             }
                                         }
@@ -522,19 +508,18 @@ public class main_preguntas extends Activity {
                                             fr = new FileReader(c);
                                             br = new BufferedReader(fr);
                                             String linea;
-                                            while((linea=br.readLine())!=null)
-                                                if(!linea.isEmpty()){
-                                                    fallos=Integer.parseInt(linea);
+                                            while ((linea = br.readLine()) != null)
+                                                if (!linea.isEmpty()) {
+                                                    fallos = Integer.parseInt(linea);
                                                 }
-                                        }
-                                        catch(Exception y){
+                                        } catch (Exception y) {
                                             y.printStackTrace();
-                                        }finally{
-                                            try{
-                                                if( null != fr ){
+                                        } finally {
+                                            try {
+                                                if (null != fr) {
                                                     fr.close();
                                                 }
-                                            }catch (Exception e2){
+                                            } catch (Exception e2) {
                                                 e2.printStackTrace();
                                             }
                                         }
@@ -542,42 +527,40 @@ public class main_preguntas extends Activity {
                                             fr = new FileReader(d);
                                             br = new BufferedReader(fr);
                                             String linea;
-                                            while((linea=br.readLine())!=null)
-                                                if(!linea.isEmpty()){
-                                                    colocar=Integer.parseInt(linea);
+                                            while ((linea = br.readLine()) != null)
+                                                if (!linea.isEmpty()) {
+                                                    colocar = Integer.parseInt(linea);
                                                 }
-                                        }
-                                        catch(Exception y){
+                                        } catch (Exception y) {
                                             y.printStackTrace();
-                                        }finally{
-                                            try{
-                                                if( null != fr ){
+                                        } finally {
+                                            try {
+                                                if (null != fr) {
                                                     fr.close();
                                                 }
-                                            }catch (Exception e2){
+                                            } catch (Exception e2) {
                                                 e2.printStackTrace();
                                             }
                                         }
                                         try {
-                                            pos= new int[pregunta.length];
+                                            pos = new int[pregunta.length];
                                             fr = new FileReader(e);
                                             br = new BufferedReader(fr);
                                             String linea;
                                             int recorro = 0;
-                                            while((linea=br.readLine())!=null)
-                                                if(!linea.isEmpty()){
-                                                    pos[recorro]=Integer.parseInt(linea);
+                                            while ((linea = br.readLine()) != null)
+                                                if (!linea.isEmpty()) {
+                                                    pos[recorro] = Integer.parseInt(linea);
                                                     recorro++;
                                                 }
 
-                                        }
-                                        catch(Exception y){
+                                        } catch (Exception y) {
                                             y.printStackTrace();
-                                            try{
-                                                if( null != fr ){
+                                            try {
+                                                if (null != fr) {
                                                     fr.close();
                                                 }
-                                            }catch (Exception e2){
+                                            } catch (Exception e2) {
                                                 e2.printStackTrace();
                                             }
                                         }
@@ -585,19 +568,18 @@ public class main_preguntas extends Activity {
                                             fr = new FileReader(f);
                                             br = new BufferedReader(fr);
                                             String linea;
-                                            while((linea=br.readLine())!=null)
-                                                if(!linea.isEmpty()){
-                                                    arreglo=Integer.parseInt(linea);
+                                            while ((linea = br.readLine()) != null)
+                                                if (!linea.isEmpty()) {
+                                                    arreglo = Integer.parseInt(linea);
                                                 }
-                                        }
-                                        catch(Exception y){
+                                        } catch (Exception y) {
                                             y.printStackTrace();
-                                        }finally{
-                                            try{
-                                                if( null != fr ){
+                                        } finally {
+                                            try {
+                                                if (null != fr) {
                                                     fr.close();
                                                 }
-                                            }catch (Exception e2){
+                                            } catch (Exception e2) {
                                                 e2.printStackTrace();
                                             }
                                         }
@@ -608,14 +590,14 @@ public class main_preguntas extends Activity {
                                         }
                                         calcularestado();
                                         if (getIntent().getExtras().getString("tipo").equals("memoria")) {
-                                            Button alante = (Button)findViewById(R.id.alante);
-                                            Button atras = (Button)findViewById(R.id.atras);
-                                            if (pos[cont.getCont()-1] == 0) {
+                                            Button alante = (Button) findViewById(R.id.alante);
+                                            Button atras = (Button) findViewById(R.id.atras);
+                                            if (pos[cont.getCont() - 1] == 0) {
                                                 alante.setVisibility(View.INVISIBLE);
                                                 atras.setVisibility(View.INVISIBLE);
-                                            } else  if(cont.getCont()== pregunta.length){
+                                            } else if (cont.getCont() == pregunta.length) {
                                                 alante.setVisibility(View.INVISIBLE);
-                                            }else{
+                                            } else {
                                                 alante.setVisibility(View.VISIBLE);
                                             }
                                         }
@@ -624,28 +606,28 @@ public class main_preguntas extends Activity {
 
 
                                 }).show();
-            }else{
+            } else {
                 pp = false;
                 cont.setCont(0);
                 avanza();
                 calcularestado();
                 if (getIntent().getExtras().getString("tipo").equals("memoria")) {
-                    Button alante = (Button)findViewById(R.id.alante);
-                    Button atras = (Button)findViewById(R.id.atras);
-                    if (pos[cont.getCont()-1] == 0) {
+                    Button alante = (Button) findViewById(R.id.alante);
+                    Button atras = (Button) findViewById(R.id.atras);
+                    if (pos[cont.getCont() - 1] == 0) {
                         alante.setVisibility(View.INVISIBLE);
                         atras.setVisibility(View.INVISIBLE);
-                    } else  if(cont.getCont()== pregunta.length){
+                    } else if (cont.getCont() == pregunta.length) {
                         alante.setVisibility(View.INVISIBLE);
-                    }else{
+                    } else {
                         alante.setVisibility(View.VISIBLE);
                     }
                 }
             }
 
-            }catch(Exception e){
+        } catch (Exception e) {
 
-            }
+        }
 
     }
 
@@ -1118,7 +1100,7 @@ public class main_preguntas extends Activity {
 
         if (getIntent().getExtras().getString("tipo").equals("memoria")) {
             //PONER AQUI LA FUNCION DE MEMORIA
-            if(pp == false) {
+            if (pp == false) {
                 if (pos[cont.getCont()] == 0) {
                     RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
                     RelativeLayout bmemo = (RelativeLayout) findViewById(R.id.b);
@@ -1137,16 +1119,17 @@ public class main_preguntas extends Activity {
             }
         }
     }
+
     public void esperarYCerrar(int milisegundos) {
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {
-                RelativeLayout amemo = (RelativeLayout)findViewById(R.id.a);
-                RelativeLayout bmemo = (RelativeLayout)findViewById(R.id.b);
-                RelativeLayout cmemo = (RelativeLayout)findViewById(R.id.c);
-                RelativeLayout dmemo = (RelativeLayout)findViewById(R.id.d);
-                TextView pregunta = (TextView)findViewById(R.id.pregunta);
-                ImageView imgpre = (ImageView)findViewById(R.id.imgpre);
+                RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
+                RelativeLayout bmemo = (RelativeLayout) findViewById(R.id.b);
+                RelativeLayout cmemo = (RelativeLayout) findViewById(R.id.c);
+                RelativeLayout dmemo = (RelativeLayout) findViewById(R.id.d);
+                TextView pregunta = (TextView) findViewById(R.id.pregunta);
+                ImageView imgpre = (ImageView) findViewById(R.id.imgpre);
                 amemo.setVisibility(View.VISIBLE);
                 bmemo.setVisibility(View.VISIBLE);
                 cmemo.setVisibility(View.VISIBLE);

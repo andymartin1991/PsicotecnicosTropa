@@ -1,12 +1,14 @@
 package com.example.andym.psicotecnicostropa.dto;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * Created by andym on 16/06/2017.
  */
 
 public class Notas implements Serializable {
+
     public static int aciertosVerbal;
     public static int fallosVerbal;
     public static int sincontestarVerbal;
@@ -40,6 +42,64 @@ public class Notas implements Serializable {
     public static double bar = 0;
     public static double notasobre10;
     public static double baremoredondeado;
+
+    public static List<Preguntas> bloqueverbal, bloquenumerico, bloqueespacial, bloquemecanico, bloqueperceptiva, bloquememoria, bloqueabstrapto;
+
+    public static List<Preguntas> getBloqueverbal() {
+        return bloqueverbal;
+    }
+
+    public static void setBloqueverbal(List<Preguntas> bloqueverbal) {
+        Notas.bloqueverbal = bloqueverbal;
+    }
+
+    public static List<Preguntas> getBloquenumerico() {
+        return bloquenumerico;
+    }
+
+    public static void setBloquenumerico(List<Preguntas> bloquenumerico) {
+        Notas.bloquenumerico = bloquenumerico;
+    }
+
+    public static List<Preguntas> getBloqueespacial() {
+        return bloqueespacial;
+    }
+
+    public static void setBloqueespacial(List<Preguntas> bloqueespacial) {
+        Notas.bloqueespacial = bloqueespacial;
+    }
+
+    public static List<Preguntas> getBloquemecanico() {
+        return bloquemecanico;
+    }
+
+    public static void setBloquemecanico(List<Preguntas> bloquemecanico) {
+        Notas.bloquemecanico = bloquemecanico;
+    }
+
+    public static List<Preguntas> getBloqueperceptiva() {
+        return bloqueperceptiva;
+    }
+
+    public static void setBloqueperceptiva(List<Preguntas> bloqueperceptiva) {
+        Notas.bloqueperceptiva = bloqueperceptiva;
+    }
+
+    public static List<Preguntas> getBloquememoria() {
+        return bloquememoria;
+    }
+
+    public static void setBloquememoria(List<Preguntas> bloquememoria) {
+        Notas.bloquememoria = bloquememoria;
+    }
+
+    public static List<Preguntas> getBloqueabstrapto() {
+        return bloqueabstrapto;
+    }
+
+    public static void setBloqueabstrapto(List<Preguntas> bloqueabstrapto) {
+        Notas.bloqueabstrapto = bloqueabstrapto;
+    }
 
     public static double getBar() {
         return bar;
