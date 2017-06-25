@@ -65,8 +65,8 @@ public class main_examen extends Activity {
     ScrollView contenedor;
     int bloque = 1;
     int posi = 0;
-    int memoria = 0;//10000
-    int tempo = 300;//300
+    int memoria = 10;//10000
+    int tempo = 3;//300
     long cuentatiempo = tempo * 1000;
     long guardatiempo = 0;
     CountDownTimer th;

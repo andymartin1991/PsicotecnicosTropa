@@ -493,8 +493,8 @@ public class main_resultado_exam extends Activity {
                                     jsonObject.put("sincontestarAbstrapto", notas.sincontestarAbstrapto);
 
                                     JSONObjectList = new ArrayList<>();
-                                    jsonSub = new JSONObject();
                                     for (Preguntas e : notas.getBloqueverbal()) {
+                                        jsonSub = new JSONObject();
                                         jsonSub.put("cont", e.getCont() + "");
                                         jsonSub.put("pregunta", e.getPregunta());
                                         jsonSub.put("respuestaA", e.getRespuestaA());
@@ -517,8 +517,8 @@ public class main_resultado_exam extends Activity {
 
 
                                     JSONObjectList = new ArrayList<>();
-                                    jsonSub = new JSONObject();
                                     for (Preguntas e : notas.getBloquenumerico()) {
+                                        jsonSub = new JSONObject();
                                         jsonSub.put("cont", e.getCont());
                                         jsonSub.put("pregunta", e.getPregunta());
                                         jsonSub.put("respuestaA", e.getRespuestaA());
@@ -541,8 +541,8 @@ public class main_resultado_exam extends Activity {
 
 
                                     JSONObjectList = new ArrayList<>();
-                                    jsonSub = new JSONObject();
                                     for (Preguntas e : notas.getBloqueespacial()) {
+                                        jsonSub = new JSONObject();
                                         jsonSub.put("cont", e.getCont());
                                         jsonSub.put("pregunta", e.getPregunta());
                                         jsonSub.put("respuestaA", e.getRespuestaA());
@@ -565,8 +565,8 @@ public class main_resultado_exam extends Activity {
 
 
                                     JSONObjectList = new ArrayList<>();
-                                    jsonSub = new JSONObject();
                                     for (Preguntas e : notas.getBloquemecanico()) {
+                                        jsonSub = new JSONObject();
                                         jsonSub.put("cont", e.getCont());
                                         jsonSub.put("pregunta", e.getPregunta());
                                         jsonSub.put("respuestaA", e.getRespuestaA());
@@ -589,8 +589,8 @@ public class main_resultado_exam extends Activity {
 
 
                                     JSONObjectList = new ArrayList<>();
-                                    jsonSub = new JSONObject();
                                     for (Preguntas e : notas.getBloqueperceptiva()) {
+                                        jsonSub = new JSONObject();
                                         jsonSub.put("cont", e.getCont());
                                         jsonSub.put("pregunta", e.getPregunta());
                                         jsonSub.put("respuestaA", e.getRespuestaA());
@@ -613,8 +613,8 @@ public class main_resultado_exam extends Activity {
 
 
                                     JSONObjectList = new ArrayList<>();
-                                    jsonSub = new JSONObject();
                                     for (Preguntas e : notas.getBloquememoria()) {
+                                        jsonSub = new JSONObject();
                                         jsonSub.put("cont", e.getCont());
                                         jsonSub.put("pregunta", e.getPregunta());
                                         jsonSub.put("respuestaA", e.getRespuestaA());
@@ -637,8 +637,8 @@ public class main_resultado_exam extends Activity {
 
 
                                     JSONObjectList = new ArrayList<>();
-                                    jsonSub = new JSONObject();
                                     for (Preguntas e : notas.getBloqueabstrapto()) {
+                                        jsonSub = new JSONObject();
                                         jsonSub.put("cont", e.getCont());
                                         jsonSub.put("pregunta", e.getPregunta());
                                         jsonSub.put("respuestaA", e.getRespuestaA());
