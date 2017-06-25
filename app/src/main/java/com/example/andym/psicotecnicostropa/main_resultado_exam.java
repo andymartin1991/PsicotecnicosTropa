@@ -41,21 +41,14 @@ public class main_resultado_exam extends Activity {
     EditText baremo;
     Button calcular, compartir, introbar, guardar;
     Notas notas;
-    Preguntas preguntas;
     static Preguntas[] bloqueverbal, bloquenumerico, bloqueespacial, bloquemecanico, bloqueperceptiva, bloquememoria, bloqueabstrapto;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_resultado_exam);
 
-        notas = new Notas();
-        notas.setBloqueverbal(Arrays.asList(bloqueverbal));
-        notas.setBloquenumerico(Arrays.asList(bloquenumerico));
-        notas.setBloqueespacial(Arrays.asList(bloqueespacial));
-        notas.setBloquemecanico(Arrays.asList(bloquemecanico));
-        notas.setBloqueperceptiva(Arrays.asList(bloqueperceptiva));
-        notas.setBloquememoria(Arrays.asList(bloquememoria));
-        notas.setBloqueabstrapto(Arrays.asList(bloqueabstrapto));
+        notas = main_examen.notas;
+
 
         final String[] baremorecu = {""};
         try {
@@ -81,9 +74,9 @@ public class main_resultado_exam extends Activity {
         int fallosVerbal = 0;
         int sincontestarVerbal = 0;
         for (int i = 0; i < 15; i++) {
-            String respuestacorrecta = bloqueverbal[i].getSolu().substring(0, 1);
+            String respuestacorrecta = notas.getBloqueverbal().get(i).getSolu().substring(0, 1);
             String respuestadada = null;
-            switch (bloqueverbal[i].getRespulsada()) {
+            switch (notas.getBloqueverbal().get(i).getRespulsada()) {
                 case 1:
                     respuestadada = "A";
                     break;
@@ -115,9 +108,9 @@ public class main_resultado_exam extends Activity {
         int fallosNumerico = 0;
         int sincontestarNumerico = 0;
         for (int i = 0; i < 15; i++) {
-            String respuestacorrecta = bloquenumerico[i].getSolu().substring(0, 1);
+            String respuestacorrecta = notas.getBloquenumerico().get(i).getSolu().substring(0, 1);
             String respuestadada = null;
-            switch (bloquenumerico[i].getRespulsada()) {
+            switch (notas.getBloquenumerico().get(i).getRespulsada()) {
                 case 1:
                     respuestadada = "A";
                     break;
@@ -149,9 +142,9 @@ public class main_resultado_exam extends Activity {
         int fallosEspacial = 0;
         int sincontestarEspacial = 0;
         for (int i = 0; i < 15; i++) {
-            String respuestacorrecta = bloqueespacial[i].getSolu().substring(0, 1);
+            String respuestacorrecta = notas.getBloqueespacial().get(i).getSolu().substring(0, 1);
             String respuestadada = null;
-            switch (bloqueespacial[i].getRespulsada()) {
+            switch (notas.getBloqueespacial().get(i).getRespulsada()) {
                 case 1:
                     respuestadada = "A";
                     break;
@@ -183,9 +176,9 @@ public class main_resultado_exam extends Activity {
         int fallosMecanico = 0;
         int sincontestarMecanico = 0;
         for (int i = 0; i < 15; i++) {
-            String respuestacorrecta = bloquemecanico[i].getSolu().substring(0, 1);
+            String respuestacorrecta = notas.getBloquemecanico().get(i).getSolu().substring(0, 1);
             String respuestadada = null;
-            switch (bloquemecanico[i].getRespulsada()) {
+            switch (notas.getBloquemecanico().get(i).getRespulsada()) {
                 case 1:
                     respuestadada = "A";
                     break;
@@ -217,9 +210,9 @@ public class main_resultado_exam extends Activity {
         int fallosPerceptiva = 0;
         int sincontestarPerceptiva = 0;
         for (int i = 0; i < 15; i++) {
-            String respuestacorrecta = bloqueperceptiva[i].getSolu().substring(0, 1);
+            String respuestacorrecta = notas.getBloqueperceptiva().get(i).getSolu().substring(0, 1);
             String respuestadada = null;
-            switch (bloqueperceptiva[i].getRespulsada()) {
+            switch (notas.getBloqueperceptiva().get(i).getRespulsada()) {
                 case 1:
                     respuestadada = "A";
                     break;
@@ -251,9 +244,9 @@ public class main_resultado_exam extends Activity {
         int fallosMemoria = 0;
         int sincontestarMemoria = 0;
         for (int i = 0; i < 15; i++) {
-            String respuestacorrecta = bloquememoria[i].getSolu().substring(0, 1);
+            String respuestacorrecta = notas.getBloquememoria().get(i).getSolu().substring(0, 1);
             String respuestadada = null;
-            switch (bloquememoria[i].getRespulsada()) {
+            switch (notas.getBloquememoria().get(i).getRespulsada()) {
                 case 1:
                     respuestadada = "A";
                     break;
@@ -285,9 +278,9 @@ public class main_resultado_exam extends Activity {
         int fallosAbstrapto = 0;
         int sincontestarAbstrapto = 0;
         for (int i = 0; i < 15; i++) {
-            String respuestacorrecta = bloqueabstrapto[i].getSolu().substring(0, 1);
+            String respuestacorrecta = notas.getBloqueabstrapto().get(i).getSolu().substring(0, 1);
             String respuestadada = null;
-            switch (bloqueabstrapto[i].getRespulsada()) {
+            switch (notas.getBloqueabstrapto().get(i).getRespulsada()) {
                 case 1:
                     respuestadada = "A";
                     break;
@@ -459,7 +452,7 @@ public class main_resultado_exam extends Activity {
                             String convertido = fechaHora.format(date);
 
                             File ruta_sd = getExternalFilesDir(null);
-                            File a = new File(ruta_sd.getAbsolutePath(), convertido + "examen");
+                            File a = new File(ruta_sd.getAbsolutePath(), convertido + "examen"+notas.getNotaredondeadabar());
                             try {
                                 JSONObject jsonObject = new JSONObject();
                                 List<JSONObject> JSONObjectList;
