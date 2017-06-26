@@ -22,6 +22,10 @@ public class Preguntas implements Serializable {
     private String imgExpli;
     private int respulsada;
 
+    public Preguntas() {
+
+    }
+
 
     public int getCont() {
         return cont;

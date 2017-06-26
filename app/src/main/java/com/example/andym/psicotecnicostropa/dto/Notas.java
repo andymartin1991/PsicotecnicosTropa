@@ -9,6 +9,14 @@ import java.util.List;
 
 public class Notas implements Serializable {
 
+    public static int nverb[];
+    public static int nnume[];
+    public static int nespa[];
+    public static int nmeca[];
+    public static int nper[];
+    public static int nmemo[];
+    public static int nabst[];
+
     public static int aciertosVerbal;
     public static int fallosVerbal;
     public static int sincontestarVerbal;
@@ -51,6 +59,62 @@ public class Notas implements Serializable {
 
     public static void setBloqueverbal(List<Preguntas> bloqueverbal) {
         Notas.bloqueverbal = bloqueverbal;
+    }
+
+    public static int[] getNverb() {
+        return nverb;
+    }
+
+    public static void setNverb(int[] nverb) {
+        Notas.nverb = nverb;
+    }
+
+    public static int[] getNnume() {
+        return nnume;
+    }
+
+    public static void setNnume(int[] nnume) {
+        Notas.nnume = nnume;
+    }
+
+    public static int[] getNespa() {
+        return nespa;
+    }
+
+    public static void setNespa(int[] nespa) {
+        Notas.nespa = nespa;
+    }
+
+    public static int[] getNmeca() {
+        return nmeca;
+    }
+
+    public static void setNmeca(int[] nmeca) {
+        Notas.nmeca = nmeca;
+    }
+
+    public static int[] getNper() {
+        return nper;
+    }
+
+    public static void setNper(int[] nper) {
+        Notas.nper = nper;
+    }
+
+    public static int[] getNmemo() {
+        return nmemo;
+    }
+
+    public static void setNmemo(int[] nmemo) {
+        Notas.nmemo = nmemo;
+    }
+
+    public static int[] getNabst() {
+        return nabst;
+    }
+
+    public static void setNabst(int[] nabst) {
+        Notas.nabst = nabst;
     }
 
     public static List<Preguntas> getBloquenumerico() {
