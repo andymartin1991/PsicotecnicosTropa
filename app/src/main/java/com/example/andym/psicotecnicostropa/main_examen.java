@@ -8,6 +8,8 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
+import android.os.Parcelable;
+import android.text.InputType;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +20,9 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.example.andym.psicotecnicostropa.dto.Preguntas;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -43,13 +48,7 @@ public class main_examen extends Activity {
 
     int[] pos;
 
-    int nverb[];
-    int nnume[];
-    int nespa[];
-    int nmeca[];
-    int nper[];
-    int nmemo[];
-    int nabst[];
+    int nverb[];int nnume[];int nespa[];int nmeca[];int nper[];int nmemo[];int nabst[];
 
     RelativeLayout a;
     RelativeLayout b;
@@ -61,26 +60,25 @@ public class main_examen extends Activity {
     ScrollView contenedor;
     int bloque = 1;
     int posi = 0;
-    int tempo = 1;//300
-    long cuentatiempo = tempo * 1000;
+    int tempo = 5;//300
+    long cuentatiempo = tempo*1000;
     long guardatiempo = 0;
     CountDownTimer th;
     boolean acabar = false, arregloacabar = false;
     Button siguiente;
-
-    //hola
+//hola
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_preguntas);
 
-        ImageView prohibido = (ImageView) findViewById(R.id.prohibido);
+        ImageView prohibido = (ImageView)findViewById(R.id.prohibido);
         prohibido.setVisibility(View.GONE);
 
-        contenedor = (ScrollView) findViewById(R.id.contenedor);
+        contenedor = (ScrollView)findViewById(R.id.contenedor);
 
-        estado = (TextView) findViewById(R.id.estado);
+        estado = (TextView)findViewById(R.id.estado);
         estado.setVisibility(View.GONE);
-        Msolucion = (LinearLayout) findViewById(R.id.solucion);
+        Msolucion = (LinearLayout)findViewById(R.id.solucion);
         Msolucion.setVisibility(View.GONE);
         pregunta = getResources().getStringArray(R.array.preverbal);
         resA = getResources().getStringArray(R.array.resAverbal);
@@ -96,25 +94,25 @@ public class main_examen extends Activity {
         imgD = getResources().getStringArray(R.array.imgDverbal);
         imgSol = getResources().getStringArray(R.array.imgSolverbal);
         imgExpli = getResources().getStringArray(R.array.imgExpliverbal);
-        pos = new int[pregunta.length];
+        pos= new int[pregunta.length];
         main_resultado_exam.bloqueverbal = new Preguntas[pregunta.length];
         respulsada = new int[pregunta.length];
-        for (int i = 0; i < pregunta.length; i++) {
-            respulsada[i] = 0;
+        for(int i = 0; i<pregunta.length; i++){
+            respulsada[i]=0;
         }
         for (int i = 0; i < pregunta.length; i++) {
             main_resultado_exam.bloqueverbal[i] = new Preguntas(
                     pregunta[i], resA[i], resB[i], resC[i], resD[i], sol[i], expliSol[i], imgPre[i],
                     imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i]);
         }
-        int h = 0, cantidad = 15, rango = pregunta.length;
+        int h=0, cantidad=15, rango=pregunta.length;
         nverb = new int[cantidad];
 
-        nverb[h] = (int) (Math.random() * rango);
-        for (h = 1; h < cantidad; h++) {
-            nverb[h] = (int) (Math.random() * rango);
-            for (int j = 0; j < h; j++) {
-                if (nverb[h] == nverb[j]) {
+        nverb[h]=(int)(Math.random()*rango);
+        for(h=1; h<cantidad; h++){
+            nverb[h]=(int)(Math.random()*rango);
+            for(int j=0; j<h; j++){
+                if(nverb[h]==nverb[j]){
                     h--;
                 }
             }
@@ -134,27 +132,25 @@ public class main_examen extends Activity {
         imgD = getResources().getStringArray(R.array.imgDnumerico);
         imgSol = getResources().getStringArray(R.array.imgSolnumerico);
         imgExpli = getResources().getStringArray(R.array.imgExplinumerico);
-        pos = new int[pregunta.length];
+        pos= new int[pregunta.length];
         main_resultado_exam.bloquenumerico = new Preguntas[pregunta.length];
         respulsada = new int[pregunta.length];
-        for (int i = 0; i < pregunta.length; i++) {
-            respulsada[i] = 0;
+        for(int i = 0; i<pregunta.length; i++){
+            respulsada[i]=0;
         }
         for (int i = 0; i < pregunta.length; i++) {
             main_resultado_exam.bloquenumerico[i] = new Preguntas(
                     pregunta[i], resA[i], resB[i], resC[i], resD[i], sol[i], expliSol[i], imgPre[i],
                     imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i]);
         }
-        h = 0;
-        cantidad = 15;
-        rango = pregunta.length;
+        h=0; cantidad=15; rango=pregunta.length;
         nnume = new int[cantidad];
 
-        nnume[h] = (int) (Math.random() * rango);
-        for (h = 1; h < cantidad; h++) {
-            nnume[h] = (int) (Math.random() * rango);
-            for (int j = 0; j < h; j++) {
-                if (nnume[h] == nnume[j]) {
+        nnume[h]=(int)(Math.random()*rango);
+        for(h=1; h<cantidad; h++){
+            nnume[h]=(int)(Math.random()*rango);
+            for(int j=0; j<h; j++){
+                if(nnume[h]==nnume[j]){
                     h--;
                 }
             }
@@ -174,27 +170,25 @@ public class main_examen extends Activity {
         imgD = getResources().getStringArray(R.array.imgDespacial);
         imgSol = getResources().getStringArray(R.array.imgSolespacial);
         imgExpli = getResources().getStringArray(R.array.imgExpliespacial);
-        pos = new int[pregunta.length];
+        pos= new int[pregunta.length];
         main_resultado_exam.bloqueespacial = new Preguntas[pregunta.length];
         respulsada = new int[pregunta.length];
-        for (int i = 0; i < pregunta.length; i++) {
-            respulsada[i] = 0;
+        for(int i = 0; i<pregunta.length; i++){
+            respulsada[i]=0;
         }
         for (int i = 0; i < pregunta.length; i++) {
             main_resultado_exam.bloqueespacial[i] = new Preguntas(
                     pregunta[i], resA[i], resB[i], resC[i], resD[i], sol[i], expliSol[i], imgPre[i],
                     imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i]);
         }
-        h = 0;
-        cantidad = 15;
-        rango = pregunta.length;
+        h=0; cantidad=15; rango=pregunta.length;
         nespa = new int[cantidad];
 
-        nespa[h] = (int) (Math.random() * rango);
-        for (h = 1; h < cantidad; h++) {
-            nespa[h] = (int) (Math.random() * rango);
-            for (int j = 0; j < h; j++) {
-                if (nespa[h] == nespa[j]) {
+        nespa[h]=(int)(Math.random()*rango);
+        for(h=1; h<cantidad; h++){
+            nespa[h]=(int)(Math.random()*rango);
+            for(int j=0; j<h; j++){
+                if(nespa[h]==nespa[j]){
                     h--;
                 }
             }
@@ -214,27 +208,25 @@ public class main_examen extends Activity {
         imgD = getResources().getStringArray(R.array.imgDmecanico);
         imgSol = getResources().getStringArray(R.array.imgSolmecanico);
         imgExpli = getResources().getStringArray(R.array.imgExplimecanico);
-        pos = new int[pregunta.length];
+        pos= new int[pregunta.length];
         main_resultado_exam.bloquemecanico = new Preguntas[pregunta.length];
         respulsada = new int[pregunta.length];
-        for (int i = 0; i < pregunta.length; i++) {
-            respulsada[i] = 0;
+        for(int i = 0; i<pregunta.length; i++){
+            respulsada[i]=0;
         }
         for (int i = 0; i < pregunta.length; i++) {
             main_resultado_exam.bloquemecanico[i] = new Preguntas(
                     pregunta[i], resA[i], resB[i], resC[i], resD[i], sol[i], expliSol[i], imgPre[i],
                     imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i]);
         }
-        h = 0;
-        cantidad = 15;
-        rango = pregunta.length;
+        h=0; cantidad=15; rango=pregunta.length;
         nmeca = new int[cantidad];
 
-        nmeca[h] = (int) (Math.random() * rango);
-        for (h = 1; h < cantidad; h++) {
-            nmeca[h] = (int) (Math.random() * rango);
-            for (int j = 0; j < h; j++) {
-                if (nmeca[h] == nmeca[j]) {
+        nmeca[h]=(int)(Math.random()*rango);
+        for(h=1; h<cantidad; h++){
+            nmeca[h]=(int)(Math.random()*rango);
+            for(int j=0; j<h; j++){
+                if(nmeca[h]==nmeca[j]){
                     h--;
                 }
             }
@@ -254,27 +246,25 @@ public class main_examen extends Activity {
         imgD = getResources().getStringArray(R.array.imgDperceptiva);
         imgSol = getResources().getStringArray(R.array.imgSolperceptiva);
         imgExpli = getResources().getStringArray(R.array.imgExpliperceptiva);
-        pos = new int[pregunta.length];
+        pos= new int[pregunta.length];
         main_resultado_exam.bloqueperceptiva = new Preguntas[pregunta.length];
         respulsada = new int[pregunta.length];
-        for (int i = 0; i < pregunta.length; i++) {
-            respulsada[i] = 0;
+        for(int i = 0; i<pregunta.length; i++){
+            respulsada[i]=0;
         }
         for (int i = 0; i < pregunta.length; i++) {
             main_resultado_exam.bloqueperceptiva[i] = new Preguntas(
                     pregunta[i], resA[i], resB[i], resC[i], resD[i], sol[i], expliSol[i], imgPre[i],
                     imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i]);
         }
-        h = 0;
-        cantidad = 15;
-        rango = pregunta.length;
+        h=0; cantidad=15; rango=pregunta.length;
         nper = new int[cantidad];
 
-        nper[h] = (int) (Math.random() * rango);
-        for (h = 1; h < cantidad; h++) {
-            nper[h] = (int) (Math.random() * rango);
-            for (int j = 0; j < h; j++) {
-                if (nper[h] == nper[j]) {
+        nper[h]=(int)(Math.random()*rango);
+        for(h=1; h<cantidad; h++){
+            nper[h]=(int)(Math.random()*rango);
+            for(int j=0; j<h; j++){
+                if(nper[h]==nper[j]){
                     h--;
                 }
             }
@@ -294,27 +284,25 @@ public class main_examen extends Activity {
         imgD = getResources().getStringArray(R.array.imgDmemoria);
         imgSol = getResources().getStringArray(R.array.imgSolmemoria);
         imgExpli = getResources().getStringArray(R.array.imgExplimemoria);
-        pos = new int[pregunta.length];
+        pos= new int[pregunta.length];
         main_resultado_exam.bloquememoria = new Preguntas[pregunta.length];
         respulsada = new int[pregunta.length];
-        for (int i = 0; i < pregunta.length; i++) {
-            respulsada[i] = 0;
+        for(int i = 0; i<pregunta.length; i++){
+            respulsada[i]=0;
         }
         for (int i = 0; i < pregunta.length; i++) {
             main_resultado_exam.bloquememoria[i] = new Preguntas(
                     pregunta[i], resA[i], resB[i], resC[i], resD[i], sol[i], expliSol[i], imgPre[i],
                     imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i]);
         }
-        h = 0;
-        cantidad = 15;
-        rango = pregunta.length;
+        h=0; cantidad=15; rango=pregunta.length;
         nmemo = new int[cantidad];
 
-        nmemo[h] = (int) (Math.random() * rango);
-        for (h = 1; h < cantidad; h++) {
-            nmemo[h] = (int) (Math.random() * rango);
-            for (int j = 0; j < h; j++) {
-                if (nmemo[h] == nmemo[j]) {
+        nmemo[h]=(int)(Math.random()*rango);
+        for(h=1; h<cantidad; h++){
+            nmemo[h]=(int)(Math.random()*rango);
+            for(int j=0; j<h; j++){
+                if(nmemo[h]==nmemo[j]){
                     h--;
                 }
             }
@@ -334,24 +322,22 @@ public class main_examen extends Activity {
         imgD = getResources().getStringArray(R.array.imgDabstrapto);
         imgSol = getResources().getStringArray(R.array.imgSolabstrapto);
         imgExpli = getResources().getStringArray(R.array.imgExpliabstrapto);
-        pos = new int[pregunta.length];
+        pos= new int[pregunta.length];
         main_resultado_exam.bloqueabstrapto = new Preguntas[pregunta.length];
         respulsada = new int[pregunta.length];
-        for (int i = 0; i < pregunta.length; i++) {
-            respulsada[i] = 0;
+        for(int i = 0; i<pregunta.length; i++){
+            respulsada[i]=0;
         }
         for (int i = 0; i < pregunta.length; i++) {
             main_resultado_exam.bloqueabstrapto[i] = new Preguntas(
                     pregunta[i], resA[i], resB[i], resC[i], resD[i], sol[i], expliSol[i], imgPre[i],
                     imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i]);
         }
-        h = 0;
-        cantidad = 15;
-        rango = pregunta.length;
+        h=0; cantidad=15; rango=pregunta.length;
         nabst = new int[cantidad];
 
-        nabst[h] = (int) (Math.random() * rango);
-        for (h = 1; h < cantidad; h++) {
+        nabst[h]=(int)(Math.random()*rango);
+        for(h=1; h<cantidad; h++) {
             nabst[h] = (int) (Math.random() * rango);
             for (int j = 0; j < h; j++) {
                 if (nabst[h] == nabst[j]) {
@@ -360,22 +346,22 @@ public class main_examen extends Activity {
             }
         }
 
-        cuentabloque = (TextView) findViewById(R.id.cuentabloque);
+        cuentabloque = (TextView)findViewById(R.id.cuentabloque);
         cuentabloque.setVisibility(View.VISIBLE);
         cuentabloque.setText("1/7");
 
-        cuentatras = (TextView) findViewById(R.id.cuentatras);
+        cuentatras = (TextView)findViewById(R.id.cuentatras);
         cuentatras.setVisibility(View.VISIBLE);
 
-        th = new CountDownTimer(cuentatiempo, 1000) {
+        th = new CountDownTimer(cuentatiempo, 1000){
             public void onTick(long millisUntilFinished) {
-                cuentatras.setText(getString(R.string.tiemporesdta) + " " + millisUntilFinished / 1000 + " " + getString(R.string.segundos));
+                cuentatras.setText(getString(R.string.tiemporesdta)+" " + millisUntilFinished / 1000+  " "+getString(R.string.segundos));
                 guardatiempo = millisUntilFinished;
                 memoria();
             }
 
             public void onFinish() {
-                cuentatras.setText(getString(R.string.tiemporesdta) + " " + "0" + " " + getString(R.string.segundos));
+                cuentatras.setText(getString(R.string.tiemporesdta)+" " +"0"+  " "+getString(R.string.segundos));
                 new AlertDialog.Builder(main_examen.this)
                         .setTitle(getString(R.string.atencion))
                         .setMessage(getString(R.string.tiempoterminado))
@@ -386,16 +372,16 @@ public class main_examen extends Activity {
                             public void onClick(DialogInterface dialog, int which) {
                                 posi = 0;
                                 bloque++;
-                                if (bloque == 8) {
+                                if(bloque == 8){
                                     acabar();
                                     Intent resultado = new Intent(main_examen.this, main_resultado_exam.class);
                                     startActivity(resultado);
                                     overridePendingTransition(R.anim.transpain, R.anim.transpaout);
-                                } else {
+                                }else {
                                     imprimir(bloque, posi);
                                     contador.setText((posi + 1) + "/15");
                                     cuentabloque.setText(bloque + "/7");
-                                    cuentatiempo = tempo * 1000;
+                                    cuentatiempo = tempo*1000;
                                     th.start();
                                 }
                             }
@@ -405,16 +391,16 @@ public class main_examen extends Activity {
         }.start();
 
 
-        contador = (TextView) findViewById(R.id.conta);
+        contador = (TextView)findViewById(R.id.conta);
         contador.setText("1/15");
-        imprimir(bloque, posi);
-        siguiente = (Button) findViewById(R.id.alante);
+        imprimir(bloque,posi);
+        siguiente = (Button)findViewById(R.id.alante);
         siguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                if (bloque == 7 && posi == 14) {
-                    if (arregloacabar == false) {
+                if(bloque == 7 && posi == 14){
+                    if(arregloacabar == false) {
                         cuentatiempo = guardatiempo;
                         th.cancel();
                         th = null;
@@ -479,18 +465,18 @@ public class main_examen extends Activity {
 
                                     }
                                 }).create().show();
-                    } else {
+                    }else{
                         acabar();
                         Intent resultado = new Intent(main_examen.this, main_resultado_exam.class);
                         startActivity(resultado);
                         overridePendingTransition(R.anim.transpain, R.anim.transpaout);
                     }
-                } else if (acabar == false) {
+                }else if(acabar == false){
                     posi++;
-                    if (posi < 15) {
+                    if(posi<15){
                         imprimir(bloque, posi);
                         contador.setText((posi + 1) + "/15");
-                    } else {
+                    }else{
                         cuentatiempo = guardatiempo;
                         th.cancel();
                         th = null;
@@ -504,16 +490,16 @@ public class main_examen extends Activity {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                         posi--;
-                                        th = new CountDownTimer(cuentatiempo, 1000) {
+                                        th = new CountDownTimer(cuentatiempo, 1000){
                                             public void onTick(long millisUntilFinished) {
-                                                cuentatras.setText(getString(R.string.tiemporesdta) + " " + millisUntilFinished / 1000 + " " + getString(R.string.segundos));
+                                                cuentatras.setText(getString(R.string.tiemporesdta)+" " + millisUntilFinished / 1000+  " "+getString(R.string.segundos));
                                                 guardatiempo = millisUntilFinished;
                                                 siguiente.setEnabled(true);
                                                 memoria();
                                             }
 
                                             public void onFinish() {
-                                                cuentatras.setText(getString(R.string.tiemporesdta) + " " + "0" + " " + getString(R.string.segundos));
+                                                cuentatras.setText(getString(R.string.tiemporesdta)+" " +"0"+  " "+getString(R.string.segundos));
                                                 new AlertDialog.Builder(main_examen.this)
                                                         .setTitle(getString(R.string.atencion))
                                                         .setMessage(getString(R.string.tiempoterminado))
@@ -524,17 +510,17 @@ public class main_examen extends Activity {
                                                             public void onClick(DialogInterface dialog, int which) {
                                                                 posi = 0;
                                                                 bloque++;
-                                                                if (bloque == 8) {
+                                                                if(bloque == 8){
                                                                     acabar();
                                                                     Intent resultado = new Intent(main_examen.this, main_resultado_exam.class);
                                                                     startActivity(resultado);
                                                                     overridePendingTransition(R.anim.transpain, R.anim.transpaout);
 
-                                                                } else {
+                                                                }else {
                                                                     imprimir(bloque, posi);
                                                                     contador.setText((posi + 1) + "/15");
                                                                     cuentabloque.setText(bloque + "/7");
-                                                                    cuentatiempo = tempo * 1000;
+                                                                    cuentatiempo = tempo*1000;
                                                                     th.start();
                                                                 }
                                                                 siguiente.setEnabled(true);
@@ -553,20 +539,20 @@ public class main_examen extends Activity {
                                         posi = 0;
                                         bloque++;
                                         siguiente.setEnabled(true);
-                                        if (bloque != 8) {
+                                        if(bloque != 8){
                                             imprimir(bloque, posi);
                                             cuentabloque.setText(bloque + "/7");
                                             contador.setText((posi + 1) + "/15");
-                                            cuentatiempo = tempo * 1000;
-                                            th = new CountDownTimer(cuentatiempo, 1000) {
+                                            cuentatiempo = tempo*1000;
+                                            th = new CountDownTimer(cuentatiempo, 1000){
                                                 public void onTick(long millisUntilFinished) {
-                                                    cuentatras.setText(getString(R.string.tiemporesdta) + " " + millisUntilFinished / 1000 + " " + getString(R.string.segundos));
+                                                    cuentatras.setText(getString(R.string.tiemporesdta)+" " + millisUntilFinished / 1000+  " "+getString(R.string.segundos));
                                                     guardatiempo = millisUntilFinished;
                                                     memoria();
                                                 }
 
                                                 public void onFinish() {
-                                                    cuentatras.setText(getString(R.string.tiemporesdta) + " " + "0" + " " + getString(R.string.segundos));
+                                                    cuentatras.setText(getString(R.string.tiemporesdta)+" " +"0"+  " "+getString(R.string.segundos));
                                                     new AlertDialog.Builder(main_examen.this)
                                                             .setTitle(getString(R.string.atencion))
                                                             .setMessage(getString(R.string.tiempoterminado))
@@ -577,16 +563,16 @@ public class main_examen extends Activity {
                                                                 public void onClick(DialogInterface dialog, int which) {
                                                                     posi = 0;
                                                                     bloque++;
-                                                                    if (bloque == 8) {
+                                                                    if(bloque == 8){
                                                                         acabar();
                                                                         Intent resultado = new Intent(main_examen.this, main_resultado_exam.class);
                                                                         startActivity(resultado);
                                                                         overridePendingTransition(R.anim.transpain, R.anim.transpaout);
-                                                                    } else {
+                                                                    }else {
                                                                         imprimir(bloque, posi);
                                                                         contador.setText((posi + 1) + "/15");
                                                                         cuentabloque.setText(bloque + "/7");
-                                                                        cuentatiempo = tempo * 1000;
+                                                                        cuentatiempo = tempo*1000;
                                                                         th.start();
                                                                     }
                                                                 }
@@ -599,9 +585,9 @@ public class main_examen extends Activity {
                                 }).create().show();
                         memoria();
                     }
-                } else {
+                }else{
                     //cuando acabo el examen
-                    if (bloque <= 7 && posi <= 14) {
+                    if(bloque<=7 && posi<=14) {
                         posi++;
                         if (posi == 15) {
                             bloque++;
@@ -621,28 +607,28 @@ public class main_examen extends Activity {
             }
         });
 
-        Button atras = (Button) findViewById(R.id.atras);
+        Button atras = (Button)findViewById(R.id.atras);
         atras.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                if (posi < 15 && posi >= 0) {
-                    if (posi == 0 && acabar == true) {
-                        if (bloque > 1) {
-                            posi = 14;
-                            bloque--;
-                            imprimir(bloque, posi);
-                            contador.setText((posi + 1) + "/15");
-                            recolocar();
-                            cuentabloque.setText(bloque + "/7");
-                        }
-                    } else if (posi > 0) {
-                        posi--;
+            if(posi<15 && posi>=0){
+                if(posi==0 && acabar==true){
+                    if(bloque>1) {
+                        posi = 14;
+                        bloque--;
                         imprimir(bloque, posi);
                         contador.setText((posi + 1) + "/15");
                         recolocar();
+                        cuentabloque.setText(bloque + "/7");
                     }
+                }else if(posi>0){
+                    posi--;
+                    imprimir(bloque, posi);
+                    contador.setText((posi + 1) + "/15");
+                    recolocar();
                 }
+            }
             }
         });
 
@@ -663,9 +649,9 @@ public class main_examen extends Activity {
         imgenD = (ImageView) findViewById(R.id.imgD);
         imgenSol = (ImageView) findViewById(R.id.imgSol);
         imgenExp = (ImageView) findViewById(R.id.imgExp);
-        c = (RelativeLayout) findViewById(R.id.c);
-        d = (RelativeLayout) findViewById(R.id.d);
-        TextView bloq = (TextView) findViewById(R.id.bloque);
+        c = (RelativeLayout)findViewById(R.id.c);
+        d = (RelativeLayout)findViewById(R.id.d);
+        TextView bloq = (TextView)findViewById(R.id.bloque);
         switch (bloque) {
             case 1:
                 bloq.setText(getString(R.string.verbal));
@@ -1361,32 +1347,25 @@ public class main_examen extends Activity {
                 // TODO Auto-generated method stub
                 String opt = "a";
                 verificarRes(opt);
-                switch (bloque) {
-                    case 1:
-                        main_resultado_exam.bloqueverbal[posi].setRespulsada(1);
+                switch(bloque){
+                    case 1:main_resultado_exam.bloqueverbal[posi].setRespulsada(1);
                         break;
-                    case 2:
-                        main_resultado_exam.bloquenumerico[posi].setRespulsada(1);
+                    case 2:main_resultado_exam.bloquenumerico[posi].setRespulsada(1);
                         break;
-                    case 3:
-                        main_resultado_exam.bloqueespacial[posi].setRespulsada(1);
+                    case 3:main_resultado_exam.bloqueespacial[posi].setRespulsada(1);
                         break;
-                    case 4:
-                        main_resultado_exam.bloquemecanico[posi].setRespulsada(1);
+                    case 4:main_resultado_exam.bloquemecanico[posi].setRespulsada(1);
                         break;
-                    case 5:
-                        main_resultado_exam.bloqueperceptiva[posi].setRespulsada(1);
+                    case 5:main_resultado_exam.bloqueperceptiva[posi].setRespulsada(1);
                         break;
-                    case 6:
-                        main_resultado_exam.bloquememoria[posi].setRespulsada(1);
+                    case 6:main_resultado_exam.bloquememoria[posi].setRespulsada(1);
                         break;
-                    case 7:
-                        main_resultado_exam.bloqueabstrapto[posi].setRespulsada(1);
+                    case 7:main_resultado_exam.bloqueabstrapto[posi].setRespulsada(1);
                 }
-                Button alante = (Button) findViewById(R.id.alante);
+                Button alante = (Button)findViewById(R.id.alante);
                 alante.setVisibility(View.VISIBLE);
-                if (bloque != 6) {
-                    Button atras = (Button) findViewById(R.id.atras);
+                if(bloque != 6){
+                    Button atras = (Button)findViewById(R.id.atras);
                     atras.setVisibility(View.VISIBLE);
                 }
             }
@@ -1398,32 +1377,25 @@ public class main_examen extends Activity {
                 // TODO Auto-generated method stub
                 String opt = "b";
                 verificarRes(opt);
-                switch (bloque) {
-                    case 1:
-                        main_resultado_exam.bloqueverbal[posi].setRespulsada(2);
+                switch(bloque){
+                    case 1:main_resultado_exam.bloqueverbal[posi].setRespulsada(2);
                         break;
-                    case 2:
-                        main_resultado_exam.bloquenumerico[posi].setRespulsada(2);
+                    case 2:main_resultado_exam.bloquenumerico[posi].setRespulsada(2);
                         break;
-                    case 3:
-                        main_resultado_exam.bloqueespacial[posi].setRespulsada(2);
+                    case 3:main_resultado_exam.bloqueespacial[posi].setRespulsada(2);
                         break;
-                    case 4:
-                        main_resultado_exam.bloquemecanico[posi].setRespulsada(2);
+                    case 4:main_resultado_exam.bloquemecanico[posi].setRespulsada(2);
                         break;
-                    case 5:
-                        main_resultado_exam.bloqueperceptiva[posi].setRespulsada(2);
+                    case 5:main_resultado_exam.bloqueperceptiva[posi].setRespulsada(2);
                         break;
-                    case 6:
-                        main_resultado_exam.bloquememoria[posi].setRespulsada(2);
+                    case 6:main_resultado_exam.bloquememoria[posi].setRespulsada(2);
                         break;
-                    case 7:
-                        main_resultado_exam.bloqueabstrapto[posi].setRespulsada(2);
+                    case 7:main_resultado_exam.bloqueabstrapto[posi].setRespulsada(2);
                 }
-                Button alante = (Button) findViewById(R.id.alante);
+                Button alante = (Button)findViewById(R.id.alante);
                 alante.setVisibility(View.VISIBLE);
-                if (bloque != 6) {
-                    Button atras = (Button) findViewById(R.id.atras);
+                if(bloque != 6){
+                    Button atras = (Button)findViewById(R.id.atras);
                     atras.setVisibility(View.VISIBLE);
                 }
             }
@@ -1435,32 +1407,25 @@ public class main_examen extends Activity {
                 // TODO Auto-generated method stub
                 String opt = "c";
                 verificarRes(opt);
-                switch (bloque) {
-                    case 1:
-                        main_resultado_exam.bloqueverbal[posi].setRespulsada(3);
+                switch(bloque){
+                    case 1:main_resultado_exam.bloqueverbal[posi].setRespulsada(3);
                         break;
-                    case 2:
-                        main_resultado_exam.bloquenumerico[posi].setRespulsada(3);
+                    case 2:main_resultado_exam.bloquenumerico[posi].setRespulsada(3);
                         break;
-                    case 3:
-                        main_resultado_exam.bloqueespacial[posi].setRespulsada(3);
+                    case 3:main_resultado_exam.bloqueespacial[posi].setRespulsada(3);
                         break;
-                    case 4:
-                        main_resultado_exam.bloquemecanico[posi].setRespulsada(3);
+                    case 4:main_resultado_exam.bloquemecanico[posi].setRespulsada(3);
                         break;
-                    case 5:
-                        main_resultado_exam.bloqueperceptiva[posi].setRespulsada(3);
+                    case 5:main_resultado_exam.bloqueperceptiva[posi].setRespulsada(3);
                         break;
-                    case 6:
-                        main_resultado_exam.bloquememoria[posi].setRespulsada(3);
+                    case 6:main_resultado_exam.bloquememoria[posi].setRespulsada(3);
                         break;
-                    case 7:
-                        main_resultado_exam.bloqueabstrapto[posi].setRespulsada(3);
+                    case 7:main_resultado_exam.bloqueabstrapto[posi].setRespulsada(3);
                 }
-                Button alante = (Button) findViewById(R.id.alante);
+                Button alante = (Button)findViewById(R.id.alante);
                 alante.setVisibility(View.VISIBLE);
-                if (bloque != 6) {
-                    Button atras = (Button) findViewById(R.id.atras);
+                if(bloque != 6){
+                    Button atras = (Button)findViewById(R.id.atras);
                     atras.setVisibility(View.VISIBLE);
                 }
             }
@@ -1472,32 +1437,25 @@ public class main_examen extends Activity {
                 // TODO Auto-generated method stub
                 String opt = "d";
                 verificarRes(opt);
-                switch (bloque) {
-                    case 1:
-                        main_resultado_exam.bloqueverbal[posi].setRespulsada(4);
+                switch(bloque){
+                    case 1:main_resultado_exam.bloqueverbal[posi].setRespulsada(4);
                         break;
-                    case 2:
-                        main_resultado_exam.bloquenumerico[posi].setRespulsada(4);
+                    case 2:main_resultado_exam.bloquenumerico[posi].setRespulsada(4);
                         break;
-                    case 3:
-                        main_resultado_exam.bloqueespacial[posi].setRespulsada(4);
+                    case 3:main_resultado_exam.bloqueespacial[posi].setRespulsada(4);
                         break;
-                    case 4:
-                        main_resultado_exam.bloquemecanico[posi].setRespulsada(4);
+                    case 4:main_resultado_exam.bloquemecanico[posi].setRespulsada(4);
                         break;
-                    case 5:
-                        main_resultado_exam.bloqueperceptiva[posi].setRespulsada(4);
+                    case 5:main_resultado_exam.bloqueperceptiva[posi].setRespulsada(4);
                         break;
-                    case 6:
-                        main_resultado_exam.bloquememoria[posi].setRespulsada(4);
+                    case 6:main_resultado_exam.bloquememoria[posi].setRespulsada(4);
                         break;
-                    case 7:
-                        main_resultado_exam.bloqueabstrapto[posi].setRespulsada(4);
+                    case 7:main_resultado_exam.bloqueabstrapto[posi].setRespulsada(4);
                 }
-                Button alante = (Button) findViewById(R.id.alante);
+                Button alante = (Button)findViewById(R.id.alante);
                 alante.setVisibility(View.VISIBLE);
-                if (bloque != 6) {
-                    Button atras = (Button) findViewById(R.id.atras);
+                if(bloque != 6){
+                    Button atras = (Button)findViewById(R.id.atras);
                     atras.setVisibility(View.VISIBLE);
                 }
             }
@@ -1534,8 +1492,7 @@ public class main_examen extends Activity {
                     a.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     c.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     d.setBackgroundResource(R.drawable.boton_opt_preguntas);
-                }
-                break;
+                }break;
 
             case "c":
 
@@ -1549,8 +1506,7 @@ public class main_examen extends Activity {
                     a.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     b.setBackgroundResource(R.drawable.boton_opt_preguntas);
                     d.setBackgroundResource(R.drawable.boton_opt_preguntas);
-                }
-                break;
+                }break;
 
             case "d":
 
@@ -1569,7 +1525,7 @@ public class main_examen extends Activity {
         }
     }
 
-    private void recolocar() {
+    private void recolocar(){
         a = (RelativeLayout) findViewById(R.id.a);
         b = (RelativeLayout) findViewById(R.id.b);
         c = (RelativeLayout) findViewById(R.id.c);
@@ -1580,240 +1536,227 @@ public class main_examen extends Activity {
         c.setBackgroundResource(R.drawable.boton_opt_preguntas);
         d.setBackgroundResource(R.drawable.boton_opt_preguntas);
 
-        switch (bloque) {
-            case 1:
-                if (main_resultado_exam.bloqueverbal[posi].getRespulsada() != 0) {
-                    switch (main_resultado_exam.bloqueverbal[posi].getRespulsada()) {
-                        case 1:
-                            if (respuestaA.getText().equals(solucion.getText())) {
-                                a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            } else {
-                                a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            }
-                            break;
-                        case 2:
-                            if (respuestaB.getText().equals(solucion.getText())) {
-                                b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            } else {
-                                b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            }
-                            break;
-                        case 3:
-                            if (respuestaC.getText().equals(solucion.getText())) {
-                                c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            } else {
-                                c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            }
-                            break;
-                        case 4:
-                            if (respuestaD.getText().equals(solucion.getText())) {
-                                d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            } else {
-                                d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            }
-                    }
-                }
-                break;
-            case 2:
-                if (main_resultado_exam.bloquenumerico[posi].getRespulsada() != 0) {
-                    switch (main_resultado_exam.bloquenumerico[posi].getRespulsada()) {
-                        case 1:
-                            if (respuestaA.getText().equals(solucion.getText())) {
-                                a.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
-                            } else {
-                                a.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
-                            }
-                            break;
-                        case 2:
-                            if (respuestaB.getText().equals(solucion.getText())) {
-                                b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            } else {
-                                b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            }
-                            break;
-                        case 3:
-                            if (respuestaC.getText().equals(solucion.getText())) {
-                                c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            } else {
-                                c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            }
-                            break;
-                        case 4:
-                            if (respuestaD.getText().equals(solucion.getText())) {
-                                d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            } else {
-                                d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            }
-                    }
-                }
-                break;
-            case 3:
-                if (main_resultado_exam.bloqueespacial[posi].getRespulsada() != 0) {
-                    switch (main_resultado_exam.bloqueespacial[posi].getRespulsada()) {
-                        case 1:
-                            if (respuestaA.getText().equals(solucion.getText())) {
-                                a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            } else {
-                                a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            }
-                            break;
-                        case 2:
-                            if (respuestaB.getText().equals(solucion.getText())) {
-                                b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            } else {
-                                b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            }
-                            break;
-                        case 3:
-                            if (respuestaC.getText().equals(solucion.getText())) {
-                                c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            } else {
-                                c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            }
-                            break;
-                        case 4:
-                            if (respuestaD.getText().equals(solucion.getText())) {
-                                d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            } else {
-                                d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            }
-                    }
-                }
-                break;
-            case 4:
-                if (main_resultado_exam.bloquemecanico[posi].getRespulsada() != 0) {
-                    switch (main_resultado_exam.bloquemecanico[posi].getRespulsada()) {
-                        case 1:
-                            if (respuestaA.getText().equals(solucion.getText())) {
-                                a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            } else {
-                                a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            }
-                            break;
-                        case 2:
-                            if (respuestaB.getText().equals(solucion.getText())) {
-                                b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            } else {
-                                b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            }
-                            break;
-                        case 3:
-                            if (respuestaC.getText().equals(solucion.getText())) {
-                                c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            } else {
-                                c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            }
-                            break;
-                        case 4:
-                            if (respuestaD.getText().equals(solucion.getText())) {
-                                d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            } else {
-                                d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            }
-                    }
-                }
-                break;
-            case 5:
-                if (main_resultado_exam.bloqueperceptiva[posi].getRespulsada() != 0) {
-                    switch (main_resultado_exam.bloqueperceptiva[posi].getRespulsada()) {
-                        case 1:
-                            if (respuestaA.getText().equals(solucion.getText())) {
-                                a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            } else {
-                                a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            }
-                            break;
-                        case 2:
-                            if (respuestaB.getText().equals(solucion.getText())) {
-                                b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            } else {
-                                b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            }
-                            break;
-                        case 3:
-                            if (respuestaC.getText().equals(solucion.getText())) {
-                                c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            } else {
-                                c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            }
-                            break;
-                        case 4:
-                            if (respuestaD.getText().equals(solucion.getText())) {
-                                d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            } else {
-                                d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            }
-                    }
-                }
-                break;
-            case 6:
-                if (main_resultado_exam.bloquememoria[posi].getRespulsada() != 0) {
-                    switch (main_resultado_exam.bloquememoria[posi].getRespulsada()) {
-                        case 1:
-                            if (respuestaA.getText().equals(solucion.getText())) {
-                                a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            } else {
-                                a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            }
-                            break;
-                        case 2:
-                            if (respuestaB.getText().equals(solucion.getText())) {
-                                b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            } else {
-                                b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            }
-                            break;
-                        case 3:
-                            if (respuestaC.getText().equals(solucion.getText())) {
-                                c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            } else {
-                                c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            }
-                            break;
-                        case 4:
-                            if (respuestaD.getText().equals(solucion.getText())) {
-                                d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            } else {
-                                d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            }
-                    }
-                }
-                break;
-            case 7:
-                if (main_resultado_exam.bloqueabstrapto[posi].getRespulsada() != 0) {
-                    switch (main_resultado_exam.bloqueabstrapto[posi].getRespulsada()) {
-                        case 1:
+        switch(bloque) {
+            case 1:if (main_resultado_exam.bloqueverbal[posi].getRespulsada() != 0) {
+                switch (main_resultado_exam.bloqueverbal[posi].getRespulsada()) {
+                    case 1:
+                        if (respuestaA.getText().equals(solucion.getText())) {
                             a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            break;
-                        case 2:
-                            if (respuestaB.getText().equals(solucion.getText())) {
-                                b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            } else {
-                                b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            }
-                            break;
-                        case 3:
-                            if (respuestaC.getText().equals(solucion.getText())) {
-                                c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            } else {
-                                c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            }
-                            break;
-                        case 4:
-                            if (respuestaD.getText().equals(solucion.getText())) {
-                                d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            } else {
-                                d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
-                            }
-                    }
+                        } else {
+                            a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        }
+                        break;
+                    case 2:
+                        if (respuestaB.getText().equals(solucion.getText())) {
+                            b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        } else {
+                            b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        }
+                        break;
+                    case 3:
+                        if (respuestaC.getText().equals(solucion.getText())) {
+                            c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        } else {
+                            c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        }
+                        break;
+                    case 4:
+                        if (respuestaD.getText().equals(solucion.getText())) {
+                            d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        } else {
+                            d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        }
                 }
+            }break;
+            case 2:if (main_resultado_exam.bloquenumerico[posi].getRespulsada() != 0) {
+                switch (main_resultado_exam.bloquenumerico[posi].getRespulsada()) {
+                    case 1:
+                        if (respuestaA.getText().equals(solucion.getText())) {
+                            a.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
+                        } else {
+                            a.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
+                        }
+                        break;
+                    case 2:
+                        if (respuestaB.getText().equals(solucion.getText())) {
+                            b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        } else {
+                            b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        }
+                        break;
+                    case 3:
+                        if (respuestaC.getText().equals(solucion.getText())) {
+                            c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        } else {
+                            c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        }
+                        break;
+                    case 4:
+                        if (respuestaD.getText().equals(solucion.getText())) {
+                            d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        } else {
+                            d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        }
+                }
+            }break;
+            case 3:if (main_resultado_exam.bloqueespacial[posi].getRespulsada() != 0) {
+                switch (main_resultado_exam.bloqueespacial[posi].getRespulsada()) {
+                    case 1:
+                        if (respuestaA.getText().equals(solucion.getText())) {
+                            a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        } else {
+                            a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        }
+                        break;
+                    case 2:
+                        if (respuestaB.getText().equals(solucion.getText())) {
+                            b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        } else {
+                            b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        }
+                        break;
+                    case 3:
+                        if (respuestaC.getText().equals(solucion.getText())) {
+                            c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        } else {
+                            c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        }
+                        break;
+                    case 4:
+                        if (respuestaD.getText().equals(solucion.getText())) {
+                            d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        } else {
+                            d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        }
+                }
+            }break;
+            case 4:if (main_resultado_exam.bloquemecanico[posi].getRespulsada() != 0) {
+                switch (main_resultado_exam.bloquemecanico[posi].getRespulsada()) {
+                    case 1:
+                        if (respuestaA.getText().equals(solucion.getText())) {
+                            a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        } else {
+                            a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        }
+                        break;
+                    case 2:
+                        if (respuestaB.getText().equals(solucion.getText())) {
+                            b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        } else {
+                            b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        }
+                        break;
+                    case 3:
+                        if (respuestaC.getText().equals(solucion.getText())) {
+                            c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        } else {
+                            c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        }
+                        break;
+                    case 4:
+                        if (respuestaD.getText().equals(solucion.getText())) {
+                            d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        } else {
+                            d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        }
+                }
+            }break;
+            case 5:if (main_resultado_exam.bloqueperceptiva[posi].getRespulsada() != 0) {
+                switch (main_resultado_exam.bloqueperceptiva[posi].getRespulsada()) {
+                    case 1:
+                        if (respuestaA.getText().equals(solucion.getText())) {
+                            a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        } else {
+                            a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        }
+                        break;
+                    case 2:
+                        if (respuestaB.getText().equals(solucion.getText())) {
+                            b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        } else {
+                            b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        }
+                        break;
+                    case 3:
+                        if (respuestaC.getText().equals(solucion.getText())) {
+                            c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        } else {
+                            c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        }
+                        break;
+                    case 4:
+                        if (respuestaD.getText().equals(solucion.getText())) {
+                            d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        } else {
+                            d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        }
+                }
+            }break;
+            case 6:if (main_resultado_exam.bloquememoria[posi].getRespulsada() != 0) {
+                switch (main_resultado_exam.bloquememoria[posi].getRespulsada()) {
+                    case 1:
+                        if (respuestaA.getText().equals(solucion.getText())) {
+                            a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        } else {
+                            a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        }
+                        break;
+                    case 2:
+                        if (respuestaB.getText().equals(solucion.getText())) {
+                            b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        } else {
+                            b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        }
+                        break;
+                    case 3:
+                        if (respuestaC.getText().equals(solucion.getText())) {
+                            c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        } else {
+                            c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        }
+                        break;
+                    case 4:
+                        if (respuestaD.getText().equals(solucion.getText())) {
+                            d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        } else {
+                            d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        }
+                }
+            }break;
+            case 7:if (main_resultado_exam.bloqueabstrapto[posi].getRespulsada() != 0) {
+                switch (main_resultado_exam.bloqueabstrapto[posi].getRespulsada()) {
+                    case 1:
+                        a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        break;
+                    case 2:
+                        if (respuestaB.getText().equals(solucion.getText())) {
+                            b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        } else {
+                            b.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        }
+                        break;
+                    case 3:
+                        if (respuestaC.getText().equals(solucion.getText())) {
+                            c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        } else {
+                            c.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        }
+                        break;
+                    case 4:
+                        if (respuestaD.getText().equals(solucion.getText())) {
+                            d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        } else {
+                            d.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
+                        }
+                }
+            }
         }
     }
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             cuentatiempo = guardatiempo;
-            if (acabar == false) {
+            if(acabar == false) {
                 th.cancel();
                 th = null;
                 new AlertDialog.Builder(this)
@@ -1874,7 +1817,7 @@ public class main_examen extends Activity {
 
                                     }
                                 }).show();
-            } else {
+            }else{
                 finish();
             }
 
@@ -1886,10 +1829,10 @@ public class main_examen extends Activity {
     }
 
     public void esperarYCerrar(int milisegundos) {
-        if (posi == 0) {
-            cuentatiempo = tempo * 1000;
-            cuentatras.setText(getString(R.string.tiemporesdta) + " " + ((cuentatiempo / 1000) - 1) + " " + getString(R.string.segundos));
-        } else {
+        if(posi == 0){
+            cuentatiempo = tempo*1000;
+            cuentatras.setText(getString(R.string.tiemporesdta) + " " + ((cuentatiempo / 1000)-1) + " " + getString(R.string.segundos));
+        }else {
             cuentatiempo = guardatiempo;
         }
         th.cancel();
@@ -1897,12 +1840,12 @@ public class main_examen extends Activity {
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {
-                RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
-                RelativeLayout bmemo = (RelativeLayout) findViewById(R.id.b);
-                RelativeLayout cmemo = (RelativeLayout) findViewById(R.id.c);
-                RelativeLayout dmemo = (RelativeLayout) findViewById(R.id.d);
-                TextView pregunta = (TextView) findViewById(R.id.pregunta);
-                ImageView imgpre = (ImageView) findViewById(R.id.imgpre);
+                RelativeLayout amemo = (RelativeLayout)findViewById(R.id.a);
+                RelativeLayout bmemo = (RelativeLayout)findViewById(R.id.b);
+                RelativeLayout cmemo = (RelativeLayout)findViewById(R.id.c);
+                RelativeLayout dmemo = (RelativeLayout)findViewById(R.id.d);
+                TextView pregunta = (TextView)findViewById(R.id.pregunta);
+                ImageView imgpre = (ImageView)findViewById(R.id.imgpre);
                 amemo.setVisibility(View.VISIBLE);
                 bmemo.setVisibility(View.VISIBLE);
                 cmemo.setVisibility(View.VISIBLE);
@@ -1948,17 +1891,16 @@ public class main_examen extends Activity {
             }
         }, milisegundos);
     }
-
-    private void memoria() {
-        if (bloque == 6 && !acabar && posi < 15) {
+    private void memoria(){
+        if(bloque == 6 && !acabar && posi<15){
             RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
             RelativeLayout bmemo = (RelativeLayout) findViewById(R.id.b);
             RelativeLayout cmemo = (RelativeLayout) findViewById(R.id.c);
             RelativeLayout dmemo = (RelativeLayout) findViewById(R.id.d);
             TextView pregunta = (TextView) findViewById(R.id.pregunta);
             ImageView imgpre = (ImageView) findViewById(R.id.imgpre);
-            Button atras = (Button) findViewById(R.id.atras);
-            Button alante = (Button) findViewById(R.id.alante);
+            Button atras = (Button)findViewById(R.id.atras);
+            Button alante = (Button)findViewById(R.id.alante);
             amemo.setVisibility(View.GONE);
             bmemo.setVisibility(View.GONE);
             cmemo.setVisibility(View.GONE);
@@ -1969,15 +1911,14 @@ public class main_examen extends Activity {
             alante.setVisibility(View.INVISIBLE);
             esperarYCerrar(2000);
         }
-        if (bloque != 6) {
-            Button atras = (Button) findViewById(R.id.atras);
+        if(bloque != 6){
+            Button atras = (Button)findViewById(R.id.atras);
             atras.setVisibility(View.VISIBLE);
-            Button alante = (Button) findViewById(R.id.alante);
+            Button alante = (Button)findViewById(R.id.alante);
             alante.setVisibility(View.VISIBLE);
         }
     }
-
-    private void acabar() {
+    private void acabar(){
         siguiente.setEnabled(true);
         if (acabar == false) {
             //th.cancel();
@@ -1992,9 +1933,9 @@ public class main_examen extends Activity {
         d.setEnabled(false);
         Msolucion.setVisibility(View.VISIBLE);
         contenedor.setBackgroundColor(Color.parseColor("#E8F0F1"));
-        ImageView prohibido = (ImageView) findViewById(R.id.prohibido);
+        ImageView prohibido = (ImageView)findViewById(R.id.prohibido);
         prohibido.setVisibility(View.VISIBLE);
-        TextView cuentatras = (TextView) findViewById(R.id.cuentatras);
+        TextView cuentatras = (TextView)findViewById(R.id.cuentatras);
         cuentatras.setVisibility(View.GONE);
         prohibido.setImageResource(getResources().getIdentifier("drawable/" + "prohibido", null, getPackageName()));
     }
