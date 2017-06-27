@@ -42,7 +42,7 @@ public class main_examen extends Activity {
     int[] respulsada;
 
     int[] pos;
-
+//
     int nverb[];
     int nnume[];
     int nespa[];
