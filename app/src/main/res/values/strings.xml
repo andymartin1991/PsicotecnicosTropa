@@ -125,4 +125,7 @@
     <string name="version">Versión</string>
     <string name="guardarresul">Necesitas introducir un baremo para guardar tu evolución</string>
     <string name="evolucion">Evolución</string>
+    <string name="saliractivity">¿Estas seguro de que quieres salir?</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
 </resources>

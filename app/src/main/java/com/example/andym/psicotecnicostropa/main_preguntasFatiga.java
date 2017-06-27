@@ -25,6 +25,7 @@ public class main_preguntasFatiga extends Activity {
     contador cont = new contador();
     int[] pos;
     int colocar = 0;
+    int memoria = 10000;//10000
 
     String[] pregunta = null;
     String[] resA = null;
@@ -752,7 +753,7 @@ public class main_preguntasFatiga extends Activity {
                 dmemo.setVisibility(View.GONE);
                 imgpre.setVisibility(View.VISIBLE);
                 pregunta.setVisibility(View.GONE);
-                esperarYCerrar(2000);
+                esperarYCerrar(memoria);
             }
         }
     }

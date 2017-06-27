@@ -28,6 +28,7 @@ public class main_preguntasAleatorio extends Activity {
     int colocar = 0;
     int inmemo = 0;
     int outmemo = 0;
+    int tempomemoria = 10000;//10000
 
     String[] pregunta = null;
     String[] resA = null;
@@ -749,7 +750,9 @@ public class main_preguntasAleatorio extends Activity {
         }
 
         pos = new int[cantidad];
-
+        for (int i = 0; i < cantidad; i++) {
+            pos[i] = 0;
+        }
         pre = new Preguntas[rango];
         for (int i = 0; i < cantidad; i++) {
             pre[i] = new Preguntas(
@@ -782,7 +785,7 @@ public class main_preguntasAleatorio extends Activity {
                     cont.setCont(cont.getCont() - 1);
                     limpiarelementos();
                     ocultaratras();
-                    if (num[cont.getCont()] > inmemo && num[cont.getCont()] <= outmemo && respulsada[cont.getCont()] == 0) {
+                    if (num[cont.getCont()] > inmemo && num[cont.getCont()] <= outmemo && pos[colocar-1] == 0) {
                         // PONER AQUI LA FUNCION DE MEMORIA
                         if (pos[cont.getCont()] == 0) {
                             RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
@@ -801,7 +804,7 @@ public class main_preguntasAleatorio extends Activity {
                             pregunta.setVisibility(View.GONE);
                             alante.setVisibility(View.INVISIBLE);
                             atras.setVisibility(View.INVISIBLE);
-                            esperarYCerrar(2000);
+                            esperarYCerrar(tempomemoria);
                             memoria = true;
                         }
 
@@ -810,7 +813,7 @@ public class main_preguntasAleatorio extends Activity {
                         cont.setCont(cont.getCont() - 1);
                         limpiarelementos();
                         ocultaratras();
-                        if (num[cont.getCont()] > inmemo && num[cont.getCont()] <= outmemo && respulsada[cont.getCont()] == 0) {
+                        if (num[cont.getCont()] > inmemo && num[cont.getCont()] <= outmemo && pos[colocar-1] == 0) {
                             // PONER AQUI LA FUNCION DE MEMORIA
                             if (pos[cont.getCont()] == 0) {
                                 RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
@@ -829,7 +832,7 @@ public class main_preguntasAleatorio extends Activity {
                                 pregunta.setVisibility(View.GONE);
                                 alante.setVisibility(View.INVISIBLE);
                                 atras.setVisibility(View.INVISIBLE);
-                                esperarYCerrar(2000);
+                                esperarYCerrar(tempomemoria);
                                 memoria = true;
                             }
 
@@ -853,6 +856,7 @@ public class main_preguntasAleatorio extends Activity {
                 String opt = "a";
                 verificarRes(opt);
                 pos[colocar] = 1;
+
                 calcularestado();
                 if (memoria) {
                     if (cont.getCont() < pregunta.length && cont.getCont() >= 0) {
@@ -879,6 +883,7 @@ public class main_preguntasAleatorio extends Activity {
                 String opt = "b";
                 verificarRes(opt);
                 pos[colocar] = 2;
+
                 calcularestado();
                 if (memoria) {
                     if (cont.getCont() < pregunta.length && cont.getCont() >= 0) {
@@ -904,6 +909,7 @@ public class main_preguntasAleatorio extends Activity {
                 String opt = "c";
                 verificarRes(opt);
                 pos[colocar] = 3;
+
                 calcularestado();
                 if (memoria) {
                     if (cont.getCont() < pregunta.length && cont.getCont() >= 0) {
@@ -929,6 +935,7 @@ public class main_preguntasAleatorio extends Activity {
                 String opt = "d";
                 verificarRes(opt);
                 pos[colocar] = 4;
+
                 calcularestado();
                 if (memoria) {
                     if (cont.getCont() < pregunta.length && cont.getCont() >= 0) {
@@ -1110,7 +1117,7 @@ public class main_preguntasAleatorio extends Activity {
             limpiarelementos();
             cont.setCont(cont.getCont() + 1);
             ocultaralante();
-            if (num[cont.getCont() - 1] > inmemo && num[cont.getCont() - 1] <= outmemo && respulsada[cont.getCont() - 1] == 0) {
+            if (num[cont.getCont() - 1] > inmemo && num[cont.getCont() - 1] <= outmemo && pos[colocar+1] == 0) {
                 // PONER AQUI LA FUNCION DE MEMORIA
                 if (pos[cont.getCont() - 1] == 0) {
                     RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
@@ -1131,6 +1138,7 @@ public class main_preguntasAleatorio extends Activity {
                     atras.setVisibility(View.INVISIBLE);
                     esperarYCerrar(2000);
                     memoria = true;
+
                 }
 
             }

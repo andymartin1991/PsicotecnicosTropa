@@ -17,7 +17,11 @@ import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import com.example.andym.psicotecnicostropa.dto.Notas;
 import com.example.andym.psicotecnicostropa.dto.Preguntas;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -42,14 +46,14 @@ public class main_examen extends Activity {
     int[] respulsada;
 
     int[] pos;
-//
-    int nverb[];
-    int nnume[];
-    int nespa[];
-    int nmeca[];
-    int nper[];
-    int nmemo[];
-    int nabst[];
+
+    static int nverb[];
+    static int nnume[];
+    static int nespa[];
+    static int nmeca[];
+    static int nper[];
+    static int nmemo[];
+    static int nabst[];
 
     RelativeLayout a;
     RelativeLayout b;
@@ -61,12 +65,15 @@ public class main_examen extends Activity {
     ScrollView contenedor;
     int bloque = 1;
     int posi = 0;
-    int tempo = 1;//300
+    int memoria = 10000;//10000
+    int tempo = 300;//300
     long cuentatiempo = tempo * 1000;
     long guardatiempo = 0;
     CountDownTimer th;
     boolean acabar = false, arregloacabar = false;
     Button siguiente;
+
+    static Notas notas;
 
     //hola
     protected void onCreate(Bundle savedInstanceState) {
@@ -107,7 +114,7 @@ public class main_examen extends Activity {
                     pregunta[i], resA[i], resB[i], resC[i], resD[i], sol[i], expliSol[i], imgPre[i],
                     imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i]);
         }
-        int h = 0, cantidad = 15, rango = pregunta.length;
+        int h = 0, cantidad = 16, rango = pregunta.length;
         nverb = new int[cantidad];
 
         nverb[h] = (int) (Math.random() * rango);
@@ -146,7 +153,7 @@ public class main_examen extends Activity {
                     imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i]);
         }
         h = 0;
-        cantidad = 15;
+        cantidad = 16;
         rango = pregunta.length;
         nnume = new int[cantidad];
 
@@ -186,7 +193,7 @@ public class main_examen extends Activity {
                     imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i]);
         }
         h = 0;
-        cantidad = 15;
+        cantidad = 16;
         rango = pregunta.length;
         nespa = new int[cantidad];
 
@@ -226,7 +233,7 @@ public class main_examen extends Activity {
                     imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i]);
         }
         h = 0;
-        cantidad = 15;
+        cantidad = 16;
         rango = pregunta.length;
         nmeca = new int[cantidad];
 
@@ -266,7 +273,7 @@ public class main_examen extends Activity {
                     imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i]);
         }
         h = 0;
-        cantidad = 15;
+        cantidad = 16;
         rango = pregunta.length;
         nper = new int[cantidad];
 
@@ -306,7 +313,7 @@ public class main_examen extends Activity {
                     imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i]);
         }
         h = 0;
-        cantidad = 15;
+        cantidad = 16;
         rango = pregunta.length;
         nmemo = new int[cantidad];
 
@@ -346,7 +353,7 @@ public class main_examen extends Activity {
                     imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i]);
         }
         h = 0;
-        cantidad = 15;
+        cantidad = 16;
         rango = pregunta.length;
         nabst = new int[cantidad];
 
@@ -359,6 +366,163 @@ public class main_examen extends Activity {
                 }
             }
         }
+
+
+        notas = new Notas();
+        List<Preguntas> pregu = new ArrayList<Preguntas>();
+        for (int i = 0; i < 16; i++) {
+            Preguntas preguntas = new Preguntas();
+            preguntas.setPregunta(main_resultado_exam.bloqueverbal[nverb[i]].getPregunta());
+            preguntas.setRespuestaA((main_resultado_exam.bloqueverbal[nverb[i]].getRespuestaA()));
+            preguntas.setRespuestaB((main_resultado_exam.bloqueverbal[nverb[i]].getRespuestaB()));
+            preguntas.setRespuestaC((main_resultado_exam.bloqueverbal[nverb[i]].getRespuestaC()));
+            preguntas.setRespuestaD((main_resultado_exam.bloqueverbal[nverb[i]].getRespuestaD()));
+            preguntas.setSolu((main_resultado_exam.bloqueverbal[nverb[i]].getSolu()));
+            preguntas.setExpliSol((main_resultado_exam.bloqueverbal[nverb[i]].getExpliSol()));
+            preguntas.setImgPregunta((main_resultado_exam.bloqueverbal[nverb[i]].getImgPregunta()));
+            preguntas.setImgA((main_resultado_exam.bloqueverbal[nverb[i]].getImgA()));
+            preguntas.setImgB((main_resultado_exam.bloqueverbal[nverb[i]].getImgB()));
+            preguntas.setImgC((main_resultado_exam.bloqueverbal[nverb[i]].getImgC()));
+            preguntas.setImgD((main_resultado_exam.bloqueverbal[nverb[i]].getImgD()));
+            preguntas.setImgSol((main_resultado_exam.bloqueverbal[nverb[i]].getImgSol()));
+            preguntas.setImgExpli((main_resultado_exam.bloqueverbal[nverb[i]].getImgExpli()));
+            preguntas.setRespulsada((main_resultado_exam.bloqueverbal[nverb[i]].getRespulsada()));
+            pregu.add(preguntas);
+        }
+        notas.setBloqueverbal(pregu);
+
+        pregu = new ArrayList<Preguntas>();
+        for (int i = 0; i < 16; i++) {
+            Preguntas preguntas = new Preguntas();
+            preguntas.setPregunta(main_resultado_exam.bloquenumerico[nnume[i]].getPregunta());
+            preguntas.setRespuestaA((main_resultado_exam.bloquenumerico[nnume[i]].getRespuestaA()));
+            preguntas.setRespuestaB((main_resultado_exam.bloquenumerico[nnume[i]].getRespuestaB()));
+            preguntas.setRespuestaC((main_resultado_exam.bloquenumerico[nnume[i]].getRespuestaC()));
+            preguntas.setRespuestaD((main_resultado_exam.bloquenumerico[nnume[i]].getRespuestaD()));
+            preguntas.setSolu((main_resultado_exam.bloquenumerico[nnume[i]].getSolu()));
+            preguntas.setExpliSol((main_resultado_exam.bloquenumerico[nnume[i]].getExpliSol()));
+            preguntas.setImgPregunta((main_resultado_exam.bloquenumerico[nnume[i]].getImgPregunta()));
+            preguntas.setImgA((main_resultado_exam.bloquenumerico[nnume[i]].getImgA()));
+            preguntas.setImgB((main_resultado_exam.bloquenumerico[nnume[i]].getImgB()));
+            preguntas.setImgC((main_resultado_exam.bloquenumerico[nnume[i]].getImgC()));
+            preguntas.setImgD((main_resultado_exam.bloquenumerico[nnume[i]].getImgD()));
+            preguntas.setImgSol((main_resultado_exam.bloquenumerico[nnume[i]].getImgSol()));
+            preguntas.setImgExpli((main_resultado_exam.bloquenumerico[nnume[i]].getImgExpli()));
+            preguntas.setRespulsada((main_resultado_exam.bloquenumerico[nnume[i]].getRespulsada()));
+            pregu.add(preguntas);
+        }
+        notas.setBloquenumerico(pregu);
+
+        pregu = new ArrayList<Preguntas>();
+        for (int i = 0; i < 16; i++) {
+            Preguntas preguntas = new Preguntas();
+            preguntas.setPregunta(main_resultado_exam.bloqueabstrapto[nabst[i]].getPregunta());
+            preguntas.setRespuestaA((main_resultado_exam.bloqueabstrapto[nabst[i]].getRespuestaA()));
+            preguntas.setRespuestaB((main_resultado_exam.bloqueabstrapto[nabst[i]].getRespuestaB()));
+            preguntas.setRespuestaC((main_resultado_exam.bloqueabstrapto[nabst[i]].getRespuestaC()));
+            preguntas.setRespuestaD((main_resultado_exam.bloqueabstrapto[nabst[i]].getRespuestaD()));
+            preguntas.setSolu((main_resultado_exam.bloqueabstrapto[nabst[i]].getSolu()));
+            preguntas.setExpliSol((main_resultado_exam.bloqueabstrapto[nabst[i]].getExpliSol()));
+            preguntas.setImgPregunta((main_resultado_exam.bloqueabstrapto[nabst[i]].getImgPregunta()));
+            preguntas.setImgA((main_resultado_exam.bloqueabstrapto[nabst[i]].getImgA()));
+            preguntas.setImgB((main_resultado_exam.bloqueabstrapto[nabst[i]].getImgB()));
+            preguntas.setImgC((main_resultado_exam.bloqueabstrapto[nabst[i]].getImgC()));
+            preguntas.setImgD((main_resultado_exam.bloqueabstrapto[nabst[i]].getImgD()));
+            preguntas.setImgSol((main_resultado_exam.bloqueabstrapto[nabst[i]].getImgSol()));
+            preguntas.setImgExpli((main_resultado_exam.bloqueabstrapto[nabst[i]].getImgExpli()));
+            preguntas.setRespulsada((main_resultado_exam.bloqueabstrapto[nabst[i]].getRespulsada()));
+            pregu.add(preguntas);
+        }
+        notas.setBloqueabstrapto(pregu);
+
+        pregu = new ArrayList<Preguntas>();
+        for (int i = 0; i < 16; i++) {
+            Preguntas preguntas = new Preguntas();
+            preguntas.setPregunta(main_resultado_exam.bloquemecanico[nmeca[i]].getPregunta());
+            preguntas.setRespuestaA((main_resultado_exam.bloquemecanico[nmeca[i]].getRespuestaA()));
+            preguntas.setRespuestaB((main_resultado_exam.bloquemecanico[nmeca[i]].getRespuestaB()));
+            preguntas.setRespuestaC((main_resultado_exam.bloquemecanico[nmeca[i]].getRespuestaC()));
+            preguntas.setRespuestaD((main_resultado_exam.bloquemecanico[nmeca[i]].getRespuestaD()));
+            preguntas.setSolu((main_resultado_exam.bloquemecanico[nmeca[i]].getSolu()));
+            preguntas.setExpliSol((main_resultado_exam.bloquemecanico[nmeca[i]].getExpliSol()));
+            preguntas.setImgPregunta((main_resultado_exam.bloquemecanico[nmeca[i]].getImgPregunta()));
+            preguntas.setImgA((main_resultado_exam.bloquemecanico[nmeca[i]].getImgA()));
+            preguntas.setImgB((main_resultado_exam.bloquemecanico[nmeca[i]].getImgB()));
+            preguntas.setImgC((main_resultado_exam.bloquemecanico[nmeca[i]].getImgC()));
+            preguntas.setImgD((main_resultado_exam.bloquemecanico[nmeca[i]].getImgD()));
+            preguntas.setImgSol((main_resultado_exam.bloquemecanico[nmeca[i]].getImgSol()));
+            preguntas.setImgExpli((main_resultado_exam.bloquemecanico[nmeca[i]].getImgExpli()));
+            preguntas.setRespulsada((main_resultado_exam.bloquemecanico[nmeca[i]].getRespulsada()));
+            pregu.add(preguntas);
+        }
+        notas.setBloquemecanico(pregu);
+
+        pregu = new ArrayList<Preguntas>();
+        for (int i = 0; i < 16; i++) {
+            Preguntas preguntas = new Preguntas();
+            preguntas.setPregunta(main_resultado_exam.bloquememoria[nmemo[i]].getPregunta());
+            preguntas.setRespuestaA((main_resultado_exam.bloquememoria[nmemo[i]].getRespuestaA()));
+            preguntas.setRespuestaB((main_resultado_exam.bloquememoria[nmemo[i]].getRespuestaB()));
+            preguntas.setRespuestaC((main_resultado_exam.bloquememoria[nmemo[i]].getRespuestaC()));
+            preguntas.setRespuestaD((main_resultado_exam.bloquememoria[nmemo[i]].getRespuestaD()));
+            preguntas.setSolu((main_resultado_exam.bloquememoria[nmemo[i]].getSolu()));
+            preguntas.setExpliSol((main_resultado_exam.bloquememoria[nmemo[i]].getExpliSol()));
+            preguntas.setImgPregunta((main_resultado_exam.bloquememoria[nmemo[i]].getImgPregunta()));
+            preguntas.setImgA((main_resultado_exam.bloquememoria[nmemo[i]].getImgA()));
+            preguntas.setImgB((main_resultado_exam.bloquememoria[nmemo[i]].getImgB()));
+            preguntas.setImgC((main_resultado_exam.bloquememoria[nmemo[i]].getImgC()));
+            preguntas.setImgD((main_resultado_exam.bloquememoria[nmemo[i]].getImgD()));
+            preguntas.setImgSol((main_resultado_exam.bloquememoria[nmemo[i]].getImgSol()));
+            preguntas.setImgExpli((main_resultado_exam.bloquememoria[nmemo[i]].getImgExpli()));
+            preguntas.setRespulsada((main_resultado_exam.bloquememoria[nmemo[i]].getRespulsada()));
+            pregu.add(preguntas);
+        }
+        notas.setBloquememoria(pregu);
+
+        pregu = new ArrayList<Preguntas>();
+        for (int i = 0; i < 16; i++) {
+            Preguntas preguntas = new Preguntas();
+            preguntas.setPregunta(main_resultado_exam.bloqueperceptiva[nper[i]].getPregunta());
+            preguntas.setRespuestaA((main_resultado_exam.bloqueperceptiva[nper[i]].getRespuestaA()));
+            preguntas.setRespuestaB((main_resultado_exam.bloqueperceptiva[nper[i]].getRespuestaB()));
+            preguntas.setRespuestaC((main_resultado_exam.bloqueperceptiva[nper[i]].getRespuestaC()));
+            preguntas.setRespuestaD((main_resultado_exam.bloqueperceptiva[nper[i]].getRespuestaD()));
+            preguntas.setSolu((main_resultado_exam.bloqueperceptiva[nper[i]].getSolu()));
+            preguntas.setExpliSol((main_resultado_exam.bloqueperceptiva[nper[i]].getExpliSol()));
+            preguntas.setImgPregunta((main_resultado_exam.bloqueperceptiva[nper[i]].getImgPregunta()));
+            preguntas.setImgA((main_resultado_exam.bloqueperceptiva[nper[i]].getImgA()));
+            preguntas.setImgB((main_resultado_exam.bloqueperceptiva[nper[i]].getImgB()));
+            preguntas.setImgC((main_resultado_exam.bloqueperceptiva[nper[i]].getImgC()));
+            preguntas.setImgD((main_resultado_exam.bloqueperceptiva[nper[i]].getImgD()));
+            preguntas.setImgSol((main_resultado_exam.bloqueperceptiva[nper[i]].getImgSol()));
+            preguntas.setImgExpli((main_resultado_exam.bloqueperceptiva[nper[i]].getImgExpli()));
+            preguntas.setRespulsada((main_resultado_exam.bloqueperceptiva[nper[i]].getRespulsada()));
+            pregu.add(preguntas);
+        }
+        notas.setBloqueperceptiva(pregu);
+
+        pregu = new ArrayList<Preguntas>();
+        for (int i = 0; i < 16; i++) {
+            Preguntas preguntas = new Preguntas();
+            preguntas.setPregunta(main_resultado_exam.bloqueespacial[nespa[i]].getPregunta());
+            preguntas.setRespuestaA((main_resultado_exam.bloqueespacial[nespa[i]].getRespuestaA()));
+            preguntas.setRespuestaB((main_resultado_exam.bloqueespacial[nespa[i]].getRespuestaB()));
+            preguntas.setRespuestaC((main_resultado_exam.bloqueespacial[nespa[i]].getRespuestaC()));
+            preguntas.setRespuestaD((main_resultado_exam.bloqueespacial[nespa[i]].getRespuestaD()));
+            preguntas.setSolu((main_resultado_exam.bloqueespacial[nespa[i]].getSolu()));
+            preguntas.setExpliSol((main_resultado_exam.bloqueespacial[nespa[i]].getExpliSol()));
+            preguntas.setImgPregunta((main_resultado_exam.bloqueespacial[nespa[i]].getImgPregunta()));
+            preguntas.setImgA((main_resultado_exam.bloqueespacial[nespa[i]].getImgA()));
+            preguntas.setImgB((main_resultado_exam.bloqueespacial[nespa[i]].getImgB()));
+            preguntas.setImgC((main_resultado_exam.bloqueespacial[nespa[i]].getImgC()));
+            preguntas.setImgD((main_resultado_exam.bloqueespacial[nespa[i]].getImgD()));
+            preguntas.setImgSol((main_resultado_exam.bloqueespacial[nespa[i]].getImgSol()));
+            preguntas.setImgExpli((main_resultado_exam.bloqueespacial[nespa[i]].getImgExpli()));
+            preguntas.setRespulsada((main_resultado_exam.bloqueespacial[nespa[i]].getRespulsada()));
+            pregu.add(preguntas);
+        }
+        notas.setBloqueespacial(pregu);
+
 
         cuentabloque = (TextView) findViewById(R.id.cuentabloque);
         cuentabloque.setVisibility(View.VISIBLE);
@@ -377,6 +541,7 @@ public class main_examen extends Activity {
             public void onFinish() {
                 cuentatras.setText(getString(R.string.tiemporesdta) + " " + "0" + " " + getString(R.string.segundos));
                 new AlertDialog.Builder(main_examen.this)
+                        .setIcon(android.R.drawable.ic_dialog_alert)
                         .setTitle(getString(R.string.atencion))
                         .setMessage(getString(R.string.tiempoterminado))
                         .setCancelable(false)
@@ -420,6 +585,7 @@ public class main_examen extends Activity {
                         th = null;
                         siguiente.setEnabled(false);
                         new AlertDialog.Builder(main_examen.this)
+                                .setIcon(android.R.drawable.ic_dialog_alert)
                                 .setTitle(getString(R.string.atencion))
                                 .setMessage(getString(R.string.bloqueterminado))
                                 .setCancelable(false)
@@ -439,6 +605,7 @@ public class main_examen extends Activity {
                                             public void onFinish() {
                                                 cuentatras.setText(getString(R.string.tiemporesdta) + " " + "0" + " " + getString(R.string.segundos));
                                                 new AlertDialog.Builder(main_examen.this)
+                                                        .setIcon(android.R.drawable.ic_dialog_alert)
                                                         .setTitle(getString(R.string.atencion))
                                                         .setMessage(getString(R.string.tiempoterminado))
                                                         .setCancelable(false)
@@ -496,6 +663,7 @@ public class main_examen extends Activity {
                         th = null;
                         siguiente.setEnabled(false);
                         new AlertDialog.Builder(main_examen.this)
+                                .setIcon(android.R.drawable.ic_dialog_alert)
                                 .setTitle(getString(R.string.atencion))
                                 .setMessage(getString(R.string.bloqueterminado))
                                 .setCancelable(false)
@@ -515,6 +683,7 @@ public class main_examen extends Activity {
                                             public void onFinish() {
                                                 cuentatras.setText(getString(R.string.tiemporesdta) + " " + "0" + " " + getString(R.string.segundos));
                                                 new AlertDialog.Builder(main_examen.this)
+                                                        .setIcon(android.R.drawable.ic_dialog_alert)
                                                         .setTitle(getString(R.string.atencion))
                                                         .setMessage(getString(R.string.tiempoterminado))
                                                         .setCancelable(false)
@@ -568,6 +737,7 @@ public class main_examen extends Activity {
                                                 public void onFinish() {
                                                     cuentatras.setText(getString(R.string.tiemporesdta) + " " + "0" + " " + getString(R.string.segundos));
                                                     new AlertDialog.Builder(main_examen.this)
+                                                            .setIcon(android.R.drawable.ic_dialog_alert)
                                                             .setTitle(getString(R.string.atencion))
                                                             .setMessage(getString(R.string.tiempoterminado))
                                                             .setCancelable(false)
@@ -645,6 +815,13 @@ public class main_examen extends Activity {
                 }
             }
         });
+        notas.setNverb(nverb);
+        notas.setNnume(nnume);
+        notas.setNmeca(nmeca);
+        notas.setNabst(nabst);
+        notas.setNespa(nespa);
+        notas.setNper(nper);
+        notas.setNmemo(nmemo);
 
     }
 
@@ -669,688 +846,688 @@ public class main_examen extends Activity {
         switch (bloque) {
             case 1:
                 bloq.setText(getString(R.string.verbal));
-                if (main_resultado_exam.bloqueverbal[nabst[posi]].getImgPregunta().equals("")) {
+                if (notas.getBloqueverbal().get(posi).getImgPregunta().equals("")) {
                     imgenPre.setVisibility(View.GONE);
                     imgenPre.setImageResource(0);
                 } else {
                     imgenPre.setVisibility(View.VISIBLE);
-                    imgenPre.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueverbal[nabst[posi]].getImgPregunta(), null, getPackageName()));
+                    imgenPre.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueverbal().get(posi).getImgPregunta(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueverbal[nabst[posi]].getImgA().equals("")) {
+                if (notas.getBloqueverbal().get(posi).getImgA().equals("")) {
                     imgenA.setVisibility(View.GONE);
                     imgenA.setImageResource(0);
                 } else {
                     imgenA.setVisibility(View.VISIBLE);
-                    imgenA.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueverbal[nabst[posi]].getImgA(), null, getPackageName()));
+                    imgenA.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueverbal().get(posi).getImgA(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueverbal[nabst[posi]].getImgB().equals("")) {
+                if (notas.getBloqueverbal().get(posi).getImgB().equals("")) {
                     imgenB.setVisibility(View.GONE);
                     imgenB.setImageResource(0);
                 } else {
                     imgenB.setVisibility(View.VISIBLE);
-                    imgenB.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueverbal[nabst[posi]].getImgB(), null, getPackageName()));
+                    imgenB.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueverbal().get(posi).getImgB(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueverbal[nabst[posi]].getImgC().equals("")) {
+                if (notas.getBloqueverbal().get(posi).getImgC().equals("")) {
                     imgenC.setVisibility(View.GONE);
                     imgenC.setImageResource(0);
                 } else {
                     imgenC.setVisibility(View.VISIBLE);
-                    imgenC.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueverbal[nabst[posi]].getImgC(), null, getPackageName()));
+                    imgenC.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueverbal().get(posi).getImgC(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueverbal[nabst[posi]].getImgD().equals("")) {
+                if (notas.getBloqueverbal().get(posi).getImgD().equals("")) {
                     imgenD.setVisibility(View.GONE);
                     imgenD.setImageResource(0);
                 } else {
                     imgenD.setVisibility(View.VISIBLE);
-                    imgenD.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueverbal[nabst[posi]].getImgD(), null, getPackageName()));
+                    imgenD.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueverbal().get(posi).getImgD(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueverbal[nabst[posi]].getImgSol().equals("")) {
+                if (notas.getBloqueverbal().get(posi).getImgSol().equals("")) {
                     imgenSol.setVisibility(View.GONE);
                     imgenSol.setImageResource(0);
                 } else {
                     imgenSol.setVisibility(View.VISIBLE);
-                    imgenSol.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueverbal[nabst[posi]].getImgSol(), null, getPackageName()));
+                    imgenSol.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueverbal().get(posi).getImgSol(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueverbal[nabst[posi]].getImgExpli().equals("")) {
+                if (notas.getBloqueverbal().get(posi).getImgExpli().equals("")) {
                     imgenExp.setVisibility(View.GONE);
                     imgenExp.setImageResource(0);
                 } else {
                     imgenExp.setVisibility(View.VISIBLE);
-                    imgenExp.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueverbal[nabst[posi]].getImgExpli(), null, getPackageName()));
+                    imgenExp.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueverbal().get(posi).getImgExpli(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueverbal[nabst[posi]].getExpliSol().equals("")) {
+                if (notas.getBloqueverbal().get(posi).getExpliSol().equals("")) {
                     explicacion.setVisibility(View.GONE);
                 } else {
                     explicacion.setVisibility(View.VISIBLE);
-                    explicacion.setText(main_resultado_exam.bloqueverbal[nabst[posi]].getExpliSol());
+                    explicacion.setText(notas.getBloqueverbal().get(posi).getExpliSol());
                 }
-                if (main_resultado_exam.bloqueverbal[nabst[posi]].getPregunta().equals("")) {
+                if (notas.getBloqueverbal().get(posi).getPregunta().equals("")) {
                     imppregunta.setVisibility(View.GONE);
                 } else {
                     imppregunta.setVisibility(View.VISIBLE);
-                    imppregunta.setText(main_resultado_exam.bloqueverbal[nabst[posi]].getPregunta());
+                    imppregunta.setText(notas.getBloqueverbal().get(posi).getPregunta());
                 }
-                if (main_resultado_exam.bloqueverbal[nabst[posi]].getRespuestaA().equals("")) {
+                if (notas.getBloqueverbal().get(posi).getRespuestaA().equals("")) {
                     respuestaA.setVisibility(View.GONE);
                 } else {
                     respuestaA.setVisibility(View.VISIBLE);
-                    respuestaA.setText(main_resultado_exam.bloqueverbal[nabst[posi]].getRespuestaA());
+                    respuestaA.setText(notas.getBloqueverbal().get(posi).getRespuestaA());
                 }
-                if (main_resultado_exam.bloqueverbal[nabst[posi]].getRespuestaB().equals("")) {
+                if (notas.getBloqueverbal().get(posi).getRespuestaB().equals("")) {
                     respuestaB.setVisibility(View.GONE);
                 } else {
                     respuestaB.setVisibility(View.VISIBLE);
-                    respuestaB.setText(main_resultado_exam.bloqueverbal[nabst[posi]].getRespuestaB());
+                    respuestaB.setText(notas.getBloqueverbal().get(posi).getRespuestaB());
                 }
-                if (main_resultado_exam.bloqueverbal[nabst[posi]].getRespuestaC().equals("")) {
+                if (notas.getBloqueverbal().get(posi).getRespuestaC().equals("")) {
                     respuestaC.setVisibility(View.GONE);
                     c.setVisibility(View.GONE);
                 } else {
                     respuestaC.setVisibility(View.VISIBLE);
-                    respuestaC.setText(main_resultado_exam.bloqueverbal[nabst[posi]].getRespuestaC());
+                    respuestaC.setText(notas.getBloqueverbal().get(posi).getRespuestaC());
                     c.setVisibility(View.VISIBLE);
                 }
-                if (main_resultado_exam.bloqueverbal[nabst[posi]].getRespuestaD().equals("")) {
+                if (notas.getBloqueverbal().get(posi).getRespuestaD().equals("")) {
                     respuestaD.setVisibility(View.GONE);
                     d.setVisibility(View.GONE);
                 } else {
                     respuestaD.setVisibility(View.VISIBLE);
-                    respuestaD.setText(main_resultado_exam.bloqueverbal[nabst[posi]].getRespuestaD());
+                    respuestaD.setText(notas.getBloqueverbal().get(posi).getRespuestaD());
                     d.setVisibility(View.VISIBLE);
                 }
-                if (main_resultado_exam.bloqueverbal[nabst[posi]].getSolu().equals("")) {
+                if (notas.getBloqueverbal().get(posi).getSolu().equals("")) {
                     solucion.setVisibility(View.GONE);
                 } else {
                     solucion.setVisibility(View.VISIBLE);
-                    solucion.setText(main_resultado_exam.bloqueverbal[nabst[posi]].getSolu());
+                    solucion.setText(notas.getBloqueverbal().get(posi).getSolu());
                 }
                 break;
             case 2:
                 bloq.setText(getString(R.string.numerico));
-                if (main_resultado_exam.bloquenumerico[nabst[posi]].getImgPregunta().equals("")) {
+                if (notas.getBloquenumerico().get(posi).getImgPregunta().equals("")) {
                     imgenPre.setVisibility(View.GONE);
                     imgenPre.setImageResource(0);
                 } else {
                     imgenPre.setVisibility(View.VISIBLE);
-                    imgenPre.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloquenumerico[nabst[posi]].getImgPregunta(), null, getPackageName()));
+                    imgenPre.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloquenumerico().get(posi).getImgPregunta(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloquenumerico[nabst[posi]].getImgA().equals("")) {
+                if (notas.getBloquenumerico().get(posi).getImgA().equals("")) {
                     imgenA.setVisibility(View.GONE);
                     imgenA.setImageResource(0);
                 } else {
                     imgenA.setVisibility(View.VISIBLE);
-                    imgenA.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloquenumerico[nabst[posi]].getImgA(), null, getPackageName()));
+                    imgenA.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloquenumerico().get(posi).getImgA(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloquenumerico[nabst[posi]].getImgB().equals("")) {
+                if (notas.getBloquenumerico().get(posi).getImgB().equals("")) {
                     imgenB.setVisibility(View.GONE);
                     imgenB.setImageResource(0);
                 } else {
                     imgenB.setVisibility(View.VISIBLE);
-                    imgenB.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloquenumerico[nabst[posi]].getImgB(), null, getPackageName()));
+                    imgenB.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloquenumerico().get(posi).getImgB(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloquenumerico[nabst[posi]].getImgC().equals("")) {
+                if (notas.getBloquenumerico().get(posi).getImgC().equals("")) {
                     imgenC.setVisibility(View.GONE);
                     imgenC.setImageResource(0);
                 } else {
                     imgenC.setVisibility(View.VISIBLE);
-                    imgenC.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloquenumerico[nabst[posi]].getImgC(), null, getPackageName()));
+                    imgenC.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloquenumerico().get(posi).getImgC(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloquenumerico[nabst[posi]].getImgD().equals("")) {
+                if (notas.getBloquenumerico().get(posi).getImgD().equals("")) {
                     imgenD.setVisibility(View.GONE);
                     imgenD.setImageResource(0);
                 } else {
                     imgenD.setVisibility(View.VISIBLE);
-                    imgenD.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloquenumerico[nabst[posi]].getImgD(), null, getPackageName()));
+                    imgenD.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloquenumerico().get(posi).getImgD(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloquenumerico[nabst[posi]].getImgSol().equals("")) {
+                if (notas.getBloquenumerico().get(posi).getImgSol().equals("")) {
                     imgenSol.setVisibility(View.GONE);
                     imgenSol.setImageResource(0);
                 } else {
                     imgenSol.setVisibility(View.VISIBLE);
-                    imgenSol.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloquenumerico[nabst[posi]].getImgSol(), null, getPackageName()));
+                    imgenSol.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloquenumerico().get(posi).getImgSol(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloquenumerico[nabst[posi]].getImgExpli().equals("")) {
+                if (notas.getBloquenumerico().get(posi).getImgExpli().equals("")) {
                     imgenExp.setVisibility(View.GONE);
                     imgenExp.setImageResource(0);
                 } else {
                     imgenExp.setVisibility(View.VISIBLE);
-                    imgenExp.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloquenumerico[nabst[posi]].getImgExpli(), null, getPackageName()));
+                    imgenExp.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloquenumerico().get(posi).getImgExpli(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloquenumerico[nabst[posi]].getExpliSol().equals("")) {
+                if (notas.getBloquenumerico().get(posi).getExpliSol().equals("")) {
                     explicacion.setVisibility(View.GONE);
                 } else {
                     explicacion.setVisibility(View.VISIBLE);
-                    explicacion.setText(main_resultado_exam.bloquenumerico[nabst[posi]].getExpliSol());
+                    explicacion.setText(notas.getBloquenumerico().get(posi).getExpliSol());
                 }
-                if (main_resultado_exam.bloquenumerico[nabst[posi]].getPregunta().equals("")) {
+                if (notas.getBloquenumerico().get(posi).getPregunta().equals("")) {
                     imppregunta.setVisibility(View.GONE);
                 } else {
                     imppregunta.setVisibility(View.VISIBLE);
-                    imppregunta.setText(main_resultado_exam.bloquenumerico[nabst[posi]].getPregunta());
+                    imppregunta.setText(notas.getBloquenumerico().get(posi).getPregunta());
                 }
-                if (main_resultado_exam.bloquenumerico[nabst[posi]].getRespuestaA().equals("")) {
+                if (notas.getBloquenumerico().get(posi).getRespuestaA().equals("")) {
                     respuestaA.setVisibility(View.GONE);
                 } else {
                     respuestaA.setVisibility(View.VISIBLE);
-                    respuestaA.setText(main_resultado_exam.bloquenumerico[nabst[posi]].getRespuestaA());
+                    respuestaA.setText(notas.getBloquenumerico().get(posi).getRespuestaA());
                 }
-                if (main_resultado_exam.bloquenumerico[nabst[posi]].getRespuestaB().equals("")) {
+                if (notas.getBloquenumerico().get(posi).getRespuestaB().equals("")) {
                     respuestaB.setVisibility(View.GONE);
                 } else {
                     respuestaB.setVisibility(View.VISIBLE);
-                    respuestaB.setText(main_resultado_exam.bloquenumerico[nabst[posi]].getRespuestaB());
+                    respuestaB.setText(notas.getBloquenumerico().get(posi).getRespuestaB());
                 }
-                if (main_resultado_exam.bloquenumerico[nabst[posi]].getRespuestaC().equals("")) {
+                if (notas.getBloquenumerico().get(posi).getRespuestaC().equals("")) {
                     respuestaC.setVisibility(View.GONE);
                     c.setVisibility(View.GONE);
                 } else {
                     respuestaC.setVisibility(View.VISIBLE);
-                    respuestaC.setText(main_resultado_exam.bloquenumerico[nabst[posi]].getRespuestaC());
+                    respuestaC.setText(notas.getBloquenumerico().get(posi).getRespuestaC());
                     c.setVisibility(View.VISIBLE);
                 }
-                if (main_resultado_exam.bloquenumerico[nabst[posi]].getRespuestaD().equals("")) {
+                if (notas.getBloquenumerico().get(posi).getRespuestaD().equals("")) {
                     respuestaD.setVisibility(View.GONE);
                     d.setVisibility(View.GONE);
                 } else {
                     respuestaD.setVisibility(View.VISIBLE);
-                    respuestaD.setText(main_resultado_exam.bloquenumerico[nabst[posi]].getRespuestaD());
+                    respuestaD.setText(notas.getBloquenumerico().get(posi).getRespuestaD());
                     d.setVisibility(View.VISIBLE);
                 }
-                if (main_resultado_exam.bloquenumerico[nabst[posi]].getSolu().equals("")) {
+                if (notas.getBloquenumerico().get(posi).getSolu().equals("")) {
                     solucion.setVisibility(View.GONE);
                 } else {
                     solucion.setVisibility(View.VISIBLE);
-                    solucion.setText(main_resultado_exam.bloquenumerico[nabst[posi]].getSolu());
+                    solucion.setText(notas.getBloquenumerico().get(posi).getSolu());
                 }
                 break;
             case 3:
                 bloq.setText(getString(R.string.espacial));
-                if (main_resultado_exam.bloqueespacial[nabst[posi]].getImgPregunta().equals("")) {
+                if (notas.getBloqueespacial().get(posi).getImgPregunta().equals("")) {
                     imgenPre.setVisibility(View.GONE);
                     imgenPre.setImageResource(0);
                 } else {
                     imgenPre.setVisibility(View.VISIBLE);
-                    imgenPre.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueespacial[nabst[posi]].getImgPregunta(), null, getPackageName()));
+                    imgenPre.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueespacial().get(posi).getImgPregunta(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueespacial[nabst[posi]].getImgA().equals("")) {
+                if (notas.getBloqueespacial().get(posi).getImgA().equals("")) {
                     imgenA.setVisibility(View.GONE);
                     imgenA.setImageResource(0);
                 } else {
                     imgenA.setVisibility(View.VISIBLE);
-                    imgenA.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueespacial[nabst[posi]].getImgA(), null, getPackageName()));
+                    imgenA.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueespacial().get(posi).getImgA(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueespacial[nabst[posi]].getImgB().equals("")) {
+                if (notas.getBloqueespacial().get(posi).getImgB().equals("")) {
                     imgenB.setVisibility(View.GONE);
                     imgenB.setImageResource(0);
                 } else {
                     imgenB.setVisibility(View.VISIBLE);
-                    imgenB.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueespacial[nabst[posi]].getImgB(), null, getPackageName()));
+                    imgenB.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueespacial().get(posi).getImgB(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueespacial[nabst[posi]].getImgC().equals("")) {
+                if (notas.getBloqueespacial().get(posi).getImgC().equals("")) {
                     imgenC.setVisibility(View.GONE);
                     imgenC.setImageResource(0);
                 } else {
                     imgenC.setVisibility(View.VISIBLE);
-                    imgenC.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueespacial[nabst[posi]].getImgC(), null, getPackageName()));
+                    imgenC.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueespacial().get(posi).getImgC(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueespacial[nabst[posi]].getImgD().equals("")) {
+                if (notas.getBloqueespacial().get(posi).getImgD().equals("")) {
                     imgenD.setVisibility(View.GONE);
                     imgenD.setImageResource(0);
                 } else {
                     imgenD.setVisibility(View.VISIBLE);
-                    imgenD.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueespacial[nabst[posi]].getImgD(), null, getPackageName()));
+                    imgenD.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueespacial().get(posi).getImgD(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueespacial[nabst[posi]].getImgSol().equals("")) {
+                if (notas.getBloqueespacial().get(posi).getImgSol().equals("")) {
                     imgenSol.setVisibility(View.GONE);
                     imgenSol.setImageResource(0);
                 } else {
                     imgenSol.setVisibility(View.VISIBLE);
-                    imgenSol.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueespacial[nabst[posi]].getImgSol(), null, getPackageName()));
+                    imgenSol.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueespacial().get(posi).getImgSol(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueespacial[nabst[posi]].getImgExpli().equals("")) {
+                if (notas.getBloqueespacial().get(posi).getImgExpli().equals("")) {
                     imgenExp.setVisibility(View.GONE);
                     imgenExp.setImageResource(0);
                 } else {
                     imgenExp.setVisibility(View.VISIBLE);
-                    imgenExp.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueespacial[nabst[posi]].getImgExpli(), null, getPackageName()));
+                    imgenExp.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueespacial().get(posi).getImgExpli(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueespacial[nabst[posi]].getExpliSol().equals("")) {
+                if (notas.getBloqueespacial().get(posi).getExpliSol().equals("")) {
                     explicacion.setVisibility(View.GONE);
                 } else {
                     explicacion.setVisibility(View.VISIBLE);
-                    explicacion.setText(main_resultado_exam.bloqueespacial[nabst[posi]].getExpliSol());
+                    explicacion.setText(notas.getBloqueespacial().get(posi).getExpliSol());
                 }
-                if (main_resultado_exam.bloqueespacial[nabst[posi]].getPregunta().equals("")) {
+                if (notas.getBloqueespacial().get(posi).getPregunta().equals("")) {
                     imppregunta.setVisibility(View.GONE);
                 } else {
                     imppregunta.setVisibility(View.VISIBLE);
-                    imppregunta.setText(main_resultado_exam.bloqueespacial[nabst[posi]].getPregunta());
+                    imppregunta.setText(notas.getBloqueespacial().get(posi).getPregunta());
                 }
-                if (main_resultado_exam.bloqueespacial[nabst[posi]].getRespuestaA().equals("")) {
+                if (notas.getBloqueespacial().get(posi).getRespuestaA().equals("")) {
                     respuestaA.setVisibility(View.GONE);
                 } else {
                     respuestaA.setVisibility(View.VISIBLE);
-                    respuestaA.setText(main_resultado_exam.bloqueespacial[nabst[posi]].getRespuestaA());
+                    respuestaA.setText(notas.getBloqueespacial().get(posi).getRespuestaA());
                 }
-                if (main_resultado_exam.bloqueespacial[nabst[posi]].getRespuestaB().equals("")) {
+                if (notas.getBloqueespacial().get(posi).getRespuestaB().equals("")) {
                     respuestaB.setVisibility(View.GONE);
                 } else {
                     respuestaB.setVisibility(View.VISIBLE);
-                    respuestaB.setText(main_resultado_exam.bloqueespacial[nabst[posi]].getRespuestaB());
+                    respuestaB.setText(notas.getBloqueespacial().get(posi).getRespuestaB());
                 }
-                if (main_resultado_exam.bloqueespacial[nabst[posi]].getRespuestaC().equals("")) {
+                if (notas.getBloqueespacial().get(posi).getRespuestaC().equals("")) {
                     respuestaC.setVisibility(View.GONE);
                     c.setVisibility(View.GONE);
                 } else {
                     respuestaC.setVisibility(View.VISIBLE);
-                    respuestaC.setText(main_resultado_exam.bloqueespacial[nabst[posi]].getRespuestaC());
+                    respuestaC.setText(notas.getBloqueespacial().get(posi).getRespuestaC());
                     c.setVisibility(View.VISIBLE);
                 }
-                if (main_resultado_exam.bloqueespacial[nabst[posi]].getRespuestaD().equals("")) {
+                if (notas.getBloqueespacial().get(posi).getRespuestaD().equals("")) {
                     respuestaD.setVisibility(View.GONE);
                     d.setVisibility(View.GONE);
                 } else {
                     respuestaD.setVisibility(View.VISIBLE);
-                    respuestaD.setText(main_resultado_exam.bloqueespacial[nabst[posi]].getRespuestaD());
+                    respuestaD.setText(notas.getBloqueespacial().get(posi).getRespuestaD());
                     d.setVisibility(View.VISIBLE);
                 }
-                if (main_resultado_exam.bloqueespacial[nabst[posi]].getSolu().equals("")) {
+                if (notas.getBloqueespacial().get(posi).getSolu().equals("")) {
                     solucion.setVisibility(View.GONE);
                 } else {
                     solucion.setVisibility(View.VISIBLE);
-                    solucion.setText(main_resultado_exam.bloqueespacial[nabst[posi]].getSolu());
+                    solucion.setText(notas.getBloqueespacial().get(posi).getSolu());
                 }
                 break;
             case 4:
                 bloq.setText(getString(R.string.mecanico));
-                if (main_resultado_exam.bloquemecanico[nabst[posi]].getImgPregunta().equals("")) {
+                if (notas.getBloquemecanico().get(posi).getImgPregunta().equals("")) {
                     imgenPre.setVisibility(View.GONE);
                     imgenPre.setImageResource(0);
                 } else {
                     imgenPre.setVisibility(View.VISIBLE);
-                    imgenPre.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloquemecanico[nabst[posi]].getImgPregunta(), null, getPackageName()));
+                    imgenPre.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloquemecanico().get(posi).getImgPregunta(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloquemecanico[nabst[posi]].getImgA().equals("")) {
+                if (notas.getBloquemecanico().get(posi).getImgA().equals("")) {
                     imgenA.setVisibility(View.GONE);
                     imgenA.setImageResource(0);
                 } else {
                     imgenA.setVisibility(View.VISIBLE);
-                    imgenA.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloquemecanico[nabst[posi]].getImgA(), null, getPackageName()));
+                    imgenA.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloquemecanico().get(posi).getImgA(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloquemecanico[nabst[posi]].getImgB().equals("")) {
+                if (notas.getBloquemecanico().get(posi).getImgB().equals("")) {
                     imgenB.setVisibility(View.GONE);
                     imgenB.setImageResource(0);
                 } else {
                     imgenB.setVisibility(View.VISIBLE);
-                    imgenB.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloquemecanico[nabst[posi]].getImgB(), null, getPackageName()));
+                    imgenB.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloquemecanico().get(posi).getImgB(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloquemecanico[nabst[posi]].getImgC().equals("")) {
+                if (notas.getBloquemecanico().get(posi).getImgC().equals("")) {
                     imgenC.setVisibility(View.GONE);
                     imgenC.setImageResource(0);
                 } else {
                     imgenC.setVisibility(View.VISIBLE);
-                    imgenC.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloquemecanico[nabst[posi]].getImgC(), null, getPackageName()));
+                    imgenC.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloquemecanico().get(posi).getImgC(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloquemecanico[nabst[posi]].getImgD().equals("")) {
+                if (notas.getBloquemecanico().get(posi).getImgD().equals("")) {
                     imgenD.setVisibility(View.GONE);
                     imgenD.setImageResource(0);
                 } else {
                     imgenD.setVisibility(View.VISIBLE);
-                    imgenD.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloquemecanico[nabst[posi]].getImgD(), null, getPackageName()));
+                    imgenD.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloquemecanico().get(posi).getImgD(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloquemecanico[nabst[posi]].getImgSol().equals("")) {
+                if (notas.getBloquemecanico().get(posi).getImgSol().equals("")) {
                     imgenSol.setVisibility(View.GONE);
                     imgenSol.setImageResource(0);
                 } else {
                     imgenSol.setVisibility(View.VISIBLE);
-                    imgenSol.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloquemecanico[nabst[posi]].getImgSol(), null, getPackageName()));
+                    imgenSol.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloquemecanico().get(posi).getImgSol(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloquemecanico[nabst[posi]].getImgExpli().equals("")) {
+                if (notas.getBloquemecanico().get(posi).getImgExpli().equals("")) {
                     imgenExp.setVisibility(View.GONE);
                     imgenExp.setImageResource(0);
                 } else {
                     imgenExp.setVisibility(View.VISIBLE);
-                    imgenExp.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloquemecanico[nabst[posi]].getImgExpli(), null, getPackageName()));
+                    imgenExp.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloquemecanico().get(posi).getImgExpli(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloquemecanico[nabst[posi]].getExpliSol().equals("")) {
+                if (notas.getBloquemecanico().get(posi).getExpliSol().equals("")) {
                     explicacion.setVisibility(View.GONE);
                 } else {
                     explicacion.setVisibility(View.VISIBLE);
-                    explicacion.setText(main_resultado_exam.bloquemecanico[nabst[posi]].getExpliSol());
+                    explicacion.setText(notas.getBloquemecanico().get(posi).getExpliSol());
                 }
-                if (main_resultado_exam.bloquemecanico[nabst[posi]].getPregunta().equals("")) {
+                if (notas.getBloquemecanico().get(posi).getPregunta().equals("")) {
                     imppregunta.setVisibility(View.GONE);
                 } else {
                     imppregunta.setVisibility(View.VISIBLE);
-                    imppregunta.setText(main_resultado_exam.bloquemecanico[nabst[posi]].getPregunta());
+                    imppregunta.setText(notas.getBloquemecanico().get(posi).getPregunta());
                 }
-                if (main_resultado_exam.bloquemecanico[nabst[posi]].getRespuestaA().equals("")) {
+                if (notas.getBloquemecanico().get(posi).getRespuestaA().equals("")) {
                     respuestaA.setVisibility(View.GONE);
                 } else {
                     respuestaA.setVisibility(View.VISIBLE);
-                    respuestaA.setText(main_resultado_exam.bloquemecanico[nabst[posi]].getRespuestaA());
+                    respuestaA.setText(notas.getBloquemecanico().get(posi).getRespuestaA());
                 }
-                if (main_resultado_exam.bloquemecanico[nabst[posi]].getRespuestaB().equals("")) {
+                if (notas.getBloquemecanico().get(posi).getRespuestaB().equals("")) {
                     respuestaB.setVisibility(View.GONE);
                 } else {
                     respuestaB.setVisibility(View.VISIBLE);
-                    respuestaB.setText(main_resultado_exam.bloquemecanico[nabst[posi]].getRespuestaB());
+                    respuestaB.setText(notas.getBloquemecanico().get(posi).getRespuestaB());
                 }
-                if (main_resultado_exam.bloquemecanico[nabst[posi]].getRespuestaC().equals("")) {
+                if (notas.getBloquemecanico().get(posi).getRespuestaC().equals("")) {
                     respuestaC.setVisibility(View.GONE);
                     c.setVisibility(View.GONE);
                 } else {
                     respuestaC.setVisibility(View.VISIBLE);
-                    respuestaC.setText(main_resultado_exam.bloquemecanico[nabst[posi]].getRespuestaC());
+                    respuestaC.setText(notas.getBloquemecanico().get(posi).getRespuestaC());
                     c.setVisibility(View.VISIBLE);
                 }
-                if (main_resultado_exam.bloquemecanico[nabst[posi]].getRespuestaD().equals("")) {
+                if (notas.getBloquemecanico().get(posi).getRespuestaD().equals("")) {
                     respuestaD.setVisibility(View.GONE);
                     d.setVisibility(View.GONE);
                 } else {
                     respuestaD.setVisibility(View.VISIBLE);
-                    respuestaD.setText(main_resultado_exam.bloquemecanico[nabst[posi]].getRespuestaD());
+                    respuestaD.setText(notas.getBloquemecanico().get(posi).getRespuestaD());
                     d.setVisibility(View.VISIBLE);
                 }
-                if (main_resultado_exam.bloquemecanico[nabst[posi]].getSolu().equals("")) {
+                if (notas.getBloquemecanico().get(posi).getSolu().equals("")) {
                     solucion.setVisibility(View.GONE);
                 } else {
                     solucion.setVisibility(View.VISIBLE);
-                    solucion.setText(main_resultado_exam.bloquemecanico[nabst[posi]].getSolu());
+                    solucion.setText(notas.getBloquemecanico().get(posi).getSolu());
                 }
                 break;
             case 5:
                 bloq.setText(getString(R.string.perceptiva));
-                if (main_resultado_exam.bloqueperceptiva[nabst[posi]].getImgPregunta().equals("")) {
+                if (notas.getBloqueperceptiva().get(posi).getImgPregunta().equals("")) {
                     imgenPre.setVisibility(View.GONE);
                     imgenPre.setImageResource(0);
                 } else {
                     imgenPre.setVisibility(View.VISIBLE);
-                    imgenPre.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueperceptiva[nabst[posi]].getImgPregunta(), null, getPackageName()));
+                    imgenPre.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueperceptiva().get(posi).getImgPregunta(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueperceptiva[nabst[posi]].getImgA().equals("")) {
+                if (notas.getBloqueperceptiva().get(posi).getImgA().equals("")) {
                     imgenA.setVisibility(View.GONE);
                     imgenA.setImageResource(0);
                 } else {
                     imgenA.setVisibility(View.VISIBLE);
-                    imgenA.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueperceptiva[nabst[posi]].getImgA(), null, getPackageName()));
+                    imgenA.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueperceptiva().get(posi).getImgA(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueperceptiva[nabst[posi]].getImgB().equals("")) {
+                if (notas.getBloqueperceptiva().get(posi).getImgB().equals("")) {
                     imgenB.setVisibility(View.GONE);
                     imgenB.setImageResource(0);
                 } else {
                     imgenB.setVisibility(View.VISIBLE);
-                    imgenB.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueperceptiva[nabst[posi]].getImgB(), null, getPackageName()));
+                    imgenB.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueperceptiva().get(posi).getImgB(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueperceptiva[nabst[posi]].getImgC().equals("")) {
+                if (notas.getBloqueperceptiva().get(posi).getImgC().equals("")) {
                     imgenC.setVisibility(View.GONE);
                     imgenC.setImageResource(0);
                 } else {
                     imgenC.setVisibility(View.VISIBLE);
-                    imgenC.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueperceptiva[nabst[posi]].getImgC(), null, getPackageName()));
+                    imgenC.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueperceptiva().get(posi).getImgC(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueperceptiva[nabst[posi]].getImgD().equals("")) {
+                if (notas.getBloqueperceptiva().get(posi).getImgD().equals("")) {
                     imgenD.setVisibility(View.GONE);
                     imgenD.setImageResource(0);
                 } else {
                     imgenD.setVisibility(View.VISIBLE);
-                    imgenD.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueperceptiva[nabst[posi]].getImgD(), null, getPackageName()));
+                    imgenD.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueperceptiva().get(posi).getImgD(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueperceptiva[nabst[posi]].getImgSol().equals("")) {
+                if (notas.getBloqueperceptiva().get(posi).getImgSol().equals("")) {
                     imgenSol.setVisibility(View.GONE);
                     imgenSol.setImageResource(0);
                 } else {
                     imgenSol.setVisibility(View.VISIBLE);
-                    imgenSol.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueperceptiva[nabst[posi]].getImgSol(), null, getPackageName()));
+                    imgenSol.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueperceptiva().get(posi).getImgSol(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueperceptiva[nabst[posi]].getImgExpli().equals("")) {
+                if (notas.getBloqueperceptiva().get(posi).getImgExpli().equals("")) {
                     imgenExp.setVisibility(View.GONE);
                     imgenExp.setImageResource(0);
                 } else {
                     imgenExp.setVisibility(View.VISIBLE);
-                    imgenExp.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueperceptiva[nabst[posi]].getImgExpli(), null, getPackageName()));
+                    imgenExp.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueperceptiva().get(posi).getImgExpli(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueperceptiva[nabst[posi]].getExpliSol().equals("")) {
+                if (notas.getBloqueperceptiva().get(posi).getExpliSol().equals("")) {
                     explicacion.setVisibility(View.GONE);
                 } else {
                     explicacion.setVisibility(View.VISIBLE);
-                    explicacion.setText(main_resultado_exam.bloqueperceptiva[nabst[posi]].getExpliSol());
+                    explicacion.setText(notas.getBloqueperceptiva().get(posi).getExpliSol());
                 }
-                if (main_resultado_exam.bloqueperceptiva[nabst[posi]].getPregunta().equals("")) {
+                if (notas.getBloqueperceptiva().get(posi).getPregunta().equals("")) {
                     imppregunta.setVisibility(View.GONE);
                 } else {
                     imppregunta.setVisibility(View.VISIBLE);
-                    imppregunta.setText(main_resultado_exam.bloqueperceptiva[nabst[posi]].getPregunta());
+                    imppregunta.setText(notas.getBloqueperceptiva().get(posi).getPregunta());
                 }
-                if (main_resultado_exam.bloqueperceptiva[nabst[posi]].getRespuestaA().equals("")) {
+                if (notas.getBloqueperceptiva().get(posi).getRespuestaA().equals("")) {
                     respuestaA.setVisibility(View.GONE);
                 } else {
                     respuestaA.setVisibility(View.VISIBLE);
-                    respuestaA.setText(main_resultado_exam.bloqueperceptiva[nabst[posi]].getRespuestaA());
+                    respuestaA.setText(notas.getBloqueperceptiva().get(posi).getRespuestaA());
                 }
-                if (main_resultado_exam.bloqueperceptiva[nabst[posi]].getRespuestaB().equals("")) {
+                if (notas.getBloqueperceptiva().get(posi).getRespuestaB().equals("")) {
                     respuestaB.setVisibility(View.GONE);
                 } else {
                     respuestaB.setVisibility(View.VISIBLE);
-                    respuestaB.setText(main_resultado_exam.bloqueperceptiva[nabst[posi]].getRespuestaB());
+                    respuestaB.setText(notas.getBloqueperceptiva().get(posi).getRespuestaB());
                 }
-                if (main_resultado_exam.bloqueperceptiva[nabst[posi]].getRespuestaC().equals("")) {
+                if (notas.getBloqueperceptiva().get(posi).getRespuestaC().equals("")) {
                     respuestaC.setVisibility(View.GONE);
                     c.setVisibility(View.GONE);
                 } else {
                     respuestaC.setVisibility(View.VISIBLE);
-                    respuestaC.setText(main_resultado_exam.bloqueperceptiva[nabst[posi]].getRespuestaC());
+                    respuestaC.setText(notas.getBloqueperceptiva().get(posi).getRespuestaC());
                     c.setVisibility(View.VISIBLE);
                 }
-                if (main_resultado_exam.bloqueperceptiva[nabst[posi]].getRespuestaD().equals("")) {
+                if (notas.getBloqueperceptiva().get(posi).getRespuestaD().equals("")) {
                     respuestaD.setVisibility(View.GONE);
                     d.setVisibility(View.GONE);
                 } else {
                     respuestaD.setVisibility(View.VISIBLE);
-                    respuestaD.setText(main_resultado_exam.bloqueperceptiva[nabst[posi]].getRespuestaD());
+                    respuestaD.setText(notas.getBloqueperceptiva().get(posi).getRespuestaD());
                     d.setVisibility(View.VISIBLE);
                 }
-                if (main_resultado_exam.bloqueperceptiva[nabst[posi]].getSolu().equals("")) {
+                if (notas.getBloqueperceptiva().get(posi).getSolu().equals("")) {
                     solucion.setVisibility(View.GONE);
                 } else {
                     solucion.setVisibility(View.VISIBLE);
-                    solucion.setText(main_resultado_exam.bloqueperceptiva[nabst[posi]].getSolu());
+                    solucion.setText(notas.getBloqueperceptiva().get(posi).getSolu());
                 }
                 break;
             case 6:
                 bloq.setText(getString(R.string.memoria));
-                if (main_resultado_exam.bloquememoria[nabst[posi]].getImgPregunta().equals("")) {
+                if (notas.getBloquememoria().get(posi).getImgPregunta().equals("")) {
                     imgenPre.setVisibility(View.GONE);
                     imgenPre.setImageResource(0);
                 } else {
                     imgenPre.setVisibility(View.VISIBLE);
-                    imgenPre.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloquememoria[nabst[posi]].getImgPregunta(), null, getPackageName()));
+                    imgenPre.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloquememoria().get(posi).getImgPregunta(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloquememoria[nabst[posi]].getImgA().equals("")) {
+                if (notas.getBloquememoria().get(posi).getImgA().equals("")) {
                     imgenA.setVisibility(View.GONE);
                     imgenA.setImageResource(0);
                 } else {
                     imgenA.setVisibility(View.VISIBLE);
-                    imgenA.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloquememoria[nabst[posi]].getImgA(), null, getPackageName()));
+                    imgenA.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloquememoria().get(posi).getImgA(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloquememoria[nabst[posi]].getImgB().equals("")) {
+                if (notas.getBloquememoria().get(posi).getImgB().equals("")) {
                     imgenB.setVisibility(View.GONE);
                     imgenB.setImageResource(0);
                 } else {
                     imgenB.setVisibility(View.VISIBLE);
-                    imgenB.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloquememoria[nabst[posi]].getImgB(), null, getPackageName()));
+                    imgenB.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloquememoria().get(posi).getImgB(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloquememoria[nabst[posi]].getImgC().equals("")) {
+                if (notas.getBloquememoria().get(posi).getImgC().equals("")) {
                     imgenC.setVisibility(View.GONE);
                     imgenC.setImageResource(0);
                 } else {
                     imgenC.setVisibility(View.VISIBLE);
-                    imgenC.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloquememoria[nabst[posi]].getImgC(), null, getPackageName()));
+                    imgenC.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloquememoria().get(posi).getImgC(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloquememoria[nabst[posi]].getImgD().equals("")) {
+                if (notas.getBloquememoria().get(posi).getImgD().equals("")) {
                     imgenD.setVisibility(View.GONE);
                     imgenD.setImageResource(0);
                 } else {
                     imgenD.setVisibility(View.VISIBLE);
-                    imgenD.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloquememoria[nabst[posi]].getImgD(), null, getPackageName()));
+                    imgenD.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloquememoria().get(posi).getImgD(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloquememoria[nabst[posi]].getImgSol().equals("")) {
+                if (notas.getBloquememoria().get(posi).getImgSol().equals("")) {
                     imgenSol.setVisibility(View.GONE);
                     imgenSol.setImageResource(0);
                 } else {
                     imgenSol.setVisibility(View.VISIBLE);
-                    imgenSol.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloquememoria[nabst[posi]].getImgSol(), null, getPackageName()));
+                    imgenSol.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloquememoria().get(posi).getImgSol(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloquememoria[nabst[posi]].getImgExpli().equals("")) {
+                if (notas.getBloquememoria().get(posi).getImgExpli().equals("")) {
                     imgenExp.setVisibility(View.GONE);
                     imgenExp.setImageResource(0);
                 } else {
                     imgenExp.setVisibility(View.VISIBLE);
-                    imgenExp.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloquememoria[nabst[posi]].getImgExpli(), null, getPackageName()));
+                    imgenExp.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloquememoria().get(posi).getImgExpli(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloquememoria[nabst[posi]].getExpliSol().equals("")) {
+                if (notas.getBloquememoria().get(posi).getExpliSol().equals("")) {
                     explicacion.setVisibility(View.GONE);
                 } else {
                     explicacion.setVisibility(View.VISIBLE);
-                    explicacion.setText(main_resultado_exam.bloquememoria[nabst[posi]].getExpliSol());
+                    explicacion.setText(notas.getBloquememoria().get(posi).getExpliSol());
                 }
-                if (main_resultado_exam.bloquememoria[nabst[posi]].getPregunta().equals("")) {
+                if (notas.getBloquememoria().get(posi).getPregunta().equals("")) {
                     imppregunta.setVisibility(View.GONE);
                 } else {
                     imppregunta.setVisibility(View.VISIBLE);
-                    imppregunta.setText(main_resultado_exam.bloquememoria[nabst[posi]].getPregunta());
+                    imppregunta.setText(notas.getBloquememoria().get(posi).getPregunta());
                 }
-                if (main_resultado_exam.bloquememoria[nabst[posi]].getRespuestaA().equals("")) {
+                if (notas.getBloquememoria().get(posi).getRespuestaA().equals("")) {
                     respuestaA.setVisibility(View.GONE);
                 } else {
                     respuestaA.setVisibility(View.VISIBLE);
-                    respuestaA.setText(main_resultado_exam.bloquememoria[nabst[posi]].getRespuestaA());
+                    respuestaA.setText(notas.getBloquememoria().get(posi).getRespuestaA());
                 }
-                if (main_resultado_exam.bloquememoria[nabst[posi]].getRespuestaB().equals("")) {
+                if (notas.getBloquememoria().get(posi).getRespuestaB().equals("")) {
                     respuestaB.setVisibility(View.GONE);
                 } else {
                     respuestaB.setVisibility(View.VISIBLE);
-                    respuestaB.setText(main_resultado_exam.bloquememoria[nabst[posi]].getRespuestaB());
+                    respuestaB.setText(notas.getBloquememoria().get(posi).getRespuestaB());
                 }
-                if (main_resultado_exam.bloquememoria[nabst[posi]].getRespuestaC().equals("")) {
+                if (notas.getBloquememoria().get(posi).getRespuestaC().equals("")) {
                     respuestaC.setVisibility(View.GONE);
                     c.setVisibility(View.GONE);
                 } else {
                     respuestaC.setVisibility(View.VISIBLE);
-                    respuestaC.setText(main_resultado_exam.bloquememoria[nabst[posi]].getRespuestaC());
+                    respuestaC.setText(notas.getBloquememoria().get(posi).getRespuestaC());
                     c.setVisibility(View.VISIBLE);
                 }
-                if (main_resultado_exam.bloquememoria[nabst[posi]].getRespuestaD().equals("")) {
+                if (notas.getBloquememoria().get(posi).getRespuestaD().equals("")) {
                     respuestaD.setVisibility(View.GONE);
                     d.setVisibility(View.GONE);
                 } else {
                     respuestaD.setVisibility(View.VISIBLE);
-                    respuestaD.setText(main_resultado_exam.bloquememoria[nabst[posi]].getRespuestaD());
+                    respuestaD.setText(notas.getBloquememoria().get(posi).getRespuestaD());
                     d.setVisibility(View.VISIBLE);
                 }
-                if (main_resultado_exam.bloquememoria[nabst[posi]].getSolu().equals("")) {
+                if (notas.getBloquememoria().get(posi).getSolu().equals("")) {
                     solucion.setVisibility(View.GONE);
                 } else {
                     solucion.setVisibility(View.VISIBLE);
-                    solucion.setText(main_resultado_exam.bloquememoria[nabst[posi]].getSolu());
+                    solucion.setText(notas.getBloquememoria().get(posi).getSolu());
                 }
                 break;
             case 7:
                 bloq.setText(getString(R.string.abstrapto));
-                if (main_resultado_exam.bloqueabstrapto[nabst[posi]].getImgPregunta().equals("")) {
+                if (notas.getBloqueabstrapto().get(posi).getImgPregunta().equals("")) {
                     imgenPre.setVisibility(View.GONE);
                     imgenPre.setImageResource(0);
                 } else {
                     imgenPre.setVisibility(View.VISIBLE);
-                    imgenPre.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueabstrapto[nabst[posi]].getImgPregunta(), null, getPackageName()));
+                    imgenPre.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueabstrapto().get(posi).getImgPregunta(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueabstrapto[nabst[posi]].getImgA().equals("")) {
+                if (notas.getBloqueabstrapto().get(posi).getImgA().equals("")) {
                     imgenA.setVisibility(View.GONE);
                     imgenA.setImageResource(0);
                 } else {
                     imgenA.setVisibility(View.VISIBLE);
-                    imgenA.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueabstrapto[nabst[posi]].getImgA(), null, getPackageName()));
+                    imgenA.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueabstrapto().get(posi).getImgA(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueabstrapto[nabst[posi]].getImgB().equals("")) {
+                if (notas.getBloqueabstrapto().get(posi).getImgB().equals("")) {
                     imgenB.setVisibility(View.GONE);
                     imgenB.setImageResource(0);
                 } else {
                     imgenB.setVisibility(View.VISIBLE);
-                    imgenB.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueabstrapto[nabst[posi]].getImgB(), null, getPackageName()));
+                    imgenB.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueabstrapto().get(posi).getImgB(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueabstrapto[nabst[posi]].getImgC().equals("")) {
+                if (notas.getBloqueabstrapto().get(posi).getImgC().equals("")) {
                     imgenC.setVisibility(View.GONE);
                     imgenC.setImageResource(0);
                 } else {
                     imgenC.setVisibility(View.VISIBLE);
-                    imgenC.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueabstrapto[nabst[posi]].getImgC(), null, getPackageName()));
+                    imgenC.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueabstrapto().get(posi).getImgC(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueabstrapto[nabst[posi]].getImgD().equals("")) {
+                if (notas.getBloqueabstrapto().get(posi).getImgD().equals("")) {
                     imgenD.setVisibility(View.GONE);
                     imgenD.setImageResource(0);
                 } else {
                     imgenD.setVisibility(View.VISIBLE);
-                    imgenD.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueabstrapto[nabst[posi]].getImgD(), null, getPackageName()));
+                    imgenD.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueabstrapto().get(posi).getImgD(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueabstrapto[nabst[posi]].getImgSol().equals("")) {
+                if (notas.getBloqueabstrapto().get(posi).getImgSol().equals("")) {
                     imgenSol.setVisibility(View.GONE);
                     imgenSol.setImageResource(0);
                 } else {
                     imgenSol.setVisibility(View.VISIBLE);
-                    imgenSol.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueabstrapto[nabst[posi]].getImgSol(), null, getPackageName()));
+                    imgenSol.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueabstrapto().get(posi).getImgSol(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueabstrapto[nabst[posi]].getImgExpli().equals("")) {
+                if (notas.getBloqueabstrapto().get(posi).getImgExpli().equals("")) {
                     imgenExp.setVisibility(View.GONE);
                     imgenExp.setImageResource(0);
                 } else {
                     imgenExp.setVisibility(View.VISIBLE);
-                    imgenExp.setImageResource(getResources().getIdentifier("drawable/" + main_resultado_exam.bloqueabstrapto[nabst[posi]].getImgExpli(), null, getPackageName()));
+                    imgenExp.setImageResource(getResources().getIdentifier("drawable/" + notas.getBloqueabstrapto().get(posi).getImgExpli(), null, getPackageName()));
                 }
-                if (main_resultado_exam.bloqueabstrapto[nabst[posi]].getExpliSol().equals("")) {
+                if (notas.getBloqueabstrapto().get(posi).getExpliSol().equals("")) {
                     explicacion.setVisibility(View.GONE);
                 } else {
                     explicacion.setVisibility(View.VISIBLE);
-                    explicacion.setText(main_resultado_exam.bloqueabstrapto[nabst[posi]].getExpliSol());
+                    explicacion.setText(notas.getBloqueabstrapto().get(posi).getExpliSol());
                 }
-                if (main_resultado_exam.bloqueabstrapto[nabst[posi]].getPregunta().equals("")) {
+                if (notas.getBloqueabstrapto().get(posi).getPregunta().equals("")) {
                     imppregunta.setVisibility(View.GONE);
                 } else {
                     imppregunta.setVisibility(View.VISIBLE);
-                    imppregunta.setText(main_resultado_exam.bloqueabstrapto[nabst[posi]].getPregunta());
+                    imppregunta.setText(notas.getBloqueabstrapto().get(posi).getPregunta());
                 }
-                if (main_resultado_exam.bloqueabstrapto[nabst[posi]].getRespuestaA().equals("")) {
+                if (notas.getBloqueabstrapto().get(posi).getRespuestaA().equals("")) {
                     respuestaA.setVisibility(View.GONE);
                 } else {
                     respuestaA.setVisibility(View.VISIBLE);
-                    respuestaA.setText(main_resultado_exam.bloqueabstrapto[nabst[posi]].getRespuestaA());
+                    respuestaA.setText(notas.getBloqueabstrapto().get(posi).getRespuestaA());
                 }
-                if (main_resultado_exam.bloqueabstrapto[nabst[posi]].getRespuestaB().equals("")) {
+                if (notas.getBloqueabstrapto().get(posi).getRespuestaB().equals("")) {
                     respuestaB.setVisibility(View.GONE);
                 } else {
                     respuestaB.setVisibility(View.VISIBLE);
-                    respuestaB.setText(main_resultado_exam.bloqueabstrapto[nabst[posi]].getRespuestaB());
+                    respuestaB.setText(notas.getBloqueabstrapto().get(posi).getRespuestaB());
                 }
-                if (main_resultado_exam.bloqueabstrapto[nabst[posi]].getRespuestaC().equals("")) {
+                if (notas.getBloqueabstrapto().get(posi).getRespuestaC().equals("")) {
                     respuestaC.setVisibility(View.GONE);
                     c.setVisibility(View.GONE);
                 } else {
                     respuestaC.setVisibility(View.VISIBLE);
-                    respuestaC.setText(main_resultado_exam.bloqueabstrapto[nabst[posi]].getRespuestaC());
+                    respuestaC.setText(notas.getBloqueabstrapto().get(posi).getRespuestaC());
                     c.setVisibility(View.VISIBLE);
                 }
-                if (main_resultado_exam.bloqueabstrapto[nabst[posi]].getRespuestaD().equals("")) {
+                if (notas.getBloqueabstrapto().get(posi).getRespuestaD().equals("")) {
                     respuestaD.setVisibility(View.GONE);
                     d.setVisibility(View.GONE);
                 } else {
                     respuestaD.setVisibility(View.VISIBLE);
-                    respuestaD.setText(main_resultado_exam.bloqueabstrapto[nabst[posi]].getRespuestaD());
+                    respuestaD.setText(notas.getBloqueabstrapto().get(posi).getRespuestaD());
                     d.setVisibility(View.VISIBLE);
                 }
-                if (main_resultado_exam.bloqueabstrapto[nabst[posi]].getSolu().equals("")) {
+                if (notas.getBloqueabstrapto().get(posi).getSolu().equals("")) {
                     solucion.setVisibility(View.GONE);
                 } else {
                     solucion.setVisibility(View.VISIBLE);
-                    solucion.setText(main_resultado_exam.bloqueabstrapto[nabst[posi]].getSolu());
+                    solucion.setText(notas.getBloqueabstrapto().get(posi).getSolu());
                 }
         }
 
@@ -1363,25 +1540,25 @@ public class main_examen extends Activity {
                 verificarRes(opt);
                 switch (bloque) {
                     case 1:
-                        main_resultado_exam.bloqueverbal[posi].setRespulsada(1);
+                        notas.getBloqueverbal().get(posi).setRespulsada(1);
                         break;
                     case 2:
-                        main_resultado_exam.bloquenumerico[posi].setRespulsada(1);
+                        notas.getBloquenumerico().get(posi).setRespulsada(1);
                         break;
                     case 3:
-                        main_resultado_exam.bloqueespacial[posi].setRespulsada(1);
+                        notas.getBloqueespacial().get(posi).setRespulsada(1);
                         break;
                     case 4:
-                        main_resultado_exam.bloquemecanico[posi].setRespulsada(1);
+                        notas.getBloquemecanico().get(posi).setRespulsada(1);
                         break;
                     case 5:
-                        main_resultado_exam.bloqueperceptiva[posi].setRespulsada(1);
+                        notas.getBloqueperceptiva().get(posi).setRespulsada(1);
                         break;
                     case 6:
-                        main_resultado_exam.bloquememoria[posi].setRespulsada(1);
+                        notas.getBloquememoria().get(posi).setRespulsada(1);
                         break;
                     case 7:
-                        main_resultado_exam.bloqueabstrapto[posi].setRespulsada(1);
+                        notas.getBloqueabstrapto().get(posi).setRespulsada(1);
                 }
                 Button alante = (Button) findViewById(R.id.alante);
                 alante.setVisibility(View.VISIBLE);
@@ -1400,25 +1577,25 @@ public class main_examen extends Activity {
                 verificarRes(opt);
                 switch (bloque) {
                     case 1:
-                        main_resultado_exam.bloqueverbal[posi].setRespulsada(2);
+                        notas.getBloqueverbal().get(posi).setRespulsada(2);
                         break;
                     case 2:
-                        main_resultado_exam.bloquenumerico[posi].setRespulsada(2);
+                        notas.getBloquenumerico().get(posi).setRespulsada(2);
                         break;
                     case 3:
-                        main_resultado_exam.bloqueespacial[posi].setRespulsada(2);
+                        notas.getBloqueespacial().get(posi).setRespulsada(2);
                         break;
                     case 4:
-                        main_resultado_exam.bloquemecanico[posi].setRespulsada(2);
+                        notas.getBloquemecanico().get(posi).setRespulsada(2);
                         break;
                     case 5:
-                        main_resultado_exam.bloqueperceptiva[posi].setRespulsada(2);
+                        notas.getBloqueperceptiva().get(posi).setRespulsada(2);
                         break;
                     case 6:
-                        main_resultado_exam.bloquememoria[posi].setRespulsada(2);
+                        notas.getBloquememoria().get(posi).setRespulsada(2);
                         break;
                     case 7:
-                        main_resultado_exam.bloqueabstrapto[posi].setRespulsada(2);
+                        notas.getBloqueabstrapto().get(posi).setRespulsada(2);
                 }
                 Button alante = (Button) findViewById(R.id.alante);
                 alante.setVisibility(View.VISIBLE);
@@ -1437,25 +1614,25 @@ public class main_examen extends Activity {
                 verificarRes(opt);
                 switch (bloque) {
                     case 1:
-                        main_resultado_exam.bloqueverbal[posi].setRespulsada(3);
+                        notas.getBloqueverbal().get(posi).setRespulsada(3);
                         break;
                     case 2:
-                        main_resultado_exam.bloquenumerico[posi].setRespulsada(3);
+                        notas.getBloquenumerico().get(posi).setRespulsada(3);
                         break;
                     case 3:
-                        main_resultado_exam.bloqueespacial[posi].setRespulsada(3);
+                        notas.getBloqueespacial().get(posi).setRespulsada(3);
                         break;
                     case 4:
-                        main_resultado_exam.bloquemecanico[posi].setRespulsada(3);
+                        notas.getBloquemecanico().get(posi).setRespulsada(3);
                         break;
                     case 5:
-                        main_resultado_exam.bloqueperceptiva[posi].setRespulsada(3);
+                        notas.getBloqueperceptiva().get(posi).setRespulsada(3);
                         break;
                     case 6:
-                        main_resultado_exam.bloquememoria[posi].setRespulsada(3);
+                        notas.getBloquememoria().get(posi).setRespulsada(3);
                         break;
                     case 7:
-                        main_resultado_exam.bloqueabstrapto[posi].setRespulsada(3);
+                        notas.getBloqueabstrapto().get(posi).setRespulsada(3);
                 }
                 Button alante = (Button) findViewById(R.id.alante);
                 alante.setVisibility(View.VISIBLE);
@@ -1474,25 +1651,25 @@ public class main_examen extends Activity {
                 verificarRes(opt);
                 switch (bloque) {
                     case 1:
-                        main_resultado_exam.bloqueverbal[posi].setRespulsada(4);
+                        notas.getBloqueverbal().get(posi).setRespulsada(4);
                         break;
                     case 2:
-                        main_resultado_exam.bloquenumerico[posi].setRespulsada(4);
+                        notas.getBloquenumerico().get(posi).setRespulsada(4);
                         break;
                     case 3:
-                        main_resultado_exam.bloqueespacial[posi].setRespulsada(4);
+                        notas.getBloqueespacial().get(posi).setRespulsada(4);
                         break;
                     case 4:
-                        main_resultado_exam.bloquemecanico[posi].setRespulsada(4);
+                        notas.getBloquemecanico().get(posi).setRespulsada(4);
                         break;
                     case 5:
-                        main_resultado_exam.bloqueperceptiva[posi].setRespulsada(4);
+                        notas.getBloqueperceptiva().get(posi).setRespulsada(4);
                         break;
                     case 6:
-                        main_resultado_exam.bloquememoria[posi].setRespulsada(4);
+                        notas.getBloquememoria().get(posi).setRespulsada(4);
                         break;
                     case 7:
-                        main_resultado_exam.bloqueabstrapto[posi].setRespulsada(4);
+                        notas.getBloqueabstrapto().get(posi).setRespulsada(4);
                 }
                 Button alante = (Button) findViewById(R.id.alante);
                 alante.setVisibility(View.VISIBLE);
@@ -1582,8 +1759,8 @@ public class main_examen extends Activity {
 
         switch (bloque) {
             case 1:
-                if (main_resultado_exam.bloqueverbal[posi].getRespulsada() != 0) {
-                    switch (main_resultado_exam.bloqueverbal[posi].getRespulsada()) {
+                if (notas.getBloqueverbal().get(posi).getRespulsada() != 0) {
+                    switch (notas.getBloqueverbal().get(posi).getRespulsada()) {
                         case 1:
                             if (respuestaA.getText().equals(solucion.getText())) {
                                 a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
@@ -1615,8 +1792,8 @@ public class main_examen extends Activity {
                 }
                 break;
             case 2:
-                if (main_resultado_exam.bloquenumerico[posi].getRespulsada() != 0) {
-                    switch (main_resultado_exam.bloquenumerico[posi].getRespulsada()) {
+                if (notas.getBloquenumerico().get(posi).getRespulsada() != 0) {
+                    switch (notas.getBloquenumerico().get(posi).getRespulsada()) {
                         case 1:
                             if (respuestaA.getText().equals(solucion.getText())) {
                                 a.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
@@ -1648,8 +1825,8 @@ public class main_examen extends Activity {
                 }
                 break;
             case 3:
-                if (main_resultado_exam.bloqueespacial[posi].getRespulsada() != 0) {
-                    switch (main_resultado_exam.bloqueespacial[posi].getRespulsada()) {
+                if (notas.getBloqueespacial().get(posi).getRespulsada() != 0) {
+                    switch (notas.getBloqueespacial().get(posi).getRespulsada()) {
                         case 1:
                             if (respuestaA.getText().equals(solucion.getText())) {
                                 a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
@@ -1681,8 +1858,8 @@ public class main_examen extends Activity {
                 }
                 break;
             case 4:
-                if (main_resultado_exam.bloquemecanico[posi].getRespulsada() != 0) {
-                    switch (main_resultado_exam.bloquemecanico[posi].getRespulsada()) {
+                if (notas.getBloquemecanico().get(posi).getRespulsada() != 0) {
+                    switch (notas.getBloquemecanico().get(posi).getRespulsada()) {
                         case 1:
                             if (respuestaA.getText().equals(solucion.getText())) {
                                 a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
@@ -1714,8 +1891,8 @@ public class main_examen extends Activity {
                 }
                 break;
             case 5:
-                if (main_resultado_exam.bloqueperceptiva[posi].getRespulsada() != 0) {
-                    switch (main_resultado_exam.bloqueperceptiva[posi].getRespulsada()) {
+                if (notas.getBloqueperceptiva().get(posi).getRespulsada() != 0) {
+                    switch (notas.getBloqueperceptiva().get(posi).getRespulsada()) {
                         case 1:
                             if (respuestaA.getText().equals(solucion.getText())) {
                                 a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
@@ -1747,8 +1924,8 @@ public class main_examen extends Activity {
                 }
                 break;
             case 6:
-                if (main_resultado_exam.bloquememoria[posi].getRespulsada() != 0) {
-                    switch (main_resultado_exam.bloquememoria[posi].getRespulsada()) {
+                if (notas.getBloquememoria().get(posi).getRespulsada() != 0) {
+                    switch (notas.getBloquememoria().get(posi).getRespulsada()) {
                         case 1:
                             if (respuestaA.getText().equals(solucion.getText())) {
                                 a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
@@ -1780,8 +1957,8 @@ public class main_examen extends Activity {
                 }
                 break;
             case 7:
-                if (main_resultado_exam.bloqueabstrapto[posi].getRespulsada() != 0) {
-                    switch (main_resultado_exam.bloqueabstrapto[posi].getRespulsada()) {
+                if (notas.getBloqueabstrapto().get(posi).getRespulsada() != 0) {
+                    switch (notas.getBloqueabstrapto().get(posi).getRespulsada()) {
                         case 1:
                             a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                             break;
@@ -1834,6 +2011,7 @@ public class main_examen extends Activity {
                                     public void onFinish() {
                                         cuentatras.setText(getString(R.string.tiemporesdta) + " " + "0" + " " + getString(R.string.segundos));
                                         new AlertDialog.Builder(main_examen.this)
+                                                .setIcon(android.R.drawable.ic_dialog_alert)
                                                 .setTitle(getString(R.string.atencion))
                                                 .setMessage(getString(R.string.tiempoterminado))
                                                 .setCancelable(false)
@@ -1874,8 +2052,26 @@ public class main_examen extends Activity {
 
                                     }
                                 }).show();
+
             } else {
-                finish();
+                new AlertDialog.Builder(this)
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setTitle(getString(R.string.salir))
+                        .setCancelable(false)
+                        .setMessage(getString(R.string.saliractivity))
+                        .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                finish();
+                            }
+                        })
+                        .setPositiveButton(getString(R.string.no), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog,
+                                                int which) {
+
+                            }
+                        }).show();
             }
 
             return true;
@@ -1918,6 +2114,7 @@ public class main_examen extends Activity {
                     public void onFinish() {
                         cuentatras.setText(getString(R.string.tiemporesdta) + " " + "0" + " " + getString(R.string.segundos));
                         new AlertDialog.Builder(main_examen.this)
+                                .setIcon(android.R.drawable.ic_dialog_alert)
                                 .setTitle(getString(R.string.atencion))
                                 .setMessage(getString(R.string.tiempoterminado))
                                 .setCancelable(false)
@@ -1967,7 +2164,7 @@ public class main_examen extends Activity {
             pregunta.setVisibility(View.GONE);
             atras.setVisibility(View.INVISIBLE);
             alante.setVisibility(View.INVISIBLE);
-            esperarYCerrar(2000);
+            esperarYCerrar(memoria);
         }
         if (bloque != 6) {
             Button atras = (Button) findViewById(R.id.atras);

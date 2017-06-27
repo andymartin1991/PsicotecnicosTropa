@@ -1,3209 +1,624 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
+
     <array name="preabstrapto">
-        <!--001--><item>¿Cuál sigue la serie?</item>
-        <!--002--><item>¿Cuál sigue la serie?</item>
-        <!--003--><item>¿Cuál sigue la serie?</item>
-        <!--004--><item>¿Qué operación corresponde a la casilla \'¿?\'?</item>
-        <!--005--><item>¿Qué figura continúa la serie?</item>
-		<!--006--><item>¿Qué figura le sigue al final de esta serie?</item>
-        <!--007--><item>¿Cuál correspondería a la última figura según la serie?</item>
-        <!--008--><item>¿Cuál correspondería a la última figura según la serie?</item>
-        <!--009--><item>¿Cuál sigue la serie?</item>
-        <!--010--><item>¿Cuál correspondería a la última casilla?</item>
-        <!--011--><item>¿Cuál sigue la serie?</item>
-        <!--012--><item>¿Cuál sigue la serie?</item>
-        <!--013--><item>¿Cuál sigue la serie?</item>
-        <!--014--><item>¿Cuál sigue la serie?</item>
-        <!--015--><item>¿Cuál sigue la serie?</item>
-        <!--016--><item>¿Cuál sigue la serie?</item>
-        <!--017--><item>¿Qué operación corresponde a la casilla \'¿?\'?</item>
-        <!--018--><item>¿Cuál sigue la serie?</item>
-        <!--019--><item>¿Cuál sigue la serie?</item>
-        <!--020--><item>¿Cuál sigue la serie?</item>
-		<!--021--><item>¿Cuál sigue la serie?</item>
-        <!--022--><item>¿Cuál sigue la serie?</item>
-        <!--023--><item>¿Cuál sigue la serie?</item>
-        <!--024--><item>¿Cuál sigue la serie?</item>
-        <!--025--><item>¿Cuál sigue la serie?</item>
-        <!--026--><item>¿Cuál sigue la serie?</item>
-        <!--027--><item>¿Cuál sigue la serie?</item>
-        <!--028--><item>¿Cuál sigue la serie?</item>
-        <!--029--><item>¿Cuál sigue la serie?</item>
-        <!--030--><item>¿Cuál sigue la serie?</item>
-        <!--031--><item>¿Cuál sigue la serie?</item>
-        <!--032--><item>¿Cuál sigue la serie?</item>
-        <!--033--><item>¿Cuál sigue la serie?</item>
-        <!--034--><item>¿Cuál sigue la serie?</item>
-        <!--035--><item>¿Cuál sigue la serie?</item>
-        <!--036--><item>¿Cuál sigue la serie?</item>
-        <!--037--><item>¿Cuál sigue la serie?</item>
-        <!--038--><item>¿Cuál sigue la serie?</item>
-        <!--039--><item>¿Cuál sigue la serie?</item>
-        <!--040--><item>¿Cuál sigue la serie?</item>
-        <!--041--><item>¿Cuál sigue la serie?</item>
-        <!--042--><item>¿Cuál sigue la serie?</item>
-        <!--043--><item>¿Cuál sigue la serie?</item>
-        <!--044--><item>¿Cuál sigue la serie?</item>
-        <!--045--><item>¿Qué número va en esa casilla de la ficha?</item>
-        <!--046--><item>¿Cuál sigue la serie?</item>
-        <!--047--><item>¿Cuál sigue la serie?</item>
-        <!--048--><item>¿Cuál sigue la serie?</item>
-        <!--049--><item>¿Cuál sigue la serie?@</item>
-        <!--050--><item>¿Cuál sigue la serie?</item>
-        <!--051--><item>¿Cuál sigue la serie?</item>
-        <!--052--><item>¿Cuál sigue la serie?</item>
-        <!--053--><item>¿Cuál sigue la serie?</item>
-        <!--054--><item>¿Cuál sigue la serie?</item>
-        <!--055--><item>¿Cuál sigue la serie?</item>
-        <!--056--><item>¿Qué sigue después?</item>
-        <!--057--><item>¿Cuál sigue la serie?</item>
-        <!--058--><item>¿Cuál sigue la serie?</item>
-        <!--059--><item>¿Qué sigue después?</item>
-        <!--060--><item>¿Cuál sigue la serie?</item>
-        <!--061--><item>¿Cuál sigue la serie?</item>
-        <!--062--><item>¿Cuál sigue la serie?</item>
-        <!--063--><item>¿Cuál sigue la serie?</item>
-        <!--064--><item>¿Cuál sigue la serie?</item>
-        <!--065--><item>¿Cuál sigue la serie?</item>
-        <!--066--><item>¿Cuál sigue la serie?</item>
-        <!--067--><item>¿Cuál sigue la serie?</item>
-        <!--068--><item>¿Cuál sigue la serie?</item>
-        <!--069--><item>¿Cuál sigue la serie?</item>
-        <!--070--><item>¿Cuál sigue la serie?</item>
-        <!--071--><item>¿Cuál sigue la serie?</item>
-        <!--072--><item>¿Cuál sigue la serie?</item>
-        <!--073--><item>¿Cuál sigue la serie?</item>
-        <!--074--><item>¿Cuál sigue la serie?</item>
-        <!--075--><item>¿Cuál sigue la serie?</item>
-        <!--076--><item>¿Cuál sigue la serie?</item>
-        <!--077--><item>¿Cuál sigue la serie?</item>
-        <!--078--><item>¿Cuál sique la serie?</item>
-        <!--078--><item>¿Cuál sique la serie?</item>
-        <!--080--><item>¿Cuál sique la serie?</item>
-        <!--081--><item>¿Cuál sique la serie?</item>
-        <!--082--><item>¿Cuál sique la serie?</item>
-        <!--083--><item>¿Cuál sique la serie?</item>
-        <!--084--><item>¿Cuál sique la serie?</item>
-        <!--085--><item>¿Cuál sique la serie?</item>
-        <!--086--><item>¿Cuál sique la serie?</item>
-        <!--087--><item>¿Cuál sique la serie?</item>
-        <!--088--><item>¿Cuál sique la serie?</item>
-        <!--089--><item>¿Cuál sique la serie?</item>
-        <!--090--><item>¿Cuál sigue la serie?</item>
-        <!--091--><item>¿Cuál sigue la serie?</item>
-        <!--092--><item>¿Cuál sigue la serie?</item>
-        <!--093--><item>¿Cuál sigue la serie?</item>
-        <!--094--><item>¿Cuál sigue la serie?</item>
-        <!--095--><item>¿Cuál sigue la serie?</item>
-        <!--096--><item>¿Cuál sigue la serie?</item>
-        <!--097--><item>¿Cuál sigue la serie?</item>
-        <!--098--><item>¿Cuál sigue la serie?</item>
-        <!--099--><item>¿Cuál sigue la serie?</item>
-        <!--100--><item>¿Cuál sigue la serie?</item>
-        <!--101--><item>¿Cuál sigue la serie?</item>
-        <!--102--><item>¿Cuál sigue la serie?</item>
-        <!--103--><item>¿Cuál sigue la serie?</item>
-        <!--104--><item>¿Cuál sigue la serie?</item>
-        <!--105--><item>¿Cuál sigue la serie?</item>
-        <!--106--><item>¿Cuál sigue la serie?</item>
-        <!--107--><item>¿Cuál sigue la serie?</item>
-        <!--108--><item>¿Cuál sigue la serie?</item>
-        <!--109--><item>¿Cuál sigue la serie?</item>
-        <!--110--><item>¿Cuál sigue la serie?</item>
-        <!--111--><item>¿Cuál sigue la serie?</item>
-        <!--112--><item>¿Cuál sigue la serie?</item>
-        <!--113--><item>¿Cuál sigue la serie?</item>
-        <!--114--><item>¿Cuál sigue la serie?</item>
-        <!--115--><item>¿Cuál sigue la serie?</item>
-        <!--116--><item>¿Cuál sigue la serie?</item>
-        <!--117--><item>¿Cuál sigue la serie?</item>
-        <!--118--><item>¿Cuál sigue la serie?</item>
-        <!--119--><item>¿Cuál sigue la serie?</item>
-        <!--120--><item>¿Cuál sigue la serie?</item>
-        <!--121--><item>¿Cuál sigue la serie?</item>
-        <!--122--><item>¿Cuál sigue la serie?</item>
-        <!--123--><item>¿Cuál sigue la serie?</item>
-        <!--124--><item>¿Cuál sigue la serie?</item>
-        <!--125--><item>¿Cuál sigue la serie?</item>
-        <!--126--><item>¿Cuál sigue la serie?</item>
-        <!--127--><item>¿Cuál sigue la serie?</item>
-        <!--128--><item>¿Cuál sigue la serie?</item>
-        <!--129--><item>¿Cuál sigue la serie?</item>
-        <!--130--><item>¿Cuál sigue la serie?</item>
-        <!--131--><item>¿Cuál sigue la serie?</item>
-        <!--132--><item>¿Cuál sigue la serie?</item>
-        <!--133--><item>¿Cuál sigue la serie?</item>
-        <!--134--><item>¿Cuál sigue la serie?</item>
-        <!--135--><item>¿Cuál sigue la serie?</item>
-        <!--136--><item>¿Cuál sigue la serie?</item>
-        <!--137--><item>¿Cuál sigue la serie?</item>
-        <!--138--><item>¿Cuál sigue la serie?</item>
-        <!--139--><item>¿Cuál sigue la serie?</item>
-        <!--140--><item>Sigue la serie:\n57, 51, 45, 39, 33,...</item>
-        <!--141--><item>Sigue la serie:\n200, 201, 203, 206,...</item>
-        <!--142--><item>Sigue la serie:\n70, 15, 60, 20, 50,...</item>
-        <!--143--><item>Sigue la serie:\n12, 24, 16, 32, 24, 48,...</item>
-        <!--144--><item>Sigue la serie:\n14, 20, 26, 32, 38, 44, 50,...</item>
-        <!--145--><item>Sigue la serie:\n18 15 5 11 8 5 4</item>
-        <!--146--><item>Sigue la serie:\n6, 9, 7, 10, 8,...</item>
-        <!--147--><item>Sigue la serie:\n10, 32, 54, 76,...</item>
-        <!--148--><item>Sigue la serie:\n16, 28, 28, 40, 40, 52,...</item>
-        <!--149--><item>Sigue la serie:\n20, 23, 21, 24, 22, 25,...</item>
-        <!--150--><item>Sigue la serie:\n4, 5, 8, 9, 12, 13,...</item>
-        <!--151--><item>Sigue la serie:\n20, 8, 20, 10, 20, 12,...</item>
-        <!--152--><item>Sigue la serie:\n3, 6, 10, ___, 21, 28,...</item>
-        <!--153--><item>Sigue la serie:\n3, 2, 3, 5, 5, 4, 5, 7, 7, 6, ___, 9, 9,...</item>
-        <!--154--><item>Sigue la serie:\n1, 2, 4, 8,...</item>
-        <!--155--><item>Sigue la serie:\n5, 2, 6, 3, 7, 4,...</item>
-        <!--156--><item>Sigue la serie:\n345, 456, 567,...</item>
-        <!--157--><item>Sigue la serie:\n23, 9, 22, 8, 21,...</item>
-        <!--158--><item>Sigue la serie:\n5, 7, 9,...</item>
-        <!--159--><item>Sigue la serie:\n4, 5, 8, 9, 12, 13,...</item>
-        <!--160--><item>Sigue la serie:\n10, 4, 15, 8, 20,...</item>
-        <!--161--><item>Sigue la serie:\n5, 7, 7, 14, 9, 21,...</item>
-        <!--162--><item>Sigue la serie:\n6, 7, 9, 12,...</item>
-        <!--163--><item>Sigue la serie:\n100, 50, 25,...</item>
-        <!--164--><item>¿Cuál sique la serie? \n A-E-I-M-P-T-?</item>
-        <!--165--><item>¿Cuál sique la serie? \n D-F-G-I-J-K-M-N-Ñ-O-?</item>
-        <!--166--><item>¿Cuál sique la serie? \n W-X-Z-Y-C-Z-F-A-?</item>
-        <!--167--><item>¿Cuál sique la serie? \n C-F-D-G-E-H-F-I-G-?</item>
-        <!--168--><item>¿Cuál sique la serie? \n J-X-H-Y-F-X-D-Y-?</item>
-        <!--169--><item>Sigue la serie \n3, 9, 5, 25, 7, 79, 2, 4, 1, …</item>
-        <!--170--><item>Sigue la serie \n6, 16, 11, 26, 16, 36, …</item>
-        <!--171--><item>Sigue la serie \n2, 4, 4, 12, 12, 48, 48, …</item>
-        <!--172--><item>Sigue la serie \n9, 15, 6, 13, 9, 11, 6, 9, …</item>
-        <!--173--><item>Sigue la serie \n30, 90, 93, 372, 376, 1880, …</item>
-        <!--174--><item>Sigue la serie: 1, 3, 7, 13, 21, 13, 7...</item>
-        <!--175--><item>Sigue la serie: 95, 94, 91, 86, 79...</item>
-        <!--176--><item>Sigue la serie: 36, 35, 38, 33, 40...</item>
-        <!--177--><item>Sigue la serie: 1, 1, 4, 6, 6, 8, 11...</item>
-        <!--178--><item>Sigue la serie: 6, 3, 7, 6, 8...</item>
-        <!--179--><item>Sigue la serie: 2, 2, 6, 4, 18, 8, 54...</item>
-        <!--180--><item>Sigue la serie: 6, 8, 16, 14, 7, 9...</item>
-        <!--181--><item>Sigue la serie: 3, 4, 7, 12, 19, 28...</item>
-        <!--182--><item>Sigue la serie: 2, 48, 4, 24, 12, 12, 48...</item>
-        <!--183--><item>Sigue la serie: 3, 6, 6, 6, 18, 12, 72...</item>
-        <!--184--><item>Sigue la serie: 7, 36, 6, 25, 5, 16, 4...</item>
-        <!--185--><item>Sigue la serie: 25, 26, 27, 24, 25, 26, 23...</item>
-        <!--186--><item>Sigue la serie: 10, 12, 15, 14, 16, 19...</item>
-        <!--187--><item>Sigue la serie: 47, 37, 28, 36, 26, 17...</item>
-        <!--188--><item>Sigue la serie: 2, 9, 18, 20, 27, 54...</item>
-        <!--189--><item>Sigue la serie: 2, 4, 9, 18, 35...</item>
-        <!--190--><item>Sigue la serie: 2, 4, 8, 6, 8, 16...</item>
-        <!--191--><item>Sigue la serie: 7, 36, 37, 9, 64, 65, 11...</item>
-        <!--192--><item>Sigue la serie: 84, 48, 24, 42, 21, 12...</item>
-        <!--193--><item>Sigue la serie: 4, 8, 9, 27, 29, 116...</item>
-        <!--194--><item>Sigue la serie: 5, 3, 9, 5, 13, 7...</item>
-        <!--195--><item>Sigue la serie: 6, 7, 10, 11, 14, 15…</item>
-        <!--196--><item>Indica la letra que continúa la serie (sin contar CH, LL, W)\na, c, f, j...</item>
-        <!--197--><item>Indica la letra que continúa la serie (sin contar CH, LL, W)\na, d, h, k, ñ, q, u...</item>
-        <!--198--><item>Indica la letra que continúa la serie (sin contar CH, LL, W)\nb, a, c, d, a, e, a, f,...</item>
-        <!--199--><item>Indica la letra que continúa la serie (sin contar CH, LL, W)\na, o, b, n, c, l, d...</item>
-        <!--200--><item>Indica la letra que continúa la serie (sin contar CH, LL, W)\na, b, a, c, d, b, e,f...</item>
-        <!--201--><item>Indica la letra que continúa la serie (sin contar CH, LL, W)\nb, b, c, c, d, e, e,f...</item>
-        <!--202--><item>Indica la letra que continúa la serie (sin contar CH, LL, W)\nc, e, h, j, m, ñ, q...</item>
-        <!--203--><item>Indica la letra que continúa la serie (sin contar CH, LL, W)\na, l, c, n, e, o, g, q,i, s...</item>
-        <!--204--><item>Indica la letra que continúa la serie (sin contar CH, LL, W)\nm, m, ñ, k, q, h, u</item>
-        <!--205--><item>Indica el número de la serie que no es correcto 12, 34, 17, 35, 20, 37, 21, 43...</item>
-        <!--206--><item>Indica el número de la serie que no es correcto 2, 3, 4, 12, 12, 36, 48, 144...</item>
-        <!--207--><item>Indica el número de la serie que no es correcto 3, 5, 15, 18, 51, 53...</item>
-        <!--208--><item>Indica el número de la serie que no es correcto 64, 10, 33, 12, 16, 14...</item>
-        <!--209--><item>Indica el número de la serie que no es correcto 33, 44, 35, 46, 37, 47, 39...</item>
-        <!--210--><item>Indica el número de la serie que no es correcto 5, 6, 8, 4, 5, 2, 3, 5, 6, 8, 7...</item>
-        <!--211--><item>¿Cuál continúa la serie?</item>
-        <!--212--><item>Hay una columna, la cual tiene un valor que NO sigue la misma lógica que el resto de valores, ¿cuál?</item>
-        <!--213--><item>¿Qué hora debería marcar el siguiente?\n12:05, 13:15, 15:25, 16:35, ...</item>
-        <!--214--><item>¿Cuál continúa la serie?</item>
-        <!--215--><item>¿Cuál sigue la serie?\n80/2, 70/5, 61/9, 53/14, 46/20, 40/27,...</item>
-        <!--216--><item>¿Qué número completa esta forma lógica?</item>
-        <!--217--><item>¿Cuál sigue la serie??</item>
-        <!--218--><item>¿Cuál sigue la serie?\nA,D,C,F,E,H,G,J,...</item>
-        <!--219--><item>¿Qué número es el interrogante?</item>
-        <!--220--><item>¿Qué número es el interrogante?\n20, 40, 30, 60, 50;\n12, 24, 14, 28, 18;\n26, 52, 42, ?, 74.</item>
-        <!--221--><item>¿Cuál sería el valor del interrogante?</item>
-        <!--222--><item>¿Cuál sería el valor del interrogante?</item>
-        <!--223--><item>¿Cuál sigue la serie?\n120/120, 60/120, 40/120, 30/120, 24/120,...</item>
-        <!--224--><item>¿Cuál sigue la serie?</item>
-        <!--225--><item>¿Cuál sigue la serie?</item>
+        <!--001-->
+        <item>¿Cuál sigue la serie?</item>
+        <!--002-->
+        <item>¿Cuál sigue la serie?</item>
+        <!--003-->
+        <item>¿Cuál sigue la serie?</item>
+        <!--004-->
+        <item>¿Qué operación corresponde a la casilla \'¿?\'?</item>
+        <!--005-->
+        <item>¿Qué figura continúa la serie?</item>
+        <!--006-->
+        <item>¿Qué figura le sigue al final de esta serie?</item>
+        <!--007-->
+        <item>¿Cuál correspondería a la última figura según la serie?</item>
+        <!--008-->
+        <item>¿Cuál correspondería a la última figura según la serie?</item>
+        <!--009-->
+        <item>¿Cuál sigue la serie?</item>
+        <!--010-->
+        <item>¿Cuál correspondería a la última casilla?</item>
+        <!--011-->
+        <item>¿Cuál sigue la serie?</item>
+        <!--012-->
+        <item>¿Cuál sigue la serie?</item>
+        <!--013-->
+        <item>¿Cuál sigue la serie?</item>
+        <!--014-->
+        <item>¿Cuál sigue la serie?</item>
+        <!--015-->
+        <item>¿Cuál sigue la serie?</item>
+        <!--016-->
+        <item>¿Cuál sigue la serie?</item>
+        <!--017-->
+        <item>¿Qué operación corresponde a la casilla \'¿?\'?</item>
+        <!--018-->
+        <item>¿Cuál sigue la serie?</item>
+        <!--019-->
+        <item>¿Cuál sigue la serie?</item>
+        <!--020-->
+        <item>¿Cuál sigue la serie?</item>
     </array>
-    
+
     <array name="resAabstrapto">
-        <!--001--><item>A)4/4</item>
-        <!--002--><item>A)</item>
-        <!--003--><item>A)</item>
-        <!--004--><item>A)/3</item>
-        <!--005--><item>A)</item>
-		<!--006--><item>A)</item>
-        <!--007--><item>A)</item>
-        <!--008--><item>A)</item>
-        <!--009--><item>A)</item>
-        <!--010--><item>A)</item>
-        <!--011--><item>A)5/0</item>
-        <!--012--><item>A)</item>
-        <!--013--><item>A)2/6</item>
-        <!--014--><item>A)</item>
-        <!--015--><item>A)</item>
-        <!--016--><item>A)</item>
-        <!--017--><item>A)x10</item>
-        <!--018--><item>A)5/3</item>
-        <!--019--><item>A)</item>
-        <!--020--><item>A)</item>
-		<!--021--><item>A)2/1</item>
-        <!--022--><item>A)</item>
-        <!--023--><item>A)</item>
-        <!--024--><item>A)</item>
-        <!--025--><item>A)3/1</item>
-        <!--026--><item>A)</item>
-        <!--027--><item>A)</item>
-        <!--028--><item>A)5/1</item>
-        <!--029--><item>A)3/1</item>
-        <!--030--><item>A)</item>
-        <!--031--><item>A)1/6</item>
-        <!--032--><item>A)</item>
-        <!--033--><item>A)0/3</item>
-        <!--034--><item>A)</item>
-        <!--035--><item>A)</item>
-        <!--036--><item>A)2/5</item>
-        <!--037--><item>A)</item>
-        <!--038--><item>A)2/0</item>
-        <!--039--><item>A)3/1</item>
-        <!--040--><item>A)</item>
-        <!--041--><item>A)</item>
-        <!--042--><item>A)</item>
-        <!--043--><item>A)</item>
-        <!--044--><item>A)</item>
-        <!--045--><item>A)2</item>
-        <!--046--><item>A)2/6</item>
-        <!--047--><item>A)</item>
-        <!--048--><item>A)</item>
-        <!--049--><item>A)3/2</item>
-        <!--050--><item>A)2/1</item>
-        <!--051--><item>A)</item>
-        <!--052--><item>A)2/4</item>
-        <!--053--><item>A)</item>
-        <!--054--><item>A)2/5</item>
-        <!--055--><item>A)</item>
-        <!--056--><item>A)0/4</item>
-        <!--057--><item>A)</item>
-        <!--058--><item>A)</item>
-        <!--059--><item>A)</item>
-        <!--060--><item>A)5/6</item>
-        <!--061--><item>A)4/6</item>
-        <!--062--><item>A)</item>
-        <!--063--><item>A)</item>
-        <!--064--><item>A)4/3</item>
-        <!--065--><item>A)</item>
-        <!--066--><item>A)4/3</item>
-        <!--067--><item>A)2/0</item>
-        <!--068--><item>A)</item>
-        <!--069--><item>A)2/4</item>
-        <!--070--><item>A)</item>
-        <!--071--><item>A)</item>
-        <!--072--><item>A)</item>
-        <!--073--><item>A)6/1</item>
-        <!--074--><item>A)</item>
-        <!--075--><item>A)5/6</item>
-        <!--076--><item>A)</item>
-        <!--077--><item>A)</item>
-        <!--078--><item>A)0/1</item>
-        <!--079--><item>A)5/5</item>
-        <!--080--><item>A)</item>
-        <!--081--><item>A)5/6</item>
-        <!--082--><item>A)3/5</item>
-        <!--083--><item>A)</item>
-        <!--084--><item>A)5/3</item>
-        <!--085--><item>A)</item>
-        <!--086--><item>A)3/2</item>
-        <!--087--><item>A)1/4</item>
-        <!--088--><item>A)</item>
-        <!--089--><item>A)0/3</item>
-        <!--090--><item>A)</item>
-        <!--091--><item>A)4/4</item>
-        <!--092--><item>A)</item>
-        <!--093--><item>A)5/4</item>
-        <!--094--><item>A)3/2</item>
-        <!--095--><item>A)</item>
-        <!--096--><item>A)1/4</item>
-        <!--097--><item>A)</item>
-        <!--098--><item>A)2/2</item>
-        <!--099--><item>A)</item>
-        <!--100--><item>A)4/4</item>
-        <!--101--><item>A)</item>
-        <!--102--><item>A)</item>
-        <!--103--><item>A)</item>
-        <!--104--><item>A)</item>
-        <!--105--><item>A)</item>
-        <!--106--><item>A)</item>
-        <!--107--><item>A)</item>
-        <!--108--><item>A)</item>
-        <!--109--><item>A)</item>
-        <!--110--><item>A)</item>
-        <!--111--><item>A)</item>
-        <!--112--><item>A)</item>
-        <!--113--><item>A)</item>
-        <!--114--><item>A)0/3</item>
-        <!--115--><item>A)4/3</item>
-        <!--116--><item>A)3/5</item>
-        <!--117--><item>A)0/1</item>
-        <!--118--><item>A)6/5</item>
-        <!--119--><item>A)6/1</item>
-        <!--120--><item>A)4/3</item>
-        <!--121--><item>A)</item>
-        <!--122--><item>A)</item>
-        <!--123--><item>A)</item>
-        <!--124--><item>A)</item>
-        <!--125--><item>A)</item>
-        <!--126--><item>A)</item>
-        <!--127--><item>A)</item>
-        <!--128--><item>A)</item>
-        <!--129--><item>A)</item>
-        <!--130--><item>A)</item>
-        <!--131--><item>A)</item>
-        <!--132--><item>A)</item>
-        <!--133--><item>A)</item>
-        <!--134--><item>A)</item>
-        <!--135--><item>A)</item>
-        <!--136--><item>A)</item>
-        <!--137--><item>A)</item>
-        <!--138--><item>A)</item>
-        <!--139--><item>A)</item>
-        <!--140--><item>A)30</item>
-        <!--141--><item>A)210</item>
-        <!--142--><item>A)20</item>
-        <!--143--><item>A)38</item>
-        <!--144--><item>A)56 60</item>
-        <!--145--><item>A)1 7</item>
-        <!--146--><item>A)6</item>
-        <!--147--><item>A)98</item>
-        <!--148--><item>A)52, 64</item>
-        <!--149--><item>A)26</item>
-        <!--150--><item>A)14</item>
-        <!--151--><item>A)14</item>
-        <!--152--><item>A)14</item>
-        <!--153--><item>A)7</item>
-        <!--154--><item>A)30</item>
-        <!--155--><item>A)8</item>
-        <!--156--><item>A)467</item>
-        <!--157--><item>A)22</item>
-        <!--158--><item>A)12</item>
-        <!--159--><item>A)14</item>
-        <!--160--><item>A)12</item>
-        <!--161--><item>A)11</item>
-        <!--162--><item>A)16</item>
-        <!--163--><item>A)12,25</item>
-        <!--164--><item>A)V</item>
-        <!--165--><item>A)P</item>
-        <!--166--><item>A)C</item>
-        <!--167--><item>A)J</item>
-        <!--168--><item>A)X</item>
-        <!--169--><item>A)1</item>
-        <!--170--><item>A)16</item>
-        <!--171--><item>A)92</item>
-        <!--172--><item>A)5</item>
-        <!--173--><item>A)3760</item>
-        <!--174--><item>A)7</item>
-        <!--175--><item>A)70</item>
-        <!--176--><item>A)37</item>
-        <!--177--><item>A)11</item>
-        <!--178--><item>A)10</item>
-        <!--179--><item>A)16</item>
-        <!--180--><item>A)45</item>
-        <!--181--><item>A)40</item>
-        <!--182--><item>A)6</item>
-        <!--183--><item>A)60</item>
-        <!--184--><item>A)5</item>
-        <!--185--><item>A)23</item>
-        <!--186--><item>A)18</item>
-        <!--187--><item>A)9</item>
-        <!--188--><item>A)108</item>
-        <!--189--><item>A)69</item>
-        <!--190--><item>A)14</item>
-        <!--191--><item>A)125</item>
-        <!--192--><item>A)5</item>
-        <!--193--><item>A)119</item>
-        <!--194--><item>A)11</item>
-        <!--195--><item>A)15</item>
-        <!--196--><item>A)K</item>
-        <!--197--><item>A)Y</item>
-        <!--198--><item>A)I</item>
-        <!--199--><item>A)L</item>
-        <!--200--><item>A)B</item>
-        <!--201--><item>A)H</item>
-        <!--202--><item>A)T</item>
-        <!--203--><item>A)K</item>
-        <!--204--><item>A)X</item>
-        <!--205--><item>A)21</item>
-        <!--206--><item>A)48</item>
-        <!--207--><item>A)18</item>
-        <!--208--><item>A)16</item>
-        <!--209--><item>A)46</item>
-        <!--210--><item>A)3</item>
-        <!--211--><item>A)</item>
-        <!--212--><item>A)La columna 1</item>
-        <!--213--><item>A)18:55</item>
-        <!--214--><item>A)</item>
-        <!--215--><item>A)31/44</item>
-        <!--216--><item>A)22</item>
-        <!--217--><item>A)4/1</item>
-        <!--218--><item>A)I</item>
-        <!--219--><item>A)43</item>
-        <!--220--><item>A)104</item>
-        <!--221--><item>A)87</item>
-        <!--222--><item>A)22</item>
-        <!--223--><item>A)11/120</item>
-        <!--224--><item>A)5/1</item>
-        <!--225--><item>A)3/3</item>
+        <!--001-->
+        <item>A)4/4</item>
+        <!--002-->
+        <item>A)</item>
+        <!--003-->
+        <item>A)</item>
+        <!--004-->
+        <item>A)/3</item>
+        <!--005-->
+        <item>A)</item>
+        <!--006-->
+        <item>A)</item>
+        <!--007-->
+        <item>A)</item>
+        <!--008-->
+        <item>A)</item>
+        <!--009-->
+        <item>A)</item>
+        <!--010-->
+        <item>A)</item>
+        <!--011-->
+        <item>A)5/0</item>
+        <!--012-->
+        <item>A)</item>
+        <!--013-->
+        <item>A)2/6</item>
+        <!--014-->
+        <item>A)</item>
+        <!--015-->
+        <item>A)</item>
+        <!--016-->
+        <item>A)</item>
+        <!--017-->
+        <item>A)x10</item>
+        <!--018-->
+        <item>A)5/3</item>
+        <!--019-->
+        <item>A)</item>
+        <!--020-->
+        <item>A)</item>
     </array>
-    
+
     <array name="resBabstrapto">
-        <!--001--><item>B)4/5</item>
-        <!--002--><item>B)</item>
-        <!--003--><item>B)</item>
-        <!--004--><item>B)x4</item>
-        <!--005--><item>B)</item>
-		<!--006--><item>B)</item>
-        <!--007--><item>B)</item>
-        <!--008--><item>B)</item>
-        <!--009--><item>B)</item>
-        <!--010--><item>B)</item>
-        <!--011--><item>B)3/0</item>
-        <!--012--><item>B)</item>
-        <!--013--><item>B)3/6</item>
-        <!--014--><item>B)</item>
-        <!--015--><item>B)</item>
-        <!--016--><item>B)</item>
-        <!--017--><item>B)/110</item>
-        <!--018--><item>B)3/5</item>
-        <!--019--><item>B)</item>
-        <!--020--><item>B)</item>
-		<!--021--><item>B)1/2</item>
-        <!--022--><item>B)</item>
-        <!--023--><item>B)</item>
-        <!--024--><item>B)</item>
-        <!--025--><item>B)3/2</item>
-        <!--026--><item>B)</item>
-        <!--027--><item>B)</item>
-        <!--028--><item>B)1/6</item>
-        <!--029--><item>B)4/1</item>
-        <!--030--><item>B)</item>
-        <!--031--><item>B)1/5</item>
-        <!--032--><item>B)</item>
-        <!--033--><item>B)1/3</item>
-        <!--034--><item>B)</item>
-        <!--035--><item>B)</item>
-        <!--036--><item>B)5/2</item>
-        <!--037--><item>B)</item>
-        <!--038--><item>B)3/0</item>
-        <!--039--><item>B)3/3</item>
-        <!--040--><item>B)</item>
-        <!--041--><item>B)</item>
-        <!--042--><item>B)</item>
-        <!--043--><item>B)</item>
-        <!--044--><item>B)</item>
-        <!--045--><item>B)1</item>
-        <!--046--><item>B)4/5</item>
-        <!--047--><item>B)</item>
-        <!--048--><item>B)</item>
-        <!--049--><item>B)1/5</item>
-        <!--050--><item>B)1/4</item>
-        <!--051--><item>B)</item>
-        <!--052--><item>B)4/2</item>
-        <!--053--><item>B)</item>
-        <!--054--><item>B)5/2</item>
-        <!--055--><item>B)</item>
-        <!--056--><item>B)4/0</item>
-        <!--057--><item>B)</item>
-        <!--058--><item>B)</item>
-        <!--059--><item>B)</item>
-        <!--060--><item>B)4/2</item>
-        <!--061--><item>B)6/4</item>
-        <!--062--><item>B)</item>
-        <!--063--><item>B)</item>
-        <!--064--><item>B)0/1</item>
-        <!--065--><item>B)</item>
-        <!--066--><item>B)3/4</item>
-        <!--067--><item>B)1/0</item>
-        <!--068--><item>B)</item>
-        <!--069--><item>B)4/3</item>
-        <!--070--><item>B)</item>
-        <!--071--><item>B)</item>
-        <!--072--><item>B)</item>
-        <!--073--><item>B)5/6</item>
-        <!--074--><item>B)</item>
-        <!--075--><item>B)4/4</item>
-        <!--076--><item>B)</item>
-        <!--077--><item>B)</item>
-        <!--078--><item>B)1/4</item>
-        <!--079--><item>B)4/2</item>
-        <!--080--><item>B)</item>
-        <!--081--><item>B)0/6</item>
-        <!--082--><item>B)0/4</item>
-        <!--083--><item>B)</item>
-        <!--084--><item>B)5/2</item>
-        <!--085--><item>B)</item>
-        <!--086--><item>B)1/4</item>
-        <!--087--><item>B)4/2</item>
-        <!--088--><item>B)</item>
-        <!--089--><item>B)3/4</item>
-        <!--090--><item>B)</item>
-        <!--091--><item>B)3/6</item>
-        <!--092--><item>B)</item>
-        <!--093--><item>B)4/4</item>
-        <!--094--><item>B)3/0</item>
-        <!--095--><item>B)</item>
-        <!--096--><item>B)4/0</item>
-        <!--097--><item>B)</item>
-        <!--098--><item>B)1/1</item>
-        <!--099--><item>B)</item>
-        <!--100--><item>B)5/3</item>
-        <!--101--><item>B)</item>
-        <!--102--><item>B)</item>
-        <!--103--><item>B)</item>
-        <!--104--><item>B)</item>
-        <!--105--><item>B)</item>
-        <!--106--><item>B)</item>
-        <!--107--><item>B)</item>
-        <!--108--><item>B)</item>
-        <!--109--><item>B)</item>
-        <!--110--><item>B)</item>
-        <!--111--><item>B)</item>
-        <!--112--><item>B)</item>
-        <!--113--><item>B)</item>
-        <!--114--><item>B)0/5</item>
-        <!--115--><item>B)5/6</item>
-        <!--116--><item>B)3/6</item>
-        <!--117--><item>B)0/2</item>
-        <!--118--><item>B)5/6</item>
-        <!--119--><item>B)6/0</item>
-        <!--120--><item>B)4/5</item>
-        <!--121--><item>B)</item>
-        <!--122--><item>B)</item>
-        <!--123--><item>B)</item>
-        <!--124--><item>B)</item>
-        <!--125--><item>B)</item>
-        <!--126--><item>B)</item>
-        <!--127--><item>B)</item>
-        <!--128--><item>B)</item>
-        <!--129--><item>B)</item>
-        <!--130--><item>B)</item>
-        <!--131--><item>B)</item>
-        <!--132--><item>B)</item>
-        <!--133--><item>B)</item>
-        <!--134--><item>B)</item>
-        <!--135--><item>B)</item>
-        <!--136--><item>B)</item>
-        <!--137--><item>B)</item>
-        <!--138--><item>B)</item>
-        <!--139--><item>B)</item>
-        <!--140--><item>B)32</item>
-        <!--141--><item>B)211</item>
-        <!--142--><item>B)40</item>
-        <!--143--><item>B)40</item>
-        <!--144--><item>B)54 60</item>
-        <!--145--><item>B)5 0</item>
-        <!--146--><item>B)11</item>
-        <!--147--><item>B)89</item>
-        <!--148--><item>B)64, 64</item>
-        <!--149--><item>B)23</item>
-        <!--150--><item>B)15</item>
-        <!--151--><item>B)20</item>
-        <!--152--><item>B)16</item>
-        <!--153--><item>B)5</item>
-        <!--154--><item>B)32</item>
-        <!--155--><item>B)5</item>
-        <!--156--><item>B)890</item>
-        <!--157--><item>B)7</item>
-        <!--158--><item>B)10</item>
-        <!--159--><item>B)15</item>
-        <!--160--><item>B)16</item>
-        <!--161--><item>B)22</item>
-        <!--162--><item>B)13</item>
-        <!--163--><item>B)15</item>
-        <!--164--><item>B)X</item>
-        <!--165--><item>B)Q</item>
-        <!--166--><item>B)X</item>
-        <!--167--><item>B)H</item>
-        <!--168--><item>B)C</item>
-        <!--169--><item>B)2</item>
-        <!--170--><item>B)21</item>
-        <!--171--><item>B)240</item>
-        <!--172--><item>B)7</item>
-        <!--173--><item>B)5430</item>
-        <!--174--><item>B)2</item>
-        <!--175--><item>B)69</item>
-        <!--176--><item>B)32</item>
-        <!--177--><item>B)15</item>
-        <!--178--><item>B)16</item>
-        <!--179--><item>B)68</item>
-        <!--180--><item>B)25</item>
-        <!--181--><item>B)54</item>
-        <!--182--><item>B)16</item>
-        <!--183--><item>B)48</item>
-        <!--184--><item>B)9</item>
-        <!--185--><item>B)22</item>
-        <!--186--><item>B)17</item>
-        <!--187--><item>B)25</item>
-        <!--188--><item>B)61</item>
-        <!--189--><item>B)52</item>
-        <!--190--><item>B)32</item>
-        <!--191--><item>B)100</item>
-        <!--192--><item>B)16</item>
-        <!--193--><item>B)221</item>
-        <!--194--><item>B)17</item>
-        <!--195--><item>B)19</item>
-        <!--196--><item>B)Ñ</item>
-        <!--197--><item>B)Z</item>
-        <!--198--><item>B)A</item>
-        <!--199--><item>B)K</item>
-        <!--200--><item>B)A</item>
-        <!--201--><item>B)F</item>
-        <!--202--><item>B)R</item>
-        <!--203--><item>B)T</item>
-        <!--204--><item>B)A</item>
-        <!--205--><item>B)17</item>
-        <!--206--><item>B)4</item>
-        <!--207--><item>B)5</item>
-        <!--208--><item>B)33</item>
-        <!--209--><item>B)39</item>
-        <!--210--><item>B)4</item>
-        <!--211--><item>B)</item>
-        <!--212--><item>B)La columna 2</item>
-        <!--213--><item>B)19:35</item>
-        <!--214--><item>B)</item>
-        <!--215--><item>B)35/35</item>
-        <!--216--><item>B)14</item>
-        <!--217--><item>B)1/2</item>
-        <!--218--><item>B)K</item>
-        <!--219--><item>B)39</item>
-        <!--220--><item>B)56</item>
-        <!--221--><item>B)96</item>
-        <!--222--><item>B)13,6</item>
-        <!--223--><item>B)20/120</item>
-        <!--224--><item>B)3/3</item>
-        <!--225--><item>B)5/3</item>
+        <!--001-->
+        <item>B)4/5</item>
+        <!--002-->
+        <item>B)</item>
+        <!--003-->
+        <item>B)</item>
+        <!--004-->
+        <item>B)x4</item>
+        <!--005-->
+        <item>B)</item>
+        <!--006-->
+        <item>B)</item>
+        <!--007-->
+        <item>B)</item>
+        <!--008-->
+        <item>B)</item>
+        <!--009-->
+        <item>B)</item>
+        <!--010-->
+        <item>B)</item>
+        <!--011-->
+        <item>B)3/0</item>
+        <!--012-->
+        <item>B)</item>
+        <!--013-->
+        <item>B)3/6</item>
+        <!--014-->
+        <item>B)</item>
+        <!--015-->
+        <item>B)</item>
+        <!--016-->
+        <item>B)</item>
+        <!--017-->
+        <item>B)/110</item>
+        <!--018-->
+        <item>B)3/5</item>
+        <!--019-->
+        <item>B)</item>
+        <!--020-->
+        <item>B)</item>
     </array>
-    
+
     <array name="resCabstrapto">
-        <!--001--><item>C)4/0</item>
-        <!--002--><item>C)</item>
-        <!--003--><item>C)</item>
-        <!--004--><item>C)x2</item>
-        <!--005--><item>C)</item>
-		<!--006--><item>C)</item>
-        <!--007--><item>C)</item>
-        <!--008--><item>C)</item>
-        <!--009--><item>C)</item>
-        <!--010--><item>C)</item>
-        <!--011--><item>C)4/0</item>
-        <!--012--><item>C)</item>
-        <!--013--><item>C)0/6</item>
-        <!--014--><item>C)</item>
-        <!--015--><item>C)</item>
-        <!--016--><item>C)</item>
-        <!--017--><item>C)/50</item>
-        <!--018--><item>C)6/3</item>
-        <!--019--><item>C)</item>
-        <!--020--><item>C)</item>
-		<!--021--><item>C)2/0</item>
-        <!--022--><item>C)</item>
-        <!--023--><item>C)</item>
-        <!--024--><item>C)</item>
-        <!--025--><item>C)1/3</item>
-        <!--026--><item>C)</item>
-        <!--027--><item>C)</item>
-        <!--028--><item>C)2/2</item>
-        <!--029--><item>C)3/3</item>
-        <!--030--><item>C)</item>
-        <!--031--><item>C)6/2</item>
-        <!--032--><item>C)</item>
-        <!--033--><item>C)2/4</item>
-        <!--034--><item>C)</item>
-        <!--035--><item>C)</item>
-        <!--036--><item>C)4/2</item>
-        <!--037--><item>C)</item>
-        <!--038--><item>C)4/0</item>
-        <!--039--><item>C)4/1</item>
-        <!--040--><item>C)</item>
-        <!--041--><item>C)</item>
-        <!--042--><item>C)</item>
-        <!--043--><item>C)</item>
-        <!--044--><item>C)</item>
-        <!--045--><item>C)5</item>
-        <!--046--><item>C)2/4</item>
-        <!--047--><item>C)</item>
-        <!--048--><item>C)</item>
-        <!--049--><item>C)0/0</item>
-        <!--050--><item>C)1/0</item>
-        <!--051--><item>C)</item>
-        <!--052--><item>C)4/4</item>
-        <!--053--><item>C)</item>
-        <!--054--><item>C)2/2</item>
-        <!--055--><item>C)</item>
-        <!--056--><item>C)3/2</item>
-        <!--057--><item>C)</item>
-        <!--058--><item>C)</item>
-        <!--059--><item>C)</item>
-        <!--060--><item>C)4/6</item>
-        <!--061--><item>C)4/5</item>
-        <!--062--><item>C)</item>
-        <!--063--><item>C)</item>
-        <!--064--><item>C)3/2</item>
-        <!--065--><item>C)</item>
-        <!--066--><item>C)3/1</item>
-        <!--067--><item>C)0/0</item>
-        <!--068--><item>C)</item>
-        <!--069--><item>C)4/0</item>
-        <!--070--><item>C)</item>
-        <!--071--><item>C)</item>
-        <!--072--><item>C)</item>
-        <!--073--><item>C)6/0</item>
-        <!--074--><item>C)</item>
-        <!--075--><item>C)4/6</item>
-        <!--076--><item>C)</item>
-        <!--077--><item>C)</item>
-        <!--078--><item>C)0/2</item>
-        <!--079--><item>C)2/3</item>
-        <!--080--><item>C)</item>
-        <!--081--><item>C)5/4</item>
-        <!--082--><item>C)6/4</item>
-        <!--083--><item>C)</item>
-        <!--084--><item>C)4/3</item>
-        <!--085--><item>C)</item>
-        <!--086--><item>C)5/0</item>
-        <!--087--><item>C)4/4</item>
-        <!--088--><item>C)</item>
-        <!--089--><item>C)0/6</item>
-        <!--090--><item>C)</item>
-        <!--091--><item>C)3/2</item>
-        <!--092--><item>C)</item>
-        <!--093--><item>C)5/3</item>
-        <!--094--><item>C)3/4</item>
-        <!--095--><item>C)</item>
-        <!--096--><item>C)3/0</item>
-        <!--097--><item>C)</item>
-        <!--098--><item>C)2/1</item>
-        <!--099--><item>C)</item>
-        <!--100--><item>C)4/5</item>
-        <!--101--><item>C)</item>
-        <!--102--><item>C)</item>
-        <!--103--><item>C)</item>
-        <!--104--><item>C)</item>
-        <!--105--><item>C)</item>
-        <!--106--><item>C)</item>
-        <!--107--><item>C)</item>
-        <!--108--><item>C)</item>
-        <!--109--><item>C)</item>
-        <!--110--><item>C)</item>
-        <!--111--><item>C)</item>
-        <!--112--><item>C)</item>
-        <!--113--><item>C)</item>
-        <!--114--><item>C)5/0</item>
-        <!--115--><item>C)4/0</item>
-        <!--116--><item>C)3/0</item>
-        <!--117--><item>C)0/3</item>
-        <!--118--><item>C)6/6</item>
-        <!--119--><item>C)0/1</item>
-        <!--120--><item>C)0/3</item>
-        <!--121--><item>C)</item>
-        <!--122--><item>C)</item>
-        <!--123--><item>C)</item>
-        <!--124--><item>C)</item>
-        <!--125--><item>C)</item>
-        <!--126--><item>C)</item>
-        <!--127--><item>C)</item>
-        <!--128--><item>C)</item>
-        <!--129--><item>C)</item>
-        <!--130--><item>C)</item>
-        <!--131--><item>C)</item>
-        <!--132--><item>C)</item>
-        <!--133--><item>C)</item>
-        <!--134--><item>C)</item>
-        <!--135--><item>C)</item>
-        <!--136--><item>C)</item>
-        <!--137--><item>C)</item>
-        <!--138--><item>C)</item>
-        <!--139--><item>C)</item>
-        <!--140--><item>C)26</item>
-        <!--141--><item>C)209</item>
-        <!--142--><item>C)25</item>
-        <!--143--><item>C)96</item>
-        <!--144--><item>C)58 64</item>
-        <!--145--><item>C)0 5</item>
-        <!--146--><item>C)10</item>
-        <!--147--><item>C)90</item>
-        <!--148--><item>C)64, 76</item>
-        <!--149--><item>C)21</item>
-        <!--150--><item>C)16</item>
-        <!--151--><item>C)21</item>
-        <!--152--><item>C)15</item>
-        <!--153--><item>C)8</item>
-        <!--154--><item>C)16</item>
-        <!--155--><item>C)9</item>
-        <!--156--><item>C)578</item>
-        <!--157--><item>C)6</item>
-        <!--158--><item>C)11</item>
-        <!--159--><item>C)16</item>
-        <!--160--><item>C)25</item>
-        <!--161--><item>C)12</item>
-        <!--162--><item>C)15</item>
-        <!--163--><item>C)15,5</item>
-        <!--164--><item>C)W</item>
-        <!--165--><item>C)R</item>
-        <!--166--><item>C)I</item>
-        <!--167--><item>C)F</item>
-        <!--168--><item>C)B</item>
-        <!--169--><item>C)3</item>
-        <!--170--><item>C)26</item>
-        <!--171--><item>C)188</item>
-        <!--172--><item>C)9</item>
-        <!--173--><item>C)1885</item>
-        <!--174--><item>C)3</item>
-        <!--175--><item>C)71</item>
-        <!--176--><item>C)39</item>
-        <!--177--><item>C)16</item>
-        <!--178--><item>C)12</item>
-        <!--179--><item>C)25</item>
-        <!--180--><item>C)32</item>
-        <!--181--><item>C)39</item>
-        <!--182--><item>C)9</item>
-        <!--183--><item>C)24</item>
-        <!--184--><item>C)12</item>
-        <!--185--><item>C)25</item>
-        <!--186--><item>C)16</item>
-        <!--187--><item>C)34</item>
-        <!--188--><item>C)56</item>
-        <!--189--><item>C)72</item>
-        <!--190--><item>C)24</item>
-        <!--191--><item>C)90</item>
-        <!--192--><item>C)8</item>
-        <!--193--><item>C)145</item>
-        <!--194--><item>C)9</item>
-        <!--195--><item>C)16</item>
-        <!--196--><item>C)M</item>
-        <!--197--><item>C)A</item>
-        <!--198--><item>C)H</item>
-        <!--199--><item>C)J</item>
-        <!--200--><item>C)C</item>
-        <!--201--><item>C)G</item>
-        <!--202--><item>C)S</item>
-        <!--203--><item>C)L</item>
-        <!--204--><item>C)Z</item>
-        <!--205--><item>C)37</item>
-        <!--206--><item>C)36</item>
-        <!--207--><item>C)15</item>
-        <!--208--><item>C)12</item>
-        <!--209--><item>C)47</item>
-        <!--210--><item>C)2</item>
-        <!--211--><item>C)</item>
-        <!--212--><item>C)La columna 3</item>
-        <!--213--><item>C)17:45</item>
-        <!--214--><item>C)</item>
-        <!--215--><item>C)36/42</item>
-        <!--216--><item>C)26</item>
-        <!--217--><item>C)3/2</item>
-        <!--218--><item>C)B</item>
-        <!--219--><item>C)32</item>
-        <!--220--><item>C)82</item>
-        <!--221--><item>C)69</item>
-        <!--222--><item>C)15,2</item>
-        <!--223--><item>C)17/120</item>
-        <!--224--><item>C)1/3</item>
-        <!--225--><item>C)5/2</item>
+        <!--001-->
+        <item>C)4/0</item>
+        <!--002-->
+        <item>C)</item>
+        <!--003-->
+        <item>C)</item>
+        <!--004-->
+        <item>C)x2</item>
+        <!--005-->
+        <item>C)</item>
+        <!--006-->
+        <item>C)</item>
+        <!--007-->
+        <item>C)</item>
+        <!--008-->
+        <item>C)</item>
+        <!--009-->
+        <item>C)</item>
+        <!--010-->
+        <item>C)</item>
+        <!--011-->
+        <item>C)4/0</item>
+        <!--012-->
+        <item>C)</item>
+        <!--013-->
+        <item>C)0/6</item>
+        <!--014-->
+        <item>C)</item>
+        <!--015-->
+        <item>C)</item>
+        <!--016-->
+        <item>C)</item>
+        <!--017-->
+        <item>C)/50</item>
+        <!--018-->
+        <item>C)6/3</item>
+        <!--019-->
+        <item>C)</item>
+        <!--020-->
+        <item>C)</item>
     </array>
-    
+
     <array name="resDabstrapto">
-        <!--001--><item>D)1/0</item>
-        <!--002--><item>D)</item>
-        <!--003--><item>D)</item>
-        <!--004--><item>D)-4</item>
-        <!--005--><item>D)</item>
-		<!--006--><item>D)</item>
-        <!--007--><item>D)</item>
-        <!--008--><item>D)</item>
-        <!--009--><item>D)</item>
-        <!--010--><item>D)</item>
-        <!--011--><item>D)1/0</item>
-        <!--012--><item>D)</item>
-        <!--013--><item>D)5/6</item>
-        <!--014--><item>D)</item>
-        <!--015--><item>D)</item>
-        <!--016--><item>D)</item>
-        <!--017--><item>D)-540</item>
-        <!--018--><item>D)2/3</item>
-        <!--019--><item />
-        <!--020--><item>D)</item>
-		<!--021--><item>D)0/2</item>
-        <!--022--><item />
-        <!--023--><item>D)</item>
-        <!--024--><item>D)</item>
-        <!--025--><item>D)2/3</item>
-        <!--026--><item>D)</item>
-        <!--027--><item>D)</item>
-        <!--028--><item>D)6/1</item>
-        <!--029--><item>D)1/4</item>
-        <!--030--><item>D)</item>
-        <!--031--><item>D)3/6</item>
-        <!--032--><item>D)</item>
-        <!--033--><item>D)3/6</item>
-        <!--034--><item>D)</item>
-        <!--035--><item>D)</item>
-        <!--036--><item>D)3/4</item>
-        <!--037--><item>D)</item>
-        <!--038--><item>D)1/0</item>
-        <!--039--><item>D)3/0</item>
-        <!--040--><item>D)</item>
-        <!--041--><item>D)</item>
-        <!--042--><item>D)</item>
-        <!--043--><item>D)</item>
-        <!--044--><item>D)</item>
-        <!--045--><item>D)3</item>
-        <!--046--><item>D)4/6</item>
-        <!--047--><item>D)</item>
-        <!--048--><item>D)</item>
-        <!--049--><item>D)3/5</item>
-        <!--050--><item>D)2/3</item>
-        <!--051--><item>D)</item>
-        <!--052--><item>D)2/3</item>
-        <!--053--><item>D)</item>
-        <!--054--><item>D)2/5</item>
-        <!--055--><item>D)</item>
-        <!--056--><item>D)5/6</item>
-        <!--057--><item>D)</item>
-        <!--058--><item>D)</item>
-        <!--059--><item>D)</item>
-        <!--060--><item>D)3/2</item>
-        <!--061--><item>D)0/5</item>
-        <!--062--><item>D)</item>
-        <!--063--><item>D)</item>
-        <!--064--><item>D)3/4</item>
-        <!--065--><item>D)</item>
-        <!--066--><item>D)1/3</item>
-        <!--067--><item>D)0/2</item>
-        <!--068--><item>D)</item>
-        <!--069--><item>D)3/4</item>
-        <!--070--><item>D)</item>
-        <!--071--><item>D)</item>
-        <!--072--><item>D)</item>
-        <!--073--><item>D)6/2</item>
-        <!--074--><item>D)</item>
-        <!--075--><item>D)0/0</item>
-        <!--076--><item>D)</item>
-        <!--077--><item>D)</item>
-        <!--078--><item>D)1/1</item>
-        <!--079--><item>D)2/4</item>
-        <!--080--><item>D)</item>
-        <!--081--><item>D)0/4</item>
-        <!--082--><item>D)4/0</item>
-        <!--083--><item>D)</item>
-        <!--084--><item>D)5/1</item>
-        <!--085--><item>D)</item>
-        <!--086--><item>D)0/5</item>
-        <!--087--><item>D)4/1</item>
-        <!--088--><item>D)</item>
-        <!--089--><item>D)2/0</item>
-        <!--090--><item>D)</item>
-        <!--091--><item>D)2/1</item>
-        <!--092--><item>D)</item>
-        <!--093--><item>D)4/3</item>
-        <!--094--><item>D)1/2</item>
-        <!--095--><item>D)</item>
-        <!--096--><item>D)1/3</item>
-        <!--097--><item>D)</item>
-        <!--098--><item>D)1/2</item>
-        <!--099--><item>D)</item>
-        <!--100--><item>D)5/2</item>
-        <!--101--><item>D)</item>
-        <!--102--><item>D)</item>
-        <!--103--><item>D)</item>
-        <!--104--><item>D)</item>
-        <!--105--><item>D)</item>
-        <!--106--><item>D)</item>
-        <!--107--><item>D)</item>
-        <!--108--><item>D)</item>
-        <!--109--><item>D)</item>
-        <!--110--><item>D)</item>
-        <!--111--><item>D)</item>
-        <!--112--><item>D)</item>
-        <!--113--><item>D)</item>
-        <!--114--><item>D)1/5</item>
-        <!--115--><item>D)3/6</item>
-        <!--116--><item>D)0/3</item>
-        <!--117--><item>D)0/4</item>
-        <!--118--><item>D)4/1</item>
-        <!--119--><item>D)2/2</item>
-        <!--120--><item>D)4/6</item>
-        <!--121--><item>D)</item>
-        <!--122--><item>D)</item>
-        <!--123--><item>D)</item>
-        <!--124--><item>D)</item>
-        <!--125--><item>D)</item>
-        <!--126--><item>D)</item>
-        <!--127--><item>D)</item>
-        <!--128--><item>D)</item>
-        <!--129--><item>D)</item>
-        <!--130--><item>D)</item>
-        <!--131--><item>D)</item>
-        <!--132--><item>D)</item>
-        <!--133--><item>D)</item>
-        <!--134--><item>D)</item>
-        <!--135--><item>D)</item>
-        <!--136--><item>D)</item>
-        <!--137--><item>D)</item>
-        <!--138--><item>D)</item>
-        <!--139--><item>D)</item>
-        <!--140--><item>D)27</item>
-        <!--141--><item>D)208</item>
-        <!--142--><item>D)30</item>
-        <!--143--><item>D)36</item>
-        <!--144--><item>D)56 62</item>
-        <!--145--><item>D)1 5</item>
-        <!--146--><item>D)12</item>
-        <!--147--><item>D)88</item>
-        <!--148--><item>D)52, 54</item>
-        <!--149--><item>D)24</item>
-        <!--150--><item>D)17</item>
-        <!--151--><item>D)22</item>
-        <!--152--><item>D)13</item>
-        <!--153--><item>D)6</item>
-        <!--154--><item>D)18</item>
-        <!--155--><item>D)6</item>
-        <!--156--><item>D)678</item>
-        <!--157--><item>D)21</item>
-        <!--158--><item>D)8</item>
-        <!--159--><item>D)17</item>
-        <!--160--><item>D)10</item>
-        <!--161--><item>D)28</item>
-        <!--162--><item>D)14</item>
-        <!--163--><item>D)12,5</item>
-        <!--164--><item>D)Y</item>
-        <!--165--><item>D)S</item>
-        <!--166--><item>D)E</item>
-        <!--167--><item>D)E</item>
-        <!--168--><item>D)Z</item>
-        <!--169--><item>D)4</item>
-        <!--170--><item>D)36</item>
-        <!--171--><item>D)54</item>
-        <!--172--><item>D)13</item>
-        <!--173--><item>D)1886</item>
-        <!--174--><item>D)13</item>
-        <!--175--><item>D)68</item>
-        <!--176--><item>D)31</item>
-        <!--177--><item>D)13</item>
-        <!--178--><item>D)15</item>
-        <!--179--><item>D)21</item>
-        <!--180--><item>D)18</item>
-        <!--181--><item>D)33</item>
-        <!--182--><item>D)8</item>
-        <!--183--><item>D)36</item>
-        <!--184--><item>D)4</item>
-        <!--185--><item>D)24</item>
-        <!--186--><item>D)19</item>
-        <!--187--><item>D)12</item>
-        <!--188--><item>D)81</item>
-        <!--189--><item>D)70</item>
-        <!--190--><item>D)12</item>
-        <!--191--><item>D)84</item>
-        <!--192--><item>D)6</item>
-        <!--193--><item>D)125</item>
-        <!--194--><item>D)14</item>
-        <!--195--><item>D)18</item>
-        <!--196--><item>D)O</item>
-        <!--197--><item>D)B</item>
-        <!--198--><item>D)G</item>
-        <!--199--><item>D)H</item>
-        <!--200--><item>D)D</item>
-        <!--201--><item>D)E</item>
-        <!--202--><item>D)U</item>
-        <!--203--><item>D)B</item>
-        <!--204--><item>D)D</item>
-        <!--205--><item>D)43</item>
-        <!--206--><item>D)144</item>
-        <!--207--><item>D)51</item>
-        <!--208--><item>D)14</item>
-        <!--209--><item>D)35</item>
-        <!--210--><item>D)7</item>
-        <!--211--><item>D)</item>
-        <!--212--><item></item>
-        <!--213--><item>D)18:45</item>
-        <!--214--><item>D)</item>
-        <!--215--><item>D)31/35</item>
-        <!--216--><item>D)18</item>
-        <!--217--><item>D)1/1</item>
-        <!--218--><item>D)L</item>
-        <!--219--><item>D)35</item>
-        <!--220--><item>D)84</item>
-        <!--221--><item>D)78</item>
-        <!--222--><item>D)14</item>
-        <!--223--><item>D)8/120</item>
-        <!--224--><item>D)2/2</item>
-        <!--225--><item>D)3/2</item>
+        <!--001-->
+        <item>D)1/0</item>
+        <!--002-->
+        <item>D)</item>
+        <!--003-->
+        <item>D)</item>
+        <!--004-->
+        <item>D)-4</item>
+        <!--005-->
+        <item>D)</item>
+        <!--006-->
+        <item>D)</item>
+        <!--007-->
+        <item>D)</item>
+        <!--008-->
+        <item>D)</item>
+        <!--009-->
+        <item>D)</item>
+        <!--010-->
+        <item>D)</item>
+        <!--011-->
+        <item>D)1/0</item>
+        <!--012-->
+        <item>D)</item>
+        <!--013-->
+        <item>D)5/6</item>
+        <!--014-->
+        <item>D)</item>
+        <!--015-->
+        <item>D)</item>
+        <!--016-->
+        <item>D)</item>
+        <!--017-->
+        <item>D)-540</item>
+        <!--018-->
+        <item>D)2/3</item>
+        <!--019-->
+        <item />
+        <!--020-->
+        <item>D)</item>
     </array>
-    
+
     <array name="solabstrapto">
-        <!--001--><item>B)4/5</item>
-        <!--002--><item>B)</item>
-        <!--003--><item>C)</item>
-        <!--004--><item>C)x2</item>
-        <!--005--><item>A)</item>
-		<!--006--><item>C)</item>
-        <!--007--><item>B)</item>
-        <!--008--><item>D)</item>
-        <!--009--><item>A)</item>
-        <!--010--><item>C)</item>
-        <!--011--><item>B)3/0</item>
-        <!--012--><item>C)</item>
-        <!--013--><item>B)3/6</item>
-        <!--014--><item>C)</item>
-        <!--015--><item>B)Abajo</item>
-        <!--016--><item>D)</item>
-        <!--017--><item>C)/50</item>
-        <!--018--><item>A)5/3</item>
-        <!--019--><item>C)</item>
-        <!--020--><item>C)</item>
-		<!--021--><item>D)0/2</item>
-        <!--022--><item>C)</item>
-        <!--023--><item>B)</item>
-        <!--024--><item>D)</item>
-        <!--025--><item>B)3/2</item>
-        <!--026--><item>B)</item>
-        <!--027--><item>C)</item>
-        <!--028--><item>D)6/1</item>
-        <!--029--><item>B)4/1</item>
-        <!--030--><item>D)</item>
-        <!--031--><item>A)1/6</item>
-        <!--032--><item>B)</item>
-        <!--033--><item>A)0/3</item>
-        <!--034--><item>D)</item>
-        <!--035--><item>C)</item>
-        <!--036--><item>B)5/2</item>
-        <!--037--><item>B)</item>
-        <!--038--><item>C)4/0</item>
-        <!--039--><item>D)3/0</item>
-        <!--040--><item>C)</item>
-        <!--041--><item>D)</item>
-        <!--042--><item>B)</item>
-        <!--043--><item>B)</item>
-        <!--044--><item>D)</item>
-        <!--045--><item>A)2</item>
-        <!--046--><item>B)4/5</item>
-        <!--047--><item>D)</item>
-        <!--048--><item>C)</item>
-        <!--049--><item>A)3/2</item>
-        <!--050--><item>C)1/0</item>
-        <!--051--><item>D)</item>
-        <!--052--><item>B)4/2</item>
-        <!--053--><item>B)</item>
-        <!--054--><item>C)2/2</item>
-        <!--055--><item>D)</item>
-        <!--056--><item>B)4/0</item>
-        <!--057--><item>C)</item>
-        <!--058--><item>A)</item>
-        <!--059--><item>D)</item>
-        <!--060--><item>B)4/2</item>
-        <!--061--><item>C)4/5</item>
-        <!--062--><item>D)</item>
-        <!--063--><item>D)</item>
-        <!--064--><item>A)4/3</item>
-        <!--065--><item>B)</item>
-        <!--066--><item>B)3/4</item>
-        <!--067--><item>A)2/0</item>
-        <!--068--><item>C)</item>
-        <!--069--><item>D)3/4</item>
-        <!--070--><item>C)</item>
-        <!--071--><item>B)</item>
-        <!--072--><item>A)</item>
-        <!--073--><item>C)6/0</item>
-        <!--074--><item>D)</item>
-        <!--075--><item>A)5/6</item>
-        <!--076--><item>C)</item>
-        <!--077--><item>B)</item>
-        <!--078--><item>A)0/1</item>
-        <!--079--><item>D)2/4</item>
-        <!--080--><item>B)</item>
-        <!--081--><item>A)5/6</item>
-        <!--082--><item>B)0/4</item>
-        <!--083--><item>C)</item>
-        <!--084--><item>A)5/3</item>
-        <!--085--><item>A)</item>
-        <!--086--><item>C)5/0</item>
-        <!--087--><item>D)4/1</item>
-        <!--088--><item>B)</item>
-        <!--089--><item>A)0/3</item>
-        <!--090--><item>D)</item>
-        <!--091--><item>B)3/6</item>
-        <!--092--><item>B)</item>
-        <!--093--><item>B)4/4</item>
-        <!--094--><item>A)3/2</item>
-        <!--095--><item>C)</item>
-        <!--096--><item>C)3/0</item>
-        <!--097--><item>D)</item>
-        <!--098--><item>B)1/1</item>
-        <!--099--><item>C)</item>
-        <!--100--><item>D)5/2</item>
-        <!--101--><item>D)</item>
-        <!--102--><item>B)</item>
-        <!--103--><item>A)</item>
-        <!--104--><item>B)</item>
-        <!--105--><item>D)</item>
-        <!--106--><item>B)</item>
-        <!--107--><item>B)</item>
-        <!--108--><item>B)</item>
-        <!--109--><item>D)</item>
-        <!--110--><item>D)</item>
-        <!--111--><item>B)</item>
-        <!--112--><item>C)</item>
-        <!--113--><item>B)</item>
-        <!--114--><item>A)0/3</item>
-        <!--115--><item>B)5/6</item>
-        <!--116--><item>B)3/6</item>
-        <!--117--><item>B)0/2</item>
-        <!--118--><item>C)6/6</item>
-        <!--119--><item>B)6/0</item>
-        <!--120--><item>D)4/6</item>
-        <!--121--><item>B)</item>
-        <!--122--><item>B)</item>
-        <!--123--><item>B)</item>
-        <!--124--><item>D)</item>
-        <!--125--><item>D)</item>
-        <!--126--><item>B)</item>
-        <!--127--><item>A)</item>
-        <!--128--><item>D)</item>
-        <!--129--><item>A)</item>
-        <!--130--><item>D)</item>
-        <!--131--><item>B)</item>
-        <!--132--><item>D)</item>
-        <!--133--><item>B)</item>
-        <!--134--><item>B)</item>
-        <!--135--><item>A)</item>
-        <!--136--><item>C)</item>
-        <!--137--><item>C)</item>
-        <!--138--><item>A)</item>
-        <!--139--><item>B)</item>
-        <!--140--><item>D)27</item>
-        <!--141--><item>A)210</item>
-        <!--142--><item>C)25</item>
-        <!--143--><item>B)40</item>
-        <!--144--><item>D)56 62</item>
-        <!--145--><item>D)1 5</item>
-        <!--146--><item>B)11</item>
-        <!--147--><item>A)98</item>
-        <!--148--><item>A)52, 64</item>
-        <!--149--><item>B)23</item>
-        <!--150--><item>C)16</item>
-        <!--151--><item>B)20</item>
-        <!--152--><item>C)15</item>
-        <!--153--><item>A)7</item>
-        <!--154--><item>C)16</item>
-        <!--155--><item>A)8</item>
-        <!--156--><item>D)678</item>
-        <!--157--><item>B)7</item>
-        <!--158--><item>C)11</item>
-        <!--159--><item>C)16</item>
-        <!--160--><item>A)12</item>
-        <!--161--><item>A)11</item>
-        <!--162--><item>A)16</item>
-        <!--163--><item>D)12,5</item>
-        <!--164--><item>B)X</item>
-        <!--165--><item>B)Q</item>
-        <!--166--><item>C)I</item>
-        <!--167--><item>A)J</item>
-        <!--168--><item>C)B</item>
-        <!--169--><item>A)1</item>
-        <!--170--><item>B)21</item>
-        <!--171--><item>B)240</item>
-        <!--172--><item>C)9</item>
-        <!--173--><item>C)1885</item>
-        <!--174--><item>C)3</item>
-        <!--175--><item>A)70</item>
-        <!--176--><item>D)31</item>
-        <!--177--><item>A)11</item>
-        <!--178--><item>C)12</item>
-        <!--179--><item>A)16</item>
-        <!--180--><item>D)18</item>
-        <!--181--><item>C)39</item>
-        <!--182--><item>A)6</item>
-        <!--183--><item>D)36</item>
-        <!--184--><item>B)9</item>
-        <!--185--><item>D)24</item>
-        <!--186--><item>A)18</item>
-        <!--187--><item>B)25</item>
-        <!--188--><item>C)56</item>
-        <!--189--><item>D)70</item>
-        <!--190--><item>A)14</item>
-        <!--191--><item>B)100</item>
-        <!--192--><item>D)6</item>
-        <!--193--><item>A)119</item>
-        <!--194--><item>B)17</item>
-        <!--195--><item>D)18</item>
-        <!--196--><item>B)Ñ</item>
-        <!--197--><item>A)Y</item>
-        <!--198--><item>D)G</item>
-        <!--199--><item>C)J</item>
-        <!--200--><item>C)C</item>
-        <!--201--><item>B)F</item>
-        <!--202--><item>C)S</item>
-        <!--203--><item>A)K</item>
-        <!--204--><item>D)D</item>
-        <!--205--><item>D)43</item>
-        <!--206--><item>D)144</item>
-        <!--207--><item>A)18</item>
-        <!--208--><item>B)33</item>
-        <!--209--><item>C)47</item>
-        <!--210--><item>D)7</item>
-        <!--211--><item>C)</item>
-        <!--212--><item>C)La columna 3</item>
-        <!--213--><item>D)18:45</item>
-        <!--214--><item>B)</item>
-        <!--215--><item>B)35/35</item>
-        <!--216--><item>A)22</item>
-        <!--217--><item>D)1/1</item>
-        <!--218--><item>A)I</item>
-        <!--219--><item>D)35</item>
-        <!--220--><item>D)84</item>
-        <!--221--><item>B)96</item>
-        <!--222--><item>D)14</item>
-        <!--223--><item>B)20/120</item>
-        <!--224--><item>D)2/2</item>
-        <!--225--><item>C)5/2</item>
+        <!--001-->
+        <item>B)4/5</item>
+        <!--002-->
+        <item>B)</item>
+        <!--003-->
+        <item>C)</item>
+        <!--004-->
+        <item>C)x2</item>
+        <!--005-->
+        <item>A)</item>
+        <!--006-->
+        <item>C)</item>
+        <!--007-->
+        <item>B)</item>
+        <!--008-->
+        <item>D)</item>
+        <!--009-->
+        <item>A)</item>
+        <!--010-->
+        <item>C)</item>
+        <!--011-->
+        <item>B)3/0</item>
+        <!--012-->
+        <item>C)</item>
+        <!--013-->
+        <item>B)3/6</item>
+        <!--014-->
+        <item>C)</item>
+        <!--015-->
+        <item>B)Abajo</item>
+        <!--016-->
+        <item>D)</item>
+        <!--017-->
+        <item>C)/50</item>
+        <!--018-->
+        <item>A)5/3</item>
+        <!--019-->
+        <item>C)</item>
+        <!--020-->
+        <item>C)</item>
 
-        
     </array>
-    
+
     <array name="expliSolabstrapto">
-        <!--001--><item>Cada dominó impar se va añadiendo +1 en cada número mientras que en cada par se deja el mismo: 1/0.</item>
-        <!--002--><item>Va avanzando la zona pintada hacia la derecha, cuando finaliza, empieza de nuevo.</item>
-        <!--003--><item>La bola va rotando 180º en relación con el que le precede.</item>
-        <!--004--><item>14x2 = 28</item>
-        <!--005--><item>Se va añadiendo un segmento a la línea anterior con el fin de formar una cruz.</item>
-		<!--006--><item>Se van alternando las notas musicales 6 y 4 y también la figura interna.</item>
-        <!--007--><item>Las figuras de la derecha son la suma de las otras dos de la izquierda.</item>
-        <!--008--><item>Las figuras de la derecha son la suma de las otras dos de la izquierda.</item>
-        <!--009--><item>Las bolas de la derecha son el resultado de las multiplicaciones de las de la izquierda.</item>
-        <!--010--><item>Las casillas de la derecha son el resultado de las restas de las casillas de la izquierda.</item>
-        <!--011--><item>Se van alternando +1 y -1.</item>
-        <!--012--><item>Se va añadiendo cada figura alternativamente.</item>
-        <!--013--><item>En la parte de abajo se mantiene con las anteriores mientras que la parte de arriba se va alternando el 3, el 2 o el 5 sin repetir de lugar.</item>
-        <!--014--><item>Cada imagen se va añadiendo una punta.</item>
-        <!--015--><item>La tercera casilla es igual que la primera.</item>
-        <!--016--><item>Las casillas de la derecha son el resultado de la resta de las de la izquierda.</item>
-        <!--017--><item></item>
-        <!--018--><item>Se suman: 2+3=5 y 1+2=3 =&gt; 5/3</item>
-        <!--019--><item>La tercera figura es la unión de las dos anteriores.</item>
-        <!--020--><item>El patrón es diagonal, vertical y horizontal.</item>
-		<!--021--><item>Se va añadiendo +1 en cada parte de la pieza siguiendo el movimiento, de modo que se da la vuelta.</item>
-        <!--022--><item>Son tres flechas y en cada fila hay una de cada.</item>
-        <!--023--><item>La tercera imagen de la fila es igual que la primera.</item>
-        <!--024--><item>Es la esquina que falta.</item>
-        <!--025--><item>En la parte de arriba de los impares y la parte de abajo de los pares siempre es 2, mientras que lo demás se va añadiendo +1.</item>
-        <!--026--><item>La fila de abajo son las figuras de arriba invertidas con otra más pequeña en su interior.</item>
-        <!--027--><item>Se le va añadiendo una línea diagonal.</item>
-        <!--028--><item>La parte de arriba es +1 mientras que la parte de abajo, -1.</item>
-        <!--029--><item>La parte de arriba de los impares y la parte de abajo de los pares se van añadiendo 1, mientras que el resto, -1.</item>
-        <!--030--><item>El cuadradito blanco se va moviendo hacia la derecha (esquina, centro, esquina).</item>
-        <!--031--><item>La parte de arriba se queda igual mientras que la parte de abajo se va añadiendo uno.</item>
-        <!--032--><item>Se va añadiendo una curva y después una recta.</item>
-        <!--033--><item>Van de dos en dos, la parte de arriba con uno más (1-2, 4-5 y 6-0) mientras que la parte de abajo con uno menos(2-1, 6-5, 4-3).</item>
-        <!--034--><item>Los cuadraditos negros de la izquierda se van quitando mientras que los de la derecha se van añadiendo.</item>
-        <!--035--><item>Cada vez se le quita una línea y se va alternando la horizontal y la vertical.</item>
-        <!--036--><item>Empezando en el 1/6, la parte de arriba de los pares y los impares (por separado) es +1, al igual que la parte de abajo de los pares. Mientras que la parte de abajo de los impares es -1.</item>
-        <!--037--><item></item>
-        <!--038--><item>Las fichas del centro y de la derecha son las mismas que las de la izquierda en cada fila.</item>
-        <!--039--><item>La parte de abajo y la parte de arriba de los pares y de los impares, por separado, se va añadiendo 1.</item>
-        <!--040--><item>En cada cuadrado se le añade un espacio entre las líneas.</item>
-        <!--041--><item>En la primera columna se va añadiendo 1, mientras que en las otras se va restando.</item>
-        <!--042--><item>Se van alternando la doble figura y la plana entre el cuadrado y el pentágono.</item>
-        <!--043--><item>La segunda y la tercera columna es la descomposición por partes de la primera.</item>
-        <!--044--><item>Una de las rectas se mueve en el sentido de las agujas del reloj 90º.</item>
-        <!--045--><item>Cada tres fichas es el resultado de la suma (en la parte de arriba) y la resta(en la parte de abajo) de las dos anteriores.</item>
-        <!--046--><item>La parte de arriba va yendo -2 mientras que la parte de abajo +1.</item>
-        <!--047--><item>Va de esquina a esquina en sentido contrario a las agujas del reloj mientras el arco va alternando de afuera a dentro.</item>
-        <!--048--><item>La parte azul ya rotando en sentido horario.</item>
-        <!--049--><item>Parte de arriba: +1, parte de abajo: -2.</item>
-        <!--050--><item>La parte de arriba disminuye -2 repitiéndose el número, mientras que abajo avanza +1.</item>
-        <!--051--><item>El círculo se hace cada vez más grande.</item>
-        <!--052--><item>Se repite la ficha.</item>
-        <!--053--><item>Se va quitando una línea en el sentido de las agujas del reloj.</item>
-        <!--054--><item>Por un lado siempre es 2 mientras que por el otro es +1.</item>
-        <!--055--><item>Se va añadiendo uno arriba y otro abajo de forma lineal.</item>
-        <!--056--><item>La parte de arriba es +2 mientras que abajo, +3.</item>
-        <!--057--><item>Patrón: Media línea, línea, cruz, línea invertida, media línea invertida.Se termina como acaba pero de forma invertida.</item>
-        <!--058--><item>En cada fila hay una línea horizontal, vertical y diagonal, además de los colores azul, verde y transparente. Cada forma de línea y color se van alternando sin repetirse, y pintados o arriba o a la izquierda.</item>
-        <!--059--><item>Se va añadiendo uno arriba y otro abajo. El de abajo imita al de arriba.</item>
-        <!--060--><item>La parte de arriba multiplica mientras que la parte de abajo, divide: 4x1=4; 4/2=2 =&gt; 4/2.</item>
-        <!--061--><item>La parte de arriba se multiplica con la parte izquierda mientras que la parte de abajo se suma con la parte derecha. Hay que tener en cuenta que las fichas del dominó está entre el 0 y el 6, por tanto: 4+4=8 -6 = 2, por que en fichas de dominó sería de 6 pasa a 0 y luego pasa a 1.</item>
-        <!--062--><item>La letra se va moviendo a un lado en el sentido de las agujas del reloj y se va cambiando en orden alfabéticamente.</item>
-        <!--063--><item>Sigue el mismo patrón que los círculos de arriba.</item>
-        <!--064--><item>La parte de arriba junto con la parte de la izquierda va avanzando de dos en dos empezando por el 1, lo demás también pero empezando por el 0. </item>
-        <!--065--><item>Cada aguja se desplaza en el sentido de las agujas del reloj.</item>
-        <!--066--><item>Por un lado se va repitiendo un número una vez para luego avanzar +1. Por otro lado, se va reduciendo 2 a partir del 0.</item>
-        <!--067--><item>La parte de arriba va restando 1 mientras abajo es siempre 0.</item>
-        <!--068--><item>Por un lado se va alternando el cuadrado, círculo y el pentágono, mientras por otro se alterna el punto dentro y fuera.</item>
-        <!--069--><item>La tercera columna es el resultado de la multiplicación de la parte de arriba y resta de la parte de abajo de las otras.</item>
-        <!--070--><item>El patrón es izquierda, derecha, arriba, izquierda, derecha, abajo.</item>
-        <!--071--><item>Cada vez se va añadiendo un punto representando los números de un reloj mientras que se mueve uno de los dos palos que representan las agujas.</item>
-        <!--072--><item>La bola va creciendo a medida que se va alternando la posición de arriba y abajo.</item>
-        <!--073--><item>Por un lado, se va alternando el mismo número en cada fila (parte de arriba, parte de abajo, parte de arriba), mientras que por otro lado se va avanzando +1.</item>
-        <!--074--><item>Los pares indican cómo son los impares: La segunda indica que la primera hay círculos que forman un cuadrado. La cuarta indica que la tercera hay pentágonos que forman un tríangulo.</item>
-        <!--075--><item>Por un lado, son los dobles que va avanzando +1, mientras por otro lado, cada número se añade +1.</item>
-        <!--076--><item>Las figuritas del centro se van reduciendo mientras que las de arriba y las de abajo van aumentando.</item>
-        <!--077--><item>El patrón es derecha, abajo, izquierda y arriba, mientras se van cambiando las caras, que son tres, rectángulo, círculo y mancha.</item>
-        <!--078--><item>La parte de arriba de las fichas va avanzando 1 mientras la parte de abajo se va reduciendo 2.</item>
-        <!--079--><item>Verticalmente, la parte de arriba de va reduciendo 1 mientras que la parte de abajo se aumenta 2.</item>
-        <!--080--><item>Se alternan el tamaño mientras en el interior de las grandes es una de las otras figuras en color blanco.</item>
-        <!--081--><item>Tanto las fichas impares como los pares, la parte de arriba y la parte de abajo, por separado, van avanzando 2.</item>
-        <!--082--><item>La parte de arriba es -1 mientras que la parte de abajo, +1.</item>
-        <!--083--><item>Se van añadiendo las dos líneas que forman 90º.</item>
-        <!--084--><item>La serie es en vertical, la parte de arriba se queda igual, mientras la de abajo avanza 1.</item>
-        <!--085--><item>El patrón es: 7 bolas blancas, -1, 7, -1,...</item>
-        <!--086--><item>Se va añadiendo 1 diagonalmente empezando por arriba, mientras que empezando por abajo, se va reduciendo 1.</item>
-        <!--087--><item>La parte de arriba es siempre 4 mientras que la parte de abajo avanza +1.</item>
-        <!--088--><item>En los puestos impares se va añadiendo una línea mientras que los pares, invertidos, se va restando una.</item>
-        <!--089--><item>La parte de arriba avanza +4 mientras que la parte de abajo +1</item>
-        <!--090--><item>Se va añadiendo la misma figura cada vez más grande y el pequeño del centro alterna con el color negro. Cada tres casillas, cambia de figura.</item>
-        <!--091--><item>La parte de arriba avanza +3 mientras que la parte de abajo +2.</item>
-        <!--092--><item>El cubo se invierte de perspectiva mientras la parte pintada se desplazando hacia la derecha.</item>
-        <!--093--><item>La parte de arriba avanza +1 mientras que la parte de abajo +2.</item>
-        <!--094--><item>En la primera fila se va añadiendo uno de arriba a abajo continuando con la ficha siguiente: 1-2 -&gt;3-4 -&gt;5-6,... Mientras que la segunda fila, va restando de la misma forma.</item>
-        <!--095--><item>Se va doblando una esquina en el sentido de las agujas del reloj.</item>
-        <!--096--><item>Se va añadiendo +1 diagonalmente, tanto la parte de arriba como la parte de abajo.</item>
-        <!--097--><item>La segunda fila tiene las mismas figuritas que la primera fila pero situadas en el centro.</item>
-        <!--098--><item>Se repite la ficha una vez.</item>
-        <!--099--><item>Se va quitando un círculo por un cuadrado en el sentido de las agujas del reloj.</item>
-        <!--100--><item>Se va añadiendo +1 diagonalmente.</item>
-        <!--101--><item>Cada fila ha de tener un circulo, un cuadrado y un triangulo y una de ella ha de ser negra</item>
-        <!--102--><item>La columna de la derecha es la suma de las otras dos</item>
-        <!--103--><item>La columna de la derecha es la suma de las otras dos</item>
-        <!--104--><item>La primera columna tiene un elemento, la siguiente columna se multiplica por 2 y en la ultima se le suma 1, en la siguiente fila lo mismo y en la ultima se suma 2, y en la ultima fila lo mismo y en la ultima se le suma 3</item>
-        <!--105--><item>La fila de abajo es la suma de las filas de arriba, una encima de otra</item>
-        <!--106--><item>En cada fila hay: una diagonal, una horizontal y otra en vertical</item>
-        <!--107--><item>En cada fila hay: un cuadrado relleno, un cuadrado complejo y un cuadrado en blanco</item>
-        <!--108--><item>En cada fila hay: un baston hacia la dercha, otro hacia la izquierda y otro mirando para el frente</item>
-        <!--109--><item>La fila de abajo es la suma de las de arriba</item>
-        <!--110--><item>Cada fila ha de tener un poligono, un cuadrado y un triangulo</item>
-        <!--111--><item>La figura negra se va desplacando hasta terminar la fila, vemos que la primera fila la figura negra su colocacion es: derecha superior, derecha, derecha inferior; la segunda fila: arriba, derecha superior y derecha; y la ultima fila: izquierda superior, arriba, derecha superior</item>
-        <!--112--><item>Cada fila ha de tener una figura vacia, una figura con un punto dentro y una figura con una cruz arriba</item>
-        <!--113--><item>La ultima columna ha de ser igual que la primera columna</item>
-        <!--114--><item>La primera ficha empezando por debajo se repite en la segunda en la parte de arriba, así sucesivamente. Y la primera ficha la parte de arriba se le resta 2 y se pone en la segunda ficha por la parte de abajo </item>
-        <!--115--><item>Las partes de arriba se suman +1 mientras que abajo se resta -1</item>
-        <!--116--><item>Las partes que se tocan deben ir continuas, mientras que la parte no tocante hereda la parte tocante de la ficha anterior</item>
-        <!--117--><item>La serie según el orden es: 4, 6, 1, 3, 5, 0, 2, 4, 6, 1, 3, 5, 0, 2\nRecordar que la serie de domino después del 6 va el 0</item>
-        <!--118--><item>A partir de la ficha 0/0 la serie va de 2 en 2 por igual partes.</item>
-        <!--119--><item>La serie es: (3, 3), (4, 5), (6, 6), (0, 1), (2, 2), (3, 4), (5, 5), (6,0).</item>
-        <!--120--><item>La serie va de 2 en 2 independientemente de las fichas individuales.</item>
-        <!--121--><item>En las tres primeras imágenes podemos observar una primera serie de triángulos donde hay uno pequeño con un símbolo, progresa con un triángulo mediano sin simbolo y termina en un triángulo que ocupa todo el espacio, en la siguiente serié encontramos un cuadrado pequeño con un símbolo, así que el que sigue es un cuadrado mediano sin símbolo.</item>
-        <!--122--><item>En la primera serie podemos observar un cuadrado que contiene un rombo y el rombo contiene un circulo, en la siguiente imagen tenemos lo mismo sin circulo así que se borra de dentro hacia fuera, en la segunda serie encontramos un cuadrado que contiene un círculo, así que la siguiente debe ser un cuadrado.</item>
-        <!--123--><item>Tenemos las estrellas, las líneas, y unas especies de T con patas, todas tienen 3, 4 y 5 unidades en distintas posición excepto las líneas así que la respuesta es la de las 3 líneas</item>
-        <!--124--><item>Son series de tres donde la siguiente imagen es la misma girada a la derecha</item>
-        <!--125--><item>Son series donde se le suma un pétalo en cada imagen tanto vertical y horizontalmente el ultimo es de 4, así que la respuesta correcta es el de 5.</item>
-        <!--126--><item></item>
-        <!--127--><item>Es una serie donde cada vez el cuadrado interno es más grande y la mitad negra y blanca van revelando su posición</item>
-        <!--128--><item>Es una serie donde los cuadrados internos negros, van cambiando su posición desde izquierda a derecha horizontalmente y verticalmente van desde arriba abajo así que la respuesta correcta será abajo a la derecha</item>
-        <!--129--><item>Son series donde los números se suman de 2 en 2 en las dos primeras series y de 3 en 3 en la tercera, horizontalmente, verticalmente van de manera progresiva, y si nos fijamos horizontalmente y verticalmente la esfera hace un giro a la derecha a la derecha</item>
-        <!--130--><item>Si nos fijamos el cuadrado con puntitos va cambiando su posición diagonalmente, mientras el punto sigue el sentido de las agujas del reloj y la línea el contrario</item>
-        <!--131--><item>Es una serie donde se cambia de esfera a cuadrado manteniendo los colores</item>
-        <!--132--><item></item>
-        <!--133--><item>Es una serie donde el triángulo pequeño va creciendo y las letras de la izquierda progresan con el orden del diccionario y las de la derecha al contrario</item>
-        <!--134--><item>Es una serie donde el objeto del medio es como si diera un paso y el de la derecha dos, así primero se entrelazan en el centro y después se centran</item>
-        <!--135--><item></item>
-        <!--136--><item></item>
-        <!--137--><item>Si nos fijamos la primera serie y la tercera son iguales solo que cambias las formas geométricas, pero es una serie de +, *, +.</item>
-        <!--138--><item>El cuadro negro de la izquierda va bajando diagonalmente y el cuadro negro de la derecha va subiendo verticalmente </item>
-        <!--139--><item>Es una serie donde por cada punto que se elimina se aumenta una racha en sentido contrario a las agujas del reloj</item>
-        <!--140--><item>Se va restando 6.</item>
-        <!--141--><item>La secuencia es +1, +2, +3, +4,...</item>
-        <!--142--><item>Los impares van restando 10 mientras que los pares van sumando 5.</item>
-        <!--143--><item>Patrón: Suma a sí mismo, -8, Suma a sí mismo,-8,...\n12+12=24-8=16+16=32-8=24+24=48-8=40</item>
-        <!--144--><item>Va sumando 6.</item>
-        <!--145--><item>Patrón: Número, -3, 5, número, -3, 5,...</item>
-        <!--146--><item>El patrón es +3, -2, +3, -2,...</item>
-        <!--147--><item>En cada número, la primera cifra es impar, mientras que la segunda es par.</item>
-        <!--148--><item>El patrón es +12, mismo número, +12, mismo número, ...</item>
-        <!--149--><item>Los impares y los pares van aparte, cada uno +1.</item>
-        <!--150--><item>El patrón es: +1, +3, +1, +3,...</item>
-        <!--151--><item>Los impares son siempre 20 mientras que los pares se van sumando 2.</item>
-        <!--152--><item>El patrón es: +3, +4, +5, +6, +7,...</item>
-        <!--153--><item>El patrón es: -1, +1, +2, =</item>
-        <!--154--><item>Se va sumando el mismo número: 1(+1), 2(+2), 4(+4), 8(+8), 16,...</item>
-        <!--155--><item>Los puestos pares e impares, por separado, se va añadiendo 1.</item>
-        <!--156--><item>Cada dígito del número, por separado, se añade 1.</item>
-        <!--157--><item>Tanto los pares como los impares se van restando 1</item>
-        <!--158--><item>Se va sumando 2.</item>
-        <!--159--><item>El patrón es: número, su siguiente, +3, su siguiente, +3,...</item>
-        <!--160--><item>Los impares van de 5 en 5 mientras que los pares de 4 en 4.</item>
-        <!--161--><item>Los impares van de 2 en 2 mientras que los pares de 7 en 7.</item>
-        <!--162--><item>El patrón es: número, +1, +2, +3, +4,...</item>
-        <!--163--><item>Se va reduciendo la mitad.</item>
-        <!--164--><item>Se deja 3 letras entre medias: de la A a la E dejo la B y la C</item>
-        <!--165--><item>Hay una serie que aumenta de forma que primero sólo tengo una letra D, me salto la E y aparecen dos letras consecutivas FG; me salto la H y aparecen tres letras consecutivas IJK; me salto la L y hay cuatro letras consecutivas MNÑO; me salto la P y tocan cinco letras consecutivas: QRSTU</item>
-        <!--166--><item>Hay dos series en una, por un lado: X, Y, Z, A (consecutivas), y por el otro W, Z, C, F (me dejo dos letras entre medias). De la F me salto dos (G, H)toca la I</item>
-        <!--167--><item>Hay dos series por un lado: C, D, E, F, ,G (consecutivas), y por otro F, G, H, I (consecutivas), toca la J</item>
-        <!--168--><item>Hay dos series en una por un lado: X, Y, X, Y (se van repitiendo), y por el otro J, H, F, D (se deja una letra entre medias yendo en sentido inverso). De la D se salta a la C, toca la B</item>
-        <!--169--><item>La serie va: (x, x*x) un número y le sigue su cuadrado</item>
-        <!--170--><item>Por un lado tenemos (6, 1, 16… toca el 21) y por otro (16, 26, 36)</item>
-        <!--171--><item>La serie va (x 1, x 2, x 1, x 3, x 1, x 4, x 1, x 5, x 1) se multiplica por uno y después por 2, después por 1 y después por 3, después por 1 y después por 4, así sucesivamente</item>
-        <!--172--><item>Por un lado tenemos (9, 6, 9, 6,… toca el 9) y por el otro (15, 13, 11, 9, …)</item>
-        <!--173--><item>La serie va: (x3, +3, x4, +4, x5, +5) se multiplica por 3 y al siguiente se,le suma el 3, se le multiplica el cuatro y al siguiente se le suma 4 y así sucesivamente</item>
-        <!--174--><item>Comienza ascendentemente desde el número 2 sumándole 2 por cada número, después continua descendientemente desde el número 6 restándole 2.</item>
-        <!--175--><item>Comienza descendientemente desde el número 1 sumando 2 por cada número.</item>
-        <!--176--><item>Los números con posición impar tienen un orden ascendente con una suma de 2, y los números con posición par tienen un orden descendente con una resta de 2.</item>
-        <!--177--><item>Empieza con dos números iguales, suma 3, suma 2 repiten números, después al contrarío suma 2, suma 3, y repite número.</item>
-        <!--178--><item>Los números con posición impar tienen un orden ascendente con una suma de 1, y los números con posición par multiplican su propio número por 2.</item>
-        <!--179--><item>Los números con posición impar se multiplican por 3, y los números con posición par multiplican se multiplican por 2.</item>
-        <!--180--><item>Es una serie de +2,x2,-2,/2.</item>
-        <!--181--><item>Comienza ascendentemente sumándole 1 por cada número, y aumentándole 2 a la suma de cada número.</item>
-        <!--182--><item>Los números con posición impar tienen un orden ascendente de multiplicación de la siguiente forma: x2,x3,x4 , y los números con posición par se dividen entre 2.</item>
-        <!--183--><item>Los números con posición impar tienen un orden ascendente de multiplicación de la siguiente forma: x2,x3,x4 , y los números con posición par tienen un orden ascendente de multiplicación de la siguiente forma: x1,x2,x3.</item>
-        <!--184--><item>Los números con posición impar tienen un orden descendente de una resta de 1, y los números con posición par desciende con resta de 11 y restándole 2 al mismo número que se resta ej.: 11,9,7 .</item>
-        <!--185--><item>Es una serie de +1,+1,-3</item>
-        <!--186--><item>Es una serie de +2,+3,-1</item>
-        <!--187--><item>Es una serie de -10,-9,+8</item>
-        <!--188--><item>Es una serie de +7,x2,+2</item>
-        <!--189--><item>La serie es: un número, su doble, su doble +1, su doble, su doble menos uno, por lo que ahora toca su doble.</item>
-        <!--190--><item>Es una serie de +2,x2,-2</item>
-        <!--191--><item>La serie es: \nun número(7), se multiplica por 5+1(36), más uno (37)[fin de serie ahora lo mismo más 2] \nprimer número(7+2=9), se multiplica por (5+2)=7+1(64), más uno (65)[ fin de serie ahora lo mismo más 2]\nprimer número(9+2=11), se multiplica por (7+2)=9+1(100), más uno (101)</item>
-        <!--192--><item>La serie va de: un número, cifras invertidas, la mitad del anterior, cifra invertida, la mitad del anterior, cifras invertidas, la mitad del anterior</item>
-        <!--193--><item>Comienza con un x2,+1 y va sumando 1 en cada serie de dos ej.:x2,+1,x3,+2</item>
-        <!--194--><item>Los números con posición impar tienen un orden ascendente con una suma de 4, y los números con posición par tienen un orden ascendente con una suma de 2.</item>
-        <!--195--><item>Los números con posición impar tienen un orden ascendente con una suma de 4, y los números con posición par tienen un orden ascendente con una suma de 4.</item>
-        <!--196--><item>Convertimos las letras en número: A=1,B=2 etc. Es una serie de +2 y aumenta en uno por cada suma realizada ej.: 1 (+2) 3 (+3) 6</item>
-        <!--197--><item>Convertimos las letras en número: A=1,B=2 etc. Es una serie de +3 y aumenta en uno por cada suma realizada ej.: 1 (+2) 3 (+3) 6</item>
-        <!--198--><item>La serie de letras va en orden ascendente sin contar la “a” y por lo que serias 2 letras seguidas, una sola, 2 seguidas, una sola, siguiendo esta orden nos encontramos,”a”c,d”a”e”a”f,g</item>
-        <!--199--><item>Convertimos las letras en número: A=1,B=2 etc. Las letras de posición impar son una serie de +1 y la serie de las letras impar es de -2</item>
-        <!--200--><item>Nos encontramos con 2 series de numero, ambas empiezan por a en orden alfabético, tenemos 2 letras seguidas, a, b y siguiente tenemos la “a” (segunda serie), c, d y siguiente tenemos la “b” (segunda serie), e, f, y siguiente tenemos la “c” (segunda serie)</item>
-        <!--201--><item>Convertimos las letras en número: A=1,B=2 etc. Las letras de posición impar son una serie de +1 y la serie de las letras impar es de +1,+2</item>
-        <!--202--><item>Convertimos las letras en número: A=1,B=2 etc. Las letras de posición impar son una serie de +5 y la serie de las letras impar es de +5</item>
-        <!--203--><item>Convertimos las letras en número: A=1,B=2 etc. Las letras de posición impar son una serie de +2 y la serie de las letras impar es de +2</item>
-        <!--204--><item>Convertimos las letras en número: A=1,B=2 etc. Las letras de posición impar son una serie de +2 y aumenta en uno por cada suma realizada ej.: 1 (+2) 3 (+3) 6 las letras de posición par son una serie de -2 y aumenta en uno por cada suma realizada ej.: 6 (-2) 4 (-3) 1</item>
-        <!--205--><item>Los números con posición impar es una serie de +5,+3,+1 y los números con posición par es una serie de +1,+2,+3 y después de 37 dan 43 cuando es 40, ahí está el error</item>
-        <!--206--><item>Los números con posición impar es una serie de X2,X3,X4 y los números con posición par es una serie de X4,X3,X2 y después de 36 dan 144 cuando es 72, ahí está el error</item>
-        <!--207--><item>Es una serie de +2,x3 después de 15 dan 18 cuando es 17, ahí está el error</item>
-        <!--208--><item>Los números con posición impar es una serie de /2 y después de 64 dan 33 cuando es 32, ahí está el error, los números con posición par es una serie de +2</item>
-        <!--209--><item>Los números con posición impar es una serie de +2 y los números con posición par es una serie de +2 y después de 46 da 47 cuando es 48, ahí está el error</item>
-        <!--210--><item>Los números con posición impar es una serie de +3,-3,-2 y después de 6 da 7 cuando es 3, ahí está el error, los números con posición par es una serie de -2,-2,+3,+3</item>
-        <!--211--><item>Se van desplazando hacia abajo una posición y la que va sola viene a aparecer por arriba cuando llega totalmente abajo.</item>
-        <!--212--><item>Cada valor suma 19, excepto el primero de la columna 3 que suma 17: 7+4+6=17.</item>
-        <!--213--><item>El patrón es 2h 10min, 1h 10min.</item>
-        <!--214--><item>Va girando 90º en sentido antihorario mientras el cuadrado va cambiando de extremo.</item>
-        <!--215--><item>Por un lado va restando: -10, -9, -8, -7,... mientras que por otro lado va sumando: +3, +4, +5, +7,...=> (40-5) / (27+8) = 35/35.</item>
-        <!--216--><item>Para obtener los números exteriores, se suman los dos interiores que le corresponde y se multiplica x2:\n(3+3)x2=12;\n(4+3)x2=14;\n(7+4)x2=22;\n(5+8)x2=26</item>
-        <!--217--><item>Por un lado, el patrón es 1, 2, 1, 2,... mientras que por otro, es 1, 3, 5, 1, 3, 5,...</item>
-        <!--218--><item>Tanto con los impares como con los pares, se sigue el abecedario de 2 en 2: \nA,C,E,G,I,...\nD,F,H,K,...</item>
-        <!--219--><item>El valor de la izquierda se eleva al cuadrado y se resta 1 para obtener el valor de la derecha: 6 elevado a 2 = 36 -1 = 35.</item>
-        <!--220--><item>El patrón es x2, -10.</item>
-        <!--221--><item>Se multiplica en diagonal y luego se suman:\n(2x4)+(6x5)=8+30=38;\n(7x7)+(6x2)=49+12=61;\n(5x8)+(8x7)=40+56=96.</item>
-        <!--222--><item>Se suman los exteriores y se divide entre 2:\n(2+5+6+4)/2=17/2=8,5;\n(7+2+6+7)/2=22/2=11;\n(5+7+8+8)/2=28/2=14.</item>
-        <!--223--><item>El patrón se basa en el resultado de las fracciones: 1, 1/2, 1/3, 1/4, 1/5 y el siguiente sería 1/6.</item>
-        <!--224--><item>El patrón de la parte de arriba es -2,+3. En la parte de abajo, en los impares es -1, -2, -3 respecto al valor de arriba, mientras que en los pares el valor es el mismo que el de arriba.</item>
-        <!--225--><item>El patrón de la parte de arriba es de -2,+1,-3,+2,... y tocaría -4: 2-4 en el dominó es 5. En la parte de abajo es un 2, siguiendo el recorrido en diagonal: 3, 2, 2.</item>
-
+        <!--001-->
+        <item>Cada dominó impar se va añadiendo +1 en cada número mientras que en cada par se deja
+            el mismo: 1/0.
+        </item>
+        <!--002-->
+        <item>Va avanzando la zona pintada hacia la derecha, cuando finaliza, empieza de nuevo.
+        </item>
+        <!--003-->
+        <item>La bola va rotando 180º en relación con el que le precede.</item>
+        <!--004-->
+        <item>14x2 = 28</item>
+        <!--005-->
+        <item>Se va añadiendo un segmento a la línea anterior con el fin de formar una cruz.</item>
+        <!--006-->
+        <item>Se van alternando las notas musicales 6 y 4 y también la figura interna.</item>
+        <!--007-->
+        <item>Las figuras de la derecha son la suma de las otras dos de la izquierda.</item>
+        <!--008-->
+        <item>Las figuras de la derecha son la suma de las otras dos de la izquierda.</item>
+        <!--009-->
+        <item>Las bolas de la derecha son el resultado de las multiplicaciones de las de la
+            izquierda.
+        </item>
+        <!--010-->
+        <item>Las casillas de la derecha son el resultado de las restas de las casillas de la
+            izquierda.
+        </item>
+        <!--011-->
+        <item>Se van alternando +1 y -1.</item>
+        <!--012-->
+        <item>Se va añadiendo cada figura alternativamente.</item>
+        <!--013-->
+        <item>En la parte de abajo se mantiene con las anteriores mientras que la parte de arriba se
+            va alternando el 3, el 2 o el 5 sin repetir de lugar.
+        </item>
+        <!--014-->
+        <item>Cada imagen se va añadiendo una punta.</item>
+        <!--015-->
+        <item>La tercera casilla es igual que la primera.</item>
+        <!--016-->
+        <item>Las casillas de la derecha son el resultado de la resta de las de la izquierda.</item>
+        <!--017-->
+        <item></item>
+        <!--018-->
+        <item>Se suman: 2+3=5 y 1+2=3 =&gt; 5/3</item>
+        <!--019-->
+        <item>La tercera figura es la unión de las dos anteriores.</item>
+        <!--020-->
+        <item>El patrón es diagonal, vertical y horizontal.</item>
 
     </array>
-    
-    
-    
-    
+
+
     <array name="imgPreabstrapto">
-        <!--001--><item>absp001</item>
-        <!--002--><item>absp002</item>
-        <!--003--><item>absp003</item>
-        <!--004--><item>absp004</item>
-        <!--005--><item>absp005</item>
-		<!--006--><item>absp006</item>
-        <!--007--><item>absp007</item>
-        <!--008--><item>absp008</item>
-        <!--009--><item>absp009</item>
-        <!--010--><item>absp010</item>
-		<!--011--><item>absp011</item>
-        <!--012--><item>absp012</item>
-        <!--013--><item>absp013</item>
-        <!--014--><item>absp014</item>
-        <!--015--><item>absp015</item>
-		<!--016--><item>absp016</item>
-        <!--017--><item>absp017</item>
-        <!--018--><item>absp018</item>
-        <!--019--><item>absp019</item>
-        <!--020--><item>absp020</item>
-		<!--021--><item>absp021</item>
-        <!--022--><item>absp022</item>
-        <!--023--><item>absp023</item>
-        <!--024--><item>absp024</item>
-        <!--025--><item>absp025</item>
-        <!--026--><item>absp026</item>
-        <!--027--><item>absp027</item>
-        <!--028--><item>absp028</item>
-        <!--029--><item>absp029</item>
-        <!--030--><item>absp030</item>
-        <!--031--><item>absp031</item>
-        <!--032--><item>absp032</item>
-        <!--033--><item>absp033</item>
-        <!--034--><item>absp034</item>
-        <!--035--><item>absp035</item>
-        <!--036--><item>absp036</item>
-        <!--037--><item>absp037</item>
-        <!--038--><item>absp038</item>
-        <!--039--><item>absp039</item>
-        <!--040--><item>absp040</item>
-        <!--041--><item>absp041</item>
-        <!--042--><item>absp042</item>
-        <!--043--><item>absp043</item>
-        <!--044--><item>absp044</item>
-        <!--045--><item>absp045</item>
-        <!--046--><item>absp046</item>
-        <!--047--><item>absp047</item>
-        <!--048--><item>absp048</item>
-        <!--049--><item>absp049</item>
-        <!--050--><item>absp050</item>
-        <!--051--><item>absp051</item>
-        <!--052--><item>absp052</item>
-        <!--053--><item>absp053</item>
-        <!--054--><item>absp054</item>
-        <!--055--><item>absp055</item>
-        <!--056--><item>absp056</item>
-        <!--057--><item>absp057</item>
-        <!--058--><item>absp058</item>
-        <!--059--><item>absp059</item>
-        <!--060--><item>absp060</item>
-        <!--061--><item>absp061</item>
-        <!--062--><item>absp062</item>
-        <!--063--><item>absp063</item>
-        <!--064--><item>absp064</item>
-        <!--065--><item>absp065</item>
-        <!--066--><item>absp066</item>
-        <!--067--><item>absp067</item>
-        <!--068--><item>absp068</item>
-        <!--069--><item>absp069</item>
-        <!--070--><item>absp070</item>
-        <!--071--><item>absp071</item>
-        <!--072--><item>absp072</item>
-        <!--073--><item>absp073</item>
-        <!--074--><item>absp074</item>
-        <!--075--><item>absp075</item>
-        <!--076--><item>absp076</item>
-        <!--077--><item>absp077</item>
-        <!--078--><item>absp078</item>
-        <!--078--><item>absp079</item>
-        <!--080--><item>absp080</item>
-        <!--081--><item>absp081</item>
-        <!--082--><item>absp082</item>
-        <!--083--><item>absp083</item>
-        <!--084--><item>absp084</item>
-        <!--085--><item>absp085</item>
-        <!--086--><item>absp086</item>
-        <!--087--><item>absp087</item>
-        <!--088--><item>absp088</item>
-        <!--089--><item>absp089</item>
-        <!--090--><item>absp090</item>
-        <!--091--><item>absp091</item>
-        <!--092--><item>absp092</item>
-        <!--093--><item>absp093</item>
-        <!--094--><item>absp094</item>
-        <!--095--><item>absp095</item>
-        <!--096--><item>absp096</item>
-        <!--097--><item>absp097</item>
-        <!--098--><item>absp098</item>
-        <!--099--><item>absp099</item>
-        <!--100--><item>absp100</item>
-        <!--101--><item>absp101</item>
-        <!--102--><item>absp102</item>
-        <!--103--><item>absp103</item>
-        <!--104--><item>absp104</item>
-        <!--105--><item>absp105</item>
-        <!--106--><item>absp106</item>
-        <!--107--><item>absp107</item>
-        <!--108--><item>absp108</item>
-        <!--109--><item>absp109</item>
-        <!--110--><item>absp110</item>
-        <!--111--><item>absp111</item>
-        <!--112--><item>absp112</item>
-        <!--113--><item>absp113</item>
-        <!--114--><item>absp114</item>
-        <!--115--><item>absp115</item>
-        <!--116--><item>absp116</item>
-        <!--117--><item>absp117</item>
-        <!--118--><item>absp118</item>
-        <!--119--><item>absp119</item>
-        <!--120--><item>absp120</item>
-        <!--121--><item>absp121</item>
-        <!--122--><item>absp122</item>
-        <!--123--><item>absp123</item>
-        <!--124--><item>absp124</item>
-        <!--125--><item>absp125</item>
-        <!--126--><item>absp126</item>
-        <!--127--><item>absp127</item>
-        <!--128--><item>absp128</item>
-        <!--129--><item>absp129</item>
-        <!--130--><item>absp130</item>
-        <!--131--><item>absp131</item>
-        <!--132--><item>absp132</item>
-        <!--133--><item>absp133</item>
-        <!--134--><item>absp134</item>
-        <!--135--><item>absp135</item>
-        <!--136--><item>absp136</item>
-        <!--137--><item>absp137</item>
-        <!--138--><item>absp138</item>
-        <!--139--><item>absp139</item>
-        <!--140--><item></item>
-        <!--141--><item></item>
-        <!--142--><item></item>
-        <!--143--><item></item>
-        <!--144--><item></item>
-        <!--145--><item></item>
-        <!--146--><item></item>
-        <!--147--><item></item>
-        <!--148--><item></item>
-        <!--149--><item></item>
-        <!--150--><item></item>
-        <!--151--><item></item>
-        <!--152--><item></item>
-        <!--153--><item></item>
-        <!--154--><item></item>
-        <!--155--><item></item>
-        <!--156--><item></item>
-        <!--157--><item></item>
-        <!--158--><item></item>
-        <!--159--><item></item>
-        <!--160--><item></item>
-        <!--161--><item></item>
-        <!--162--><item></item>
-        <!--163--><item></item>
-        <!--164--><item></item>
-        <!--165--><item></item>
-        <!--166--><item></item>
-        <!--167--><item></item>
-        <!--168--><item></item>
-        <!--169--><item></item>
-        <!--170--><item></item>
-        <!--171--><item></item>
-        <!--172--><item></item>
-        <!--173--><item></item>
-        <!--174--><item></item>
-        <!--175--><item></item>
-        <!--176--><item></item>
-        <!--177--><item></item>
-        <!--178--><item></item>
-        <!--179--><item></item>
-        <!--180--><item></item>
-        <!--181--><item></item>
-        <!--182--><item></item>
-        <!--183--><item></item>
-        <!--184--><item></item>
-        <!--185--><item></item>
-        <!--186--><item></item>
-        <!--187--><item></item>
-        <!--188--><item></item>
-        <!--189--><item></item>
-        <!--190--><item></item>
-        <!--191--><item></item>
-        <!--192--><item></item>
-        <!--193--><item></item>
-        <!--194--><item></item>
-        <!--195--><item></item>
-        <!--196--><item></item>
-        <!--197--><item></item>
-        <!--198--><item></item>
-        <!--199--><item></item>
-        <!--200--><item></item>
-        <!--201--><item></item>
-        <!--202--><item></item>
-        <!--203--><item></item>
-        <!--204--><item></item>
-        <!--205--><item></item>
-        <!--206--><item></item>
-        <!--207--><item></item>
-        <!--208--><item></item>
-        <!--209--><item></item>
-        <!--210--><item></item>
-        <!--211--><item>absp211</item>
-        <!--212--><item>absp212</item>
-        <!--213--><item></item>
-        <!--214--><item>absp214</item>
-        <!--215--><item></item>
-        <!--216--><item>absp216</item>
-        <!--217--><item>absp217</item>
-        <!--218--><item></item>
-        <!--219--><item>absp219</item>
-        <!--220--><item></item>
-        <!--221--><item>absp221</item>
-        <!--222--><item>absp222</item>
-        <!--223--><item></item>
-        <!--224--><item>absp224</item>
-        <!--225--><item>absp225</item>
+        <!--001-->
+        <item>absp001</item>
+        <!--002-->
+        <item>absp002</item>
+        <!--003-->
+        <item>absp003</item>
+        <!--004-->
+        <item>absp004</item>
+        <!--005-->
+        <item>absp005</item>
+        <!--006-->
+        <item>absp006</item>
+        <!--007-->
+        <item>absp007</item>
+        <!--008-->
+        <item>absp008</item>
+        <!--009-->
+        <item>absp009</item>
+        <!--010-->
+        <item>absp010</item>
+        <!--011-->
+        <item>absp011</item>
+        <!--012-->
+        <item>absp012</item>
+        <!--013-->
+        <item>absp013</item>
+        <!--014-->
+        <item>absp014</item>
+        <!--015-->
+        <item>absp015</item>
+        <!--016-->
+        <item>absp016</item>
+        <!--017-->
+        <item>absp017</item>
+        <!--018-->
+        <item>absp018</item>
+        <!--019-->
+        <item>absp019</item>
+        <!--020-->
+        <item>absp020</item>
 
     </array>
-    
+
     <array name="imgAabstrapto">
-        <!--001--><item></item>
-        <!--002--><item>absp002ra</item>
-        <!--003--><item>absp003ra</item>
-        <!--004--><item></item>
-        <!--005--><item>absp005ra</item>
-		<!--006--><item>absp006ra</item>
-        <!--007--><item>absp007ra</item>
-        <!--008--><item>absp008ra</item>
-        <!--009--><item>absp009ra</item>
-        <!--010--><item>absp010ra</item>
-        <!--011--><item></item>
-        <!--012--><item>absp012ra</item>
-        <!--013--><item></item>
-        <!--014--><item>absp014ra</item>
-        <!--015--><item>absp015ra</item>
-        <!--016--><item>absp016ra</item>
-        <!--017--><item></item>
-        <!--018--><item></item>
-        <!--019--><item>absp019ra</item>
-        <!--020--><item>absp020ra</item>
-		<!--021--><item></item>
-        <!--022--><item>absp022ra</item>
-        <!--023--><item>absp023ra</item>
-        <!--024--><item>absp024ra</item>
-        <!--025--><item></item>
-        <!--026--><item>absp026ra</item>
-        <!--027--><item>absp027ra</item>
-        <!--028--><item></item>
-        <!--029--><item></item>
-        <!--030--><item>absp030ra</item>
-        <!--031--><item></item>
-        <!--032--><item>absp032ra</item>
-        <!--033--><item></item>
-        <!--034--><item>absp034ra</item>
-        <!--035--><item>absp035ra</item>
-        <!--036--><item></item>
-        <!--037--><item>absp037ra</item>
-        <!--038--><item></item>
-        <!--039--><item></item>
-        <!--040--><item>absp040ra</item>
-        <!--041--><item>absp041ra</item>
-        <!--042--><item>absp042ra</item>
-        <!--043--><item>absp043ra</item>
-        <!--044--><item>absp044ra</item>
-        <!--045--><item></item>
-        <!--046--><item></item>
-        <!--047--><item>absp047ra</item>
-        <!--048--><item>absp048ra</item>
-        <!--049--><item></item>
-        <!--050--><item></item>
-        <!--051--><item>absp051ra</item>
-        <!--052--><item></item>
-        <!--053--><item>absp053ra</item>
-        <!--054--><item></item>
-        <!--055--><item>absp055ra</item>
-        <!--056--><item></item>
-        <!--057--><item>absp057ra</item>
-        <!--058--><item>absp058ra</item>
-        <!--059--><item>absp059ra</item>
-        <!--060--><item></item>
-        <!--061--><item></item>
-        <!--062--><item>absp062ra</item>
-        <!--063--><item>absp063ra</item>
-        <!--064--><item></item>
-        <!--065--><item>absp065ra</item>
-        <!--066--><item></item>
-        <!--067--><item></item>
-        <!--068--><item>absp068ra</item>
-        <!--069--><item></item>
-        <!--070--><item>absp070ra</item>
-        <!--071--><item>absp071ra</item>
-        <!--072--><item>absp072ra</item>
-        <!--073--><item></item>
-        <!--074--><item>absp074ra</item>
-        <!--075--><item></item>
-        <!--076--><item>absp076ra</item>
-        <!--077--><item>absp077ra</item>
-        <!--078--><item></item>
-        <!--079--><item></item>
-        <!--080--><item>absp080ra</item>
-        <!--081--><item></item>
-        <!--082--><item></item>
-        <!--083--><item>absp083ra</item>
-        <!--084--><item></item>
-        <!--085--><item>absp085ra</item>
-        <!--086--><item></item>
-        <!--087--><item></item>
-        <!--088--><item>absp088ra</item>
-        <!--089--><item></item>
-        <!--090--><item>absp090ra</item>
-        <!--091--><item></item>
-        <!--092--><item>absp092ra</item>
-        <!--093--><item></item>
-        <!--094--><item></item>
-        <!--095--><item>absp095ra</item>
-        <!--096--><item></item>
-        <!--097--><item>absp097ra</item>
-        <!--098--><item></item>
-        <!--099--><item>absp099ra</item>
-        <!--100--><item></item>
-        <!--101--><item>absp101ra</item>
-        <!--102--><item>absp102ra</item>
-        <!--103--><item>absp103ra</item>
-        <!--104--><item>absp104ra</item>
-        <!--105--><item>absp105ra</item>
-        <!--106--><item>absp106ra</item>
-        <!--107--><item>absp107ra</item>
-        <!--108--><item>absp108ra</item>
-        <!--109--><item>absp109ra</item>
-        <!--110--><item>absp110ra</item>
-        <!--111--><item>absp111ra</item>
-        <!--112--><item>absp112ra</item>
-        <!--113--><item>absp113ra</item>
-        <!--114--><item></item>
-        <!--115--><item></item>
-        <!--116--><item></item>
-        <!--117--><item></item>
-        <!--118--><item></item>
-        <!--119--><item></item>
-        <!--120--><item></item>
-        <!--121--><item>absp121ra</item>
-        <!--122--><item>absp122ra</item>
-        <!--123--><item>absp123ra</item>
-        <!--124--><item>absp124ra</item>
-        <!--125--><item>absp125ra</item>
-        <!--126--><item>absp126ra</item>
-        <!--127--><item>absp127ra</item>
-        <!--128--><item>absp128ra</item>
-        <!--129--><item>absp129ra</item>
-        <!--130--><item>absp130ra</item>
-        <!--131--><item>absp131ra</item>
-        <!--132--><item>absp132ra</item>
-        <!--133--><item>absp133ra</item>
-        <!--134--><item>absp134ra</item>
-        <!--135--><item>absp135ra</item>
-        <!--136--><item>absp136ra</item>
-        <!--137--><item>absp137ra</item>
-        <!--138--><item>absp138ra</item>
-        <!--139--><item>absp139ra</item>
-        <!--140--><item></item>
-        <!--141--><item></item>
-        <!--142--><item></item>
-        <!--143--><item></item>
-        <!--144--><item></item>
-        <!--145--><item></item>
-        <!--146--><item></item>
-        <!--147--><item></item>
-        <!--148--><item></item>
-        <!--149--><item></item>
-        <!--150--><item></item>
-        <!--151--><item></item>
-        <!--152--><item></item>
-        <!--153--><item></item>
-        <!--154--><item></item>
-        <!--155--><item></item>
-        <!--156--><item></item>
-        <!--157--><item></item>
-        <!--158--><item></item>
-        <!--159--><item></item>
-        <!--160--><item></item>
-        <!--161--><item></item>
-        <!--162--><item></item>
-        <!--163--><item></item>
-        <!--164--><item></item>
-        <!--165--><item></item>
-        <!--166--><item></item>
-        <!--167--><item></item>
-        <!--168--><item></item>
-        <!--169--><item></item>
-        <!--170--><item></item>
-        <!--171--><item></item>
-        <!--172--><item></item>
-        <!--173--><item></item>
-        <!--174--><item></item>
-        <!--175--><item></item>
-        <!--176--><item></item>
-        <!--177--><item></item>
-        <!--178--><item></item>
-        <!--179--><item></item>
-        <!--180--><item></item>
-        <!--181--><item></item>
-        <!--182--><item></item>
-        <!--183--><item></item>
-        <!--184--><item></item>
-        <!--185--><item></item>
-        <!--186--><item></item>
-        <!--187--><item></item>
-        <!--188--><item></item>
-        <!--189--><item></item>
-        <!--190--><item></item>
-        <!--191--><item></item>
-        <!--192--><item></item>
-        <!--193--><item></item>
-        <!--194--><item></item>
-        <!--195--><item></item>
-        <!--196--><item></item>
-        <!--197--><item></item>
-        <!--198--><item></item>
-        <!--199--><item></item>
-        <!--200--><item></item>
-        <!--201--><item></item>
-        <!--202--><item></item>
-        <!--203--><item></item>
-        <!--204--><item></item>
-        <!--205--><item></item>
-        <!--206--><item></item>
-        <!--207--><item></item>
-        <!--208--><item></item>
-        <!--209--><item></item>
-        <!--210--><item></item>
-        <!--211--><item>absp211ra</item>
-        <!--212--><item></item>
-        <!--213--><item></item>
-        <!--214--><item>absp214ra</item>
-        <!--215--><item></item>
-        <!--216--><item></item>
-        <!--217--><item></item>
-        <!--218--><item></item>
-        <!--219--><item></item>
-        <!--220--><item></item>
-        <!--221--><item></item>
-        <!--222--><item></item>
-        <!--223--><item></item>
-        <!--224--><item></item>
-        <!--225--><item></item>
+        <!--001-->
+        <item></item>
+        <!--002-->
+        <item>absp002ra</item>
+        <!--003-->
+        <item>absp003ra</item>
+        <!--004-->
+        <item></item>
+        <!--005-->
+        <item>absp005ra</item>
+        <!--006-->
+        <item>absp006ra</item>
+        <!--007-->
+        <item>absp007ra</item>
+        <!--008-->
+        <item>absp008ra</item>
+        <!--009-->
+        <item>absp009ra</item>
+        <!--010-->
+        <item>absp010ra</item>
+        <!--011-->
+        <item></item>
+        <!--012-->
+        <item>absp012ra</item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item>absp014ra</item>
+        <!--015-->
+        <item>absp015ra</item>
+        <!--016-->
+        <item>absp016ra</item>
+        <!--017-->
+        <item></item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item>absp19ra</item>
+        <!--020-->
+        <item>absp20ra</item>
 
     </array>
-    
+
     <array name="imgBabstrapto">
-        <!--001--><item></item>
-        <!--002--><item>absp002rb</item>
-        <!--003--><item>absp003rb</item>
-        <!--004--><item></item>
-        <!--005--><item>absp005rb</item>
-		<!--006--><item>absp006rb</item>
-        <!--007--><item>absp007rb</item>
-        <!--008--><item>absp008rb</item>
-        <!--009--><item>absp009rb</item>
-        <!--010--><item>absp010rb</item>
-        <!--011--><item></item>
-        <!--012--><item>absp012rb</item>
-        <!--013--><item></item>
-        <!--014--><item>absp014rb</item>
-        <!--015--><item>absp015rb</item>
-        <!--016--><item>absp016rb</item>
-        <!--017--><item></item>
-        <!--018--><item></item>
-        <!--019--><item>absp019rb</item>
-        <!--020--><item>absp020rb</item>
-		<!--021--><item></item>
-        <!--022--><item>absp022rb</item>
-        <!--023--><item>absp023rb</item>
-        <!--024--><item>absp024rb</item>
-        <!--025--><item></item>
-        <!--026--><item>absp026rb</item>
-        <!--027--><item>absp027rb</item>
-        <!--028--><item></item>
-        <!--029--><item></item>
-        <!--030--><item>absp030rb</item>
-        <!--031--><item></item>
-        <!--032--><item>absp032rb</item>
-        <!--033--><item></item>
-        <!--034--><item>absp034rb</item>
-        <!--035--><item>absp035rb</item>
-        <!--036--><item></item>
-        <!--037--><item>absp037rb</item>
-        <!--038--><item></item>
-        <!--039--><item></item>
-        <!--040--><item>absp040rb</item>
-        <!--041--><item>absp041rb</item>
-        <!--042--><item>absp042rb</item>
-        <!--043--><item>absp043rb</item>
-        <!--044--><item>absp044rb</item>
-        <!--045--><item></item>
-        <!--046--><item></item>
-        <!--047--><item>absp047rb</item>
-        <!--048--><item>absp048rb</item>
-        <!--049--><item></item>
-        <!--050--><item></item>
-        <!--051--><item>absp051rb</item>
-        <!--052--><item></item>
-        <!--053--><item>absp053rb</item>
-        <!--054--><item></item>
-        <!--055--><item>absp055rb</item>
-        <!--056--><item></item>
-        <!--057--><item>absp057rb</item>
-        <!--058--><item>absp058rb</item>
-        <!--059--><item>absp059rb</item>
-        <!--060--><item></item>
-        <!--061--><item></item>
-        <!--062--><item>absp062rb</item>
-        <!--063--><item>absp063rb</item>
-        <!--064--><item></item>
-        <!--065--><item>absp065rb</item>
-        <!--066--><item></item>
-        <!--067--><item></item>
-        <!--068--><item>absp068rb</item>
-        <!--069--><item></item>
-        <!--070--><item>absp070rb</item>
-        <!--071--><item>absp071rb</item>
-        <!--072--><item>absp072rb</item>
-        <!--073--><item></item>
-        <!--074--><item>absp074rb</item>
-        <!--075--><item></item>
-        <!--076--><item>absp076rb</item>
-        <!--077--><item>absp077rb</item>
-        <!--078--><item></item>
-        <!--079--><item></item>
-        <!--080--><item>absp080rb</item>
-        <!--081--><item></item>
-        <!--082--><item></item>
-        <!--083--><item>absp083rb</item>
-        <!--084--><item></item>
-        <!--085--><item>absp085rb</item>
-        <!--086--><item></item>
-        <!--087--><item></item>
-        <!--088--><item>absp088rb</item>
-        <!--089--><item></item>
-        <!--090--><item>absp090rb</item>
-        <!--091--><item></item>
-        <!--092--><item>absp092rb</item>
-        <!--093--><item></item>
-        <!--094--><item></item>
-        <!--095--><item>absp095rb</item>
-        <!--096--><item></item>
-        <!--097--><item>absp097rb</item>
-        <!--098--><item></item>
-        <!--099--><item>absp099rb</item>
-        <!--100--><item></item>
-        <!--101--><item>absp101rb</item>
-        <!--102--><item>absp102rb</item>
-        <!--103--><item>absp103rb</item>
-        <!--104--><item>absp104rb</item>
-        <!--105--><item>absp105rb</item>
-        <!--106--><item>absp106rb</item>
-        <!--107--><item>absp107rb</item>
-        <!--108--><item>absp108rb</item>
-        <!--109--><item>absp109rb</item>
-        <!--110--><item>absp110rb</item>
-        <!--111--><item>absp111rb</item>
-        <!--112--><item>absp112rb</item>
-        <!--113--><item>absp113rb</item>
-        <!--114--><item></item>
-        <!--115--><item></item>
-        <!--116--><item></item>
-        <!--117--><item></item>
-        <!--118--><item></item>
-        <!--119--><item></item>
-        <!--120--><item></item>
-        <!--121--><item>absp121rb</item>
-        <!--122--><item>absp122rb</item>
-        <!--123--><item>absp123rb</item>
-        <!--124--><item>absp124rb</item>
-        <!--125--><item>absp125rb</item>
-        <!--126--><item>absp126rb</item>
-        <!--127--><item>absp127rb</item>
-        <!--128--><item>absp128rb</item>
-        <!--129--><item>absp129rb</item>
-        <!--130--><item>absp130rb</item>
-        <!--131--><item>absp131rb</item>
-        <!--132--><item>absp132rb</item>
-        <!--133--><item>absp133rb</item>
-        <!--134--><item>absp134rb</item>
-        <!--135--><item>absp135rb</item>
-        <!--136--><item>absp136rb</item>
-        <!--137--><item>absp137rb</item>
-        <!--138--><item>absp138rb</item>
-        <!--139--><item>absp139rb</item>
-        <!--140--><item></item>
-        <!--141--><item></item>
-        <!--142--><item></item>
-        <!--143--><item></item>
-        <!--144--><item></item>
-        <!--145--><item></item>
-        <!--146--><item></item>
-        <!--147--><item></item>
-        <!--148--><item></item>
-        <!--149--><item></item>
-        <!--150--><item></item>
-        <!--151--><item></item>
-        <!--152--><item></item>
-        <!--153--><item></item>
-        <!--154--><item></item>
-        <!--155--><item></item>
-        <!--156--><item></item>
-        <!--157--><item></item>
-        <!--158--><item></item>
-        <!--159--><item></item>
-        <!--160--><item></item>
-        <!--161--><item></item>
-        <!--162--><item></item>
-        <!--163--><item></item>
-        <!--164--><item></item>
-        <!--165--><item></item>
-        <!--166--><item></item>
-        <!--167--><item></item>
-        <!--168--><item></item>
-        <!--169--><item></item>
-        <!--170--><item></item>
-        <!--171--><item></item>
-        <!--172--><item></item>
-        <!--173--><item></item>
-        <!--174--><item></item>
-        <!--175--><item></item>
-        <!--176--><item></item>
-        <!--177--><item></item>
-        <!--178--><item></item>
-        <!--179--><item></item>
-        <!--180--><item></item>
-        <!--181--><item></item>
-        <!--182--><item></item>
-        <!--183--><item></item>
-        <!--184--><item></item>
-        <!--185--><item></item>
-        <!--186--><item></item>
-        <!--187--><item></item>
-        <!--188--><item></item>
-        <!--189--><item></item>
-        <!--190--><item></item>
-        <!--191--><item></item>
-        <!--192--><item></item>
-        <!--193--><item></item>
-        <!--194--><item></item>
-        <!--195--><item></item>
-        <!--196--><item></item>
-        <!--197--><item></item>
-        <!--198--><item></item>
-        <!--199--><item></item>
-        <!--200--><item></item>
-        <!--201--><item></item>
-        <!--202--><item></item>
-        <!--203--><item></item>
-        <!--204--><item></item>
-        <!--205--><item></item>
-        <!--206--><item></item>
-        <!--207--><item></item>
-        <!--208--><item></item>
-        <!--209--><item></item>
-        <!--210--><item></item>
-        <!--211--><item>absp211rb</item>
-        <!--212--><item></item>
-        <!--213--><item></item>
-        <!--214--><item>absp214rb</item>
-        <!--215--><item></item>
-        <!--216--><item></item>
-        <!--217--><item></item>
-        <!--218--><item></item>
-        <!--219--><item></item>
-        <!--220--><item></item>
-        <!--221--><item></item>
-        <!--222--><item></item>
-        <!--223--><item></item>
-        <!--224--><item></item>
-        <!--225--><item></item>
+        <!--001-->
+        <item></item>
+        <!--002-->
+        <item>absp002rb</item>
+        <!--003-->
+        <item>absp003rb</item>
+        <!--004-->
+        <item></item>
+        <!--005-->
+        <item>absp005rb</item>
+        <!--006-->
+        <item>absp006rb</item>
+        <!--007-->
+        <item>absp007rb</item>
+        <!--008-->
+        <item>absp008rb</item>
+        <!--009-->
+        <item>absp009rb</item>
+        <!--010-->
+        <item>absp010rb</item>
+        <!--011-->
+        <item></item>
+        <!--012-->
+        <item>absp012rb</item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item>absp014rb</item>
+        <!--015-->
+        <item>absp015rb</item>
+        <!--016-->
+        <item>absp016rb</item>
+        <!--017-->
+        <item></item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item>absp019rb</item>
+        <!--020-->
+        <item>absp020rb</item>
 
     </array>
-    
+
     <array name="imgCabstrapto">
-        <!--001--><item></item>
-        <!--002--><item>absp002rc</item>
-        <!--003--><item>absp003rc</item>
-        <!--004--><item></item>
-        <!--005--><item>absp005rc</item>
-		<!--006--><item>absp006rc</item>
-        <!--007--><item>absp007rc</item>
-        <!--008--><item>absp008rc</item>
-        <!--009--><item>absp009rc</item>
-        <!--010--><item>absp010rc</item>
-        <!--011--><item></item>
-        <!--012--><item>absp012rc</item>
-        <!--013--><item></item>
-        <!--014--><item>absp014rc</item>
-        <!--015--><item>absp015rc</item>
-        <!--016--><item>absp016rc</item>
-        <!--017--><item></item>
-        <!--018--><item></item>
-        <!--019--><item>absp019rc</item>
-        <!--020--><item>absp020rc</item>
-		<!--021--><item></item>
-        <!--022--><item>absp022rc</item>
-        <!--023--><item>absp023rc</item>
-        <!--024--><item>absp024rc</item>
-        <!--025--><item></item>
-        <!--026--><item>absp026rc</item>
-        <!--027--><item>absp027rc</item>
-        <!--028--><item></item>
-        <!--029--><item></item>
-        <!--030--><item>absp030rc</item>
-        <!--031--><item></item>
-        <!--032--><item>absp032rc</item>
-        <!--033--><item></item>
-        <!--034--><item>absp034rc</item>
-        <!--035--><item>absp035rc</item>
-        <!--036--><item></item>
-        <!--037--><item>absp037rc</item>
-        <!--038--><item></item>
-        <!--039--><item></item>
-        <!--040--><item>absp040rc</item>
-        <!--041--><item>absp041rc</item>
-        <!--042--><item>absp042rc</item>
-        <!--043--><item>absp043rc</item>
-        <!--044--><item>absp044rc</item>
-        <!--045--><item></item>
-        <!--046--><item></item>
-        <!--047--><item>absp047rc</item>
-        <!--048--><item>absp048rc</item>
-        <!--049--><item></item>
-        <!--050--><item></item>
-        <!--051--><item>absp051rc</item>
-        <!--052--><item></item>
-        <!--053--><item>absp053rc</item>
-        <!--054--><item></item>
-        <!--055--><item>absp055rc</item>
-        <!--056--><item></item>
-        <!--057--><item>absp057rc</item>
-        <!--058--><item>absp058rc</item>
-        <!--059--><item>absp059rc</item>
-        <!--060--><item></item>
-        <!--061--><item></item>
-        <!--062--><item>absp062rc</item>
-        <!--063--><item>absp063rc</item>
-        <!--064--><item></item>
-        <!--065--><item>absp065rc</item>
-        <!--066--><item></item>
-        <!--067--><item></item>
-        <!--068--><item>absp068rc</item>
-        <!--069--><item></item>
-        <!--070--><item>absp070rc</item>
-        <!--071--><item>absp071rc</item>
-        <!--072--><item>absp072rc</item>
-        <!--073--><item></item>
-        <!--074--><item>absp074rc</item>
-        <!--075--><item></item>
-        <!--076--><item>absp076rc</item>
-        <!--077--><item>absp077rc</item>
-        <!--078--><item></item>
-        <!--079--><item></item>
-        <!--080--><item>absp080rc</item>
-        <!--081--><item></item>
-        <!--082--><item></item>
-        <!--083--><item>absp083rc</item>
-        <!--084--><item></item>
-        <!--085--><item>absp085rc</item>
-        <!--086--><item></item>
-        <!--087--><item></item>
-        <!--088--><item>absp088rc</item>
-        <!--089--><item></item>
-        <!--090--><item>absp090rc</item>
-        <!--091--><item></item>
-        <!--092--><item>absp092rc</item>
-        <!--093--><item></item>
-        <!--094--><item></item>
-        <!--095--><item>absp095rc</item>
-        <!--096--><item></item>
-        <!--097--><item>absp097rc</item>
-        <!--098--><item></item>
-        <!--099--><item>absp099rc</item>
-        <!--100--><item></item>
-        <!--101--><item>absp101rc</item>
-        <!--102--><item>absp102rc</item>
-        <!--103--><item>absp103rc</item>
-        <!--104--><item>absp104rc</item>
-        <!--105--><item>absp105rc</item>
-        <!--106--><item>absp106rc</item>
-        <!--107--><item>absp107rc</item>
-        <!--108--><item>absp108rc</item>
-        <!--109--><item>absp109rc</item>
-        <!--110--><item>absp110rc</item>
-        <!--111--><item>absp111rc</item>
-        <!--112--><item>absp112rc</item>
-        <!--113--><item>absp113rc</item>
-        <!--114--><item></item>
-        <!--115--><item></item>
-        <!--116--><item></item>
-        <!--117--><item></item>
-        <!--118--><item></item>
-        <!--119--><item></item>
-        <!--120--><item></item>
-        <!--121--><item>absp121rc</item>
-        <!--122--><item>absp122rc</item>
-        <!--123--><item>absp123rc</item>
-        <!--124--><item>absp124rc</item>
-        <!--125--><item>absp125rc</item>
-        <!--126--><item>absp126rc</item>
-        <!--127--><item>absp127rc</item>
-        <!--128--><item>absp128rc</item>
-        <!--129--><item>absp129rc</item>
-        <!--130--><item>absp130rc</item>
-        <!--131--><item>absp131rc</item>
-        <!--132--><item>absp132rc</item>
-        <!--133--><item>absp133rc</item>
-        <!--134--><item>absp134rc</item>
-        <!--135--><item>absp135rc</item>
-        <!--136--><item>absp136rc</item>
-        <!--137--><item>absp137rc</item>
-        <!--138--><item>absp138rc</item>
-        <!--139--><item>absp139rc</item>
-        <!--140--><item></item>
-        <!--141--><item></item>
-        <!--142--><item></item>
-        <!--143--><item></item>
-        <!--144--><item></item>
-        <!--145--><item></item>
-        <!--146--><item></item>
-        <!--147--><item></item>
-        <!--148--><item></item>
-        <!--149--><item></item>
-        <!--150--><item></item>
-        <!--151--><item></item>
-        <!--152--><item></item>
-        <!--153--><item></item>
-        <!--154--><item></item>
-        <!--155--><item></item>
-        <!--156--><item></item>
-        <!--157--><item></item>
-        <!--158--><item></item>
-        <!--159--><item></item>
-        <!--160--><item></item>
-        <!--161--><item></item>
-        <!--162--><item></item>
-        <!--163--><item></item>
-        <!--164--><item></item>
-        <!--165--><item></item>
-        <!--166--><item></item>
-        <!--167--><item></item>
-        <!--168--><item></item>
-        <!--169--><item></item>
-        <!--170--><item></item>
-        <!--171--><item></item>
-        <!--172--><item></item>
-        <!--173--><item></item>
-        <!--174--><item></item>
-        <!--175--><item></item>
-        <!--176--><item></item>
-        <!--177--><item></item>
-        <!--178--><item></item>
-        <!--179--><item></item>
-        <!--180--><item></item>
-        <!--181--><item></item>
-        <!--182--><item></item>
-        <!--183--><item></item>
-        <!--184--><item></item>
-        <!--185--><item></item>
-        <!--186--><item></item>
-        <!--187--><item></item>
-        <!--188--><item></item>
-        <!--189--><item></item>
-        <!--190--><item></item>
-        <!--191--><item></item>
-        <!--192--><item></item>
-        <!--193--><item></item>
-        <!--194--><item></item>
-        <!--195--><item></item>
-        <!--196--><item></item>
-        <!--197--><item></item>
-        <!--198--><item></item>
-        <!--199--><item></item>
-        <!--200--><item></item>
-        <!--201--><item></item>
-        <!--202--><item></item>
-        <!--203--><item></item>
-        <!--204--><item></item>
-        <!--205--><item></item>
-        <!--206--><item></item>
-        <!--207--><item></item>
-        <!--208--><item></item>
-        <!--209--><item></item>
-        <!--210--><item></item>
-        <!--211--><item>absp211rc</item>
-        <!--212--><item></item>
-        <!--213--><item></item>
-        <!--214--><item>absp214rc</item>
-        <!--215--><item></item>
-        <!--216--><item></item>
-        <!--217--><item></item>
-        <!--218--><item></item>
-        <!--219--><item></item>
-        <!--220--><item></item>
-        <!--221--><item></item>
-        <!--222--><item></item>
-        <!--223--><item></item>
-        <!--224--><item></item>
-        <!--225--><item></item>
+        <!--001-->
+        <item></item>
+        <!--002-->
+        <item>absp002rc</item>
+        <!--003-->
+        <item>absp003rc</item>
+        <!--004-->
+        <item></item>
+        <!--005-->
+        <item>absp005rc</item>
+        <!--006-->
+        <item>absp006rc</item>
+        <!--007-->
+        <item>absp007rc</item>
+        <!--008-->
+        <item>absp008rc</item>
+        <!--009-->
+        <item>absp009rc</item>
+        <!--010-->
+        <item>absp010rc</item>
+        <!--011-->
+        <item></item>
+        <!--012-->
+        <item>absp012rc</item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item>absp014rc</item>
+        <!--015-->
+        <item>absp015rc</item>
+        <!--016-->
+        <item>absp016rc</item>
+        <!--017-->
+        <item></item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item>absp019rc</item>
+        <!--020-->
+        <item>absp020rc</item>
 
     </array>
-    
+
     <array name="imgDabstrapto">
-        <!--001--><item></item>
-        <!--002--><item>absp002rd</item>
-        <!--003--><item>absp003rd</item>
-        <!--004--><item></item>
-        <!--005--><item>absp005rd</item>
-		<!--006--><item>absp006rd</item>
-        <!--007--><item>absp007rd</item>
-        <!--008--><item>absp008rd</item>
-        <!--009--><item>absp009rd</item>
-        <!--010--><item>absp010rd</item>
-        <!--011--><item></item>
-        <!--012--><item>absp012rd</item>
-        <!--013--><item></item>
-        <!--014--><item>absp014rd</item>
-        <!--015--><item>absp015rd</item>
-        <!--016--><item>absp016rd</item>
-        <!--017--><item></item>
-        <!--018--><item></item>
-        <!--019--><item />
-        <!--020--><item>absp020rd</item>
-		<!--021--><item></item>
-        <!--022--><item />
-        <!--023--><item>absp023rd</item>
-        <!--024--><item>absp024rd</item>
-        <!--025--><item></item>
-        <!--026--><item>absp026rd</item>
-        <!--027--><item>absp027rd</item>
-        <!--028--><item></item>
-        <!--029--><item></item>
-        <!--030--><item>absp030rd</item>
-        <!--031--><item></item>
-        <!--032--><item>absp032rd</item>
-        <!--033--><item></item>
-        <!--034--><item>absp034rd</item>
-        <!--035--><item>absp035rd</item>
-        <!--036--><item></item>
-        <!--037--><item>absp037rd</item>
-        <!--038--><item></item>
-        <!--039--><item></item>
-        <!--040--><item>absp040rd</item>
-        <!--041--><item>absp041rd</item>
-        <!--042--><item>absp042rd</item>
-        <!--043--><item>absp043rd</item>
-        <!--044--><item>absp044rd</item>
-        <!--045--><item></item>
-        <!--046--><item></item>
-        <!--047--><item>absp047rd</item>
-        <!--048--><item>absp048rd</item>
-        <!--049--><item></item>
-        <!--050--><item></item>
-        <!--051--><item>absp051rd</item>
-        <!--052--><item></item>
-        <!--053--><item>absp053rd</item>
-        <!--054--><item></item>
-        <!--055--><item>absp055rd</item>
-        <!--056--><item></item>
-        <!--057--><item>absp057rd</item>
-        <!--058--><item>absp058rd</item>
-        <!--059--><item>absp059rd</item>
-        <!--060--><item></item>
-        <!--061--><item></item>
-        <!--062--><item>absp062rd</item>
-        <!--063--><item>absp063rd</item>
-        <!--064--><item></item>
-        <!--065--><item>absp065rd</item>
-        <!--066--><item></item>
-        <!--067--><item></item>
-        <!--068--><item>absp068rd</item>
-        <!--069--><item></item>
-        <!--070--><item>absp070rd</item>
-        <!--071--><item>absp071rd</item>
-        <!--072--><item>absp072rd</item>
-        <!--073--><item></item>
-        <!--074--><item>absp074rd</item>
-        <!--075--><item></item>
-        <!--076--><item>absp076rd</item>
-        <!--077--><item>absp077rd</item>
-        <!--078--><item></item>
-        <!--079--><item></item>
-        <!--080--><item>absp080rd</item>
-        <!--081--><item></item>
-        <!--082--><item></item>
-        <!--083--><item>absp083rd</item>
-        <!--084--><item></item>
-        <!--085--><item>absp085rd</item>
-        <!--086--><item></item>
-        <!--087--><item></item>
-        <!--088--><item>absp088rd</item>
-        <!--089--><item></item>
-        <!--090--><item>absp090rd</item>
-        <!--091--><item></item>
-        <!--092--><item>absp092rd</item>
-        <!--093--><item></item>
-        <!--094--><item></item>
-        <!--095--><item>absp095rd</item>
-        <!--096--><item></item>
-        <!--097--><item>absp097rd</item>
-        <!--098--><item></item>
-        <!--099--><item>absp099rd</item>
-        <!--100--><item></item>
-        <!--101--><item>absp101rd</item>
-        <!--102--><item>absp102rd</item>
-        <!--103--><item>absp103rd</item>
-        <!--104--><item>absp104rd</item>
-        <!--105--><item>absp105rd</item>
-        <!--106--><item>absp106rd</item>
-        <!--107--><item>absp107rd</item>
-        <!--108--><item>absp108rd</item>
-        <!--109--><item>absp109rd</item>
-        <!--110--><item>absp110rd</item>
-        <!--111--><item>absp111rd</item>
-        <!--112--><item>absp112rd</item>
-        <!--113--><item>absp113rd</item>
-        <!--114--><item></item>
-        <!--115--><item></item>
-        <!--116--><item></item>
-        <!--117--><item></item>
-        <!--118--><item></item>
-        <!--119--><item></item>
-        <!--120--><item></item>
-        <!--121--><item>absp121rd</item>
-        <!--122--><item>absp122rd</item>
-        <!--123--><item>absp123rd</item>
-        <!--124--><item>absp124rd</item>
-        <!--125--><item>absp125rd</item>
-        <!--126--><item>absp126rd</item>
-        <!--127--><item>absp127rd</item>
-        <!--128--><item>absp128rd</item>
-        <!--129--><item>absp129rd</item>
-        <!--130--><item>absp130rd</item>
-        <!--131--><item>absp131rd</item>
-        <!--132--><item>absp132rd</item>
-        <!--133--><item>absp133rd</item>
-        <!--134--><item>absp134rd</item>
-        <!--135--><item>absp135rd</item>
-        <!--136--><item>absp136rd</item>
-        <!--137--><item>absp137rd</item>
-        <!--138--><item>absp138rd</item>
-        <!--139--><item>absp139rd</item>
-        <!--140--><item></item>
-        <!--141--><item></item>
-        <!--142--><item></item>
-        <!--143--><item></item>
-        <!--144--><item></item>
-        <!--145--><item></item>
-        <!--146--><item></item>
-        <!--147--><item></item>
-        <!--148--><item></item>
-        <!--149--><item></item>
-        <!--150--><item></item>
-        <!--151--><item></item>
-        <!--152--><item></item>
-        <!--153--><item></item>
-        <!--154--><item></item>
-        <!--155--><item></item>
-        <!--156--><item></item>
-        <!--157--><item></item>
-        <!--158--><item></item>
-        <!--159--><item></item>
-        <!--160--><item></item>
-        <!--161--><item></item>
-        <!--162--><item></item>
-        <!--163--><item></item>
-        <!--164--><item></item>
-        <!--165--><item></item>
-        <!--166--><item></item>
-        <!--167--><item></item>
-        <!--168--><item></item>
-        <!--169--><item></item>
-        <!--170--><item></item>
-        <!--171--><item></item>
-        <!--172--><item></item>
-        <!--173--><item></item>
-        <!--174--><item></item>
-        <!--175--><item></item>
-        <!--176--><item></item>
-        <!--177--><item></item>
-        <!--178--><item></item>
-        <!--179--><item></item>
-        <!--180--><item></item>
-        <!--181--><item></item>
-        <!--182--><item></item>
-        <!--183--><item></item>
-        <!--184--><item></item>
-        <!--185--><item></item>
-        <!--186--><item></item>
-        <!--187--><item></item>
-        <!--188--><item></item>
-        <!--189--><item></item>
-        <!--190--><item></item>
-        <!--191--><item></item>
-        <!--192--><item></item>
-        <!--193--><item></item>
-        <!--194--><item></item>
-        <!--195--><item></item>
-        <!--196--><item></item>
-        <!--197--><item></item>
-        <!--198--><item></item>
-        <!--199--><item></item>
-        <!--200--><item></item>
-        <!--201--><item></item>
-        <!--202--><item></item>
-        <!--203--><item></item>
-        <!--204--><item></item>
-        <!--205--><item></item>
-        <!--206--><item></item>
-        <!--207--><item></item>
-        <!--208--><item></item>
-        <!--209--><item></item>
-        <!--210--><item></item>
-        <!--211--><item>absp211rd</item>
-        <!--212--><item></item>
-        <!--213--><item></item>
-        <!--214--><item>absp214rd</item>
-        <!--215--><item></item>
-        <!--216--><item></item>
-        <!--217--><item></item>
-        <!--218--><item></item>
-        <!--219--><item></item>
-        <!--220--><item></item>
-        <!--221--><item></item>
-        <!--222--><item></item>
-        <!--223--><item></item>
-        <!--224--><item></item>
-        <!--225--><item></item>
+        <!--001-->
+        <item></item>
+        <!--002-->
+        <item>absp002rd</item>
+        <!--003-->
+        <item>absp003rd</item>
+        <!--004-->
+        <item></item>
+        <!--005-->
+        <item>absp005rd</item>
+        <!--006-->
+        <item>absp006rd</item>
+        <!--007-->
+        <item>absp007rd</item>
+        <!--008-->
+        <item>absp008rd</item>
+        <!--009-->
+        <item>absp009rd</item>
+        <!--010-->
+        <item>absp010rd</item>
+        <!--011-->
+        <item></item>
+        <!--012-->
+        <item>absp012rd</item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item>absp014rd</item>
+        <!--015-->
+        <item>absp015rd</item>
+        <!--016-->
+        <item>absp016rd</item>
+        <!--017-->
+        <item></item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item />
+        <!--020-->
+        <item>absp020rd</item>
 
     </array>
-    
+
     <array name="imgSolabstrapto">
-        <!--001--><item></item>
-        <!--002--><item>absp002ra</item>
-        <!--003--><item>absp003rc</item>
-        <!--004--><item></item>
-        <!--005--><item>absp005ra</item>
-		<!--006--><item>absp006rc</item>
-        <!--007--><item>absp007rb</item>
-        <!--008--><item>absp008rd</item>
-        <!--009--><item>absp009ra</item>
-        <!--010--><item>absp010rc</item>
-        <!--011--><item></item>
-        <!--012--><item>absp012rc</item>
-        <!--013--><item></item>
-        <!--014--><item>absp014rc</item>
-        <!--015--><item></item>
-        <!--016--><item>absp016rd</item>
-        <!--017--><item></item>
-        <!--018--><item></item>
-        <!--019--><item>absp19rc</item>
-        <!--020--><item>absp20rc</item>
-		<!--021--><item></item>
-        <!--022--><item>absp022rd</item>
-        <!--023--><item>absp023rb</item>
-        <!--024--><item>absp024rd</item>
-        <!--025--><item></item>
-        <!--026--><item>absp026rb</item>
-        <!--027--><item>absp027rc</item>
-        <!--028--><item></item>
-        <!--029--><item></item>
-        <!--030--><item>absp030rd</item>
-        <!--031--><item></item>
-        <!--032--><item>absp032rb</item>
-        <!--033--><item></item>
-        <!--034--><item>absp034rd</item>
-        <!--035--><item>absp035rc</item>
-        <!--036--><item></item>
-        <!--037--><item>absp037rb</item>
-        <!--038--><item></item>
-        <!--039--><item></item>
-        <!--040--><item>absp040rc</item>
-        <!--041--><item>absp041rd</item>
-        <!--042--><item>absp042rb</item>
-        <!--043--><item>absp043rb</item>
-        <!--044--><item>absp044rd</item>
-        <!--045--><item></item>
-        <!--046--><item></item>
-        <!--047--><item>absp047rd</item>
-        <!--048--><item>absp048rc</item>
-        <!--049--><item></item>
-        <!--050--><item></item>
-        <!--051--><item>absp051rd</item>
-        <!--052--><item></item>
-        <!--053--><item>absp053rb</item>
-        <!--054--><item></item>
-        <!--055--><item>absp055rd</item>
-        <!--056--><item></item>
-        <!--057--><item>absp057rc</item>
-        <!--058--><item>absp058ra</item>
-        <!--059--><item>absp059rd</item>
-        <!--060--><item></item>
-        <!--061--><item></item>
-        <!--062--><item>absp062rd</item>
-        <!--063--><item>absp063rd</item>
-        <!--064--><item></item>
-        <!--065--><item>absp065rb</item>
-        <!--066--><item></item>
-        <!--067--><item></item>
-        <!--068--><item>absp068rc</item>
-        <!--069--><item></item>
-        <!--070--><item>absp070rc</item>
-        <!--071--><item>absp071rb</item>
-        <!--072--><item>absp072ra</item>
-        <!--073--><item></item>
-        <!--074--><item>absp074rd</item>
-        <!--075--><item></item>
-        <!--076--><item>absp076rc</item>
-        <!--077--><item>absp077rb</item>
-        <!--078--><item></item>
-        <!--079--><item></item>
-        <!--080--><item>absp080rb</item>
-        <!--081--><item></item>
-        <!--082--><item></item>
-        <!--083--><item>absp083rc</item>
-        <!--084--><item></item>
-        <!--085--><item>absp085ra</item>
-        <!--086--><item></item>
-        <!--087--><item></item>
-        <!--088--><item>absp088rb</item>
-        <!--089--><item></item>
-        <!--090--><item>absp090rd</item>
-        <!--091--><item></item>
-        <!--092--><item>absp092rb</item>
-        <!--093--><item></item>
-        <!--094--><item></item>
-        <!--095--><item>absp095rc</item>
-        <!--096--><item></item>
-        <!--097--><item>absp097rd</item>
-        <!--098--><item></item>
-        <!--099--><item>absp099rc</item>
-        <!--100--><item></item>
-        <!--101--><item>absp101rd</item>
-        <!--102--><item>absp102rb</item>
-        <!--103--><item>absp103ra</item>
-        <!--104--><item>absp104rb</item>
-        <!--105--><item>absp105rd</item>
-        <!--106--><item>absp106rb</item>
-        <!--107--><item>absp107rb</item>
-        <!--108--><item>absp108rb</item>
-        <!--109--><item>absp109rd</item>
-        <!--110--><item>absp110rd</item>
-        <!--111--><item>absp111rb</item>
-        <!--112--><item>absp112rc</item>
-        <!--113--><item>absp113rb</item>
-        <!--114--><item></item>
-        <!--115--><item></item>
-        <!--116--><item></item>
-        <!--117--><item></item>
-        <!--118--><item></item>
-        <!--119--><item></item>
-        <!--120--><item></item>
-        <!--121--><item>absp121rb</item>
-        <!--122--><item>absp122rb</item>
-        <!--123--><item>absp123rb</item>
-        <!--124--><item>absp124rd</item>
-        <!--125--><item>absp125rd</item>
-        <!--126--><item>absp126rb</item>
-        <!--127--><item>absp127ra</item>
-        <!--128--><item>absp128rd</item>
-        <!--129--><item>absp129ra</item>
-        <!--130--><item>absp130rd</item>
-        <!--131--><item>absp131rb</item>
-        <!--132--><item>absp132rd</item>
-        <!--133--><item>absp133rb</item>
-        <!--134--><item>absp134rb</item>
-        <!--135--><item>absp135ra</item>
-        <!--136--><item>absp136rc</item>
-        <!--137--><item>absp137rc</item>
-        <!--138--><item>absp138ra</item>
-        <!--139--><item>absp139rb</item>
-        <!--140--><item></item>
-        <!--141--><item></item>
-        <!--142--><item></item>
-        <!--143--><item></item>
-        <!--144--><item></item>
-        <!--145--><item></item>
-        <!--146--><item></item>
-        <!--147--><item></item>
-        <!--148--><item></item>
-        <!--149--><item></item>
-        <!--150--><item></item>
-        <!--151--><item></item>
-        <!--152--><item></item>
-        <!--153--><item></item>
-        <!--154--><item></item>
-        <!--155--><item></item>
-        <!--156--><item></item>
-        <!--157--><item></item>
-        <!--158--><item></item>
-        <!--159--><item></item>
-        <!--160--><item></item>
-        <!--161--><item></item>
-        <!--162--><item></item>
-        <!--163--><item></item>
-        <!--164--><item></item>
-        <!--165--><item></item>
-        <!--166--><item></item>
-        <!--167--><item></item>
-        <!--168--><item></item>
-        <!--169--><item></item>
-        <!--170--><item></item>
-        <!--171--><item></item>
-        <!--172--><item></item>
-        <!--173--><item></item>
-        <!--174--><item></item>
-        <!--175--><item></item>
-        <!--176--><item></item>
-        <!--177--><item></item>
-        <!--178--><item></item>
-        <!--179--><item></item>
-        <!--180--><item></item>
-        <!--181--><item></item>
-        <!--182--><item></item>
-        <!--183--><item></item>
-        <!--184--><item></item>
-        <!--185--><item></item>
-        <!--186--><item></item>
-        <!--187--><item></item>
-        <!--188--><item></item>
-        <!--189--><item></item>
-        <!--190--><item></item>
-        <!--191--><item></item>
-        <!--192--><item></item>
-        <!--193--><item></item>
-        <!--194--><item></item>
-        <!--195--><item></item>
-        <!--196--><item></item>
-        <!--197--><item></item>
-        <!--198--><item></item>
-        <!--199--><item></item>
-        <!--200--><item></item>
-        <!--201--><item></item>
-        <!--202--><item></item>
-        <!--203--><item></item>
-        <!--204--><item></item>
-        <!--205--><item></item>
-        <!--206--><item></item>
-        <!--207--><item></item>
-        <!--208--><item></item>
-        <!--209--><item></item>
-        <!--210--><item></item>
-        <!--211--><item>absp211rc</item>
-        <!--212--><item></item>
-        <!--213--><item></item>
-        <!--214--><item>absp214rb</item>
-        <!--215--><item></item>
-        <!--216--><item></item>
-        <!--217--><item></item>
-        <!--218--><item></item>
-        <!--219--><item></item>
-        <!--220--><item></item>
-        <!--221--><item></item>
-        <!--222--><item></item>
-        <!--223--><item></item>
-        <!--224--><item></item>
-        <!--225--><item></item>
+        <!--001-->
+        <item></item>
+        <!--002-->
+        <item>absp002ra</item>
+        <!--003-->
+        <item>absp003rc</item>
+        <!--004-->
+        <item></item>
+        <!--005-->
+        <item>absp005ra</item>
+        <!--006-->
+        <item>absp006rc</item>
+        <!--007-->
+        <item>absp007rb</item>
+        <!--008-->
+        <item>absp008rd</item>
+        <!--009-->
+        <item>absp009ra</item>
+        <!--010-->
+        <item>absp010rc</item>
+        <!--011-->
+        <item></item>
+        <!--012-->
+        <item>absp012rc</item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item>absp014rc</item>
+        <!--015-->
+        <item></item>
+        <!--016-->
+        <item>absp016rd</item>
+        <!--017-->
+        <item></item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item>absp19rc</item>
+        <!--020-->
+        <item>absp20rc</item>
 
     </array>
-    
+
     <array name="imgExpliabstrapto">
-        <!--001--><item></item>
-        <!--002--><item></item>
-        <!--003--><item></item>
-        <!--004--><item></item>
-        <!--005--><item></item>
-		<!--006--><item></item>
-        <!--007--><item></item>
-        <!--008--><item></item>
-        <!--009--><item></item>
-        <!--010--><item></item>
-		<!--011--><item></item>
-        <!--012--><item></item>
-        <!--013--><item></item>
-        <!--014--><item></item>
-        <!--015--><item></item>
-		<!--016--><item></item>
-        <!--017--><item></item>
-        <!--018--><item></item>
-        <!--019--><item></item>
-        <!--020--><item></item>
-		<!--021--><item></item>
-        <!--022--><item></item>
-        <!--023--><item></item>
-        <!--024--><item></item>
-        <!--025--><item></item>
-        <!--026--><item></item>
-        <!--027--><item></item>
-        <!--028--><item></item>
-        <!--029--><item></item>
-        <!--030--><item></item>
-        <!--031--><item></item>
-        <!--032--><item></item>
-        <!--033--><item></item>
-        <!--034--><item></item>
-        <!--035--><item></item>
-        <!--036--><item></item>
-        <!--037--><item></item>
-        <!--038--><item></item>
-        <!--039--><item></item>
-        <!--040--><item></item>
-        <!--041--><item></item>
-        <!--042--><item></item>
-        <!--043--><item></item>
-        <!--044--><item></item>
-        <!--045--><item></item>
-        <!--046--><item></item>
-        <!--047--><item></item>
-        <!--048--><item></item>
-        <!--049--><item></item>
-        <!--050--><item></item>
-        <!--051--><item></item>
-        <!--052--><item></item>
-        <!--053--><item></item>
-        <!--054--><item></item>
-        <!--055--><item></item>
-        <!--056--><item></item>
-        <!--057--><item></item>
-        <!--058--><item></item>
-        <!--059--><item></item>
-        <!--060--><item></item>
-        <!--061--><item></item>
-        <!--062--><item></item>
-        <!--063--><item></item>
-        <!--064--><item></item>
-        <!--065--><item></item>
-        <!--066--><item></item>
-        <!--067--><item></item>
-        <!--068--><item></item>
-        <!--069--><item></item>
-        <!--070--><item></item>
-        <!--071--><item></item>
-        <!--072--><item></item>
-        <!--073--><item></item>
-        <!--074--><item></item>
-        <!--075--><item></item>
-        <!--076--><item></item>
-        <!--077--><item></item>
-        <!--078--><item></item>
-        <!--079--><item></item>
-        <!--080--><item></item>
-        <!--081--><item></item>
-        <!--082--><item></item>
-        <!--083--><item></item>
-        <!--084--><item></item>
-        <!--085--><item></item>
-        <!--086--><item></item>
-        <!--087--><item></item>
-        <!--088--><item></item>
-        <!--089--><item></item>
-        <!--090--><item></item>
-        <!--091--><item></item>
-        <!--092--><item></item>
-        <!--093--><item></item>
-        <!--094--><item></item>
-        <!--095--><item></item>
-        <!--096--><item></item>
-        <!--097--><item></item>
-        <!--098--><item></item>
-        <!--099--><item></item>
-        <!--100--><item></item>
-        <!--101--><item></item>
-        <!--102--><item></item>
-        <!--103--><item></item>
-        <!--104--><item></item>
-        <!--105--><item></item>
-        <!--106--><item></item>
-        <!--107--><item></item>
-        <!--108--><item></item>
-        <!--109--><item></item>
-        <!--110--><item></item>
-        <!--111--><item></item>
-        <!--112--><item></item>
-        <!--113--><item></item>
-        <!--114--><item></item>
-        <!--115--><item></item>
-        <!--116--><item></item>
-        <!--117--><item></item>
-        <!--118--><item></item>
-        <!--119--><item></item>
-        <!--120--><item></item>
-        <!--121--><item></item>
-        <!--122--><item></item>
-        <!--123--><item></item>
-        <!--124--><item></item>
-        <!--125--><item></item>
-        <!--126--><item></item>
-        <!--127--><item></item>
-        <!--128--><item></item>
-        <!--129--><item></item>
-        <!--130--><item></item>
-        <!--131--><item></item>
-        <!--132--><item></item>
-        <!--133--><item></item>
-        <!--134--><item></item>
-        <!--135--><item></item>
-        <!--136--><item></item>
-        <!--137--><item></item>
-        <!--138--><item></item>
-        <!--139--><item></item>
-        <!--140--><item></item>
-        <!--141--><item></item>
-        <!--142--><item></item>
-        <!--143--><item></item>
-        <!--144--><item></item>
-        <!--145--><item></item>
-        <!--146--><item></item>
-        <!--147--><item></item>
-        <!--148--><item></item>
-        <!--149--><item></item>
-        <!--150--><item></item>
-        <!--151--><item></item>
-        <!--152--><item></item>
-        <!--153--><item></item>
-        <!--154--><item></item>
-        <!--155--><item></item>
-        <!--156--><item></item>
-        <!--157--><item></item>
-        <!--158--><item></item>
-        <!--159--><item></item>
-        <!--160--><item></item>
-        <!--161--><item></item>
-        <!--162--><item></item>
-        <!--163--><item></item>
-        <!--164--><item></item>
-        <!--165--><item></item>
-        <!--166--><item></item>
-        <!--167--><item></item>
-        <!--168--><item></item>
-        <!--169--><item></item>
-        <!--170--><item></item>
-        <!--171--><item></item>
-        <!--172--><item></item>
-        <!--173--><item></item>
-        <!--174--><item></item>
-        <!--175--><item></item>
-        <!--176--><item></item>
-        <!--177--><item></item>
-        <!--178--><item></item>
-        <!--179--><item></item>
-        <!--180--><item></item>
-        <!--181--><item></item>
-        <!--182--><item></item>
-        <!--183--><item></item>
-        <!--184--><item></item>
-        <!--185--><item></item>
-        <!--186--><item></item>
-        <!--187--><item></item>
-        <!--188--><item></item>
-        <!--189--><item></item>
-        <!--190--><item></item>
-        <!--191--><item></item>
-        <!--192--><item></item>
-        <!--193--><item></item>
-        <!--194--><item></item>
-        <!--195--><item></item>
-        <!--196--><item></item>
-        <!--197--><item></item>
-        <!--198--><item></item>
-        <!--199--><item></item>
-        <!--200--><item></item>
-        <!--201--><item></item>
-        <!--202--><item></item>
-        <!--203--><item></item>
-        <!--204--><item></item>
-        <!--205--><item></item>
-        <!--206--><item></item>
-        <!--207--><item></item>
-        <!--208--><item></item>
-        <!--209--><item></item>
-        <!--210--><item></item>
-        <!--211--><item></item>
-        <!--212--><item></item>
-        <!--213--><item></item>
-        <!--214--><item></item>
-        <!--215--><item></item>
-        <!--216--><item></item>
-        <!--217--><item></item>
-        <!--218--><item></item>
-        <!--219--><item></item>
-        <!--220--><item></item>
-        <!--221--><item></item>
-        <!--222--><item></item>
-        <!--223--><item></item>
-        <!--224--><item></item>
-        <!--225--><item></item>
+        <!--001-->
+        <item></item>
+        <!--002-->
+        <item></item>
+        <!--003-->
+        <item></item>
+        <!--004-->
+        <item></item>
+        <!--005-->
+        <item></item>
+        <!--006-->
+        <item></item>
+        <!--007-->
+        <item></item>
+        <!--008-->
+        <item></item>
+        <!--009-->
+        <item></item>
+        <!--010-->
+        <item></item>
+        <!--011-->
+        <item></item>
+        <!--012-->
+        <item></item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item></item>
+        <!--015-->
+        <item></item>
+        <!--016-->
+        <item></item>
+        <!--017-->
+        <item></item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item></item>
+        <!--020-->
+        <item></item>
 
     </array>
 </resources>

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -52,7 +53,15 @@ public class main_resultado_exam extends Activity {
 
         final String[] baremorecu = {""};
         try {
-            File ruta_sd = getExternalFilesDir(null);
+            File ruta_sd;
+            String state = Environment.getExternalStorageState();
+            if (Environment.MEDIA_MOUNTED.equals(state)) {
+                // We can read and write the media
+                ruta_sd = getExternalFilesDir(null);
+            } else {
+                // Load another directory, probably local memory
+                ruta_sd = getFilesDir();
+            }
             File f = new File(ruta_sd.getAbsolutePath(), "baremo");
 
             BufferedReader fin =
@@ -368,7 +377,15 @@ public class main_resultado_exam extends Activity {
                         notabaremo();
                         notabar.setText(getString(R.string.sunotaconbaremo) + "\n" + notas.getNotaredondeadabar());
                         try {
-                            File ruta_sd = getExternalFilesDir(null);
+                            File ruta_sd;
+                            String state = Environment.getExternalStorageState();
+                            if (Environment.MEDIA_MOUNTED.equals(state)) {
+                                // We can read and write the media
+                                ruta_sd = getExternalFilesDir(null);
+                            } else {
+                                // Load another directory, probably local memory
+                                ruta_sd = getFilesDir();
+                            }
                             File f = new File(ruta_sd.getAbsolutePath(), "baremo");
                             OutputStreamWriter fout =
                                     new OutputStreamWriter(
@@ -444,6 +461,7 @@ public class main_resultado_exam extends Activity {
 
                     toast1.show();
                 } else {
+                    guardar.setEnabled(false);
                     Double kk = Double.parseDouble(baremo.getText().toString());
                     if (kk > 0 && kk < 41) {
                         if (notas.getNotaredondeadabar() != 0) {
@@ -451,7 +469,15 @@ public class main_resultado_exam extends Activity {
                             DateFormat fechaHora = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                             String convertido = fechaHora.format(date);
 
-                            File ruta_sd = getExternalFilesDir(null);
+                            File ruta_sd;
+                            String state = Environment.getExternalStorageState();
+                            if (Environment.MEDIA_MOUNTED.equals(state)) {
+                                // We can read and write the media
+                                ruta_sd = getExternalFilesDir(null);
+                            } else {
+                                // Load another directory, probably local memory
+                                ruta_sd = getFilesDir();
+                            }
                             File a = new File(ruta_sd.getAbsolutePath(), convertido + "examen"+notas.getNotaredondeadabar());
                             try {
                                 JSONObject jsonObject = new JSONObject();

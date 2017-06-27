@@ -26,7 +26,8 @@ import java.util.TimerTask;
 
 public class main_splash extends Activity {
 
-    String version = "5.1.4";
+    //String version = "5.1.4";
+    String version = String.valueOf((BuildConfig.VERSION_NAME));
     private static final long SPLASH_SCREEN_DELAY = 2000;
 
     @Override

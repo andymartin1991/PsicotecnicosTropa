@@ -2,6 +2,7 @@ package com.example.andym.psicotecnicostropa;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -41,7 +42,15 @@ public class main_calculabaremo extends Activity {
                 }
                 mostrar.setText(getString(R.string.baremototal) + " " + puntos);
                 try {
-                    File ruta_sd = getExternalFilesDir(null);
+                    File ruta_sd;
+                    String state = Environment.getExternalStorageState();
+                    if (Environment.MEDIA_MOUNTED.equals(state)) {
+                        // We can read and write the media
+                        ruta_sd = getExternalFilesDir(null);
+                    } else {
+                        // Load another directory, probably local memory
+                        ruta_sd = getFilesDir();
+                    }
                     File f = new File(ruta_sd.getAbsolutePath(), "baremo");
                     OutputStreamWriter fout =
                             new OutputStreamWriter(

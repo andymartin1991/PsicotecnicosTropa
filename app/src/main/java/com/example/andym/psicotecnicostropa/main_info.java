@@ -2,6 +2,7 @@ package com.example.andym.psicotecnicostropa;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -680,7 +681,7 @@ public class main_info extends Activity {
                 }
             }
         });
-        String version = String.valueOf((BuildConfig.VERSION_CODE));
+        String version = String.valueOf((BuildConfig.VERSION_NAME));
         TextView versi = (TextView) findViewById(R.id.version);
         versi.setText(version);
 
@@ -688,7 +689,15 @@ public class main_info extends Activity {
 
     private boolean datos(String tipo) {
         boolean encontrado = false;
-        File ruta_sd = getExternalFilesDir(null);
+        File ruta_sd;
+        String state = Environment.getExternalStorageState();
+        if (Environment.MEDIA_MOUNTED.equals(state)) {
+            // We can read and write the media
+            ruta_sd = getExternalFilesDir(null);
+        } else {
+            // Load another directory, probably local memory
+            ruta_sd = getFilesDir();
+        }
         final File a = new File(ruta_sd.getAbsolutePath(), tipo + "cont");
         final File b = new File(ruta_sd.getAbsolutePath(), tipo + "aciertos");
         final File c = new File(ruta_sd.getAbsolutePath(), tipo + "fallos");
@@ -704,7 +713,15 @@ public class main_info extends Activity {
 
     private boolean datobaremo() {
         boolean encontrado = false;
-        File ruta_sd = getExternalFilesDir(null);
+        File ruta_sd;
+        String state = Environment.getExternalStorageState();
+        if (Environment.MEDIA_MOUNTED.equals(state)) {
+            // We can read and write the media
+            ruta_sd = getExternalFilesDir(null);
+        } else {
+            // Load another directory, probably local memory
+            ruta_sd = getFilesDir();
+        }
         File f = new File(ruta_sd.getAbsolutePath(), "baremo");
         if (f.exists()) {
             encontrado = true;
@@ -713,7 +730,15 @@ public class main_info extends Activity {
     }
 
     private void borrar(String tipo) {
-        File ruta_sd = getExternalFilesDir(null);
+        File ruta_sd;
+        String state = Environment.getExternalStorageState();
+        if (Environment.MEDIA_MOUNTED.equals(state)) {
+            // We can read and write the media
+            ruta_sd = getExternalFilesDir(null);
+        } else {
+            // Load another directory, probably local memory
+            ruta_sd = getFilesDir();
+        }
         final File a = new File(ruta_sd.getAbsolutePath(), tipo + "cont");
         final File b = new File(ruta_sd.getAbsolutePath(), tipo + "aciertos");
         final File c = new File(ruta_sd.getAbsolutePath(), tipo + "fallos");
@@ -729,7 +754,15 @@ public class main_info extends Activity {
     }
 
     private void borrarbar() {
-        File ruta_sd = getExternalFilesDir(null);
+        File ruta_sd;
+        String state = Environment.getExternalStorageState();
+        if (Environment.MEDIA_MOUNTED.equals(state)) {
+            // We can read and write the media
+            ruta_sd = getExternalFilesDir(null);
+        } else {
+            // Load another directory, probably local memory
+            ruta_sd = getFilesDir();
+        }
         File f = new File(ruta_sd.getAbsolutePath(), "baremo");
         f.delete();
     }

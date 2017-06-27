@@ -6,6 +6,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
@@ -36,6 +37,7 @@ public class main_preguntas extends Activity {
     int[] pos;
     int colocar = 0;
     int comienzocarga = 3;
+    int memoria = 10000;//10000
 
     String[] pregunta = null;
     String[] resA = null;
@@ -415,7 +417,15 @@ public class main_preguntas extends Activity {
 
         pp = true;
         try {
-            File ruta_sd = getExternalFilesDir(null);
+            File ruta_sd;
+            String state = Environment.getExternalStorageState();
+            if (Environment.MEDIA_MOUNTED.equals(state)) {
+                // We can read and write the media
+                ruta_sd = getExternalFilesDir(null);
+            } else {
+                // Load another directory, probably local memory
+                ruta_sd = getFilesDir();
+            }
             final File a = new File(ruta_sd.getAbsolutePath(), tipo + "cont");
             final File b = new File(ruta_sd.getAbsolutePath(), tipo + "aciertos");
             final File c = new File(ruta_sd.getAbsolutePath(), tipo + "fallos");
@@ -634,7 +644,17 @@ public class main_preguntas extends Activity {
     private void guardar(String tipo) {
         boolean correcto[] = {true, true, true, true, true, true, true, true,};
         try {
-            File ruta_sd = getExternalFilesDir(null);
+            String state = Environment.getExternalStorageState();
+
+            File ruta_sd;
+            if (Environment.MEDIA_MOUNTED.equals(state)) {
+                // We can read and write the media
+                ruta_sd = getExternalFilesDir(null);
+            } else {
+                // Load another directory, probably local memory
+                ruta_sd = getFilesDir();
+            }
+            //File ruta_sd = getExternalFilesDir(null);
             File f = new File(ruta_sd.getAbsolutePath(), tipo + "aciertos");
             OutputStreamWriter fout =
                     new OutputStreamWriter(
@@ -649,7 +669,16 @@ public class main_preguntas extends Activity {
             correcto[0] = false;
         }
         try {
-            File ruta_sd = getExternalFilesDir(null);
+            String state = Environment.getExternalStorageState();
+
+            File ruta_sd;
+            if (Environment.MEDIA_MOUNTED.equals(state)) {
+                // We can read and write the media
+                ruta_sd = getExternalFilesDir(null);
+            } else {
+                // Load another directory, probably local memory
+                ruta_sd = getFilesDir();
+            }
             File f = new File(ruta_sd.getAbsolutePath(), tipo + "fallos");
             OutputStreamWriter fout =
                     new OutputStreamWriter(
@@ -664,7 +693,16 @@ public class main_preguntas extends Activity {
             correcto[1] = false;
         }
         try {
-            File ruta_sd = getExternalFilesDir(null);
+            String state = Environment.getExternalStorageState();
+
+            File ruta_sd;
+            if (Environment.MEDIA_MOUNTED.equals(state)) {
+                // We can read and write the media
+                ruta_sd = getExternalFilesDir(null);
+            } else {
+                // Load another directory, probably local memory
+                ruta_sd = getFilesDir();
+            }
             File f = new File(ruta_sd.getAbsolutePath(), tipo + "colocar");
             OutputStreamWriter fout =
                     new OutputStreamWriter(
@@ -679,7 +717,16 @@ public class main_preguntas extends Activity {
             correcto[2] = false;
         }
         try {
-            File ruta_sd = getExternalFilesDir(null);
+            String state = Environment.getExternalStorageState();
+
+            File ruta_sd;
+            if (Environment.MEDIA_MOUNTED.equals(state)) {
+                // We can read and write the media
+                ruta_sd = getExternalFilesDir(null);
+            } else {
+                // Load another directory, probably local memory
+                ruta_sd = getFilesDir();
+            }
             File f = new File(ruta_sd.getAbsolutePath(), tipo + "cont");
             OutputStreamWriter fout =
                     new OutputStreamWriter(
@@ -694,7 +741,16 @@ public class main_preguntas extends Activity {
             correcto[3] = false;
         }
         try {
-            File ruta_sd = getExternalFilesDir(null);
+            String state = Environment.getExternalStorageState();
+
+            File ruta_sd;
+            if (Environment.MEDIA_MOUNTED.equals(state)) {
+                // We can read and write the media
+                ruta_sd = getExternalFilesDir(null);
+            } else {
+                // Load another directory, probably local memory
+                ruta_sd = getFilesDir();
+            }
             File f = new File(ruta_sd.getAbsolutePath(), tipo + "pos");
             OutputStreamWriter fout =
                     new OutputStreamWriter(
@@ -711,7 +767,16 @@ public class main_preguntas extends Activity {
             correcto[4] = false;
         }
         try {
-            File ruta_sd = getExternalFilesDir(null);
+            String state = Environment.getExternalStorageState();
+
+            File ruta_sd;
+            if (Environment.MEDIA_MOUNTED.equals(state)) {
+                // We can read and write the media
+                ruta_sd = getExternalFilesDir(null);
+            } else {
+                // Load another directory, probably local memory
+                ruta_sd = getFilesDir();
+            }
             File f = new File(ruta_sd.getAbsolutePath(), tipo + "arreglo");
             OutputStreamWriter fout =
                     new OutputStreamWriter(
@@ -731,7 +796,16 @@ public class main_preguntas extends Activity {
             toast1.show();
             /*si falla borramos todo los archivos en caso de que exista*/
             try {
-                File ruta_sd = getExternalFilesDir(null);
+                String state = Environment.getExternalStorageState();
+
+                File ruta_sd;
+                if (Environment.MEDIA_MOUNTED.equals(state)) {
+                    // We can read and write the media
+                    ruta_sd = getExternalFilesDir(null);
+                } else {
+                    // Load another directory, probably local memory
+                    ruta_sd = getFilesDir();
+                }
                 File a = new File(ruta_sd.getAbsolutePath(), tipo + "cont");
                 File b = new File(ruta_sd.getAbsolutePath(), tipo + "aciertos");
                 File c = new File(ruta_sd.getAbsolutePath(), tipo + "fallos");
@@ -1114,7 +1188,7 @@ public class main_preguntas extends Activity {
                     dmemo.setVisibility(View.GONE);
                     imgpre.setVisibility(View.VISIBLE);
                     pregunta.setVisibility(View.GONE);
-                    esperarYCerrar(2000);
+                    esperarYCerrar(memoria);
                 }
             }
         }

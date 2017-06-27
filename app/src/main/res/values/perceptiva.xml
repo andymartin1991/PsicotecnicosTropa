@@ -1,3046 +1,624 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
+
     <array name="preperceptiva">
-        <!--001--><item>¿Qué palabra tiene menos vocales (sin repetir)?</item>
-        <!--002--><item>¿Cuántas \'t\' hay?\n\nkshdktkshfhtjkshsjtksjftnsjdtnskstndkstnskstt</item>
-        <!--003--><item>¿Qué palabra tiene más consonantes (sin repetir)?</item>
-        <!--004--><item>¿Cómo se escribiría \'diccionario\' según los símbolos?</item>
-        <!--005--><item>¿Cuántos \'0\' hay?\n\n123485640163545600135465465446545546545054645465458</item>
-		<!--006--><item>¿Qué palabra tiene más vocales (sin repetir)?</item>
-        <!--007--><item>¿Cuál de las imágenes es igual a la dada?</item>
-        <!--008--><item>¿Cuál de las imágenes es igual a la dada?</item>
-        <!--009--><item>¿Cuánto suman el número de veces que aparece \'C\' y el número de veces que aparece \'A\'?\n\nCBHGBXANJHCAAMAJHGDFTUHHGFYCJGUUJCUAHHQP</item>
-        <!--010--><item>¿Cuántas \'M\' hay?\n\nMMMMMMWMMMMMWMMMMMWMNMMMMMWWMMWMMMWMMMW</item>
-        <!--011--><item>¿Qué pieza falta?</item>
-        <!--012--><item>¿Cómo se escribiría \'trompetista\' según los símbolos?</item>
-        <!--013--><item>¿Cuántos números pares hay?\n\n457851259365974486598624657932215966578459686353355771142998853259</item>
-        <!--014--><item>¿Cómo se escribiría \'psicotécnico\' según los símbolos?</item>
-        <!--015--><item>¿Qué pieza falta?</item>
-        <!--016--><item>¿Cuántos \'5\' hay en la columna A? ¿Cuántos \'6\' hay en la columna B?</item>
-        <!--017--><item>¿Cuál de las imágenes es igual a la dada?</item>
-        <!--018--><item>¿Qué palabra tiene menos consonantes (sin repetir)?</item>
-        <!--019--><item>¿Qué pieza falta?</item>
-        <!--020--><item>¿Qué palabra tiene más consonantes (sin repetir)?</item>
-		<!--021--><item>¿Cómo se escribiría \'electricidad\' según los símbolos?</item>
-        <!--022--><item>¿Cuántas V hay?\nWWWWWVWWWWWWWWWVVWWWWWWWWWWVVVWWWWWWWVWWWWWWWWWWW</item>
-        <!--023--><item>¿Qué palabra tiene más consonantes (sin repetir)?</item>
-        <!--024--><item>¿Cómo se escribiría \'completo\' según los símbolos?</item>
-        <!--025--><item>¿Qué pieza falta?</item>
-        <!--026--><item>¿Qué palabra tiene menos consonantes (sin repetir)?</item>
-        <!--027--><item>¿Cuántos números impares hay?\n24681001235666666666988888444246426470025465842640</item>
-        <!--028--><item>¿Qué pieza falta?</item>
-        <!--029--><item>¿Cuál de las imágenes es igual a la dada?</item>
-        <!--030--><item>¿Cuántas diferencias hay en esta imagen?</item>
-        <!--031--><item>En una cierta clave, MOTOR es el número 71615. ¿Qué palabra es 6151? ¿Qué número es MOTO?</item>
-        <!--032--><item>¿Cuántas \'h\' hay?\nkdjviejfhkdokdiejfhmbtyerisdlskfhvkldfifyerikf8465ghifkfofifdddkfkoldhldl</item>
-        <!--033--><item>¿Cuál tiene menos consonantes sin repetir?</item>
-        <!--034--><item>¿Cuál es igual a la imagen dada?</item>
-        <!--035--><item>¿Cuál tiene más vocales sin repetir?</item>
-        <!--036--><item>¿Qué pieza falta?</item>
-        <!--037--><item>¿Cuál es igual a la imagen dada?</item>
-        <!--038--><item>¿Cuántos 4 hay en la columna A y cuántos 2 hay en la columna B?</item>
-        <!--039--><item>¿Cuál tiene más consonantes?</item>
-        <!--040--><item>¿Cuánto suman las \'q\' y las \'k\' en total?\nljgfsxcyteqbnfytfkkkgyutdfcpppyftyrsqpguygyghghkqvuytdfytcppksreaqppkdtrsesp</item>
-        <!--041--><item>¿Qué pieza falta?</item>
-        <!--042--><item>¿Cuántos \'|\' hay?\n|||||||||||||||||||||||||||||||||||||</item>
-        <!--043--><item>¿Cuántos \'.\' hay en A y cuántos 1 hay en B?</item>
-        <!--044--><item>¿Cuántos 9 hay?\n512456316595465468468896546535215666645484125654544895462135015</item>
-        <!--045--><item>¿Cuántos \'!\' hay en la columna A y \')\' en la columna B?</item>
-        <!--046--><item>¿Cuál tiene más consonantes sin repetir?</item>
-        <!--047--><item>¿Cuál es igual a la imagen dada?</item>
-        <!--048--><item>¿Cuántas \'F\' hay?\nFFFFFFFFFFJKJIDCUIEYRHNVNJKHASFFJKHSKUFFOLIWJIJHCKFFFFKJLJIJIFJIOJHUIGF</item>
-        <!--049--><item>¿Qué pieza falta?</item>
-        <!--050--><item>¿Cuál tiene menos vocales sin repetir?</item>
-        <!--051--><item>¿Cuál es igual a la imagen dada?</item>
-        <!--052--><item>¿Cuántas diferencias hay?</item>
-        <!--053--><item>¿Cuántos 4 hay?\n2658745879654589245874587545893157852587554596552587851230</item>
-        <!--054--><item>En una cierta clave, PEDRO corresponde al número 54312. ¿Qué palabra corresponde al número 54112? ¿Y qué número corresponde PODER?</item>
-        <!--055--><item>¿Cuántos 8 y 2 hay en toda la tabla?</item>
-        <!--056--><item>¿Qué pieza falta?</item>
-        <!--057--><item>¿Cuál tiene menos consonantes (sin repetir)?</item>
-        <!--058--><item>En una cierta clave, ESPONJA es igual a 5309741. ¿Qué número sería JAPONES?</item>
-        <!--059--><item>¿Cuántas diferencias hay?</item>
-        <!--060--><item>¿Cuánto suman las p y las q que hay?\njfuenieksppqjgurbxksysbduqpmdudbnfuqmdfusgbfidpbjhfusghqkvuhrgidmpkdfuhrpp</item>
-        <!--061--><item>En una cierta clave, 0674 es igual a ROMA. ¿Qué palabras son 4760; 7604; 0476 y 6740?</item>
-        <!--062--><item>¿Cuál es igual a la imagen dada?</item>
-        <!--063--><item>¿Cuántas I hay en la columna A?</item>
-        <!--064--><item>¿Cuántas diferencias hay?</item>
-        <!--065--><item>¿Qué pieza falta?</item>
-        <!--066--><item>¿Cuántas letras minúsculas hay?\nHDGOEIGHKSkdheicPSLKDkPKDHDKhcuejSKDJFLssSSp?</item>
-        <!--067--><item>O=0, J=2, M=1, A=4, N=7, I=9, L=8, ¿Qué números forman MONJA, ANIMAL, JAMON y LAMINA?</item>
-        <!--068--><item>¿Cuál tiene menos vocales (sin repetir)?</item>
-        <!--069--><item>¿Cuántos números hay en la columna B?</item>
-        <!--070--><item>¿Cuál es igual a la imagen dada?</item>
-        <!--071--><item>¿Qué palabra tiene más consonantes (sin repetir)?</item>
-        <!--072--><item>¿Qué pieza falta?</item>
-        <!--073--><item>¿Cuántos consonantes hay?\noaeoeiuoaodieoeaiuuuuooosaeieieieioaoaoueuikuioeoadioadijfieoooekaieeia</item>
-        <!--074--><item>¿Hay diferencias en esta imagen?</item>
-        <!--075--><item>¿En cuál de las columnas tiene más 1?</item>
-        <!--076--><item>¿Cuál tiene más consonantes (sin repetir)?</item>
-        <!--077--><item>¿Cuántas c hay?\ndjsotejtuoicljeotijeiojccoeijgwojdccoeijwgojeoijewcoejwojgoejgcccccjowejgoiwjgoic</item>
-        <!--078--><item>¿Qué piezas faltan?</item>
-        <!--079--><item>¿Cuál tiene más consonantes (sin repetir)?</item>
-        <!--080--><item>¿Cuántas T hay?\nTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT</item>
-        <!--081--><item>¿Cuál es igual a la imagen dada?</item>
-        <!--082--><item>¿Cuántas P hay en la columna A? ¿Cuántas Q hay en B? ¿Cuántas G en C?</item>
-        <!--083--><item>¿Cuál tiene más consonantes (sin repetir)?</item>
-        <!--084--><item>¿Cuántas diferencias hay?</item>
-        <!--085--><item>¿Cuánto suman los · de la columna B y C?</item>
-        <!--086--><item>¿Cuántas -t- y -k- hay?\neisansdngstxhdywnfjgkkthfuebdudbeutkdufbnfuhrktudgkjsdotktjhsiogehiwehtitkjdhguidghktktktisdghdghjsdgh</item>
-        <!--087--><item>¿Cuál es igual a la imagen dada?</item>
-        <!--088--><item>¿Qué piezas faltan?@perp88@</item>
-        <!--089--><item>¿Cuántos 5 y S hay?\nSSLFJEIEMI55KDFISKDUNSKDUEHFIU5JFUSKRIFJHSKFU5555JFUERHKSKFUFJ5KDUDJSK</item>
-        <!--090--><item>¿Cuántas diferencias hay?</item>
-        <!--091--><item>¿Cuál es igual a la imagen dada?</item>
-        <!--092--><item>¿Qué pieza falta?</item>
-        <!--093--><item>¿Cuántos 2 hay?\n2548754545254896154634521548975555487916435784457987894515154548787874545245497879754551</item>
-        <!--094--><item>¿Cuántas diferencias hay?</item>
-        <!--095--><item>¿Qué pieza falta?</item>
-        <!--096--><item>¿Cuántos números impares hay?\n12468465468246948264864284684200204682486240164827064890263</item>
-        <!--097--><item>¿Cuántas diferencias hay?</item>
-        <!--098--><item>¿Cuántas diferencias hay?</item>
-        <!--099--><item>¿Cuál es igual a la imagen dada?</item>
-        <!--100--><item>¿Cuál tiene más vocales?</item>
-        <!--101--><item>¿Cuántas letras hay?\njieklcad45823s25d125DSDBK125KA244478744c444721478as121131VE12H311545C21312g32131d2115498s121dfc31153c321</item>
-        <!--102--><item>Si TARTA = 21721, ¿qué números corresponde a TATAR?</item>
-        <!--103--><item>¿cuántos y y 3 hay?\ndklgjdslkndgj6577843kyslkdjgldksjg3lsjdflkjsflksdjfdljfyyy35474543slkdjlksjlksj44495437788fylsjdflkdsjfyksljdfkd3jyyldsjfdyy</item>
-        <!--104--><item>¿Cuál tiene menos consonantes? (sin repetir)</item>
-        <!--105--><item>¿Cuál tiene más vocales? (sin repetir)</item>
-        <!--106--><item>¿Cuántas ) hay?\n(((()(((((((()(((((()(((((()(((())((((</item>
-        <!--107--><item>Si 1258=SERA, ¿qué palabra corresponde a 2581?</item>
-        <!--108--><item>¿Hay alguna diferencia?</item>
-        <!--109--><item>¿Cuántos { hay?\n{}}}}}}}}{}}}}}{{{}}}}}}{{{{}{}}}}}}{}}}}}}{{}}}}}}}}}}</item>
-        <!--110--><item>Si SADO=3521 y SAPO=3571, ¿qué números corresponden a PASADO y SOPAS?</item>
-        <!--111--><item>¿Cuál tiene menos consonantes?(Sin repetir)</item>
-        <!--112--><item>¿Cuál tiene menos vocales?(Sin repetir)</item>
-        <!--113--><item>¿Cuál tiene más consonantes?(Sin repetir)</item>
-        <!--114--><item>¿Cuántos números impares hay?\n153246876482164820946205642531246812452</item>
-        <!--115--><item>¿Cuántas letras mayúsculas hay?\nksdlvnowiehgdnKnsdgosdhiengalndkljsaoQPksldjglsnDklanoosdgLKdksahgdsknv</item>
-        <!--116--><item>¿Cuántos 9 hay?\n5461376512315571000640435787595447421064710474521037547752543</item>
-        <!--117--><item>¿Cuál tiene más consonantes?(Sin repetir)</item>
-        <!--118--><item>¿Cuál tiene más vocales?(Sin repetir)</item>
-        <!--119--><item>¿Cuál tiene más vocales?(Sin repetir)</item>
-        <!--120--><item>¿Cuál tiene más consonantes?(Sin repetir)</item>
-        <!--121--><item>¿Cuál tiene menos vocales?(Sin repetir)</item>
-        <!--122--><item>¿Cuántos 0 hay?\n11111101111110000111111000011111111111</item>
-        <!--123--><item>¿Cuántas G hay?\n66666666666666666666666666666666666666666666666666666666G666666666666666666666666</item>
-        <!--124--><item>¿Cuántas diferencias hay?</item>
-        <!--125--><item>¿Qué palabra es 9856 si NADIE=68159?</item>
-        <!--126--><item>¿Cuántas H y L hay?\nHSKDMNVLALOWEKWFDSHHSDKDOHDSVRYRYRELRTECVDVLWERFSLLFEWFDAS</item>
-        <!--127--><item>¿Cuántos pares hay?\n2461357982479513575130245137951682401357951337235179</item>
-        <!--128--><item>¿Cuál tiene más vocales?(Sin repetir)</item>
-        <!--129--><item>¿Cuál tiene menos consonantes?(Sin repetir)</item>
-        <!--130--><item>¿Cuántos 3 hay?\n1554679113333114978434549433154978346478731549845190</item>
-        <!--131--><item>¿Cuál  tiene menos vocales? (Sin repetir)</item>
-        <!--132--><item>¿Cuál tiene más consonantes?(Sin repetir)</item>
-        <!--133--><item>¿Cuál tiene menos consonantes?(Sin repetir)</item>
-        <!--134--><item>¿Cuántas a hay?\naooooooooooooooooooooaaaoooooooooooooaooooooooooooooooooooooooooooooooaoooooooooooooooooo</item>
-        <!--135--><item>¿Qué palabra es 353738 si LENA=5378?</item>
-        <!--136--><item>¿Cuántas d hay?\nbhbhbhbhbhbhbhbhbdhbhbhbhbhddhbhbhbhbhbhddbhbhbhbhbhbhbhb</item>
-        <!--137--><item>¿Cuál tiene menos vocal?(Sin repetir)</item>
-        <!--138--><item>¿Cuál tiene menos vocales?(Sin repetir)</item>
-        <!--139--><item>¿Cuántas minúsculas hay?\n2656vf40fd0066879778sd405cfQOEGNVOW0248chai4043SGDSGÑSLJIENVsdwNSFHOIANSN</item>
-        <!--140--><item>¿Cuántos ! hay?\n¡¡¡¡¡¡??¡¡¡¡¡¡¡¡??¡¡¡¡¡¡¡!!!???¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡?!¡¡¡¡¡¡¡¡¡¡???¡¡¡¡¡¡¡¡¡¡¡¡!!¡¡¡¡¡¡¡¡¡¡¡¡¡!¡</item>
-        <!--141--><item>¿Cuántas letras hay?\n546F7920S337922dfhfbjh00687755F4038753320853320aswerftgvc777504</item>
-        <!--142--><item>¿Cuántos 8 hay?\n0000000000080000000000000888000000000000000008000000000000</item>
-        <!--143--><item>¿Cuántos 0 hay?\n46011110011488797541447744678</item>
-        <!--144--><item>¿Cuántas p hay?\nqqqqqqqqqqqqppqqqqqqqqqqqpqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqpppqqqqqqq</item>
-        <!--145--><item>¿Cuál tiene más vocales?(Sin repetir)</item>
-        <!--146--><item>¿Cuál tiene menos consonantes?(Sin repetir)</item>
-        <!--147--><item>¿Cuál tiene más consonantes?(Sin repetir)</item>
-        <!--148--><item>¿Cuál tiene menos consonantes?(Sin repetir)</item>
-        <!--149--><item>¿Cuál tiene menos vocales?(Sin repetir)</item>
-        <!--150--><item>¿Cuál tiene menos consonantes?(Sin repetir)</item>
-        <!--151--><item>¿Cuántas k hay?\nt05klmnsrvkllqmsltqbkrr123k</item>
-        <!--152--><item>¿Cuántos 2 hay?\n55225255522525555222525</item>
-        <!--153--><item>¿Cuál tiene más letras?</item>
-        <!--154--><item>¿Cuántas t hay?\ntllhhbtlbdthhllttllhhbdt</item>
-        <!--155--><item>¿Cuántas vocales hay?\nasthbcefgnmtsvytoaa345svrbaldbi</item>
-        <!--156--><item>¿Cuántos números hay?\nb6vhst3EHLAB4rvo2tt69qdG67P</item>
-        <!--157--><item>¿Cuál tiene menos vocales?(Sin repetir)</item>
-        <!--158--><item>¿Cuántas diferencias hay?</item>
-        <!--159--><item>¿Cuál aparece repetido menos veces?</item>
-        <!--160--><item>¿Cuántas diferencias hay?</item>
-        <!--161--><item>¿Cuántas diferencias hay?</item>
-        <!--162--><item>¿Cuántas diferencias hay?</item>
-        <!--163--><item>¿Cuántas diferencias hay?</item>
-        <!--164--><item>¿Cuántas diferencias hay?</item>
-        <!--165--><item>¿Qué opción tiene la serie dada?</item>
-        <!--166--><item>¿Cuántas diferencias hay?</item>
-        <!--167--><item>¿Cuántas diferencias hay?</item>
-        <!--168--><item>¿Cuántas diferencias hay?</item>
-        <!--169--><item>¿En cuántos círculos está dentro la X?</item>
-        <!--170--><item>¿Cuántos triángulos hay en la imagen?</item>
-        <!--171--><item>¿Cuántos círculos hay en la imagen?</item>
-        <!--172--><item>¿Cuántas diferencias hay?</item>
-        <!--173--><item>¿Cuántas X son comunes sólo a la elipse y al pentágono? (No al cuadrado ni al triángulo)</item>
-        <!--174--><item>¿Cuántas diferencias hay?</item>
-        <!--175--><item>¿Cuántas diferencias hay?</item>
-        <!--176--><item>¿Qué opción tiene la serie dada?</item>
-        <!--177--><item>¿Cuál de las imágenes es igual a la dada?</item>
-        <!--178--><item>¿Cuál de las imágenes es igual a la dada?</item>
-        <!--179--><item>¿Cuántos triángulos puedes contar en la imagen?</item>
-        <!--180--><item>¿Qué opción tiene la serie dada?</item>
-        <!--181--><item>¿Qué opción tiene la serie dada?</item>
-        <!--182--><item>¿Qué opción tiene la serie dada?</item>
-        <!--183--><item>¿Cuál aparece repetido menos veces?</item>
-        <!--184--><item>¿Cuál aparece repetido más veces?</item>
-        <!--185--><item>¿Cuál aparece repetido más veces?</item>
-        <!--186--><item>¿Cuál de las imágenes es igual a la dada?</item>
-        <!--187--><item>¿Cuál de las imágenes es igual a la dada?</item>
-        <!--188--><item>¿Cuál de las imágenes es igual a la dada?</item>
-        <!--189--><item>¿Cuál de las imágenes es igual a la dada?</item>
-        <!--190--><item>¿Cuál de las imágenes es igual a la dada?</item>
-        <!--191--><item>¿Cuál de las imágenes es igual a la dada?</item>
-        <!--192--><item>¿Cuál de las imágenes es igual a la dada?</item>
-        <!--193--><item>¿Cuál de las imágenes es igual a la dada?</item>
-        <!--194--><item>¿Cuántos cuadrados son comunes sólo al cuadrado y al triángulo? (No al pentágono ni a la elipse)</item>
-        <!--195--><item>¿Cuántas flechas son comunes a la elipse, al triángulo y al cuadrado? (No al pentágono)</item>
-        <!--196--><item>¿Cuántos corazones son comunes a la elipse, al cuadrado y al pentágono? (No al triángulo)</item>
-        <!--197--><item>¿Cuántos rayos son comunes sólo al pentágono y al cuadrado? (No al triángulo ni a la elipse)</item>
-        <!--198--><item>¿Cuántas veces se repite la imagen dada, arriba?</item>
-        <!--198--><item>¿Cuántas veces se repite la imagen dada, arriba?</item>
-        <!--200--><item>¿Cuántas veces se repite la imagen dada, arriba?</item>
-        <!--201--><item>¿Cuál es diferente?</item>
-        <!--202--><item>¿Cuál tiene menos consonantes sin repetir?</item>
-        <!--203--><item>¿Cuántas A hay?\nHabía creído que aún le quedaría la vida una vez perdida la esperanza.</item>
-        <!--204--><item>¿Qué queda tras dividirlo por la diagonal?</item>
-        <!--205--><item>¿Cuál tiene más consonantes sin repetir?</item>
-        <!--206--><item>¿Cuál tiene menos E?</item>
-        <!--207--><item>¿Cuál no pertenece al grupo?</item>
-        <!--208--><item>¿Cuál tiene más elementos en común con la imagen dada?</item>
-        <!--209--><item>¿En cuál no tiene vocales en los puestos 6 y 9 de la palabra ni consonante en el octavo?</item>
-        <!--210--><item>¿Cuál tiene más vocales sin repetir?</item>
-        <!--211--><item>¿Cuál se corresponde con la serie dada pero al revés?\nE6MMYAIURAR2L</item>
-        <!--212--><item>¿Cómo quedaría ABVDEFGHILMNOPQRSTUVZ123456789 si quitamos 3468 y TRIOSE?</item>
-        <!--213--><item>¿Cuántas veces está 582?\n2381858230748021245826978078765824142725789558256958200</item>
-		
+        <!--001-->
+        <item>¿Qué palabra tiene menos vocales (sin repetir)?</item>
+        <!--002-->
+        <item>¿Cuántas \'t\' hay?\n\nkshdktkshfhtjkshsjtksjftnsjdtnskstndkstnskstt</item>
+        <!--003-->
+        <item>¿Qué palabra tiene más consonantes (sin repetir)?</item>
+        <!--004-->
+        <item>¿Cómo se escribiría \'diccionario\' según los símbolos?</item>
+        <!--005-->
+        <item>¿Cuántos \'0\' hay?\n\n123485640163545600135465465446545546545054645465458</item>
+        <!--006-->
+        <item>¿Qué palabra tiene más vocales (sin repetir)?</item>
+        <!--007-->
+        <item>¿Cuál de las imágenes es igual a la dada?</item>
+        <!--008-->
+        <item>¿Cuál de las imágenes es igual a la dada?</item>
+        <!--009-->
+        <item>¿Cuánto suman el número de veces que aparece \'C\' y el número de veces que aparece
+            \'A\'?\n\nCBHGBXANJHCAAMAJHGDFTUHHGFYCJGUUJCUAHHQP
+        </item>
+        <!--010-->
+        <item>¿Cuántas \'M\' hay?\n\nMMMMMMWMMMMMWMMMMMWMNMMMMMWWMMWMMMWMMMW</item>
+        <!--011-->
+        <item>¿Qué pieza falta?</item>
+        <!--012-->
+        <item>¿Cómo se escribiría \'trompetista\' según los símbolos?</item>
+        <!--013-->
+        <item>¿Cuántos números pares
+            hay?\n\n457851259365974486598624657932215966578459686353355771142998853259
+        </item>
+        <!--014-->
+        <item>¿Cómo se escribiría \'psicotécnico\' según los símbolos?</item>
+        <!--015-->
+        <item>¿Qué pieza falta?</item>
+        <!--016-->
+        <item>¿Cuántos \'5\' hay en la columna A? ¿Cuántos \'6\' hay en la columna B?</item>
+        <!--017-->
+        <item>¿Cuál de las imágenes es igual a la dada?</item>
+        <!--018-->
+        <item>¿Qué palabra tiene menos consonantes (sin repetir)?</item>
+        <!--019-->
+        <item>¿Qué pieza falta?</item>
+        <!--020-->
+        <item>¿Qué palabra tiene más consonantes (sin repetir)?</item>
+
     </array>
-    
+
     <array name="resAperceptiva">
-        <!--001--><item>A)Oasis</item>
-        <!--002--><item>A)6</item>
-        <!--003--><item>A)Estuche</item>
-        <!--004--><item>A)</item>
-        <!--005--><item>A)4</item>
-		<!--006--><item>A)Altramuces</item>
-        <!--007--><item>A)</item>
-        <!--008--><item>A)</item>
-        <!--009--><item>A)9</item>
-        <!--010--><item>A)23</item>
-        <!--011--><item>A)</item>
-        <!--012--><item>A)</item>
-        <!--013--><item>A)27</item>
-        <!--014--><item>A)</item>
-        <!--015--><item>A)</item>
-        <!--016--><item>A)13 y 20</item>
-        <!--017--><item>A)</item>
-        <!--018--><item>A)Coliflor</item>
-        <!--019--><item>A)</item>
-        <!--020--><item>A)Lámpara</item>
-		<!--021--><item>A)perp21ra</item>
-        <!--022--><item>A)7</item>
-        <!--023--><item>A)Reconocer</item>
-        <!--024--><item>A)</item>
-        <!--025--><item>A)</item>
-        <!--026--><item>A)Sinceridad</item>
-        <!--027--><item>A)9</item>
-        <!--028--><item>A)</item>
-        <!--029--><item>A)</item>
-        <!--030--><item>A)4</item>
-        <!--031--><item>A)TOMO y 7161</item>
-        <!--032--><item>A)5</item>
-        <!--033--><item>A)Trenza</item>
-        <!--034--><item>A)</item>
-        <!--035--><item>A)Cuerpo</item>
-        <!--036--><item>A)</item>
-        <!--037--><item>A)</item>
-        <!--038--><item>A)15 y 17</item>
-        <!--039--><item>A)Biblioteca</item>
-        <!--040--><item>A)10</item>
-        <!--041--><item>A)</item>
-        <!--042--><item>A)35</item>
-        <!--043--><item>A)16 y 20</item>
-        <!--044--><item>A)2</item>
-        <!--045--><item>A)13 y 14</item>
-        <!--046--><item>A)Pisapepeles</item>
-        <!--047--><item>A)</item>
-        <!--048--><item>A)18</item>
-        <!--049--><item>A)</item>
-        <!--050--><item>A)Pieza</item>
-        <!--051--><item>A)</item>
-        <!--052--><item>A)5</item>
-        <!--053--><item>A)4</item>
-        <!--054--><item>A)PERO y 5341</item>
-        <!--055--><item>A)4 y 40</item>
-        <!--056--><item>A)</item>
-        <!--057--><item>A)Armadura</item>
-        <!--058--><item>A)4190753</item>
-        <!--059--><item>A)1</item>
-        <!--060--><item>A)11</item>
-        <!--061--><item>A)AMOR; OMAR; RAMO y MORA.</item>
-        <!--062--><item>A)</item>
-        <!--063--><item>A)18</item>
-        <!--064--><item>A)4</item>
-        <!--065--><item>A)</item>
-        <!--066--><item>A)13</item>
-        <!--067--><item>A)10274, 471948, 24107 y 841974</item>
-        <!--068--><item>A)Última</item>
-        <!--069--><item>A)15</item>
-        <!--070--><item>A)</item>
-        <!--071--><item>A)Correspondientemente</item>
-        <!--072--><item>A)</item>
-        <!--073--><item>A)7</item>
-        <!--074--><item>A)Sí</item>
-        <!--075--><item>A)</item>
-        <!--076--><item>A)Programa</item>
-        <!--077--><item>A)11</item>
-        <!--078--><item>A)</item>
-        <!--079--><item>A)Arteriosclerosis</item>
-        <!--080--><item>A)46</item>
-        <!--081--><item>A)</item>
-        <!--082--><item>A)14, 13 y 7.</item>
-        <!--083--><item>A)Chaqueta</item>
-        <!--084--><item>A)2</item>
-        <!--085--><item>A)39</item>
-        <!--086--><item>A)10t y 10k</item>
-        <!--087--><item>A)</item>
-        <!--088--><item>A)</item>
-        <!--089--><item>A)8 y 8</item>
-        <!--090--><item>A)2</item>
-        <!--091--><item>A)</item>
-        <!--092--><item>A)</item>
-        <!--093--><item>A)3</item>
-        <!--094--><item>A)3</item>
-        <!--095--><item>A)</item>
-        <!--096--><item>A)7</item>
-        <!--097--><item>A)3</item>
-        <!--098--><item>A)2</item>
-        <!--099--><item>A)</item>
-        <!--100--><item>A)Fan</item>
-        <!--101--><item>A)30</item>
-        <!--102--><item>A)22171</item>
-        <!--103--><item>A)6 y 10</item>
-        <!--104--><item>A)epihioideo</item>
-        <!--105--><item>A)neoeuropeo</item>
-        <!--106--><item>A)9</item>
-        <!--107--><item>A)ERAS</item>
-        <!--108--><item>A)No.</item>
-        <!--109--><item>A)10</item>
-        <!--110--><item>A)752531 y 31753</item>
-        <!--111--><item>A)ácuea</item>
-        <!--112--><item>A)medioambiental</item>
-        <!--113--><item>A)proeuro</item>
-        <!--114--><item>A)7</item>
-        <!--115--><item>A)6</item>
-        <!--116--><item>A)3</item>
-        <!--117--><item>A)idea</item>
-        <!--118--><item>A)roeos</item>
-        <!--119--><item>A)líe</item>
-        <!--120--><item>A)continuo</item>
-        <!--121--><item>A)protozoo</item>
-        <!--122--><item>A)5</item>
-        <!--123--><item>A)8</item>
-        <!--124--><item>A)3</item>
-        <!--125--><item>A)ENAI</item>
-        <!--126--><item>A)6 y 5</item>
-        <!--127--><item>A)15</item>
-        <!--128--><item>A)héroe</item>
-        <!--129--><item>A)faraón</item>
-        <!--130--><item>A)10</item>
-        <!--131--><item>A)microondas</item>
-        <!--132--><item>A)semihilo</item>
-        <!--133--><item>A)microaerófilo</item>
-        <!--134--><item>A)8</item>
-        <!--135--><item>A)ELENA</item>
-        <!--136--><item>A)5</item>
-        <!--137--><item>A)aprobéis</item>
-        <!--138--><item>A)cae</item>
-        <!--139--><item>A)12</item>
-        <!--140--><item>A)3</item>
-        <!--141--><item>A)15</item>
-        <!--142--><item>A)7</item>
-        <!--143--><item>A)5</item>
-        <!--144--><item>A)6</item>
-        <!--145--><item>A)acaecer</item>
-        <!--146--><item>A)ciudad</item>
-        <!--147--><item>A)búho</item>
-        <!--148--><item>A)lidiéis</item>
-        <!--149--><item>A)traeos</item>
-        <!--150--><item>A)caía</item>
-        <!--151--><item>A)3</item>
-        <!--152--><item>A)10</item>
-        <!--153--><item>A)portahierros</item>
-        <!--154--><item>A)4</item>
-        <!--155--><item>A)7</item>
-        <!--156--><item>A)6</item>
-        <!--157--><item>A)lengüear</item>
-        <!--158--><item>A)1</item>
-        <!--159--><item>A)</item>
-        <!--160--><item>A)5</item>
-        <!--161--><item>A)3</item>
-        <!--162--><item>A)1</item>
-        <!--163--><item>A)3</item>
-        <!--164--><item>A)3</item>
-        <!--165--><item>A)</item>
-        <!--166--><item>A)1</item>
-        <!--167--><item>A)4</item>
-        <!--168--><item>A)4</item>
-        <!--169--><item>A)5</item>
-        <!--170--><item>A)17</item>
-        <!--171--><item>A)14</item>
-        <!--172--><item>A)3</item>
-        <!--173--><item>A)1</item>
-        <!--174--><item>A)1</item>
-        <!--175--><item>A)1</item>
-        <!--176--><item>A)</item>
-        <!--177--><item>A)</item>
-        <!--178--><item>A)</item>
-        <!--179--><item>A)16</item>
-        <!--180--><item>A)</item>
-        <!--181--><item>A)</item>
-        <!--182--><item>A)</item>
-        <!--183--><item>A)</item>
-        <!--184--><item>A)</item>
-        <!--185--><item>A)</item>
-        <!--186--><item>A)</item>
-        <!--187--><item>A)</item>
-        <!--188--><item>A)</item>
-        <!--189--><item>A)</item>
-        <!--190--><item>A)</item>
-        <!--191--><item>A)</item>
-        <!--192--><item>A)</item>
-        <!--193--><item>A)</item>
-        <!--194--><item>A)2</item>
-        <!--195--><item>A)3</item>
-        <!--196--><item>A)7</item>
-        <!--197--><item>A)1</item>
-        <!--198--><item>A)5</item>
-        <!--199--><item>A)4</item>
-        <!--200--><item>A)1</item>
-        <!--201--><item>A)</item>
-        <!--202--><item>A)Hormiguero</item>
-        <!--203--><item>A)12</item>
-        <!--204--><item>A)Dos triángulos isósceles con 5 figuras en total.</item>
-        <!--205--><item>A)Tartaletas</item>
-        <!--206--><item>A)Recientemente</item>
-        <!--207--><item>A)</item>
-        <!--208--><item>A)</item>
-        <!--209--><item>A)Macedonia</item>
-        <!--210--><item>A)Clones</item>
-        <!--211--><item>A)L2RARUNAYMM6E</item>
-        <!--212--><item>A)ABVDFGHLMNOPUVZ12578</item>
-        <!--213--><item>A)5</item>
-		
+        <!--001-->
+        <item>A)Oasis</item>
+        <!--002-->
+        <item>A)6</item>
+        <!--003-->
+        <item>A)Estuche</item>
+        <!--004-->
+        <item>A)</item>
+        <!--005-->
+        <item>A)4</item>
+        <!--006-->
+        <item>A)Altramuces</item>
+        <!--007-->
+        <item>A)</item>
+        <!--008-->
+        <item>A)</item>
+        <!--009-->
+        <item>A)9</item>
+        <!--010-->
+        <item>A)23</item>
+        <!--011-->
+        <item>A)</item>
+        <!--012-->
+        <item>A)</item>
+        <!--013-->
+        <item>A)27</item>
+        <!--014-->
+        <item>A)</item>
+        <!--015-->
+        <item>A)</item>
+        <!--016-->
+        <item>A)13 y 20</item>
+        <!--017-->
+        <item>A)</item>
+        <!--018-->
+        <item>A)Coliflor</item>
+        <!--019-->
+        <item>A)</item>
+        <!--020-->
+        <item>A)Lámpara</item>
+
     </array>
-    
+
     <array name="resBperceptiva">
-        <!--001--><item>B)Museo</item>
-        <!--002--><item>B)10</item>
-        <!--003--><item>B)Bolígrafo</item>
-        <!--004--><item>B)</item>
-        <!--005--><item>B)5</item>
-		<!--006--><item>B)Simpatía</item>
-        <!--007--><item>B)</item>
-        <!--008--><item>B)</item>
-        <!--009--><item>B)6</item>
-        <!--010--><item>B)30</item>
-        <!--011--><item>B)</item>
-        <!--012--><item>B)</item>
-        <!--013--><item>B)26</item>
-        <!--014--><item>B)</item>
-        <!--015--><item>B)</item>
-        <!--016--><item>B)17 y 20</item>
-        <!--017--><item>B)</item>
-        <!--018--><item>B)Altavoces</item>
-        <!--019--><item>B)</item>
-        <!--020--><item>B)Trompeta</item>
-		<!--021--><item>B)</item>
-        <!--022--><item>B)6</item>
-        <!--023--><item>B)Clímax</item>
-        <!--024--><item>B)</item>
-        <!--025--><item>B)</item>
-        <!--026--><item>B)Constancia</item>
-        <!--027--><item>B)7</item>
-        <!--028--><item>B)</item>
-        <!--029--><item>B)</item>
-        <!--030--><item>B)7</item>
-        <!--031--><item>B)TORO y 7161</item>
-        <!--032--><item>B)4</item>
-        <!--033--><item>B)Flecha</item>
-        <!--034--><item>B)</item>
-        <!--035--><item>B)Anatomía</item>
-        <!--036--><item>B)</item>
-        <!--037--><item>B)</item>
-        <!--038--><item>B)16 y 15</item>
-        <!--039--><item>B)Banco</item>
-        <!--040--><item>B)8</item>
-        <!--041--><item>B)</item>
-        <!--042--><item>B)37</item>
-        <!--043--><item>B)16 y 16</item>
-        <!--044--><item>B)4</item>
-        <!--045--><item>B)14 y 14</item>
-        <!--046--><item>B)Ventana</item>
-        <!--047--><item>B)</item>
-        <!--048--><item>B)16</item>
-        <!--049--><item>B)</item>
-        <!--050--><item>B)Agua</item>
-        <!--051--><item>B)</item>
-        <!--052--><item>B)4</item>
-        <!--053--><item>B)5</item>
-        <!--054--><item>B)PERRO y 53241</item>
-        <!--055--><item>B)3 y 40</item>
-        <!--056--><item>B)</item>
-        <!--057--><item>B)Televisor</item>
-        <!--058--><item>B)4709153</item>
-        <!--059--><item>B)3</item>
-        <!--060--><item>B)10</item>
-        <!--061--><item>B)AMOR; MORA; OMAR y RAMO.</item>
-        <!--062--><item>B)</item>
-        <!--063--><item>B)13</item>
-        <!--064--><item>B)2</item>
-        <!--065--><item>B)</item>
-        <!--066--><item>B)14</item>
-        <!--067--><item>B)10724, 479148, 24107 y 841794</item>
-        <!--068--><item>B)Primera</item>
-        <!--069--><item>B)16</item>
-        <!--070--><item>B)</item>
-        <!--071--><item>B)Extraterritorialidad</item>
-        <!--072--><item>B)</item>
-        <!--073--><item>B)9</item>
-        <!--074--><item>B)No</item>
-        <!--075--><item>B)</item>
-        <!--076--><item>B)Aplicación</item>
-        <!--077--><item>B)10</item>
-        <!--078--><item>B)</item>
-        <!--079--><item>B)Electroencefalografista</item>
-        <!--080--><item>B)45</item>
-        <!--081--><item>B)</item>
-        <!--082--><item>B)13, 7 y 14</item>
-        <!--083--><item>B)Lujuria</item>
-        <!--084--><item>B)5</item>
-        <!--085--><item>B)41</item>
-        <!--086--><item>B)10t y 11k</item>
-        <!--087--><item>B)</item>
-        <!--088--><item>B)</item>
-        <!--089--><item>B)8 y 7</item>
-        <!--090--><item>B)3</item>
-        <!--091--><item>B)</item>
-        <!--092--><item>B)</item>
-        <!--093--><item>B)6</item>
-        <!--094--><item>B)2</item>
-        <!--095--><item>B)</item>
-        <!--096--><item>B)6</item>
-        <!--097--><item>B)1</item>
-        <!--098--><item>B)1</item>
-        <!--099--><item>B)</item>
-        <!--100--><item>B)Fantasma</item>
-        <!--101--><item>B)25</item>
-        <!--102--><item>B)21127</item>
-        <!--103--><item>B)10 y 6</item>
-        <!--104--><item>B)ushuaiense</item>
-        <!--105--><item>B)construíais</item>
-        <!--106--><item>B)6</item>
-        <!--107--><item>B)ARES</item>
-        <!--108--><item>B)Sí, un círculo.</item>
-        <!--109--><item>B)11</item>
-        <!--110--><item>B)753512 y 37153</item>
-        <!--111--><item>B)agua</item>
-        <!--112--><item>B)bioorgánico</item>
-        <!--113--><item>B)zooide</item>
-        <!--114--><item>B)10</item>
-        <!--115--><item>B)9</item>
-        <!--116--><item>B)4</item>
-        <!--117--><item>B)seáis</item>
-        <!--118--><item>B)loaos</item>
-        <!--119--><item>B)guíe</item>
-        <!--120--><item>B)duodeno</item>
-        <!--121--><item>B)Feijoo</item>
-        <!--122--><item>B)7</item>
-        <!--123--><item>B)1</item>
-        <!--124--><item>B)2</item>
-        <!--125--><item>B)EINA</item>
-        <!--126--><item>B)3 y 6</item>
-        <!--127--><item>B)11</item>
-        <!--128--><item>B)cae</item>
-        <!--129--><item>B)ahora</item>
-        <!--130--><item>B)9</item>
-        <!--131--><item>B)cooperar</item>
-        <!--132--><item>B)duunvirato</item>
-        <!--133--><item>B)protooaxaqueño</item>
-        <!--134--><item>B)9</item>
-        <!--135--><item>B)ALANAE</item>
-        <!--136--><item>B)4</item>
-        <!--137--><item>B)aceituno</item>
-        <!--138--><item>B)cree</item>
-        <!--139--><item>B)10</item>
-        <!--140--><item>B)5</item>
-        <!--141--><item>B)20</item>
-        <!--142--><item>B)6</item>
-        <!--143--><item>B)1</item>
-        <!--144--><item>B)8</item>
-        <!--145--><item>B)aloe</item>
-        <!--146--><item>B)ruidoso</item>
-        <!--147--><item>B)dúo</item>
-        <!--148--><item>B)buey</item>
-        <!--149--><item>B)paraoóforo</item>
-        <!--150--><item>B)bahía</item>
-        <!--151--><item>B)4</item>
-        <!--152--><item>B)9</item>
-        <!--153--><item>B)tetraiodo</item>
-        <!--154--><item>B)5</item>
-        <!--155--><item>B)6</item>
-        <!--156--><item>B)7</item>
-        <!--157--><item>B)marihuana</item>
-        <!--158--><item>B)2</item>
-        <!--159--><item>B)</item>
-        <!--160--><item>B)4</item>
-        <!--161--><item>B)1</item>
-        <!--162--><item>B)3</item>
-        <!--163--><item>B)1</item>
-        <!--164--><item>B)1</item>
-        <!--165--><item>B)</item>
-        <!--166--><item>B)2</item>
-        <!--167--><item>B)3</item>
-        <!--168--><item>B)2</item>
-        <!--169--><item>B)4</item>
-        <!--170--><item>B)18</item>
-        <!--171--><item>B)15</item>
-        <!--172--><item>B)2</item>
-        <!--173--><item>B)5</item>
-        <!--174--><item>B)4</item>
-        <!--175--><item>B)2</item>
-        <!--176--><item>B)</item>
-        <!--177--><item>B)</item>
-        <!--178--><item>B)</item>
-        <!--179--><item>B)12</item>
-        <!--180--><item>B)</item>
-        <!--181--><item>B)</item>
-        <!--182--><item>B)</item>
-        <!--183--><item>B)</item>
-        <!--184--><item>B)</item>
-        <!--185--><item>B)</item>
-        <!--186--><item>B)</item>
-        <!--187--><item>B)</item>
-        <!--188--><item>B)</item>
-        <!--189--><item>B)</item>
-        <!--190--><item>B)</item>
-        <!--191--><item>B)</item>
-        <!--192--><item>B)</item>
-        <!--193--><item>B)</item>
-        <!--194--><item>B)3</item>
-        <!--195--><item>B)7</item>
-        <!--196--><item>B)6</item>
-        <!--197--><item>B)2</item>
-        <!--198--><item>B)2</item>
-        <!--199--><item>B)2</item>
-        <!--200--><item>B)2</item>
-        <!--201--><item>B)</item>
-        <!--202--><item>B)Hipopótamo</item>
-        <!--203--><item>B)10</item>
-        <!--204--><item>B)Dos triángulos equiláteros con 4 figuras en total.</item>
-        <!--205--><item>B)Amamantar</item>
-        <!--206--><item>B)Vehementemente</item>
-        <!--207--><item>B)</item>
-        <!--208--><item>B)</item>
-        <!--209--><item>B)Azerbaiyán</item>
-        <!--210--><item>B)Dilatación</item>
-        <!--211--><item>B)L2RARUIAYMM6E</item>
-        <!--212--><item>B)ABCDFGHLMNPQUVZ12589</item>
-        <!--213--><item>B)6</item>
-		
+        <!--001-->
+        <item>B)Museo</item>
+        <!--002-->
+        <item>B)10</item>
+        <!--003-->
+        <item>B)Bolígrafo</item>
+        <!--004-->
+        <item>B)</item>
+        <!--005-->
+        <item>B)5</item>
+        <!--006-->
+        <item>B)Simpatía</item>
+        <!--007-->
+        <item>B)</item>
+        <!--008-->
+        <item>B)</item>
+        <!--009-->
+        <item>B)6</item>
+        <!--010-->
+        <item>B)30</item>
+        <!--011-->
+        <item>B)</item>
+        <!--012-->
+        <item>B)</item>
+        <!--013-->
+        <item>B)26</item>
+        <!--014-->
+        <item>B)</item>
+        <!--015-->
+        <item>B)</item>
+        <!--016-->
+        <item>B)17 y 20</item>
+        <!--017-->
+        <item>B)</item>
+        <!--018-->
+        <item>B)Altavoces</item>
+        <!--019-->
+        <item>B)</item>
+        <!--020-->
+        <item>B)Trompeta</item>
+
     </array>
-    
+
     <array name="resCperceptiva">
-        <!--001--><item>C)Toro</item>
-        <!--002--><item>C)7</item>
-        <!--003--><item>C)Afilador</item>
-        <!--004--><item>C)</item>
-        <!--005--><item>C)2</item>
-		<!--006--><item>C)Exterminar</item>
-        <!--007--><item>C)</item>
-        <!--008--><item>C)</item>
-        <!--009--><item>C)10</item>
-        <!--010--><item>C)27</item>
-        <!--011--><item>C)</item>
-        <!--012--><item>C)</item>
-        <!--013--><item>C)31</item>
-        <!--014--><item>C)</item>
-        <!--015--><item>C)</item>
-        <!--016--><item>C)15 y 18</item>
-        <!--017--><item>C)</item>
-        <!--018--><item>C)Televisión</item>
-        <!--019--><item>C)</item>
-        <!--020--><item>C)Divergente</item>
-		<!--021--><item>C)</item>
-        <!--022--><item>C)8</item>
-        <!--023--><item>C)Escultura</item>
-        <!--024--><item>C)</item>
-        <!--025--><item>C)</item>
-        <!--026--><item>C)Subcontinental</item>
-        <!--027--><item>C)8</item>
-        <!--028--><item>C)</item>
-        <!--029--><item>C)</item>
-        <!--030--><item>C)No hay.</item>
-        <!--031--><item>C)TOMO y 5161</item>
-        <!--032--><item>C)3</item>
-        <!--033--><item>C)Círculo</item>
-        <!--034--><item>C)</item>
-        <!--035--><item>C)Arco</item>
-        <!--036--><item>C)</item>
-        <!--037--><item>C)</item>
-        <!--038--><item>C)17 y 15</item>
-        <!--039--><item>C)Médico</item>
-        <!--040--><item>C)9</item>
-        <!--041--><item>C)</item>
-        <!--042--><item>C)30</item>
-        <!--043--><item>C)16 y 24</item>
-        <!--044--><item>C)3</item>
-        <!--045--><item>C)13 y 13</item>
-        <!--046--><item>C)Verdura</item>
-        <!--047--><item>C)</item>
-        <!--048--><item>C)20</item>
-        <!--049--><item>C)</item>
-        <!--050--><item>C)Tuerca</item>
-        <!--051--><item>C)</item>
-        <!--052--><item>C)6</item>
-        <!--053--><item>C)6</item>
-        <!--054--><item>C)PERRO y 52341</item>
-        <!--055--><item>C)4 y 41</item>
-        <!--056--><item>C)</item>
-        <!--057--><item>C)Calendario</item>
-        <!--058--><item>C)4109753</item>
-        <!--059--><item>C)2</item>
-        <!--060--><item>C)12</item>
-        <!--061--><item>C)OMAR; MORA; RAMO y AMOR.</item>
-        <!--062--><item>C)</item>
-        <!--063--><item>C)20</item>
-        <!--064--><item>C)3</item>
-        <!--065--><item>C)</item>
-        <!--066--><item>C)16</item>
-        <!--067--><item>C)10724, 479148, 24107 y 841974</item>
-        <!--068--><item>C)Segunda</item>
-        <!--069--><item>C)17</item>
-        <!--070--><item>C)</item>
-        <!--071--><item>C)Seudohermafroditismo</item>
-        <!--072--><item>C)perp72rc@</item>
-        <!--073--><item>C)6</item>
-        <!--074--><item />
-        <!--075--><item>C)</item>
-        <!--076--><item>C)Tormenta</item>
-        <!--077--><item>C)13</item>
-        <!--078--><item>C)</item>
-        <!--079--><item>C)Caleidoscopio</item>
-        <!--080--><item>C)47</item>
-        <!--081--><item>C)</item>
-        <!--082--><item>C)15, 8 y 14</item>
-        <!--083--><item>C)Servilleta</item>
-        <!--084--><item>C)7</item>
-        <!--085--><item>C)40</item>
-        <!--086--><item>C)11t y 10k</item>
-        <!--087--><item>C)</item>
-        <!--088--><item>C)</item>
-        <!--089--><item>C)7 y 8</item>
-        <!--090--><item>C)1</item>
-        <!--091--><item>C)</item>
-        <!--092--><item>C)</item>
-        <!--093--><item>C)2</item>
-        <!--094--><item>C)1</item>
-        <!--095--><item>C)</item>
-        <!--096--><item>C)5</item>
-        <!--097--><item>C)2</item>
-        <!--098--><item>C)3</item>
-        <!--099--><item>C)</item>
-        <!--100--><item>C)Alabanza</item>
-        <!--101--><item>C)35</item>
-        <!--102--><item>C)21217</item>
-        <!--103--><item>C)3 y 7</item>
-        <!--104--><item>C)chihuahua</item>
-        <!--105--><item>C)oíais</item>
-        <!--106--><item>C)10</item>
-        <!--107--><item>C)SRAE</item>
-        <!--108--><item>C)Sí, dos puntos.</item>
-        <!--109--><item>C)12</item>
-        <!--110--><item>C)753521 y 31753</item>
-        <!--111--><item>C)dado</item>
-        <!--112--><item>C)bioaceite</item>
-        <!--113--><item>C)loéis</item>
-        <!--114--><item>C)12</item>
-        <!--115--><item>C)5</item>
-        <!--116--><item>C)1</item>
-        <!--117--><item>C)es</item>
-        <!--118--><item>C)creaos</item>
-        <!--119--><item>C)Díez</item>
-        <!--120--><item>C)acuoso</item>
-        <!--121--><item>C)samuhú</item>
-        <!--122--><item>C)9</item>
-        <!--123--><item>C)12</item>
-        <!--124--><item>C)1</item>
-        <!--125--><item>C)EAID</item>
-        <!--126--><item>C)4 y 6</item>
-        <!--127--><item>C)14</item>
-        <!--128--><item>C)bacalao</item>
-        <!--129--><item>C)moneda</item>
-        <!--130--><item>C)8</item>
-        <!--131--><item>C)friísimo</item>
-        <!--132--><item>C)alcohol</item>
-        <!--133--><item>C)pulmoaórtico</item>
-        <!--134--><item>C)7</item>
-        <!--135--><item>C)LELENA</item>
-        <!--136--><item>C)6</item>
-        <!--137--><item>C)aboguéis</item>
-        <!--138--><item>C)oler</item>
-        <!--139--><item>C)13</item>
-        <!--140--><item>C)7</item>
-        <!--141--><item>C)18</item>
-        <!--142--><item>C)8</item>
-        <!--143--><item>C)3</item>
-        <!--144--><item>C)10</item>
-        <!--145--><item>C)faena</item>
-        <!--146--><item>C)clerecía</item>
-        <!--147--><item>C)flúor</item>
-        <!--148--><item>C)fiáis</item>
-        <!--149--><item>C)portaaeronavez</item>
-        <!--150--><item>C)creía</item>
-        <!--151--><item>C)5</item>
-        <!--152--><item>C)8</item>
-        <!--153--><item>C)eliaómetro</item>
-        <!--154--><item>C)6</item>
-        <!--155--><item>C)8</item>
-        <!--156--><item>C)9</item>
-        <!--157--><item>C)ágüeos</item>
-        <!--158--><item>C)3</item>
-        <!--159--><item>C)</item>
-        <!--160--><item>C)3</item>
-        <!--161--><item>C)2</item>
-        <!--162--><item>C)2</item>
-        <!--163--><item>C)2</item>
-        <!--164--><item>C)2</item>
-        <!--165--><item>C)</item>
-        <!--166--><item>C)3</item>
-        <!--167--><item>C)2</item>
-        <!--168--><item>C)3</item>
-        <!--169--><item>C)3</item>
-        <!--170--><item>C)19</item>
-        <!--171--><item>C)17</item>
-        <!--172--><item>C)1</item>
-        <!--173--><item>C)6</item>
-        <!--174--><item>C)3</item>
-        <!--175--><item>C)3</item>
-        <!--176--><item>C)</item>
-        <!--177--><item>C)</item>
-        <!--178--><item>C)</item>
-        <!--179--><item>C)6</item>
-        <!--180--><item>C)</item>
-        <!--181--><item>C)</item>
-        <!--182--><item>C)</item>
-        <!--183--><item>C)</item>
-        <!--184--><item>C)</item>
-        <!--185--><item>C)</item>
-        <!--186--><item>C)</item>
-        <!--187--><item>C)</item>
-        <!--188--><item>C)</item>
-        <!--189--><item>C)</item>
-        <!--190--><item>C)</item>
-        <!--191--><item>C)</item>
-        <!--192--><item>C)</item>
-        <!--193--><item>C)</item>
-        <!--194--><item>C)5</item>
-        <!--195--><item>C)2</item>
-        <!--196--><item>C)5</item>
-        <!--197--><item>C)7</item>
-        <!--198--><item>C)3</item>
-        <!--199--><item>C)5</item>
-        <!--200--><item>C)3</item>
-        <!--201--><item>C)</item>
-        <!--202--><item>C)Afganistán</item>
-        <!--203--><item>C)8</item>
-        <!--204--><item>C)Dos triángulos isósceles con 2 figuras a la derecha y 3 a la izquierda.</item>
-        <!--205--><item>C)Trols</item>
-        <!--206--><item>C)Excelentemente</item>
-        <!--207--><item>C)</item>
-        <!--208--><item>C)</item>
-        <!--209--><item>C)Izquierda</item>
-        <!--210--><item>C)Estoica</item>
-        <!--211--><item>C)L2RARLIAYMM6E</item>
-        <!--212--><item>C)ABCDFGHLMNQSTUVZ12579</item>
-        <!--213--><item>C)4</item>
-		
+        <!--001-->
+        <item>C)Toro</item>
+        <!--002-->
+        <item>C)7</item>
+        <!--003-->
+        <item>C)Afilador</item>
+        <!--004-->
+        <item>C)</item>
+        <!--005-->
+        <item>C)2</item>
+        <!--006-->
+        <item>C)Exterminar</item>
+        <!--007-->
+        <item>C)</item>
+        <!--008-->
+        <item>C)</item>
+        <!--009-->
+        <item>C)10</item>
+        <!--010-->
+        <item>C)27</item>
+        <!--011-->
+        <item>C)</item>
+        <!--012-->
+        <item>C)</item>
+        <!--013-->
+        <item>C)31</item>
+        <!--014-->
+        <item>C)</item>
+        <!--015-->
+        <item>C)</item>
+        <!--016-->
+        <item>C)15 y 18</item>
+        <!--017-->
+        <item>C)</item>
+        <!--018-->
+        <item>C)Televisión</item>
+        <!--019-->
+        <item>C)</item>
+        <!--020-->
+        <item>C)Divergente</item>
+
     </array>
-    
+
     <array name="resDperceptiva">
-        <!--001--><item>D)Cine</item>
-        <!--002--><item>D)9</item>
-        <!--003--><item>D)Libreta</item>
-        <!--004--><item>D)</item>
-        <!--005--><item>D)3</item>
-		<!--006--><item>D)Brujería</item>
-        <!--007--><item>D)</item>
-        <!--008--><item>D)</item>
-        <!--009--><item>D)12</item>
-        <!--010--><item>D)21</item>
-        <!--011--><item>D)</item>
-        <!--012--><item>D)</item>
-        <!--013--><item>D)28</item>
-        <!--014--><item>D)</item>
-        <!--015--><item>D)</item>
-        <!--016--><item>D)16 y 17</item>
-        <!--017--><item>D)</item>
-        <!--018--><item>D)Luciérnaga</item>
-        <!--019--><item>D)</item>
-        <!--020--><item>D)Ordenador</item>
-		<!--021--><item>D)</item>
-        <!--022--><item>D)5</item>
-        <!--023--><item>D)Ensalada</item>
-        <!--024--><item>D)</item>
-        <!--025--><item>D)</item>
-        <!--026--><item>D)Sepulturero</item>
-        <!--027--><item>D)6</item>
-        <!--028--><item>D)</item>
-        <!--029--><item>D)</item>
-        <!--030--><item>D)1</item>
-        <!--031--><item>D)TORO y 6171</item>
-        <!--032--><item>D)6</item>
-        <!--033--><item>D)Cartucho</item>
-        <!--034--><item>D)</item>
-        <!--035--><item>D)Rectángulo</item>
-        <!--036--><item>D)</item>
-        <!--037--><item>D)</item>
-        <!--038--><item>D)16 y 14</item>
-        <!--039--><item>D)Mercado</item>
-        <!--040--><item>D)18</item>
-        <!--041--><item>D)</item>
-        <!--042--><item>D)38</item>
-        <!--043--><item>D)14 y 24</item>
-        <!--044--><item>D)1</item>
-        <!--045--><item>D)14 y 13</item>
-        <!--046--><item>D)Mercadillo</item>
-        <!--047--><item>D)</item>
-        <!--048--><item>D)19</item>
-        <!--049--><item>D)</item>
-        <!--050--><item>D)Piedra</item>
-        <!--051--><item>D)</item>
-        <!--052--><item>D)No hay diferencias</item>
-        <!--053--><item>D)7</item>
-        <!--054--><item>D)PEDOR y 52341</item>
-        <!--055--><item>D)3 y 41</item>
-        <!--056--><item>D)</item>
-        <!--057--><item>D)Estructura</item>
-        <!--058--><item>D)7490135</item>
-        <!--059--><item>D)No hay diferencias</item>
-        <!--060--><item>D)10</item>
-        <!--061--><item>D)AMOR; MORA; RAMO y OMAR.</item>
-        <!--062--><item>D)</item>
-        <!--063--><item>D)33</item>
-        <!--064--><item>D)No hay diferencias</item>
-        <!--065--><item>D)</item>
-        <!--066--><item>D)15</item>
-        <!--067--><item>D)10724, 24107, 479148 y 841974</item>
-        <!--068--><item>D)Cuarta</item>
-        <!--069--><item>D)18</item>
-        <!--070--><item>D)</item>
-        <!--071--><item>D)Contrarrevolucionario</item>
-        <!--072--><item>D)</item>
-        <!--073--><item>D)8</item>
-        <!--074--><item />
-        <!--075--><item />
-        <!--076--><item>D)Abstracto</item>
-        <!--077--><item>D)12</item>
-        <!--078--><item>D)</item>
-        <!--079--><item>D)Desvergonzadamente</item>
-        <!--080--><item>D)48</item>
-        <!--081--><item>D)</item>
-        <!--082--><item>D)14, 7 y 13</item>
-        <!--083--><item>D)Atracción</item>
-        <!--084--><item>D)No hay diferencias</item>
-        <!--085--><item>D)42</item>
-        <!--086--><item>D)11t y 11k</item>
-        <!--087--><item>D)</item>
-        <!--088--><item>D)</item>
-        <!--089--><item>D)7 y 7</item>
-        <!--090--><item>D)No hay diferencias</item>
-        <!--091--><item>D)</item>
-        <!--092--><item>D)</item>
-        <!--093--><item>D)4</item>
-        <!--094--><item>D)No hay diferencias.</item>
-        <!--095--><item>D)</item>
-        <!--096--><item>D)4</item>
-        <!--097--><item>D)No hay diferencias.</item>
-        <!--098--><item>D)No hay diferencias.</item>
-        <!--099--><item>D)perp99rd@</item>
-        <!--100--><item>D)Ninguna</item>
-        <!--101--><item>D)20</item>
-        <!--102--><item>D)27121</item>
-        <!--103--><item>D)8 y 4</item>
-        <!--104--><item>D)basihioides</item>
-        <!--105--><item>D)entreoíos</item>
-        <!--106--><item>D)12</item>
-        <!--107--><item>D)RAES</item>
-        <!--108--><item>D)Sí, un punto.</item>
-        <!--109--><item>D)13</item>
-        <!--110--><item>D)723251 y 31723</item>
-        <!--111--><item>D)oía</item>
-        <!--112--><item>D)camelieo</item>
-        <!--113--><item>D)coautor</item>
-        <!--114--><item>D)9</item>
-        <!--115--><item>D)4</item>
-        <!--116--><item>D)2</item>
-        <!--117--><item>D)será</item>
-        <!--118--><item>D)creeos</item>
-        <!--119--><item>D)íes</item>
-        <!--120--><item>D)buhonero</item>
-        <!--121--><item>D)creo</item>
-        <!--122--><item>D)10</item>
-        <!--123--><item>D)No hay</item>
-        <!--124--><item>D)No hay</item>
-        <!--125--><item>D)EAIN</item>
-        <!--126--><item>D)6 y 4</item>
-        <!--127--><item>D)13</item>
-        <!--128--><item>D)atráelo</item>
-        <!--129--><item>D)billete</item>
-        <!--130--><item>D)7</item>
-        <!--131--><item>D)contraaviso</item>
-        <!--132--><item>D)albahaca</item>
-        <!--133--><item>D)linguouvular</item>
-        <!--134--><item>D)6</item>
-        <!--135--><item>D)ELENEA</item>
-        <!--136--><item>D)7</item>
-        <!--137--><item>D)letuario</item>
-        <!--138--><item>D)poseer</item>
-        <!--139--><item>D)15</item>
-        <!--140--><item>D)9</item>
-        <!--141--><item>D)16</item>
-        <!--142--><item>D)5</item>
-        <!--143--><item>D)4</item>
-        <!--144--><item>D)7</item>
-        <!--145--><item>D)enmohecer</item>
-        <!--146--><item>D)huirán</item>
-        <!--147--><item>D)rudo</item>
-        <!--148--><item>D)miau</item>
-        <!--149--><item>D)supraaortico</item>
-        <!--150--><item>D)huían</item>
-        <!--151--><item>D)2</item>
-        <!--152--><item>D)11</item>
-        <!--153--><item>D)camahua</item>
-        <!--154--><item>D)7</item>
-        <!--155--><item>D)5</item>
-        <!--156--><item>D)8</item>
-        <!--157--><item>D)pirañas</item>
-        <!--158--><item>D)No hay</item>
-        <!--159--><item>D)</item>
-        <!--160--><item>D)6</item>
-        <!--161--><item>D)No hay</item>
-        <!--162--><item>D)No hay.</item>
-        <!--163--><item>D)No hay.</item>
-        <!--164--><item>D)No hay.</item>
-        <!--165--><item>D)</item>
-        <!--166--><item>D)No hay.</item>
-        <!--167--><item>D)1</item>
-        <!--168--><item>D)No hay.</item>
-        <!--169--><item>D)2</item>
-        <!--170--><item>D)20</item>
-        <!--171--><item>D)16</item>
-        <!--172--><item>D)No hay.</item>
-        <!--173--><item>D)3</item>
-        <!--174--><item>D)2</item>
-        <!--175--><item>D)No hay-</item>
-        <!--176--><item>D)</item>
-        <!--177--><item>D)</item>
-        <!--178--><item>D)</item>
-        <!--179--><item>D)9</item>
-        <!--180--><item>D)</item>
-        <!--181--><item>D)</item>
-        <!--182--><item>D)</item>
-        <!--183--><item>D)</item>
-        <!--184--><item></item>
-        <!--185--><item>D)</item>
-        <!--186--><item>D)</item>
-        <!--187--><item>D)</item>
-        <!--188--><item>D)</item>
-        <!--189--><item>D)</item>
-        <!--190--><item>D)</item>
-        <!--191--><item>D)</item>
-        <!--192--><item>D)</item>
-        <!--193--><item>D)</item>
-        <!--194--><item>D)6</item>
-        <!--195--><item>D)1</item>
-        <!--196--><item>D)4</item>
-        <!--197--><item>D)3</item>
-        <!--198--><item>D)4</item>
-        <!--199--><item>D)3</item>
-        <!--200--><item>D)4</item>
-        <!--201--><item>D)</item>
-        <!--202--><item>D)Rinoceronte</item>
-        <!--203--><item>D)11</item>
-        <!--204--><item>D)Dos triángulos escalenos con 5 figuras en total.</item>
-        <!--205--><item>D)Banderillero</item>
-        <!--206--><item>D)Resplandecientemente</item>
-        <!--207--><item>D)</item>
-        <!--208--><item>D)</item>
-        <!--209--><item>D)Diferente</item>
-        <!--210--><item>D)Filósofo</item>
-        <!--211--><item>D)L2RARUIAGMM6E</item>
-        <!--212--><item>D)ABCDFGHLMNPQUVZ12579</item>
-        <!--213--><item>D)3</item>
-		
+        <!--001-->
+        <item>D)Cine</item>
+        <!--002-->
+        <item>D)9</item>
+        <!--003-->
+        <item>D)Libreta</item>
+        <!--004-->
+        <item>D)</item>
+        <!--005-->
+        <item>D)3</item>
+        <!--006-->
+        <item>D)Brujería</item>
+        <!--007-->
+        <item>D)</item>
+        <!--008-->
+        <item>D)</item>
+        <!--009-->
+        <item>D)12</item>
+        <!--010-->
+        <item>D)21</item>
+        <!--011-->
+        <item>D)</item>
+        <!--012-->
+        <item>D)</item>
+        <!--013-->
+        <item>D)28</item>
+        <!--014-->
+        <item>D)</item>
+        <!--015-->
+        <item>D)</item>
+        <!--016-->
+        <item>D)16 y 17</item>
+        <!--017-->
+        <item>D)</item>
+        <!--018-->
+        <item>D)Luciérnaga</item>
+        <!--019-->
+        <item>D)</item>
+        <!--020-->
+        <item>D)Ordenador</item>
+
     </array>
-    
+
     <array name="solperceptiva">
-        <!--001--><item>C)Toro</item>
-        <!--002--><item>D)9</item>
-        <!--003--><item>B)Bolígrafo</item>
-        <!--004--><item>C)</item>
-        <!--005--><item>A)4</item>
-		<!--006--><item>D)Brujería</item>
-        <!--007--><item>D)</item>
-        <!--008--><item>C)</item>
-        <!--009--><item>A)9</item>
-        <!--010--><item>B)30</item>
-        <!--011--><item>A)</item>
-        <!--012--><item>B)</item>
-        <!--013--><item>A)27</item>
-        <!--014--><item>C)</item>
-        <!--015--><item>D)</item>
-        <!--016--><item>B)17 y 20</item>
-        <!--017--><item>D)</item>
-        <!--018--><item>A)Coliflor</item>
-        <!--019--><item>B)</item>
-        <!--020--><item>C)Divergente</item>
-		<!--021--><item>C)</item>
-        <!--022--><item>A)7</item>
-        <!--023--><item>C)Escultura</item>
-        <!--024--><item>D)</item>
-        <!--025--><item>A)</item>
-        <!--026--><item>B)Constancia</item>
-        <!--027--><item>C)8</item>
-        <!--028--><item>B)</item>
-        <!--029--><item>D)</item>
-        <!--030--><item>C)No hay.</item>
-        <!--031--><item>B)TORO y 7161</item>
-        <!--032--><item>A)5</item>
-        <!--033--><item>C)Círculo</item>
-        <!--034--><item>B)</item>
-        <!--035--><item>D)Rectángulo</item>
-        <!--036--><item>B)</item>
-        <!--037--><item>A)</item>
-        <!--038--><item>C)17 y 15</item>
-        <!--039--><item>A)Biblioteca</item>
-        <!--040--><item>A)10</item>
-        <!--041--><item>D)</item>
-        <!--042--><item>B)37</item>
-        <!--043--><item>C)16 y 24</item>
-        <!--044--><item>C)3</item>
-        <!--045--><item>B)14 y 14</item>
-        <!--046--><item>D)Mercadillo</item>
-        <!--047--><item>D)</item>
-        <!--048--><item>C)20</item>
-        <!--049--><item>B)</item>
-        <!--050--><item>B)Agua</item>
-        <!--051--><item>B)</item>
-        <!--052--><item>A)5</item>
-        <!--053--><item>C)6</item>
-        <!--054--><item>C)PERRO y 52341</item>
-        <!--055--><item>D)3 y 41</item>
-        <!--056--><item>D)</item>
-        <!--057--><item>A)Armadura</item>
-        <!--058--><item>C)4109753</item>
-        <!--059--><item>B)3</item>
-        <!--060--><item>A)11</item>
-        <!--061--><item>D)AMOR; MORA; RAMO y OMAR.</item>
-        <!--062--><item>D)</item>
-        <!--063--><item>C)20</item>
-        <!--064--><item>A)4</item>
-        <!--065--><item>A)</item>
-        <!--066--><item>D)15</item>
-        <!--067--><item>C)10724, 479148, 24107 y 841974</item>
-        <!--068--><item>D)Cuarta</item>
-        <!--069--><item>B)16</item>
-        <!--070--><item>C)</item>
-        <!--071--><item>A)Correspondientemente</item>
-        <!--072--><item>B)</item>
-        <!--073--><item>D)8</item>
-        <!--074--><item>A)Sí</item>
-        <!--075--><item>A)</item>
-        <!--076--><item>D)Abstracto</item>
-        <!--077--><item>D)12</item>
-        <!--078--><item>C)</item>
-        <!--079--><item>D)Desvergonzadamente</item>
-        <!--080--><item>C)47</item>
-        <!--081--><item>B)</item>
-        <!--082--><item>D)14, 7 y 13</item>
-        <!--083--><item>C)Servilleta</item>
-        <!--084--><item>D)No hay diferencias</item>
-        <!--085--><item>B)41</item>
-        <!--086--><item>C)11t y 10k</item>
-        <!--087--><item>D)</item>
-        <!--088--><item>A)</item>
-        <!--089--><item>A)8 y 8</item>
-        <!--090--><item>C)1</item>
-        <!--091--><item>A)</item>
-        <!--092--><item>D)</item>
-        <!--093--><item>D)4</item>
-        <!--094--><item>D)No hay diferencias.</item>
-        <!--095--><item>B)</item>
-        <!--096--><item>A)7</item>
-        <!--097--><item>C)2</item>
-        <!--098--><item>A)2</item>
-        <!--099--><item>C)</item>
-        <!--100--><item>C)Alabanza</item>
-        <!--101--><item>A)30</item>
-        <!--102--><item>C)21217</item>
-        <!--103--><item>B)10 y 6</item>
-        <!--104--><item>C)chihuahua</item>
-        <!--105--><item>B)construíais</item>
-        <!--106--><item>B)6</item>
-        <!--107--><item>A)ERAS</item>
-        <!--108--><item>D)Sí, un punto.</item>
-        <!--109--><item>D)13</item>
-        <!--110--><item>C)753521 y 31753</item>
-        <!--111--><item>D)oía</item>
-        <!--112--><item>B)bioorgánico</item>
-        <!--113--><item>D)coautor</item>
-        <!--114--><item>C)12</item>
-        <!--115--><item>A)6</item>
-        <!--116--><item>C)1</item>
-        <!--117--><item>D)será</item>
-        <!--118--><item>C)creaos</item>
-        <!--119--><item>B)guíe</item>
-        <!--120--><item>D)buhonero</item>
-        <!--121--><item>A)protozoo</item>
-        <!--122--><item>C)9</item>
-        <!--123--><item>B)1</item>
-        <!--124--><item>A)3</item>
-        <!--125--><item>D)EAIN</item>
-        <!--126--><item>C)4 y 6</item>
-        <!--127--><item>A)15</item>
-        <!--128--><item>D)atráelo</item>
-        <!--129--><item>B)ahora</item>
-        <!--130--><item>B)9</item>
-        <!--131--><item>C)friísimo</item>
-        <!--132--><item>B)duunvirato</item>
-        <!--133--><item>A)microaerófilo</item>
-        <!--134--><item>D)6</item>
-        <!--135--><item>D)ELENEA</item>
-        <!--136--><item>A)5</item>
-        <!--137--><item>A)aprobéis</item>
-        <!--138--><item>B)cree</item>
-        <!--139--><item>D)15</item>
-        <!--140--><item>C)7</item>
-        <!--141--><item>B)20</item>
-        <!--142--><item>D)5</item>
-        <!--143--><item>C)3</item>
-        <!--144--><item>A)6</item>
-        <!--145--><item>B)aloe</item>
-        <!--146--><item>A)ciudad</item>
-        <!--147--><item>C)flúor</item>
-        <!--148--><item>D)miau</item>
-        <!--149--><item>B)paraoóforo</item>
-        <!--150--><item>A)caía</item>
-        <!--151--><item>B)4</item>
-        <!--152--><item>A)10</item>
-        <!--153--><item>A)portahierros</item>
-        <!--154--><item>C)6</item>
-        <!--155--><item>A)7</item>
-        <!--156--><item>D)8</item>
-        <!--157--><item>D)pirañas</item>
-        <!--158--><item>D)No hay</item>
-        <!--159--><item>C)</item>
-        <!--160--><item>A)5</item>
-        <!--161--><item>B)1</item>
-        <!--162--><item>C)2</item>
-        <!--163--><item>B)1</item>
-        <!--164--><item>C)2</item>
-        <!--165--><item>D)</item>
-        <!--166--><item>C)3</item>
-        <!--167--><item>A)4</item>
-        <!--168--><item>A)4</item>
-        <!--169--><item>B)4</item>
-        <!--170--><item>C)19</item>
-        <!--171--><item>D)16</item>
-        <!--172--><item>A)3</item>
-        <!--173--><item>A)1</item>
-        <!--174--><item>B)4</item>
-        <!--175--><item>B)2</item>
-        <!--176--><item>C)</item>
-        <!--177--><item>C)</item>
-        <!--178--><item>B)</item>
-        <!--179--><item>A)16</item>
-        <!--180--><item>C)</item>
-        <!--181--><item>B)</item>
-        <!--182--><item>D)</item>
-        <!--183--><item>A)</item>
-        <!--184--><item>B)</item>
-        <!--185--><item>D)</item>
-        <!--186--><item>B)</item>
-        <!--187--><item>D)</item>
-        <!--188--><item>C)</item>
-        <!--189--><item>B)</item>
-        <!--190--><item>D)</item>
-        <!--191--><item>A)</item>
-        <!--192--><item>B)</item>
-        <!--193--><item>C)</item>
-        <!--194--><item>A)2</item>
-        <!--195--><item>D)1</item>
-        <!--196--><item>D)4</item>
-        <!--197--><item>B)2</item>
-        <!--198--><item>C)3</item>
-        <!--199--><item>A)4</item>
-        <!--200--><item>B)2</item>
-        <!--201--><item>D)</item>
-        <!--202--><item>A)Hormiguero</item>
-        <!--203--><item>A)12</item>
-        <!--204--><item>C)Dos triángulos isósceles con 2 figuras a la derecha y 3 a la izquierda.</item>
-        <!--205--><item>D)Banderillero</item>
-        <!--206--><item>A)Recientemente</item>
-        <!--207--><item>B)</item>
-        <!--208--><item>C)</item>
-        <!--209--><item>A)Macedonia</item>
-        <!--210--><item>C)Estoica</item>
-        <!--211--><item>B)L2RARUIAYMM6E</item>
-        <!--212--><item>D)ABCDFGHLMNPQUVZ12579</item>
-        <!--213--><item>A)5</item>
-		
+        <!--001-->
+        <item>C)Toro</item>
+        <!--002-->
+        <item>D)9</item>
+        <!--003-->
+        <item>B)Bolígrafo</item>
+        <!--004-->
+        <item>C)</item>
+        <!--005-->
+        <item>A)4</item>
+        <!--006-->
+        <item>D)Brujería</item>
+        <!--007-->
+        <item>D)</item>
+        <!--008-->
+        <item>C)</item>
+        <!--009-->
+        <item>A)9</item>
+        <!--010-->
+        <item>B)30</item>
+        <!--011-->
+        <item>A)</item>
+        <!--012-->
+        <item>B)</item>
+        <!--013-->
+        <item>A)27</item>
+        <!--014-->
+        <item>C)</item>
+        <!--015-->
+        <item>D)</item>
+        <!--016-->
+        <item>B)17 y 20</item>
+        <!--017-->
+        <item>D)</item>
+        <!--018-->
+        <item>A)Coliflor</item>
+        <!--019-->
+        <item>B)</item>
+        <!--020-->
+        <item>C)Divergente</item>
+
     </array>
-    
+
     <array name="expliSolperceptiva">
-        <!--001--><item>Sólo tiene una vocal (sin repetir).</item>
-        <!--002--><item></item>
-        <!--003--><item>Tiene 5 consonantes sin repetir.</item>
-        <!--004--><item></item>
-        <!--005--><item></item>
-		<!--006--><item>Tiene 4 vocales sin repetir.</item>
-        <!--007--><item></item>
-        <!--008--><item></item>
-        <!--009--><item></item>
-        <!--010--><item></item>
-        <!--011--><item></item>
-        <!--012--><item></item>
-        <!--013--><item></item>
-        <!--014--><item></item>
-        <!--015--><item></item>
-        <!--016--><item></item>
-        <!--017--><item></item>
-        <!--018--><item>Tiene 4 consonantes sin repetir, mientras que las demás tienen 5.</item>
-        <!--019--><item></item>
-        <!--020--><item>Tiene 6 consonantes sin repetir.</item>
-		<!--021--><item></item>
-        <!--022--><item></item>
-        <!--023--><item>Tiene 5 constantes sin repetir. \'Ensalada\' tiene 4, \'Clímax\' tiene 4 y \'Reconocer\', 3.</item>
-        <!--024--><item></item>
-        <!--025--><item></item>
-        <!--026--><item>Tiene 4 consonantes sin repetir. \'Sinceridad\' y \'Sepulturero\' tienen 5 y \'Subcontinental\', 6.</item>
-        <!--027--><item></item>
-        <!--028--><item></item>
-        <!--029--><item></item>
-        <!--030--><item></item>
-        <!--031--><item>M=7, O=1, T=6, R=5</item>
-        <!--032--><item></item>
-        <!--033--><item>Tiene 3 letras sin repetir mientras que el resto tiene 4.</item>
-        <!--034--><item></item>
-        <!--035--><item>Tiene 4 mientras que \'arco\' tiene 2 y \'cuerpo\' y \'anatomía\' tienen 3.</item>
-        <!--036--><item></item>
-        <!--037--><item></item>
-        <!--038--><item></item>
-        <!--039--><item>Tiene 5 consonantes, \'mercado\' tiene 4 y \'médico\' y \'banco\' tienen 3.</item>
-        <!--040--><item>Hay 4 \'q\' y 6 \'k\'.</item>
-        <!--041--><item></item>
-        <!--042--><item></item>
-        <!--043--><item></item>
-        <!--044--><item></item>
-        <!--045--><item></item>
-        <!--046--><item>Tiene 5 consonantes sin repetir mientras que el resto tienen 3.</item>
-        <!--047--><item></item>
-        <!--048--><item></item>
-        <!--049--><item></item>
-        <!--050--><item>Tiene 2 vocales sin repetir, mientras que el resto tiene 3.</item>
-        <!--051--><item></item>
-        <!--052--><item>La coleta de la mujer; uno de los bolsillos del niño; una de las manzanas; el reloj de la pared y las rayas de la tarta.</item>
-        <!--053--><item></item>
-        <!--054--><item>P=5, E=4, D=3; R=1 y O=2.</item>
-        <!--055--><item></item>
-        <!--056--><item></item>
-        <!--057--><item>Tiene 3 consonantes sin repetir, mientras que Estructura tiene 4 y el resto, 5 consonantes.</item>
-        <!--058--><item>E=5; S=3; P=0; O=9; N=7; J=4 y A=1.</item>
-        <!--059--><item>En la imagen de la derecha le faltan dos líneas y un círculo.</item>
-        <!--060--><item>Hay 7 p y 4 q.</item>
-        <!--061--><item>0=R; 6=O; 7=M y 4=A.</item>
-        <!--062--><item></item>
-        <!--063--><item></item>
-        <!--064--><item>Una de las líneas exteriores, la coleta de la chica, el pelo del chico y un punto.</item>
-        <!--065--><item></item>
-        <!--066--><item></item>
-        <!--067--><item>MONJA=10724; ANIMAL=479148; JAMON=24107 y LAMINA=841974</item>
-        <!--068--><item>Tiene 2 vocales (sin repetir), mientras que las demás tienen 3.</item>
-        <!--069--><item></item>
-        <!--070--><item></item>
-        <!--071--><item>Tiene 8 consonantes sin repetir. Extraterritorialidad tiene 5, Seudohermafroditismo 7 y Contrarrevolucionario 6.</item>
-        <!--072--><item></item>
-        <!--073--><item></item>
-        <!--074--><item>La imagen de la derecha tiene tres líneas del pelo menos y menos pecas.</item>
-        <!--075--><item>Tiene 18 uno, mientras que la columna B tiene 17 y la columna C 15.</item>
-        <!--076--><item>Tiene 5 consonantes sin repetir mientras que el resto tiene 4.</item>
-        <!--077--><item></item>
-        <!--078--><item></item>
-        <!--079--><item>Tiene 10 consonantes sin repetir, mientras que Electroencefalografista tiene 7 y el resto 5.</item>
-        <!--080--><item></item>
-        <!--081--><item></item>
-        <!--082--><item></item>
-        <!--083--><item>Tiene 5 consonantes sin repetir, mientras que Lujuria tiene 3 y el resto 4.</item>
-        <!--084--><item></item>
-        <!--085--><item>En la columna B, hay 20 mientras que en la columna C, 21.</item>
-        <!--086--><item></item>
-        <!--087--><item></item>
-        <!--088--><item></item>
-        <!--089--><item></item>
-        <!--090--><item>La torre del ordenador.</item>
-        <!--091--><item></item>
-        <!--092--><item></item>
-        <!--093--><item></item>
-        <!--094--><item></item>
-        <!--095--><item></item>
-        <!--096--><item></item>
-        <!--097--><item>Uno de los insecos y una hoja.</item>
-        <!--098--><item></item>
-        <!--099--><item></item>
-        <!--100--><item>No se especifica que sean vocales sin repetir, por lo que Alabanza tiene 4 vocales, Fantasma 3 y Fan 1.</item>
-        <!--101--><item></item>
-        <!--102--><item>1=A, 2=T y 7=R</item>
-        <!--103--><item></item>
-        <!--104--><item>Tiene 2 consonantes (c y h) mientras que el resto tienen 3.</item>
-        <!--105--><item>Tiene 4 vocales (o, u, i y a) mientras que el resto tiene 3.</item>
-        <!--106--><item></item>
-        <!--107--><item>N1=S, 2=E, 5=R y 8=A.</item>
-        <!--108--><item>En la parte de arriba del segundo círculo turquesa empezando desde el centro.</item>
-        <!--109--><item></item>
-        <!--110--><item>1=O, 2=D, 3=S, 5=A y 7=P.</item>
-        <!--111--><item>No tiene consonantes, mientras que el resto tienen 1.</item>
-        <!--112--><item>Tiene 3 vocales mientras que el resto tiene 4.</item>
-        <!--113--><item>Tiene 3 mientras que el resto tiene 2.</item>
-        <!--114--><item></item>
-        <!--115--><item></item>
-        <!--116--><item></item>
-        <!--117--><item>Tiene 2, mientras que el resto tiene 1.</item>
-        <!--118--><item>Tiene 3 vocales mientras que el resto tiene 2.</item>
-        <!--119--><item>Tiene 3 mientras que las demás tienen 2 vocales.</item>
-        <!--120--><item>Tiene 4 consonantes; continuo tiene 3 y las demás 2 consonantes sin repetir.</item>
-        <!--121--><item>Sólo tiene una vocal (o), Feijoo tiene 3 y el resto 2 vocales.</item>
-        <!--122--><item></item>
-        <!--123--><item></item>
-        <!--124--><item>Un signo de música en vez de hierba y dos puntos (abajo a la derecha y a la izquierda, debajo de la hierba que está en la parte central izquierda.)</item>
-        <!--125--><item>9=E, 8=A, 5=I, 6=N y 1=D.</item>
-        <!--126--><item></item>
-        <!--127--><item></item>
-        <!--128--><item>Tiene 3 vocales mientras que las demás tienen 2.</item>
-        <!--129--><item>Tiene 2 consonantes (h y r) mientras que el resto tienen 3.</item>
-        <!--130--><item></item>
-        <!--131--><item>Tiene 2 vocales; contraaviso tiene 4 y las otras dos, 3.</item>
-        <!--132--><item>Tiene 5; semihilo y albahaca tienen 4 y alcohol tiene 3.</item>
-        <!--133--><item>Tiene 5 consonantes, mientras que el resto tienen 6.</item>
-        <!--134--><item></item>
-        <!--135--><item>3=E, 5=L, 7=N y 8=A.</item>
-        <!--136--><item></item>
-        <!--137--><item>Tiene 4 vocales mientras que las demás tienen 5.</item>
-        <!--138--><item>Sólo tiene una vocal, el resto tienen 2.</item>
-        <!--139--><item></item>
-        <!--140--><item></item>
-        <!--141--><item></item>
-        <!--142--><item></item>
-        <!--143--><item></item>
-        <!--144--><item></item>
-        <!--145--><item>Tiene 3 vocales mientras que el resto tienen 2,</item>
-        <!--146--><item>Tiene 2 consonantes, mientras que el resto tienen 3.</item>
-        <!--147--><item>Tiene 3 consonantes; búho y rudo tienen 2; y duo sólo uno.</item>
-        <!--148--><item>Tiene 1 mientras que las demás 2 (La y no es una vocal).</item>
-        <!--149--><item>Tiene 2 vocales, traeos y portaaeronaves tienen 3 y supraaórtico, 4.</item>
-        <!--150--><item>Sólo tiene 1 consonante, mientras que el resto tienen 2.</item>
-        <!--151--><item></item>
-        <!--152--><item></item>
-        <!--153--><item>Tiene 12 letras; eliaómetro tiene 10; tetraiodo tiene 9 y camahua tiene 7.</item>
-        <!--154--><item></item>
-        <!--155--><item></item>
-        <!--156--><item></item>
-        <!--157--><item>Tiene 2 vocales, ágüeas tiene 4 mientras que las otras tienen 3.</item>
-        <!--158--><item></item>
-        <!--159--><item>C se repite 4 veces, A y D se repiten 5 y B, 6.</item>
-        <!--160--><item>La cola del volador, las antenas del caracol, su caparazol, la almohada y la Luna.</item>
-        <!--161--><item>Los calcetines del jugador que tiene la pelota.</item>
-        <!--162--><item>El círculo pequeño dentro del triángulo de arriba a la izquierda en la esquina y un lado de un triángulo de abajo.</item>
-        <!--163--><item>La esquina izquierda de una vela de la izquierda. La imagen de la izquierda está pintada, en la de la derecha, no.</item>
-        <!--164--><item>Una nube pequeña y un signo de música.</item>
-        <!--165--><item></item>
-        <!--166--><item>Una de las líneas dentro de la bola, un árbol pequeño de la derecha y un pico de montaña.</item>
-        <!--167--><item>Hay 4 flechas que están en la imagen de la izquierda pero no en la derecha: arriba a la derecha, izquierda, abajo y otra izquierda.</item>
-        <!--168--><item>La nariz,los ojos, los dientes y los pies.</item>
-        <!--169--><item></item>
-        <!--170--><item></item>
-        <!--171--><item></item>
-        <!--172--><item>La cola, el ala de la izquierda arriba y el ala central derecha.</item>
-        <!--173--><item>Sólo las X que se encuentran en la unión de la elipse y el pentágono.</item>
-        <!--174--><item>Una raya del espejo, una raya del horno, un imán de la nevera y el mango de la sartén.</item>
-        <!--175--><item>Un círculo de más y una ralla de la parte delantera de las ruedas.</item>
-        <!--176--><item></item>
-        <!--177--><item></item>
-        <!--178--><item></item>
-        <!--179--><item></item>
-        <!--180--><item></item>
-        <!--181--><item></item>
-        <!--182--><item></item>
-        <!--183--><item></item>
-        <!--184--><item></item>
-        <!--185--><item></item>
-        <!--186--><item></item>
-        <!--187--><item></item>
-        <!--188--><item></item>
-        <!--189--><item></item>
-        <!--190--><item></item>
-        <!--191--><item></item>
-        <!--192--><item></item>
-        <!--193--><item></item>
-        <!--194--><item></item>
-        <!--195--><item></item>
-        <!--196--><item></item>
-        <!--197--><item></item>
-        <!--198--><item></item>
-        <!--199--><item></item>
-        <!--200--><item></item>
-        <!--201--><item>Es especular de las demás (espejo).</item>
-        <!--202--><item>Tiene 4 mientras que el resto tiene 5 consonantes.</item>
-        <!--203--><item></item>
-        <!--204--><item>Isósceles: los catetos iguales y diferente hipotenusa. A la derecha hay un círculo y un cuadrado; y a la izquierda un cuadrado, un círculo y un rombo.</item>
-        <!--205--><item>Tiene 5 consonantes, A tiene 2; y B y C tienen 4.</item>
-        <!--206--><item>Tiene 5 E, mientras que el resto tiene 6.</item>
-        <!--207--><item>En las demás sólo se acota el valor.</item>
-        <!--208--><item></item>
-        <!--209--><item>No tiene consonante en el puesto 8.</item>
-        <!--210--><item>Tiene 4 vocales. A y D tienen 2 y B tiene 3.</item>
-        <!--211--><item></item>
-        <!--212--><item></item>
-        <!--213--><item></item>
+        <!--001-->
+        <item>Sólo tiene una vocal (sin repetir).</item>
+        <!--002-->
+        <item></item>
+        <!--003-->
+        <item>Tiene 5 consonantes sin repetir.</item>
+        <!--004-->
+        <item></item>
+        <!--005-->
+        <item></item>
+        <!--006-->
+        <item>Tiene 4 vocales sin repetir.</item>
+        <!--007-->
+        <item></item>
+        <!--008-->
+        <item></item>
+        <!--009-->
+        <item></item>
+        <!--010-->
+        <item></item>
+        <!--011-->
+        <item></item>
+        <!--012-->
+        <item></item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item></item>
+        <!--015-->
+        <item></item>
+        <!--016-->
+        <item></item>
+        <!--017-->
+        <item></item>
+        <!--018-->
+        <item>Tiene 4 consonantes sin repetir, mientras que las demás tienen 5.</item>
+        <!--019-->
+        <item></item>
+        <!--020-->
+        <item>Tiene 6 consonantes sin repetir.</item>
 
     </array>
-    
-    
-    
-    
+
+
     <array name="imgPreperceptiva">
-        <!--001--><item></item>
-        <!--002--><item></item>
-        <!--003--><item></item>
-        <!--004--><item>perp004</item>
-        <!--005--><item></item>
-		<!--006--><item></item>
-        <!--007--><item>perp007</item>
-        <!--008--><item>perp008</item>
-        <!--009--><item></item>
-        <!--010--><item></item>
-		<!--011--><item>perp011</item>
-        <!--012--><item>perp012</item>
-        <!--013--><item></item>
-        <!--014--><item>perp014</item>
-        <!--015--><item>perp015</item>
-		<!--016--><item>perp016</item>
-        <!--017--><item>perp017</item>
-        <!--018--><item></item>
-        <!--019--><item>perp019</item>
-        <!--020--><item></item>
-		<!--021--><item>perp021</item>
-        <!--022--><item></item>
-        <!--023--><item></item>
-        <!--024--><item>perp024</item>
-        <!--025--><item>perp025</item>
-        <!--026--><item></item>
-        <!--027--><item></item>
-        <!--028--><item>perp028</item>
-        <!--029--><item>perp029</item>
-        <!--030--><item>perp030</item>
-        <!--031--><item></item>
-        <!--032--><item></item>
-        <!--033--><item></item>
-        <!--034--><item>perp034</item>
-        <!--035--><item></item>
-        <!--036--><item>perp036</item>
-        <!--037--><item>perp037</item>
-        <!--038--><item>perp038</item>
-        <!--039--><item></item>
-        <!--040--><item></item>
-        <!--041--><item>perp041</item>
-        <!--042--><item></item>
-        <!--043--><item>perp043</item>
-        <!--044--><item></item>
-        <!--045--><item>perp045</item>
-        <!--046--><item></item>
-        <!--047--><item>perp047</item>
-        <!--048--><item></item>
-        <!--049--><item>perp049</item>
-        <!--050--><item></item>
-        <!--051--><item>perp051</item>
-        <!--052--><item>perp052</item>
-        <!--053--><item></item>
-        <!--054--><item></item>
-        <!--055--><item>perp055</item>
-        <!--056--><item>perp056</item>
-        <!--057--><item></item>
-        <!--058--><item></item>
-        <!--059--><item>perp059</item>
-        <!--060--><item></item>
-        <!--061--><item></item>
-        <!--062--><item>perp062</item>
-        <!--063--><item>perp063</item>
-        <!--064--><item>perp064</item>
-        <!--065--><item>perp065</item>
-        <!--066--><item></item>
-        <!--067--><item></item>
-        <!--068--><item></item>
-        <!--069--><item>perp069</item>
-        <!--070--><item>perp070</item>
-        <!--071--><item></item>
-        <!--072--><item>perp072</item>
-        <!--073--><item></item>
-        <!--074--><item>perp074</item>
-        <!--075--><item>perp075</item>
-        <!--076--><item></item>
-        <!--077--><item></item>
-        <!--078--><item>perp078</item>
-        <!--079--><item></item>
-        <!--080--><item></item>
-        <!--081--><item>perp081</item>
-        <!--082--><item>perp082</item>
-        <!--083--><item></item>
-        <!--084--><item>perp084</item>
-        <!--085--><item>perp085</item>
-        <!--086--><item></item>
-        <!--087--><item>perp087</item>
-        <!--088--><item>perp088</item>
-        <!--089--><item></item>
-        <!--090--><item>perp090</item>
-        <!--091--><item>perp091</item>
-        <!--092--><item>perp092</item>
-        <!--093--><item></item>
-        <!--094--><item>perp094</item>
-        <!--095--><item>perp095</item>
-        <!--096--><item></item>
-        <!--097--><item>perp097</item>
-        <!--098--><item>perp098</item>
-        <!--099--><item>perp099</item>
-        <!--100--><item></item>
-        <!--101--><item></item>
-        <!--102--><item></item>
-        <!--103--><item></item>
-        <!--104--><item></item>
-        <!--105--><item></item>
-        <!--106--><item></item>
-        <!--107--><item></item>
-        <!--108--><item>perp108</item>
-        <!--109--><item></item>
-        <!--110--><item></item>
-        <!--111--><item></item>
-        <!--112--><item></item>
-        <!--113--><item></item>
-        <!--114--><item></item>
-        <!--115--><item></item>
-        <!--116--><item></item>
-        <!--117--><item></item>
-        <!--118--><item></item>
-        <!--119--><item></item>
-        <!--120--><item></item>
-        <!--121--><item></item>
-        <!--122--><item></item>
-        <!--123--><item></item>
-        <!--124--><item>perp124</item>
-        <!--125--><item></item>
-        <!--126--><item></item>
-        <!--127--><item></item>
-        <!--128--><item></item>
-        <!--129--><item></item>
-        <!--130--><item></item>
-        <!--131--><item></item>
-        <!--132--><item></item>
-        <!--133--><item></item>
-        <!--134--><item></item>
-        <!--135--><item></item>
-        <!--136--><item></item>
-        <!--137--><item></item>
-        <!--138--><item></item>
-        <!--139--><item></item>
-        <!--140--><item></item>
-        <!--141--><item></item>
-        <!--142--><item></item>
-        <!--143--><item></item>
-        <!--144--><item></item>
-        <!--145--><item></item>
-        <!--146--><item></item>
-        <!--147--><item></item>
-        <!--148--><item></item>
-        <!--149--><item></item>
-        <!--150--><item></item>
-        <!--151--><item></item>
-        <!--152--><item></item>
-        <!--153--><item></item>
-        <!--154--><item></item>
-        <!--155--><item></item>
-        <!--156--><item></item>
-        <!--157--><item></item>
-        <!--158--><item>perp158</item>
-        <!--159--><item>perp159</item>
-        <!--160--><item>perp160</item>
-        <!--161--><item>perp161</item>
-        <!--162--><item>perp162</item>
-        <!--163--><item>perp163</item>
-        <!--164--><item>perp164</item>
-        <!--165--><item>perp165</item>
-        <!--166--><item>perp166</item>
-        <!--167--><item>perp167</item>
-        <!--168--><item>perp168</item>
-        <!--169--><item>perp169</item>
-        <!--170--><item>perp170</item>
-        <!--171--><item>perp171</item>
-        <!--172--><item>perp172</item>
-        <!--173--><item>perp173</item>
-        <!--174--><item>perp174</item>
-        <!--175--><item>perp175</item>
-        <!--176--><item>perp176</item>
-        <!--177--><item>perp177</item>
-        <!--178--><item>perp178</item>
-        <!--179--><item>perp179</item>
-        <!--180--><item>perp180</item>
-        <!--181--><item>perp181</item>
-        <!--182--><item>perp182</item>
-        <!--183--><item>perp183</item>
-        <!--184--><item>perp184</item>
-        <!--185--><item>perp185</item>
-        <!--186--><item>perp186</item>
-        <!--187--><item>perp187</item>
-        <!--188--><item>perp188</item>
-        <!--189--><item>perp189</item>
-        <!--190--><item>perp190</item>
-        <!--191--><item>perp191</item>
-        <!--192--><item>perp192</item>
-        <!--193--><item>perp193</item>
-        <!--194--><item>perp194</item>
-        <!--195--><item>perp195</item>
-        <!--196--><item>perp196</item>
-        <!--197--><item>perp197</item>
-        <!--198--><item>perp198</item>
-        <!--198--><item>perp199</item>
-        <!--200--><item>perp200</item>
-        <!--201--><item></item>
-        <!--202--><item></item>
-        <!--203--><item></item>
-        <!--204--><item>perp204</item>
-        <!--205--><item></item>
-        <!--206--><item></item>
-        <!--207--><item></item>
-        <!--208--><item>perp208</item>
-        <!--209--><item></item>
-        <!--210--><item></item>
-        <!--211--><item></item>
-        <!--212--><item></item>
-        <!--213--><item></item>
+        <!--001-->
+        <item></item>
+        <!--002-->
+        <item></item>
+        <!--003-->
+        <item></item>
+        <!--004-->
+        <item>perp004</item>
+        <!--005-->
+        <item></item>
+        <!--006-->
+        <item></item>
+        <!--007-->
+        <item>perp007</item>
+        <!--008-->
+        <item>perp008</item>
+        <!--009-->
+        <item></item>
+        <!--010-->
+        <item></item>
+        <!--011-->
+        <item>perp011</item>
+        <!--012-->
+        <item>perp012</item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item>perp014</item>
+        <!--015-->
+        <item>perp015</item>
+        <!--016-->
+        <item>perp016</item>
+        <!--017-->
+        <item>perp017</item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item>perp019</item>
+        <!--020-->
+        <item></item>
 
     </array>
-    
+
     <array name="imgAperceptiva">
-        <!--001--><item></item>
-        <!--002--><item></item>
-        <!--003--><item></item>
-        <!--004--><item>perp004ra</item>
-        <!--005--><item></item>
-		<!--006--><item></item>
-        <!--007--><item>perp007ra</item>
-        <!--008--><item>perp008ra</item>
-        <!--009--><item></item>
-        <!--010--><item></item>
-        <!--011--><item>perp011ra</item>
-        <!--012--><item>perp012ra</item>
-        <!--013--><item></item>
-        <!--014--><item>perp014ra</item>
-        <!--015--><item>perp015ra</item>
-        <!--016--><item></item>
-        <!--017--><item>perp017ra</item>
-        <!--018--><item></item>
-        <!--019--><item>perp019ra</item>
-        <!--020--><item></item>
-		<!--021--><item>perp021ra</item>
-        <!--022--><item></item>
-        <!--023--><item></item>
-        <!--024--><item>perp024ra</item>
-        <!--025--><item>perp025ra</item>
-        <!--026--><item></item>
-        <!--027--><item></item>
-        <!--028--><item>perp028ra</item>
-        <!--029--><item>perp029ra</item>
-        <!--030--><item></item>
-        <!--031--><item></item>
-        <!--032--><item></item>
-        <!--033--><item></item>
-        <!--034--><item>perp034ra</item>
-        <!--035--><item></item>
-        <!--036--><item>perp036ra</item>
-        <!--037--><item>perp037ra</item>
-        <!--038--><item></item>
-        <!--039--><item></item>
-        <!--040--><item></item>
-        <!--041--><item>perp041ra</item>
-        <!--042--><item></item>
-        <!--043--><item></item>
-        <!--044--><item></item>
-        <!--045--><item></item>
-        <!--046--><item></item>
-        <!--047--><item>perp047ra</item>
-        <!--048--><item></item>
-        <!--049--><item>perp049ra</item>
-        <!--050--><item></item>
-        <!--051--><item>perp051ra</item>
-        <!--052--><item></item>
-        <!--053--><item></item>
-        <!--054--><item></item>
-        <!--055--><item></item>
-        <!--056--><item>perp056ra</item>
-        <!--057--><item></item>
-        <!--058--><item></item>
-        <!--059--><item></item>
-        <!--060--><item></item>
-        <!--061--><item></item>
-        <!--062--><item>perp062ra</item>
-        <!--063--><item></item>
-        <!--064--><item></item>
-        <!--065--><item>perp065ra</item>
-        <!--066--><item></item>
-        <!--067--><item></item>
-        <!--068--><item></item>
-        <!--069--><item></item>
-        <!--070--><item>perp070ra</item>
-        <!--071--><item></item>
-        <!--072--><item>perp072ra</item>
-        <!--073--><item></item>
-        <!--074--><item></item>
-        <!--075--><item></item>
-        <!--076--><item></item>
-        <!--077--><item></item>
-        <!--078--><item>perp078ra</item>
-        <!--079--><item></item>
-        <!--080--><item></item>
-        <!--081--><item>perp081ra</item>
-        <!--082--><item></item>
-        <!--083--><item></item>
-        <!--084--><item></item>
-        <!--085--><item></item>
-        <!--086--><item></item>
-        <!--087--><item>perp087ra</item>
-        <!--088--><item>perp088ra</item>
-        <!--089--><item></item>
-        <!--090--><item></item>
-        <!--091--><item>perp091ra</item>
-        <!--092--><item>perp092ra</item>
-        <!--093--><item></item>
-        <!--094--><item></item>
-        <!--095--><item>perp095ra</item>
-        <!--096--><item></item>
-        <!--097--><item></item>
-        <!--098--><item></item>
-        <!--099--><item>perp099ra</item>
-        <!--100--><item></item>
-        <!--101--><item></item>
-        <!--102--><item></item>
-        <!--103--><item></item>
-        <!--104--><item></item>
-        <!--105--><item></item>
-        <!--106--><item></item>
-        <!--107--><item></item>
-        <!--108--><item></item>
-        <!--109--><item></item>
-        <!--110--><item></item>
-        <!--111--><item></item>
-        <!--112--><item></item>
-        <!--113--><item></item>
-        <!--114--><item></item>
-        <!--115--><item></item>
-        <!--116--><item></item>
-        <!--117--><item></item>
-        <!--118--><item></item>
-        <!--119--><item></item>
-        <!--120--><item></item>
-        <!--121--><item></item>
-        <!--122--><item></item>
-        <!--123--><item></item>
-        <!--124--><item></item>
-        <!--125--><item></item>
-        <!--126--><item></item>
-        <!--127--><item></item>
-        <!--128--><item></item>
-        <!--129--><item></item>
-        <!--130--><item></item>
-        <!--131--><item></item>
-        <!--132--><item></item>
-        <!--133--><item></item>
-        <!--134--><item></item>
-        <!--135--><item></item>
-        <!--136--><item></item>
-        <!--137--><item></item>
-        <!--138--><item></item>
-        <!--139--><item></item>
-        <!--140--><item></item>
-        <!--141--><item></item>
-        <!--142--><item></item>
-        <!--143--><item></item>
-        <!--144--><item></item>
-        <!--145--><item></item>
-        <!--146--><item></item>
-        <!--147--><item></item>
-        <!--148--><item></item>
-        <!--149--><item></item>
-        <!--150--><item></item>
-        <!--151--><item></item>
-        <!--152--><item></item>
-        <!--153--><item></item>
-        <!--154--><item></item>
-        <!--155--><item></item>
-        <!--156--><item></item>
-        <!--157--><item></item>
-        <!--158--><item></item>
-        <!--159--><item>perp159ra</item>
-        <!--160--><item></item>
-        <!--161--><item></item>
-        <!--162--><item></item>
-        <!--163--><item></item>
-        <!--164--><item></item>
-        <!--165--><item></item>
-        <!--166--><item></item>
-        <!--167--><item></item>
-        <!--168--><item></item>
-        <!--169--><item></item>
-        <!--170--><item></item>
-        <!--171--><item></item>
-        <!--172--><item></item>
-        <!--173--><item></item>
-        <!--174--><item></item>
-        <!--175--><item></item>
-        <!--176--><item></item>
-        <!--177--><item>perp177ra</item>
-        <!--178--><item>perp178ra</item>
-        <!--179--><item></item>
-        <!--180--><item></item>
-        <!--181--><item></item>
-        <!--182--><item></item>
-        <!--183--><item>perp183ra</item>
-        <!--184--><item>perp184ra</item>
-        <!--185--><item>perp185ra</item>
-        <!--186--><item>perp186ra</item>
-        <!--187--><item>perp187ra</item>
-        <!--188--><item>perp188ra</item>
-        <!--189--><item>perp189ra</item>
-        <!--190--><item>perp190ra</item>
-        <!--191--><item>perp191ra</item>
-        <!--192--><item>perp192ra</item>
-        <!--193--><item>perp193ra</item>
-        <!--194--><item></item>
-        <!--195--><item></item>
-        <!--196--><item></item>
-        <!--197--><item></item>
-        <!--198--><item></item>
-        <!--199--><item></item>
-        <!--200--><item></item>
-        <!--201--><item>perp201ra</item>
-        <!--202--><item></item>
-        <!--203--><item></item>
-        <!--204--><item></item>
-        <!--205--><item></item>
-        <!--206--><item></item>
-        <!--207--><item>perp207ra</item>
-        <!--208--><item>perp208ra</item>
-        <!--209--><item></item>
-        <!--210--><item></item>
-        <!--211--><item></item>
-        <!--212--><item></item>
-        <!--213--><item></item>
+        <!--001-->
+        <item></item>
+        <!--002-->
+        <item></item>
+        <!--003-->
+        <item></item>
+        <!--004-->
+        <item>perp004ra</item>
+        <!--005-->
+        <item></item>
+        <!--006-->
+        <item></item>
+        <!--007-->
+        <item>perp007ra</item>
+        <!--008-->
+        <item>perp008ra</item>
+        <!--009-->
+        <item></item>
+        <!--010-->
+        <item></item>
+        <!--011-->
+        <item>perp011ra</item>
+        <!--012-->
+        <item>perp012ra</item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item>perp014ra</item>
+        <!--015-->
+        <item>perp015ra</item>
+        <!--016-->
+        <item></item>
+        <!--017-->
+        <item>perp017ra</item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item>perp019ra</item>
+        <!--020-->
+        <item></item>
 
     </array>
-    
+
     <array name="imgBperceptiva">
-        <!--001--><item></item>
-        <!--002--><item></item>
-        <!--003--><item></item>
-        <!--004--><item>perp004rb</item>
-        <!--005--><item></item>
-		<!--006--><item></item>
-        <!--007--><item>perp007rb</item>
-        <!--008--><item>perp008rb</item>
-        <!--009--><item></item>
-        <!--010--><item></item>
-        <!--011--><item>perp011rb</item>
-        <!--012--><item>perp012rb</item>
-        <!--013--><item></item>
-        <!--014--><item>perp014rb</item>
-        <!--015--><item>perp015rb</item>
-        <!--016--><item></item>
-        <!--017--><item>perp017rb</item>
-        <!--018--><item></item>
-        <!--019--><item>perp019rb</item>
-        <!--020--><item></item>
-		<!--021--><item>perp021rb</item>
-        <!--022--><item></item>
-        <!--023--><item></item>
-        <!--024--><item>perp024rb</item>
-        <!--025--><item>perp025rb</item>
-        <!--026--><item></item>
-        <!--027--><item></item>
-        <!--028--><item>perp028rb</item>
-        <!--029--><item>perp029rb</item>
-        <!--030--><item></item>
-        <!--031--><item></item>
-        <!--032--><item></item>
-        <!--033--><item></item>
-        <!--034--><item>perp034rb</item>
-        <!--035--><item></item>
-        <!--036--><item>perp036rb</item>
-        <!--037--><item>perp037rb</item>
-        <!--038--><item></item>
-        <!--039--><item></item>
-        <!--040--><item></item>
-        <!--041--><item>perp041rb</item>
-        <!--042--><item></item>
-        <!--043--><item></item>
-        <!--044--><item></item>
-        <!--045--><item></item>
-        <!--046--><item></item>
-        <!--047--><item>perp047rb</item>
-        <!--048--><item></item>
-        <!--049--><item>perp049rb</item>
-        <!--050--><item></item>
-        <!--051--><item>perp051rb</item>
-        <!--052--><item></item>
-        <!--053--><item></item>
-        <!--054--><item></item>
-        <!--055--><item></item>
-        <!--056--><item>perp056rb</item>
-        <!--057--><item></item>
-        <!--058--><item></item>
-        <!--059--><item></item>
-        <!--060--><item></item>
-        <!--061--><item></item>
-        <!--062--><item>perp062rb</item>
-        <!--063--><item></item>
-        <!--064--><item></item>
-        <!--065--><item>perp065rb</item>
-        <!--066--><item></item>
-        <!--067--><item></item>
-        <!--068--><item></item>
-        <!--069--><item></item>
-        <!--070--><item>perp070rb</item>
-        <!--071--><item></item>
-        <!--072--><item>perp072rb</item>
-        <!--073--><item></item>
-        <!--074--><item></item>
-        <!--075--><item></item>
-        <!--076--><item></item>
-        <!--077--><item></item>
-        <!--078--><item>perp078rb</item>
-        <!--079--><item></item>
-        <!--080--><item></item>
-        <!--081--><item>perp081rb</item>
-        <!--082--><item></item>
-        <!--083--><item></item>
-        <!--084--><item></item>
-        <!--085--><item></item>
-        <!--086--><item></item>
-        <!--087--><item>perp087rb</item>
-        <!--088--><item>perp088rb</item>
-        <!--089--><item></item>
-        <!--090--><item></item>
-        <!--091--><item>perp091rb</item>
-        <!--092--><item>perp092rb</item>
-        <!--093--><item></item>
-        <!--094--><item></item>
-        <!--095--><item>perp095rb</item>
-        <!--096--><item></item>
-        <!--097--><item></item>
-        <!--098--><item></item>
-        <!--099--><item>perp099rb</item>
-        <!--100--><item></item>
-        <!--101--><item></item>
-        <!--102--><item></item>
-        <!--103--><item></item>
-        <!--104--><item></item>
-        <!--105--><item></item>
-        <!--106--><item></item>
-        <!--107--><item></item>
-        <!--108--><item></item>
-        <!--109--><item></item>
-        <!--110--><item></item>
-        <!--111--><item></item>
-        <!--112--><item></item>
-        <!--113--><item></item>
-        <!--114--><item></item>
-        <!--115--><item></item>
-        <!--116--><item></item>
-        <!--117--><item></item>
-        <!--118--><item></item>
-        <!--119--><item></item>
-        <!--120--><item></item>
-        <!--121--><item></item>
-        <!--122--><item></item>
-        <!--123--><item></item>
-        <!--124--><item></item>
-        <!--125--><item></item>
-        <!--126--><item></item>
-        <!--127--><item></item>
-        <!--128--><item></item>
-        <!--129--><item></item>
-        <!--130--><item></item>
-        <!--131--><item></item>
-        <!--132--><item></item>
-        <!--133--><item></item>
-        <!--134--><item></item>
-        <!--135--><item></item>
-        <!--136--><item></item>
-        <!--137--><item></item>
-        <!--138--><item></item>
-        <!--139--><item></item>
-        <!--140--><item></item>
-        <!--141--><item></item>
-        <!--142--><item></item>
-        <!--143--><item></item>
-        <!--144--><item></item>
-        <!--145--><item></item>
-        <!--146--><item></item>
-        <!--147--><item></item>
-        <!--148--><item></item>
-        <!--149--><item></item>
-        <!--150--><item></item>
-        <!--151--><item></item>
-        <!--152--><item></item>
-        <!--153--><item></item>
-        <!--154--><item></item>
-        <!--155--><item></item>
-        <!--156--><item></item>
-        <!--157--><item></item>
-        <!--158--><item></item>
-        <!--159--><item>perp159rb</item>
-        <!--160--><item></item>
-        <!--161--><item></item>
-        <!--162--><item></item>
-        <!--163--><item></item>
-        <!--164--><item></item>
-        <!--165--><item></item>
-        <!--166--><item></item>
-        <!--167--><item></item>
-        <!--168--><item></item>
-        <!--169--><item></item>
-        <!--170--><item></item>
-        <!--171--><item></item>
-        <!--172--><item></item>
-        <!--173--><item></item>
-        <!--174--><item></item>
-        <!--175--><item></item>
-        <!--176--><item></item>
-        <!--177--><item>perp177rb</item>
-        <!--178--><item>perp178rb</item>
-        <!--179--><item></item>
-        <!--180--><item></item>
-        <!--181--><item></item>
-        <!--182--><item></item>
-        <!--183--><item>perp183rb</item>
-        <!--184--><item>perp184rb</item>
-        <!--185--><item>perp185rb</item>
-        <!--186--><item>perp186rb</item>
-        <!--187--><item>perp187rb</item>
-        <!--188--><item>perp188rb</item>
-        <!--189--><item>perp189rb</item>
-        <!--190--><item>perp190rb</item>
-        <!--191--><item>perp191rb</item>
-        <!--192--><item>perp192rb</item>
-        <!--193--><item>perp193rb</item>
-        <!--194--><item></item>
-        <!--195--><item></item>
-        <!--196--><item></item>
-        <!--197--><item></item>
-        <!--198--><item></item>
-        <!--199--><item></item>
-        <!--200--><item></item>
-        <!--201--><item>perp201rb</item>
-        <!--202--><item></item>
-        <!--203--><item></item>
-        <!--204--><item></item>
-        <!--205--><item></item>
-        <!--206--><item></item>
-        <!--207--><item>perp207rb</item>
-        <!--208--><item>perp208rb</item>
-        <!--209--><item></item>
-        <!--210--><item></item>
-        <!--211--><item></item>
-        <!--212--><item></item>
-        <!--213--><item></item>
-		
+        <!--001-->
+        <item></item>
+        <!--002-->
+        <item></item>
+        <!--003-->
+        <item></item>
+        <!--004-->
+        <item>perp004rb</item>
+        <!--005-->
+        <item></item>
+        <!--006-->
+        <item></item>
+        <!--007-->
+        <item>perp007rb</item>
+        <!--008-->
+        <item>perp008rb</item>
+        <!--009-->
+        <item></item>
+        <!--010-->
+        <item></item>
+        <!--011-->
+        <item>perp011rb</item>
+        <!--012-->
+        <item>perp012rb</item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item>perp014rb</item>
+        <!--015-->
+        <item>perp015rb</item>
+        <!--016-->
+        <item></item>
+        <!--017-->
+        <item>perp017rb</item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item>perp019rb</item>
+        <!--020-->
+        <item></item>
 
     </array>
-    
+
     <array name="imgCperceptiva">
-        <!--001--><item></item>
-        <!--002--><item></item>
-        <!--003--><item></item>
-        <!--004--><item>perp004rc</item>
-        <!--005--><item></item>
-		<!--006--><item></item>
-        <!--007--><item>perp007rc</item>
-        <!--008--><item>perp008rc</item>
-        <!--009--><item></item>
-        <!--010--><item></item>
-        <!--011--><item>perp011rc</item>
-        <!--012--><item>perp012rc</item>
-        <!--013--><item></item>
-        <!--014--><item>perp014rc</item>
-        <!--015--><item>perp015rc</item>
-        <!--016--><item></item>
-        <!--017--><item>perp017rc</item>
-        <!--018--><item></item>
-        <!--019--><item>perp019rc</item>
-        <!--020--><item></item>
-		<!--021--><item>perp021rc</item>
-        <!--022--><item></item>
-        <!--023--><item></item>
-        <!--024--><item>perp024rc</item>
-        <!--025--><item>perp025rc</item>
-        <!--026--><item></item>
-        <!--027--><item></item>
-        <!--028--><item>perp028rc</item>
-        <!--029--><item>perp029rc</item>
-        <!--030--><item></item>
-        <!--031--><item></item>
-        <!--032--><item></item>
-        <!--033--><item></item>
-        <!--034--><item>perp034rc</item>
-        <!--035--><item></item>
-        <!--036--><item>perp036rc</item>
-        <!--037--><item>perp037rc</item>
-        <!--038--><item></item>
-        <!--039--><item></item>
-        <!--040--><item></item>
-        <!--041--><item>perp041rc</item>
-        <!--042--><item></item>
-        <!--043--><item></item>
-        <!--044--><item></item>
-        <!--045--><item></item>
-        <!--046--><item></item>
-        <!--047--><item>perp047rc</item>
-        <!--048--><item></item>
-        <!--049--><item>perp049rc</item>
-        <!--050--><item></item>
-        <!--051--><item>perp051rc</item>
-        <!--052--><item></item>
-        <!--053--><item></item>
-        <!--054--><item></item>
-        <!--055--><item></item>
-        <!--056--><item>perp056rc</item>
-        <!--057--><item></item>
-        <!--058--><item></item>
-        <!--059--><item></item>
-        <!--060--><item></item>
-        <!--061--><item></item>
-        <!--062--><item>perp062rc</item>
-        <!--063--><item></item>
-        <!--064--><item></item>
-        <!--065--><item>perp065rc</item>
-        <!--066--><item></item>
-        <!--067--><item></item>
-        <!--068--><item></item>
-        <!--069--><item></item>
-        <!--070--><item>perp070rc</item>
-        <!--071--><item></item>
-        <!--072--><item>perp072rc</item>
-        <!--073--><item></item>
-        <!--074--><item />
-        <!--075--><item></item>
-        <!--076--><item></item>
-        <!--077--><item></item>
-        <!--078--><item>perp078rc</item>
-        <!--079--><item></item>
-        <!--080--><item></item>
-        <!--081--><item>perp081rc</item>
-        <!--082--><item></item>
-        <!--083--><item></item>
-        <!--084--><item></item>
-        <!--085--><item></item>
-        <!--086--><item></item>
-        <!--087--><item>perp087rc</item>
-        <!--088--><item>perp088rc</item>
-        <!--089--><item></item>
-        <!--090--><item></item>
-        <!--091--><item>perp091rc</item>
-        <!--092--><item>perp092rc</item>
-        <!--093--><item></item>
-        <!--094--><item></item>
-        <!--095--><item>perp095rc</item>
-        <!--096--><item></item>
-        <!--097--><item></item>
-        <!--098--><item></item>
-        <!--099--><item>perp099rc</item>
-        <!--100--><item></item>
-        <!--101--><item></item>
-        <!--102--><item></item>
-        <!--103--><item></item>
-        <!--104--><item></item>
-        <!--105--><item></item>
-        <!--106--><item></item>
-        <!--107--><item></item>
-        <!--108--><item></item>
-        <!--109--><item></item>
-        <!--110--><item></item>
-        <!--111--><item></item>
-        <!--112--><item></item>
-        <!--113--><item></item>
-        <!--114--><item></item>
-        <!--115--><item></item>
-        <!--116--><item></item>
-        <!--117--><item></item>
-        <!--118--><item></item>
-        <!--119--><item></item>
-        <!--120--><item></item>
-        <!--121--><item></item>
-        <!--122--><item></item>
-        <!--123--><item></item>
-        <!--124--><item></item>
-        <!--125--><item></item>
-        <!--126--><item></item>
-        <!--127--><item></item>
-        <!--128--><item></item>
-        <!--129--><item></item>
-        <!--130--><item></item>
-        <!--131--><item></item>
-        <!--132--><item></item>
-        <!--133--><item></item>
-        <!--134--><item></item>
-        <!--135--><item></item>
-        <!--136--><item></item>
-        <!--137--><item></item>
-        <!--138--><item></item>
-        <!--139--><item></item>
-        <!--140--><item></item>
-        <!--141--><item></item>
-        <!--142--><item></item>
-        <!--143--><item></item>
-        <!--144--><item></item>
-        <!--145--><item></item>
-        <!--146--><item></item>
-        <!--147--><item></item>
-        <!--148--><item></item>
-        <!--149--><item></item>
-        <!--150--><item></item>
-        <!--151--><item></item>
-        <!--152--><item></item>
-        <!--153--><item></item>
-        <!--154--><item></item>
-        <!--155--><item></item>
-        <!--156--><item></item>
-        <!--157--><item></item>
-        <!--158--><item></item>
-        <!--159--><item>perp159rc</item>
-        <!--160--><item></item>
-        <!--161--><item></item>
-        <!--162--><item></item>
-        <!--163--><item></item>
-        <!--164--><item></item>
-        <!--165--><item></item>
-        <!--166--><item></item>
-        <!--167--><item></item>
-        <!--168--><item></item>
-        <!--169--><item></item>
-        <!--170--><item></item>
-        <!--171--><item></item>
-        <!--172--><item></item>
-        <!--173--><item></item>
-        <!--174--><item></item>
-        <!--175--><item></item>
-        <!--176--><item></item>
-        <!--177--><item>perp177rc</item>
-        <!--178--><item>perp178rc</item>
-        <!--179--><item></item>
-        <!--180--><item></item>
-        <!--181--><item></item>
-        <!--182--><item></item>
-        <!--183--><item>perp183rc</item>
-        <!--184--><item>perp184rc</item>
-        <!--185--><item>perp185rc</item>
-        <!--186--><item>perp186rc</item>
-        <!--187--><item>perp187rc</item>
-        <!--188--><item>perp188rc</item>
-        <!--189--><item>perp189rc</item>
-        <!--190--><item>perp190rc</item>
-        <!--191--><item>perp191rc</item>
-        <!--192--><item>perp192rc</item>
-        <!--193--><item>perp193rc</item>
-        <!--194--><item></item>
-        <!--195--><item></item>
-        <!--196--><item></item>
-        <!--197--><item></item>
-        <!--198--><item></item>
-        <!--199--><item></item>
-        <!--200--><item></item>
-        <!--201--><item>perp201rc</item>
-        <!--202--><item></item>
-        <!--203--><item></item>
-        <!--204--><item></item>
-        <!--205--><item></item>
-        <!--206--><item></item>
-        <!--207--><item>perp207rc</item>
-        <!--208--><item>perp208rc</item>
-        <!--209--><item></item>
-        <!--210--><item></item>
-        <!--211--><item></item>
-        <!--212--><item></item>
-        <!--213--><item></item>
+        <!--001-->
+        <item></item>
+        <!--002-->
+        <item></item>
+        <!--003-->
+        <item></item>
+        <!--004-->
+        <item>perp004rc</item>
+        <!--005-->
+        <item></item>
+        <!--006-->
+        <item></item>
+        <!--007-->
+        <item>perp007rc</item>
+        <!--008-->
+        <item>perp008rc</item>
+        <!--009-->
+        <item></item>
+        <!--010-->
+        <item></item>
+        <!--011-->
+        <item>perp011rc</item>
+        <!--012-->
+        <item>perp012rc</item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item>perp014rc</item>
+        <!--015-->
+        <item>perp015rc</item>
+        <!--016-->
+        <item></item>
+        <!--017-->
+        <item>perp017rc</item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item>perp019rc</item>
+        <!--020-->
+        <item></item>
 
     </array>
-    
+
     <array name="imgDperceptiva">
-        <!--001--><item></item>
-        <!--002--><item></item>
-        <!--003--><item></item>
-        <!--004--><item>perp004rd</item>
-        <!--005--><item></item>
-		<!--006--><item></item>
-        <!--007--><item>perp007rd</item>
-        <!--008--><item>perp008rd</item>
-        <!--009--><item></item>
-        <!--010--><item></item>
-        <!--011--><item>perp011rd</item>
-        <!--012--><item>perp012rd</item>
-        <!--013--><item></item>
-        <!--014--><item>perp014rd</item>
-        <!--015--><item>perp015rd</item>
-        <!--016--><item></item>
-        <!--017--><item>perp017rd</item>
-        <!--018--><item></item>
-        <!--019--><item>perp019rd</item>
-        <!--020--><item></item>
-		<!--021--><item>perp021rd</item>
-        <!--022--><item></item>
-        <!--023--><item></item>
-        <!--024--><item>perp024rd</item>
-        <!--025--><item>perp025rd</item>
-        <!--026--><item></item>
-        <!--027--><item></item>
-        <!--028--><item>perp028rd</item>
-        <!--029--><item>perp029rd</item>
-        <!--030--><item></item>
-        <!--031--><item></item>
-        <!--032--><item></item>
-        <!--033--><item></item>
-        <!--034--><item>perp34rd</item>
-        <!--035--><item></item>
-        <!--036--><item>perp036rd</item>
-        <!--037--><item>perp037rd</item>
-        <!--038--><item></item>
-        <!--039--><item></item>
-        <!--040--><item></item>
-        <!--041--><item>perp041rd</item>
-        <!--042--><item></item>
-        <!--043--><item></item>
-        <!--044--><item></item>
-        <!--045--><item></item>
-        <!--046--><item></item>
-        <!--047--><item>perp047rd</item>
-        <!--048--><item></item>
-        <!--049--><item>perp049rd</item>
-        <!--050--><item></item>
-        <!--051--><item>perp051rd</item>
-        <!--052--><item></item>
-        <!--053--><item></item>
-        <!--054--><item></item>
-        <!--055--><item></item>
-        <!--056--><item>perp056rd</item>
-        <!--057--><item></item>
-        <!--058--><item></item>
-        <!--059--><item></item>
-        <!--060--><item></item>
-        <!--061--><item></item>
-        <!--062--><item>perp062rd</item>
-        <!--063--><item></item>
-        <!--064--><item></item>
-        <!--065--><item>perp065rd</item>
-        <!--066--><item></item>
-        <!--067--><item></item>
-        <!--068--><item></item>
-        <!--069--><item></item>
-        <!--070--><item>perp070rd</item>
-        <!--071--><item></item>
-        <!--072--><item>perp072rd</item>
-        <!--073--><item></item>
-        <!--074--><item />
-        <!--075--><item />
-        <!--076--><item></item>
-        <!--077--><item></item>
-        <!--078--><item>perp078rd</item>
-        <!--079--><item></item>
-        <!--080--><item></item>
-        <!--081--><item>perp081rd</item>
-        <!--082--><item></item>
-        <!--083--><item></item>
-        <!--084--><item></item>
-        <!--085--><item></item>
-        <!--086--><item></item>
-        <!--087--><item>perp087rd</item>
-        <!--088--><item>perp088rd</item>
-        <!--089--><item></item>
-        <!--090--><item></item>
-        <!--091--><item>perp091rd</item>
-        <!--092--><item>perp092rd</item>
-        <!--093--><item></item>
-        <!--094--><item></item>
-        <!--095--><item>perp095rd</item>
-        <!--096--><item></item>
-        <!--097--><item></item>
-        <!--098--><item></item>
-        <!--099--><item>perp099rd</item>
-        <!--100--><item></item>
-        <!--101--><item></item>
-        <!--102--><item></item>
-        <!--103--><item></item>
-        <!--104--><item></item>
-        <!--105--><item></item>
-        <!--106--><item></item>
-        <!--107--><item></item>
-        <!--108--><item></item>
-        <!--109--><item></item>
-        <!--110--><item></item>
-        <!--111--><item></item>
-        <!--112--><item></item>
-        <!--113--><item></item>
-        <!--114--><item></item>
-        <!--115--><item></item>
-        <!--116--><item></item>
-        <!--117--><item></item>
-        <!--118--><item></item>
-        <!--119--><item></item>
-        <!--120--><item></item>
-        <!--121--><item></item>
-        <!--122--><item></item>
-        <!--123--><item></item>
-        <!--124--><item></item>
-        <!--125--><item></item>
-        <!--126--><item></item>
-        <!--127--><item></item>
-        <!--128--><item></item>
-        <!--129--><item></item>
-        <!--130--><item></item>
-        <!--131--><item></item>
-        <!--132--><item></item>
-        <!--133--><item></item>
-        <!--134--><item></item>
-        <!--135--><item></item>
-        <!--136--><item></item>
-        <!--137--><item></item>
-        <!--138--><item></item>
-        <!--139--><item></item>
-        <!--140--><item></item>
-        <!--141--><item></item>
-        <!--142--><item></item>
-        <!--143--><item></item>
-        <!--144--><item></item>
-        <!--145--><item></item>
-        <!--146--><item></item>
-        <!--147--><item></item>
-        <!--148--><item></item>
-        <!--149--><item></item>
-        <!--150--><item></item>
-        <!--151--><item></item>
-        <!--152--><item></item>
-        <!--153--><item></item>
-        <!--154--><item></item>
-        <!--155--><item></item>
-        <!--156--><item></item>
-        <!--157--><item></item>
-        <!--158--><item></item>
-        <!--159--><item>perp159rd</item>
-        <!--160--><item></item>
-        <!--161--><item></item>
-        <!--162--><item></item>
-        <!--163--><item></item>
-        <!--164--><item></item>
-        <!--165--><item></item>
-        <!--166--><item></item>
-        <!--167--><item></item>
-        <!--168--><item></item>
-        <!--169--><item></item>
-        <!--170--><item></item>
-        <!--171--><item></item>
-        <!--172--><item></item>
-        <!--173--><item></item>
-        <!--174--><item></item>
-        <!--175--><item></item>
-        <!--176--><item></item>
-        <!--177--><item>perp177rd</item>
-        <!--178--><item>perp178rd</item>
-        <!--179--><item></item>
-        <!--180--><item></item>
-        <!--181--><item></item>
-        <!--182--><item></item>
-        <!--183--><item>perp183rd</item>
-        <!--184--><item></item>
-        <!--185--><item>perp185rd</item>
-        <!--186--><item>perp186rd</item>
-        <!--187--><item>perp187rd</item>
-        <!--188--><item>perp188rd</item>
-        <!--189--><item>perp189rd</item>
-        <!--190--><item>perp190rd</item>
-        <!--191--><item>perp191rd</item>
-        <!--192--><item>perp192rd</item>
-        <!--193--><item>perp193rd</item>
-        <!--194--><item></item>
-        <!--195--><item></item>
-        <!--196--><item></item>
-        <!--197--><item></item>
-        <!--198--><item></item>
-        <!--199--><item></item>
-        <!--200--><item></item>
-        <!--201--><item>perp201rd</item>
-        <!--202--><item></item>
-        <!--203--><item></item>
-        <!--204--><item></item>
-        <!--205--><item></item>
-        <!--206--><item></item>
-        <!--207--><item>perp207rd</item>
-        <!--208--><item>perp208rd</item>
-        <!--209--><item></item>
-        <!--210--><item></item>
-        <!--211--><item></item>
-        <!--212--><item></item>
-        <!--213--><item></item>
+        <!--001-->
+        <item></item>
+        <!--002-->
+        <item></item>
+        <!--003-->
+        <item></item>
+        <!--004-->
+        <item>perp004rd</item>
+        <!--005-->
+        <item></item>
+        <!--006-->
+        <item></item>
+        <!--007-->
+        <item>perp007rd</item>
+        <!--008-->
+        <item>perp008rd</item>
+        <!--009-->
+        <item></item>
+        <!--010-->
+        <item></item>
+        <!--011-->
+        <item>perp011rd</item>
+        <!--012-->
+        <item>perp012rd</item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item>perp014rd</item>
+        <!--015-->
+        <item>perp015rd</item>
+        <!--016-->
+        <item></item>
+        <!--017-->
+        <item>perp017rd</item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item>perp019rd</item>
+        <!--020-->
+        <item></item>
 
     </array>
-    
+
     <array name="imgSolperceptiva">
-        <!--001--><item></item>
-        <!--002--><item></item>
-        <!--003--><item></item>
-        <!--004--><item>perp004rc</item>
-        <!--005--><item></item>
-		<!--006--><item></item>
-        <!--007--><item>perp007rd</item>
-        <!--008--><item>perp008rc</item>
-        <!--009--><item></item>
-        <!--010--><item></item>
-        <!--011--><item>perp011ra</item>
-        <!--012--><item>perp012rb</item>
-        <!--013--><item></item>
-        <!--014--><item>perp014rc</item>
-        <!--015--><item>perp015rd</item>
-        <!--016--><item></item>
-        <!--017--><item>perp017rd</item>
-        <!--018--><item></item>
-        <!--019--><item>perp019rb</item>
-        <!--020--><item></item>
-		<!--021--><item>perp021rc</item>
-        <!--022--><item></item>
-        <!--023--><item></item>
-        <!--024--><item>perp024rd</item>
-        <!--025--><item>perp025ra</item>
-        <!--026--><item></item>
-        <!--027--><item></item>
-        <!--028--><item>perp028rb</item>
-        <!--029--><item>perp029rd</item>
-        <!--030--><item></item>
-        <!--031--><item></item>
-        <!--032--><item></item>
-        <!--033--><item></item>
-        <!--034--><item>perp034rb</item>
-        <!--035--><item></item>
-        <!--036--><item>perp036rb</item>
-        <!--037--><item>perp037ra</item>
-        <!--038--><item></item>
-        <!--039--><item></item>
-        <!--040--><item></item>
-        <!--041--><item>perp041rd</item>
-        <!--042--><item></item>
-        <!--043--><item></item>
-        <!--044--><item></item>
-        <!--045--><item></item>
-        <!--046--><item></item>
-        <!--047--><item>perp047rd</item>
-        <!--048--><item></item>
-        <!--049--><item>perp049rb</item>
-        <!--050--><item></item>
-        <!--051--><item>perp051rb</item>
-        <!--052--><item></item>
-        <!--053--><item></item>
-        <!--054--><item></item>
-        <!--055--><item></item>
-        <!--056--><item>perp056rd</item>
-        <!--057--><item></item>
-        <!--058--><item></item>
-        <!--059--><item></item>
-        <!--060--><item></item>
-        <!--061--><item></item>
-        <!--062--><item>perp062rd</item>
-        <!--063--><item></item>
-        <!--064--><item></item>
-        <!--065--><item>perp065ra</item>
-        <!--066--><item></item>
-        <!--067--><item></item>
-        <!--068--><item></item>
-        <!--069--><item></item>
-        <!--070--><item>perp070rc</item>
-        <!--071--><item></item>
-        <!--072--><item>perp072rb</item>
-        <!--073--><item></item>
-        <!--074--><item></item>
-        <!--075--><item></item>
-        <!--076--><item></item>
-        <!--077--><item></item>
-        <!--078--><item>perp078rc</item>
-        <!--079--><item></item>
-        <!--080--><item></item>
-        <!--081--><item>perp081rb</item>
-        <!--082--><item></item>
-        <!--083--><item></item>
-        <!--084--><item></item>
-        <!--085--><item></item>
-        <!--086--><item></item>
-        <!--087--><item>perp087rd</item>
-        <!--088--><item>perp088ra</item>
-        <!--089--><item></item>
-        <!--090--><item></item>
-        <!--091--><item>perp091ra</item>
-        <!--092--><item>perp092rd</item>
-        <!--093--><item></item>
-        <!--094--><item></item>
-        <!--095--><item>perp095rb</item>
-        <!--096--><item></item>
-        <!--097--><item></item>
-        <!--098--><item></item>
-        <!--099--><item>perp099rc</item>
-        <!--100--><item></item>
-        <!--101--><item></item>
-        <!--102--><item></item>
-        <!--103--><item></item>
-        <!--104--><item></item>
-        <!--105--><item></item>
-        <!--106--><item></item>
-        <!--107--><item></item>
-        <!--108--><item></item>
-        <!--109--><item></item>
-        <!--110--><item></item>
-        <!--111--><item></item>
-        <!--112--><item></item>
-        <!--113--><item></item>
-        <!--114--><item></item>
-        <!--115--><item></item>
-        <!--116--><item></item>
-        <!--117--><item></item>
-        <!--118--><item></item>
-        <!--119--><item></item>
-        <!--120--><item></item>
-        <!--121--><item></item>
-        <!--122--><item></item>
-        <!--123--><item></item>
-        <!--124--><item></item>
-        <!--125--><item></item>
-        <!--126--><item></item>
-        <!--127--><item></item>
-        <!--128--><item></item>
-        <!--129--><item></item>
-        <!--130--><item></item>
-        <!--131--><item></item>
-        <!--132--><item></item>
-        <!--133--><item></item>
-        <!--134--><item></item>
-        <!--135--><item></item>
-        <!--136--><item></item>
-        <!--137--><item></item>
-        <!--138--><item></item>
-        <!--139--><item></item>
-        <!--140--><item></item>
-        <!--141--><item></item>
-        <!--142--><item></item>
-        <!--143--><item></item>
-        <!--144--><item></item>
-        <!--145--><item></item>
-        <!--146--><item></item>
-        <!--147--><item></item>
-        <!--148--><item></item>
-        <!--149--><item></item>
-        <!--150--><item></item>
-        <!--151--><item></item>
-        <!--152--><item></item>
-        <!--153--><item></item>
-        <!--154--><item></item>
-        <!--155--><item></item>
-        <!--156--><item></item>
-        <!--157--><item></item>
-        <!--158--><item></item>
-        <!--159--><item>perp159rc</item>
-        <!--160--><item></item>
-        <!--161--><item></item>
-        <!--162--><item></item>
-        <!--163--><item></item>
-        <!--164--><item></item>
-        <!--165--><item></item>
-        <!--166--><item></item>
-        <!--167--><item></item>
-        <!--168--><item></item>
-        <!--169--><item></item>
-        <!--170--><item></item>
-        <!--171--><item></item>
-        <!--172--><item></item>
-        <!--173--><item></item>
-        <!--174--><item></item>
-        <!--175--><item></item>
-        <!--176--><item></item>
-        <!--177--><item>perp177rc</item>
-        <!--178--><item>perp178rb</item>
-        <!--179--><item></item>
-        <!--180--><item></item>
-        <!--181--><item></item>
-        <!--182--><item></item>
-        <!--183--><item>perp183ra</item>
-        <!--184--><item>perp184rb</item>
-        <!--185--><item>perp185rd</item>
-        <!--186--><item>perp186rb</item>
-        <!--187--><item>perp187rd</item>
-        <!--188--><item>perp188rc</item>
-        <!--189--><item>perp189rb</item>
-        <!--190--><item>perp190rd</item>
-        <!--191--><item>perp191ra</item>
-        <!--192--><item>perp192rb</item>
-        <!--193--><item>perp193rc</item>
-        <!--194--><item></item>
-        <!--195--><item></item>
-        <!--196--><item></item>
-        <!--197--><item></item>
-        <!--198--><item></item>
-        <!--199--><item></item>
-        <!--200--><item></item>
-        <!--201--><item>perp201rd</item>
-        <!--202--><item></item>
-        <!--203--><item></item>
-        <!--204--><item></item>
-        <!--205--><item></item>
-        <!--206--><item></item>
-        <!--207--><item>perp207rb</item>
-        <!--208--><item>perp208rc</item>
-        <!--209--><item></item>
-        <!--210--><item></item>
-        <!--211--><item></item>
-        <!--212--><item></item>
-        <!--213--><item></item>
-		
+        <!--001-->
+        <item></item>
+        <!--002-->
+        <item></item>
+        <!--003-->
+        <item></item>
+        <!--004-->
+        <item>perp004rc</item>
+        <!--005-->
+        <item></item>
+        <!--006-->
+        <item></item>
+        <!--007-->
+        <item>perp007rd</item>
+        <!--008-->
+        <item>perp008rc</item>
+        <!--009-->
+        <item></item>
+        <!--010-->
+        <item></item>
+        <!--011-->
+        <item>perp011ra</item>
+        <!--012-->
+        <item>perp012rb</item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item>perp014rc</item>
+        <!--015-->
+        <item>perp015rd</item>
+        <!--016-->
+        <item></item>
+        <!--017-->
+        <item>perp017rd</item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item>perp019rb</item>
+        <!--020-->
+        <item></item>
 
     </array>
-    
+
     <array name="imgExpliperceptiva">
-        <!--001--><item></item>
-        <!--002--><item></item>
-        <!--003--><item></item>
-        <!--004--><item></item>
-        <!--005--><item></item>
-		<!--006--><item></item>
-        <!--007--><item></item>
-        <!--008--><item></item>
-        <!--009--><item></item>
-        <!--010--><item></item>
-		<!--011--><item></item>
-        <!--012--><item></item>
-        <!--013--><item></item>
-        <!--014--><item></item>
-        <!--015--><item></item>
-		<!--016--><item></item>
-        <!--017--><item></item>
-        <!--018--><item></item>
-        <!--019--><item></item>
-        <!--020--><item></item>
-		<!--021--><item></item>
-        <!--022--><item></item>
-        <!--023--><item></item>
-        <!--024--><item></item>
-        <!--025--><item></item>
-        <!--026--><item></item>
-        <!--027--><item></item>
-        <!--028--><item></item>
-        <!--029--><item></item>
-        <!--030--><item></item>
-        <!--031--><item></item>
-        <!--032--><item></item>
-        <!--033--><item></item>
-        <!--034--><item></item>
-        <!--035--><item></item>
-        <!--036--><item></item>
-        <!--037--><item></item>
-        <!--038--><item></item>
-        <!--039--><item></item>
-        <!--040--><item></item>
-        <!--041--><item></item>
-        <!--042--><item></item>
-        <!--043--><item></item>
-        <!--044--><item></item>
-        <!--045--><item></item>
-        <!--046--><item></item>
-        <!--047--><item></item>
-        <!--048--><item></item>
-        <!--049--><item></item>
-        <!--050--><item></item>
-        <!--051--><item></item>
-        <!--052--><item></item>
-        <!--053--><item></item>
-        <!--054--><item></item>
-        <!--055--><item></item>
-        <!--056--><item></item>
-        <!--057--><item></item>
-        <!--058--><item></item>
-        <!--059--><item></item>
-        <!--060--><item></item>
-        <!--061--><item></item>
-        <!--062--><item></item>
-        <!--063--><item></item>
-        <!--064--><item></item>
-        <!--065--><item></item>
-        <!--066--><item></item>
-        <!--067--><item></item>
-        <!--068--><item></item>
-        <!--069--><item></item>
-        <!--070--><item></item>
-        <!--071--><item></item>
-        <!--072--><item></item>
-        <!--073--><item></item>
-        <!--074--><item></item>
-        <!--075--><item></item>
-        <!--076--><item></item>
-        <!--077--><item></item>
-        <!--078--><item></item>
-        <!--079--><item></item>
-        <!--080--><item></item>
-        <!--081--><item></item>
-        <!--082--><item></item>
-        <!--083--><item></item>
-        <!--084--><item></item>
-        <!--085--><item></item>
-        <!--086--><item></item>
-        <!--087--><item></item>
-        <!--088--><item></item>
-        <!--089--><item></item>
-        <!--090--><item></item>
-        <!--091--><item></item>
-        <!--092--><item></item>
-        <!--093--><item></item>
-        <!--094--><item></item>
-        <!--095--><item></item>
-        <!--096--><item></item>
-        <!--097--><item></item>
-        <!--098--><item></item>
-        <!--099--><item></item>
-        <!--100--><item></item>
-        <!--101--><item></item>
-        <!--102--><item></item>
-        <!--103--><item></item>
-        <!--104--><item></item>
-        <!--105--><item></item>
-        <!--106--><item></item>
-        <!--107--><item></item>
-        <!--108--><item></item>
-        <!--109--><item></item>
-        <!--110--><item></item>
-        <!--111--><item></item>
-        <!--112--><item></item>
-        <!--113--><item></item>
-        <!--114--><item></item>
-        <!--115--><item></item>
-        <!--116--><item></item>
-        <!--117--><item></item>
-        <!--118--><item></item>
-        <!--119--><item></item>
-        <!--120--><item></item>
-        <!--121--><item></item>
-        <!--122--><item></item>
-        <!--123--><item></item>
-        <!--124--><item></item>
-        <!--125--><item></item>
-        <!--126--><item></item>
-        <!--127--><item></item>
-        <!--128--><item></item>
-        <!--129--><item></item>
-        <!--130--><item></item>
-        <!--131--><item></item>
-        <!--132--><item></item>
-        <!--133--><item></item>
-        <!--134--><item></item>
-        <!--135--><item></item>
-        <!--136--><item></item>
-        <!--137--><item></item>
-        <!--138--><item></item>
-        <!--139--><item></item>
-        <!--140--><item></item>
-        <!--141--><item></item>
-        <!--142--><item></item>
-        <!--143--><item></item>
-        <!--144--><item></item>
-        <!--145--><item></item>
-        <!--146--><item></item>
-        <!--147--><item></item>
-        <!--148--><item></item>
-        <!--149--><item></item>
-        <!--150--><item></item>
-        <!--151--><item></item>
-        <!--152--><item></item>
-        <!--153--><item></item>
-        <!--154--><item></item>
-        <!--155--><item></item>
-        <!--156--><item></item>
-        <!--157--><item></item>
-        <!--158--><item></item>
-        <!--159--><item></item>
-        <!--160--><item></item>
-        <!--161--><item></item>
-        <!--162--><item></item>
-        <!--163--><item></item>
-        <!--164--><item></item>
-        <!--165--><item></item>
-        <!--166--><item></item>
-        <!--167--><item></item>
-        <!--168--><item></item>
-        <!--169--><item></item>
-        <!--170--><item></item>
-        <!--171--><item></item>
-        <!--172--><item></item>
-        <!--173--><item></item>
-        <!--174--><item></item>
-        <!--175--><item></item>
-        <!--176--><item></item>
-        <!--177--><item></item>
-        <!--178--><item></item>
-        <!--179--><item></item>
-        <!--180--><item></item>
-        <!--181--><item></item>
-        <!--182--><item></item>
-        <!--183--><item></item>
-        <!--184--><item></item>
-        <!--185--><item></item>
-        <!--186--><item></item>
-        <!--187--><item></item>
-        <!--188--><item></item>
-        <!--189--><item></item>
-        <!--190--><item></item>
-        <!--191--><item></item>
-        <!--192--><item></item>
-        <!--193--><item></item>
-        <!--194--><item></item>
-        <!--195--><item></item>
-        <!--196--><item></item>
-        <!--197--><item></item>
-        <!--198--><item></item>
-        <!--199--><item></item>
-        <!--200--><item></item>
-        <!--201--><item></item>
-        <!--202--><item></item>
-        <!--203--><item></item>
-        <!--204--><item></item>
-        <!--205--><item></item>
-        <!--206--><item></item>
-        <!--207--><item></item>
-        <!--208--><item></item>
-        <!--209--><item></item>
-        <!--210--><item></item>
-        <!--211--><item></item>
-        <!--212--><item></item>
-        <!--213--><item></item>
+        <!--001-->
+        <item></item>
+        <!--002-->
+        <item></item>
+        <!--003-->
+        <item></item>
+        <!--004-->
+        <item></item>
+        <!--005-->
+        <item></item>
+        <!--006-->
+        <item></item>
+        <!--007-->
+        <item></item>
+        <!--008-->
+        <item></item>
+        <!--009-->
+        <item></item>
+        <!--010-->
+        <item></item>
+        <!--011-->
+        <item></item>
+        <!--012-->
+        <item></item>
+        <!--013-->
+        <item></item>
+        <!--014-->
+        <item></item>
+        <!--015-->
+        <item></item>
+        <!--016-->
+        <item></item>
+        <!--017-->
+        <item></item>
+        <!--018-->
+        <item></item>
+        <!--019-->
+        <item></item>
+        <!--020-->
+        <item></item>
 
     </array>
 </resources>
