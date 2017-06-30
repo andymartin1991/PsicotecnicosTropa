@@ -128,4 +128,8 @@
     <string name="saliractivity">¿Estas seguro de que quieres salir?</string>
     <string name="si">Si</string>
     <string name="no">No</string>
+
+
+
+    <string name="nopausa">"No se puede pausar durante la memorización</string>
 </resources>
