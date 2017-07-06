@@ -4,12 +4,18 @@ package com.example.andym.psicotecnicostropa;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.OvershootInterpolator;
+import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -17,6 +23,7 @@ import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ViewFlipper;
 
 import com.example.andym.psicotecnicostropa.dto.Preguntas;
 import com.example.andym.psicotecnicostropa.dto.contador;
@@ -72,11 +79,39 @@ public class main_preguntas extends Activity {
     int aciertos = 0;
     int fallos = 0;
 
+    Animation animrightatras = null;
+    Animation animrightalante = null;
+
+    ViewFlipper viewflipper;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_preguntas);
 
+        animrightatras = new TranslateAnimation(Animation.RELATIVE_TO_PARENT,
+                -1.0f, Animation.RELATIVE_TO_PARENT, 0.0f,
+                Animation.RELATIVE_TO_PARENT, 0.0f,
+                Animation.RELATIVE_TO_PARENT, 0.0f);
+        animrightatras.setDuration(1000);
+        animrightatras.setInterpolator(new OvershootInterpolator());
+
+        animrightalante = new TranslateAnimation(Animation.RELATIVE_TO_PARENT,
+                1.0f, Animation.RELATIVE_TO_PARENT, 0.0f,
+                Animation.RELATIVE_TO_PARENT, 0.0f,
+                Animation.RELATIVE_TO_PARENT, 0.0f);
+        animrightalante.setDuration(1000);
+        animrightalante.setInterpolator(new OvershootInterpolator());
+
+        // orientacion pantalla
+        Configuration config = getResources().getConfiguration();
+        if (config.orientation == Configuration.ORIENTATION_PORTRAIT) {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        } else {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        }
+
+        viewflipper = (ViewFlipper)findViewById(R.id.ViewFlipper1);
         ImageView prohibido = (ImageView) findViewById(R.id.prohibido);
         prohibido.setVisibility(View.GONE);
         TextView cuentatras = (TextView) findViewById(R.id.cuentatras);
@@ -314,6 +349,8 @@ public class main_preguntas extends Activity {
                         ocultaratras();
                     }
                     arreglo = 2;
+                    viewflipper.setInAnimation(animrightatras);
+                    viewflipper.showPrevious();
                 } else {
                     Toast.makeText(getApplicationContext(), "Fin", Toast.LENGTH_SHORT).show();
                 }
@@ -989,6 +1026,8 @@ public class main_preguntas extends Activity {
             limpiarelementos();
             cont.setCont(cont.getCont() + 1);
             ocultaralante();
+            viewflipper.setInAnimation(animrightalante);
+            viewflipper.showPrevious();
             if (arreglo == 2) {
                 limpiarelementos();
                 cont.setCont(cont.getCont() + 1);
@@ -1210,9 +1249,38 @@ public class main_preguntas extends Activity {
                 dmemo.setVisibility(View.VISIBLE);
                 imgpre.setVisibility(View.GONE);
                 pregunta.setVisibility(View.VISIBLE);
+                viewflipper.setInAnimation(animrightalante);
+                viewflipper.showPrevious();
 
             }
         }, milisegundos);
+    }
+
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+
+            new AlertDialog.Builder(this)
+                    .setIcon(android.R.drawable.ic_dialog_alert)
+                    .setTitle(getString(R.string.salir))
+                    .setCancelable(false)
+                    .setMessage(getString(R.string.saliractivity))
+                    .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            finish();
+                        }
+                    })
+                    .setPositiveButton(getString(R.string.no), new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog,
+                                            int which) {
+
+                        }
+                    }).show();
+            return true;
+
+        }
+        return super.onKeyDown(keyCode, event);
     }
 
 }

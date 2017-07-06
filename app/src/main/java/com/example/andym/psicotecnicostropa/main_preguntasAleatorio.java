@@ -2,10 +2,18 @@ package com.example.andym.psicotecnicostropa;
 
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.OvershootInterpolator;
+import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -13,6 +21,7 @@ import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ViewFlipper;
 
 import com.example.andym.psicotecnicostropa.dto.Preguntas;
 import com.example.andym.psicotecnicostropa.dto.contador;
@@ -66,10 +75,38 @@ public class main_preguntasAleatorio extends Activity {
     int aciertos = 0;
     int fallos = 0;
 
+    ViewFlipper viewflipper;
+    Animation animrightatras = null;
+    Animation animrightalante = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_preguntas);
+
+        animrightatras = new TranslateAnimation(Animation.RELATIVE_TO_PARENT,
+                -1.0f, Animation.RELATIVE_TO_PARENT, 0.0f,
+                Animation.RELATIVE_TO_PARENT, 0.0f,
+                Animation.RELATIVE_TO_PARENT, 0.0f);
+        animrightatras.setDuration(1000);
+        animrightatras.setInterpolator(new OvershootInterpolator());
+
+        animrightalante = new TranslateAnimation(Animation.RELATIVE_TO_PARENT,
+                1.0f, Animation.RELATIVE_TO_PARENT, 0.0f,
+                Animation.RELATIVE_TO_PARENT, 0.0f,
+                Animation.RELATIVE_TO_PARENT, 0.0f);
+        animrightalante.setDuration(1000);
+        animrightalante.setInterpolator(new OvershootInterpolator());
+
+        // orientacion pantalla
+        Configuration config = getResources().getConfiguration();
+        if (config.orientation == Configuration.ORIENTATION_PORTRAIT) {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        } else {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        }
+
+        viewflipper = (ViewFlipper)findViewById(R.id.ViewFlipper1);
 
         cont = new contador();
         ImageView prohibido = (ImageView) findViewById(R.id.prohibido);
@@ -771,10 +808,7 @@ public class main_preguntasAleatorio extends Activity {
         alante.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 avanza();
-                //colocar++;
-
             }
         });
 
@@ -790,13 +824,12 @@ public class main_preguntasAleatorio extends Activity {
                     limpiarelementos();
                     ocultaratras();
                     arreglo = 2;
-
+                    viewflipper.setInAnimation(animrightatras);
+                    viewflipper.showPrevious();
                 } else {
                     Toast.makeText(getApplicationContext(), "Fin", Toast.LENGTH_SHORT).show();
                 }
-                //colocar--;
                 recolocar();
-
             }
         });
 
@@ -1102,6 +1135,8 @@ public class main_preguntasAleatorio extends Activity {
                 esperarYCerrar(tempomemoria);
                 memoria = true;
             }
+            viewflipper.setInAnimation(animrightalante);
+            viewflipper.showPrevious();
         } else {
             Toast.makeText(getApplicationContext(), "Fin", Toast.LENGTH_SHORT).show();
         }
@@ -1307,9 +1342,38 @@ public class main_preguntasAleatorio extends Activity {
                 dmemo.setVisibility(View.VISIBLE);
                 imgpre.setVisibility(View.GONE);
                 pregunta.setVisibility(View.VISIBLE);
+                viewflipper.setInAnimation(animrightalante);
+                viewflipper.showPrevious();
 
             }
         }, milisegundos);
+    }
+
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+
+            new AlertDialog.Builder(this)
+                    .setIcon(android.R.drawable.ic_dialog_alert)
+                    .setTitle(getString(R.string.salir))
+                    .setCancelable(false)
+                    .setMessage(getString(R.string.saliractivity))
+                    .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            finish();
+                        }
+                    })
+                    .setPositiveButton(getString(R.string.no), new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog,
+                                            int which) {
+
+                        }
+                    }).show();
+            return true;
+
+        }
+        return super.onKeyDown(keyCode, event);
     }
 
 }

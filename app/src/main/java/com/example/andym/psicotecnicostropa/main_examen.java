@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -12,6 +14,9 @@ import android.os.Handler;
 import android.os.Looper;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.OvershootInterpolator;
+import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -19,6 +24,7 @@ import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ViewFlipper;
 
 import com.example.andym.psicotecnicostropa.dto.Notas;
 import com.example.andym.psicotecnicostropa.dto.Preguntas;
@@ -34,6 +40,10 @@ import java.util.List;
  */
 
 public class main_examen extends Activity {
+
+    Animation animrightatras = null;
+    Animation animrightalante = null;
+
     String[] imgPre = null;
     String[] imgA = null;
     String[] imgB = null;
@@ -79,11 +89,37 @@ public class main_examen extends Activity {
     Button siguiente;
 
     static Notas notas;
+    ViewFlipper viewflipper;
 
     //hola
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_preguntas);
+
+        // animaciones
+        animrightatras = new TranslateAnimation(Animation.RELATIVE_TO_PARENT,
+                -1.0f, Animation.RELATIVE_TO_PARENT, 0.0f,
+                Animation.RELATIVE_TO_PARENT, 0.0f,
+                Animation.RELATIVE_TO_PARENT, 0.0f);
+        animrightatras.setDuration(1000);
+        animrightatras.setInterpolator(new OvershootInterpolator());
+
+        animrightalante = new TranslateAnimation(Animation.RELATIVE_TO_PARENT,
+                1.0f, Animation.RELATIVE_TO_PARENT, 0.0f,
+                Animation.RELATIVE_TO_PARENT, 0.0f,
+                Animation.RELATIVE_TO_PARENT, 0.0f);
+        animrightalante.setDuration(1000);
+        animrightalante.setInterpolator(new OvershootInterpolator());
+
+        // orientacion pantalla
+        Configuration config = getResources().getConfiguration();
+        if (config.orientation == Configuration.ORIENTATION_PORTRAIT) {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        } else {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        }
+
+
 
         ImageView prohibido = (ImageView) findViewById(R.id.prohibido);
         prohibido.setVisibility(View.GONE);
@@ -579,6 +615,9 @@ public class main_examen extends Activity {
         contador.setText("1/15");
         imprimir(bloque, posi);
         siguiente = (Button) findViewById(R.id.alante);
+        viewflipper = (ViewFlipper) findViewById(R.id.ViewFlipper1);
+        viewflipper.setInAnimation(animrightalante);
+        viewflipper.showPrevious();
         siguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -662,6 +701,8 @@ public class main_examen extends Activity {
                     if (posi < 15) {
                         imprimir(bloque, posi);
                         contador.setText((posi + 1) + "/15");
+                        viewflipper.setInAnimation(animrightalante);
+                        viewflipper.showPrevious();
                     } else {
                         cuentatiempo = guardatiempo;
                         th.cancel();
@@ -770,6 +811,8 @@ public class main_examen extends Activity {
                                                 }
                                             }.start();
                                         }
+                                        viewflipper.setInAnimation(animrightalante);
+                                        viewflipper.showPrevious();
                                     }
                                 }).create().show();
                         memoria();
@@ -816,6 +859,8 @@ public class main_examen extends Activity {
                         imprimir(bloque, posi);
                         contador.setText((posi + 1) + "/15");
                         recolocar();
+                        viewflipper.setInAnimation(animrightatras);
+                        viewflipper.showPrevious();
                     }
                 }
             }
@@ -2112,6 +2157,8 @@ public class main_examen extends Activity {
             dmemo.setVisibility(View.VISIBLE);
             imgpre.setVisibility(View.GONE);
             pregunta.setVisibility(View.VISIBLE);
+            viewflipper.setInAnimation(animrightalante);
+            viewflipper.showPrevious();
 
             th = new CountDownTimer(cuentatiempo, 1000) {
                 public void onTick(long millisUntilFinished) {

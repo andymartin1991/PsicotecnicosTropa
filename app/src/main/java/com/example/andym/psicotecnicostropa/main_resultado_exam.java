@@ -2,6 +2,8 @@ package com.example.andym.psicotecnicostropa;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
@@ -48,8 +50,15 @@ public class main_resultado_exam extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_resultado_exam);
 
-        notas = main_examen.notas;
+        // orientacion pantalla
+        Configuration config = getResources().getConfiguration();
+        if (config.orientation == Configuration.ORIENTATION_PORTRAIT) {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        } else {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        }
 
+        notas = main_examen.notas;
 
         final String[] baremorecu = {""};
         try {

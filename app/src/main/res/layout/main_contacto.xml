@@ -3,6 +3,14 @@
     android:layout_height="match_parent"
     android:padding="10dp"
     android:background="@color/gris">
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/BLANCO"
+        android:textSize="20dp"
+        android:text="@string/contacto" />
 
     <TextView
         android:id="@+id/tasunto"
