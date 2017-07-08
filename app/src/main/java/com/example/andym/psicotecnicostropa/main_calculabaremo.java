@@ -104,15 +104,15 @@ public class main_calculabaremo extends Activity {
 
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 // find which radio button is selected
-                if (checkedId == R.id.a1) {
+                if (checkedId == R.id.a2) {
                     meriG1Int = 9;
-                } else if (checkedId == R.id.b1) {
+                } else if (checkedId == R.id.b2) {
                     meriG1Int = 6;
-                } else if (checkedId == R.id.c1) {
+                } else if (checkedId == R.id.c2) {
                     meriG1Int = 3;
-                } else if (checkedId == R.id.d1) {
+                } else if (checkedId == R.id.d2) {
                     meriG1Int = 1;
-                } else if (checkedId == R.id.e1) {
+                } else if (checkedId == R.id.e2) {
                     meriG1Int = 0;
                 }
             }
@@ -125,9 +125,9 @@ public class main_calculabaremo extends Activity {
 
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 // find which radio button is selected
-                if (checkedId == R.id.a1) {
+                if (checkedId == R.id.a3) {
                     meriG25Int = 3;
-                } else if (checkedId == R.id.b1) {
+                } else if (checkedId == R.id.b3) {
                     meriG25Int = 0;
                 }
             }
@@ -140,13 +140,13 @@ public class main_calculabaremo extends Activity {
 
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 // find which radio button is selected
-                if (checkedId == R.id.a1) {
+                if (checkedId == R.id.a4) {
                     meriG2Int = 8;
-                } else if (checkedId == R.id.b1) {
+                } else if (checkedId == R.id.b4) {
                     meriG2Int = 5;
-                } else if (checkedId == R.id.c1) {
+                } else if (checkedId == R.id.c4) {
                     meriG2Int = 3;
-                } else if (checkedId == R.id.d1) {
+                } else if (checkedId == R.id.d4) {
                     meriG2Int = 0;
                 }
             }
@@ -159,15 +159,15 @@ public class main_calculabaremo extends Activity {
 
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 // find which radio button is selected
-                if (checkedId == R.id.a1) {
+                if (checkedId == R.id.a5) {
                     meriM1Int = 2;
-                } else if (checkedId == R.id.b1) {
+                } else if (checkedId == R.id.b5) {
                     meriM1Int = 1.5;
-                } else if (checkedId == R.id.c1) {
+                } else if (checkedId == R.id.c5) {
                     meriM1Int = 1;
-                } else if (checkedId == R.id.d1) {
+                } else if (checkedId == R.id.d5) {
                     meriM1Int = 0.25;
-                } else if (checkedId == R.id.e1) {
+                } else if (checkedId == R.id.e5) {
                     meriM1Int = 0;
                 }
             }
@@ -180,17 +180,17 @@ public class main_calculabaremo extends Activity {
 
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 // find which radio button is selected
-                if (checkedId == R.id.a1) {
+                if (checkedId == R.id.a6) {
                     meriM2Int = 2;
-                } else if (checkedId == R.id.b1) {
+                } else if (checkedId == R.id.b6) {
                     meriM2Int = 1.75;
-                } else if (checkedId == R.id.c1) {
+                } else if (checkedId == R.id.c6) {
                     meriM2Int = 1.5;
-                } else if (checkedId == R.id.d1) {
-                    meriM1Int = 0.5;
-                } else if (checkedId == R.id.e1) {
+                } else if (checkedId == R.id.d6) {
+                    meriM2Int = 0.5;
+                } else if (checkedId == R.id.e6) {
                     meriM2Int = 0.25;
-                } else if (checkedId == R.id.f1) {
+                } else if (checkedId == R.id.f6) {
                     meriM2Int = 0;
                 }
             }
@@ -203,11 +203,11 @@ public class main_calculabaremo extends Activity {
 
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 // find which radio button is selected
-                if (checkedId == R.id.a1) {
+                if (checkedId == R.id.a7) {
                     meriM3Int = 0.5;
-                } else if (checkedId == R.id.b1) {
+                } else if (checkedId == R.id.b7) {
                     meriM3Int = 0.25;
-                } else if (checkedId == R.id.c1) {
+                } else if (checkedId == R.id.c7) {
                     meriM3Int = 0;
                 }
             }

@@ -222,7 +222,6 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView5"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
@@ -244,7 +243,7 @@
                             android:checkedButton="@+id/sound">
 
                             <RadioButton
-                                android:id="@+id/a1"
+                                android:id="@+id/a2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Estar en posesión del permiso de conducción de la clase C o superior -> 9 puntos"
@@ -253,7 +252,7 @@
                                 android:textSize="10dp" />
 
                             <RadioButton
-                                android:id="@+id/b1"
+                                android:id="@+id/b2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Estar en posesión del permiso de conducción de la clase C1 -> 6 puntos"
@@ -262,7 +261,7 @@
                                 android:textSize="10dp" />
 
                             <RadioButton
-                                android:id="@+id/c1"
+                                android:id="@+id/c2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Estar en posesión del permiso de conducción de la clase B -> 3 puntos"
@@ -271,7 +270,7 @@
                                 android:textSize="10dp" />
 
                             <RadioButton
-                                android:id="@+id/d1"
+                                android:id="@+id/d2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Estar en posesión del permiso de conducción de las clases A2 o A -> 1 punto "
@@ -280,7 +279,7 @@
                                 android:textSize="10dp" />
 
                             <RadioButton
-                                android:id="@+id/e1"
+                                android:id="@+id/e2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="true"
@@ -303,7 +302,7 @@
                             android:checkedButton="@+id/sound">
 
                             <RadioButton
-                                android:id="@+id/a1"
+                                android:id="@+id/a3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="(Últimos 5 años) Deportista de alto nivel -> 3 puntos"
@@ -312,13 +311,13 @@
                                 android:textSize="10dp" />
 
                             <RadioButton
-                                android:id="@+id/b1"
+                                android:id="@+id/b3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:checked="true"
                                 android:text="NINGUNO"
                                 android:textColor="@color/BLANCO"
                                 android:textColorLink="@color/BLANCO"
-                                android:checked="true"
                                 android:textSize="10dp" />
 
                         </RadioGroup>
@@ -335,7 +334,7 @@
                             android:checkedButton="@+id/sound">
 
                             <RadioButton
-                                android:id="@+id/a1"
+                                android:id="@+id/a4"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Estar en posesión del Certificado de Nivel C1 (o superior) del idioma inglés -> 8 puntos"
@@ -344,7 +343,7 @@
                                 android:textSize="10dp" />
 
                             <RadioButton
-                                android:id="@+id/b1"
+                                android:id="@+id/b4"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Estar en posesión del Certificado de Nivel Avanzado del idioma inglés -> 5 puntos"
@@ -353,7 +352,7 @@
                                 android:textSize="10dp" />
 
                             <RadioButton
-                                android:id="@+id/c1"
+                                android:id="@+id/c4"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Estar en posesión del Certificado de Nivel Intermedio del idioma inglés -> 3 puntos"
@@ -362,7 +361,7 @@
                                 android:textSize="10dp" />
 
                             <RadioButton
-                                android:id="@+id/d1"
+                                android:id="@+id/d4"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="true"
@@ -406,7 +405,6 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView5"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
@@ -428,7 +426,7 @@
                             android:checkedButton="@+id/sound">
 
                             <RadioButton
-                                android:id="@+id/a1"
+                                android:id="@+id/a5"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Haber sido Militar Profesional de Tropa y Marinería (MTM) con empleo de Cabo o superior -> 2 puntos"
@@ -437,7 +435,7 @@
                                 android:textSize="10dp" />
 
                             <RadioButton
-                                android:id="@+id/b1"
+                                android:id="@+id/b5"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Haber sido MTM con el antiguo grado de Soldado/Marinero de Primera -> 1,5 puntos"
@@ -446,7 +444,7 @@
                                 android:textSize="10dp" />
 
                             <RadioButton
-                                android:id="@+id/c1"
+                                android:id="@+id/c5"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Haber sido MTM con empleo de Soldado / Marinero -> 1 puntos"
@@ -455,7 +453,7 @@
                                 android:textSize="10dp" />
 
                             <RadioButton
-                                android:id="@+id/d1"
+                                android:id="@+id/d5"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Ser o haber sido Reservista Voluntario en cualquier categoría y empleo -> 0,25 puntos"
@@ -464,7 +462,7 @@
                                 android:textSize="10dp" />
 
                             <RadioButton
-                                android:id="@+id/e1"
+                                android:id="@+id/e5"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="true"
@@ -492,7 +490,6 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView5"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
@@ -514,7 +511,7 @@
                             android:checkedButton="@+id/sound">
 
                             <RadioButton
-                                android:id="@+id/a1"
+                                android:id="@+id/a6"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Cruz del Mérito Militar, Naval o Aeronáutico con distintivo rojo -> 2 puntos"
@@ -523,7 +520,7 @@
                                 android:textSize="10dp" />
 
                             <RadioButton
-                                android:id="@+id/b1"
+                                android:id="@+id/b6"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Cruz del Mérito Militar, Naval o Aeronáutico con distintivo azul o amarillo -> 1,75 puntos"
@@ -532,7 +529,7 @@
                                 android:textSize="10dp" />
 
                             <RadioButton
-                                android:id="@+id/c1"
+                                android:id="@+id/c6"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Cruz del Mérito Militar, Naval o Aeronáutico con distintivo blanco -> 1,5 puntos"
@@ -541,7 +538,7 @@
                                 android:textSize="10dp" />
 
                             <RadioButton
-                                android:id="@+id/d1"
+                                android:id="@+id/d6"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Citación como distinguido en la Orden General -> 0,5 puntos"
@@ -550,7 +547,7 @@
                                 android:textSize="10dp" />
 
                             <RadioButton
-                                android:id="@+id/e1"
+                                android:id="@+id/e6"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Mención Honorífica -> 0,25 puntos"
@@ -559,7 +556,7 @@
                                 android:textSize="10dp" />
 
                             <RadioButton
-                                android:id="@+id/f1"
+                                android:id="@+id/f6"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="true"
@@ -610,7 +607,7 @@
                             android:checkedButton="@+id/sound">
 
                             <RadioButton
-                                android:id="@+id/a1"
+                                android:id="@+id/a7"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Por cada participación en misiones fuera del territorio nacional por un período igual o superior a dos meses ininterrumpidos -> 0,5 puntos "
@@ -619,7 +616,7 @@
                                 android:textSize="10dp" />
 
                             <RadioButton
-                                android:id="@+id/b1"
+                                android:id="@+id/b7"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Por cada año (o fracción) de servicio en las Fuerzas Armadas -> 0,25 puntos "
@@ -628,7 +625,7 @@
                                 android:textSize="10dp" />
 
                             <RadioButton
-                                android:id="@+id/c1"
+                                android:id="@+id/c7"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:checked="true"

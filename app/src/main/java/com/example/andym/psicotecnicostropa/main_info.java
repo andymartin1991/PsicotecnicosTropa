@@ -597,7 +597,7 @@ public class main_info extends Activity {
             @Override
             public void onClick(View v) {
                 new AlertDialog.Builder(main_info.this)
-                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setIcon(getResources().getDrawable(R.drawable.iborrar))
                         .setTitle(getString(R.string.borrar))
                         .setCancelable(false)
                         .setMessage(getString(R.string.borrardatos))
@@ -629,7 +629,7 @@ public class main_info extends Activity {
             public void onClick(View v) {
 
                 new AlertDialog.Builder(main_info.this)
-                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setIcon(getResources().getDrawable(R.drawable.iborrar))
                         .setTitle(getString(R.string.borrar))
                         .setCancelable(false)
                         .setMessage(getString(R.string.borrardatos))
@@ -659,7 +659,7 @@ public class main_info extends Activity {
             public void onClick(View v) {
 
                 new AlertDialog.Builder(main_info.this)
-                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setIcon(getResources().getDrawable(R.drawable.iborrar))
                         .setTitle(getString(R.string.borrar))
                         .setCancelable(false)
                         .setMessage(getString(R.string.borrardatos))
@@ -689,7 +689,7 @@ public class main_info extends Activity {
             public void onClick(View v) {
 
                 new AlertDialog.Builder(main_info.this)
-                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setIcon(getResources().getDrawable(R.drawable.iborrar))
                         .setTitle(getString(R.string.borrar))
                         .setCancelable(false)
                         .setMessage(getString(R.string.borrardatos))
@@ -719,7 +719,7 @@ public class main_info extends Activity {
             public void onClick(View v) {
 
                 new AlertDialog.Builder(main_info.this)
-                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setIcon(getResources().getDrawable(R.drawable.iborrar))
                         .setTitle(getString(R.string.borrar))
                         .setCancelable(false)
                         .setMessage(getString(R.string.borrardatos))
@@ -749,7 +749,7 @@ public class main_info extends Activity {
             public void onClick(View v) {
 
                 new AlertDialog.Builder(main_info.this)
-                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setIcon(getResources().getDrawable(R.drawable.iborrar))
                         .setTitle(getString(R.string.borrar))
                         .setCancelable(false)
                         .setMessage(getString(R.string.borrardatos))
@@ -779,7 +779,7 @@ public class main_info extends Activity {
             public void onClick(View v) {
 
                 new AlertDialog.Builder(main_info.this)
-                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setIcon(getResources().getDrawable(R.drawable.iborrar))
                         .setTitle(getString(R.string.borrar))
                         .setCancelable(false)
                         .setMessage(getString(R.string.borrardatos))
@@ -809,7 +809,7 @@ public class main_info extends Activity {
             public void onClick(View v) {
 
                 new AlertDialog.Builder(main_info.this)
-                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setIcon(getResources().getDrawable(R.drawable.iborrar))
                         .setTitle(getString(R.string.borrar))
                         .setCancelable(false)
                         .setMessage(getString(R.string.borrardatos))
@@ -839,7 +839,7 @@ public class main_info extends Activity {
             public void onClick(View v) {
 
                 new AlertDialog.Builder(main_info.this)
-                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setIcon(getResources().getDrawable(R.drawable.iborrar))
                         .setTitle(getString(R.string.borrar))
                         .setCancelable(false)
                         .setMessage(getString(R.string.borrardatos))

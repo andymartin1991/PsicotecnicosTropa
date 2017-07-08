@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class main_principal extends Activity {
 
@@ -87,6 +88,10 @@ public class main_principal extends Activity {
             @Override
             public void onClick(View v) {
                 if (entra[0] == true) {
+                    Toast toast1 =
+                            Toast.makeText(getApplicationContext(),
+                                    "Próximamente", Toast.LENGTH_SHORT);
+                    toast1.show();
                     entra[0] = false;
                     Animation animation = AnimationUtils.loadAnimation(
                             getApplicationContext(), R.anim.rotar);
@@ -350,6 +355,10 @@ public class main_principal extends Activity {
             @Override
             public void onClick(View v) {
                 if (entra[0] == true) {
+                    Toast toast1 =
+                            Toast.makeText(getApplicationContext(),
+                                    "Próximamente", Toast.LENGTH_SHORT);
+                    toast1.show();
                     entra[0] = false;
                     Animation animation = AnimationUtils.loadAnimation(
                             getApplicationContext(), R.anim.rotar);

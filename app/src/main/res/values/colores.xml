@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="BLANCO">#ffffff</color>
-    <color name="NARANJA">#f28220</color>
+    <color name="NARANJA">#FFBD00</color>
     <color name="MORADO">#C733C9</color>
     <color name="PISTACHO">#C0D787</color>
     <color name="NEGRO">#000000</color>

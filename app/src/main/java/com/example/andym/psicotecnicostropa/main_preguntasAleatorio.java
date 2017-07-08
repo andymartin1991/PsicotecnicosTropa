@@ -1353,7 +1353,7 @@ public class main_preguntasAleatorio extends Activity {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
 
             new AlertDialog.Builder(this)
-                    .setIcon(android.R.drawable.ic_dialog_alert)
+                    .setIcon(getResources().getDrawable(R.drawable.isalir))
                     .setTitle(getString(R.string.salir))
                     .setCancelable(false)
                     .setMessage(getString(R.string.saliractivity))

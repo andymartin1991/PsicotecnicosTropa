@@ -7,17 +7,17 @@
     <string name="aptitud_verbal">Aptitud Verbal</string>
     <string name="test_bloque">Test por bloque</string>
     <string name="verbal">Test verbal</string>
-    <string name="abstrapto">Test abstrapto</string>
+    <string name="abstrapto">Test abstracto</string>
     <string name="espacial">Test espacial</string>
     <string name="mecanico">Test mecánico</string>
     <string name="memoria">Test memoria</string>
     <string name="perceptiva">Test perceptiva</string>
     <string name="numerico">Test numérico</string>
-    <string name="nointernet">Tu dispositivo no tiene conexion a internet</string>
+    <string name="nointernet">Su dispositivo no tiene conexión a Internet</string>
     <string name="conexioninternet">Conexion a Internet</string>
     <string name="salir">Salir</string>
     <string name="atencion">Atención</string>
-    <string name="atencionkey">Vamos a proceder a verificar su licencia, asegúrese de estar conectado a internet.</string>
+    <string name="atencionkey">Vamos a proceder a verificar su licencia, asegúrese de estar conectado a Internet.</string>
     <string name="verificar">Verificar</string>
     <string name="noversion">La versión de esta APP no corresponde con la versión actual, por favor actualice a la versión más reciente desde el Google Play.</string>
     <string name="aptitud1">Aptitud verbal</string>
@@ -32,7 +32,7 @@
     <string name="aptitud7">Razonamiento abstracto</string>
     <string name="Mecanico">Mecánico</string>
     <string name="Perceptiva">Perceptiva</string>
-    <string name="Abstrapto">Abstrapto</string>
+    <string name="Abstrapto">Abstracto</string>
     <string name="bloque1">Bloque 1</string>
     <string name="bloque2">Bloque 2</string>
     <string name="bloque3">Bloque 3</string>
@@ -55,15 +55,15 @@
     <string name="Evolucion">Evolución</string>
     <string name="Baremo">Baremo</string>
     <string name="Ayuda">Ayuda</string>
-    <string name="Pruebafisica">Pruebas fisica</string>
+    <string name="Pruebafisica">Pruebas físicas</string>
     <string name="Votar">Votar</string>
     <string name="Compartir">Compartir</string>
     <string name="tiemporesdta">Tiempo restante</string>
     <string name="segundos">segundos</string>
-    <string name="bloqueterminado">Has terminado el bloque, pulse ok para continuar.</string>
+    <string name="bloqueterminado">Ha terminado el bloque, pulse "ok" para continuar.</string>
     <string name="revisar">Revisar</string>
-    <string name="tiempoterminado">Se le ha acabado el tiempo, pulse ok para continuar</string>
-    <string name="pausa">Has pausado el examen, pulse continuar para continuar con el examen o salir para salir del examen.</string>
+    <string name="tiempoterminado">Se le ha acabado el tiempo, pulse "ok" para continuar</string>
+    <string name="pausa">Ha pausado el examen, pulse "Continuar" para continuar con el examen o "Salir" para salir del examen.</string>
     <string name="continuar">Continuar</string>
     <string name="Pausa">Pausa</string>
     <string name="aciertos">Aciertos</string>
@@ -77,15 +77,15 @@
     <string name="introduzcabaremo">Introduzca su baremo: </string>
     <string name="comosaberbaremo">Como saber su baremo</string>
     <string name="guardaevolucion">Guardar para evolución</string>
-    <string name="baremonovalido">El baremo introducido no es valido</string>
+    <string name="baremonovalido">El baremo introducido no es válido</string>
     <string name="calcular">Calcular</string>
     <string name="Aciertos">Aciertos</string>
     <string name="Fallos">fallos</string>
     <string name="nocontestadas">y no contestadas</string>
-    <string name="compartirresul">Necesitas introducir un baremo para compartir tu nota</string>
+    <string name="compartirresul">Necesita introducir un baremo para compartir su nota</string>
     <string name="meritoacagene">Méritos Académicos y Méritos Generales</string>
-    <string name="meritomili">Méritos Militares (Fuerzas Armadas españolas) </string>
-    <string name="calculabaremo">Calcula tu baremo</string>
+    <string name="meritomili">Méritos Militares (Fuerzas Armadas Españolas) </string>
+    <string name="calculabaremo">Calcule su baremo</string>
 
     <string name="meritoaca">Méritos Académicos:</string>
     <string name="mertitogene">Méritos Generales:</string>
@@ -94,8 +94,8 @@
     <string name="condecoraciones">Condecoraciones:</string>
     <string name="misiones">Misiones fuera del territorio nacional y tiempo de servicio:</string>
 
-    <string name="baremototal">Tus puntos de baremo es:</string>
-    <string name="minota">Mi nota en el examen ha sido: </string>
+    <string name="baremototal">Sus puntos de baremo son:</string>
+    <string name="minota">Mi nota en el examen ha sido de: </string>
     <string name="minotabare">Mi nota con baremo es de:</string>
 
     <string name="asunto1">Ideas</string>
@@ -105,7 +105,7 @@
     <string name="asunto5">Quejas</string>
     <string name="Casunto">Asunto</string>
     <string name="Cmensaje">Mensaje</string>
-    <string name="devesesc">Debes escribir el mensaje para enviar</string>
+    <string name="devesesc">Debe escribir el mensaje para enviar</string>
     <string name="creditos">Créditos</string>
 
     <string name="modofatiga">Modo Fatiga</string>
@@ -115,7 +115,7 @@
     <string name="errorguardar">Error al guardar</string>
     <string name="guardado">Guardado</string>
     <string name="errormemo">No se puede acceder a la memoria para guardar</string>
-    <string name="datosencontrado">Se han encontrado datos guardados de este bloque que ¿deseas hacer?</string>
+    <string name="datosencontrado">Se han encontrado datos guardados de este bloque, ¿qué desea hacer?</string>
     <string name="cargar">Cargar</string>
     <string name="borrar">Borrar</string>
 
@@ -123,9 +123,9 @@
     <string name="informacion">Información</string>
     <string name="archivosdatos">Archivos de datos</string>
     <string name="version">Versión</string>
-    <string name="guardarresul">Necesitas introducir un baremo para guardar tu evolución</string>
+    <string name="guardarresul">Necesita introducir un baremo para guardar su evolución</string>
     <string name="evolucion">Evolución</string>
-    <string name="saliractivity">¿Estás seguro de que quieres salir?</string>
+    <string name="saliractivity">¿Está seguro de que quiere salir?</string>
     <string name="si">Si</string>
     <string name="no">No</string>
 
@@ -133,6 +133,96 @@
 
     <string name="nopausa">"No se puede pausar durante la memorización</string>
     <string name="contacto">Contacto</string>
-    <string name="datosbaremo">Archivos de datos de evolución encontrado</string>
-    <string name="borrardatos">Atención, vas a proceder a borrar los datos permanentemente, ¿estás seguro?</string>
+    <string name="datosbaremo">Archivos de datos de evolución encontrados</string>
+    <string name="borrardatos">Atención, va a proceder a borrar los datos permanentemente, ¿está seguro?</string>
+
+    <!--fisico-->
+    <string name="saltolongitud">Salto de longitud sin carrera</string>
+    <string name="abdominales">Abdominales</string>
+    <string name="flexiones">Flexo-extensiones de brazo</string>
+    <string name="carreraprogresiva">Carrera de ida y vuelta</string>
+    <string name="nivela">Nivel A</string>
+    <string name="nivelb">Nivel B</string>
+    <string name="nivelc">Nivel C</string>
+    <string name="niveld">Nivel D</string>
+    <string name="h">H</string>
+    <string name="m">M</string>
+    <!-- salto -->
+    <string name="saltoha">145cm</string>
+    <string name="saltoma">121cm</string>
+    <string name="saltohb">163cm</string>
+    <string name="saltomb">136cm</string>
+    <string name="saltohc">187cm</string>
+    <string name="saltomc">156cm</string>
+    <string name="saltohd">205cm</string>
+    <string name="saltomd">171cm</string>
+    <!-- abdominales -->
+    <string name="abdominalesha">15</string>
+    <string name="abdominalesma">10</string>
+    <string name="abdominaleshb">21</string>
+    <string name="abdominalesmb">14</string>
+    <string name="abdominaleshc">27</string>
+    <string name="abdominalesmc">18</string>
+    <string name="abdominaleshd">33</string>
+    <string name="abdominalesmd">22</string>
+    <!-- flexo -->
+    <string name="flexoha">5</string>
+    <string name="flexoma">3</string>
+    <string name="flexohb">8</string>
+    <string name="flexomb">5</string>
+    <string name="flexohc">10</string>
+    <string name="flexomc">6</string>
+    <string name="flexohd">13</string>
+    <string name="flexomd">8</string>
+    <!-- carrera -->
+    <string name="carreraha">5</string>
+    <string name="carrerama">3.5</string>
+    <string name="carrerahb">5.5</string>
+    <string name="carreramb">4</string>
+    <string name="carrerahc">6.5</string>
+    <string name="carreramc">5</string>
+    <string name="carrerahd">7.5</string>
+    <string name="carreramd">6</string>
+    <!--subfisico-->
+    <string name="descripcion">DESCRIPCIÓN:</string>
+    <string name="detallesdescripcion">DETALLES DE EJECUCIÓN: </string>
+    <string name="valoracion">VALORACIÓN: </string>
+    <string name="dessalto">El aspirante se sitúa de pie, con los pies separados cómodamente de forma simétrica y colocados justo
+detrás de la línea de batida. Desde esa posición, flexiona las rodillas al tiempo que lleva los brazos atrás y
+ayudándose con los mismos, salta simultáneamente con ambos pies lo más lejos posible. </string>
+    <string name="desabdo">El aspirante se coloca en posición de decúbito supino, con las piernas flexionadas 90º, los pies ligeramente
+separados y apoyados de plano en el suelo, los dedos de las manos entrelazados detrás del cuello y los
+codos atrás de manera que los antebrazos toquen el suelo. A la señal de “preparado...¡ya!” del examinador,
+el aspirante realiza el mayor número de veces el ciclo de flexión y extensión de la cadera, tocando con los
+codos las rodillas en la flexión y volviendo a la posición inicial en la extensión. </string>
+    <string name="desflexo">El aspirante se coloca en posición de decúbito prono, con las palmas de las manos apoyadas
+cómodamente en el suelo a la altura de los hombros y brazos extendidos, formando con el tronco, cadera
+y piernas una línea recta. Desde esta posición, realiza el mayor número de veces posible el ciclo de flexión
+y extensión de brazos. En el suelo, y a la altura de la barbilla del aspirante, se colocará una almohadilla de
+6 centímetros de grosor. </string>
+    <string name="descarrera">El aspirante, de pie, detrás de la línea de salida, al oír la señal de comienzo de la prueba, se desplazará
+hasta la línea contraria, situada a 20 metros de distancia, siguiendo la velocidad marcada. Ésta será lenta
+al principio e irá aumentando progresivamente cada periodo de 60 segundos. Hay que tocar la línea con el
+pie. Los virajes deben realizarse pivotando sobre un pie al cambiar de sentido, pisando la línea
+correspondiente. Se permitirá únicamente un desajuste de dos metros de adelanto o de retraso con
+respecto a la señal. </string>
+    <string name="detsalto">Se ha de caer con los dos pies a la vez. Antes de realizar el salto se permite realizar movimientos con
+cualquier parte del cuerpo, siempre que no se desplace uno o ambos pies y se mantenga el contacto de
+los mismos con el suelo. </string>
+    <string name="detabdo">Un ayudante sujeta fuertemente por debajo de los tobillos y por encima de los pies para fijarlos al suelo.
+La duración de la prueba será de 1 minuto y se realizará una sola vez.
+El examinador indicará el final de la prueba con la voz de “¡tiempo!”. </string>
+    <string name="detflexo">En cada uno de los movimientos, la barbilla deberá tocar la almohadilla. Durante el ciclo de flexión y
+extensión de brazos, el aspirante deberá mantener la posición descrita. La prueba finalizará cuando el
+aspirante supere el mínimo de ciclos exigidos en función del nivel de las plazas solicitadas o no sea capaz
+de mantener la posición correcta. </string>
+    <string name="detcarrera">El aspirante no podrá ir a la línea contraria hasta que no haya sonado la señal.
+El aspirante interrumpirá la carrera en el momento en que ya no sea capaz de seguir el ritmo que se
+impone, lo que ocurrirá cuando no pise o no sobrepase dos veces consecutivas la línea que delimita la
+distancia de 20 metros.</string>
+    <string name="valsalto">La distancia se medirá desde la línea de batida hasta el punto de contacto más próximo a la misma. Se
+permitirán dos intentos, contabilizándose el mejor resultado obtenido. </string>
+    <string name="valabdoflexo">El resultado será el número de ciclos completos efectuados correctamente. </string>
+    <string name="valcarrera">El resultado será el total de períodos realizados e indicados por la cinta sonora antes de pararse el
+aspirante. </string>
 </resources>

@@ -2106,7 +2106,7 @@ public class main_examen extends Activity {
 
                 } else {
                     new AlertDialog.Builder(this)
-                            .setIcon(android.R.drawable.ic_dialog_alert)
+                            .setIcon(getResources().getDrawable(R.drawable.isalir))
                             .setTitle(getString(R.string.salir))
                             .setCancelable(false)
                             .setMessage(getString(R.string.saliractivity))
