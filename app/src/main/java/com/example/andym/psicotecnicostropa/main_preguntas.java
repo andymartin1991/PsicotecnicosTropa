@@ -474,7 +474,7 @@ public class main_preguntas extends Activity {
                 contenedor.setVisibility(View.INVISIBLE);
 
                 new AlertDialog.Builder(this)
-                        .setIcon(android.R.drawable.ic_delete)
+                        .setIcon(getResources().getDrawable(R.drawable.iexc))
                         .setTitle(getString(R.string.atencion))
                         .setMessage(getString(R.string.datosencontrado))
                         .setCancelable(false)
@@ -1219,16 +1219,12 @@ public class main_preguntas extends Activity {
             //PONER AQUI LA FUNCION DE MEMORIA
             if (pp == false) {
                 if (pos[cont.getCont()] == 0) {
-                    RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
-                    RelativeLayout bmemo = (RelativeLayout) findViewById(R.id.b);
-                    RelativeLayout cmemo = (RelativeLayout) findViewById(R.id.c);
-                    RelativeLayout dmemo = (RelativeLayout) findViewById(R.id.d);
                     TextView pregunta = (TextView) findViewById(R.id.pregunta);
                     ImageView imgpre = (ImageView) findViewById(R.id.imgpre);
-                    amemo.setVisibility(View.GONE);
-                    bmemo.setVisibility(View.GONE);
-                    cmemo.setVisibility(View.GONE);
-                    dmemo.setVisibility(View.GONE);
+                    a.setVisibility(View.GONE);
+                    b.setVisibility(View.GONE);
+                    c.setVisibility(View.GONE);
+                    d.setVisibility(View.GONE);
                     imgpre.setVisibility(View.VISIBLE);
                     pregunta.setVisibility(View.GONE);
                     esperarYCerrar(memoria);
@@ -1241,16 +1237,29 @@ public class main_preguntas extends Activity {
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {
-                RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
-                RelativeLayout bmemo = (RelativeLayout) findViewById(R.id.b);
-                RelativeLayout cmemo = (RelativeLayout) findViewById(R.id.c);
-                RelativeLayout dmemo = (RelativeLayout) findViewById(R.id.d);
+
                 TextView pregunta = (TextView) findViewById(R.id.pregunta);
                 ImageView imgpre = (ImageView) findViewById(R.id.imgpre);
-                amemo.setVisibility(View.VISIBLE);
-                bmemo.setVisibility(View.VISIBLE);
-                cmemo.setVisibility(View.VISIBLE);
-                dmemo.setVisibility(View.VISIBLE);
+                if (resA[cont.getCont()-1].equals("")) {
+                    a.setVisibility(View.GONE);
+                } else {
+                    a.setVisibility(View.VISIBLE);
+                }
+                if (resB[cont.getCont()-1].equals("")) {
+                    b.setVisibility(View.GONE);
+                } else {
+                    b.setVisibility(View.VISIBLE);
+                }
+                if (resC[cont.getCont()-1].equals("")) {
+                    c.setVisibility(View.GONE);
+                } else {
+                    c.setVisibility(View.VISIBLE);
+                }
+                if (resD[cont.getCont()-1].equals("")) {
+                    d.setVisibility(View.GONE);
+                } else {
+                    d.setVisibility(View.VISIBLE);
+                }
                 imgpre.setVisibility(View.GONE);
                 pregunta.setVisibility(View.VISIBLE);
                 viewflipper.setInAnimation(animrightalante);

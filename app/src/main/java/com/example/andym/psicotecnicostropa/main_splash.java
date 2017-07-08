@@ -175,7 +175,7 @@ public class main_splash extends Activity {
         alertDialog.setTitle(title);
         alertDialog.setMessage(message);
         alertDialog.setCancelable(false);
-        alertDialog.setIcon(android.R.drawable.ic_dialog_info);
+        alertDialog.setIcon(getResources().getDrawable(R.drawable.iexc));
         alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
 

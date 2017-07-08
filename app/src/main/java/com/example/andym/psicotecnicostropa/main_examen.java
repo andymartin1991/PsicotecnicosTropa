@@ -582,7 +582,7 @@ public class main_examen extends Activity {
             public void onFinish() {
                 cuentatras.setText(getString(R.string.tiemporesdta) + " " + "0" + " " + getString(R.string.segundos));
                 new AlertDialog.Builder(main_examen.this)
-                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setIcon(getResources().getDrawable(R.drawable.iexc))
                         .setTitle(getString(R.string.atencion))
                         .setMessage(getString(R.string.tiempoterminado))
                         .setCancelable(false)
@@ -629,7 +629,7 @@ public class main_examen extends Activity {
                         th = null;
                         siguiente.setEnabled(false);
                         new AlertDialog.Builder(main_examen.this)
-                                .setIcon(android.R.drawable.ic_dialog_alert)
+                                .setIcon(getResources().getDrawable(R.drawable.iexc))
                                 .setTitle(getString(R.string.atencion))
                                 .setMessage(getString(R.string.bloqueterminado))
                                 .setCancelable(false)
@@ -649,7 +649,7 @@ public class main_examen extends Activity {
                                             public void onFinish() {
                                                 cuentatras.setText(getString(R.string.tiemporesdta) + " " + "0" + " " + getString(R.string.segundos));
                                                 new AlertDialog.Builder(main_examen.this)
-                                                        .setIcon(android.R.drawable.ic_dialog_alert)
+                                                        .setIcon(getResources().getDrawable(R.drawable.iexc))
                                                         .setTitle(getString(R.string.atencion))
                                                         .setMessage(getString(R.string.tiempoterminado))
                                                         .setCancelable(false)
@@ -709,7 +709,7 @@ public class main_examen extends Activity {
                         th = null;
                         siguiente.setEnabled(false);
                         new AlertDialog.Builder(main_examen.this)
-                                .setIcon(android.R.drawable.ic_dialog_alert)
+                                .setIcon(getResources().getDrawable(R.drawable.iexc))
                                 .setTitle(getString(R.string.atencion))
                                 .setMessage(getString(R.string.bloqueterminado))
                                 .setCancelable(false)
@@ -729,7 +729,7 @@ public class main_examen extends Activity {
                                             public void onFinish() {
                                                 cuentatras.setText(getString(R.string.tiemporesdta) + " " + "0" + " " + getString(R.string.segundos));
                                                 new AlertDialog.Builder(main_examen.this)
-                                                        .setIcon(android.R.drawable.ic_dialog_alert)
+                                                        .setIcon(getResources().getDrawable(R.drawable.iexc))
                                                         .setTitle(getString(R.string.atencion))
                                                         .setMessage(getString(R.string.tiempoterminado))
                                                         .setCancelable(false)
@@ -783,7 +783,7 @@ public class main_examen extends Activity {
                                                 public void onFinish() {
                                                     cuentatras.setText(getString(R.string.tiemporesdta) + " " + "0" + " " + getString(R.string.segundos));
                                                     new AlertDialog.Builder(main_examen.this)
-                                                            .setIcon(android.R.drawable.ic_dialog_alert)
+                                                            .setIcon(getResources().getDrawable(R.drawable.iexc))
                                                             .setTitle(getString(R.string.atencion))
                                                             .setMessage(getString(R.string.tiempoterminado))
                                                             .setCancelable(false)
@@ -2062,7 +2062,7 @@ public class main_examen extends Activity {
                                         public void onFinish() {
                                             cuentatras.setText(getString(R.string.tiemporesdta) + " " + "0" + " " + getString(R.string.segundos));
                                             new AlertDialog.Builder(main_examen.this)
-                                                    .setIcon(android.R.drawable.ic_dialog_alert)
+                                                    .setIcon(getResources().getDrawable(R.drawable.iexc))
                                                     .setTitle(getString(R.string.atencion))
                                                     .setMessage(getString(R.string.tiempoterminado))
                                                     .setCancelable(false)
@@ -2144,17 +2144,43 @@ public class main_examen extends Activity {
         @Override
         public void run() {
 
-            RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
-            RelativeLayout bmemo = (RelativeLayout) findViewById(R.id.b);
-            RelativeLayout cmemo = (RelativeLayout) findViewById(R.id.c);
-            RelativeLayout dmemo = (RelativeLayout) findViewById(R.id.d);
             TextView pregunta = (TextView) findViewById(R.id.pregunta);
             ImageView imgpre = (ImageView) findViewById(R.id.imgpre);
 
-            amemo.setVisibility(View.VISIBLE);
-            bmemo.setVisibility(View.VISIBLE);
-            cmemo.setVisibility(View.VISIBLE);
-            dmemo.setVisibility(View.VISIBLE);
+            if (notas.getBloquememoria().get(posi).getRespuestaA().equals("")) {
+                respuestaA.setVisibility(View.GONE);
+                a.setVisibility(View.GONE);
+            } else {
+                respuestaA.setVisibility(View.VISIBLE);
+                respuestaA.setText(notas.getBloquememoria().get(posi).getRespuestaA());
+                a.setVisibility(View.VISIBLE);
+            }
+            if (notas.getBloquememoria().get(posi).getRespuestaB().equals("")) {
+                respuestaB.setVisibility(View.GONE);
+                b.setVisibility(View.GONE);
+            } else {
+                respuestaB.setVisibility(View.VISIBLE);
+                respuestaB.setText(notas.getBloquememoria().get(posi).getRespuestaB());
+                b.setVisibility(View.VISIBLE);
+            }
+            if (notas.getBloquememoria().get(posi).getRespuestaC().equals("")) {
+                respuestaC.setVisibility(View.GONE);
+                c.setVisibility(View.GONE);
+            } else {
+                respuestaC.setVisibility(View.VISIBLE);
+                respuestaC.setText(notas.getBloquememoria().get(posi).getRespuestaC());
+                c.setVisibility(View.VISIBLE);
+            }
+            if (notas.getBloquememoria().get(posi).getRespuestaD().equals("")) {
+                respuestaD.setVisibility(View.GONE);
+                d.setVisibility(View.GONE);
+            } else {
+                respuestaD.setVisibility(View.VISIBLE);
+                respuestaD.setText(notas.getBloquememoria().get(posi).getRespuestaD());
+                d.setVisibility(View.VISIBLE);
+            }
+
+
             imgpre.setVisibility(View.GONE);
             pregunta.setVisibility(View.VISIBLE);
             viewflipper.setInAnimation(animrightalante);
@@ -2169,7 +2195,7 @@ public class main_examen extends Activity {
                 public void onFinish() {
                     cuentatras.setText(getString(R.string.tiemporesdta) + " " + "0" + " " + getString(R.string.segundos));
                     new AlertDialog.Builder(main_examen.this)
-                            .setIcon(android.R.drawable.ic_dialog_alert)
+                            .setIcon(getResources().getDrawable(R.drawable.iexc))
                             .setTitle(getString(R.string.atencion))
                             .setMessage(getString(R.string.tiempoterminado))
                             .setCancelable(false)
@@ -2230,18 +2256,14 @@ public class main_examen extends Activity {
 
     private void memoria() {
         if (bloque == 6 && !acabar && posi < 15) {
-            RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
-            RelativeLayout bmemo = (RelativeLayout) findViewById(R.id.b);
-            RelativeLayout cmemo = (RelativeLayout) findViewById(R.id.c);
-            RelativeLayout dmemo = (RelativeLayout) findViewById(R.id.d);
             TextView pregunta = (TextView) findViewById(R.id.pregunta);
             ImageView imgpre = (ImageView) findViewById(R.id.imgpre);
             Button atras = (Button) findViewById(R.id.atras);
             Button alante = (Button) findViewById(R.id.alante);
-            amemo.setVisibility(View.GONE);
-            bmemo.setVisibility(View.GONE);
-            cmemo.setVisibility(View.GONE);
-            dmemo.setVisibility(View.GONE);
+            a.setVisibility(View.GONE);
+            b.setVisibility(View.GONE);
+            c.setVisibility(View.GONE);
+            d.setVisibility(View.GONE);
             imgpre.setVisibility(View.VISIBLE);
             pregunta.setVisibility(View.GONE);
             atras.setVisibility(View.INVISIBLE);

@@ -65,6 +65,10 @@ public class main_principal extends Activity {
             @Override
             public void onClick(View v) {
                 if (entra[0] == true) {
+                    Toast toast1 =
+                            Toast.makeText(getApplicationContext(),
+                                    "Generando ...", Toast.LENGTH_SHORT);
+                    toast1.show();
                     entra[0] = false;
                     Animation animation = AnimationUtils.loadAnimation(
                             getApplicationContext(), R.anim.rotar);

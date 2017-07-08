@@ -1330,16 +1330,35 @@ public class main_preguntasAleatorio extends Activity {
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {
-                RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
-                RelativeLayout bmemo = (RelativeLayout) findViewById(R.id.b);
-                RelativeLayout cmemo = (RelativeLayout) findViewById(R.id.c);
-                RelativeLayout dmemo = (RelativeLayout) findViewById(R.id.d);
                 TextView pregunta = (TextView) findViewById(R.id.pregunta);
                 ImageView imgpre = (ImageView) findViewById(R.id.imgpre);
-                amemo.setVisibility(View.VISIBLE);
-                bmemo.setVisibility(View.VISIBLE);
-                cmemo.setVisibility(View.VISIBLE);
-                dmemo.setVisibility(View.VISIBLE);
+                /*a.setVisibility(View.VISIBLE);
+                b.setVisibility(View.VISIBLE);
+                c.setVisibility(View.VISIBLE);
+                d.setVisibility(View.VISIBLE);*/
+                if (pre[cont.getCont()-1].getRespuestaA().equals("")) {
+                    a.setVisibility(View.GONE);
+                } else {
+                    a.setVisibility(View.VISIBLE);
+                }
+
+                if (pre[cont.getCont()-1].getRespuestaB().equals("")) {
+                    b.setVisibility(View.GONE);
+                } else {
+                    b.setVisibility(View.VISIBLE);
+                }
+
+                if (pre[cont.getCont()-1].getRespuestaC().equals("")) {
+                    c.setVisibility(View.GONE);
+                } else {
+                    c.setVisibility(View.VISIBLE);
+                }
+
+                if (pre[cont.getCont()-1].getRespuestaD().equals("")) {
+                    d.setVisibility(View.GONE);
+                } else {
+                    d.setVisibility(View.VISIBLE);
+                }
                 imgpre.setVisibility(View.GONE);
                 pregunta.setVisibility(View.VISIBLE);
                 viewflipper.setInAnimation(animrightalante);
