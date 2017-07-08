@@ -1,6 +1,8 @@
 package com.example.andym.psicotecnicostropa;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.View;
@@ -8,6 +10,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by andym on 04/06/2017.
@@ -24,7 +28,7 @@ public class main_info extends Activity {
         TextView num = (TextView) findViewById(R.id.num);
         TextView verb = (TextView) findViewById(R.id.verb);
         TextView meca = (TextView) findViewById(R.id.meca);
-        TextView abs = (TextView) findViewById(R.id.abs);
+        final TextView abs = (TextView) findViewById(R.id.abs);
         TextView memo = (TextView) findViewById(R.id.memo);
         TextView espa = (TextView) findViewById(R.id.espa);
         TextView perc = (TextView) findViewById(R.id.perc);
@@ -525,6 +529,7 @@ public class main_info extends Activity {
         final TextView f = (TextView) findViewById(R.id.f);
         final TextView g = (TextView) findViewById(R.id.g);
         final TextView h = (TextView) findViewById(R.id.h);
+        final TextView i = (TextView) findViewById(R.id.i);
 
         final Button a1 = (Button) findViewById(R.id.a1);
         final Button b1 = (Button) findViewById(R.id.b1);
@@ -534,10 +539,11 @@ public class main_info extends Activity {
         final Button f1 = (Button) findViewById(R.id.f1);
         final Button g1 = (Button) findViewById(R.id.g1);
         final Button h1 = (Button) findViewById(R.id.h1);
+        final Button i1 = (Button) findViewById(R.id.i1);
 
         dato.setVisibility(View.GONE);
 
-        if (datos("verbal") || datos("numerico") || datos("espacial") || datos("mecanico") || datos("perceptiva") || datos("memoria") || datos("abstrapto") || datobaremo()) {
+        if (datos("verbal") || datos("numerico") || datos("espacial") || datos("mecanico") || datos("perceptiva") || datos("memoria") || datos("abstrapto") || datobaremo() || datoevo()) {
             if (datos("verbal")) {
                 dato.setVisibility(View.VISIBLE);
                 dato.setText("Archivos de datos de verbal encontrados");
@@ -578,104 +584,280 @@ public class main_info extends Activity {
                 h.setText("Archivo de dato de baremo encontrados");
                 h1.setVisibility(View.VISIBLE);
             }
+            if (datoevo()) {
+                i.setVisibility(View.VISIBLE);
+                i1.setVisibility(View.VISIBLE);
+            }
         } else {
             dato.setVisibility(View.VISIBLE);
             dato.setText("No se han encontrado archivos de datos guardado");
         }
 
-
         a1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                a1.setVisibility(View.GONE);
-                borrar("verbal");
-                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo()) {
-                    dato.setVisibility(View.VISIBLE);
-                    dato.setText("No se han encontrado archivos de datos guardado");
-                } else {
-                    dato.setVisibility(View.GONE);
-                }
+                new AlertDialog.Builder(main_info.this)
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setTitle(getString(R.string.borrar))
+                        .setCancelable(false)
+                        .setMessage(getString(R.string.borrardatos))
+                        .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                a1.setVisibility(View.GONE);
+                                borrar("verbal");
+                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo()) {
+                                    dato.setVisibility(View.VISIBLE);
+                                    dato.setText("No se han encontrado archivos de datos guardado");
+                                } else {
+                                    dato.setVisibility(View.GONE);
+                                }
+                            }
+                        })
+                        .setPositiveButton(getString(R.string.no), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog,
+                                                int which) {
+
+                            }
+                        }).show();
+
             }
         });
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                b1.setVisibility(View.GONE);
-                b.setVisibility(View.GONE);
-                borrar("numerico");
-                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo()) {
-                    dato.setVisibility(View.VISIBLE);
-                    dato.setText("No se han encontrado archivos de datos guardado");
-                }
+
+                new AlertDialog.Builder(main_info.this)
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setTitle(getString(R.string.borrar))
+                        .setCancelable(false)
+                        .setMessage(getString(R.string.borrardatos))
+                        .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                borrar("numerico");
+                                b1.setVisibility(View.GONE);
+                                b.setVisibility(View.GONE);
+                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo()) {
+                                    dato.setVisibility(View.VISIBLE);
+                                    dato.setText("No se han encontrado archivos de datos guardado");
+                                }
+                            }
+                        })
+                        .setPositiveButton(getString(R.string.no), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog,
+                                                int which) {
+                            }
+                        }).show();
+
             }
         });
         c1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                c1.setVisibility(View.GONE);
-                c.setVisibility(View.GONE);
-                borrar("espacial");
-                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo()) {
-                    dato.setVisibility(View.VISIBLE);
-                    dato.setText("No se han encontrado archivos de datos guardado");
-                }
+
+                new AlertDialog.Builder(main_info.this)
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setTitle(getString(R.string.borrar))
+                        .setCancelable(false)
+                        .setMessage(getString(R.string.borrardatos))
+                        .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                borrar("espacial");
+                                c1.setVisibility(View.GONE);
+                                c.setVisibility(View.GONE);
+                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo()) {
+                                    dato.setVisibility(View.VISIBLE);
+                                    dato.setText("No se han encontrado archivos de datos guardado");
+                                }
+                            }
+                        })
+                        .setPositiveButton(getString(R.string.no), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog,
+                                                int which) {
+                            }
+                        }).show();
+
             }
         });
         d1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                d1.setVisibility(View.GONE);
-                d.setVisibility(View.GONE);
-                borrar("mecanico");
-                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo()) {
-                    dato.setVisibility(View.VISIBLE);
-                    dato.setText("No se han encontrado archivos de datos guardado");
-                }
+
+                new AlertDialog.Builder(main_info.this)
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setTitle(getString(R.string.borrar))
+                        .setCancelable(false)
+                        .setMessage(getString(R.string.borrardatos))
+                        .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                borrar("mecanico");
+                                d1.setVisibility(View.GONE);
+                                d.setVisibility(View.GONE);
+                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo()) {
+                                    dato.setVisibility(View.VISIBLE);
+                                    dato.setText("No se han encontrado archivos de datos guardado");
+                                }
+                            }
+                        })
+                        .setPositiveButton(getString(R.string.no), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog,
+                                                int which) {
+                            }
+                        }).show();
+
             }
         });
         e1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                e1.setVisibility(View.GONE);
-                e.setVisibility(View.GONE);
-                borrar("perceptiva");
-                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo()) {
-                    dato.setVisibility(View.VISIBLE);
-                    dato.setText("No se han encontrado archivos de datos guardado");
-                }
+
+                new AlertDialog.Builder(main_info.this)
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setTitle(getString(R.string.borrar))
+                        .setCancelable(false)
+                        .setMessage(getString(R.string.borrardatos))
+                        .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                borrar("perceptiva");
+                                e1.setVisibility(View.GONE);
+                                e.setVisibility(View.GONE);
+                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo()) {
+                                    dato.setVisibility(View.VISIBLE);
+                                    dato.setText("No se han encontrado archivos de datos guardado");
+                                }
+                            }
+                        })
+                        .setPositiveButton(getString(R.string.no), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog,
+                                                int which) {
+                            }
+                        }).show();
+
             }
         });
         f1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                f1.setVisibility(View.GONE);
-                f.setVisibility(View.GONE);
-                borrar("memoria");
-                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo()) {
-                    dato.setVisibility(View.VISIBLE);
-                    dato.setText("No se han encontrado archivos de datos guardado");
-                }
+
+                new AlertDialog.Builder(main_info.this)
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setTitle(getString(R.string.borrar))
+                        .setCancelable(false)
+                        .setMessage(getString(R.string.borrardatos))
+                        .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                borrar("memoria");
+                                f1.setVisibility(View.GONE);
+                                f.setVisibility(View.GONE);
+                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo()) {
+                                    dato.setVisibility(View.VISIBLE);
+                                    dato.setText("No se han encontrado archivos de datos guardado");
+                                }
+                            }
+                        })
+                        .setPositiveButton(getString(R.string.no), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog,
+                                                int which) {
+                            }
+                        }).show();
+
             }
         });
         g1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                g1.setVisibility(View.GONE);
-                g.setVisibility(View.GONE);
-                borrar("abstrapto");
-                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo()) {
-                    dato.setVisibility(View.VISIBLE);
-                    dato.setText("No se han encontrado archivos de datos guardado");
-                }
+
+                new AlertDialog.Builder(main_info.this)
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setTitle(getString(R.string.borrar))
+                        .setCancelable(false)
+                        .setMessage(getString(R.string.borrardatos))
+                        .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                borrar("abstrapto");
+                                g1.setVisibility(View.GONE);
+                                g.setVisibility(View.GONE);
+                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo()) {
+                                    dato.setVisibility(View.VISIBLE);
+                                    dato.setText("No se han encontrado archivos de datos guardado");
+                                }
+                            }
+                        })
+                        .setPositiveButton(getString(R.string.no), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog,
+                                                int which) {
+                            }
+                        }).show();
+
             }
         });
         h1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                h1.setVisibility(View.GONE);
-                h.setVisibility(View.GONE);
-                borrarbar();
-                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo()) {
+
+                new AlertDialog.Builder(main_info.this)
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setTitle(getString(R.string.borrar))
+                        .setCancelable(false)
+                        .setMessage(getString(R.string.borrardatos))
+                        .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                borrarbar();
+                                h1.setVisibility(View.GONE);
+                                h.setVisibility(View.GONE);
+                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo()) {
+                                    dato.setVisibility(View.VISIBLE);
+                                    dato.setText("No se han encontrado archivos de datos guardado");
+                                }
+                            }
+                        })
+                        .setPositiveButton(getString(R.string.no), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog,
+                                                int which) {
+                            }
+                        }).show();
+
+            }
+        });
+        i1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                new AlertDialog.Builder(main_info.this)
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setTitle(getString(R.string.borrar))
+                        .setCancelable(false)
+                        .setMessage(getString(R.string.borrardatos))
+                        .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                borrarevo();
+                                i1.setVisibility(View.GONE);
+                                i.setVisibility(View.GONE);
+                            }
+                        })
+                        .setPositiveButton(getString(R.string.no), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog,
+                                                int which) {
+                            }
+                        }).show();
+                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo()) {
                     dato.setVisibility(View.VISIBLE);
                     dato.setText("No se han encontrado archivos de datos guardado");
                 }
@@ -727,6 +909,51 @@ public class main_info extends Activity {
             encontrado = true;
         }
         return encontrado;
+    }
+
+    private boolean datoevo(){
+        boolean encontrado = false;
+        File ruta_sd;
+        String state = Environment.getExternalStorageState();
+        if (Environment.MEDIA_MOUNTED.equals(state)) {
+            // We can read and write the media
+            ruta_sd = getExternalFilesDir(null);
+        } else {
+            // Load another directory, probably local memory
+            ruta_sd = getFilesDir();
+        }
+        File[] ficheros = ruta_sd.listFiles();
+        final List<String> nombrefiche = new ArrayList<String>();
+        for (int x = 0; x < ficheros.length; x++) {
+            String kk = (ficheros[x].getName());
+            if (kk.length() > 25 && kk.substring(19, 25).equals("examen")) {
+                nombrefiche.add((ficheros[x].getName()));
+                encontrado = true;
+            }
+        }
+        return encontrado;
+    }
+
+    private void borrarevo(){
+        File ruta_sd;
+        String state = Environment.getExternalStorageState();
+        if (Environment.MEDIA_MOUNTED.equals(state)) {
+            // We can read and write the media
+            ruta_sd = getExternalFilesDir(null);
+        } else {
+            // Load another directory, probably local memory
+            ruta_sd = getFilesDir();
+        }
+        File[] ficheros = ruta_sd.listFiles();
+        File a = null;
+        for (int x = 0; x < ficheros.length; x++) {
+            String kk = (ficheros[x].getName());
+            if (kk.length() > 25 && kk.substring(19, 25).equals("examen")) {
+                a = new File (ruta_sd.getAbsolutePath(), (ficheros[x].getName()));
+                a.delete();
+            }
+        }
+
     }
 
     private void borrar(String tipo) {

@@ -125,7 +125,7 @@
     <string name="version">Versión</string>
     <string name="guardarresul">Necesitas introducir un baremo para guardar tu evolución</string>
     <string name="evolucion">Evolución</string>
-    <string name="saliractivity">¿Estas seguro de que quieres salir?</string>
+    <string name="saliractivity">¿Estás seguro de que quieres salir?</string>
     <string name="si">Si</string>
     <string name="no">No</string>
 
@@ -133,4 +133,6 @@
 
     <string name="nopausa">"No se puede pausar durante la memorización</string>
     <string name="contacto">Contacto</string>
+    <string name="datosbaremo">Archivos de datos de evolución encontrado</string>
+    <string name="borrardatos">Atención, vas a proceder a borrar los datos permanentemente, ¿estás seguro?</string>
 </resources>

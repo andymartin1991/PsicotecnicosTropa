@@ -325,6 +325,27 @@
                         android:textAppearance="@android:style/TextAppearance.Widget.PopupMenu.Small"
                         android:textColor="@color/BLANCO"
                         android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/i"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/datosbaremo"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/i1"
+                        android:layout_width="68dp"
+                        android:layout_height="27dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/boton_estado_naranja"
+                        android:text="@string/borrar"
+                        android:textAppearance="@android:style/TextAppearance.Widget.PopupMenu.Small"
+                        android:textColor="@color/BLANCO"
+                        android:visibility="gone" />
                 </LinearLayout>
 
                 <TextView

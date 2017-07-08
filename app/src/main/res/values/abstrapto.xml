@@ -1156,7 +1156,7 @@
         <!--012--><item>C)</item>
         <!--013--><item>B)3/6</item>
         <!--014--><item>C)</item>
-        <!--015--><item>B)Abajo</item>
+        <!--015--><item>B)</item>
         <!--016--><item>D)</item>
         <!--017--><item>C)/50</item>
         <!--018--><item>A)5/3</item>
@@ -2751,7 +2751,7 @@
     
     <array name="imgSolabstrapto">
         <!--001--><item></item>
-        <!--002--><item>absp002ra</item>
+        <!--002--><item>absp002rb</item>
         <!--003--><item>absp003rc</item>
         <!--004--><item></item>
         <!--005--><item>absp005ra</item>

@@ -1178,13 +1178,17 @@ public class main_preguntas extends Activity {
         }
         if (resA[cont.getCont()].equals("")) {
             respuestaA.setVisibility(View.GONE);
+            a.setVisibility(View.GONE);
         } else {
+            a.setVisibility(View.VISIBLE);
             respuestaA.setVisibility(View.VISIBLE);
             respuestaA.setText(pre[cont.getCont()].getRespuestaA());
         }
         if (resB[cont.getCont()].equals("")) {
             respuestaB.setVisibility(View.GONE);
+            b.setVisibility(View.GONE);
         } else {
+            b.setVisibility(View.VISIBLE);
             respuestaB.setVisibility(View.VISIBLE);
             respuestaB.setText(pre[cont.getCont()].getRespuestaB());
         }
