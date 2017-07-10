@@ -4,10 +4,12 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -41,6 +43,12 @@ public class main_calculabaremo extends Activity {
                     puntos = 40;
                 }
                 mostrar.setText(getString(R.string.baremototal) + " " + puntos);
+                Toast toast1 =
+                        Toast.makeText(getApplicationContext(),
+                                getString(R.string.baremototal) + " " + puntos, Toast.LENGTH_SHORT);
+                toast1.setGravity(Gravity.CENTER|Gravity.CENTER_HORIZONTAL, 0, 0);
+
+                toast1.show();
                 try {
                     File ruta_sd;
                     String state = Environment.getExternalStorageState();

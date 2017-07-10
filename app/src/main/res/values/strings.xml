@@ -125,7 +125,7 @@
     <string name="version">Versión</string>
     <string name="guardarresul">Necesita introducir un baremo para guardar su evolución</string>
     <string name="evolucion">Evolución</string>
-    <string name="saliractivity">¿Está seguro de que quiere salir?</string>
+    <string name="saliractivity">¿Está seguro de que quiere salir del test?</string>
     <string name="si">Si</string>
     <string name="no">No</string>
 
