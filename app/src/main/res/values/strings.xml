@@ -225,4 +225,6 @@ permitirán dos intentos, contabilizándose el mejor resultado obtenido. </strin
     <string name="valabdoflexo">El resultado será el número de ciclos completos efectuados correctamente. </string>
     <string name="valcarrera">El resultado será el total de períodos realizados e indicados por la cinta sonora antes de pararse el
 aspirante. </string>
+
+    <string name="tiempomisiones">Misiones fuera del territorio nacional y tiempo de servicio:</string>
 </resources>

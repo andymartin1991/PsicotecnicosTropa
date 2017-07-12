@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,6 +25,7 @@ public class main_calculabaremo extends Activity {
     RadioGroup meriA, meriG1, meriG2, meriM1, meriM2, meriM3, meriG25;
     Button calcular;
     TextView mostrar;
+    EditText anyo, misiones;
     double meriAInt = 0, meriG1Int = 0, meriG2Int = 0, meriM1Int = 0, meriM2Int = 0, meriM3Int = 0, meriG25Int = 0;
     double puntos = 0;
 
@@ -34,14 +36,31 @@ public class main_calculabaremo extends Activity {
         mostrar = (TextView) findViewById(R.id.barcal);
         mostrar.setText(getString(R.string.baremototal) + " " + puntos);
 
+        anyo = (EditText)findViewById(R.id.anyo);
+        misiones = (EditText)findViewById(R.id.misiones);
+
         calcular = (Button) findViewById(R.id.calcular);
         calcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                puntos = meriAInt + meriG1Int + meriG25Int + meriG2Int + meriM1Int + meriM2Int + meriM3Int;
+
+                double misio = 0;
+                double any = 0;
+                if(String.valueOf(anyo.getText()).equals("")){
+                    any = 0;
+                }else{
+                    any = Integer.parseInt(String.valueOf(anyo.getText()))*0.25;
+                }
+                if(String.valueOf(misiones.getText()).equals("")){
+                    misio = 0;
+                }else{
+                    misio = Integer.parseInt(String.valueOf(misiones.getText()))*0.5;
+                }
+                puntos = meriAInt + meriG1Int + meriG25Int + meriG2Int + meriM1Int + meriM2Int + meriM3Int + any + misio;
                 if (puntos > 40) {
                     puntos = 40;
                 }
+
                 mostrar.setText(getString(R.string.baremototal) + " " + puntos);
                 Toast toast1 =
                         Toast.makeText(getApplicationContext(),
@@ -200,23 +219,6 @@ public class main_calculabaremo extends Activity {
                     meriM2Int = 0.25;
                 } else if (checkedId == R.id.f6) {
                     meriM2Int = 0;
-                }
-            }
-        });
-
-        meriM3 = (RadioGroup) findViewById(R.id.meriM3);
-        meriM3.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-
-            @Override
-
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                // find which radio button is selected
-                if (checkedId == R.id.a7) {
-                    meriM3Int = 0.5;
-                } else if (checkedId == R.id.b7) {
-                    meriM3Int = 0.25;
-                } else if (checkedId == R.id.c7) {
-                    meriM3Int = 0;
                 }
             }
         });

@@ -595,46 +595,70 @@
                             android:text="@string/misiones"
                             android:textColorLink="@color/BLANCO" />
 
-                        <RadioGroup
-                            android:id="@+id/meriM3"
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/text"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:background="@drawable/boton_menu"
-                            android:checkedButton="@+id/sound">
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:background="@color/azul"
+                            android:orientation="vertical">
 
-                            <RadioButton
-                                android:id="@+id/a7"
+                            <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Por cada participación en misiones fuera del territorio nacional por un período igual o superior a dos meses ininterrumpidos -> 0,5 puntos "
-                                android:textColor="@color/BLANCO"
-                                android:textColorLink="@color/BLANCO"
-                                android:textSize="10dp" />
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
 
-                            <RadioButton
-                                android:id="@+id/b7"
+                                <TextView
+                                    android:id="@+id/textView2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:ellipsize="none"
+                                    android:padding="10dp"
+                                    android:textColor="@color/BLANCO"
+                                    android:textSize="10dp"
+                                    android:text="Por cada año (o fracción) de servicio en las Fuerzas Armadas -> 0,25 puntos: " />
+
+                                <EditText
+                                    android:id="@+id/anyo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:textColor="@color/BLANCO"
+                                    android:textSize="10dp"
+                                    android:text="0" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Por cada año (o fracción) de servicio en las Fuerzas Armadas -> 0,25 puntos "
-                                android:textColor="@color/BLANCO"
-                                android:textColorLink="@color/BLANCO"
-                                android:textSize="10dp" />
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
 
-                            <RadioButton
-                                android:id="@+id/c7"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:checked="true"
-                                android:text="NINGUNO"
-                                android:textColor="@color/BLANCO"
-                                android:textColorLink="@color/BLANCO"
-                                android:textSize="10dp" />
+                                <TextView
+                                    android:id="@+id/textView2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:ellipsize="none"
+                                    android:padding="10dp"
+                                    android:textColor="@color/BLANCO"
+                                    android:textSize="10dp"
+                                    android:text="Por cada participación en misiones fuera del territorio nacional por un período igual o superior a dos meses ininterrumpidos -> 0,5 puntos: " />
 
-                        </RadioGroup>
+                                <EditText
+                                    android:id="@+id/misiones"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:textColor="@color/BLANCO"
+                                    android:textSize="10dp"
+                                    android:text="0" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
                     </LinearLayout>
 
                 </RelativeLayout>
