@@ -344,7 +344,6 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="New Text"
-                                        android:textColor="#000"
                                          />
 
                                     <TextView
@@ -361,7 +360,6 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="New Text"
-                                        android:textColor="#000"
                                          />
                                 </LinearLayout>
 
@@ -642,6 +640,20 @@
                                         </LinearLayout>
                                     </LinearLayout>
                                 </HorizontalScrollView>
+
+                                <TextView
+                                    android:id="@+id/textView13"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="H= Hombres" />
+
+                                <TextView
+                                    android:id="@+id/textView14"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="M= Mujeres" />
 
                                 <ImageView
                                     android:id="@+id/imageView1"
@@ -982,6 +994,20 @@
                                     </LinearLayout>
                                 </HorizontalScrollView>
 
+                                <TextView
+                                    android:id="@+id/textView15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="H= Hombres" />
+
+                                <TextView
+                                    android:id="@+id/textView16"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="M= Mujeres" />
+
                                 <ImageView
                                     android:id="@+id/imageView2"
                                     android:layout_width="wrap_content"
@@ -1320,6 +1346,20 @@
                                         </LinearLayout>
                                     </LinearLayout>
                                 </HorizontalScrollView>
+
+                                <TextView
+                                    android:id="@+id/textView17"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="H= Hombres" />
+
+                                <TextView
+                                    android:id="@+id/textView19"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="M= Mujeres" />
 
                                 <ImageView
                                     android:id="@+id/imageView3"
