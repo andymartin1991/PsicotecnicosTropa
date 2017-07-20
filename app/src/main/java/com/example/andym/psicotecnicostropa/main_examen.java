@@ -44,6 +44,9 @@ public class main_examen extends Activity {
     Animation animrightatras = null;
     Animation animrightalante = null;
 
+    static boolean acabar = false;
+    static boolean guardado = false;
+
     String[] imgPre = null;
     String[] imgA = null;
     String[] imgB = null;
@@ -85,7 +88,7 @@ public class main_examen extends Activity {
     long cuentatiempo = tempo * 1000;
     long guardatiempo = 0;
     CountDownTimer th;
-    boolean acabar = false, arregloacabar = false;
+    boolean arregloacabar = false;
     Button siguiente;
 
     static Notas notas;

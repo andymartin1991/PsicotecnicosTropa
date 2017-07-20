@@ -39,6 +39,7 @@
         <activity android:name=".main_info"></activity>
         <activity android:name=".main_evolucion"></activity>
         <activity android:name=".main_fisica"></activity>
+        <activity android:name=".main_trucos"></activity>
     </application>
 
 </manifest>

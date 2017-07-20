@@ -92,10 +92,6 @@ public class main_principal extends Activity {
             @Override
             public void onClick(View v) {
                 if (entra[0] == true) {
-                    Toast toast1 =
-                            Toast.makeText(getApplicationContext(),
-                                    "Próximamente", Toast.LENGTH_SHORT);
-                    toast1.show();
                     entra[0] = false;
                     Animation animation = AnimationUtils.loadAnimation(
                             getApplicationContext(), R.anim.rotar);
@@ -106,6 +102,8 @@ public class main_principal extends Activity {
                                 Thread.sleep(500);
                             } catch (InterruptedException e) {
                             }
+                            startActivity(new Intent(main_principal.this, main_trucos.class));
+                            overridePendingTransition(R.anim.transpain, R.anim.transpaout);
                             entra[0] = true;
                         }
                     }).start();

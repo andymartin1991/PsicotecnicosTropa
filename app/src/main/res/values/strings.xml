@@ -227,4 +227,7 @@ permitirán dos intentos, contabilizándose el mejor resultado obtenido. </strin
 aspirante. </string>
 
     <string name="tiempomisiones">Misiones fuera del territorio nacional y tiempo de servicio:</string>
+    <string name="salirresultado">¿Que deseas hacer? Ver los fallos de tu examen o permanecer aquí </string>
+    <string name="verfallos">Ver fallos</string>
+    <string name="permanecer">Permanecer</string>
 </resources>
