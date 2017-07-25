@@ -1114,7 +1114,7 @@ public class main_preguntasAleatorio extends Activity {
             }
             ocultaralante();
             arreglo = 1;
-            if (num[cont.getCont()-1] > inmemo && num[cont.getCont()-1] <= outmemo && pos[cont.getCont()-1] == 0) {
+            if (num[cont.getCont()-1] >= inmemo && num[cont.getCont()-1] < outmemo && pos[cont.getCont()-1] == 0) {
                 // PONER AQUI LA FUNCION DE MEMORIA
                 RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
                 RelativeLayout bmemo = (RelativeLayout) findViewById(R.id.b);
@@ -1332,10 +1332,6 @@ public class main_preguntasAleatorio extends Activity {
             public void run() {
                 TextView pregunta = (TextView) findViewById(R.id.pregunta);
                 ImageView imgpre = (ImageView) findViewById(R.id.imgpre);
-                /*a.setVisibility(View.VISIBLE);
-                b.setVisibility(View.VISIBLE);
-                c.setVisibility(View.VISIBLE);
-                d.setVisibility(View.VISIBLE);*/
                 if (pre[cont.getCont()-1].getRespuestaA().equals("")) {
                     a.setVisibility(View.GONE);
                 } else {
