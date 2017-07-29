@@ -11,45 +11,45 @@
         android:layout_gravity="center_horizontal">
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/boton_menu"
             android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/boton_menu"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/foto"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
+                android:layout_marginLeft="10dp"
                 android:adjustViewBounds="true"
                 android:maxHeight="75dp"
                 android:maxWidth="75dp"
-                android:minWidth="75dp"
                 android:minHeight="75dp"
-                android:scaleType="fitCenter"
-                android:layout_marginLeft="3dp" />
+                android:minWidth="75dp"
+                android:scaleType="fitCenter" />
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/nombre"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_above="@+id/cargo"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:layout_toRightOf="@+id/foto"
                     android:text="Large Text"
-                    android:textColor="#fff"
-                    android:textStyle="bold"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:layout_marginRight="10dp" />
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/cargo"
@@ -58,12 +58,12 @@
                     android:layout_alignBottom="@+id/foto"
                     android:layout_alignLeft="@+id/nombre"
                     android:layout_alignRight="@+id/nombre"
-                    android:text="Medium Text"
-                    android:textColor="#fff"
-                    android:textStyle="bold"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:layout_marginLeft="10dp" />
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
