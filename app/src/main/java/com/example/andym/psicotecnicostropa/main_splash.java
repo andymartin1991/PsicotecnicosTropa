@@ -90,6 +90,14 @@ public class main_splash extends Activity {
                                                             overridePendingTransition(R.anim.transpain, R.anim.transpaout);
                                                             finish();
                                                         }
+                                                    })
+                                                    .setNegativeButton("Ayuda", new DialogInterface.OnClickListener(){
+                                                        @SuppressWarnings("deprecation")
+                                                        @Override
+                                                        public void onClick(DialogInterface dialog, int which){
+                                                            startActivity(new Intent(main_splash.this, main_ayuda.class));
+                                                            overridePendingTransition(R.anim.transpain, R.anim.transpaout);
+                                                        }
                                                     }).create().show();
                                         }
                                     }
