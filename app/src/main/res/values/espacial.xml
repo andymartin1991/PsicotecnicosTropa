@@ -214,7 +214,12 @@
         <!--210--><item>¿Cuál corresponde al cubo formado?</item>
         <!--211--><item>¿Cuál se corresponde con la imagen dada?</item>
         <!--212--><item>¿Se puede salir del laberinto?</item>
-        
+        <!--213--><item>¿Cómo quedaría la figura formada?</item>
+        <!--214--><item>¿Cuál no coincide con las demás al girarlas?</item>
+        <!--215--><item>¿Cómo quedaría la figura al doblar las puntas?</item>
+
+
+
     </array>
     
     <array name="resAespacial">
@@ -430,7 +435,9 @@
         <!--210--><item>A)</item>
         <!--211--><item>A)</item>
         <!--212--><item>A)Sí</item>
-
+        <!--213--><item>A)</item>
+        <!--214--><item>A)</item>
+        <!--215--><item>A)</item>
 
     </array>
     
@@ -647,7 +654,9 @@
         <!--210--><item>B)</item>
         <!--211--><item>B)</item>
         <!--212--><item>B)No</item>
-
+        <!--213--><item>B)</item>
+        <!--214--><item>B)</item>
+        <!--215--><item>B)</item>
 
     </array>
     
@@ -864,7 +873,9 @@
         <!--210--><item>C)</item>
         <!--211--><item>C)</item>
         <!--212--><item></item>
-
+        <!--213--><item>C)</item>
+        <!--214--><item>C)</item>
+        <!--215--><item>C)</item>
 
     </array>
     
@@ -1081,7 +1092,9 @@
         <!--210--><item>D)</item>
         <!--211--><item>D)</item>
         <!--212--><item></item>
-
+        <!--213--><item>D)</item>
+        <!--214--><item>D)</item>
+        <!--215--><item>D)</item>
 
     </array>
     
@@ -1298,7 +1311,9 @@
         <!--210--><item>B)</item>
         <!--211--><item>D)</item>
         <!--212--><item>A)Sí</item>
-
+        <!--213--><item>C)</item>
+        <!--214--><item>B)</item>
+        <!--215--><item>C)</item>
 
 		
     </array>
@@ -1516,7 +1531,9 @@
         <!--210--><item></item>
         <!--211--><item></item>
         <!--212--><item></item>
-
+        <!--213--><item></item>
+        <!--214--><item></item>
+        <!--215--><item></item>
     </array>
     
     
@@ -1735,6 +1752,9 @@
         <!--210--><item>espp210</item>
         <!--211--><item>espp211</item>
         <!--212--><item>espp212</item>
+        <!--213--><item>espp213</item>
+        <!--214--><item></item>
+        <!--215--><item>espp215</item>
 
     </array>
     
@@ -1951,6 +1971,9 @@
         <!--210--><item>espp210ra</item>
         <!--211--><item>espp211ra</item>
         <!--212--><item></item>
+        <!--213--><item>espp213ra</item>
+        <!--214--><item>espp214ra</item>
+        <!--215--><item>espp215ra</item>
 
     </array>
     
@@ -2167,7 +2190,9 @@
         <!--210--><item>espp210rb</item>
         <!--211--><item>espp211rb</item>
         <!--212--><item></item>
-
+        <!--213--><item>espp213rb</item>
+        <!--214--><item>espp214rb</item>
+        <!--215--><item>espp215rb</item>
     </array>
     
     <array name="imgCespacial">
@@ -2383,7 +2408,9 @@
         <!--210--><item>espp210rc</item>
         <!--211--><item>espp211rc</item>
         <!--212--><item></item>
-
+        <!--213--><item>espp213rc</item>
+        <!--214--><item>espp214rc</item>
+        <!--215--><item>espp215rc</item>
     </array>
     
     <array name="imgDespacial">
@@ -2599,7 +2626,9 @@
         <!--210--><item>espp210rd</item>
         <!--211--><item>espp211rd</item>
         <!--212--><item></item>
-
+        <!--213--><item>espp213rd</item>
+        <!--214--><item>espp214rd</item>
+        <!--215--><item>espp215rd</item>
     </array>
     
     <array name="imgSolespacial">
@@ -2815,7 +2844,9 @@
         <!--210--><item>espp210rb</item>
         <!--211--><item>espp211rd</item>
         <!--212--><item></item>
-
+        <!--213--><item>espp213rc</item>
+        <!--214--><item>espp214rb</item>
+        <!--215--><item>espp215rc</item>
     </array>
     
     <array name="imgExpliespacial">
@@ -3031,6 +3062,8 @@
         <!--210--><item></item>
         <!--211--><item></item>
         <!--212--><item></item>
-
+        <!--213--><item></item>
+        <!--214--><item></item>
+        <!--215--><item></item>
     </array>
 </resources>

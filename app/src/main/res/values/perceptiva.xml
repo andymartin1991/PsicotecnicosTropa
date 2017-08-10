@@ -215,7 +215,9 @@
         <!--211--><item>¿Cuál se corresponde con la serie dada pero al revés?\nE6MMYAIURAR2L</item>
         <!--212--><item>¿Cómo quedaría ABVDEFGHILMNOPQRSTUVZ123456789 si quitamos 3468 y TRIOSE?</item>
         <!--213--><item>¿Cuántas veces está 582?\n2381858230748021245826978078765824142725789558256958200</item>
-		
+        <!--214--><item>¿Cuántas veces está z?</item>
+        <!--215--><item>¿Cuál de las imágenes es igual a la dada?</item>
+        <!--216--><item>¿Qué imagen le falta?</item>
     </array>
     
     <array name="resAperceptiva">
@@ -432,7 +434,9 @@
         <!--211--><item>A)L2RARUNAYMM6E</item>
         <!--212--><item>A)ABVDFGHLMNOPUVZ12578</item>
         <!--213--><item>A)5</item>
-		
+        <!--214--><item>A)3</item>
+        <!--215--><item>A)</item>
+        <!--216--><item>A)</item>
     </array>
     
     <array name="resBperceptiva">
@@ -649,7 +653,9 @@
         <!--211--><item>B)L2RARUIAYMM6E</item>
         <!--212--><item>B)ABCDFGHLMNPQUVZ12589</item>
         <!--213--><item>B)6</item>
-		
+        <!--214--><item>B)7</item>
+        <!--215--><item>B)</item>
+        <!--216--><item>B)</item>
     </array>
     
     <array name="resCperceptiva">
@@ -866,7 +872,9 @@
         <!--211--><item>C)L2RARLIAYMM6E</item>
         <!--212--><item>C)ABCDFGHLMNQSTUVZ12579</item>
         <!--213--><item>C)4</item>
-		
+        <!--214--><item>C)11</item>
+        <!--215--><item>C)</item>
+        <!--216--><item>C)</item>
     </array>
     
     <array name="resDperceptiva">
@@ -1083,7 +1091,9 @@
         <!--211--><item>D)L2RARUIAGMM6E</item>
         <!--212--><item>D)ABCDFGHLMNPQUVZ12579</item>
         <!--213--><item>D)3</item>
-		
+        <!--214--><item>D)6</item>
+        <!--215--><item>D)</item>
+        <!--216--><item>D)</item>
     </array>
     
     <array name="solperceptiva">
@@ -1300,7 +1310,9 @@
         <!--211--><item>B)L2RARUIAYMM6E</item>
         <!--212--><item>D)ABCDFGHLMNPQUVZ12579</item>
         <!--213--><item>A)5</item>
-		
+        <!--214--><item>C)11</item>
+        <!--215--><item>A)</item>
+        <!--216--><item>C)</item>
     </array>
     
     <array name="expliSolperceptiva">
@@ -1517,6 +1529,9 @@
         <!--211--><item></item>
         <!--212--><item></item>
         <!--213--><item></item>
+        <!--214--><item></item>
+        <!--215--><item></item>
+        <!--216--><item></item>
 
     </array>
     
@@ -1737,6 +1752,9 @@
         <!--211--><item></item>
         <!--212--><item></item>
         <!--213--><item></item>
+        <!--214--><item>perp214</item>
+        <!--215--><item>perp215</item>
+        <!--216--><item>perp216</item>
 
     </array>
     
@@ -1954,7 +1972,9 @@
         <!--211--><item></item>
         <!--212--><item></item>
         <!--213--><item></item>
-
+        <!--214--><item></item>
+        <!--215--><item>perp215ra</item>
+        <!--216--><item>perp216ra</item>
     </array>
     
     <array name="imgBperceptiva">
@@ -2171,7 +2191,9 @@
         <!--211--><item></item>
         <!--212--><item></item>
         <!--213--><item></item>
-		
+        <!--214--><item></item>
+        <!--215--><item>perp215rb</item>
+        <!--216--><item>perp216rb</item>
 
     </array>
     
@@ -2389,7 +2411,9 @@
         <!--211--><item></item>
         <!--212--><item></item>
         <!--213--><item></item>
-
+        <!--214--><item></item>
+        <!--215--><item>perp215rc</item>
+        <!--216--><item>perp216rc</item>
     </array>
     
     <array name="imgDperceptiva">
@@ -2606,7 +2630,9 @@
         <!--211--><item></item>
         <!--212--><item></item>
         <!--213--><item></item>
-
+        <!--214--><item></item>
+        <!--215--><item>perp215rd</item>
+        <!--216--><item>perp216rd</item>
     </array>
     
     <array name="imgSolperceptiva">
@@ -2823,7 +2849,9 @@
         <!--211--><item></item>
         <!--212--><item></item>
         <!--213--><item></item>
-		
+        <!--214--><item></item>
+        <!--215--><item>perp215ra</item>
+        <!--216--><item>perp216rc</item>
 
     </array>
     
@@ -3041,6 +3069,8 @@
         <!--211--><item></item>
         <!--212--><item></item>
         <!--213--><item></item>
-
+        <!--214--><item>perp214exp</item>
+        <!--215--><item></item>
+        <!--216--><item>perp216exp</item>
     </array>
 </resources>
