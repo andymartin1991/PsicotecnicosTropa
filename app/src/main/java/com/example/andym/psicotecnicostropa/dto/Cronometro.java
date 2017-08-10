@@ -32,7 +32,7 @@ public class Cronometro implements Runnable
         etiq = etiqueta;
         salida = "";
         segundos = 59;
-        minutos = 4;
+        minutos = 6;
         horas = 0;
         nombrecronometro = nombre;
         escribirenUI = new Handler();
@@ -109,7 +109,7 @@ public class Cronometro implements Runnable
     public static void reiniciar()
     {
         segundos = 59;
-        minutos = 4;
+        minutos = 6;
         horas = 0;
         pausado = Boolean.FALSE;
     }

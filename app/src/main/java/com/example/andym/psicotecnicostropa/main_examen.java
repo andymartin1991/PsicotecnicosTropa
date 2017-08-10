@@ -588,7 +588,7 @@ public class main_examen extends Activity {
         cuentatras = (TextView) findViewById(R.id.cuentatras);
         cuentatras.setVisibility(View.VISIBLE);
 
-        cuentatras.setText("00:05:00");
+        cuentatras.setText("00:07:00");
 
         cronometro = new Cronometro("Cronometro por bloque", cuentatras);
         hilo = new Thread(cronometro);
@@ -679,7 +679,7 @@ public class main_examen extends Activity {
                                             contador.setText((posi + 1) + "/15");
                                             Cronometro.reiniciar();
                                             memoria();
-                                            cuentatras.setText("00:05:00");
+                                            cuentatras.setText("00:07:00");
                                         }
                                         viewflipper.setInAnimation(animrightalante);
                                         viewflipper.showPrevious();
@@ -2151,7 +2151,7 @@ public class main_examen extends Activity {
                             limpiarselect();
                             seacabotiempo();
                             memoria();
-                            cuentatras.setText("00:05:00");
+                            cuentatras.setText("00:07:00");
                         }
                         }
                     }).create().show();
