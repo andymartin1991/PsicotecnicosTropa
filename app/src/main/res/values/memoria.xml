@@ -3,171 +3,171 @@
     
     <array name="prememoria">
         <!--001--><item>¿En cuál aparecía en el centro?</item>
-        <!--002--><item>¿Qué número apareció?</item>
+        <!--002--><item>¿Qué secuencia apareció?</item>
         <!--003--><item>¿Qué color se repetía más veces?</item>
         <!--004--><item>¿Cuántos círculos habían?</item>
-        <!--005--> <item>¿Qué número apareció?</item>
+        <!--005--> <item>¿Qué secuencia apareció?</item>
 		<!--006--><item>¿Cuál correspondía a la última columna?</item>
-        <!--007--><item>¿Qué número apareció?</item>
+        <!--007--><item>¿Qué secuencia apareció?</item>
         <!--008--><item>¿Cuál aparecía en la esquina inferior derecha?</item>
         <!--009--><item>¿Cuántas ramas tenía?</item>
         <!--010--><item>¿Cuántos rombos transparentes habían?</item>
-        <!--011--> <item>¿Qué número apareció?</item>
+        <!--011--> <item>¿Qué secuencia apareció?</item>
         <!--012--><item>¿Cuál aparece arriba en el centro?</item>
         <!--013--><item>¿Qué color se repetía más?</item>
         <!--014--><item>¿Cuántos cuadrados habían?</item>
-        <!--015--><item>¿Qué número apareció?</item>
+        <!--015--><item>¿Qué secuencia apareció?</item>
         <!--016--><item>¿Qué palabra había en la esquina inferior izquierda?</item>
         <!--017--><item>¿Qué círculo estaba entre el naranja y el rosa?</item>
-        <!--018--><item>¿Qué número apareció?</item>
+        <!--018--><item>¿Qué secuencia apareció?</item>
         <!--019--><item>¿Qué cuadrado estaba en la esquina superior derecha?</item>
         <!--020--><item>¿Cuántos círculos blancos habían?</item>
         <!--021--><item>¿Qué número era el mayor?</item>
         <!--022--><item>¿De qué color eran los lunares del vestido de la niña?</item>
-        <!--023--><item>¿De qué orden estaban distribuidos los colores?</item>
+        <!--023--><item>¿En qué orden estaban distribuidos los colores?</item>
         <!--024--><item>¿De qué color eran las manchas del caparazón de la tortuga?</item>
         <!--025--><item>¿Qué palabra aparecía en la parte inferior derecha?</item>
-        <!--026--><item>¿Qué número aparecía?</item>
+        <!--026--><item>¿Qué secuencia apareció?</item>
         <!--027--><item>¿Qué color estaba encima del negro?</item>
         <!--028--><item>¿Qué palabra aparecía en la parte superior derecha?</item>
-        <!--029--><item>¿Qué número aparecía?</item>
-        <!--030--><item>¿Qué número aparecía?</item>
+        <!--029--><item>¿Qué secuencia apareció?</item>
+        <!--030--><item>¿Qué secuencia apareció?</item>
         <!--031--><item>¿De qué color aparecía \'Naranja\'?</item>
         <!--032--><item>¿Qué palabra aparecía en la parte central izquierda?</item>
         <!--033--><item>¿Qué palabra no se correspondía con su color?</item>
-        <!--034--><item>¿Qué número aparecía?</item>
+        <!--034--><item>¿Qué secuencia apareció?</item>
         <!--035--><item>¿Qué palabra aparecía en la parte central derecha?</item>
         <!--036--><item>¿Cuántos corazones habían sin relieve?</item>
-        <!--037--><item>¿Qué número aparecía?</item>
+        <!--037--><item>¿Qué secuencia apareció?</item>
         <!--038--><item>¿Qué palabra aparecía entre \'Perro\' y \'Rojo\'?</item>
         <!--039--><item>¿Qué palabra aparecía en el centro?</item>
-        <!--040--><item>¿Qué número aparecía?</item>
+        <!--040--><item>¿Qué secuencia apareció?</item>
         <!--041--><item>¿Cuántas bombillas habían en la casilla inferior izquierda?</item>
-        <!--042--><item>¿Cuántas K habían?</item>
-        <!--043--><item></item>
-        <!--044--><item>¿Qué número apareció?</item>
+        <!--042--><item>¿Cuántas -K- habían?</item>
+        <!--043--><item>¿Qué palabra apareció?</item>
+        <!--044--><item>¿Qué secuencia apareció?</item>
         <!--045--><item>¿Cuántos nombres femeninos habían?</item>
-        <!--046--><item>¿Dé color era la palabra -cartero-?</item>
+        <!--046--><item>¿De qué color era la palabra -cartero-?</item>
         <!--047--><item>¿Cuántos números habían?</item>
         <!--048--><item>¿Cuántas palabras de animales habían?</item>
         <!--049--><item>¿De qué color era el tercer corazón contando desde fuera?</item>
         <!--050--><item>¿Cada figura se repetía dos veces?</item>
         <!--051--><item>¿Qué fila aparecía después de -Chica rubia baja-?</item>
-        <!--052--><item>¿Qué número apareció?</item>
+        <!--052--><item>¿Qué secuencia apareció?</item>
         <!--053--><item>¿Cuántos nombres masculinos habían?</item>
         <!--054--><item>¿Qué palabra había en la parte central de la tercera columna?</item>
         <!--055--><item>¿Cuántas casillas hay con una sola figura?</item>
-        <!--056--><item>¿Qué número apareció?</item>
+        <!--056--><item>¿Qué secuencia apareció?</item>
         <!--057--><item>¿Qué palabra aparecía en el centro?</item>
         <!--058--><item>¿De qué colores son los círculos de la ropa de la niña?</item>
-        <!--059--><item>¿Qué número apareció?</item>
+        <!--059--><item>¿Qué secuencia apareció?</item>
         <!--060--><item>¿De qué color era el fondo de la palabra -Lila-?</item>
         <!--061--><item>¿De qué color era el número más pequeño? ¿Y qué número era mayor?</item>
-        <!--062--><item>¿Qué número apareció?</item>
+        <!--062--><item>¿Qué secuencia apareció?</item>
         <!--063--><item>¿Cuántos círculos habían?</item>
         <!--064--><item>¿Qué frase se podría formar con esas palabras?</item>
         <!--065--><item>¿Cuál era el tercer número mayor?</item>
         <!--066--><item>¿Qué tres palabras no eran pecados capitales?</item>
-        <!--067--><item>¿Qué número apareció?</item>
+        <!--067--><item>¿Qué secuencia apareció?</item>
         <!--068--><item>¿De qué color era el fondo y las letras de la palabra -Azul-?</item>
         <!--069--><item>¿Cuántas líneas habían?</item>
-        <!--070--><item>¿Qué número apareció?</item>
+        <!--070--><item>¿Qué secuencia apareció?</item>
         <!--071--><item>¿Aparecen los colores primarios?</item>
-        <!--072--><item>¿Qué número apareció?</item>
-        <!--073--><item>¿Qué número apareció?</item>
+        <!--072--><item>¿Qué secuencia apareció?</item>
+        <!--073--><item>¿Qué secuencia apareció?</item>
         <!--074--><item>¿De qué color estaba la palabra -Verde-?</item>
         <!--075--><item>¿Seguían algún patrón los colores?</item>
         <!--076--><item>¿Se repiten los colores que aparecen?</item>
-        <!--077--><item>¿Qué número apareció?</item>
+        <!--077--><item>¿Qué secuencia apareció?</item>
         <!--078--><item>¿Cuántos números pares habían?</item>
-        <!--079--><item>¿Qué palabra de puede formar con todas las letras?</item>
-        <!--080--><item>¿Qué número apareció?</item>
+        <!--079--><item>¿Qué palabra se puede formar con todas las letras?</item>
+        <!--080--><item>¿Qué secuencia apareció?</item>
         <!--081--><item>¿De qué color era la palabra que estaba al lado de -Esperanza-?</item>
         <!--082--><item>¿De qué color estaba la palabra -curar-?</item>
-        <!--083--><item></item>
+        <!--083--><item>¿Qué secuencia apareció?</item>
         <!--084--><item>¿Qué color se repite?</item>
         <!--085--><item>¿Cuál es el número más grande que apareció?</item>
         <!--086--><item>¿Cuántas vocales habían?</item>
-        <!--087--><item></item>
+        <!--087--><item>¿Qué secuencia apareció?</item>
         <!--088--><item>¿Qué lado no tenía rojo?</item>
         <!--089--><item>¿Cuánto suman los números en total?</item>
         <!--090--><item>¿Cuántas vocales habían?</item>
         <!--091--><item>¿Qué letra aparecía en la casilla de abajo en el centro?</item>
         <!--092--><item>¿Cuántos números eran pares?</item>
-        <!--093--><item></item>
+        <!--093--><item>¿Qué secuencia apareció?</item>
         <!--094--><item>¿Cuántas consonantes habían?</item>
         <!--095--><item>¿Cuántas vocales habían?</item>
         <!--096--><item>¿Cuántas veces sale el color rojo?</item>
         <!--097--><item>¿Cuántos números habían?</item>
-        <!--098--><item>¿Cuál está al lado de lilo?</item>
+        <!--098--><item>¿Cuál está al lado de -lilo-?</item>
         <!--099--><item>¿Cuántos pronombres personales habían?</item>
         <!--100--><item>¿Cuáles se repiten?</item>
-        <!--101--><item>¿Cuál estaba al lado de puerta?</item>
-        <!--102--><item></item>
-        <!--103--><item>¿Cuántos 1 habían?</item>
+        <!--101--><item>¿Cuál estaba al lado de -puerta-?</item>
+        <!--102--><item>¿Qué secuencia apareció?</item>
+        <!--103--><item>¿Cuántos -1- habían?</item>
         <!--104--><item>El número más pequeño que apareció fue el...</item>
-        <!--105--><item></item>
+        <!--105--><item>¿Qué secuencia apareció?</item>
         <!--106--><item>¿Qué palabra estaba en la casilla 5?</item>
-        <!--107--><item></item>
-        <!--108--><item>¿Qué número está en el centro?</item>
+        <!--107--><item>¿Qué secuencia apareció?</item>
+        <!--108--><item>¿Qué número estaba en el centro?</item>
         <!--109--><item>Sin contar con los que aparecen en la base, ¿cuánto suman los demás números?</item>
         <!--110--><item>¿Qué contenía la segunda fila?</item>
-        <!--111--><item></item>
+        <!--111--><item>¿Qué secuencia apareció?</item>
         <!--112--><item>¿De qué color era la casilla del triángulo?</item>
         <!--113--><item>¿Cuántos círculos tenían el relleno rayado?</item>
-        <!--114--><item>¿Cuántos 1 y 3 habían?</item>
-        <!--115--><item>¿Qué sentencia es la segunda fila?</item>
-        <!--116--><item>¿Cuál es la sentencia en sentido horario empezando desde la H del centro arriba?</item>
+        <!--114--><item>¿Cuántos -1- y -3- habían?</item>
+        <!--115--><item>¿Qué secuencia tenía la segunda fila?</item>
+        <!--116--><item>¿Cuál era la secuencia en sentido horario empezando desde la -H- del centro arriba?</item>
         <!--117--><item>¿Cuántas letras mayúsculas estaban al derecho?</item>
         <!--118--><item>¿Qué figura no se repetía?</item>
-        <!--119--><item></item>
-        <!--120--><item>¿Cuáles tienen fondo negro?</item>
+        <!--119--><item>¿Qué secuencia apareció?</item>
+        <!--120--><item>¿Cuáles tenían fondo negro?</item>
         <!--121--><item>¿Cuáles eran minúsculas?</item>
         <!--122--><item>¿Cuáles tenían el fondo verde?</item>
-        <!--123--><item>Enumera en el sentido que indicaba empezando por el 1</item>
-        <!--124--><item></item>
-        <!--125--><item>Los que tienen el fondo rayado, ¿cuánto suman?</item>
-        <!--126--><item>¿Qué número tiene el mismo al frente?</item>
-        <!--127--><item></item>
+        <!--123--><item>Enumera en el sentido que indicaba empezando por el -1-</item>
+        <!--124--><item>¿Qué secuencia apareció?</item>
+        <!--125--><item>Los que tenían el fondo rayado, ¿cuánto suman?</item>
+        <!--126--><item>¿Qué número tenía el mismo en el lado opuesto?</item>
+        <!--127--><item>¿Qué secuencia apareció?</item>
         <!--128--><item>¿Cómo era la casilla central de la base?</item>
-        <!--129--><item>¿Qué número está escrito en letras?</item>
-        <!--130--><item>¿Tiene la misma sentencia de colores en ambas direcciones partiendo desde el rojo?</item>
-        <!--131--><item>¿Qué cifra aparece entre los dos 2?</item>
+        <!--129--><item>¿Qué número estaba escrito en letras?</item>
+        <!--130--><item>¿Tenía la misma sentencia de colores en ambas direcciones partiendo desde el rojo?</item>
+        <!--131--><item>¿Qué cifra aparecía entre los dos -2-?</item>
         <!--132--><item>¿Qué palabra se podría formar con las letras que han aparecido?</item>
         <!--133--><item>¿Qué letras no estaban del derecho?</item>
         <!--134--><item>¿De qué color era la casilla del número 8?</item>
-        <!--135--><item></item>
+        <!--135--><item>¿Qué secuencia apareció?</item>
         <!--136--><item>¿Se repetía alguna letra?</item>
         <!--137--><item>¿Qué número tenía el fondo rosa?</item>
-        <!--138--><item></item>
+        <!--138--><item>¿Qué secuencia apareció?</item>
         <!--139--><item>¿Qué número se repetía?</item>
         <!--140--><item>¿Cuántas casillas rayadas habían?</item>
         <!--141--><item>¿Cuántos números impares habían?</item>
         <!--142--><item>¿Qué color estaba repetido?</item>
-        <!--143--><item></item>
+        <!--143--><item>¿Qué secuencia apareció?</item>
         <!--144--><item>¿Qué números estaban en los cuadrados?</item>
         <!--145--><item>¿Qué letra tenían los cuadrados?</item>
         <!--146--><item>¿Qué color estaba al lado del amarillo?</item>
         <!--147--><item>¿Cuántos círculos habían?</item>
         <!--148--><item>¿Qué aparecía en los pentágonos?</item>
-        <!--149--><item></item>
+        <!--149--><item>¿Qué secuencia apareció?</item>
         <!--150--><item>¿Qué color coincidía una columna completa?</item>
         <!--151--><item>¿Cuántos tenían fondo rayado?</item>
         <!--152--><item>¿Cuántas letras habían?</item>
         <!--153--><item>¿Qué relleno tiene las casillas con los círculos negros?</item>
         <!--154--><item>¿Cuánto suman los números pares?</item>
-        <!--155--><item></item>
+        <!--155--><item>¿Qué secuencia apareció?</item>
         <!--156--><item>¿Cuántos números pares habían?</item>
         <!--157--><item>¿Cuántas casillas tenían el fondo agrietado?</item>
         <!--158--><item>¿Todos los números con relleno gris eran impares?</item>
         <!--159--><item>¿Cuántos números pares habían?</item>
-        <!--160--><item></item>
+        <!--160--><item>¿Qué secuencia apareció?</item>
         <!--161--><item>¿Cuántos números pares habían?</item>
-        <!--162--><item>¿Ciçamtas vocales habían?</item>
+        <!--162--><item>¿Cuántas vocales habían?</item>
         <!--163--><item>¿Cuántas letras minúsculas habían?</item>
         <!--164--><item>¿Cuánto suman los números pares?</item>
         <!--165--><item>¿Cuántos círculos habían?</item>
-        <!--166--><item></item>
+        <!--166--><item>¿Qué secuencia apareció?</item>
         <!--167--><item>¿Cuántas letras minúsculas habían?</item>
         <!--168--><item>¿Qué había al lado derecho del signo de música?</item>
         <!--169--><item>¿Qué letras estaban en minúsculas?</item>
@@ -175,20 +175,20 @@
         <!--171--><item>¿Qué color estaba al lado del rojo?</item>
         <!--172--><item>¿Cuántos números habían?</item>
         <!--173--><item>¿Cuánto suman los números impares?</item>
-        <!--174--><item></item>
+        <!--174--><item>¿Qué secuencia apareció?</item>
         <!--175--><item>¿Cuántos números impares habían?</item>
         <!--176--><item>¿Qué números aparecieron?</item>
         <!--177--><item>¿Cuántos habían con fondo oscuro?</item>
         <!--178--><item>¿Cuántas letras minúsculas habían?</item>
-        <!--179--><item></item>
+        <!--179--><item>¿Qué secuencia apareció?</item>
         <!--180--><item>¿Qué figura coincide con la casilla?</item>
-        <!--181--><item></item>
+        <!--181--><item>¿Qué secuencia apareció?</item>
         <!--182--><item>¿Cuántas vocales habían?</item>
-        <!--183--><item></item>
-        <!--184--><item></item>
-        <!--185--><item></item>
-        <!--186--><item></item>
-        <!--187--><item></item>
+        <!--183--><item>¿Qué secuencia apareció?</item>
+        <!--184--><item>¿Qué secuencia apareció?</item>
+        <!--185--><item>¿Qué secuencia apareció?</item>
+        <!--186--><item>¿Qué secuencia apareció?</item>
+        <!--187--><item>¿Qué secuencia apareció?</item>
         <!--188--><item>¿Cuántos azules habían?</item>
         <!--189--><item>¿Cuál estaba al lado izquierdo del cuadrado con una X?</item>
         <!--190--><item>¿Cuántos círculos negros habían?</item>
@@ -198,23 +198,23 @@
         <!--194--><item>¿Cuántos eran letras?</item>
         <!--195--><item>¿Cuántos pentágonos negros habían?</item>
         <!--196--><item>¿Cuántas minúsculas habían?</item>
-        <!--197--><item>¿Cuál estaba al lado de le?</item>
+        <!--197--><item>¿Cuál estaba al lado de -le-?</item>
         <!--198--><item>¿De qué color era el fondo del corazón azul?</item>
-        <!--199--><item>¿Qué palabra estaba debajo de CANCHA?</item>
-        <!--200--><item>¿Qué simbolo estaba al lado del +?</item>
+        <!--199--><item>¿Qué palabra estaba debajo de -Cancha-?</item>
+        <!--200--><item>¿Qué símbolo estaba al lado del +?</item>
         <!--201--><item>¿Cuántas vocales habían?</item>
         <!--202--><item>¿Qué número se repetía más veces?</item>
-        <!--203--><item></item>
-        <!--204--><item>¿Cuánto suman los números de F y G?</item>
+        <!--203--><item>¿Qué secuencia apareció?</item>
+        <!--204--><item>¿Cuánto suman los números de -F- y -G-?</item>
         <!--205--><item>¿Cuál NO aparecía en la imagen dada?</item>
         <!--206--><item>¿Qué hora marcaba el reloj 5?</item>
-        <!--207--><item>¿Qué números tenían A y D?</item>
+        <!--207--><item>¿Qué números tenían -A- y -D-?</item>
         <!--208--><item>¿Cuánto suma la columna del centro?</item>
         <!--209--><item>¿Qué única pareja de palabras empiezan por vocal?</item>
-        <!--210--><item>¿Cuál sería el resultado de la suma de los valores de C y F?</item>
+        <!--210--><item>¿Cuál sería el resultado de la suma de los valores de -C- y -F-?</item>
         <!--211--><item>¿Cuáles aparecían en los fondos oscuros?</item>
         <!--212--><item>¿Cuál era la última palabra de la segunda columna?</item>
-        <!--213--><item>¿Cuántos 1 y 0 habían?</item>
+        <!--213--><item>¿Cuántos -1- y -0- habían?</item>
         <!--214--><item>¿Cuántas casillas estaban vacías?</item>
         <!--215--><item>¿Habían letras para poder formar la palabra COSA?</item>
         <!--216--><item>¿Cuánto sumaba la tercera columna?</item>
@@ -228,7 +228,7 @@
         <!--224--><item>¿Cuántos felinos aparecían?</item>
         <!--225--><item>¿Cuántos círculos habían?</item>
         <!--226--><item>¿Cuántas P (mayúsculas) estaban del derecho?</item>
-        <!--227--><item></item>
+        <!--227--><item>¿Qué secuencia apareció?</item>
         <!--228--><item>¿Cómo sería la secuencia al revés?</item>
         <!--229--><item>¿Cuántas flechas apuntaban a la izquierda?</item>
         <!--230--><item>¿Habían 3X, 3Y y 3Z?</item>
@@ -238,14 +238,14 @@
         <!--234--><item>¿Cuántos fondos blancos habían?</item>
         <!--235--><item>¿Qué letra tenía el círculo blanco?</item>
         <!--236--><item>¿Cuántos nombres empezaban por L?</item>
-        <!--237--><item></item>
+        <!--237--><item>¿Qué secuencia apareció?</item>
         <!--238--><item>¿Cuántas palabras empezaban por R?</item>
-        <!--239--><item>¿Qué palabra estaba al lado de COLCHÓN?</item>
-        <!--240--><item>¿Cuántos 2 y 5 habían?</item>
+        <!--239--><item>¿Qué palabra estaba al lado de -Colchón-?</item>
+        <!--240--><item>¿Cuántos -2- y -5- habían?</item>
         <!--241--><item>¿Cuál aparecía en el puesto 2C?</item>
         <!--242--><item>¿Cuántas vocales habían?</item>
         <!--243--><item>¿Se podría formar la palabra ANOTHER?</item>
-		<!--244--><item></item>
+		<!--244--><item>¿Qué secuencia apareció?</item>
         <!--245--><item>¿Cuantos números habían?</item>
         <!--246--><item>¿Cuál de las cifras era el más grande de tamaño?</item>
         <!--247--><item>¿Qué figura no estaba repetida?</item>
@@ -1270,7 +1270,7 @@
         <!--010--><item>A)4</item>
         <!--011--><item>B)2456784515</item>
         <!--012--><item>B)Estática</item>
-        <!--013--><item>C)Negro.</item>
+        <!--013--><item>C)Negro</item>
         <!--014--><item>C)No habían cuadrados.</item>
         <!--015--><item>B)30252015105</item>
         <!--016--><item>C)Cachorro</item>
@@ -1311,7 +1311,7 @@
         <!--051--><item>A)Chico moreno bajo</item>
         <!--052--><item>A)269578431</item>
         <!--053--><item>B)6</item>
-        <!--054--><item>A)hermosa</item>
+        <!--054--><item>A)Hermosa</item>
         <!--055--><item>D)3</item>
         <!--056--><item>D)88965523447</item>
         <!--057--><item>A)Número</item>
