@@ -28,6 +28,7 @@ public class main_optTipo extends Activity {
     public static String test;
     private String listview_array[];
     String pass="";
+    int intento = 0;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,16 +38,20 @@ public class main_optTipo extends Activity {
         oculto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(main_optTipo.this);
-                final EditText textoBusqueda = new EditText(main_optTipo.this);
-                textoBusqueda.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-                builder.setTitle("Contraseña");   // Título
-                builder.setView(textoBusqueda);
-                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int whichButton) {
-                        pass = textoBusqueda.getText().toString();
-                    }
-                }).show();
+                if(intento == 5) {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(main_optTipo.this);
+                    final EditText textoBusqueda = new EditText(main_optTipo.this);
+                    textoBusqueda.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                    builder.setTitle("Contraseña");   // Título
+                    builder.setView(textoBusqueda);
+                    builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int whichButton) {
+                                pass = textoBusqueda.getText().toString();
+                        }
+                    }).show();
+                }else{
+                    intento ++;
+                }
             }
         });
 
