@@ -1,6 +1,7 @@
 package com.example.andym.psicotecnicostropa;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
@@ -149,6 +150,7 @@ public class main_evolucion extends Activity {
                         }
                         notas.setBloqueverbal(pregu);
 
+                        myJsonArray = myJsonjObject.getJSONArray("bloqueespacial");
                         pregu = new ArrayList<Preguntas>();
                         for (int i = 0; i < 15; i++) {
                             try {
@@ -177,6 +179,7 @@ public class main_evolucion extends Activity {
                         }
                         notas.setBloqueespacial(pregu);
 
+                        myJsonArray = myJsonjObject.getJSONArray("bloquemecanico");
                         pregu = new ArrayList<Preguntas>();
                         for (int i = 0; i < 15; i++) {
                             try {
@@ -205,6 +208,7 @@ public class main_evolucion extends Activity {
                         }
                         notas.setBloquemecanico(pregu);
 
+                        myJsonArray = myJsonjObject.getJSONArray("bloquememoria");
                         pregu = new ArrayList<Preguntas>();
                         for (int i = 0; i < 15; i++) {
                             try {
@@ -233,6 +237,7 @@ public class main_evolucion extends Activity {
                         }
                         notas.setBloquememoria(pregu);
 
+                        myJsonArray = myJsonjObject.getJSONArray("bloqueabstrapto");
                         pregu = new ArrayList<Preguntas>();
                         for (int i = 0; i < 15; i++) {
                             try {
@@ -261,6 +266,7 @@ public class main_evolucion extends Activity {
                         }
                         notas.setBloqueabstrapto(pregu);
 
+                        myJsonArray = myJsonjObject.getJSONArray("bloquenumerico");
                         pregu = new ArrayList<Preguntas>();
                         for (int i = 0; i < 15; i++) {
                             try {
@@ -289,6 +295,7 @@ public class main_evolucion extends Activity {
                         }
                         notas.setBloquenumerico(pregu);
 
+                        myJsonArray = myJsonjObject.getJSONArray("bloqueperceptiva");
                         pregu = new ArrayList<Preguntas>();
                         for (int i = 0; i < 15; i++) {
                             try {
@@ -320,6 +327,12 @@ public class main_evolucion extends Activity {
 
                     } catch (JSONException e) {
                         e.printStackTrace();
+                    }
+
+                    Intent i = new Intent(main_evolucion.this, main_subevolucion.class);
+                    if (notas != null) {
+                        i.putExtra("notas", notas);
+                        startActivity(i);
                     }
 
                 }

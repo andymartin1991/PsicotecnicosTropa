@@ -1,12 +1,21 @@
 package com.example.andym.psicotecnicostropa;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.InputType;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.example.andym.psicotecnicostropa.dto.AdapterDirectivos;
@@ -18,10 +27,30 @@ public class main_optTipo extends Activity {
 
     public static String test;
     private String listview_array[];
+    String pass="";
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_optipo);
+
+        LinearLayout oculto = (LinearLayout)findViewById(R.id.oculto);
+        oculto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(main_optTipo.this);
+                final EditText textoBusqueda = new EditText(main_optTipo.this);
+                textoBusqueda.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                builder.setTitle("Contraseña");   // Título
+                builder.setView(textoBusqueda);
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        pass = textoBusqueda.getText().toString();
+                    }
+                }).show();
+            }
+        });
+
+
 
         this.setTitle(getString(R.string.test_bloque));
 
@@ -102,8 +131,11 @@ public class main_optTipo extends Activity {
                         break;
 
                 }
+
                 Intent preguntas = new Intent(main_optTipo.this, main_preguntas.class);
-                //startActivity(new Intent(main_optTipo.this, main_preguntas.class));
+                if(pass.equals("astronauta")){
+                    preguntas = new Intent(main_optTipo.this, main_preguntasDESARROLLO.class);
+                }
                 preguntas.putExtra("tipo", test);
                 startActivity(preguntas);
                 overridePendingTransition(R.anim.transpain, R.anim.transpaout);
@@ -113,6 +145,20 @@ public class main_optTipo extends Activity {
 
         registerForContextMenu(lista);
 
+    }
+
+    private Dialog crearDialogoBusqueda(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+        final EditText textoBusqueda = new EditText(this);
+        builder.setTitle("Contraseña");   // Título
+        builder.setView(textoBusqueda);
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+                Log.i("texto escrito por usuario", textoBusqueda.getText().toString());
+            }
+        });
+        return builder.create();
     }
 
 }

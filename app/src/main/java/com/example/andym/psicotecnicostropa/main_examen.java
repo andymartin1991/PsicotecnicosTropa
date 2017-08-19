@@ -700,7 +700,8 @@ public class main_examen extends Activity {
                         imprimir(bloque, posi);
                         cuentabloque.setText(bloque + "/7");
                         contador.setText((posi + 1) + "/15");
-
+                        viewflipper.setInAnimation(animrightalante);
+                        viewflipper.showPrevious();
                     }
 
                 }
@@ -1721,9 +1722,9 @@ public class main_examen extends Activity {
                     switch (notas.getBloquenumerico().get(posi).getRespulsada()) {
                         case 1:
                             if (respuestaA.getText().equals(solucion.getText())) {
-                                a.setBackgroundResource(R.drawable.boton_opt_preguntas_true);
+                                a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                             } else {
-                                a.setBackgroundResource(R.drawable.boton_opt_preguntas_false);
+                                a.setBackgroundResource(R.drawable.boton_opt_preguntas_exam);
                             }
                             break;
                         case 2:

@@ -41,6 +41,8 @@
         <activity android:name=".main_fisica"></activity>
         <activity android:name=".main_trucos"></activity>
         <activity android:name=".main_ayuda"></activity>
+        <activity android:name=".main_subevolucion"></activity>
+        <activity android:name=".main_preguntasDESARROLLO"></activity>
     </application>
 
 </manifest>
