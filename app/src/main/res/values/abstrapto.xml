@@ -229,6 +229,9 @@
         <!--225--><item>¿Cuál sigue la serie?</item>
         <!--226--><item>¿Cuál se corresponde con la serie?</item>
         <!--227--><item>¿Cuántos deben haber en la casilla para completar la imagen?</item>
+        <!--228--><item>¿Cuál es el resultado?</item>
+        <!--229--><item>¿Cuál sigue la serie?</item>
+        <!--230--><item>¿Cuál sigue la serie?</item>
     </array>
     
     <array name="resAabstrapto">
@@ -459,6 +462,9 @@
         <!--225--><item>A)3/3</item>
         <!--226--><item>A)</item>
         <!--227--><item>A)4</item>
+        <!--228--><item>A)15</item>
+        <!--229--><item>A)</item>
+        <!--230--><item>A)3/3</item>
     </array>
     
     <array name="resBabstrapto">
@@ -689,6 +695,9 @@
         <!--225--><item>B)5/3</item>
         <!--226--><item>B)</item>
         <!--227--><item>B)3</item>
+        <!--228--><item>B)15,8</item>
+        <!--229--><item>B)</item>
+        <!--230--><item>B)2/2</item>
     </array>
     
     <array name="resCabstrapto">
@@ -919,6 +928,9 @@
         <!--225--><item>C)5/2</item>
         <!--226--><item>C)</item>
         <!--227--><item>C)5</item>
+        <!--228--><item>C)15,855555</item>
+        <!--229--><item>C)</item>
+        <!--230--><item>C)1/3</item>
     </array>
     
     <array name="resDabstrapto">
@@ -1149,6 +1161,9 @@
         <!--225--><item>D)3/2</item>
         <!--226--><item>D)</item>
         <!--227--><item>D)2</item>
+        <!--228--><item>D)16</item>
+        <!--229--><item>D)</item>
+        <!--230--><item>D)3/1</item>
     </array>
     
     <array name="solabstrapto">
@@ -1379,7 +1394,9 @@
         <!--225--><item>C)5/2</item>
         <!--226--><item>B)</item>
         <!--227--><item>A)4</item>
-
+        <!--228--><item>B)15,8</item>
+        <!--229--><item>D)</item>
+        <!--230--><item>C)1/3</item>
         
     </array>
     
@@ -1611,7 +1628,9 @@
         <!--225--><item>El patrón de la parte de arriba es de -2,+1,-3,+2,... y tocaría -4: 2-4 en el dominó es 5. En la parte de abajo es un 2, siguiendo el recorrido en diagonal: 3, 2, 2.</item>
         <!--226--><item>Se van quitando un color alternativamente hasta no quedar nada, luego se va añadiendo.</item>
         <!--227--><item>Las filas y las columnas deben sumar 10.</item>
-
+        <!--228--><item>5 - 3 = 2 x 10 = 20 + 375 = 395 / 25 = 15,8.</item>
+        <!--229--><item>La flecha va girando a la derecha mientras que el círculo a la izquierda.</item>
+        <!--230--><item>Por un lado : 1, 1, 2, 2, 3, 3... Por otro lado, -1.</item>
     </array>
     
     
@@ -1845,6 +1864,9 @@
         <!--225--><item>absp225</item>
         <!--226--><item>absp226</item>
         <!--227--><item>absp227</item>
+        <!--228--><item>absp228</item>
+        <!--229--><item>absp229</item>
+        <!--230--><item>absp230</item>
 
     </array>
     
@@ -2076,6 +2098,9 @@
         <!--225--><item></item>
         <!--226--><item>absp226ra</item>
         <!--227--><item></item>
+        <!--228--><item></item>
+        <!--229--><item>absp229ra</item>
+        <!--230--><item></item>
     </array>
     
     <array name="imgBabstrapto">
@@ -2306,6 +2331,9 @@
         <!--225--><item></item>
         <!--226--><item>absp226rb</item>
         <!--227--><item></item>
+        <!--228--><item></item>
+        <!--229--><item>absp229rb</item>
+        <!--230--><item></item>
     </array>
     
     <array name="imgCabstrapto">
@@ -2536,6 +2564,9 @@
         <!--225--><item></item>
         <!--226--><item>absp226rc</item>
         <!--227--><item></item>
+        <!--228--><item></item>
+        <!--229--><item>absp229rc</item>
+        <!--230--><item></item>
     </array>
     
     <array name="imgDabstrapto">
@@ -2766,6 +2797,10 @@
         <!--225--><item></item>
         <!--226--><item>absp226rd</item>
         <!--227--><item></item>
+        <!--228--><item></item>
+        <!--229--><item>absp229rd</item>
+        <!--230--><item></item>
+
     </array>
     
     <array name="imgSolabstrapto">
@@ -2996,6 +3031,9 @@
         <!--225--><item></item>
         <!--226--><item>absp226rb</item>
         <!--227--><item></item>
+        <!--228--><item></item>
+        <!--229--><item>absp229rd</item>
+        <!--230--><item></item>
     </array>
     
     <array name="imgExpliabstrapto">
@@ -3226,5 +3264,9 @@
         <!--225--><item></item>
         <!--226--><item>absp226exp</item>
         <!--227--><item>absp227exp</item>
+        <!--228--><item></item>
+        <!--229--><item></item>
+        <!--230--><item>absp230exp</item>
+
     </array>
 </resources>
