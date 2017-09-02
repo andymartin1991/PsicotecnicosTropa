@@ -230,4 +230,7 @@ aspirante. </string>
     <string name="salirresultado">¿Que deseas hacer? Ver los fallos de tu examen o permanecer aquí </string>
     <string name="verfallos">Ver fallos</string>
     <string name="permanecer">Permanecer</string>
+    <string name="patatas">Patatas armadas</string>
+    <string name="academia">Acceso a academias</string>
+    <string name="atenacademia">Recuerde que para poder acceder a una academia deberás estar apuntado en una, y mantener una conexión de red estable durante esta modalidad. </string>
 </resources>

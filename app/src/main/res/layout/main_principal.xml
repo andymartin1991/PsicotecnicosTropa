@@ -456,6 +456,20 @@
                                     android:text="@string/Compartir"
                                     android:textColor="#fff"
                                     android:textSize="10dp" />
+
+                                <Button
+                                    android:id="@+id/button32"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="2"
+                                    android:background="@drawable/boton_menu"
+                                    android:drawableTop="@drawable/patata"
+                                    android:padding="5dp"
+                                    android:text="@string/patatas"
+                                    android:textColor="#fff"
+                                    android:textSize="10dp" />
+
                             </LinearLayout>
 
                         </LinearLayout>
@@ -495,6 +509,80 @@
                                     android:text="@string/Votar"
                                     android:textColor="#fff"
                                     android:textSize="10dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    android:gravity="center_horizontal|center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal|center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal|center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal|center"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/button6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/boton_menu"
+                                    android:drawableTop="@drawable/fisica"
+                                    android:padding="5dp"
+                                    android:text="@string/academia"
+                                    android:textColor="#fff"
+                                    android:textSize="10dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal|center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal|center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal|center"
+                                android:orientation="horizontal">
+
                             </LinearLayout>
 
                         </LinearLayout>
