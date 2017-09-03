@@ -9,21 +9,41 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.andym.psicotecnicostropa.dto.Preguntas;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.ArrayList;
+import java.util.List;
+
+import static android.content.ContentValues.TAG;
 
 public class main_principal extends Activity {
 
     int textlength = 0;
+    String[] listview_array = new String[0];
+    URLConnection conn = null;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -494,7 +514,6 @@ public class main_principal extends Activity {
         });
 
 
-
         final AlertDialog.Builder builder = new AlertDialog.Builder(main_principal.this);
         builder
                 .setIcon(getResources().getDrawable(R.drawable.iexc))
@@ -503,73 +522,14 @@ public class main_principal extends Activity {
                 .setCancelable(false)
                 .setNegativeButton("Salir", null)
                 .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                    @SuppressWarnings("deprecation")
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        //AlertDialog.Builder builder = new AlertDialog.Builder(main_principal.this);
-                        final LayoutInflater inflater = main_principal.this.getLayoutInflater();
-                        final View textEntryView = inflater.inflate(R.layout.loggin, null);
-                        final EditText correo = (EditText) textEntryView.findViewById(R.id.correo);
-                        final EditText password = (EditText) textEntryView.findViewById(R.id.password);
-                        final EditText search = (EditText) textEntryView.findViewById(R.id.search);
-                        final ListView academias = (ListView) textEntryView.findViewById(R.id.academias);
-
-                        final String listview_array[] = { "ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX", "SEVEN", "EIGHT", "NINE", "TEN" };
-                        final ArrayList<String> array_sort = new ArrayList<String>();
-                        academias.setVisibility(View.GONE);
-
-                        academias.setAdapter(new ArrayAdapter<String>(main_principal.this,
-                                android.R.layout.simple_list_item_1, listview_array));
-                        search.addTextChangedListener(new TextWatcher() {
-                            public void afterTextChanged(Editable s) {
-
+                            @SuppressWarnings("deprecation")
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                //AlertDialog.Builder builder = new AlertDialog.Builder(main_principal.this);
+                                dialogrepetir();
                             }
-
-                            public void beforeTextChanged(CharSequence s, int start, int count,
-                                                          int after) {
-                                // Abstract Method of TextWatcher Interface.
-                            }
-
-                            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                                textlength = search.getText().length();
-                                array_sort.clear();
-
-                                for (int i = 0; i < listview_array.length; i++) {
-                                    if (textlength <= listview_array[i].length()) {
-                                        if (search.getText().toString().equalsIgnoreCase((String) listview_array[i].subSequence(0, textlength))) {
-                                            array_sort.add(listview_array[i]);
-                                        }
-                                    }
-                                }
-
-                                academias.setAdapter(new ArrayAdapter<String>(main_principal.this, android.R.layout.simple_list_item_1, array_sort));
-                                if(textlength == 0){
-                                    academias.setVisibility(View.GONE);
-                                }else{
-                                    academias.setVisibility(View.VISIBLE);
-                                }
-                            }
-                        });
-
-                        AlertDialog.Builder builder2 = new AlertDialog.Builder(main_principal.this);
-                        builder2.setView(textEntryView);
-                        builder2.setIcon(getResources().getDrawable(R.drawable.iexc));
-                        builder2.setTitle(getString(R.string.atencion));
-                        builder2.setPositiveButton("ok", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int whichButton) {
-                                String Correo	=  correo.getText().toString();
-                                String Password = password.getText().toString();
-
-
-                            }
-                        });
-                        builder2.setNegativeButton("Salir", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int whichButton) {
-                            }
-                        }).create().show();
-                    }
-                }
-        );
+                        }
+                );
 
         final Runnable runnable = new Runnable() {
             @Override
@@ -599,10 +559,144 @@ public class main_principal extends Activity {
                 }
             }
         });
+    }
+
+    public String readStream(InputStream in) throws IOException {
+        BufferedReader r = null;
+        r = new BufferedReader(new InputStreamReader(in));
+        StringBuilder total = new StringBuilder();
+        String line;
+        while ((line = r.readLine()) != null) {
+            total.append(line);
+        }
+        if (r != null) {
+            r.close();
+        }
+        in.close();
+        return total.toString();
+    }
+    public void peticion(){
+        final String[] contents = {""};
+
+        try {
+            conn = new URL("http://s593975491.mialojamiento.es/APPpsicotecnicostropa(1)/lista_academias.php").openConnection();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        final InputStream[] in = new InputStream[1];
+        new Thread(new Runnable() {
+            public void run() {
+                try {
+                    in[0] = conn.getInputStream();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                try {
+                    contents[0] = readStream(in[0]).toString();
+                    try {
+                        JSONObject myJsonjObject = new JSONObject(contents[0]);
+                        JSONArray myJsonArray = myJsonjObject.getJSONArray("academias");
+                        listview_array = new String[myJsonArray.length()];
+                        for (int i = 0; i < myJsonArray.length(); i++) {
+                            JSONObject oneObject = myJsonArray.getJSONObject(i);
+                            listview_array[i] = oneObject.getString("NOMBRE_ACA");
+                        }
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
+    }
+
+    private void dialogrepetir(){
+        final LayoutInflater inflater = main_principal.this.getLayoutInflater();
+        final View textEntryView = inflater.inflate(R.layout.loggin, null);
+        final EditText correo = (EditText) textEntryView.findViewById(R.id.correo);
+        final EditText password = (EditText) textEntryView.findViewById(R.id.password);
+        final EditText search = (EditText) textEntryView.findViewById(R.id.search);
+        final ListView academias = (ListView) textEntryView.findViewById(R.id.academias);
+
+        peticion();
+
+        final ArrayList<String> array_sort = new ArrayList<String>();
+        academias.setVisibility(View.GONE);
+
+        academias.setAdapter(new ArrayAdapter<String>(main_principal.this,
+                android.R.layout.simple_list_item_1, listview_array));
+        search.addTextChangedListener(new TextWatcher() {
+            public void afterTextChanged(Editable s) {
+
+            }
+
+            public void beforeTextChanged(CharSequence s, int start, int count,
+                                          int after) {
+                // Abstract Method of TextWatcher Interface.
+            }
+
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                textlength = search.getText().length();
+                array_sort.clear();
+
+                for (int i = 0; i < listview_array.length; i++) {
+                    if (textlength <= listview_array[i].length()) {
+                        if (search.getText().toString().equalsIgnoreCase((String) listview_array[i].subSequence(0, textlength))) {
+                            array_sort.add(listview_array[i]);
+                        }
+                    }
+                }
+
+                academias.setAdapter(new ArrayAdapter<String>(main_principal.this, android.R.layout.simple_list_item_1, array_sort));
+                if (textlength == 0) {
+                    academias.setVisibility(View.GONE);
+                } else {
+                    academias.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
+        final String[] aca = {""};
+        academias.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                search.setText(listview_array[position]);
+                aca[0] = (listview_array[position]);
+            }
+        });
+        AlertDialog.Builder builder2 = new AlertDialog.Builder(main_principal.this);
+        builder2.setView(textEntryView);
+        builder2.setIcon(getResources().getDrawable(R.drawable.iexc));
+        builder2.setTitle(getString(R.string.atencion));
+        builder2.setPositiveButton("ok", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+                String Correo="";
+                String Password="";
+                String Academia="";
+                if(correo.getText().toString() != null && !correo.getText().toString().equals("")){
+                    Correo = correo.getText().toString();
+                }
+                if(password.getText().toString() != null && !password.getText().toString().equals("")){
+                    Password = password.getText().toString();
+                }
+                if(aca[0].toString() != null && !aca[0].toString().equals("")){
+                    Academia = aca[0].toString();
+                }
+                if(Correo.equals("") || Password.equals("") || Academia.equals("")){
+                    Toast mensaje = Toast.makeText(getApplicationContext(),
+                            "Los campos son obligatorios", Toast.LENGTH_SHORT);
+                    mensaje.show();
+                    dialogrepetir();
+                }else{
+                    Toast mensaje = Toast.makeText(getApplicationContext(),
+                            "enviando", Toast.LENGTH_SHORT);
+                    mensaje.show();
 
 
-
-
-
+                }
+            }
+        });
+        builder2.setNegativeButton("Salir", null).create().show();
     }
 }
