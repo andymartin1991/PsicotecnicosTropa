@@ -223,7 +223,15 @@
         <!--219--><item>¿Cuál está representado correctamente?</item>
         <!--220--><item>¿En qué punto interesa ejercer la potencia para empujar una puerta con el mínimo esfuerzo?</item>
         <!--221--><item>¿Qué distancia debe tener el otro lado para que quede equilibrado?</item>
-		
+        <!--222--><item>¿Cuál de estos 2 satélites geoestacionarios a diferentes alturas,  dará más vueltas a la Tierra en un año?</item>
+        <!--223--><item>¿Hacia dónde debe girar el engranaje para cerrar las puertas?</item>
+        <!--224--><item>¿Cuánto se desplazará la carga por cada giro completo de los troncos de 1 metro de circunferencia?</item>
+        <!--225--><item>Un péndulo, ¿dónde tardará menos en hacer una oscilación?</item>
+        <!--226--><item>¿Con cuál desenroscaremos más fácilmente una tuerca?</item>
+        <!--227--><item>¿En qué superficie se refleja más luz?</item>
+        <!--228--><item>¿Cuál pesa más?</item>
+        <!--229--><item>¿Cómo será la sombra de un avión que pasa volando sobre nosotros a 1000m?</item>
+
     </array>
     
     <array name="resAmecanico">
@@ -448,7 +456,15 @@
         <!--219--><item>A)</item>
         <!--220--><item>A)No importa dónde.</item>
         <!--221--><item>A)7,5m</item>
-		
+        <!--222--><item>A)Los dos darán las mismas vueltas.</item>
+        <!--223--><item>A)</item>
+        <!--224--><item>A)2m</item>
+        <!--225--><item>A)En la Luna</item>
+        <!--226--><item>A)</item>
+        <!--227--><item>A)Un panel espejo pulido.</item>
+        <!--228--><item>A)</item>
+        <!--229--><item>A)No hay sombra.</item>
+
     </array>
     
     <array name="resBmecanico">
@@ -673,7 +689,15 @@
         <!--219--><item>B)</item>
         <!--220--><item>B)En el medio de la puerta.</item>
         <!--221--><item>B)5m</item>
-	
+        <!--222--><item>B)El satélite más alejado.</item>
+        <!--223--><item>B)</item>
+        <!--224--><item>B)3m</item>
+        <!--225--><item>B)En la Tierra</item>
+        <!--226--><item>B)</item>
+        <!--227--><item>B)Un panel blanco puro pulido.</item>
+        <!--228--><item>B)</item>
+        <!--229--><item>D)De menor tamaño que el avión.</item>
+
     </array>
     
     <array name="resCmecanico">
@@ -898,7 +922,15 @@
         <!--219--><item>C)</item>
         <!--220--><item>C)Lo más cerca posible de las bisagras.</item>
         <!--221--><item>C)5,5m</item>
-		
+        <!--222--><item>C)El satélite más cercano.</item>
+        <!--223--><item></item>
+        <!--224--><item>C)1m</item>
+        <!--225--><item>C)En los dos por igual.</item>
+        <!--226--><item>C)</item>
+        <!--227--><item>C)Ambos por igual.</item>
+        <!--228--><item>C)Ambos por igual.</item>
+        <!--229--><item>C)De mayor tamaño que el avión.</item>
+
     </array>
     
     <array name="resDmecanico">
@@ -1123,6 +1155,15 @@
         <!--219--><item></item>
         <!--220--><item>D)Lo más alejado posible de las bisagras.</item>
         <!--221--><item>D)7m</item>
+        <!--222--><item></item>
+        <!--223--><item></item>
+        <!--224--><item>D)4m</item>
+        <!--225--><item></item>
+        <!--226--><item>D)Da igual con cuál, los tres tienen la misma facilidad.</item>
+        <!--227--><item>D)En ninguno se refleja luz.</item>
+        <!--228--><item></item>
+        <!--229--><item>D)De igual tamaño que el avión.</item>
+
     </array>
     
     <array name="solmecanico">
@@ -1347,7 +1388,15 @@
         <!--219--><item>C)</item>
         <!--220--><item>D)Lo más alejado posible de las bisagras.</item>
         <!--221--><item>A)7,5m</item>
-	
+        <!--222--><item>A)Los dos darán las mismas vueltas.</item>
+        <!--223--><item>A)</item>
+        <!--224--><item>A)2m</item>
+        <!--225--><item>B)En la Tierra</item>
+        <!--226--><item>B)</item>
+        <!--227--><item>C)Ambos por igual.</item>
+        <!--228--><item>C)Ambos por igual.</item>
+        <!--229--><item>D)De igual tamaño que el avión.</item>
+
     </array>
     
     <array name="expliSolmecanico">
@@ -1572,7 +1621,15 @@
         <!--219--><item></item>
         <!--220--><item></item>
         <!--221--><item>Cuando el peso se reduce a la tercera parte, la distancia se triplica:\n9x2.5=3xD => D = 22.5/3 = 7.5m</item>
-		
+        <!--222--><item>Los satélites geoestacionarios orbitan sobre un punto fijo de la Tierra, por tanto ambos darán las mismas vueltas al cabo de un año: cero.</item>
+        <!--223--><item>En sentido contrario a las agujas del reloj.</item>
+        <!--224--><item>Cuando los rodillos dan un giro completo, el punto de contacto con la plataforma avanza 1m, pero el tronco avanza otro metro respecto al suelo.</item>
+        <!--225--><item>En la Tierra la gravedad es mayor, por lo que el péndulo tardará menos en hacer una oscilación.</item>
+        <!--226--><item>Cuanto más largo sea el mango de la herramienta, más fácil, ya que se ejerce más fuerza con igual esfuerzo.</item>
+        <!--227--><item>Reflexión difusa: un panel blanco refleja todas las longitudes de onda; y Reflexión especular: un espejo también refleja todas las longitudes de onda.</item>
+        <!--228--><item>La balanza está equilibrada, por lo que ambos tienen el mismo peso.</item>
+        <!--229--><item>La fuente de luz que genera la sombra se encuentra a una distancia mucho mayor que el avión, por lo que la sombra que veremos será del mismo tamaño del avión.</item>
+
 
     </array>
     
@@ -1801,6 +1858,14 @@
         <!--219--><item>mecp219</item>
         <!--220--><item></item>
         <!--221--><item>mecp221</item>
+        <!--222--><item>mecp222</item>
+        <!--223--><item>mecp223</item>
+        <!--224--><item>mecp224</item>
+        <!--225--><item></item>
+        <!--226--><item>mecp226</item>
+        <!--227--><item></item>
+        <!--228--><item>mecp228</item>
+        <!--229--><item></item>
 
 
     </array>
@@ -2027,6 +2092,14 @@
         <!--219--><item></item>
         <!--220--><item></item>
         <!--221--><item></item>
+        <!--222--><item></item>
+        <!--223--><item></item>
+        <!--224--><item></item>
+        <!--225--><item></item>
+        <!--226--><item></item>
+        <!--227--><item></item>
+        <!--228--><item></item>
+        <!--229--><item></item>
 
     </array>
     
@@ -2252,6 +2325,14 @@
         <!--219--><item></item>
         <!--220--><item></item>
         <!--221--><item></item>
+        <!--222--><item></item>
+        <!--223--><item></item>
+        <!--224--><item></item>
+        <!--225--><item></item>
+        <!--226--><item></item>
+        <!--227--><item></item>
+        <!--228--><item></item>
+        <!--229--><item></item>
 
 
     </array>
@@ -2478,6 +2559,14 @@
         <!--219--><item></item>
         <!--220--><item></item>
         <!--221--><item></item>
+        <!--222--><item></item>
+        <!--223--><item></item>
+        <!--224--><item></item>
+        <!--225--><item></item>
+        <!--226--><item></item>
+        <!--227--><item></item>
+        <!--228--><item></item>
+        <!--229--><item></item>
 
 
     </array>
@@ -2704,6 +2793,14 @@
         <!--219--><item></item>
         <!--220--><item></item>
         <!--221--><item></item>
+        <!--222--><item></item>
+        <!--223--><item></item>
+        <!--224--><item></item>
+        <!--225--><item></item>
+        <!--226--><item></item>
+        <!--227--><item></item>
+        <!--228--><item></item>
+        <!--229--><item></item>
 
 
     </array>
@@ -2930,6 +3027,14 @@
         <!--219--><item></item>
         <!--220--><item></item>
         <!--221--><item></item>
+        <!--222--><item></item>
+        <!--223--><item></item>
+        <!--224--><item></item>
+        <!--225--><item></item>
+        <!--226--><item></item>
+        <!--227--><item></item>
+        <!--228--><item></item>
+        <!--229--><item></item>
 
 
     </array>
@@ -3156,6 +3261,14 @@
         <!--219--><item></item>
         <!--220--><item></item>
         <!--221--><item></item>
+        <!--222--><item></item>
+        <!--223--><item></item>
+        <!--224--><item></item>
+        <!--225--><item></item>
+        <!--226--><item>mecp226exp</item>
+        <!--227--><item></item>
+        <!--228--><item>mecp228exp</item>
+        <!--229--><item></item>
 
     </array>
 </resources>
