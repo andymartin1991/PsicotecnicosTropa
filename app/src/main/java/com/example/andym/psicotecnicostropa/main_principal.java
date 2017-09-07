@@ -68,7 +68,7 @@ public class main_principal extends Activity {
         pruebafisica = (Button) findViewById(R.id.button25);
         compartir = (Button) findViewById(R.id.button31);
         votar = (Button) findViewById(R.id.button32);
-        patatas = (Button) findViewById(R.id.button32);
+        patatas = (Button) findViewById(R.id.papa);
         academia = (Button) findViewById(R.id.button6);
 
         final boolean[] entra = {true};

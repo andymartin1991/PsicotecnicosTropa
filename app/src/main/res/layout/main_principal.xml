@@ -458,7 +458,7 @@
                                     android:textSize="10dp" />
 
                                 <Button
-                                    android:id="@+id/button32"
+                                    android:id="@+id/papa"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_margin="5dp"
@@ -528,7 +528,8 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center_horizontal|center"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:visibility="gone">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -551,7 +552,7 @@
                                     android:layout_margin="5dp"
                                     android:layout_weight="1"
                                     android:background="@drawable/boton_menu"
-                                    android:drawableTop="@drawable/fisica"
+                                    android:drawableTop="@drawable/nube"
                                     android:padding="5dp"
                                     android:text="@string/academia"
                                     android:textColor="#fff"
