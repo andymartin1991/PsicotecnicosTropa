@@ -210,7 +210,7 @@
         <!--206--><item>¿Cuál tiene menos E?</item>
         <!--207--><item>¿Cuál no pertenece al grupo?</item>
         <!--208--><item>¿Cuál tiene más elementos en común con la imagen dada?</item>
-        <!--209--><item>¿En cuál no tiene vocales en los puestos 6 y 9 de la palabra ni consonante en el octavo?</item>
+        <!--209--><item>¿En cuál tiene vocales en los puestos 6 y 9 de la palabra pero no tiene consonante en el octavo?</item>
         <!--210--><item>¿Cuál tiene más vocales sin repetir?</item>
         <!--211--><item>¿Cuál se corresponde con la serie dada pero al revés?\nE6MMYAIURAR2L</item>
         <!--212--><item>¿Cómo quedaría ABVDEFGHILMNOPQRSTUVZ123456789 si quitamos 3468 y TRIOSE?</item>
@@ -1472,7 +1472,7 @@
         <!--142--><item></item>
         <!--143--><item></item>
         <!--144--><item></item>
-        <!--145--><item>Tiene 3 vocales mientras que el resto tienen 2,</item>
+        <!--145--><item>Tiene 3 vocales mientras que el resto tienen 2.</item>
         <!--146--><item>Tiene 2 consonantes, mientras que el resto tienen 3.</item>
         <!--147--><item>Tiene 3 consonantes; búho y rudo tienen 2; y duo sólo uno.</item>
         <!--148--><item>Tiene 1 mientras que las demás 2 (La y no es una vocal).</item>
