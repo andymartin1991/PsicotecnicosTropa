@@ -232,6 +232,11 @@
         <!--228--><item>¿Cuál es el resultado?</item>
         <!--229--><item>¿Cuál sigue la serie?</item>
         <!--230--><item>¿Cuál sigue la serie?</item>
+        <!--231--><item>¿Cuál sigue la serie?\n3, 4, 6, ?</item>
+        <!--232--><item>¿Cuál sigue la serie?\n24, 27, 26, 29, ?</item>
+        <!--233--><item>¿Cuál sigue la serie?</item>
+        <!--234--><item>¿Cuál sigue la serie?</item>
+
     </array>
     
     <array name="resAabstrapto">
@@ -465,6 +470,11 @@
         <!--228--><item>A)15</item>
         <!--229--><item>A)</item>
         <!--230--><item>A)3/3</item>
+        <!--231--><item>A)9</item>
+        <!--232--><item>A)32</item>
+        <!--233--><item>A)</item>
+        <!--234--><item>A)</item>
+
     </array>
     
     <array name="resBabstrapto">
@@ -698,6 +708,11 @@
         <!--228--><item>B)15,8</item>
         <!--229--><item>B)</item>
         <!--230--><item>B)2/2</item>
+        <!--231--><item>B)7</item>
+        <!--232--><item>B)28</item>
+        <!--233--><item>B)</item>
+        <!--234--><item>B)</item>
+
     </array>
     
     <array name="resCabstrapto">
@@ -931,6 +946,11 @@
         <!--228--><item>C)15,855555</item>
         <!--229--><item>C)</item>
         <!--230--><item>C)1/3</item>
+        <!--231--><item>C)6</item>
+        <!--232--><item>C)30</item>
+        <!--233--><item>C)</item>
+        <!--234--><item>C)</item>
+
     </array>
     
     <array name="resDabstrapto">
@@ -1164,6 +1184,12 @@
         <!--228--><item>D)16</item>
         <!--229--><item>D)</item>
         <!--230--><item>D)3/1</item>
+        <!--231--><item>D)10</item>
+        <!--232--><item>D)31</item>
+        <!--233--><item>D)</item>
+        <!--234--><item>D)</item>
+
+
     </array>
     
     <array name="solabstrapto">
@@ -1397,7 +1423,11 @@
         <!--228--><item>B)15,8</item>
         <!--229--><item>D)</item>
         <!--230--><item>C)1/3</item>
-        
+        <!--231--><item>A)9</item>
+        <!--232--><item>B)28</item>
+        <!--233--><item>C)</item>
+        <!--234--><item>A)</item>
+
     </array>
     
     <array name="expliSolabstrapto">
@@ -1584,7 +1614,7 @@
         <!--181--><item>Comienza ascendentemente sumándole 1 por cada número, y aumentándole 2 a la suma de cada número.</item>
         <!--182--><item>Los números con posición impar tienen un orden ascendente de multiplicación de la siguiente forma: x2,x3,x4 , y los números con posición par se dividen entre 2.</item>
         <!--183--><item>Los números con posición impar tienen un orden ascendente de multiplicación de la siguiente forma: x2,x3,x4 , y los números con posición par tienen un orden ascendente de multiplicación de la siguiente forma: x1,x2,x3.</item>
-        <!--184--><item>Los números con posición impar tienen un orden descendente de una resta de 1, y los números con posición par desciende con resta de 11 y restándole 2 al mismo número que se resta ej.: 11,9,7 .</item>
+        <!--184--><item>Los números con posición impar disminuyen -1, mientras que los números pares, empiezan disminuyendo -11, y a esa resta se le van quitando 2, por lo que a cada número se descontaría: 36-11= 25-9= 16-7= 9,...</item>
         <!--185--><item>Es una serie de +1,+1,-3</item>
         <!--186--><item>Es una serie de +2,+3,-1</item>
         <!--187--><item>Es una serie de -10,-9,+8</item>
@@ -1631,6 +1661,11 @@
         <!--228--><item>5 - 3 = 2 x 10 = 20 + 375 = 395 / 25 = 15,8.</item>
         <!--229--><item>La flecha va girando a la derecha mientras que el círculo a la izquierda.</item>
         <!--230--><item>Por un lado : 1, 1, 2, 2, 3, 3... Por otro lado, -1.</item>
+        <!--231--><item>Va sumando 1, luego 2, después 3, etc. 3+1=4+2=6+3=9.</item>
+        <!--232--><item>+3, -1</item>
+        <!--233--><item>La serie es +2 empezando por la esquina inferior derecha, que será el mismo número del primero del anterior.</item>
+        <!--234--><item>La raya va girando hacia la derecha y cambiando de color alternativamente.</item>
+
     </array>
     
     
@@ -1867,6 +1902,10 @@
         <!--228--><item>absp228</item>
         <!--229--><item>absp229</item>
         <!--230--><item>absp230</item>
+        <!--231--><item></item>
+        <!--232--><item></item>
+        <!--233--><item>absp233</item>
+        <!--234--><item>absp234</item>
 
     </array>
     
@@ -2101,6 +2140,11 @@
         <!--228--><item></item>
         <!--229--><item>absp229ra</item>
         <!--230--><item></item>
+        <!--231--><item></item>
+        <!--232--><item></item>
+        <!--233--><item>absp233ra</item>
+        <!--234--><item>absp234ra</item>
+
     </array>
     
     <array name="imgBabstrapto">
@@ -2334,6 +2378,11 @@
         <!--228--><item></item>
         <!--229--><item>absp229rb</item>
         <!--230--><item></item>
+        <!--231--><item></item>
+        <!--232--><item></item>
+        <!--233--><item>absp233rb</item>
+        <!--234--><item>absp234rb</item>
+
     </array>
     
     <array name="imgCabstrapto">
@@ -2567,6 +2616,11 @@
         <!--228--><item></item>
         <!--229--><item>absp229rc</item>
         <!--230--><item></item>
+        <!--231--><item></item>
+        <!--232--><item></item>
+        <!--233--><item>absp233rc</item>
+        <!--234--><item>absp234rc</item>
+
     </array>
     
     <array name="imgDabstrapto">
@@ -2800,6 +2854,10 @@
         <!--228--><item></item>
         <!--229--><item>absp229rd</item>
         <!--230--><item></item>
+        <!--231--><item></item>
+        <!--232--><item></item>
+        <!--233--><item>absp233rd</item>
+        <!--234--><item>absp234rd</item>
 
     </array>
     
@@ -3034,6 +3092,11 @@
         <!--228--><item></item>
         <!--229--><item>absp229rd</item>
         <!--230--><item></item>
+        <!--231--><item></item>
+        <!--232--><item></item>
+        <!--233--><item>absp233rc</item>
+        <!--234--><item>absp234ra</item>
+
     </array>
     
     <array name="imgExpliabstrapto">
@@ -3267,6 +3330,11 @@
         <!--228--><item></item>
         <!--229--><item></item>
         <!--230--><item>absp230exp</item>
+        <!--231--><item></item>
+        <!--232--><item></item>
+        <!--233--><item>absp233exp</item>
+        <!--234--><item>absp234exp</item>
+
 
     </array>
 </resources>

@@ -217,6 +217,9 @@
         <!--213--><item>¿Cómo quedaría la figura formada?</item>
         <!--214--><item>¿Cuál no coincide con las demás al girarlas?</item>
         <!--215--><item>¿Cómo quedaría la figura al doblar las puntas?</item>
+        <!--216--><item>¿Cuáles de las imágenes son iguales?</item>
+        <!--217--><item>¿Cuál es la imagen dada con los colores invertidos?</item>
+        <!--218--><item>¿Cómo quedaría el cubo formado?</item>
 
 
 
@@ -438,6 +441,9 @@
         <!--213--><item>A)</item>
         <!--214--><item>A)</item>
         <!--215--><item>A)</item>
+        <!--216--><item>A)La 1 y la 3</item>
+        <!--217--><item>A)</item>
+        <!--218--><item>A)</item>
 
     </array>
     
@@ -657,6 +663,9 @@
         <!--213--><item>B)</item>
         <!--214--><item>B)</item>
         <!--215--><item>B)</item>
+        <!--216--><item>B)La 2 y la 3</item>
+        <!--217--><item>B)</item>
+        <!--218--><item>B)</item>
 
     </array>
     
@@ -876,6 +885,9 @@
         <!--213--><item>C)</item>
         <!--214--><item>C)</item>
         <!--215--><item>C)</item>
+        <!--216--><item>C)La 1 y la 5</item>
+        <!--217--><item>C)</item>
+        <!--218--><item>C)</item>
 
     </array>
     
@@ -1095,6 +1107,9 @@
         <!--213--><item>D)</item>
         <!--214--><item>D)</item>
         <!--215--><item>D)</item>
+        <!--216--><item>D)La 1 y la 6</item>
+        <!--217--><item>D)</item>
+        <!--218--><item>D)</item>
 
     </array>
     
@@ -1314,6 +1329,9 @@
         <!--213--><item>C)</item>
         <!--214--><item>B)</item>
         <!--215--><item>C)</item>
+        <!--216--><item>D)La 1 y la 6</item>
+        <!--217--><item>D)</item>
+        <!--218--><item>C)</item>
 
 		
     </array>
@@ -1534,6 +1552,10 @@
         <!--213--><item></item>
         <!--214--><item></item>
         <!--215--><item></item>
+        <!--216--><item></item>
+        <!--217--><item></item>
+        <!--218--><item></item>
+
     </array>
     
     
@@ -1755,6 +1777,9 @@
         <!--213--><item>espp213</item>
         <!--214--><item></item>
         <!--215--><item>espp215</item>
+        <!--216--><item>espp216</item>
+        <!--217--><item>espp217</item>
+        <!--218--><item>espp218</item>
 
     </array>
     
@@ -1974,6 +1999,9 @@
         <!--213--><item>espp213ra</item>
         <!--214--><item>espp214ra</item>
         <!--215--><item>espp215ra</item>
+        <!--216--><item></item>
+        <!--217--><item>espp217ra</item>
+        <!--218--><item>espp218ra</item>
 
     </array>
     
@@ -2193,6 +2221,10 @@
         <!--213--><item>espp213rb</item>
         <!--214--><item>espp214rb</item>
         <!--215--><item>espp215rb</item>
+        <!--216--><item></item>
+        <!--217--><item>espp217rb</item>
+        <!--218--><item>espp218rb</item>
+
     </array>
     
     <array name="imgCespacial">
@@ -2411,6 +2443,10 @@
         <!--213--><item>espp213rc</item>
         <!--214--><item>espp214rc</item>
         <!--215--><item>espp215rc</item>
+        <!--216--><item></item>
+        <!--217--><item>espp217rc</item>
+        <!--218--><item>espp218rc</item>
+
     </array>
     
     <array name="imgDespacial">
@@ -2629,6 +2665,10 @@
         <!--213--><item>espp213rd</item>
         <!--214--><item>espp214rd</item>
         <!--215--><item>espp215rd</item>
+        <!--216--><item></item>
+        <!--217--><item>espp217rd</item>
+        <!--218--><item>espp218rd</item>
+
     </array>
     
     <array name="imgSolespacial">
@@ -2847,6 +2887,10 @@
         <!--213--><item>espp213rc</item>
         <!--214--><item>espp214rb</item>
         <!--215--><item>espp215rc</item>
+        <!--216--><item></item>
+        <!--217--><item>espp217rd</item>
+        <!--218--><item>espp218rc</item>
+
     </array>
     
     <array name="imgExpliespacial">
@@ -3065,5 +3109,9 @@
         <!--213--><item></item>
         <!--214--><item></item>
         <!--215--><item></item>
+        <!--216--><item>espp216exp</item>
+        <!--217--><item>espp217exp</item>
+        <!--218--><item></item>
+
     </array>
 </resources>
