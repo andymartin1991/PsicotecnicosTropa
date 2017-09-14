@@ -44,6 +44,9 @@ public class main_principal extends Activity {
     int textlength = 0;
     String[] listview_array = new String[0];
     URLConnection conn = null;
+    String Correo="";
+    String Password="";
+    String Academia="";
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -552,6 +555,9 @@ public class main_principal extends Activity {
                                 Thread.sleep(500);
                             } catch (InterruptedException e) {
                             }
+                            Correo="";
+                            Password="";
+                            Academia="";
                             handler.post(runnable);
                             entra[0] = true;
                         }
@@ -669,11 +675,10 @@ public class main_principal extends Activity {
         builder2.setView(textEntryView);
         builder2.setIcon(getResources().getDrawable(R.drawable.iexc));
         builder2.setTitle(getString(R.string.atencion));
+        builder2.setCancelable(false);
         builder2.setPositiveButton("ok", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int whichButton) {
-                String Correo="";
-                String Password="";
-                String Academia="";
+
                 if(correo.getText().toString() != null && !correo.getText().toString().equals("")){
                     Correo = correo.getText().toString();
                 }
@@ -690,10 +695,18 @@ public class main_principal extends Activity {
                     dialogrepetir();
                 }else{
                     Toast mensaje = Toast.makeText(getApplicationContext(),
-                            "enviando", Toast.LENGTH_SHORT);
+                            "Enviando...", Toast.LENGTH_SHORT);
                     mensaje.show();
 
+                    Bundle parmetros = new Bundle();
+                    parmetros.putString("correo", Correo);
+                    parmetros.putString("pass", Password);
+                    parmetros.putString("academia", Academia);
+                    parmetros.putString("nameacademia", search.getText().toString());
 
+                    Intent i = new Intent(main_principal.this, main_academia.class);
+                    i.putExtras(parmetros);
+                    startActivity(i);
                 }
             }
         });

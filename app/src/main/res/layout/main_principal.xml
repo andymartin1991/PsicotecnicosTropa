@@ -529,7 +529,7 @@
                         android:layout_weight="1"
                         android:gravity="center_horizontal|center"
                         android:orientation="horizontal"
-                        android:visibility="gone">
+                        android:visibility="visible">
 
                         <LinearLayout
                             android:layout_width="match_parent"

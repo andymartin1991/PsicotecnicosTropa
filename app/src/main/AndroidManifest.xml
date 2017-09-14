@@ -43,6 +43,7 @@
         <activity android:name=".main_ayuda"></activity>
         <activity android:name=".main_subevolucion"></activity>
         <activity android:name=".main_preguntasDESARROLLO"></activity>
+        <activity android:name=".main_academia"></activity>
     </application>
 
 </manifest>
