@@ -59,9 +59,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
             android:layout_toLeftOf="@+id/conta"
             android:background="@drawable/boton_menu"
-            android:layout_margin="5dp"
             android:text="&lt;--"
             android:textColor="#fff" />
 
@@ -134,11 +134,41 @@
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
-                            <ImageView
-                                android:id="@+id/prohibido"
+                            <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="48dp"
-                                app:srcCompat="@drawable/prohibido" />
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/ver"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/boton_menu"
+                                    android:drawableBottom="@drawable/ojo"
+                                    android:text="Ver"
+                                    android:textColor="@color/BLANCO"
+                                    android:visibility="gone" />
+
+                                <ImageView
+                                    android:id="@+id/prohibido"
+                                    android:layout_width="118dp"
+                                    android:layout_height="48dp"
+                                    app:srcCompat="@drawable/prohibido"
+                                    android:layout_weight="4.51" />
+
+                                <Button
+                                    android:id="@+id/finish"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/boton_menu"
+                                    android:drawableBottom="@drawable/bandera"
+                                    android:text="Nota"
+                                    android:textColor="@color/BLANCO"
+                                    android:visibility="gone" />
+                            </LinearLayout>
 
                             <TextView
                                 android:id="@+id/pregunta"
@@ -275,16 +305,26 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
-                            <TextView
-                                android:id="@+id/expl"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="explicacion" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
 
-                            <ImageView
-                                android:id="@+id/imgExp"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" />
+                                <TextView
+                                    android:id="@+id/expl"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="explicacion" />
+
+                                <ImageView
+                                    android:id="@+id/imgExp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                            </LinearLayout>
+
                         </RelativeLayout>
                     </LinearLayout>
                 </LinearLayout>
