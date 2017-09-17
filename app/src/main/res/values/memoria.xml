@@ -250,6 +250,10 @@
         <!--246--><item>¿Cuál de las cifras era el más grande de tamaño?</item>
         <!--247--><item>¿Qué figura no estaba repetida?</item>
         <!--248--><item>¿Cuántas flechas hacia abajo habían?</item>
+        <!--249--><item>¿Qué imagen es la que apareció?</item>
+        <!--250--><item>¿Qué imagen es la que apareció?</item>
+        <!--251--><item>¿Qué imagen es la que apareció?</item>
+
     </array>
     
     <array name="resAmemoria">
@@ -501,6 +505,10 @@
         <!--246--><item>A)3</item>
         <!--247--><item>A)Cuadrado</item>
         <!--248--><item>A)0</item>
+        <!--249--><item>A)</item>
+        <!--250--><item>A)</item>
+        <!--251--><item>A)</item>
+
     </array>
     
     <array name="resBmemoria">
@@ -752,6 +760,10 @@
         <!--246--><item>B)10</item>
         <!--247--><item>B)Rectángulo</item>
         <!--248--><item>B)1</item>
+        <!--249--><item>B)</item>
+        <!--250--><item>B)</item>
+        <!--251--><item>B)</item>
+
     </array>
     
     <array name="resCmemoria">
@@ -1003,6 +1015,10 @@
         <!--246--><item>C)40</item>
         <!--247--><item>C)Círculo</item>
         <!--248--><item>C)2</item>
+        <!--249--><item>C)</item>
+        <!--250--><item>C)</item>
+        <!--251--><item>C)</item>
+
     </array>
     
     <array name="resDmemoria">
@@ -1254,7 +1270,10 @@
         <!--246--><item>D)33</item>
         <!--247--><item>D)Pentágono</item>
         <!--248--><item>D)3</item>
-		
+        <!--249--><item>D)</item>
+        <!--250--><item>D)</item>
+        <!--251--><item>D)</item>
+
     </array>
     
     <array name="solmemoria">
@@ -1506,6 +1525,10 @@
         <!--246--><item>D)33</item>
         <!--247--><item>A)Cuadrado</item>
         <!--248--><item>A)0</item>
+        <!--249--><item>C)</item>
+        <!--250--><item>B)</item>
+        <!--251--><item>A)</item>
+
     </array>
     
     <array name="expliSolmemoria">
@@ -1757,6 +1780,10 @@
         <!--246--><item></item>
         <!--247--><item></item>
         <!--248--><item></item>
+        <!--249--><item></item>
+        <!--250--><item></item>
+        <!--251--><item></item>
+
     </array>
     
     
@@ -2011,6 +2038,10 @@
         <!--246--><item>memp246</item>
         <!--247--><item>memp247</item>
         <!--248--><item>memp248</item>
+        <!--249--><item>memp249</item>
+        <!--250--><item>memp250</item>
+        <!--251--><item>memp251</item>
+
     </array>
     
     <array name="imgAmemoria">
@@ -2262,6 +2293,9 @@
         <!--246--><item></item>
         <!--247--><item></item>
         <!--248--><item></item>
+        <!--249--><item>memp249ra</item>
+        <!--250--><item>memp250ra</item>
+        <!--251--><item>memp251ra</item>
 
     </array>
     
@@ -2514,6 +2548,10 @@
         <!--246--><item></item>
         <!--247--><item></item>
         <!--248--><item></item>
+        <!--249--><item>memp249rb</item>
+        <!--250--><item>memp250rb</item>
+        <!--251--><item>memp251rb</item>
+
     </array>
     
     <array name="imgCmemoria">
@@ -2765,6 +2803,9 @@
         <!--246--><item></item>
         <!--247--><item></item>
         <!--248--><item></item>
+        <!--249--><item>memp249rc</item>
+        <!--250--><item>memp250rc</item>
+        <!--251--><item>memp251rc</item>
 
     </array>
     
@@ -3017,6 +3058,9 @@
         <!--246--><item></item>
         <!--247--><item></item>
         <!--248--><item></item>
+        <!--249--><item>memp249rd</item>
+        <!--250--><item>memp250rd</item>
+        <!--251--><item>memp251rd</item>
 
     </array>
     
@@ -3269,6 +3313,9 @@
         <!--246--><item></item>
         <!--247--><item></item>
         <!--248--><item></item>
+        <!--249--><item>memp249rc</item>
+        <!--250--><item>memp250rb</item>
+        <!--251--><item>memp251ra</item>
 
 
     </array>
@@ -3522,6 +3569,9 @@
         <!--246--><item>memp246exp</item>
         <!--247--><item>memp247exp</item>
         <!--248--><item>memp248exp</item>
+        <!--249--><item>memp249</item>
+        <!--250--><item>memp250</item>
+        <!--251--><item>memp251</item>
 
 
     </array>
