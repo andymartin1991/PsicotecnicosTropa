@@ -220,6 +220,10 @@
         <!--216--><item>¿Qué imagen le falta?</item>
         <!--217--><item>¿Cuál se corresponde con la imagen?</item>
         <!--218--><item>¿Qué palabra tiene menos letras?</item>
+        <!--219--><item>¿Cuál de las imágenes es igual a la dada?</item>
+        <!--220--><item>¿Cuántas diferencias hay?</item>
+        <!--221--><item>¿Cuántas marcas de huella hay?</item>
+
     </array>
     
     <array name="resAperceptiva">
@@ -441,6 +445,10 @@
         <!--216--><item>A)</item>
         <!--217--><item>A)</item>
         <!--218--><item>A)Elefante</item>
+        <!--219--><item>A)</item>
+        <!--220--><item>A)1</item>
+        <!--221--><item>A)50</item>
+
     </array>
     
     <array name="resBperceptiva">
@@ -662,6 +670,10 @@
         <!--216--><item>B)</item>
         <!--217--><item>B)</item>
         <!--218--><item>B)Serpiente</item>
+        <!--219--><item>B)</item>
+        <!--220--><item>B)2</item>
+        <!--221--><item>B)45</item>
+
     </array>
     
     <array name="resCperceptiva">
@@ -883,6 +895,10 @@
         <!--216--><item>C)</item>
         <!--217--><item>C)</item>
         <!--218--><item>C)Continente</item>
+        <!--219--><item>C)</item>
+        <!--220--><item>C)3</item>
+        <!--221--><item>C)48</item>
+
     </array>
     
     <array name="resDperceptiva">
@@ -1104,6 +1120,10 @@
         <!--216--><item>D)</item>
         <!--217--><item>D)</item>
         <!--218--><item>D)Superficie</item>
+        <!--219--><item>D)</item>
+        <!--220--><item>D)Ninguna</item>
+        <!--221--><item>D)46</item>
+
     </array>
     
     <array name="solperceptiva">
@@ -1325,6 +1345,10 @@
         <!--216--><item>C)</item>
         <!--217--><item>A)</item>
         <!--218--><item>A)Elefante</item>
+        <!--219--><item>D)</item>
+        <!--220--><item>B)2</item>
+        <!--221--><item>D)46</item>
+
     </array>
     
     <array name="expliSolperceptiva">
@@ -1546,6 +1570,9 @@
         <!--216--><item></item>
         <!--217--><item></item>
         <!--218--><item>Elefante tiene 8 letras, Serpiente tiene 9 y los otros dos, 10.</item>
+        <!--219--><item></item>
+        <!--220--><item></item>
+        <!--221--><item></item>
 
     </array>
     
@@ -1771,6 +1798,9 @@
         <!--216--><item>perp216</item>
         <!--217--><item>perp217</item>
         <!--218--><item></item>
+        <!--219--><item>perp219</item>
+        <!--220--><item>perp220</item>
+        <!--221--><item>perp221</item>
 
     </array>
     
@@ -1993,6 +2023,10 @@
         <!--216--><item>perp216ra</item>
         <!--217--><item>perp217ra</item>
         <!--218--><item></item>
+        <!--219--><item>perp219ra</item>
+        <!--220--><item></item>
+        <!--221--><item></item>
+
     </array>
     
     <array name="imgBperceptiva">
@@ -2214,6 +2248,9 @@
         <!--216--><item>perp216rb</item>
         <!--217--><item>perp217rb</item>
         <!--218--><item></item>
+        <!--219--><item>perp219rb</item>
+        <!--220--><item></item>
+        <!--221--><item></item>
 
     </array>
     
@@ -2436,6 +2473,10 @@
         <!--216--><item>perp216rc</item>
         <!--217--><item>perp217rc</item>
         <!--218--><item></item>
+        <!--219--><item>perp219rc</item>
+        <!--220--><item></item>
+        <!--221--><item></item>
+
     </array>
     
     <array name="imgDperceptiva">
@@ -2657,6 +2698,10 @@
         <!--216--><item>perp216rd</item>
         <!--217--><item>perp217rd</item>
         <!--218--><item></item>
+        <!--219--><item>perp219rd</item>
+        <!--220--><item></item>
+        <!--221--><item></item>
+
     </array>
     
     <array name="imgSolperceptiva">
@@ -2878,6 +2923,9 @@
         <!--216--><item>perp216rc</item>
         <!--217--><item>perp217ra</item>
         <!--218--><item></item>
+        <!--219--><item>perp219rd</item>
+        <!--220--><item></item>
+        <!--221--><item></item>
 
     </array>
     
@@ -3100,6 +3148,10 @@
         <!--216--><item>perp216exp</item>
         <!--217--><item>perp217exp</item>
         <!--218--><item></item>
+        <!--219--><item>perp219exp</item>
+        <!--220--><item>perp220exp</item>
+        <!--221--><item>perp221exp</item>
+
 
     </array>
 </resources>
