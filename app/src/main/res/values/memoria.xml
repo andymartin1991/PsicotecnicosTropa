@@ -263,7 +263,7 @@
         <!--004--><item>A)16</item>
         <!--005--><item>A)2468101214</item>
 		<!--006--><item>A)Buey, Vaca, Verdura</item>
-        <!--007--><item>A)225336112</item>
+        <!--007--><item>A)25336112</item>
         <!--008--><item>A)Verde con letras verde</item>
         <!--009--><item>A)14</item>
         <!--010--><item>A)4</item>
@@ -518,7 +518,7 @@
         <!--004--><item>B)18</item>
         <!--005--><item>B)2641810124</item>
 		<!--006--><item>B)Buey, Vaca, Fruta</item>
-        <!--007--><item>B)242363121</item>
+        <!--007--><item>B)24236312</item>
         <!--008--><item>B)Verde con letras rosas</item>
         <!--009--><item>B)10</item>
         <!--010--><item>B)2</item>
@@ -773,14 +773,14 @@
         <!--004--><item>C)14</item>
         <!--005--><item>C)2648101114</item>
 		<!--006--><item>C)Vaca, Buey, Verdura</item>
-        <!--007--><item>C)224366112</item>
+        <!--007--><item>C)24366112</item>
         <!--008--><item>C)Verde con letras amarillas</item>
         <!--009--><item>C)16</item>
         <!--010--><item>C)9</item>
         <!--011--><item>C)2467845515</item>
         <!--012--><item>C)Extática</item>
         <!--013--><item>C)Negro</item>
-        <!--014--><item>C)No habían cuadrados</item>
+        <!--014--><item>C)No habían cuadrados.</item>
         <!--015--><item>C)3025101505</item>
         <!--016--><item>C)Cachorro</item>
         <!--017--><item>C)El azul</item>
@@ -1028,7 +1028,7 @@
         <!--004--><item>D)20</item>
         <!--005--><item>D)2468101114</item>
 		<!--006--><item>D)Vaca, Buey, Fruta</item>
-        <!--007--><item>D)224336112</item>
+        <!--007--><item>D)24336112</item>
         <!--008--><item>D)Rosa con letras verdes</item>
         <!--009--><item>D)12</item>
         <!--010--><item>D)6</item>
@@ -1283,7 +1283,7 @@
         <!--004--><item>A)16</item>
         <!--005--><item>D)2468101114</item>
 		<!--006--><item>C)Vaca, Buey, Verdura</item>
-        <!--007--><item>D)224336112</item>
+        <!--007--><item>D)24336112</item>
         <!--008--><item>A)Verde con letras verde</item>
         <!--009--><item>D)12</item>
         <!--010--><item>A)4</item>
@@ -1508,7 +1508,7 @@
         <!--229--><item>B)2</item>
         <!--230--><item>A)Sí</item>
         <!--231--><item>B)No</item>
-        <!--232--><item>C)65</item>
+        <!--232--><item>D)47</item>
         <!--233--><item>B)Azul</item>
         <!--234--><item>C)6</item>
         <!--235--><item>A)F</item>
@@ -1763,7 +1763,7 @@
         <!--229--><item></item>
         <!--230--><item></item>
         <!--231--><item>Las letras eran: NODRDUASE</item>
-        <!--232--><item>A=30, B=-10, D=45 => 30+45+(-10) = 75-10=65.</item>
+        <!--232--><item>A=30, B=-10, D=27 => 30+27+(-10) = 57-10=47.</item>
         <!--233--><item></item>
         <!--234--><item></item>
         <!--235--><item></item>
@@ -3552,7 +3552,7 @@
         <!--229--><item>memp229</item>
         <!--230--><item>memp230</item>
         <!--231--><item>memp231</item>
-        <!--232--><item>memp232</item>
+        <!--232--><item>memp232exp</item>
         <!--233--><item>memp233</item>
         <!--234--><item>memp234</item>
         <!--235--><item>memp235</item>
