@@ -236,7 +236,9 @@
         <!--232--><item>¿Cuál sigue la serie?\n24, 27, 26, 29, ?</item>
         <!--233--><item>¿Cuál sigue la serie?</item>
         <!--234--><item>¿Cuál sigue la serie?</item>
-
+        <!--235--><item>¿Qué opción es más correcta para: ___ es a 888 como 55 es a ___?</item>
+        <!--236--><item>¿Cuánto es la multiplicación del valor de los interrogantes?</item>
+        <!--237--><item></item>
     </array>
     
     <array name="resAabstrapto">
@@ -474,7 +476,9 @@
         <!--232--><item>A)32</item>
         <!--233--><item>A)</item>
         <!--234--><item>A)</item>
-
+        <!--235--><item>A)8 - 555</item>
+        <!--236--><item>A)75</item>
+        <!--237--><item>A)J 30/66</item>
     </array>
     
     <array name="resBabstrapto">
@@ -712,7 +716,9 @@
         <!--232--><item>B)28</item>
         <!--233--><item>B)</item>
         <!--234--><item>B)</item>
-
+        <!--235--><item>B)555 - 88</item>
+        <!--236--><item>B)80</item>
+        <!--237--><item>B)L 36/60</item>
     </array>
     
     <array name="resCabstrapto">
@@ -950,7 +956,9 @@
         <!--232--><item>C)30</item>
         <!--233--><item>C)</item>
         <!--234--><item>C)</item>
-
+        <!--235--><item>C)88 - 555</item>
+        <!--236--><item>C)85</item>
+        <!--237--><item>C)M 36/66</item>
     </array>
     
     <array name="resDabstrapto">
@@ -1188,7 +1196,9 @@
         <!--232--><item>D)31</item>
         <!--233--><item>D)</item>
         <!--234--><item>D)</item>
-
+        <!--235--><item>D)8 - 5858</item>
+        <!--236--><item>D)90</item>
+        <!--237--><item>D)M 30/60</item>
 
     </array>
     
@@ -1427,7 +1437,9 @@
         <!--232--><item>B)28</item>
         <!--233--><item>C)</item>
         <!--234--><item>A)</item>
-
+        <!--235--><item>C)88 - 555</item>
+        <!--236--><item>B)80</item>
+        <!--237--><item>C)M 36/66</item>
     </array>
     
     <array name="expliSolabstrapto">
@@ -1665,7 +1677,9 @@
         <!--232--><item>+3, -1</item>
         <!--233--><item>La serie es +2 empezando por la esquina inferior derecha, que será el mismo número del primero del anterior.</item>
         <!--234--><item>La raya va girando hacia la derecha y cambiando de color alternativamente.</item>
-
+        <!--235--><item>La más correcta es C, porque pasa de 2 cifras a 3.</item>
+        <!--236--><item>El cuadrado es el resultado de la multiplicación de los círculos:\n9x7=63\n3x16=48\n12x5=60\nLos valores que se buscaban eran 16 y 5 => 16x5=80.</item>
+        <!--237--><item>En las fracciones:\nNumerador: va restando -10, -9, -8, -7,... hasta llegar a -2.\nDenominador: va sumando +3, +4, +5, +6,... hasta llegar a +11.\nEn el abecedario, los pares e impares van avanzando independientemente.</item>
     </array>
     
     
@@ -1906,6 +1920,9 @@
         <!--232--><item></item>
         <!--233--><item>absp233</item>
         <!--234--><item>absp234</item>
+        <!--235--><item></item>
+        <!--236--><item>absp236</item>
+        <!--237--><item>absp237</item>
 
     </array>
     
@@ -2144,6 +2161,9 @@
         <!--232--><item></item>
         <!--233--><item>absp233ra</item>
         <!--234--><item>absp234ra</item>
+        <!--235--><item></item>
+        <!--236--><item></item>
+        <!--237--><item></item>
 
     </array>
     
@@ -2382,7 +2402,9 @@
         <!--232--><item></item>
         <!--233--><item>absp233rb</item>
         <!--234--><item>absp234rb</item>
-
+        <!--235--><item></item>
+        <!--236--><item></item>
+        <!--237--><item></item>
     </array>
     
     <array name="imgCabstrapto">
@@ -2620,7 +2642,9 @@
         <!--232--><item></item>
         <!--233--><item>absp233rc</item>
         <!--234--><item>absp234rc</item>
-
+        <!--235--><item></item>
+        <!--236--><item></item>
+        <!--237--><item></item>
     </array>
     
     <array name="imgDabstrapto">
@@ -2858,7 +2882,9 @@
         <!--232--><item></item>
         <!--233--><item>absp233rd</item>
         <!--234--><item>absp234rd</item>
-
+        <!--235--><item></item>
+        <!--236--><item></item>
+        <!--237--><item></item>
     </array>
     
     <array name="imgSolabstrapto">
@@ -3096,7 +3122,9 @@
         <!--232--><item></item>
         <!--233--><item>absp233rc</item>
         <!--234--><item>absp234ra</item>
-
+        <!--235--><item></item>
+        <!--236--><item></item>
+        <!--237--><item></item>
     </array>
     
     <array name="imgExpliabstrapto">
@@ -3334,7 +3362,9 @@
         <!--232--><item></item>
         <!--233--><item>absp233exp</item>
         <!--234--><item>absp234exp</item>
-
+        <!--235--><item></item>
+        <!--236--><item>absp236exp</item>
+        <!--237--><item>absp237exp</item>
 
     </array>
 </resources>
