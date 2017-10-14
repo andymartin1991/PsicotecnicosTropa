@@ -223,6 +223,10 @@
         <!--219--><item>¿Cuál de las imágenes es igual a la dada?</item>
         <!--220--><item>¿Cuántas diferencias hay?</item>
         <!--221--><item>¿Cuántas marcas de huella hay?</item>
+        <!--222--><item>¿Cómo se vería la imagen reflejada en el agua?</item>
+        <!--223--><item>¿Cómo se vería la imagen reflejada en el agua?</item>
+        <!--224--><item>¿Cuántas barras hay que quitar para que el rojo no tenga ninguna encima?</item>
+
 
     </array>
     
@@ -448,6 +452,9 @@
         <!--219--><item>A)</item>
         <!--220--><item>A)1</item>
         <!--221--><item>A)50</item>
+        <!--222--><item>A)</item>
+        <!--223--><item>A)</item>
+        <!--224--><item>A)4</item>
 
     </array>
     
@@ -673,6 +680,9 @@
         <!--219--><item>B)</item>
         <!--220--><item>B)2</item>
         <!--221--><item>B)45</item>
+        <!--222--><item>B)</item>
+        <!--223--><item>B)</item>
+        <!--224--><item>B)5</item>
 
     </array>
     
@@ -898,6 +908,9 @@
         <!--219--><item>C)</item>
         <!--220--><item>C)3</item>
         <!--221--><item>C)48</item>
+        <!--222--><item>C)</item>
+        <!--223--><item>C)</item>
+        <!--224--><item>C)6</item>
 
     </array>
     
@@ -1123,6 +1136,9 @@
         <!--219--><item>D)</item>
         <!--220--><item>D)Ninguna</item>
         <!--221--><item>D)46</item>
+        <!--222--><item>D)</item>
+        <!--223--><item>D)</item>
+        <!--224--><item>D)3</item>
 
     </array>
     
@@ -1348,6 +1364,9 @@
         <!--219--><item>D)</item>
         <!--220--><item>B)2</item>
         <!--221--><item>D)46</item>
+        <!--222--><item>C)</item>
+        <!--223--><item>B)</item>
+        <!--224--><item>A)4</item>
 
     </array>
     
@@ -1573,6 +1592,9 @@
         <!--219--><item></item>
         <!--220--><item></item>
         <!--221--><item></item>
+        <!--222--><item></item>
+        <!--223--><item></item>
+        <!--224--><item></item>
 
     </array>
     
@@ -1801,6 +1823,9 @@
         <!--219--><item>perp219</item>
         <!--220--><item>perp220</item>
         <!--221--><item>perp221</item>
+        <!--222--><item>perp222</item>
+        <!--223--><item>perp223</item>
+        <!--224--><item>perp224</item>
 
     </array>
     
@@ -2026,6 +2051,9 @@
         <!--219--><item>perp219ra</item>
         <!--220--><item></item>
         <!--221--><item></item>
+        <!--222--><item>perp222ra</item>
+        <!--223--><item>perp223ra</item>
+        <!--224--><item></item>
 
     </array>
     
@@ -2251,6 +2279,9 @@
         <!--219--><item>perp219rb</item>
         <!--220--><item></item>
         <!--221--><item></item>
+        <!--222--><item>perp222rb</item>
+        <!--223--><item>perp223rb</item>
+        <!--224--><item></item>
 
     </array>
     
@@ -2476,6 +2507,9 @@
         <!--219--><item>perp219rc</item>
         <!--220--><item></item>
         <!--221--><item></item>
+        <!--222--><item>perp222rc</item>
+        <!--223--><item>perp223rc</item>
+        <!--224--><item></item>
 
     </array>
     
@@ -2701,6 +2735,9 @@
         <!--219--><item>perp219rd</item>
         <!--220--><item></item>
         <!--221--><item></item>
+        <!--222--><item>perp222rd</item>
+        <!--223--><item>perp223rd</item>
+        <!--224--><item></item>
 
     </array>
     
@@ -2926,6 +2963,9 @@
         <!--219--><item>perp219rd</item>
         <!--220--><item></item>
         <!--221--><item></item>
+        <!--222--><item>perp222rc</item>
+        <!--223--><item>perp223rb</item>
+        <!--224--><item></item>
 
     </array>
     
@@ -3151,6 +3191,9 @@
         <!--219--><item>perp219exp</item>
         <!--220--><item>perp220exp</item>
         <!--221--><item>perp221exp</item>
+        <!--222--><item>perp222exp</item>
+        <!--223--><item>perp223exp</item>
+        <!--224--><item>perp224exp</item>
 
 
     </array>
