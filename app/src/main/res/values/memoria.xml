@@ -2,7 +2,7 @@
 <resources>
     
     <array name="prememoria">
-        <!--001--><item>¿En cuál aparecía en el centro?</item>
+        <!--001--><item>¿Cuál aparecía en el centro?</item>
         <!--002--><item>¿Qué secuencia apareció?</item>
         <!--003--><item>¿Qué color se repetía más veces?</item>
         <!--004--><item>¿Cuántos círculos habían?</item>
@@ -253,6 +253,9 @@
         <!--249--><item>¿Qué imagen es la que apareció?</item>
         <!--250--><item>¿Qué imagen es la que apareció?</item>
         <!--251--><item>¿Qué imagen es la que apareció?</item>
+        <!--252--><item>¿Qué ficha era la que estaba entre los símbolos de Música y Huella?</item>
+        <!--253--><item>¿Cuántos conejos miraban hacia la derecha?</item>
+        <!--254--><item>¿Se repite alguna figura con su símbolo?</item>
 
     </array>
     
@@ -508,6 +511,9 @@
         <!--249--><item>A)</item>
         <!--250--><item>A)</item>
         <!--251--><item>A)</item>
+        <!--252--><item>A)3-Corazón</item>
+        <!--253--><item>A)3</item>
+        <!--254--><item>A)No</item>
 
     </array>
     
@@ -763,6 +769,9 @@
         <!--249--><item>B)</item>
         <!--250--><item>B)</item>
         <!--251--><item>B)</item>
+        <!--252--><item>B)7-Bombilla</item>
+        <!--253--><item>B)2</item>
+        <!--254--><item>B)Sí, el corazón con un +.</item>
 
     </array>
     
@@ -1018,6 +1027,9 @@
         <!--249--><item>C)</item>
         <!--250--><item>C)</item>
         <!--251--><item>C)</item>
+        <!--252--><item>C)2-Bombilla</item>
+        <!--253--><item>C)1</item>
+        <!--254--><item>C)Sí, el círculo con un #.</item>
 
     </array>
     
@@ -1273,6 +1285,9 @@
         <!--249--><item>D)</item>
         <!--250--><item>D)</item>
         <!--251--><item>D)</item>
+        <!--252--><item>D)7-Tijeras</item>
+        <!--253--><item>D)4</item>
+        <!--254--><item>D)Sí, el círculo con una X.</item>
 
     </array>
     
@@ -1528,6 +1543,9 @@
         <!--249--><item>C)</item>
         <!--250--><item>B)</item>
         <!--251--><item>A)</item>
+        <!--252--><item>C)2-Bombilla</item>
+        <!--253--><item>B)2</item>
+        <!--254--><item>D)Sí, el círculo con una X.</item>
 
     </array>
     
@@ -1783,6 +1801,9 @@
         <!--249--><item></item>
         <!--250--><item></item>
         <!--251--><item></item>
+        <!--252--><item></item>
+        <!--253--><item></item>
+        <!--254--><item></item>
 
     </array>
     
@@ -2041,6 +2062,9 @@
         <!--249--><item>memp249</item>
         <!--250--><item>memp250</item>
         <!--251--><item>memp251</item>
+        <!--252--><item>memp252</item>
+        <!--253--><item>memp253</item>
+        <!--254--><item>memp254</item>
 
     </array>
     
@@ -2296,6 +2320,9 @@
         <!--249--><item>memp249ra</item>
         <!--250--><item>memp250ra</item>
         <!--251--><item>memp251ra</item>
+        <!--252--><item></item>
+        <!--253--><item></item>
+        <!--254--><item></item>
 
     </array>
     
@@ -2551,6 +2578,9 @@
         <!--249--><item>memp249rb</item>
         <!--250--><item>memp250rb</item>
         <!--251--><item>memp251rb</item>
+        <!--252--><item></item>
+        <!--253--><item></item>
+        <!--254--><item></item>
 
     </array>
     
@@ -2806,6 +2836,9 @@
         <!--249--><item>memp249rc</item>
         <!--250--><item>memp250rc</item>
         <!--251--><item>memp251rc</item>
+        <!--252--><item></item>
+        <!--253--><item></item>
+        <!--254--><item></item>
 
     </array>
     
@@ -3061,6 +3094,9 @@
         <!--249--><item>memp249rd</item>
         <!--250--><item>memp250rd</item>
         <!--251--><item>memp251rd</item>
+        <!--252--><item></item>
+        <!--253--><item></item>
+        <!--254--><item></item>
 
     </array>
     
@@ -3316,6 +3352,9 @@
         <!--249--><item>memp249rc</item>
         <!--250--><item>memp250rb</item>
         <!--251--><item>memp251ra</item>
+        <!--252--><item></item>
+        <!--253--><item></item>
+        <!--254--><item></item>
 
 
     </array>
@@ -3572,6 +3611,9 @@
         <!--249--><item>memp249</item>
         <!--250--><item>memp250</item>
         <!--251--><item>memp251</item>
+        <!--252--><item>memp252exp</item>
+        <!--253--><item>memp253exp</item>
+        <!--254--><item>memp254exp</item>
 
 
     </array>
