@@ -220,6 +220,9 @@
         <!--216--><item>¿Cuáles de las imágenes son iguales?</item>
         <!--217--><item>¿Cuál es la imagen dada con los colores invertidos?</item>
         <!--218--><item>¿Cómo quedaría el cubo formado?</item>
+        <!--219--><item>¿Cómo quedaría el papel desplegado siguiendo las líneas,de manera que al volverlo a doblar, todas las flechas coincidan?</item>
+        <!--220--><item>¿Cómo quedaría el cubo formado?</item>
+        <!--221--><item>¿Cuál se corresponde con la figura dada?</item>
 
 
 
@@ -444,6 +447,9 @@
         <!--216--><item>A)La 1 y la 3</item>
         <!--217--><item>A)</item>
         <!--218--><item>A)</item>
+        <!--219--><item>A)</item>
+        <!--220--><item>A)</item>
+        <!--221--><item>A)</item>
 
     </array>
     
@@ -666,6 +672,9 @@
         <!--216--><item>B)La 2 y la 3</item>
         <!--217--><item>B)</item>
         <!--218--><item>B)</item>
+        <!--219--><item>B)</item>
+        <!--220--><item>B)</item>
+        <!--221--><item>B)</item>
 
     </array>
     
@@ -888,6 +897,9 @@
         <!--216--><item>C)La 1 y la 5</item>
         <!--217--><item>C)</item>
         <!--218--><item>C)</item>
+        <!--219--><item>C)</item>
+        <!--220--><item>C)</item>
+        <!--221--><item>C)</item>
 
     </array>
     
@@ -1110,6 +1122,9 @@
         <!--216--><item>D)La 1 y la 6</item>
         <!--217--><item>D)</item>
         <!--218--><item>D)</item>
+        <!--219--><item>D)</item>
+        <!--220--><item>D)</item>
+        <!--221--><item>D)</item>
 
     </array>
     
@@ -1332,6 +1347,9 @@
         <!--216--><item>D)La 1 y la 6</item>
         <!--217--><item>D)</item>
         <!--218--><item>C)</item>
+        <!--219--><item>B)</item>
+        <!--220--><item>B)</item>
+        <!--221--><item>D)</item>
 
 		
     </array>
@@ -1555,6 +1573,9 @@
         <!--216--><item></item>
         <!--217--><item></item>
         <!--218--><item></item>
+        <!--219--><item></item>
+        <!--220--><item></item>
+        <!--221--><item>Hay que fijarse en el trozo que está encima de la base.</item>
 
     </array>
     
@@ -1780,6 +1801,9 @@
         <!--216--><item>espp216</item>
         <!--217--><item>espp217</item>
         <!--218--><item>espp218</item>
+        <!--219--><item>espp219</item>
+        <!--220--><item>espp220</item>
+        <!--221--><item>espp221</item>
 
     </array>
     
@@ -2002,6 +2026,9 @@
         <!--216--><item></item>
         <!--217--><item>espp217ra</item>
         <!--218--><item>espp218ra</item>
+        <!--219--><item>espp219ra</item>
+        <!--220--><item>espp220ra</item>
+        <!--221--><item>espp221ra</item>
 
     </array>
     
@@ -2224,6 +2251,9 @@
         <!--216--><item></item>
         <!--217--><item>espp217rb</item>
         <!--218--><item>espp218rb</item>
+        <!--219--><item>espp219rb</item>
+        <!--220--><item>espp220rb</item>
+        <!--221--><item>espp221rb</item>
 
     </array>
     
@@ -2446,6 +2476,9 @@
         <!--216--><item></item>
         <!--217--><item>espp217rc</item>
         <!--218--><item>espp218rc</item>
+        <!--219--><item>espp219rc</item>
+        <!--220--><item>espp220rc</item>
+        <!--221--><item>espp221rc</item>
 
     </array>
     
@@ -2668,6 +2701,9 @@
         <!--216--><item></item>
         <!--217--><item>espp217rd</item>
         <!--218--><item>espp218rd</item>
+        <!--219--><item>espp219rd</item>
+        <!--220--><item>espp220rd</item>
+        <!--221--><item>espp221rd</item>
 
     </array>
     
@@ -2890,6 +2926,9 @@
         <!--216--><item></item>
         <!--217--><item>espp217rd</item>
         <!--218--><item>espp218rc</item>
+        <!--219--><item>espp219rb</item>
+        <!--220--><item>espp220rb</item>
+        <!--221--><item>espp221rd</item>
 
     </array>
     
@@ -3112,6 +3151,9 @@
         <!--216--><item>espp216exp</item>
         <!--217--><item>espp217exp</item>
         <!--218--><item></item>
+        <!--219--><item>espp219exp</item>
+        <!--220--><item>espp220exp</item>
+        <!--221--><item>espp221exp</item>
 
     </array>
 </resources>
