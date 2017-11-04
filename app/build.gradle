@@ -7,8 +7,8 @@ android {
         applicationId 'com.naroh.tropaPsicotecnicoOficial'
         minSdkVersion 14
         targetSdkVersion 25
-        versionCode 113
-        versionName '6.0.17'
+        versionCode 114
+        versionName '6.0.18'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

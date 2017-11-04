@@ -8,7 +8,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.andym.psicotecnicostropa.dto.Notas;
@@ -24,6 +26,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.List;
 
 import static android.content.ContentValues.TAG;
@@ -39,6 +43,16 @@ public class main_evolucion extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_evolucion);
+
+        LinearLayout padre = (LinearLayout)findViewById(R.id.padre);
+        Calendar c1 = new GregorianCalendar();
+        int dia = c1.get(Calendar.DAY_OF_MONTH);
+        int mes = c1.get(Calendar.MONTH)+1;
+        if( (mes ==11 || mes ==12) || (mes ==1 && dia <=7)){
+            padre.setBackgroundResource(R.color.rojonavidad);
+        }else{
+
+        }
 
         final File ruta_sd;
         final TextView titulo = (TextView) findViewById(R.id.titulo);

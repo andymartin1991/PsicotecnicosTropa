@@ -15,6 +15,8 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -35,7 +37,9 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.List;
 
 /**
@@ -46,13 +50,24 @@ public class main_resultado_exam extends Activity {
 
     TextView mostrar, nota, notabar;
     EditText baremo;
-    Button calcular, compartir, introbar, guardar;
+    Button calcular, introbar, guardar;
+    LinearLayout compartir;
     Notas notas;
     static Preguntas[] bloqueverbal, bloquenumerico, bloqueespacial, bloquemecanico, bloqueperceptiva, bloquememoria, bloqueabstrapto;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_resultado_exam);
+
+        LinearLayout padre = (LinearLayout) findViewById(R.id.padre);
+        Calendar cc1 = new GregorianCalendar();
+        int dia = cc1.get(Calendar.DAY_OF_MONTH);
+        int mes = cc1.get(Calendar.MONTH)+1;
+        if( (mes ==11 || mes ==12) || (mes ==1 && dia <=7)){
+            padre.setBackgroundResource(R.color.rojonavidad);
+        }else{
+
+        }
 
         // orientacion pantalla
         Configuration config = getResources().getConfiguration();
@@ -423,7 +438,7 @@ public class main_resultado_exam extends Activity {
         });
 
 
-        compartir = (Button) findViewById(R.id.compartir);
+        compartir = (LinearLayout) findViewById(R.id.compartir);
         compartir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

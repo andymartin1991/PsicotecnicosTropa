@@ -12,6 +12,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -20,8 +23,12 @@ import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.Timer;
 import java.util.TimerTask;
+
+import static com.example.andym.psicotecnicostropa.R.drawable.splashnavideno;
 
 
 public class main_splash extends Activity {
@@ -36,6 +43,27 @@ public class main_splash extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.main_splash);
+
+        TextView mensaje = (TextView)findViewById(R.id.mensaje);
+
+        RelativeLayout padre = (RelativeLayout)findViewById(R.id.padre);
+        ImageView imagen = (ImageView)findViewById(R.id.imageView1);
+        Calendar c1 = new GregorianCalendar();
+
+        int dia = c1.get(Calendar.DAY_OF_MONTH);
+        int mes = c1.get(Calendar.MONTH)+1;
+
+
+        if( (mes ==11 || mes ==12) || (mes ==1 && dia <=7)){
+            imagen.setImageResource(R.drawable.splashnavideno);
+            padre.setBackgroundResource(R.color.rojonavidad);
+            mensaje.setText("Psicotecnicos Tropa\nte desea unas felices fiestas");
+        }else{
+            imagen.setImageResource(R.drawable.splash);
+        }
+
+
+
 
         mostrar();
     }

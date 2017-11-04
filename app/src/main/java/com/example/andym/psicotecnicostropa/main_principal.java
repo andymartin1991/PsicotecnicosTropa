@@ -18,7 +18,10 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.example.andym.psicotecnicostropa.dto.Preguntas;
@@ -35,6 +38,8 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.List;
 
 import static android.content.ContentValues.TAG;
@@ -51,6 +56,16 @@ public class main_principal extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_principal);
+
+        LinearLayout padre = (LinearLayout)findViewById(R.id.padre);
+        Calendar c1 = new GregorianCalendar();
+        int dia = c1.get(Calendar.DAY_OF_MONTH);
+        int mes = c1.get(Calendar.MONTH)+1;
+        if( (mes ==11 || mes ==12) || (mes ==1 && dia <=7)){
+            padre.setBackgroundResource(R.color.rojonavidad);
+        }else{
+
+        }
 
         final Button fatiga, aleatorio, trucos, contacta, examen, estudio, foro, facebook, twiter, instagran, informacion, evolucion, calcular, ayuda, pruebafisica, compartir, votar, patatas, academia;
 

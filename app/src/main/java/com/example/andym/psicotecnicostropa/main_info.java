@@ -7,10 +7,14 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.List;
 
 /**
@@ -24,6 +28,15 @@ public class main_info extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_info);
 
+        ScrollView padre = (ScrollView)findViewById(R.id.padre);
+        Calendar cc1 = new GregorianCalendar();
+        int dia = cc1.get(Calendar.DAY_OF_MONTH);
+        int mes = cc1.get(Calendar.MONTH)+1;
+        if( (mes ==11 || mes ==12) || (mes ==1 && dia <=7)){
+            padre.setBackgroundResource(R.color.rojonavidad);
+        }else{
+
+        }
 
         TextView num = (TextView) findViewById(R.id.num);
         TextView verb = (TextView) findViewById(R.id.verb);

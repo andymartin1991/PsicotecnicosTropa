@@ -7,12 +7,15 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.example.andym.psicotecnicostropa.dto.AdapterDirectivos;
 import com.example.andym.psicotecnicostropa.dto.menu_optTest;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 public class main_optTipoFatiga extends Activity {
 
@@ -22,6 +25,16 @@ public class main_optTipoFatiga extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_optipofatiga);
+
+        LinearLayout padre = (LinearLayout)findViewById(R.id.padre);
+        Calendar c1 = new GregorianCalendar();
+        int dia = c1.get(Calendar.DAY_OF_MONTH);
+        int mes = c1.get(Calendar.MONTH)+1;
+        if( (mes ==11 || mes ==12) || (mes ==1 && dia <=7)){
+            padre.setBackgroundResource(R.color.rojonavidad);
+        }else{
+
+        }
 
         this.setTitle(getString(R.string.test_bloque));
 

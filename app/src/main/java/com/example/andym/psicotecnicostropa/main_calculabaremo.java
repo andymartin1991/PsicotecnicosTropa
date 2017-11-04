@@ -8,6 +8,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,6 +16,8 @@ import android.widget.Toast;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStreamWriter;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 /**
  * Created by andym on 21/04/2017.
@@ -32,6 +35,16 @@ public class main_calculabaremo extends Activity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_calculabaremo);
+
+        LinearLayout padre = (LinearLayout)findViewById(R.id.padre);
+        Calendar c1 = new GregorianCalendar();
+        int dia = c1.get(Calendar.DAY_OF_MONTH);
+        int mes = c1.get(Calendar.MONTH)+1;
+        if( (mes ==11 || mes ==12) || (mes ==1 && dia <=7)){
+            padre.setBackgroundResource(R.color.rojonavidad);
+        }else{
+
+        }
 
         mostrar = (TextView) findViewById(R.id.barcal);
         mostrar.setText(getString(R.string.baremototal) + " " + puntos);

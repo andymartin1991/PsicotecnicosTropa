@@ -17,11 +17,14 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.ScrollView;
 
 import com.example.andym.psicotecnicostropa.dto.AdapterDirectivos;
 import com.example.andym.psicotecnicostropa.dto.menu_optTest;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 public class main_optTipo extends Activity {
 
@@ -33,6 +36,16 @@ public class main_optTipo extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_optipo);
+
+        LinearLayout padre = (LinearLayout)findViewById(R.id.padre);
+        Calendar c1 = new GregorianCalendar();
+        int dia = c1.get(Calendar.DAY_OF_MONTH);
+        int mes = c1.get(Calendar.MONTH)+1;
+        if( (mes ==11 || mes ==12) || (mes ==1 && dia <=7)){
+            padre.setBackgroundResource(R.color.rojonavidad);
+        }else{
+
+        }
 
         LinearLayout oculto = (LinearLayout)findViewById(R.id.oculto);
         oculto.setOnClickListener(new View.OnClickListener() {

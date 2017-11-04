@@ -9,9 +9,14 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 /**
  * Created by xe63008 on 26/04/2017.
@@ -29,6 +34,15 @@ public class main_contacto extends Activity {
         setContentView(R.layout.main_contacto);
         final String[] items = {getString(R.string.asunto1), getString(R.string.asunto2), getString(R.string.asunto3), getString(R.string.asunto4), getString(R.string.asunto5)};
 
+        RelativeLayout padre = (RelativeLayout)findViewById(R.id.padre);
+        Calendar c1 = new GregorianCalendar();
+        int dia = c1.get(Calendar.DAY_OF_MONTH);
+        int mes = c1.get(Calendar.MONTH)+1;
+        if( (mes ==11 || mes ==12) || (mes ==1 && dia <=7)){
+            padre.setBackgroundResource(R.color.rojonavidad);
+        }else{
+
+        }
 
         TextView tmensaje;
         TextView tasunto;

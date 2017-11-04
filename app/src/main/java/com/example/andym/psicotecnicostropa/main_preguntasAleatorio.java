@@ -26,6 +26,9 @@ import android.widget.ViewFlipper;
 import com.example.andym.psicotecnicostropa.dto.Preguntas;
 import com.example.andym.psicotecnicostropa.dto.contador;
 
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
 public class main_preguntasAleatorio extends Activity {
 
 
@@ -71,7 +74,7 @@ public class main_preguntasAleatorio extends Activity {
     TextView solucion, estado, kk;
 
     LinearLayout Msolucion;
-    Button guardar;
+    LinearLayout guardar;
     int aciertos = 0;
     int fallos = 0;
 
@@ -83,6 +86,18 @@ public class main_preguntasAleatorio extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_preguntas);
+
+        RelativeLayout padre = (RelativeLayout) findViewById(R.id.relativeLayout);
+        RelativeLayout subcontenedor = (RelativeLayout) findViewById(R.id.subcontenedor);
+        Calendar cc1 = new GregorianCalendar();
+        int dia = cc1.get(Calendar.DAY_OF_MONTH);
+        int mes = cc1.get(Calendar.MONTH)+1;
+        if( (mes ==11 || mes ==12) || (mes ==1 && dia <=7)){
+            padre.setBackgroundResource(R.color.rojonavidad);
+            subcontenedor.setBackgroundResource(R.color.rojonavidad);
+        }else{
+
+        }
 
         animrightatras = new TranslateAnimation(Animation.RELATIVE_TO_PARENT,
                 -1.0f, Animation.RELATIVE_TO_PARENT, 0.0f,
@@ -119,7 +134,7 @@ public class main_preguntasAleatorio extends Activity {
         kk.setVisibility(View.VISIBLE);
         Msolucion = (LinearLayout) findViewById(R.id.solucion);
         Msolucion.setVisibility(View.GONE);
-        guardar = (Button) findViewById(R.id.guardar);
+        guardar = (LinearLayout) findViewById(R.id.guardar);
         guardar.setVisibility(View.VISIBLE);
         estado = (TextView) findViewById(R.id.estado);
         estado.setOnClickListener(new View.OnClickListener() {
