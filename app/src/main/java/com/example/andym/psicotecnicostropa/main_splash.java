@@ -57,7 +57,7 @@ public class main_splash extends Activity {
         if( (mes ==11 || mes ==12) || (mes ==1 && dia <=7)){
             imagen.setImageResource(R.drawable.splashnavideno);
             padre.setBackgroundResource(R.color.rojonavidad);
-            mensaje.setText("Psicotecnicos Tropa\nte desea unas felices fiestas");
+            mensaje.setText("Psicotécnicos Tropa\nte desea unas felices fiestas");
         }else{
             imagen.setImageResource(R.drawable.splash);
         }
