@@ -234,5 +234,5 @@ aspirante. </string>
     <string name="academia">Acceso a academias</string>
     <string name="atenacademia">Recuerde que para poder acceder a una academia deberás estar apuntado en una, y mantener una conexión de red estable durante esta modalidad. </string>
     <string name="volver">Volver</string>
-    <string name="errorusuario">Usuario o contraseñas incorrecto, valla atrás y vuelva a intentarlo, si el problema persiste póngase en contacto con su para que le habilite su acceso.</string>
+    <string name="errorusuario">Usuario o contraseñas incorrecto, valla atrás y vuelva a intentarlo, si el problema persiste póngase en contacto con su academia para que le habilite su acceso.</string>
 </resources>
