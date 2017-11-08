@@ -119,7 +119,7 @@ public class main_examen extends Activity {
         guardado = false;
         bloque = 1;
         posi = 0;
-        memoria = 10000;//10000
+        memoria = 1000;//10000
         arregloacabar = false;
 
         // animaciones

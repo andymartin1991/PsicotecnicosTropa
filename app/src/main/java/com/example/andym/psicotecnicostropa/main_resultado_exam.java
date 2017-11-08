@@ -42,6 +42,8 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.List;
 
+import static java.lang.String.valueOf;
+
 /**
  * Created by andym on 08/04/2017.
  */
@@ -346,13 +348,13 @@ public class main_resultado_exam extends Activity {
         notas.setSincontestarAbstrapto(sincontestarAbstrapto);
 
         notas.setNotasobre10
-                ((((Double.parseDouble(String.valueOf(aciertosVerbal)) * 10) / 15) +
-                        ((Double.parseDouble(String.valueOf(aciertosNumerico)) * 10) / 15) +
-                        ((Double.parseDouble(String.valueOf(aciertosEspacial)) * 10) / 15) +
-                        ((Double.parseDouble(String.valueOf(aciertosMecanico)) * 10) / 15) +
-                        ((Double.parseDouble(String.valueOf(aciertosPerceptiva)) * 10) / 15) +
-                        ((Double.parseDouble(String.valueOf(aciertosMemoria)) * 10) / 15) +
-                        ((Double.parseDouble(String.valueOf(aciertosAbstrapto)) * 10) / 15)) / 7);
+                ((((Double.parseDouble(valueOf(aciertosVerbal)) * 10) / 15) +
+                        ((Double.parseDouble(valueOf(aciertosNumerico)) * 10) / 15) +
+                        ((Double.parseDouble(valueOf(aciertosEspacial)) * 10) / 15) +
+                        ((Double.parseDouble(valueOf(aciertosMecanico)) * 10) / 15) +
+                        ((Double.parseDouble(valueOf(aciertosPerceptiva)) * 10) / 15) +
+                        ((Double.parseDouble(valueOf(aciertosMemoria)) * 10) / 15) +
+                        ((Double.parseDouble(valueOf(aciertosAbstrapto)) * 10) / 15)) / 7);
         notas.setNotaredondeada(redondearDecimales(notas.getNotasobre10(), 1));
         notabaremo();
         mostrar = (TextView) findViewById(R.id.mostrar);
@@ -495,7 +497,7 @@ public class main_resultado_exam extends Activity {
                     if (kk > 0 && kk < 41) {
                         if (notas.getNotaredondeadabar() != 0) {
                             Date date = new Date();
-                            DateFormat fechaHora = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                            DateFormat fechaHora = new SimpleDateFormat("yyyy-MM-dd HH_mm_ss");
                             String convertido = fechaHora.format(date);
 
                             File ruta_sd;
@@ -507,7 +509,9 @@ public class main_resultado_exam extends Activity {
                                 // Load another directory, probably local memory
                                 ruta_sd = getFilesDir();
                             }
-                            File a = new File(ruta_sd.getAbsolutePath(), convertido + "examen" + notas.getNotaredondeadabar());
+                            String nombre = convertido + "examen" + notas.getNotaredondeadabar();
+                            File a = new File(ruta_sd.getAbsolutePath(), convertido+"examen" + notas.getNotaredondeadabar());
+                            //
                             try {
                                 JSONObject jsonObject = new JSONObject();
                                 List<JSONObject> JSONObjectList;
@@ -729,9 +733,12 @@ public class main_resultado_exam extends Activity {
                                 arreglojson = arreglojson.replace("ppppp", "\\n");
 
 
-                                OutputStreamWriter fout = new OutputStreamWriter(new FileOutputStream(a));
-                                fout.write(arreglojson);
-                                fout.close();
+
+                                OutputStreamWriter foutn =
+                                        new OutputStreamWriter(
+                                                new FileOutputStream(a));
+                                foutn.write(arreglojson);
+                                foutn.close();
                                 System.out.println(ruta_sd);
                                 System.out.println(a);
 

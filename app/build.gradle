@@ -2,13 +2,13 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId 'com.naroh.tropaPsicotecnicoOficial'
         minSdkVersion 14
         targetSdkVersion 25
-        versionCode 114
-        versionName '6.0.18'
+        versionCode 116
+        versionName '6.0.20'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

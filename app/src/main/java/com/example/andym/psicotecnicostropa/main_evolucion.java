@@ -77,7 +77,8 @@ public class main_evolucion extends Activity {
                 String kk = (ficheros[x].getName());
 
                 if (kk.length() > 25 && kk.substring(19, 25).equals("examen")) {
-                    namefichbonito.add(kk.substring(0, 19) + " Nota: " + kk.substring(25, kk.length()));
+                    String temp = kk.substring(0, 19) + " Nota: " + kk.substring(25, kk.length());
+                    namefichbonito.add(temp.replace("_", ":"));
                     nombrefiche.add((ficheros[x].getName()));
                 }
             }
