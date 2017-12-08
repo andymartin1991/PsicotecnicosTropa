@@ -226,6 +226,15 @@
         <!--222--><item>¿Cómo se vería la imagen reflejada en el agua?</item>
         <!--223--><item>¿Cómo se vería la imagen reflejada en el agua?</item>
         <!--224--><item>¿Cuántas barras hay que quitar para que el rojo no tenga ninguna encima?</item>
+        <!--225--><item>¿Cuántos círculos hay en total?</item>
+        <!--226--><item>¿Cuántas círculos tiene el animal?</item>
+        <!--227--><item>¿Cuántas diferencias hay?</item>
+        <!--228--><item>¿Qué imagen es igual a la dada?</item>
+        <!--229--><item>¿Cuántas letras minúsculas hay?\nmaBdZDJjf5csBB7Cba10bLKkcc3iiLPQqgG6hxXv</item>
+        <!--230--><item>¿Cuántas P hay?\nPPPPPPPPPPPPPPPPPPPPPPPPPPP</item>
+        <!--231--><item>¿Cuánto suman el número de j y el número de i?\njiiiiijiiiiiijjjiiijjjjiijij</item>
+        <!--232--><item>¿Qué imagen es igual a la dada?</item>
+        <!--233--><item>¿Cuántas diferencias hay?</item>
 
 
     </array>
@@ -455,7 +464,15 @@
         <!--222--><item>A)</item>
         <!--223--><item>A)</item>
         <!--224--><item>A)4</item>
-
+        <!--225--><item>A)54</item>
+        <!--226--><item>A)50</item>
+        <!--227--><item>A)3</item>
+        <!--228--><item>A)</item>
+        <!--229--><item>A)23</item>
+        <!--230--><item>A)27</item>
+        <!--231--><item>A)11</item>
+        <!--232--><item>A)</item>
+        <!--233--><item>A)4</item>
     </array>
     
     <array name="resBperceptiva">
@@ -683,7 +700,15 @@
         <!--222--><item>B)</item>
         <!--223--><item>B)</item>
         <!--224--><item>B)5</item>
-
+        <!--225--><item>B)55</item>
+        <!--226--><item>B)57</item>
+        <!--227--><item>B)2</item>
+        <!--228--><item>B)</item>
+        <!--229--><item>B)25</item>
+        <!--230--><item>B)28</item>
+        <!--231--><item>B)27</item>
+        <!--232--><item>B)</item>
+        <!--233--><item>B)3</item>
     </array>
     
     <array name="resCperceptiva">
@@ -911,7 +936,15 @@
         <!--222--><item>C)</item>
         <!--223--><item>C)</item>
         <!--224--><item>C)6</item>
-
+        <!--225--><item>C)56</item>
+        <!--226--><item>C)56</item>
+        <!--227--><item>C)1</item>
+        <!--228--><item>C)</item>
+        <!--229--><item>C)19</item>
+        <!--230--><item>C)29</item>
+        <!--231--><item>C)28</item>
+        <!--232--><item>C)</item>
+        <!--233--><item>C)2</item>
     </array>
     
     <array name="resDperceptiva">
@@ -1139,7 +1172,15 @@
         <!--222--><item>D)</item>
         <!--223--><item>D)</item>
         <!--224--><item>D)3</item>
-
+        <!--225--><item>D)50</item>
+        <!--226--><item>D)58</item>
+        <!--227--><item>D)Ninguna</item>
+        <!--228--><item>D)</item>
+        <!--229--><item>D)20</item>
+        <!--230--><item>D)30</item>
+        <!--231--><item>D)17</item>
+        <!--232--><item>D)</item>
+        <!--233--><item>D)1</item>
     </array>
     
     <array name="solperceptiva">
@@ -1367,7 +1408,15 @@
         <!--222--><item>C)</item>
         <!--223--><item>B)</item>
         <!--224--><item>A)4</item>
-
+        <!--225--><item>B)55</item>
+        <!--226--><item>C)56</item>
+        <!--227--><item>A)3</item>
+        <!--228--><item>B)</item>
+        <!--229--><item>D)20</item>
+        <!--230--><item>A)27</item>
+        <!--231--><item>C)28</item>
+        <!--232--><item>D)</item>
+        <!--233--><item>A)4</item>
     </array>
     
     <array name="expliSolperceptiva">
@@ -1595,7 +1644,15 @@
         <!--222--><item></item>
         <!--223--><item></item>
         <!--224--><item></item>
-
+        <!--225--><item></item>
+        <!--226--><item></item>
+        <!--227--><item></item>
+        <!--228--><item></item>
+        <!--229--><item></item>
+        <!--230--><item></item>
+        <!--231--><item>Hay 11j y 17i => 11+17=28</item>
+        <!--232--><item></item>
+        <!--233--><item></item>
     </array>
     
     
@@ -1826,7 +1883,15 @@
         <!--222--><item>perp222</item>
         <!--223--><item>perp223</item>
         <!--224--><item>perp224</item>
-
+        <!--225--><item>perp225</item>
+        <!--226--><item>perp226</item>
+        <!--227--><item>perp227</item>
+        <!--228--><item>perp228</item>
+        <!--229--><item></item>
+        <!--230--><item></item>
+        <!--231--><item></item>
+        <!--232--><item>perp232</item>
+        <!--233--><item>perp233</item>
     </array>
     
     <array name="imgAperceptiva">
@@ -2054,7 +2119,15 @@
         <!--222--><item>perp222ra</item>
         <!--223--><item>perp223ra</item>
         <!--224--><item></item>
-
+        <!--225--><item></item>
+        <!--226--><item></item>
+        <!--227--><item></item>
+        <!--228--><item>perp228ra</item>
+        <!--229--><item></item>
+        <!--230--><item></item>
+        <!--231--><item></item>
+        <!--232--><item>perp232ra</item>
+        <!--233--><item></item>
     </array>
     
     <array name="imgBperceptiva">
@@ -2282,7 +2355,15 @@
         <!--222--><item>perp222rb</item>
         <!--223--><item>perp223rb</item>
         <!--224--><item></item>
-
+        <!--225--><item></item>
+        <!--226--><item></item>
+        <!--227--><item></item>
+        <!--228--><item>perp228rb</item>
+        <!--229--><item></item>
+        <!--230--><item></item>
+        <!--231--><item></item>
+        <!--232--><item>perp232rb</item>
+        <!--233--><item></item>
     </array>
     
     <array name="imgCperceptiva">
@@ -2510,7 +2591,15 @@
         <!--222--><item>perp222rc</item>
         <!--223--><item>perp223rc</item>
         <!--224--><item></item>
-
+        <!--225--><item></item>
+        <!--226--><item></item>
+        <!--227--><item></item>
+        <!--228--><item>perp228rc</item>
+        <!--229--><item></item>
+        <!--230--><item></item>
+        <!--231--><item></item>
+        <!--232--><item>perp232rc</item>
+        <!--233--><item></item>
     </array>
     
     <array name="imgDperceptiva">
@@ -2738,7 +2827,15 @@
         <!--222--><item>perp222rd</item>
         <!--223--><item>perp223rd</item>
         <!--224--><item></item>
-
+        <!--225--><item></item>
+        <!--226--><item></item>
+        <!--227--><item></item>
+        <!--228--><item>perp228rd</item>
+        <!--229--><item></item>
+        <!--230--><item></item>
+        <!--231--><item></item>
+        <!--232--><item>perp232rd</item>
+        <!--233--><item></item>
     </array>
     
     <array name="imgSolperceptiva">
@@ -2966,7 +3063,15 @@
         <!--222--><item>perp222rc</item>
         <!--223--><item>perp223rb</item>
         <!--224--><item></item>
-
+        <!--225--><item></item>
+        <!--226--><item></item>
+        <!--227--><item></item>
+        <!--228--><item>perp228rb</item>
+        <!--229--><item></item>
+        <!--230--><item></item>
+        <!--231--><item></item>
+        <!--232--><item>perp232rd</item>
+        <!--233--><item></item>
     </array>
     
     <array name="imgExpliperceptiva">
@@ -3194,7 +3299,15 @@
         <!--222--><item>perp222exp</item>
         <!--223--><item>perp223exp</item>
         <!--224--><item>perp224exp</item>
-
+        <!--225--><item>perp225exp</item>
+        <!--226--><item>perp226exp</item>
+        <!--227--><item>perp227exp</item>
+        <!--228--><item>perp228exp</item>
+        <!--229--><item>perp229exp</item>
+        <!--230--><item></item>
+        <!--231--><item></item>
+        <!--232--><item>perp232exp</item>
+        <!--233--><item>perp233exp</item>
 
     </array>
 </resources>
