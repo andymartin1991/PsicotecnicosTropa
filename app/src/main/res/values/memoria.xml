@@ -256,6 +256,15 @@
         <!--252--><item>¿Qué ficha era la que estaba entre los símbolos de Música y Huella?</item>
         <!--253--><item>¿Cuántos conejos miraban hacia la derecha?</item>
         <!--254--><item>¿Se repite alguna figura con su símbolo?</item>
+        <!--255--><item>¿Cuántos números impares habían?</item>
+        <!--256--><item>¿Cuánto sumarían los números de la columna central?</item>
+        <!--257--><item>¿Había un círculo azul con el número 6?</item>
+        <!--258--><item>¿Qué aparecía en el centro (puesto 6)?</item>
+        <!--259--><item>¿Qué afirmación es falsa?</item>
+        <!--260--><item>¿Se repite algún color?</item>
+        <!--261--><item>¿Cuántos cuadrados habían?</item>
+        <!--262--><item>¿Cuántos círculos rojos habían?</item>
+        <!--263--><item>¿Cuál tenía el color amarillo y cuántas minúsculas habían?</item>
 
     </array>
     
@@ -514,6 +523,15 @@
         <!--252--><item>A)3-Corazón</item>
         <!--253--><item>A)3</item>
         <!--254--><item>A)No</item>
+        <!--255--><item>A)3</item>
+        <!--256--><item>A)28</item>
+        <!--257--><item>A)Sí</item>
+        <!--258--><item>A)5</item>
+        <!--259--><item>A)Se repetía un color.</item>
+        <!--260--><item>A)Sí</item>
+        <!--261--><item>A)1</item>
+        <!--262--><item>A)1</item>
+        <!--263--><item>A)x y 3</item>
 
     </array>
     
@@ -772,7 +790,15 @@
         <!--252--><item>B)7-Bombilla</item>
         <!--253--><item>B)2</item>
         <!--254--><item>B)Sí, el corazón con un +.</item>
-
+        <!--255--><item>B)4</item>
+        <!--256--><item>B)15</item>
+        <!--257--><item>B)No</item>
+        <!--258--><item>B)I</item>
+        <!--259--><item>B)Todos llevaban la misma corbata.</item>
+        <!--260--><item>B)No</item>
+        <!--261--><item>B)2</item>
+        <!--262--><item>B)2</item>
+        <!--263--><item>B)i y 4</item>
     </array>
     
     <array name="resCmemoria">
@@ -1030,7 +1056,15 @@
         <!--252--><item>C)2-Bombilla</item>
         <!--253--><item>C)1</item>
         <!--254--><item>C)Sí, el círculo con un #.</item>
-
+        <!--255--><item>C)5</item>
+        <!--256--><item>C)104</item>
+        <!--257--><item></item>
+        <!--258--><item>C)1</item>
+        <!--259--><item>C)El de piel más oscura vestía de rojo.</item>
+        <!--260--><item></item>
+        <!--261--><item>C)3</item>
+        <!--262--><item>C)3</item>
+        <!--263--><item>C)x y 4</item>
     </array>
     
     <array name="resDmemoria">
@@ -1288,7 +1322,15 @@
         <!--252--><item>D)7-Tijeras</item>
         <!--253--><item>D)4</item>
         <!--254--><item>D)Sí, el círculo con una X.</item>
-
+        <!--255--><item>D)6</item>
+        <!--256--><item>D)51</item>
+        <!--257--><item></item>
+        <!--258--><item>D)L</item>
+        <!--259--><item>D)El de piel más clara vestía de amarillo.</item>
+        <!--260--><item></item>
+        <!--261--><item>D)No había.</item>
+        <!--262--><item>D)Ninguno</item>
+        <!--263--><item>D)6 y 3</item>
     </array>
     
     <array name="solmemoria">
@@ -1546,7 +1588,15 @@
         <!--252--><item>C)2-Bombilla</item>
         <!--253--><item>B)2</item>
         <!--254--><item>D)Sí, el círculo con una X.</item>
-
+        <!--255--><item>D)6</item>
+        <!--256--><item>B)15</item>
+        <!--257--><item>A)Sí</item>
+        <!--258--><item>B)I</item>
+        <!--259--><item>D)El de piel más clara vestía de amarillo.</item>
+        <!--260--><item>B)No</item>
+        <!--261--><item>A)1</item>
+        <!--262--><item>D)Ninguno</item>
+        <!--263--><item>C)x y 4</item>
     </array>
     
     <array name="expliSolmemoria">
@@ -1804,7 +1854,15 @@
         <!--252--><item></item>
         <!--253--><item></item>
         <!--254--><item></item>
-
+        <!--255--><item></item>
+        <!--256--><item></item>
+        <!--257--><item></item>
+        <!--258--><item></item>
+        <!--259--><item></item>
+        <!--260--><item></item>
+        <!--261--><item></item>
+        <!--262--><item></item>
+        <!--263--><item></item>
     </array>
     
     
@@ -2065,7 +2123,15 @@
         <!--252--><item>memp252</item>
         <!--253--><item>memp253</item>
         <!--254--><item>memp254</item>
-
+        <!--255--><item>memp255</item>
+        <!--256--><item>memp256</item>
+        <!--257--><item>memp257</item>
+        <!--258--><item>memp258</item>
+        <!--259--><item>memp259</item>
+        <!--260--><item>memp260</item>
+        <!--261--><item>memp261</item>
+        <!--262--><item>memp262</item>
+        <!--263--><item>memp263</item>
     </array>
     
     <array name="imgAmemoria">
@@ -2323,7 +2389,15 @@
         <!--252--><item></item>
         <!--253--><item></item>
         <!--254--><item></item>
-
+        <!--255--><item></item>
+        <!--256--><item></item>
+        <!--257--><item></item>
+        <!--258--><item></item>
+        <!--259--><item></item>
+        <!--260--><item></item>
+        <!--261--><item></item>
+        <!--262--><item></item>
+        <!--263--><item></item>
     </array>
     
     <array name="imgBmemoria">
@@ -2581,7 +2655,15 @@
         <!--252--><item></item>
         <!--253--><item></item>
         <!--254--><item></item>
-
+        <!--255--><item></item>
+        <!--256--><item></item>
+        <!--257--><item></item>
+        <!--258--><item></item>
+        <!--259--><item></item>
+        <!--260--><item></item>
+        <!--261--><item></item>
+        <!--262--><item></item>
+        <!--263--><item></item>
     </array>
     
     <array name="imgCmemoria">
@@ -2839,7 +2921,15 @@
         <!--252--><item></item>
         <!--253--><item></item>
         <!--254--><item></item>
-
+        <!--255--><item></item>
+        <!--256--><item></item>
+        <!--257--><item></item>
+        <!--258--><item></item>
+        <!--259--><item></item>
+        <!--260--><item></item>
+        <!--261--><item></item>
+        <!--262--><item></item>
+        <!--263--><item></item>
     </array>
     
     <array name="imgDmemoria">
@@ -3097,7 +3187,15 @@
         <!--252--><item></item>
         <!--253--><item></item>
         <!--254--><item></item>
-
+        <!--255--><item></item>
+        <!--256--><item></item>
+        <!--257--><item></item>
+        <!--258--><item></item>
+        <!--259--><item></item>
+        <!--260--><item></item>
+        <!--261--><item></item>
+        <!--262--><item></item>
+        <!--263--><item></item>
     </array>
     
     <array name="imgSolmemoria">
@@ -3355,7 +3453,15 @@
         <!--252--><item></item>
         <!--253--><item></item>
         <!--254--><item></item>
-
+        <!--255--><item></item>
+        <!--256--><item></item>
+        <!--257--><item></item>
+        <!--258--><item></item>
+        <!--259--><item></item>
+        <!--260--><item></item>
+        <!--261--><item></item>
+        <!--262--><item></item>
+        <!--263--><item></item>
 
     </array>
     
@@ -3614,7 +3720,15 @@
         <!--252--><item>memp252exp</item>
         <!--253--><item>memp253exp</item>
         <!--254--><item>memp254exp</item>
-
+        <!--255--><item>memp255exp</item>
+        <!--256--><item>memp256exp</item>
+        <!--257--><item>memp257exp</item>
+        <!--258--><item>memp258exp</item>
+        <!--259--><item>memp259exp</item>
+        <!--260--><item>memp260exp</item>
+        <!--261--><item>memp261exp</item>
+        <!--262--><item>memp262exp</item>
+        <!--263--><item>memp263exp</item>
 
     </array>
 </resources>
