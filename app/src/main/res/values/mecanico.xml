@@ -234,6 +234,9 @@
         <!--230--><item>¿Cuál de las afirmaciones es correcta?</item>
         <!--231--><item>Si soltamos dos pelotas, una de 5cm de diámetro y otra de 10cm, pero ambas pesan 500gr, en una pecera llena de agua ¿cuál llegará antes al fondo?</item>
         <!--232--><item>Si pesamos en una báscula, un globo desinflado y otro inflado, ¿cuál pesará más?</item>
+        <!--233--><item>¿En cuál de las siguientes posiciones en la balanza romana representa mayor peso?</item>
+        <!--234--><item>¿Cuál es la velocidad de un coche si recorre 135km en 1h y media?</item>
+        <!--235--><item>¿Cuál es la Intensidad del siguiente circuito?</item>
 
     </array>
     
@@ -470,6 +473,9 @@
         <!--230--><item>A)La 1 y la 2 giran a la derecha, mientras que la 3 y 4 giran a izquierda.</item>
         <!--231--><item>A)La pelota de 5cm de diámetro.</item>
         <!--232--><item>A)El globo inflado.</item>
+        <!--233--><item>A)</item>
+        <!--234--><item>A)9km</item>
+        <!--235--><item>A)4,5mA</item>
 
     </array>
     
@@ -706,6 +712,9 @@
         <!--230--><item>B)La 1 y la 2 giran a la izquierda, mientras que la 3 y 4 giran a derecha.</item>
         <!--231--><item>B)La pelota de 10cm de diámetro.</item>
         <!--232--><item>B)El globo desinflado.</item>
+        <!--233--><item>B)</item>
+        <!--234--><item>B)8km</item>
+        <!--235--><item>B)4mA</item>
 
     </array>
     
@@ -942,6 +951,9 @@
         <!--230--><item>C)La 1 y la 4 giran a la derecha, mientras que la 2 y 3 giran a izquierda.</item>
         <!--231--><item>C)Las dos llegan a la vez.</item>
         <!--232--><item>C)Los dos pesarán lo mismo.</item>
+        <!--233--><item>C)</item>
+        <!--234--><item>C)80km</item>
+        <!--235--><item>C)0,004mA</item>
 
     </array>
     
@@ -1178,6 +1190,9 @@
         <!--230--><item>D)Todas giran al mismo sentido.</item>
         <!--231--><item></item>
         <!--232--><item></item>
+        <!--233--><item></item>
+        <!--234--><item>D)90km</item>
+        <!--235--><item>D)44mA</item>
 
     </array>
     
@@ -1414,6 +1429,9 @@
         <!--230--><item>A)La 1 y la 2 giran a la derecha, mientras que la 3 y 4 giran a izquierda.</item>
         <!--231--><item>B)La pelota de 10cm de diámetro.</item>
         <!--232--><item>A)El globo inflado.</item>
+        <!--233--><item>A)</item>
+        <!--234--><item>D)90km</item>
+        <!--235--><item>B)4mA</item>
 
     </array>
     
@@ -1650,7 +1668,9 @@
         <!--230--><item></item>
         <!--231--><item>Al sumergirse, hay dos fuerzas: el peso y el empuje. Ambas pelotas pesan lo mismo, pero la que mide 10cm, al tener más volumen, llegará antes al fondo.</item>
         <!--232--><item>El globo inflado, además del peso del globo también se pesa el aire contenido, ya que el globo está cerrado.</item>
-
+        <!--233--><item>Cuanto mayor es la distancia del punto de apoyo, más fácil será levantar el peso. Los pesos más alejados del punto de apoyo, tienen menos peso (compensando así la distancia). A es la que menos distancia tiene, por lo que tiene mayor peso.</item>
+        <!--234--><item>Regla de tres: si 135km lo recorre en 1,5h (1h30min), en 1h recorre: 1x135/1,5 = 90km</item>
+        <!--235--><item>Ley de Ohm: V = IxR, despejamos I, además de pasar las medidas al Sistema Internacional: I = V/R => I=8/2000 => 0.004A => 4mA</item>
 
     </array>
     
@@ -1890,6 +1910,9 @@
         <!--230--><item>mecp230</item>
         <!--231--><item></item>
         <!--232--><item></item>
+        <!--233--><item>mecp233</item>
+        <!--234--><item></item>
+        <!--235--><item>mecp235</item>
 
 
     </array>
@@ -2127,6 +2150,9 @@
         <!--230--><item></item>
         <!--231--><item></item>
         <!--232--><item></item>
+        <!--233--><item></item>
+        <!--234--><item></item>
+        <!--235--><item></item>
 
     </array>
     
@@ -2363,6 +2389,9 @@
         <!--230--><item></item>
         <!--231--><item></item>
         <!--232--><item></item>
+        <!--233--><item></item>
+        <!--234--><item></item>
+        <!--235--><item></item>
 
 
     </array>
@@ -2600,6 +2629,9 @@
         <!--230--><item></item>
         <!--231--><item></item>
         <!--232--><item></item>
+        <!--233--><item></item>
+        <!--234--><item></item>
+        <!--235--><item></item>
 
 
     </array>
@@ -2837,6 +2869,9 @@
         <!--230--><item></item>
         <!--231--><item></item>
         <!--232--><item></item>
+        <!--233--><item></item>
+        <!--234--><item></item>
+        <!--235--><item></item>
 
 
     </array>
@@ -3074,6 +3109,9 @@
         <!--230--><item></item>
         <!--231--><item></item>
         <!--232--><item></item>
+        <!--233--><item></item>
+        <!--234--><item></item>
+        <!--235--><item></item>
 
 
     </array>
@@ -3311,6 +3349,9 @@
         <!--230--><item>mecp230exp</item>
         <!--231--><item></item>
         <!--232--><item></item>
+        <!--233--><item>mecp233exp</item>
+        <!--234--><item></item>
+        <!--235--><item></item>
 
     </array>
 </resources>
