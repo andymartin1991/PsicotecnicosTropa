@@ -237,6 +237,17 @@
         <!--233--><item>¿En cuál de las siguientes posiciones en la balanza romana representa mayor peso?</item>
         <!--234--><item>¿Cuál es la velocidad de un coche si recorre 135km en 1h y media?</item>
         <!--235--><item>¿Cuál es la Intensidad del siguiente circuito?</item>
+        <!--236--><item>¿En qué circuito, las bombillas tendrían la misma intensidad?</item>
+        <!--237--><item>¿En cuál se alcanzaría mayor velocidad al columpiarse?</item>
+        <!--238--><item>¿En qué momento la pelota se mueve a más velocidad?</item>
+        <!--239--><item>¿Cuál de los péndulos tardará menos en dar una vuelta completa?</item>
+        <!--240--><item>¿Cuál de las estanterías soporta más peso?</item>
+        <!--241--><item>¿Cuáles giran en sentido contrario a las agujas del reloj?</item>
+        <!--242--><item>Si dejamos un peso de 35kg sobre una balanza en una escalera mecánica, ¿cuándo peso marcará la balanza?</item>
+        <!--243--><item>Si pesamos un tarro lleno de mariposas, ¿cuándo se marcará mayor peso?</item>
+        <!--244--><item>¿Hacia dónde hay que mover para que se quede nivelado?</item>
+
+
 
     </array>
     
@@ -288,7 +299,7 @@
         <!--045--><item>A)Cerca del punto de apoyo.</item>
         <!--046--><item>A)Hacia la izquierda.</item>
         <!--047--><item>A)La más grande cuyo peso es de 5Kg.</item>
-        <!--048--> <item>A)</item>
+        <!--048--><item>A)</item>
         <!--049--><item>A)A mayor velocidad que al principio.</item>
         <!--050--><item>A)El que está arriba.</item>
         <!--051--><item>A)</item>
@@ -476,6 +487,16 @@
         <!--233--><item>A)</item>
         <!--234--><item>A)9km</item>
         <!--235--><item>A)4,5mA</item>
+        <!--236--><item>A)En el circuito de la derecha</item>
+        <!--237--><item>A)</item>
+        <!--238--><item>A)</item>
+        <!--239--><item>A)</item>
+        <!--240--><item>A)</item>
+        <!--241--><item>A)6</item>
+        <!--241--><item>A)Más de 35kg</item>
+        <!--243--><item>A)Tendrá siempre el mismo peso</item>
+        <!--244--><item>A)Hacia la derecha</item>
+
 
     </array>
     
@@ -715,6 +736,15 @@
         <!--233--><item>B)</item>
         <!--234--><item>B)8km</item>
         <!--235--><item>B)4mA</item>
+        <!--236--><item>B)En el circuito de la izquierda</item>
+        <!--237--><item>B)</item>
+        <!--238--><item>B)</item>
+        <!--239--><item>B)</item>
+        <!--240--><item>B)</item>
+        <!--241--><item>B)5</item>
+        <!--242--><item>B)Menos de 35kg</item>
+        <!--243--><item>B)Cuando las mariposas estén paradas.</item>
+        <!--244--><item>B)Hacia la izquierda</item>
 
     </array>
     
@@ -954,6 +984,15 @@
         <!--233--><item>C)</item>
         <!--234--><item>C)80km</item>
         <!--235--><item>C)0,004mA</item>
+        <!--236--><item>C)En ambos circuitos tendrían la misma intensidad</item>
+        <!--237--><item></item>
+        <!--238--><item>C)</item>
+        <!--239--><item>C)Ambos tardarán los mismo</item>
+        <!--240--><item>C)Ambos soportan el mismo peso</item>
+        <!--241--><item>C)4</item>
+        <!--242--><item>C)35kg</item>
+        <!--243--><item>C)Cuando las mariposas estén volando.</item>
+        <!--244--><item>C)Hacia delante</item>
 
     </array>
     
@@ -1193,6 +1232,15 @@
         <!--233--><item></item>
         <!--234--><item>D)90km</item>
         <!--235--><item>D)44mA</item>
+        <!--236--><item></item>
+        <!--237--><item></item>
+        <!--238--><item></item>
+        <!--239--><item></item>
+        <!--240--><item></item>
+        <!--241--><item>D)7</item>
+        <!--242--><item></item>
+        <!--243--><item></item>
+        <!--244--><item>A)Hacia atrás</item>
 
     </array>
     
@@ -1432,6 +1480,15 @@
         <!--233--><item>A)</item>
         <!--234--><item>D)90km</item>
         <!--235--><item>B)4mA</item>
+        <!--236--><item>B)En el circuito de la izquierda</item>
+        <!--237--><item>B)</item>
+        <!--238--><item>A)</item>
+        <!--239--><item>C)Ambos tardarán los mismo</item>
+        <!--240--><item>A)</item>
+        <!--241--><item>C)4</item>
+        <!--242--><item>C)35kg</item>
+        <!--243--><item>A)Tendrá siempre el mismo peso</item>
+        <!--244--><item>B)Hacia la izquierda</item>
 
     </array>
     
@@ -1621,7 +1678,7 @@
         <!--183--><item>Las energías renovables son las ILIMITADAS.</item>
         <!--184--><item></item>
         <!--185--><item></item>
-        <!--186--><item>Ley de Hooke, se ejerce igual fuerza, por lo que la comprensión es menor en B y C, de los cuales tienen más muelles (todos iguales).</item>
+        <!--186--><item>Ley de Hooke, se ejerce igual fuerza, por lo que la compresión es menor en B y C, de los cuales tienen más muelles (todos iguales).</item>
         <!--187--><item>La base de la antena está más lejos de las cuerdas de sujeción.</item>
         <!--188--><item>Las ruedas rotan en sentido idéntico porque éstas están unidas por una cinta tangente a sus periferias.</item>
         <!--189--><item>De donde se cuelga, cuanto más lejos esté del punto de sujeción el peso, el momento generado será mayor.</item>
@@ -1671,6 +1728,15 @@
         <!--233--><item>Cuanto mayor es la distancia del punto de apoyo, más fácil será levantar el peso. Los pesos más alejados del punto de apoyo, tienen menos peso (compensando así la distancia). A es la que menos distancia tiene, por lo que tiene mayor peso.</item>
         <!--234--><item>Regla de tres: si 135km lo recorre en 1,5h (1h30min), en 1h recorre: 1x135/1,5 = 90km</item>
         <!--235--><item>Ley de Ohm: V = IxR, despejamos I, además de pasar las medidas al Sistema Internacional: I = V/R => I=8/2000 => 0.004A => 4mA</item>
+        <!--236--><item>Si las bombillas están situadas en paralelo, la tensión que recibirán será la misma.</item>
+        <!--237--><item>El columpio con mayor longitud alcanzará mayor velocidad.</item>
+        <!--238--><item>El momento del impacto es cuando se alcanza mayor velocidad.</item>
+        <!--239--><item>No depende del tamaño, la frecuencia del péndulo depende de la longitud de la cuerda.</item>
+        <!--240--><item>La estantería A, ejerce una fuerza de soporte por compresión, mientras que la estantería B, por tensión. Se soporta más peso por compresión.</item>
+        <!--241--><item>7 giran en sentido horario, mientras que 4 giran en sentido contrario.</item>
+        <!--242--><item>El movimiento de la escalera mecánica es uniforme, por lo que la balanza marcará el peso del objeto.</item>
+        <!--243--><item>No importa si están volando o no, el peso total depende del peso del tarro y de su contenido.</item>
+        <!--244--><item>La burbuja debe estar en el centro, por lo que hay que mover hacia la izquierda para que ésta se mueva hacia la derecha.</item>
 
     </array>
     
@@ -1913,7 +1979,15 @@
         <!--233--><item>mecp233</item>
         <!--234--><item></item>
         <!--235--><item>mecp235</item>
-
+        <!--236--><item>mecp236</item>
+        <!--237--><item>mecp237</item>
+        <!--238--><item>mecp238</item>
+        <!--239--><item>mecp239</item>
+        <!--240--><item>mecp240</item>
+        <!--241--><item>mecp241</item>
+        <!--242--><item></item>
+        <!--243--><item></item>
+        <!--244--><item>mecp244</item>
 
     </array>
     
@@ -2153,6 +2227,15 @@
         <!--233--><item></item>
         <!--234--><item></item>
         <!--235--><item></item>
+        <!--236--><item></item>
+        <!--237--><item></item>
+        <!--238--><item></item>
+        <!--239--><item></item>
+        <!--240--><item></item>
+        <!--241--><item></item>
+        <!--242--><item></item>
+        <!--243--><item></item>
+        <!--244--><item></item>
 
     </array>
     
@@ -2392,7 +2475,15 @@
         <!--233--><item></item>
         <!--234--><item></item>
         <!--235--><item></item>
-
+        <!--236--><item></item>
+        <!--237--><item></item>
+        <!--238--><item></item>
+        <!--239--><item></item>
+        <!--240--><item></item>
+        <!--241--><item></item>
+        <!--242--><item></item>
+        <!--243--><item></item>
+        <!--244--><item></item>
 
     </array>
     
@@ -2632,7 +2723,15 @@
         <!--233--><item></item>
         <!--234--><item></item>
         <!--235--><item></item>
-
+        <!--236--><item></item>
+        <!--237--><item></item>
+        <!--238--><item></item>
+        <!--239--><item></item>
+        <!--240--><item></item>
+        <!--241--><item></item>
+        <!--242--><item></item>
+        <!--243--><item></item>
+        <!--244--><item></item>
 
     </array>
     
@@ -2872,7 +2971,15 @@
         <!--233--><item></item>
         <!--234--><item></item>
         <!--235--><item></item>
-
+        <!--236--><item></item>
+        <!--237--><item></item>
+        <!--238--><item></item>
+        <!--239--><item></item>
+        <!--240--><item></item>
+        <!--241--><item></item>
+        <!--242--><item></item>
+        <!--243--><item></item>
+        <!--244--><item></item>
 
     </array>
     
@@ -3112,7 +3219,15 @@
         <!--233--><item></item>
         <!--234--><item></item>
         <!--235--><item></item>
-
+        <!--236--><item></item>
+        <!--237--><item></item>
+        <!--238--><item></item>
+        <!--239--><item></item>
+        <!--240--><item></item>
+        <!--241--><item></item>
+        <!--242--><item></item>
+        <!--243--><item></item>
+        <!--244--><item></item>
 
     </array>
     
@@ -3352,6 +3467,16 @@
         <!--233--><item>mecp233exp</item>
         <!--234--><item></item>
         <!--235--><item></item>
+        <!--236--><item>mecp236exp</item>
+        <!--237--><item>mecp237exp</item>
+        <!--238--><item>mecp238exp</item>
+        <!--239--><item>mecp239exp</item>
+        <!--240--><item>mecp240exp</item>
+        <!--241--><item>mecp241exp</item>
+        <!--242--><item></item>
+        <!--243--><item></item>
+        <!--244--><item>mecp244exp</item>
+
 
     </array>
 </resources>
