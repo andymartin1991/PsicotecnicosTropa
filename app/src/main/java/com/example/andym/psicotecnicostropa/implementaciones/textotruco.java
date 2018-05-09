@@ -1,14 +1,14 @@
-package com.example.andym.psicotecnicostropa;
+package com.example.andym.psicotecnicostropa.implementaciones;
 
 public class textotruco {
-    static final String[] title = {
+    public static final String[] title = {
             "Matemáticos",
             "Memoria",
             "Sabias que ..."
 
     };
 
-    static final String[] preguntas = {
+    public static final String[] preguntas = {
             "  <p><font color='red'>1.</font></Strong> Calcular el 50% es igual a dividir por 2<br/>"
                     + "(el 50% de 350 = 175)</p>"
                     + "<p><Strong><font color='red'>2.</font></Strong> Calcular el 25% es igual a dividir por 4<br/>"

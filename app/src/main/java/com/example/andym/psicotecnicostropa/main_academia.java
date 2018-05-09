@@ -3,17 +3,23 @@ package com.example.andym.psicotecnicostropa;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.Html;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.ScrollView;
+import android.widget.TableLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -35,16 +41,30 @@ import java.util.GregorianCalendar;
  */
 public class main_academia extends Activity {
 
+
+
     URLConnection conn = null;
     String id;
-    Button volver;
+    Button volver, estudio;
     TextView error, titulo, username;
     LinearLayout emer, verificado;
     JSONObject objetouser;
+    String textoError = "";
+    TableLayout tablabotones;
+    ProgressBar carga;
+
+
+    public static String correo;
+    public static String password;
+    public static String academia;
+    public static String academianame;
+    public static String idACAM;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_academia);
+
+        final boolean[] entra = {true};
 
         ScrollView padre = (ScrollView)findViewById(R.id.padre);
         Calendar c1 = new GregorianCalendar();
@@ -56,10 +76,10 @@ public class main_academia extends Activity {
 
         }
 
-        String correo = getIntent().getStringExtra("correo");
-        String password = getIntent().getStringExtra("pass");
-        String academia = getIntent().getStringExtra("academia");
-        final String academianame = getIntent().getStringExtra("nameacademia");
+        correo = getIntent().getStringExtra("correo");
+        password = getIntent().getStringExtra("pass");
+        academia = getIntent().getStringExtra("academia");
+        academianame = getIntent().getStringExtra("nameacademia");
 
         volver = (Button)findViewById(R.id.atras);
         error = (TextView) findViewById(R.id.fallo);
@@ -67,6 +87,8 @@ public class main_academia extends Activity {
         verificado = (LinearLayout)findViewById(R.id.verificado);
         titulo = (TextView) findViewById(R.id.title);
         username = (TextView) findViewById(R.id.nameusu);
+        tablabotones = (TableLayout) findViewById(R.id.tablaBotones);
+        carga = (ProgressBar) findViewById(R.id.cargacademia);
 
         final String[] contents = {""};
         try {
@@ -80,7 +102,8 @@ public class main_academia extends Activity {
             public void run() {
                 emer.setVisibility(View.VISIBLE);
                 verificado.setVisibility(View.GONE);
-                error.setText(getString(R.string.errorusuario));
+                error.setText(Html.fromHtml(textoError));
+                carga.setVisibility(View.GONE);
                 volver.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -96,8 +119,11 @@ public class main_academia extends Activity {
                 emer.setVisibility(View.GONE);
                 verificado.setVisibility(View.VISIBLE);
                 titulo.setText(academianame);
+                tablabotones.setVisibility(View.VISIBLE);
+                carga.setVisibility(View.GONE);
                 try{
                     username.setText("Bienvenido "+objetouser.getString("NOMBRE_ALU"));
+                    idACAM = objetouser.getString("ID_ACADEMIA");
                 }catch (JSONException e) {
                 }
             }
@@ -127,6 +153,7 @@ public class main_academia extends Activity {
                         }
                     } catch (JSONException e) {
                         e.printStackTrace();
+                        textoError = contents[0];
                         handler.post(userpasserror);
                     }
                 } catch (IOException e) {
@@ -135,6 +162,30 @@ public class main_academia extends Activity {
             }
         }).start();
 
+        estudio = (Button)findViewById(R.id.estudio);
+        estudio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (entra[0] == true) {
+                    entra[0] = false;
+                    Animation animation = AnimationUtils.loadAnimation(
+                            getApplicationContext(), R.anim.rotar);
+                    estudio.startAnimation(animation);
+                    new Thread(new Runnable() {
+                        public void run() {
+                            try {
+                                Thread.sleep(500);
+                            } catch (InterruptedException e) {
+                            }
+                            startActivity(new Intent(main_academia.this, main_estudio_academia_sub.class));
+                            overridePendingTransition(R.anim.transpain, R.anim.transpaout);
+                            entra[0] = true;
+                        }
+                    }).start();
+
+                }
+            }
+        });
 
 
     }
@@ -153,5 +204,6 @@ public class main_academia extends Activity {
         in.close();
         return total.toString();
     }
+
 
 }

@@ -190,7 +190,9 @@
                                 android:id="@+id/imgpre"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal" />
+                                android:layout_gravity="center_horizontal"
+                                android:adjustViewBounds="true"
+                                android:cropToPadding="true" />
                         </LinearLayout>
 
                         <RelativeLayout
@@ -211,10 +213,12 @@
 
                             <ImageView
                                 android:id="@+id/imgA"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentLeft="false"
-                                android:layout_alignParentTop="true" />
+                                android:layout_alignParentTop="true"
+                                android:adjustViewBounds="true"
+                                android:cropToPadding="true" />
                         </RelativeLayout>
 
                         <RelativeLayout
@@ -235,9 +239,11 @@
 
                             <ImageView
                                 android:id="@+id/imgB"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_centerVertical="true" />
+                                android:layout_centerVertical="true"
+                                android:adjustViewBounds="true"
+                                android:cropToPadding="true" />
                         </RelativeLayout>
 
                         <RelativeLayout
@@ -258,8 +264,10 @@
 
                             <ImageView
                                 android:id="@+id/imgC"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" />
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:cropToPadding="true" />
 
                         </RelativeLayout>
 
@@ -280,8 +288,10 @@
 
                             <ImageView
                                 android:id="@+id/imgD"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" />
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:cropToPadding="true" />
                         </RelativeLayout>
                     </LinearLayout>
 
@@ -305,8 +315,10 @@
 
                             <ImageView
                                 android:id="@+id/imgSol"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" />
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:cropToPadding="true" />
                         </RelativeLayout>
 
                         <RelativeLayout
@@ -328,9 +340,11 @@
 
                                 <ImageView
                                     android:id="@+id/imgExp"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1" />
+                                    android:layout_weight="1"
+                                    android:adjustViewBounds="true"
+                                    android:cropToPadding="true" />
 
                             </LinearLayout>
 

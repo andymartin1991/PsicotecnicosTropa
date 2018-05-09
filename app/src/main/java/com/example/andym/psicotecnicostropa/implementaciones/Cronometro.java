@@ -1,4 +1,4 @@
-package com.example.andym.psicotecnicostropa.dto;
+package com.example.andym.psicotecnicostropa.implementaciones;
 
 import android.os.Handler;
 import android.util.Log;

@@ -24,7 +24,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
 
-import com.example.andym.psicotecnicostropa.dto.Cronometro;
+import com.example.andym.psicotecnicostropa.implementaciones.Cronometro;
 import com.example.andym.psicotecnicostropa.dto.Notas;
 import com.example.andym.psicotecnicostropa.dto.Preguntas;
 
