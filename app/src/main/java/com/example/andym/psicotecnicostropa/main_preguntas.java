@@ -28,11 +28,19 @@ import android.widget.ViewFlipper;
 import com.example.andym.psicotecnicostropa.dto.Preguntas;
 import com.example.andym.psicotecnicostropa.dto.contador;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
@@ -83,6 +91,7 @@ public class main_preguntas extends Activity {
 
     Animation animrightatras = null;
     Animation animrightalante = null;
+    ArrayList<JSONObject> objetouser;
 
     ViewFlipper viewflipper;
 
@@ -477,13 +486,9 @@ public class main_preguntas extends Activity {
                 // Load another directory, probably local memory
                 ruta_sd = getFilesDir();
             }
-            final File a = new File(ruta_sd.getAbsolutePath(), tipo + "cont");
-            final File b = new File(ruta_sd.getAbsolutePath(), tipo + "aciertos");
-            final File c = new File(ruta_sd.getAbsolutePath(), tipo + "fallos");
-            final File d = new File(ruta_sd.getAbsolutePath(), tipo + "colocar");
-            final File e = new File(ruta_sd.getAbsolutePath(), tipo + "pos");
-            final File f = new File(ruta_sd.getAbsolutePath(), tipo + "arreglo");
-            if (a.exists() && b.exists() && c.exists() && d.exists() && e.exists()) {
+            final File a = new File(ruta_sd.getAbsolutePath(), tipo + "estudio");
+
+            if (a.exists()) {
                 final ScrollView contenedor = (ScrollView) findViewById(R.id.contenedor);
                 contenedor.setVisibility(View.INVISIBLE);
 
@@ -507,7 +512,7 @@ public class main_preguntas extends Activity {
                                             if (pos[cont.getCont() - 1] == 0) {
                                                 alante.setVisibility(View.INVISIBLE);
                                                 atras.setVisibility(View.INVISIBLE);
-                                            } else if (cont.getCont() == pregunta.length) {
+                                            } else if (cont.getCont() == pre.length) {
                                                 alante.setVisibility(View.INVISIBLE);
                                             } else {
                                                 alante.setVisibility(View.VISIBLE);
@@ -522,128 +527,45 @@ public class main_preguntas extends Activity {
                                     @Override
                                     public void onClick(DialogInterface dialog,
                                                         int which) {
-                                        FileReader fr = null;
-                                        BufferedReader br = null;
-                                        try {
-                                            fr = new FileReader(a);
-                                            br = new BufferedReader(fr);
-                                            String linea;
-                                            while ((linea = br.readLine()) != null)
-                                                if (!linea.isEmpty()) {
-                                                    if (Integer.parseInt(linea) == 0) {
-                                                        comienzocarga = Integer.parseInt(linea);
-                                                    }
-                                                    cont.setCont(Integer.parseInt(linea) - 1);
-                                                }
-                                        } catch (Exception y) {
-                                            y.printStackTrace();
-                                        } finally {
-                                            try {
-                                                if (null != fr) {
-                                                    fr.close();
-                                                }
-                                            } catch (Exception e2) {
-                                                e2.printStackTrace();
-                                            }
-                                        }
-                                        try {
-                                            fr = new FileReader(b);
-                                            br = new BufferedReader(fr);
-                                            String linea;
-                                            while ((linea = br.readLine()) != null)
-                                                if (!linea.isEmpty()) {
-                                                    aciertos = Integer.parseInt(linea);
-                                                }
-                                        } catch (Exception y) {
-                                            y.printStackTrace();
-                                        } finally {
-                                            try {
-                                                if (null != fr) {
-                                                    fr.close();
-                                                }
-                                            } catch (Exception e2) {
-                                                e2.printStackTrace();
-                                            }
-                                        }
-                                        try {
-                                            fr = new FileReader(c);
-                                            br = new BufferedReader(fr);
-                                            String linea;
-                                            while ((linea = br.readLine()) != null)
-                                                if (!linea.isEmpty()) {
-                                                    fallos = Integer.parseInt(linea);
-                                                }
-                                        } catch (Exception y) {
-                                            y.printStackTrace();
-                                        } finally {
-                                            try {
-                                                if (null != fr) {
-                                                    fr.close();
-                                                }
-                                            } catch (Exception e2) {
-                                                e2.printStackTrace();
-                                            }
-                                        }
-                                        try {
-                                            fr = new FileReader(d);
-                                            br = new BufferedReader(fr);
-                                            String linea;
-                                            while ((linea = br.readLine()) != null)
-                                                if (!linea.isEmpty()) {
-                                                    colocar = Integer.parseInt(linea);
-                                                }
-                                        } catch (Exception y) {
-                                            y.printStackTrace();
-                                        } finally {
-                                            try {
-                                                if (null != fr) {
-                                                    fr.close();
-                                                }
-                                            } catch (Exception e2) {
-                                                e2.printStackTrace();
-                                            }
-                                        }
-                                        try {
-                                            pos = new int[pregunta.length];
-                                            fr = new FileReader(e);
-                                            br = new BufferedReader(fr);
-                                            String linea;
-                                            int recorro = 0;
-                                            while ((linea = br.readLine()) != null)
-                                                if (!linea.isEmpty()) {
-                                                    pos[recorro] = Integer.parseInt(linea);
-                                                    recorro++;
-                                                }
 
-                                        } catch (Exception y) {
-                                            y.printStackTrace();
-                                            try {
-                                                if (null != fr) {
-                                                    fr.close();
-                                                }
-                                            } catch (Exception e2) {
-                                                e2.printStackTrace();
-                                            }
+
+                                        String json = "";
+                                        try {
+                                            BufferedReader fin = new BufferedReader(new InputStreamReader(new FileInputStream(a)));
+                                            json = fin.readLine();
+                                            fin.close();
+                                        } catch (IOException e) {
+
                                         }
                                         try {
-                                            fr = new FileReader(f);
-                                            br = new BufferedReader(fr);
-                                            String linea;
-                                            while ((linea = br.readLine()) != null)
-                                                if (!linea.isEmpty()) {
-                                                    arreglo = Integer.parseInt(linea);
-                                                }
-                                        } catch (Exception y) {
-                                            y.printStackTrace();
-                                        } finally {
+                                            JSONObject resjson = new JSONObject(json);
+                                            JSONArray myJsonArray = resjson.getJSONArray("academias");
+                                            objetouser = new ArrayList();
+                                            int i = 0;
+
                                             try {
-                                                if (null != fr) {
-                                                    fr.close();
+                                                while (true) {
+                                                    objetouser.add(myJsonArray.getJSONObject(i));
+                                                    i++;
                                                 }
-                                            } catch (Exception e2) {
-                                                e2.printStackTrace();
+                                            }catch(Exception e){
+
                                             }
+
+                                            aciertos = objetouser.get(0).getInt("aciertos");
+                                            fallos = objetouser.get(1).getInt("fallos");
+                                            colocar = objetouser.get(2).getInt("colocar");
+                                            cont.setCont(objetouser.get(3).getInt("cont")-1);
+                                            arreglo = objetouser.get(4).getInt("arreglo");
+                                            pos = new int[pre.length];
+                                            for(int o = 0; i < objetouser.get(5).getJSONArray("pos").length(); o++){
+                                                pos[o] = objetouser.get(5).getJSONArray("pos").getInt(o);
+                                            }
+                                            String sdg = "";
+                                        }catch(JSONException e){
+                                            e.printStackTrace();
                                         }
+
                                         pp = false;
                                         avanza();
                                         if (comienzocarga != 0) {
@@ -656,7 +578,7 @@ public class main_preguntas extends Activity {
                                             if (pos[cont.getCont() - 1] == 0) {
                                                 alante.setVisibility(View.INVISIBLE);
                                                 atras.setVisibility(View.INVISIBLE);
-                                            } else if (cont.getCont() == pregunta.length) {
+                                            } else if (cont.getCont() == pre.length) {
                                                 alante.setVisibility(View.INVISIBLE);
                                             } else {
                                                 alante.setVisibility(View.VISIBLE);
@@ -678,7 +600,7 @@ public class main_preguntas extends Activity {
                     if (pos[cont.getCont() - 1] == 0) {
                         alante.setVisibility(View.INVISIBLE);
                         atras.setVisibility(View.INVISIBLE);
-                    } else if (cont.getCont() == pregunta.length) {
+                    } else if (cont.getCont() == pre.length) {
                         alante.setVisibility(View.INVISIBLE);
                     } else {
                         alante.setVisibility(View.VISIBLE);
@@ -693,7 +615,20 @@ public class main_preguntas extends Activity {
     }
 
     private void guardar(String tipo) {
-        boolean correcto[] = {true, true, true, true, true, true, true, true,};
+        //////////////prepara json
+        String SJsonCabeza = ("{\"academias\":[{\"aciertos\":\"" + aciertos + "\"},{\"fallos\":\"" + fallos + "\"},{\"colocar\":\"" + colocar + "\"},{\"cont\":\"" + cont.getCont() + "\"},{\"arreglo\":\"" + arreglo + "\"},{\"pos\":[");
+        String SJonpos = "";
+        for (int i = 0; i < pos.length; i++) {
+            if (i != (pos.length - 1)) {
+                SJonpos = SJonpos + ("\"" + pos[i] + "\",");
+            } else {
+                SJonpos = SJonpos + ("\"" + pos[i] + "\"");
+            }
+        }
+        String SJsonfinal = "]}]}";
+        String SJson = SJsonCabeza + SJonpos + SJsonfinal;
+        ///////////////fin preparar json
+        boolean correcto = true;
         try {
             String state = Environment.getExternalStorageState();
 
@@ -706,143 +641,21 @@ public class main_preguntas extends Activity {
                 ruta_sd = getFilesDir();
             }
             //File ruta_sd = getExternalFilesDir(null);
-            File f = new File(ruta_sd.getAbsolutePath(), tipo + "aciertos");
+            File f = new File(ruta_sd.getAbsolutePath(), tipo + "estudio");
             OutputStreamWriter fout =
                     new OutputStreamWriter(
                             new FileOutputStream(f));
 
-            fout.write(aciertos + "");
+            fout.write(SJson);
             fout.close();
             System.out.println(ruta_sd);
             System.out.println(f);
         } catch (Exception ex) {
             Log.e("Ficheros", "Error al escribir fichero a tarjeta SD");
-            correcto[0] = false;
-        }
-        try {
-            String state = Environment.getExternalStorageState();
-
-            File ruta_sd;
-            if (Environment.MEDIA_MOUNTED.equals(state)) {
-                // We can read and write the media
-                ruta_sd = getExternalFilesDir(null);
-            } else {
-                // Load another directory, probably local memory
-                ruta_sd = getFilesDir();
-            }
-            File f = new File(ruta_sd.getAbsolutePath(), tipo + "fallos");
-            OutputStreamWriter fout =
-                    new OutputStreamWriter(
-                            new FileOutputStream(f));
-
-            fout.write(fallos + "");
-            fout.close();
-            System.out.println(ruta_sd);
-            System.out.println(f);
-        } catch (Exception ex) {
-            Log.e("Ficheros", "Error al escribir fichero a tarjeta SD");
-            correcto[1] = false;
-        }
-        try {
-            String state = Environment.getExternalStorageState();
-
-            File ruta_sd;
-            if (Environment.MEDIA_MOUNTED.equals(state)) {
-                // We can read and write the media
-                ruta_sd = getExternalFilesDir(null);
-            } else {
-                // Load another directory, probably local memory
-                ruta_sd = getFilesDir();
-            }
-            File f = new File(ruta_sd.getAbsolutePath(), tipo + "colocar");
-            OutputStreamWriter fout =
-                    new OutputStreamWriter(
-                            new FileOutputStream(f));
-
-            fout.write(colocar + "");
-            fout.close();
-            System.out.println(ruta_sd);
-            System.out.println(f);
-        } catch (Exception ex) {
-            Log.e("Ficheros", "Error al escribir fichero a tarjeta SD");
-            correcto[2] = false;
-        }
-        try {
-            String state = Environment.getExternalStorageState();
-
-            File ruta_sd;
-            if (Environment.MEDIA_MOUNTED.equals(state)) {
-                // We can read and write the media
-                ruta_sd = getExternalFilesDir(null);
-            } else {
-                // Load another directory, probably local memory
-                ruta_sd = getFilesDir();
-            }
-            File f = new File(ruta_sd.getAbsolutePath(), tipo + "cont");
-            OutputStreamWriter fout =
-                    new OutputStreamWriter(
-                            new FileOutputStream(f));
-
-            fout.write((cont.getCont()) + "");
-            fout.close();
-            System.out.println(ruta_sd);
-            System.out.println(f);
-        } catch (Exception ex) {
-            Log.e("Ficheros", "Error al escribir fichero a tarjeta SD");
-            correcto[3] = false;
-        }
-        try {
-            String state = Environment.getExternalStorageState();
-
-            File ruta_sd;
-            if (Environment.MEDIA_MOUNTED.equals(state)) {
-                // We can read and write the media
-                ruta_sd = getExternalFilesDir(null);
-            } else {
-                // Load another directory, probably local memory
-                ruta_sd = getFilesDir();
-            }
-            File f = new File(ruta_sd.getAbsolutePath(), tipo + "pos");
-            OutputStreamWriter fout =
-                    new OutputStreamWriter(
-                            new FileOutputStream(f));
-            for (int i = 0; i < pos.length; i++) {
-                fout.write(pos[i] + "\n");
-                fout.flush();
-            }
-            fout.close();
-            System.out.println(ruta_sd);
-            System.out.println(f);
-        } catch (Exception ex) {
-            Log.e("Ficheros", "Error al escribir fichero a tarjeta SD");
-            correcto[4] = false;
-        }
-        try {
-            String state = Environment.getExternalStorageState();
-
-            File ruta_sd;
-            if (Environment.MEDIA_MOUNTED.equals(state)) {
-                // We can read and write the media
-                ruta_sd = getExternalFilesDir(null);
-            } else {
-                // Load another directory, probably local memory
-                ruta_sd = getFilesDir();
-            }
-            File f = new File(ruta_sd.getAbsolutePath(), tipo + "arreglo");
-            OutputStreamWriter fout =
-                    new OutputStreamWriter(
-                            new FileOutputStream(f));
-
-            fout.write(arreglo + "");
-            fout.close();
-            System.out.println(ruta_sd);
-            System.out.println(f);
-        } catch (Exception ex) {
-            Log.e("Ficheros", "Error al escribir fichero a tarjeta SD");
-            correcto[5] = false;
+            correcto = false;
         }
 
-        if (!correcto[0] && !correcto[1] && !correcto[2] && !correcto[3] && !correcto[4]) {
+        if (!correcto) {
             Toast toast1 = Toast.makeText(getApplicationContext(), getString(R.string.errorguardar), Toast.LENGTH_SHORT);
             toast1.show();
             /*si falla borramos todo los archivos en caso de que exista*/
@@ -857,16 +670,8 @@ public class main_preguntas extends Activity {
                     // Load another directory, probably local memory
                     ruta_sd = getFilesDir();
                 }
-                File a = new File(ruta_sd.getAbsolutePath(), tipo + "cont");
-                File b = new File(ruta_sd.getAbsolutePath(), tipo + "aciertos");
-                File c = new File(ruta_sd.getAbsolutePath(), tipo + "fallos");
-                File d = new File(ruta_sd.getAbsolutePath(), tipo + "colocar");
-                File e = new File(ruta_sd.getAbsolutePath(), tipo + "pos");
+                File a = new File(ruta_sd.getAbsolutePath(), tipo + "estudio");
                 a.delete();
-                b.delete();
-                c.delete();
-                d.delete();
-                e.delete();
             } catch (Exception e) {
                 Toast toast2 = Toast.makeText(getApplicationContext(), getString(R.string.errormemo), Toast.LENGTH_SHORT);
                 toast2.show();

@@ -28,13 +28,13 @@ public class main_info extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_info);
 
-        ScrollView padre = (ScrollView)findViewById(R.id.padre);
+        ScrollView padre = (ScrollView) findViewById(R.id.padre);
         Calendar cc1 = new GregorianCalendar();
         int dia = cc1.get(Calendar.DAY_OF_MONTH);
-        int mes = cc1.get(Calendar.MONTH)+1;
-        if( (mes ==11 || mes ==12) || (mes ==1 && dia <=7)){
+        int mes = cc1.get(Calendar.MONTH) + 1;
+        if ((mes == 11 || mes == 12) || (mes == 1 && dia <= 7)) {
             padre.setBackgroundResource(R.color.rojonavidad);
-        }else{
+        } else {
 
         }
 
@@ -541,8 +541,11 @@ public class main_info extends Activity {
         final TextView e = (TextView) findViewById(R.id.e);
         final TextView f = (TextView) findViewById(R.id.f);
         final TextView g = (TextView) findViewById(R.id.g);
+
+
         final TextView h = (TextView) findViewById(R.id.h);
         final TextView i = (TextView) findViewById(R.id.i);
+
 
         final Button a1 = (Button) findViewById(R.id.a1);
         final Button b1 = (Button) findViewById(R.id.b1);
@@ -551,12 +554,32 @@ public class main_info extends Activity {
         final Button e1 = (Button) findViewById(R.id.e1);
         final Button f1 = (Button) findViewById(R.id.f1);
         final Button g1 = (Button) findViewById(R.id.g1);
+
+
         final Button h1 = (Button) findViewById(R.id.h1);
         final Button i1 = (Button) findViewById(R.id.i1);
 
+        final TextView aaca = (TextView) findViewById(R.id.aaca);
+        final TextView baca = (TextView) findViewById(R.id.baca);
+        final TextView caca = (TextView) findViewById(R.id.caca);
+        final TextView daca = (TextView) findViewById(R.id.daca);
+        final TextView eaca = (TextView) findViewById(R.id.eaca);
+        final TextView faca = (TextView) findViewById(R.id.faca);
+        final TextView gaca = (TextView) findViewById(R.id.gaca);
+
+        final Button a1aca = (Button) findViewById(R.id.a1aca);
+        final Button b1aca = (Button) findViewById(R.id.b1aca);
+        final Button c1aca = (Button) findViewById(R.id.c1aca);
+        final Button d1aca = (Button) findViewById(R.id.d1aca);
+        final Button e1aca = (Button) findViewById(R.id.e1aca);
+        final Button f1aca = (Button) findViewById(R.id.f1aca);
+        final Button g1aca = (Button) findViewById(R.id.g1aca);
+
+
         dato.setVisibility(View.GONE);
 
-        if (datos("verbal") || datos("numerico") || datos("espacial") || datos("mecanico") || datos("perceptiva") || datos("memoria") || datos("abstrapto") || datobaremo() || datoevo()) {
+        if (datos("verbal") || datos("numerico") || datos("espacial") || datos("mecanico") || datos("perceptiva") || datos("memoria") || datos("abstrapto") || datobaremo() || datoevo() ||
+                datosacademia("verbal") || datos("numerico") || datos("espacial") || datos("mecanico") || datos("perceptiva") || datos("memoria") || datos("abstrapto")) {
             if (datos("verbal")) {
                 dato.setVisibility(View.VISIBLE);
                 dato.setText("Archivos de datos de verbal encontrados");
@@ -601,10 +624,47 @@ public class main_info extends Activity {
                 i.setVisibility(View.VISIBLE);
                 i1.setVisibility(View.VISIBLE);
             }
+////////////////////////////////////////////////////////////
+            if (datosacademia("verbal")) {
+                aaca.setVisibility(View.VISIBLE);
+                aaca.setText("Archivos de datos academia de verbal encontrados");
+                a1aca.setVisibility(View.VISIBLE);
+            }
+            if (datosacademia("numerico")) {
+                baca.setVisibility(View.VISIBLE);
+                baca.setText("Archivos de datos academia de numerico encontrados");
+                b1aca.setVisibility(View.VISIBLE);
+            }
+            if (datosacademia("espacial")) {
+                caca.setVisibility(View.VISIBLE);
+                caca.setText("Archivos de datos academia de espacial encontrados");
+                c1aca.setVisibility(View.VISIBLE);
+            }
+            if (datosacademia("mecanico")) {
+                daca.setVisibility(View.VISIBLE);
+                daca.setText("Archivos de datos academia de mecanico encontrados");
+                d1aca.setVisibility(View.VISIBLE);
+            }
+            if (datosacademia("perceptiva")) {
+                eaca.setVisibility(View.VISIBLE);
+                eaca.setText("Archivos de datos academia de perceptiva encontrados");
+                e1aca.setVisibility(View.VISIBLE);
+            }
+            if (datosacademia("memoria")) {
+                faca.setVisibility(View.VISIBLE);
+                faca.setText("Archivos de datos academia de memoria encontrados");
+                f1aca.setVisibility(View.VISIBLE);
+            }
+            if (datosacademia("abstrapto")) {
+                gaca.setVisibility(View.VISIBLE);
+                gaca.setText("Archivos de datos academia de abstrapto encontrados");
+                g1aca.setVisibility(View.VISIBLE);
+            }
         } else {
             dato.setVisibility(View.VISIBLE);
             dato.setText("No se han encontrado archivos de datos guardado");
         }
+
 
         a1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -619,7 +679,8 @@ public class main_info extends Activity {
                             public void onClick(DialogInterface dialog, int which) {
                                 a1.setVisibility(View.GONE);
                                 borrar("verbal");
-                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo()) {
+                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo() &&
+                                        !datosacademia("verbal") && !datosacademia("numerico") && !datosacademia("espacial") && !datosacademia("mecanico") && !datosacademia("perceptiva") && !datosacademia("memoria") && !datosacademia("abstrapto")) {
                                     dato.setVisibility(View.VISIBLE);
                                     dato.setText("No se han encontrado archivos de datos guardado");
                                 } else {
@@ -652,7 +713,8 @@ public class main_info extends Activity {
                                 borrar("numerico");
                                 b1.setVisibility(View.GONE);
                                 b.setVisibility(View.GONE);
-                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo()) {
+                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo() &&
+                                        !datosacademia("verbal") && !datosacademia("numerico") && !datosacademia("espacial") && !datosacademia("mecanico") && !datosacademia("perceptiva") && !datosacademia("memoria") && !datosacademia("abstrapto")) {
                                     dato.setVisibility(View.VISIBLE);
                                     dato.setText("No se han encontrado archivos de datos guardado");
                                 }
@@ -682,7 +744,8 @@ public class main_info extends Activity {
                                 borrar("espacial");
                                 c1.setVisibility(View.GONE);
                                 c.setVisibility(View.GONE);
-                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo()) {
+                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo() &&
+                                        !datosacademia("verbal") && !datosacademia("numerico") && !datosacademia("espacial") && !datosacademia("mecanico") && !datosacademia("perceptiva") && !datosacademia("memoria") && !datosacademia("abstrapto")) {
                                     dato.setVisibility(View.VISIBLE);
                                     dato.setText("No se han encontrado archivos de datos guardado");
                                 }
@@ -712,7 +775,8 @@ public class main_info extends Activity {
                                 borrar("mecanico");
                                 d1.setVisibility(View.GONE);
                                 d.setVisibility(View.GONE);
-                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo()) {
+                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo() &&
+                                        !datosacademia("verbal") && !datosacademia("numerico") && !datosacademia("espacial") && !datosacademia("mecanico") && !datosacademia("perceptiva") && !datosacademia("memoria") && !datosacademia("abstrapto")) {
                                     dato.setVisibility(View.VISIBLE);
                                     dato.setText("No se han encontrado archivos de datos guardado");
                                 }
@@ -742,7 +806,8 @@ public class main_info extends Activity {
                                 borrar("perceptiva");
                                 e1.setVisibility(View.GONE);
                                 e.setVisibility(View.GONE);
-                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo()) {
+                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo() &&
+                                        !datosacademia("verbal") && !datosacademia("numerico") && !datosacademia("espacial") && !datosacademia("mecanico") && !datosacademia("perceptiva") && !datosacademia("memoria") && !datosacademia("abstrapto")) {
                                     dato.setVisibility(View.VISIBLE);
                                     dato.setText("No se han encontrado archivos de datos guardado");
                                 }
@@ -772,7 +837,8 @@ public class main_info extends Activity {
                                 borrar("memoria");
                                 f1.setVisibility(View.GONE);
                                 f.setVisibility(View.GONE);
-                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo()) {
+                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo() &&
+                                        !datosacademia("verbal") && !datosacademia("numerico") && !datosacademia("espacial") && !datosacademia("mecanico") && !datosacademia("perceptiva") && !datosacademia("memoria") && !datosacademia("abstrapto")) {
                                     dato.setVisibility(View.VISIBLE);
                                     dato.setText("No se han encontrado archivos de datos guardado");
                                 }
@@ -802,7 +868,8 @@ public class main_info extends Activity {
                                 borrar("abstrapto");
                                 g1.setVisibility(View.GONE);
                                 g.setVisibility(View.GONE);
-                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo()) {
+                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo() &&
+                                        !datosacademia("verbal") && !datosacademia("numerico") && !datosacademia("espacial") && !datosacademia("mecanico") && !datosacademia("perceptiva") && !datosacademia("memoria") && !datosacademia("abstrapto")) {
                                     dato.setVisibility(View.VISIBLE);
                                     dato.setText("No se han encontrado archivos de datos guardado");
                                 }
@@ -832,7 +899,8 @@ public class main_info extends Activity {
                                 borrarbar();
                                 h1.setVisibility(View.GONE);
                                 h.setVisibility(View.GONE);
-                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo()) {
+                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo() &&
+                                        !datosacademia("verbal") && !datosacademia("numerico") && !datosacademia("espacial") && !datosacademia("mecanico") && !datosacademia("perceptiva") && !datosacademia("memoria") && !datosacademia("abstrapto")) {
                                     dato.setVisibility(View.VISIBLE);
                                     dato.setText("No se han encontrado archivos de datos guardado");
                                 }
@@ -870,12 +938,231 @@ public class main_info extends Activity {
                                                 int which) {
                             }
                         }).show();
-                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo()) {
+                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo() &&
+                        !datosacademia("verbal") && !datosacademia("numerico") && !datosacademia("espacial") && !datosacademia("mecanico") && !datosacademia("perceptiva") && !datosacademia("memoria") && !datosacademia("abstrapto")) {
                     dato.setVisibility(View.VISIBLE);
                     dato.setText("No se han encontrado archivos de datos guardado");
                 }
             }
         });
+
+        a1aca.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                new AlertDialog.Builder(main_info.this)
+                        .setIcon(getResources().getDrawable(R.drawable.iborrar))
+                        .setTitle(getString(R.string.borrar))
+                        .setCancelable(false)
+                        .setMessage(getString(R.string.borrardatos))
+                        .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                borrarAcademia("verbal");
+                                a1aca.setVisibility(View.GONE);
+                                aaca.setVisibility(View.GONE);
+                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo() &&
+                                        !datosacademia("verbal") && !datosacademia("numerico") && !datosacademia("espacial") && !datosacademia("mecanico") && !datosacademia("perceptiva") && !datosacademia("memoria") && !datosacademia("abstrapto")) {
+                                    dato.setVisibility(View.VISIBLE);
+                                    dato.setText("No se han encontrado archivos de datos guardado");
+                                }
+                            }
+                        })
+                        .setPositiveButton(getString(R.string.no), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog,
+                                                int which) {
+                            }
+                        }).show();
+            }
+        });
+        b1aca.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                new AlertDialog.Builder(main_info.this)
+                        .setIcon(getResources().getDrawable(R.drawable.iborrar))
+                        .setTitle(getString(R.string.borrar))
+                        .setCancelable(false)
+                        .setMessage(getString(R.string.borrardatos))
+                        .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                borrarAcademia("numerico");
+                                b1aca.setVisibility(View.GONE);
+                                baca.setVisibility(View.GONE);
+                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo() &&
+                                        !datosacademia("verbal") && !datosacademia("numerico") && !datosacademia("espacial") && !datosacademia("mecanico") && !datosacademia("perceptiva") && !datosacademia("memoria") && !datosacademia("abstrapto")) {
+                                    dato.setVisibility(View.VISIBLE);
+                                    dato.setText("No se han encontrado archivos de datos guardado");
+                                }
+                            }
+                        })
+                        .setPositiveButton(getString(R.string.no), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog,
+                                                int which) {
+                            }
+                        }).show();
+
+            }
+        });
+        c1aca.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                new AlertDialog.Builder(main_info.this)
+                        .setIcon(getResources().getDrawable(R.drawable.iborrar))
+                        .setTitle(getString(R.string.borrar))
+                        .setCancelable(false)
+                        .setMessage(getString(R.string.borrardatos))
+                        .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                borrarAcademia("espacial");
+                                c1aca.setVisibility(View.GONE);
+                                caca.setVisibility(View.GONE);
+                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo() &&
+                                        !datosacademia("verbal") && !datosacademia("numerico") && !datosacademia("espacial") && !datosacademia("mecanico") && !datosacademia("perceptiva") && !datosacademia("memoria") && !datosacademia("abstrapto")) {
+                                    dato.setVisibility(View.VISIBLE);
+                                    dato.setText("No se han encontrado archivos de datos guardado");
+                                }
+                            }
+                        })
+                        .setPositiveButton(getString(R.string.no), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog,
+                                                int which) {
+                            }
+                        }).show();
+
+            }
+        });
+        d1aca.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                new AlertDialog.Builder(main_info.this)
+                        .setIcon(getResources().getDrawable(R.drawable.iborrar))
+                        .setTitle(getString(R.string.borrar))
+                        .setCancelable(false)
+                        .setMessage(getString(R.string.borrardatos))
+                        .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                borrarAcademia("mecanico");
+                                d1aca.setVisibility(View.GONE);
+                                daca.setVisibility(View.GONE);
+                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo() &&
+                                        !datosacademia("verbal") && !datosacademia("numerico") && !datosacademia("espacial") && !datosacademia("mecanico") && !datosacademia("perceptiva") && !datosacademia("memoria") && !datosacademia("abstrapto")) {
+                                    dato.setVisibility(View.VISIBLE);
+                                    dato.setText("No se han encontrado archivos de datos guardado");
+                                }
+                            }
+                        })
+                        .setPositiveButton(getString(R.string.no), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog,
+                                                int which) {
+                            }
+                        }).show();
+
+            }
+        });
+        e1aca.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                new AlertDialog.Builder(main_info.this)
+                        .setIcon(getResources().getDrawable(R.drawable.iborrar))
+                        .setTitle(getString(R.string.borrar))
+                        .setCancelable(false)
+                        .setMessage(getString(R.string.borrardatos))
+                        .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                borrarAcademia("perceptiva");
+                                e1aca.setVisibility(View.GONE);
+                                eaca.setVisibility(View.GONE);
+                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo() &&
+                                        !datosacademia("verbal") && !datosacademia("numerico") && !datosacademia("espacial") && !datosacademia("mecanico") && !datosacademia("perceptiva") && !datosacademia("memoria") && !datosacademia("abstrapto")) {
+                                    dato.setVisibility(View.VISIBLE);
+                                    dato.setText("No se han encontrado archivos de datos guardado");
+                                }
+                            }
+                        })
+                        .setPositiveButton(getString(R.string.no), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog,
+                                                int which) {
+                            }
+                        }).show();
+
+            }
+        });
+        f1aca.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                new AlertDialog.Builder(main_info.this)
+                        .setIcon(getResources().getDrawable(R.drawable.iborrar))
+                        .setTitle(getString(R.string.borrar))
+                        .setCancelable(false)
+                        .setMessage(getString(R.string.borrardatos))
+                        .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                borrarAcademia("memoria");
+                                f1aca.setVisibility(View.GONE);
+                                faca.setVisibility(View.GONE);
+                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo() &&
+                                        !datosacademia("verbal") && !datosacademia("numerico") && !datosacademia("espacial") && !datosacademia("mecanico") && !datosacademia("perceptiva") && !datosacademia("memoria") && !datosacademia("abstrapto")) {
+                                    dato.setVisibility(View.VISIBLE);
+                                    dato.setText("No se han encontrado archivos de datos guardado");
+                                }
+                            }
+                        })
+                        .setPositiveButton(getString(R.string.no), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog,
+                                                int which) {
+                            }
+                        }).show();
+
+            }
+        });
+        g1aca.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                new AlertDialog.Builder(main_info.this)
+                        .setIcon(getResources().getDrawable(R.drawable.iborrar))
+                        .setTitle(getString(R.string.borrar))
+                        .setCancelable(false)
+                        .setMessage(getString(R.string.borrardatos))
+                        .setNegativeButton(getString(R.string.si), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                borrarAcademia("abstrapto");
+                                g1aca.setVisibility(View.GONE);
+                                gaca.setVisibility(View.GONE);
+                                if (!datos("verbal") && !datos("numerico") && !datos("espacial") && !datos("mecanico") && !datos("perceptiva") && !datos("memoria") && !datos("abstrapto") && !datobaremo() && !datoevo() &&
+                                        !datosacademia("verbal") && !datosacademia("numerico") && !datosacademia("espacial") && !datosacademia("mecanico") && !datosacademia("perceptiva") && !datosacademia("memoria") && !datosacademia("abstrapto")) {
+                                    dato.setVisibility(View.VISIBLE);
+                                    dato.setText("No se han encontrado archivos de datos guardado");
+                                }
+                            }
+                        })
+                        .setPositiveButton(getString(R.string.no), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog,
+                                                int which) {
+                            }
+                        }).show();
+
+            }
+        });
+
         String version = String.valueOf((BuildConfig.VERSION_NAME));
         TextView versi = (TextView) findViewById(R.id.version);
         versi.setText(version);
@@ -893,14 +1180,28 @@ public class main_info extends Activity {
             // Load another directory, probably local memory
             ruta_sd = getFilesDir();
         }
-        final File a = new File(ruta_sd.getAbsolutePath(), tipo + "cont");
-        final File b = new File(ruta_sd.getAbsolutePath(), tipo + "aciertos");
-        final File c = new File(ruta_sd.getAbsolutePath(), tipo + "fallos");
-        final File d = new File(ruta_sd.getAbsolutePath(), tipo + "colocar");
-        final File e = new File(ruta_sd.getAbsolutePath(), tipo + "pos");
-        final File f = new File(ruta_sd.getAbsolutePath(), tipo + "arreglo");
+        final File a = new File(ruta_sd.getAbsolutePath(), tipo + "estudio");
 
-        if (a.exists() || b.exists() || c.exists() || d.exists() || e.exists() || f.exists()) {
+        if (a.exists()) {
+            encontrado = true;
+        }
+        return encontrado;
+    }
+
+    private boolean datosacademia(String tipo) {
+        boolean encontrado = false;
+        File ruta_sd;
+        String state = Environment.getExternalStorageState();
+        if (Environment.MEDIA_MOUNTED.equals(state)) {
+            // We can read and write the media
+            ruta_sd = getExternalFilesDir(null);
+        } else {
+            // Load another directory, probably local memory
+            ruta_sd = getFilesDir();
+        }
+        final File a = new File(ruta_sd.getAbsolutePath(), tipo + "estudioAcademia");
+
+        if (a.exists()) {
             encontrado = true;
         }
         return encontrado;
@@ -924,7 +1225,7 @@ public class main_info extends Activity {
         return encontrado;
     }
 
-    private boolean datoevo(){
+    private boolean datoevo() {
         boolean encontrado = false;
         File ruta_sd;
         String state = Environment.getExternalStorageState();
@@ -947,7 +1248,7 @@ public class main_info extends Activity {
         return encontrado;
     }
 
-    private void borrarevo(){
+    private void borrarevo() {
         File ruta_sd;
         String state = Environment.getExternalStorageState();
         if (Environment.MEDIA_MOUNTED.equals(state)) {
@@ -962,7 +1263,7 @@ public class main_info extends Activity {
         for (int x = 0; x < ficheros.length; x++) {
             String kk = (ficheros[x].getName());
             if (kk.length() > 25 && kk.substring(19, 25).equals("examen")) {
-                a = new File (ruta_sd.getAbsolutePath(), (ficheros[x].getName()));
+                a = new File(ruta_sd.getAbsolutePath(), (ficheros[x].getName()));
                 a.delete();
             }
         }
@@ -979,18 +1280,22 @@ public class main_info extends Activity {
             // Load another directory, probably local memory
             ruta_sd = getFilesDir();
         }
-        final File a = new File(ruta_sd.getAbsolutePath(), tipo + "cont");
-        final File b = new File(ruta_sd.getAbsolutePath(), tipo + "aciertos");
-        final File c = new File(ruta_sd.getAbsolutePath(), tipo + "fallos");
-        final File d = new File(ruta_sd.getAbsolutePath(), tipo + "colocar");
-        final File e = new File(ruta_sd.getAbsolutePath(), tipo + "pos");
-        final File f = new File(ruta_sd.getAbsolutePath(), tipo + "arreglo");
+        final File a = new File(ruta_sd.getAbsolutePath(), tipo + "estudio");
         a.delete();
-        b.delete();
-        c.delete();
-        d.delete();
-        e.delete();
-        f.delete();
+    }
+
+    private void borrarAcademia(String tipo) {
+        File ruta_sd;
+        String state = Environment.getExternalStorageState();
+        if (Environment.MEDIA_MOUNTED.equals(state)) {
+            // We can read and write the media
+            ruta_sd = getExternalFilesDir(null);
+        } else {
+            // Load another directory, probably local memory
+            ruta_sd = getFilesDir();
+        }
+        final File a = new File(ruta_sd.getAbsolutePath(), tipo + "estudioAcademia");
+        a.delete();
     }
 
     private void borrarbar() {

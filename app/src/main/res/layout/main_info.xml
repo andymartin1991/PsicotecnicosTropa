@@ -155,12 +155,165 @@
                     android:padding="10dp">
 
                     <TextView
-                        android:id="@+id/datos"
+                        android:id="@+id/aaca"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ems="10"
                         android:inputType="textPersonName" />
+
+                    <Button
+                        android:id="@+id/a1aca"
+                        android:layout_width="68dp"
+                        android:layout_height="27dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:background="@drawable/boton_estado_naranja"
+                        android:text="@string/borrar"
+                        android:textAppearance="@android:style/TextAppearance.Widget.PopupMenu.Small"
+                        android:textColor="@color/BLANCO"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/baca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="Name"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/b1aca"
+                        android:layout_width="68dp"
+                        android:layout_height="27dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:background="@drawable/boton_estado_naranja"
+                        android:text="@string/borrar"
+                        android:textAppearance="@android:style/TextAppearance.Widget.PopupMenu.Small"
+                        android:textColor="@color/BLANCO"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/caca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="Name"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/c1aca"
+                        android:layout_width="68dp"
+                        android:layout_height="27dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:background="@drawable/boton_estado_naranja"
+                        android:text="@string/borrar"
+                        android:textAppearance="@android:style/TextAppearance.Widget.PopupMenu.Small"
+                        android:textColor="@color/BLANCO"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/daca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="Name"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/d1aca"
+                        android:layout_width="68dp"
+                        android:layout_height="27dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:background="@drawable/boton_estado_naranja"
+                        android:text="@string/borrar"
+                        android:textAppearance="@android:style/TextAppearance.Widget.PopupMenu.Small"
+                        android:textColor="@color/BLANCO"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/eaca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="Name"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/e1aca"
+                        android:layout_width="68dp"
+                        android:layout_height="27dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:background="@drawable/boton_estado_naranja"
+                        android:text="@string/borrar"
+                        android:textAppearance="@android:style/TextAppearance.Widget.PopupMenu.Small"
+                        android:textColor="@color/BLANCO"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/faca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="Name"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/f1aca"
+                        android:layout_width="68dp"
+                        android:layout_height="27dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:background="@drawable/boton_estado_naranja"
+                        android:text="@string/borrar"
+                        android:textAppearance="@android:style/TextAppearance.Widget.PopupMenu.Small"
+                        android:textColor="@color/BLANCO"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/gaca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="Name"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/g1aca"
+                        android:layout_width="68dp"
+                        android:layout_height="27dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:background="@drawable/boton_estado_naranja"
+                        android:text="@string/borrar"
+                        android:textAppearance="@android:style/TextAppearance.Widget.PopupMenu.Small"
+                        android:textColor="@color/BLANCO"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/datos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:visibility="gone" />
 
                     <Button
                         android:id="@+id/a1"
