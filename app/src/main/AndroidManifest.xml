@@ -23,30 +23,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".main_preguntas"></activity>
-        <activity android:name=".main_preguntasFatiga"></activity>
-        <activity android:name=".main_optTipo"></activity>
-        <activity android:name=".main_optTipoFatiga"></activity>
-        <activity android:name=".main_principal"></activity>
-        <activity android:name=".main_examen"></activity>
+        <activity android:name=".tropa.main_preguntas"></activity>
+        <activity android:name=".tropa.main_preguntasFatiga"></activity>
+        <activity android:name=".tropa.main_optTipo"></activity>
+        <activity android:name=".tropa.main_optTipoFatiga"></activity>
+        <activity android:name=".tropa.main_principal"></activity>
+        <activity android:name=".tropa.main_examen"></activity>
         <activity
-            android:name=".main_resultado_exam"
+            android:name=".tropa.main_resultado_exam"
             android:windowSoftInputMode="stateHidden"></activity>
         <activity
-            android:name=".main_contacto"
+            android:name=".tropa.main_contacto"
             android:windowSoftInputMode="stateHidden"></activity>
-        <activity android:name=".main_calculabaremo"></activity>
-        <activity android:name=".main_preguntasAleatorio"></activity>
-        <activity android:name=".main_info"></activity>
-        <activity android:name=".main_evolucion"></activity>
-        <activity android:name=".main_fisica"></activity>
-        <activity android:name=".main_trucos"></activity>
-        <activity android:name=".main_ayuda"></activity>
-        <activity android:name=".main_subevolucion"></activity>
-        <activity android:name=".main_preguntasDESARROLLO"></activity>
-        <activity android:name=".main_academia"></activity>
-        <activity android:name=".main_preguntas_academia"></activity>
-        <activity android:name=".main_estudio_academia_sub"></activity>
+        <activity android:name=".tropa.main_calculabaremo"></activity>
+        <activity android:name=".tropa.main_preguntasAleatorio"></activity>
+        <activity android:name=".tropa.main_info"></activity>
+        <activity android:name=".tropa.main_evolucion"></activity>
+        <activity android:name=".tropa.main_fisica"></activity>
+        <activity android:name=".tropa.main_trucos"></activity>
+        <activity android:name=".tropa.main_ayuda"></activity>
+        <activity android:name=".tropa.main_subevolucion"></activity>
+        <activity android:name=".tropa.main_preguntasDESARROLLO"></activity>
+        <activity android:name=".tropa.main_academia"></activity>
+        <activity android:name=".tropa.main_preguntas_academia"></activity>
+        <activity android:name=".tropa.main_estudio_academia_sub"></activity>
     </application>
 
 </manifest>

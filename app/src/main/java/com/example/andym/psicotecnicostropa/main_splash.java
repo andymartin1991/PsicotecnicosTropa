@@ -16,6 +16,9 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.example.andym.psicotecnicostropa.tropa.main_ayuda;
+import com.example.andym.psicotecnicostropa.tropa.main_principal;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -27,8 +30,6 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Timer;
 import java.util.TimerTask;
-
-import static com.example.andym.psicotecnicostropa.R.drawable.splashnavideno;
 
 
 public class main_splash extends Activity {
