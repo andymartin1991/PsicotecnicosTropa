@@ -194,7 +194,7 @@ public class main_estudio_academia_sub extends Activity {
 
     }
 
-    public String readStream(InputStream in) throws IOException {
+    public static String readStream(InputStream in) throws IOException {
         BufferedReader r = null;
         r = new BufferedReader(new InputStreamReader(in));
         StringBuilder total = new StringBuilder();

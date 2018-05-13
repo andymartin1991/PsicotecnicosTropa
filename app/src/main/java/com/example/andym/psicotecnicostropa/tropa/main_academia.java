@@ -184,7 +184,7 @@ public class main_academia extends Activity {
 
     }
 
-    public String readStream(InputStream in) throws IOException {
+    public static String readStream(InputStream in) throws IOException {
         BufferedReader r = null;
         r = new BufferedReader(new InputStreamReader(in));
         StringBuilder total = new StringBuilder();

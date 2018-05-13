@@ -45,8 +45,11 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -83,9 +86,12 @@ public class main_preguntas_academia extends Activity {
     Animation animrightatras = null;
     Animation animrightalante = null;
     ArrayList<JSONObject> objetouser;
+    URLConnection conn = null;
 
     ViewFlipper viewflipper;
     public static boolean bpre = false, ba = false, bb = false, bc = false, bd = false, bsol = false, bexpl = false;
+    String carga="";
+    String tipoborrar="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -154,6 +160,7 @@ public class main_preguntas_academia extends Activity {
                 guardar(getIntent().getExtras().getString("tipo"));
             }
         });
+        tipoborrar = getIntent().getExtras().getString("tipo");
         switch (getIntent().getExtras().getString("tipo")) {
             case "verbal":
                 this.setTitle(getString(R.string.verbal));
@@ -374,25 +381,78 @@ public class main_preguntas_academia extends Activity {
     }
 
     private void carga(final String tipo) {
-
         pp = true;
         try {
-            File ruta_sd;
-            String state = Environment.getExternalStorageState();
-            if (Environment.MEDIA_MOUNTED.equals(state)) {
-                // We can read and write the media
-                ruta_sd = getExternalFilesDir(null);
-            } else {
-                // Load another directory, probably local memory
-                ruta_sd = getFilesDir();
-            }
-            final File a = new File(ruta_sd.getAbsolutePath(), tipo + "estudioAcademia");
 
-            if (a.exists()) {
+            try {
+                conn = new URL("http://s593975491.mialojamiento.es/APPpsicotecnicostropa(1)/cargabloque.php?idACA="+ main_academia.idACAM+"&correoalu="+main_academia.correo+"&tipo="+tipo).openConnection();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            final Handler handler = new Handler();
+            final InputStream[] in = new InputStream[1];
+            new Thread(new Runnable() {
+                public void run() {
+                    try {
+                        in[0] = conn.getInputStream();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    try {
+                        carga = main_academia.readStream(in[0]).toString();
+                        handler.post(cargaok);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }).start();
+
+        } catch (Exception e) {
+
+        }
+
+    }
+
+    final Runnable guardaok = new Runnable() {
+        @Override
+        public void run() {
+        Toast toast1 = Toast.makeText(getApplicationContext(), getString(R.string.guardado), Toast.LENGTH_SHORT);
+        toast1.show();
+        }
+    };
+
+    final Runnable borrarok = new Runnable() {
+        @Override
+        public void run() {
+            Toast toast1 = Toast.makeText(getApplicationContext(), "Borrado", Toast.LENGTH_SHORT);
+            toast1.show();
+        }
+    };
+
+    final Runnable guardafail = new Runnable() {
+        @Override
+        public void run() {
+            Toast toast1 = Toast.makeText(getApplicationContext(), getString(R.string.errorguardar), Toast.LENGTH_SHORT);
+            toast1.show();
+        }
+    };
+
+    final Runnable borrarfail = new Runnable() {
+        @Override
+        public void run() {
+            Toast toast1 = Toast.makeText(getApplicationContext(), "Error al borrar", Toast.LENGTH_SHORT);
+            toast1.show();
+        }
+    };
+
+    final Runnable cargaok = new Runnable() {
+        @Override
+        public void run() {
+            if (!carga.equals("")) {
                 final ScrollView contenedor = (ScrollView) findViewById(R.id.contenedor);
                 contenedor.setVisibility(View.INVISIBLE);
 
-                new AlertDialog.Builder(this)
+                new AlertDialog.Builder(main_preguntas_academia.this)
                         .setIcon(getResources().getDrawable(R.drawable.iexc))
                         .setTitle(getString(R.string.atencion))
                         .setMessage(getString(R.string.datosencontrado))
@@ -402,6 +462,34 @@ public class main_preguntas_academia extends Activity {
                                     @Override
                                     public void onClick(DialogInterface dialog,
                                                         int which) {
+
+                                        try {
+                                            conn = new URL("http://s593975491.mialojamiento.es/APPpsicotecnicostropa(1)/guardageneral.php?idACA="+ main_academia.idACAM+"&correoalu="+main_academia.correo+"&tipo="+tipoborrar+"&json=").openConnection();
+                                        } catch (IOException e) {
+                                            e.printStackTrace();
+                                        }
+                                        final Handler handler = new Handler();
+                                        final InputStream[] in = new InputStream[1];
+                                        new Thread(new Runnable() {
+                                            public void run() {
+                                                try {
+                                                    in[0] = conn.getInputStream();
+                                                } catch (IOException e) {
+                                                    e.printStackTrace();
+                                                }
+                                                try {
+                                                    String contents = main_academia.readStream(in[0]).toString();
+                                                    if(contents.equals("ok")) {
+                                                        handler.post(borrarok);
+                                                    }else{
+                                                        handler.post(borrarok);
+                                                    }
+                                                } catch (IOException e) {
+                                                    e.printStackTrace();
+                                                    handler.post(borrarfail);
+                                                }
+                                            }
+                                        }).start();
                                         pp = false;
                                         cont.setCont(0);
                                         avanza();
@@ -427,18 +515,8 @@ public class main_preguntas_academia extends Activity {
                                     @Override
                                     public void onClick(DialogInterface dialog,
                                                         int which) {
-
-
-                                        String json = "";
                                         try {
-                                            BufferedReader fin = new BufferedReader(new InputStreamReader(new FileInputStream(a)));
-                                            json = fin.readLine();
-                                            fin.close();
-                                        } catch (IOException e) {
-
-                                        }
-                                        try {
-                                            JSONObject resjson = new JSONObject(json);
+                                            JSONObject resjson = new JSONObject(carga);
                                             JSONArray myJsonArray = resjson.getJSONArray("academias");
                                             objetouser = new ArrayList();
                                             int i = 0;
@@ -507,12 +585,8 @@ public class main_preguntas_academia extends Activity {
                     }
                 }
             }
-
-        } catch (Exception e) {
-
         }
-
-    }
+    };
 
     private void guardar(String tipo) {
         //////////////prepara json
@@ -528,60 +602,36 @@ public class main_preguntas_academia extends Activity {
         String SJsonfinal = "]}]}";
         String SJson = SJsonCabeza + SJonpos + SJsonfinal;
         ///////////////fin preparar json
-        boolean correcto = true;
+        //main_academia.idACAM
+        //main_academia.correo
+        final String[] contents = {""};
         try {
-            String state = Environment.getExternalStorageState();
-
-            File ruta_sd;
-            if (Environment.MEDIA_MOUNTED.equals(state)) {
-                // We can read and write the media
-                ruta_sd = getExternalFilesDir(null);
-            } else {
-                // Load another directory, probably local memory
-                ruta_sd = getFilesDir();
-            }
-            //File ruta_sd = getExternalFilesDir(null);
-            File f = new File(ruta_sd.getAbsolutePath(), tipo + "estudioAcademia");
-            OutputStreamWriter fout =
-                    new OutputStreamWriter(
-                            new FileOutputStream(f));
-
-            fout.write(SJson);
-            fout.close();
-            System.out.println(ruta_sd);
-            System.out.println(f);
-        } catch (Exception ex) {
-            Log.e("Ficheros", "Error al escribir fichero a tarjeta SD");
-            correcto = false;
+            conn = new URL("http://s593975491.mialojamiento.es/APPpsicotecnicostropa(1)/guardageneral.php?idACA="+ main_academia.idACAM+"&correoalu="+main_academia.correo+"&tipo="+tipo+"&json="+SJson).openConnection();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-
-        if (!correcto) {
-            Toast toast1 = Toast.makeText(getApplicationContext(), getString(R.string.errorguardar), Toast.LENGTH_SHORT);
-            toast1.show();
-            /*si falla borramos todo los archivos en caso de que exista*/
-            try {
-                String state = Environment.getExternalStorageState();
-
-                File ruta_sd;
-                if (Environment.MEDIA_MOUNTED.equals(state)) {
-                    // We can read and write the media
-                    ruta_sd = getExternalFilesDir(null);
-                } else {
-                    // Load another directory, probably local memory
-                    ruta_sd = getFilesDir();
+        final Handler handler = new Handler();
+        final InputStream[] in = new InputStream[1];
+        new Thread(new Runnable() {
+            public void run() {
+                try {
+                    in[0] = conn.getInputStream();
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
-                File a = new File(ruta_sd.getAbsolutePath(), tipo + "estudioAcademia");
-                a.delete();
-            } catch (Exception e) {
-                Toast toast2 = Toast.makeText(getApplicationContext(), getString(R.string.errormemo), Toast.LENGTH_SHORT);
-                toast2.show();
+                try {
+                    contents[0] = main_academia.readStream(in[0]).toString();
+                    if(contents[0].equals("ok")) {
+                        handler.post(guardaok);
+                    }else{
+                        handler.post(guardaok);
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    handler.post(guardafail);
+                }
             }
-
-        } else {
-            Toast toast1 =
-                    Toast.makeText(getApplicationContext(), getString(R.string.guardado), Toast.LENGTH_SHORT);
-            toast1.show();
-        }
+        }).start();
     }
 
     private void calcularestado() {
