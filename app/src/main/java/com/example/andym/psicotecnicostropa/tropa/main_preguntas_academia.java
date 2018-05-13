@@ -251,6 +251,7 @@ public class main_preguntas_academia extends Activity {
                             alante.setVisibility(View.VISIBLE);
                         }
                     }
+
                 }
             }
         });
@@ -263,13 +264,15 @@ public class main_preguntas_academia extends Activity {
                     ocultaratras();
                     if (cont.getCont() > 0) {
                         cont.setCont(cont.getCont() - 1);
-                        limpiarelementos();
-                        ocultaratras();
+                        //limpiarelementos();
+                        //ocultaratras();
                         if (arreglo == 1) {
                             cont.setCont(cont.getCont() - 1);
-                            limpiarelementos();
-                            ocultaratras();
+                            //limpiarelementos();
+                           //ocultaratras();
                         }
+                        limpiarelementos();
+                        ocultaratras();
                         arreglo = 2;
                         viewflipper.setInAnimation(animrightatras);
                         viewflipper.showPrevious();
@@ -602,8 +605,6 @@ public class main_preguntas_academia extends Activity {
         String SJsonfinal = "]}]}";
         String SJson = SJsonCabeza + SJonpos + SJsonfinal;
         ///////////////fin preparar json
-        //main_academia.idACAM
-        //main_academia.correo
         final String[] contents = {""};
         try {
             conn = new URL("http://s593975491.mialojamiento.es/APPpsicotecnicostropa(1)/guardageneral.php?idACA="+ main_academia.idACAM+"&correoalu="+main_academia.correo+"&tipo="+tipo+"&json="+SJson).openConnection();
@@ -790,26 +791,38 @@ public class main_preguntas_academia extends Activity {
     ///////////inicio de carga y boton avanzar////////
     //////////////////////////////////////////////////
     private void avanza() {
-        ocultaralante();
-        if (cont.getCont() < pre.length) {
-            limpiarelementos();
-            cont.setCont(cont.getCont() + 1);
+
             ocultaralante();
-            viewflipper.setInAnimation(animrightalante);
-            viewflipper.showPrevious();
-            if (arreglo == 2) {
-                limpiarelementos();
-                cont.setCont(cont.getCont() + 1);
-                ocultaralante();
+            if (cont.getCont() < pre.length) {
+
+                if (arreglo == 2) {
+                    cont.setCont(cont.getCont() + 1);
+                    limpiarelementos();
+                    if(cont.getCont() != 0) {
+                        viewflipper.setInAnimation(animrightalante);
+                        viewflipper.showPrevious();
+                    }
+                    cont.setCont(cont.getCont() + 1);
+                    ocultaralante();
+                }else{
+                    limpiarelementos();
+
+                    if(cont.getCont() != 0) {
+                        viewflipper.setInAnimation(animrightalante);
+                        viewflipper.showPrevious();
+                    }
+                    cont.setCont(cont.getCont() + 1);
+                    ocultaralante();
+                }
+                arreglo = 1;
+            } else {
+                Toast.makeText(getApplicationContext(), "Fin", Toast.LENGTH_SHORT).show();
             }
-            arreglo = 1;
-        } else {
-            Toast.makeText(getApplicationContext(), "Fin", Toast.LENGTH_SHORT).show();
-        }
-        a.setEnabled(true);
-        b.setEnabled(true);
-        c.setEnabled(true);
-        d.setEnabled(true);
+            a.setEnabled(true);
+            b.setEnabled(true);
+            c.setEnabled(true);
+            d.setEnabled(true);
+
     }
 
     //////////////////////////////////////////////////
@@ -888,7 +901,6 @@ public class main_preguntas_academia extends Activity {
             imgpregunta.setVisibility(View.GONE);
             bpre = true;
         } else {
-
             final String url = ("http://s593975491.mialojamiento.es/PsicotecnicosTropa/dirAcademias/" + main_academia.idACAM + "/" + pre[cont.getCont()].getImgPregunta() + "");
             new Thread(new Runnable() {
                 public void run() {
@@ -941,7 +953,6 @@ public class main_preguntas_academia extends Activity {
             }).start();
         }
         if (pre[cont.getCont()].getImgSol().equals("")) {
-            imgesol.setVisibility(View.GONE);
             bsol = true;
         } else {
             final String url = ("http://s593975491.mialojamiento.es/PsicotecnicosTropa/dirAcademias/" + main_academia.idACAM + "/" + pre[cont.getCont()].getImgSol() + "");
