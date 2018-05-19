@@ -953,6 +953,7 @@ public class main_preguntas_academia extends Activity {
             }).start();
         }
         if (pre[cont.getCont()].getImgSol().equals("")) {
+            imgesol.setVisibility(View.GONE);
             bsol = true;
         } else {
             final String url = ("http://s593975491.mialojamiento.es/PsicotecnicosTropa/dirAcademias/" + main_academia.idACAM + "/" + pre[cont.getCont()].getImgSol() + "");

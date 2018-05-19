@@ -222,52 +222,52 @@ public class main_estudio_academia_sub extends Activity {
                 objetPreguntas = new Preguntas[objetouser.size()];
                 for (int i = 0; i < objetouser.size(); i++) {
                     String solucion = "", imgSol = "";
-                    switch (objetouser.get(i).getString("SOLUCION")){
+                    switch (objetouser.get(i).getString("SOLUCION").toString()){
                         case "a":
-                            if(objetouser.get(i).getString("RES_A").equals("")) {
+                            if(objetouser.get(i).getString("RES_A").toString().equals("")) {
                             }else{
-                                solucion = ("A)" + objetouser.get(i).getString("RES_A"));
+                                solucion = ("A)" + objetouser.get(i).getString("RES_A").toString());
                             }
-                            imgSol =  objetouser.get(i).getString("IMG_A");
+                            imgSol =  objetouser.get(i).getString("IMG_A").toString();
                             break;
                         case "b":
-                            if(!objetouser.get(i).getString("RES_B").equals("")) {
+                            if(objetouser.get(i).getString("RES_B").toString().equals("")) {
                             }else{
-                                solucion = ("B)" + objetouser.get(i).getString("RES_B"));
+                                solucion = ("B)" + objetouser.get(i).getString("RES_B").toString());
                             }
-                            imgSol =  objetouser.get(i).getString("IMG_B");
+                            imgSol =  objetouser.get(i).getString("IMG_B").toString();
                             break;
                         case "c":
-                            if(!objetouser.get(i).getString("RES_C").equals("")) {
+                            if(objetouser.get(i).getString("RES_C").toString().equals("")) {
                             }else{
-                                solucion = ("C)"+objetouser.get(i).getString("RES_C"));
+                                solucion = ("C)"+objetouser.get(i).getString("RES_C").toString());
                             }
-                            imgSol =  objetouser.get(i).getString("IMG_C");
+                            imgSol =  objetouser.get(i).getString("IMG_C").toString();
                             break;
                         case "d":
-                            if(!objetouser.get(i).getString("RES_D").equals("")) {
+                            if(objetouser.get(i).getString("RES_D").toString().equals("")) {
                             }else{
-                                solucion = ("D)"+objetouser.get(i).getString("RES_D"));
+                                solucion = ("D)"+objetouser.get(i).getString("RES_D").toString());
                             }
-                            imgSol =  objetouser.get(i).getString("IMG_D");
+                            imgSol =  objetouser.get(i).getString("IMG_D").toString();
                             break;
                     }
                     String c = "";
                     String d = "";
-                    if(objetouser.get(i).getString("RES_C").equals("") && objetouser.get(i).getString("IMG_C").equals("")) {
+                    if(objetouser.get(i).getString("RES_C").toString().equals("") && objetouser.get(i).getString("IMG_C").toString().equals("")) {
 
                     }else{
-                        c = ("C)"+objetouser.get(i).getString("RES_C"));
+                        c = "C)"+objetouser.get(i).getString("RES_C").toString();
                     }
-                    if(objetouser.get(i).getString("RES_D").equals("") && objetouser.get(i).getString("IMG_D").equals("")){
+                    if(objetouser.get(i).getString("RES_D").toString().equals("") && objetouser.get(i).getString("IMG_D").toString().equals("")){
 
                     }else{
-                        d = ("D)"+objetouser.get(i).getString("RES_D"));
+                        d = "D)"+objetouser.get(i).getString("RES_D").toString();
                     }
-                    objetPreguntas[i] = new Preguntas(objetouser.get(i).getString("PREGUNTA"), "A)"+objetouser.get(i).getString("RES_A"), "B)"+objetouser.get(i).getString("RES_B"),
-                            c, d, solucion, objetouser.get(i).getString("EXPLICACION"),
-                            objetouser.get(i).getString("IMG_PRE"), objetouser.get(i).getString("IMG_A"), objetouser.get(i).getString("IMG_B"), objetouser.get(i).getString("IMG_C"),
-                            objetouser.get(i).getString("IMG_D"), imgSol, objetouser.get(i).getString("IMG_EXPLI"), 0);
+                    objetPreguntas[i] = new Preguntas(objetouser.get(i).getString("PREGUNTA").toString(), "A)"+objetouser.get(i).getString("RES_A").toString(), "B)"+objetouser.get(i).getString("RES_B").toString(),
+                            c, d, solucion, objetouser.get(i).getString("EXPLICACION").toString(),
+                            objetouser.get(i).getString("IMG_PRE").toString(), objetouser.get(i).getString("IMG_A").toString(), objetouser.get(i).getString("IMG_B").toString(), objetouser.get(i).getString("IMG_C").toString(),
+                            objetouser.get(i).getString("IMG_D").toString(), imgSol, objetouser.get(i).getString("IMG_EXPLI").toString(), 0);
 
                 }
                 Intent preguntas = new Intent(main_estudio_academia_sub.this, main_preguntas_academia.class);
