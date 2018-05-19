@@ -311,7 +311,7 @@ public class main_preguntasDESARROLLO extends Activity {
         for (int i = 0; i < pregunta.length; i++) {
             pre[i] = new Preguntas(
                     pregunta[i], resA[i], resB[i], resC[i], resD[i], sol[i], expliSol[i], imgPre[i],
-                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i]);
+                    imgA[i], imgB[i], imgC[i], imgD[i], imgSol[i], imgExpli[i], respulsada[i],"");
         }
 
 

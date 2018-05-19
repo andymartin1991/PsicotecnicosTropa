@@ -79,7 +79,7 @@
                     android:layout_gravity="center_vertical|center_horizontal|center"
                     android:gravity="center_horizontal|center"
                     android:padding="5dp"
-                    android:visibility="gone">
+                    android:visibility="visible">
 
                     <TableRow
                         android:layout_width="match_parent"
@@ -96,8 +96,8 @@
                                 android:id="@+id/estudio"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_margin="5dp"
                                 android:layout_weight="1"
+                                android:layout_margin="5dp"
                                 android:background="@drawable/boton_menu"
                                 android:drawableTop="@drawable/test"
                                 android:padding="5dp"
@@ -115,12 +115,17 @@
                             android:orientation="horizontal">
 
                             <Button
-                                android:id="@+id/button7"
+                                android:id="@+id/aleatorio_aca"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
-                                android:drawableTop="@drawable/exam"
-                                android:text="Button" />
+                                android:layout_margin="5dp"
+                                android:background="@drawable/boton_menu"
+                                android:drawableTop="@drawable/aleatorio_grande"
+                                android:padding="5dp"
+                                android:text="@string/Aleatorio"
+                                android:textColor="#fff"
+                                android:textSize="10dp" />
                         </LinearLayout>
 
                     </TableRow>
@@ -137,12 +142,17 @@
                             android:orientation="horizontal">
 
                             <Button
-                                android:id="@+id/button1"
+                                android:id="@+id/examen_aca"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/boton_menu"
                                 android:drawableTop="@drawable/exam"
-                                android:text="Button" />
+                                android:padding="5dp"
+                                android:text="@string/Examen"
+                                android:textColor="#fff"
+                                android:textSize="10dp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -153,12 +163,17 @@
                             android:orientation="horizontal">
 
                             <Button
-                                android:id="@+id/button2"
+                                android:id="@+id/evolucion_aca"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
-                                android:drawableTop="@drawable/exam"
-                                android:text="Button" />
+                                android:layout_margin="5dp"
+                                android:background="@drawable/boton_menu"
+                                android:drawableTop="@drawable/evo_grande"
+                                android:padding="5dp"
+                                android:text="@string/Evolucion"
+                                android:textColor="#fff"
+                                android:textSize="10dp" />
                         </LinearLayout>
                     </TableRow>
 
@@ -174,12 +189,17 @@
                             android:orientation="horizontal">
 
                             <Button
-                                android:id="@+id/button3"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:id="@+id/contacto_aca"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
-                                android:drawableTop="@drawable/exam"
-                                android:text="Button" />
+                                android:layout_margin="5dp"
+                                android:background="@drawable/boton_menu"
+                                android:drawableTop="@drawable/contacto_grande"
+                                android:padding="5dp"
+                                android:text="@string/contacto"
+                                android:textColor="#fff"
+                                android:textSize="10dp" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -190,51 +210,20 @@
                             android:orientation="horizontal">
 
                             <Button
-                                android:id="@+id/button4"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:id="@+id/informacion_aca"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
-                                android:drawableTop="@drawable/exam"
-                                android:text="Button" />
+                                android:layout_margin="5dp"
+                                android:background="@drawable/boton_menu"
+                                android:drawableTop="@drawable/info_grande"
+                                android:padding="5dp"
+                                android:text="@string/Info"
+                                android:textColor="#fff"
+                                android:textSize="10dp" />
                         </LinearLayout>
                     </TableRow>
 
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center_horizontal|center"
-                            android:orientation="horizontal">
-
-                            <Button
-                                android:id="@+id/button5"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:drawableTop="@drawable/exam"
-                                android:text="Button" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center_horizontal|center"
-                            android:orientation="horizontal">
-
-                            <Button
-                                android:id="@+id/button6"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:drawableTop="@drawable/exam"
-                                android:text="Button" />
-                        </LinearLayout>
-                    </TableRow>
                 </TableLayout>
 
                 <ProgressBar

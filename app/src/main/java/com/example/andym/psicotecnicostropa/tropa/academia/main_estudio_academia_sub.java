@@ -267,7 +267,7 @@ public class main_estudio_academia_sub extends Activity {
                     objetPreguntas[i] = new Preguntas(objetouser.get(i).getString("PREGUNTA").toString(), "A)"+objetouser.get(i).getString("RES_A").toString(), "B)"+objetouser.get(i).getString("RES_B").toString(),
                             c, d, solucion, objetouser.get(i).getString("EXPLICACION").toString(),
                             objetouser.get(i).getString("IMG_PRE").toString(), objetouser.get(i).getString("IMG_A").toString(), objetouser.get(i).getString("IMG_B").toString(), objetouser.get(i).getString("IMG_C").toString(),
-                            objetouser.get(i).getString("IMG_D").toString(), imgSol, objetouser.get(i).getString("IMG_EXPLI").toString(), 0);
+                            objetouser.get(i).getString("IMG_D").toString(), imgSol, objetouser.get(i).getString("IMG_EXPLI").toString(), 0,"");
 
                 }
                 Intent preguntas = new Intent(main_estudio_academia_sub.this, main_preguntas_academia.class);

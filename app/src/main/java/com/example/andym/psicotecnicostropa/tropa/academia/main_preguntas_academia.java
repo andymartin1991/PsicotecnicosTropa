@@ -213,6 +213,7 @@ public class main_preguntas_academia extends Activity {
         final Button atras = (Button) findViewById(R.id.atras);
 
         avanza();
+        recolocar();
         calcularestado();
 
         if (getIntent().getExtras().getString("tipo").equals("memoria")) {
@@ -1100,7 +1101,7 @@ public class main_preguntas_academia extends Activity {
         return super.onKeyDown(keyCode, event);
     }
 
-    private void limpiaImgUrl() {
+    public static void limpiaImgUrl() {
         bpre = false;
         ba = false;
         bb = false;

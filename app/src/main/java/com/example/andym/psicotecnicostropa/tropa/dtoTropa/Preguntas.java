@@ -22,10 +22,19 @@ public class Preguntas implements Serializable {
     private String imgExpli;
     private int respulsada;
 
+    private String memo;
+
     public Preguntas() {
 
     }
 
+    public String getMemo() {
+        return memo;
+    }
+
+    public void setMemo(String memo) {
+        this.memo = memo;
+    }
 
     public int getCont() {
         return cont;
@@ -158,7 +167,7 @@ public class Preguntas implements Serializable {
 
     public Preguntas(String pregunta, String resA, String resB, String resC, String resD,
                      String sol, String expliSol, String imgPre, String imgA, String imgB, String imgC,
-                     String imgD, String imgSol, String imgExpli, int respulsada) {
+                     String imgD, String imgSol, String imgExpli, int respulsada, String memo) {
         this.pregunta = pregunta;
         this.respuestaA = resA;
         this.respuestaB = resB;
@@ -174,6 +183,7 @@ public class Preguntas implements Serializable {
         this.imgSol = imgSol;
         this.imgExpli = imgExpli;
         this.respulsada = respulsada;
+        this.memo = memo;
     }
 
 
