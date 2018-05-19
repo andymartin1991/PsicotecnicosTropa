@@ -1,4 +1,4 @@
-package com.example.andym.psicotecnicostropa.tropa;
+package com.example.andym.psicotecnicostropa.tropa.academia;
 
 import android.app.Activity;
 import android.content.Intent;

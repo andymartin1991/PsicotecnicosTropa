@@ -22,6 +22,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.andym.psicotecnicostropa.R;
+import com.example.andym.psicotecnicostropa.tropa.academia.main_academia;
 
 import org.json.JSONArray;
 import org.json.JSONException;

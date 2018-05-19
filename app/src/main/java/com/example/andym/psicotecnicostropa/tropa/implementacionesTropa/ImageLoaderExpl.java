@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 
-import static com.example.andym.psicotecnicostropa.tropa.main_preguntas_academia.bexpl;
+import static com.example.andym.psicotecnicostropa.tropa.academia.main_preguntas_academia.bexpl;
 
 /**
  * Created by andym on 06/05/2018.

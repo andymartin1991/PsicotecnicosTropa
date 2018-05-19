@@ -44,9 +44,9 @@
         <activity android:name=".tropa.main_ayuda"></activity>
         <activity android:name=".tropa.main_subevolucion"></activity>
         <activity android:name=".tropa.main_preguntasDESARROLLO"></activity>
-        <activity android:name=".tropa.main_academia"></activity>
-        <activity android:name=".tropa.main_preguntas_academia"></activity>
-        <activity android:name=".tropa.main_estudio_academia_sub"></activity>
+        <activity android:name=".tropa.academia.main_academia"></activity>
+        <activity android:name=".tropa.academia.main_preguntas_academia"></activity>
+        <activity android:name=".tropa.academia.main_estudio_academia_sub"></activity>
     </application>
 
 </manifest>

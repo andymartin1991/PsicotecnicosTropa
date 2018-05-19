@@ -1,4 +1,4 @@
-package com.example.andym.psicotecnicostropa.tropa;
+package com.example.andym.psicotecnicostropa.tropa.academia;
 
 
 import android.app.Activity;
@@ -8,9 +8,7 @@ import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.os.Environment;
 import android.os.Handler;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.animation.Animation;
@@ -40,14 +38,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
@@ -267,9 +259,9 @@ public class main_preguntas_academia extends Activity {
                         //limpiarelementos();
                         //ocultaratras();
                         if (arreglo == 1) {
-                            cont.setCont(cont.getCont() - 1);
-                            //limpiarelementos();
-                           //ocultaratras();
+	                        cont.setCont(cont.getCont() - 1);
+	                        //limpiarelementos();
+	                        //ocultaratras();
                         }
                         limpiarelementos();
                         ocultaratras();
