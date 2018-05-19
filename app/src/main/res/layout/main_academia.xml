@@ -79,7 +79,7 @@
                     android:layout_gravity="center_vertical|center_horizontal|center"
                     android:gravity="center_horizontal|center"
                     android:padding="5dp"
-                    android:visibility="visible">
+                    android:visibility="gone">
 
                     <TableRow
                         android:layout_width="match_parent"
