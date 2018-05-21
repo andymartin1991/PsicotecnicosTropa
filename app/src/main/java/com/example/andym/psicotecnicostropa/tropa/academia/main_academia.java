@@ -44,7 +44,7 @@ public class main_academia extends Activity {
     ArrayList<JSONObject> objetouserList;
     public static Preguntas[] objetPreguntas;
     String id;
-    Button volver, estudio, aleatorio;
+    Button volver, estudio, aleatorio, examen;
     TextView error, titulo, username;
     LinearLayout emer, verificado;
     JSONObject objetouser;
@@ -52,6 +52,13 @@ public class main_academia extends Activity {
     TableLayout tablabotones;
     ProgressBar carga;
 
+    public static Preguntas[] bloqueabstrapto;
+    public static Preguntas[] bloquenumerico;
+    public static Preguntas[] bloqueespacial;
+    public static Preguntas[] bloquemecanico;
+    public static Preguntas[] bloqueperceptiva;
+    public static Preguntas[] bloquememoria;
+    public static Preguntas[] bloqueverbal;
 
     public static String correo;
     public static String password;
@@ -161,6 +168,63 @@ public class main_academia extends Activity {
             }
         }).start();
 
+        examen = (Button)findViewById(R.id.examen_aca);
+        examen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (entra[0] == true) {
+                    Toast toast1 =
+                            Toast.makeText(getApplicationContext(),
+                                    "Generando ...", Toast.LENGTH_SHORT);
+                    toast1.show();
+                    final String[] contents = {""};
+                    try {
+                        conn = new URL("http://s593975491.mialojamiento.es/APPpsicotecnicostropa(1)/preguntas_todas.php?idACA="+ main_academia.idACAM).openConnection();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    final Handler handler = new Handler();
+                    final InputStream[] in = new InputStream[1];
+                    new Thread(new Runnable() {
+                        public void run() {
+                            try {
+                                in[0] = conn.getInputStream();
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                            try {
+                                contents[0] = readStream(in[0]).toString();
+                                try {
+                                    JSONObject objetousuario = new JSONObject(contents[0]);
+                                    JSONArray myJsonArray = objetousuario.getJSONArray("usuario");
+                                    objetouserList = new ArrayList();
+                                    int i = 0;
+                                    try {
+                                        while (true) {
+                                            objetouserList.add(myJsonArray.getJSONObject(i));
+                                            i++;
+                                        }
+                                    }catch(Exception e){
+
+                                    }
+                                    handler.post(exampre);
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                    //handler.post(userpasserror);
+                                }
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }).start();
+                    entra[0] = false;
+                    Animation animation = AnimationUtils.loadAnimation(
+                            getApplicationContext(), R.anim.rotar);
+                    examen.startAnimation(animation);
+                }
+            }
+        });
+
         aleatorio = (Button)findViewById(R.id.aleatorio_aca);
         aleatorio.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -223,7 +287,7 @@ public class main_academia extends Activity {
                             }*/
                             /*startActivity(new Intent(main_academia.this, main_preguntasAleatorio_academia.class));
                             overridePendingTransition(R.anim.transpain, R.anim.transpaout);*/
-                            //entra[0] = true;
+                    //entra[0] = true;
                         /*}
                     }).start();*/
 
@@ -272,6 +336,153 @@ public class main_academia extends Activity {
         return total.toString();
     }
 
+    final Runnable exampre = new Runnable() {
+        @Override
+        public void run() {
+            int nnum = 0, nver = 0, nmec = 0, nabs = 0, nesp = 0, nper = 0, nmem = 0;
+            try{
+                objetPreguntas = new Preguntas[objetouserList.size()];
+                for (int i = 0; i < objetouserList.size(); i++) {
+                    String solucion = "", imgSol = "";
+                    switch (objetouserList.get(i).getString("SOLUCION").toString()){
+                        case "a":
+                            if(objetouserList.get(i).getString("RES_A").toString().equals("")) {
+                                solucion = "A)";
+                            }else{
+                                solucion = ("A)" + objetouserList.get(i).getString("RES_A").toString());
+                            }
+                            imgSol =  objetouserList.get(i).getString("IMG_A").toString();
+                            break;
+                        case "b":
+                            if(objetouserList.get(i).getString("RES_B").toString().equals("")) {
+                                solucion = "B)";
+                            }else{
+                                solucion = ("B)" + objetouserList.get(i).getString("RES_B").toString());
+                            }
+                            imgSol =  objetouserList.get(i).getString("IMG_B").toString();
+                            break;
+                        case "c":
+                            if(objetouserList.get(i).getString("RES_C").toString().equals("")) {
+                                solucion = "C)";
+                            }else{
+                                solucion = ("C)"+objetouserList.get(i).getString("RES_C").toString());
+                            }
+                            imgSol =  objetouserList.get(i).getString("IMG_C").toString();
+                            break;
+                        case "d":
+                            if(objetouserList.get(i).getString("RES_D").toString().equals("")) {
+                                solucion = "D)";
+                            }else{
+                                solucion = ("D)"+objetouserList.get(i).getString("RES_D").toString());
+                            }
+                            imgSol =  objetouserList.get(i).getString("IMG_D").toString();
+                            break;
+                    }
+                    String c = "";
+                    String d = "";
+                    if(objetouserList.get(i).getString("RES_C").toString().equals("") && objetouserList.get(i).getString("IMG_C").toString().equals("")) {
+
+                    }else{
+                        c = "C)"+objetouserList.get(i).getString("RES_C").toString();
+                    }
+                    if(objetouserList.get(i).getString("RES_D").toString().equals("") && objetouserList.get(i).getString("IMG_D").toString().equals("")){
+
+                    }else{
+                        d = "D)"+objetouserList.get(i).getString("RES_D").toString();
+                    }
+
+                    String tipo = "";
+                    if(objetouserList.get(i).getString("TIPO_TEST").toString().equals("0")){
+                        tipo = "verbal";
+                        nver++;
+                    }
+                    if(objetouserList.get(i).getString("TIPO_TEST").toString().equals("1")){
+                        tipo = "numerico";
+                        nnum++;
+                    }
+                    if(objetouserList.get(i).getString("TIPO_TEST").toString().equals("2")){
+                        tipo = "espacial";
+                        nesp++;
+                    }
+                    if(objetouserList.get(i).getString("TIPO_TEST").toString().equals("3")){
+                        tipo = "mecanico";
+                        nmec++;
+                    }
+                    if(objetouserList.get(i).getString("TIPO_TEST").toString().equals("4")){
+                        tipo = "perceptiva";
+                        nper++;
+                    }
+                    if(objetouserList.get(i).getString("TIPO_TEST").toString().equals("5")){
+                        tipo = "memoria";
+                        nmem++;
+                    }
+                    if(objetouserList.get(i).getString("TIPO_TEST").toString().equals("6")){
+                        tipo = "abstrapto";
+                        nabs++;
+                    }
+
+                    objetPreguntas[i] = new Preguntas(objetouserList.get(i).getString("PREGUNTA").toString(), "A)"+objetouserList.get(i).getString("RES_A").toString(),
+                            "B)"+objetouserList.get(i).getString("RES_B").toString(), c, d, solucion, objetouserList.get(i).getString("EXPLICACION").toString(),
+                            objetouserList.get(i).getString("IMG_PRE").toString(), objetouserList.get(i).getString("IMG_A").toString(), objetouserList.get(i).getString("IMG_B").toString(),
+                            objetouserList.get(i).getString("IMG_C").toString(), objetouserList.get(i).getString("IMG_D").toString(), imgSol,
+                            objetouserList.get(i).getString("IMG_EXPLI").toString(), 0,tipo );
+
+
+                }
+                bloqueverbal = new Preguntas[nver];
+                bloqueespacial = new Preguntas[nesp];
+                bloqueabstrapto = new Preguntas[nabs];
+                bloquemecanico = new Preguntas[nmec];
+                bloquememoria = new Preguntas[nmem];
+                bloquenumerico = new Preguntas[nnum];
+                bloqueperceptiva = new Preguntas[nper];
+                int n1 = 0, n2 = 0, n3 = 0, n4 = 0, n5 = 0, n6 = 0, n7 = 0;
+                for(int i = 0; i<objetPreguntas.length;i++){
+                    if(objetPreguntas[i].getTipo().equals("verbal")){
+                        bloqueverbal[n1] = objetPreguntas[i];
+                        n1++;
+                    }
+                    if(objetPreguntas[i].getTipo().equals("numerico")){
+                        bloquenumerico[n2] = objetPreguntas[i];
+                        n2++;
+                    }
+                    if(objetPreguntas[i].getTipo().equals("espacial")){
+                        bloqueespacial[n3] = objetPreguntas[i];
+                        n3++;
+                    }
+                    if(objetPreguntas[i].getTipo().equals("mecanico")){
+                        bloquemecanico[n4] = objetPreguntas[i];
+                        n4++;
+                    }
+                    if(objetPreguntas[i].getTipo().equals("perceptiva")){
+                        bloqueperceptiva[n5] = objetPreguntas[i];
+                        n5++;
+                    }
+                    if(objetPreguntas[i].getTipo().equals("memoria")){
+                        bloquememoria[n6] = objetPreguntas[i];
+                        n6++;
+                    }
+                    if(objetPreguntas[i].getTipo().equals("abstrapto")){
+                        bloqueabstrapto[n7] = objetPreguntas[i];
+                        n7++;
+                    }
+                }
+                String k = "";
+                startActivity(new Intent(main_academia.this, main_examen_academia.class));
+                overridePendingTransition(R.anim.transpain, R.anim.transpaout);
+                entra[0] = true;
+
+            }catch (JSONException e) {
+                e.printStackTrace();
+                Toast toast1 =
+                        Toast.makeText(getApplicationContext(),
+                                "Error al cargar preguntas", Toast.LENGTH_SHORT);
+                toast1.show();
+                entra[0] = true;
+            }
+        }
+    };
+
 
     final Runnable aletopre = new Runnable() {
         @Override
@@ -283,6 +494,7 @@ public class main_academia extends Activity {
                     switch (objetouserList.get(i).getString("SOLUCION").toString()){
                         case "a":
                             if(objetouserList.get(i).getString("RES_A").toString().equals("")) {
+                                solucion = "A)";
                             }else{
                                 solucion = ("A)" + objetouserList.get(i).getString("RES_A").toString());
                             }
@@ -290,6 +502,7 @@ public class main_academia extends Activity {
                             break;
                         case "b":
                             if(objetouserList.get(i).getString("RES_B").toString().equals("")) {
+                                solucion = "B)";
                             }else{
                                 solucion = ("B)" + objetouserList.get(i).getString("RES_B").toString());
                             }
@@ -297,6 +510,7 @@ public class main_academia extends Activity {
                             break;
                         case "c":
                             if(objetouserList.get(i).getString("RES_C").toString().equals("")) {
+                                solucion = "C)";
                             }else{
                                 solucion = ("C)"+objetouserList.get(i).getString("RES_C").toString());
                             }
@@ -304,6 +518,7 @@ public class main_academia extends Activity {
                             break;
                         case "d":
                             if(objetouserList.get(i).getString("RES_D").toString().equals("")) {
+                                solucion = "D)";
                             }else{
                                 solucion = ("D)"+objetouserList.get(i).getString("RES_D").toString());
                             }

@@ -194,14 +194,14 @@ public class main_preguntasAleatorio_academia extends Activity {
                 if (main_preguntas_academia.bpre && main_preguntas_academia.ba && main_preguntas_academia.bb &&
                         main_preguntas_academia.bc && main_preguntas_academia.bd && main_preguntas_academia.bsol && main_preguntas_academia.bexpl) {
                     main_preguntas_academia.limpiaImgUrl();
-                    limpiarelementos();
+                    //limpiarelementos();
                     ocultaratras();
                     if (cont.getCont() > 0) {
                         cont.setCont(cont.getCont() - 1);
                         if (arreglo == 1) {
                             cont.setCont(cont.getCont() - 1);
                         }
-                        limpiarelementos();
+                        //limpiarelementos();
                         ocultaratras();
                         arreglo = 2;
                         viewflipper.setInAnimation(animrightatras);
@@ -209,6 +209,7 @@ public class main_preguntasAleatorio_academia extends Activity {
                     } else {
                         Toast.makeText(getApplicationContext(), "Fin", Toast.LENGTH_SHORT).show();
                     }
+                    limpiarelementos();
                     colocar--;
                     if (colocar == -1) {
                         colocar = 0;
@@ -525,7 +526,7 @@ public class main_preguntasAleatorio_academia extends Activity {
 			}
             //ocultaralante();
             arreglo = 1;
-            if (pre[cont.getCont()-1].getMemo().equals("si") && pos[cont.getCont()-1] == 0) {
+            if (pre[cont.getCont()-1].getTipo().equals("si") && pos[cont.getCont()-1] == 0) {
                 // PONER AQUI LA FUNCION DE MEMORIA
                 RelativeLayout amemo = (RelativeLayout) findViewById(R.id.a);
                 RelativeLayout bmemo = (RelativeLayout) findViewById(R.id.b);
@@ -620,14 +621,13 @@ public class main_preguntasAleatorio_academia extends Activity {
         c.setBackgroundResource(R.drawable.boton_opt_preguntas);
         d.setBackgroundResource(R.drawable.boton_opt_preguntas);
 
-
         cuenta.setText(cont.getCont() + 1 + "");
-
 
         if (cont.getCont() == -1) {
             cont.setCont(0);
         }
         if (pre[cont.getCont()].getImgPregunta().equals("")) {
+            imgpregunta.setImageBitmap(null);
             imgpregunta.setVisibility(View.GONE);
             main_preguntas_academia.bpre = true;
         } else {
@@ -639,6 +639,7 @@ public class main_preguntasAleatorio_academia extends Activity {
             }).start();
         }
         if (pre[cont.getCont()].getImgA().equals("")) {
+            imgeA.setImageBitmap(null);
             imgeA.setVisibility(View.GONE);
             main_preguntas_academia.ba = true;
         } else {
@@ -650,6 +651,7 @@ public class main_preguntasAleatorio_academia extends Activity {
             }).start();
         }
         if (pre[cont.getCont()].getImgB().equals("")) {
+            imgeB.setImageBitmap(null);
             imgeB.setVisibility(View.GONE);
             main_preguntas_academia.bb = true;
         } else {
@@ -661,6 +663,7 @@ public class main_preguntasAleatorio_academia extends Activity {
             }).start();
         }
         if (pre[cont.getCont()].getImgC().equals("")) {
+            imgeC.setImageBitmap(null);
             imgeC.setVisibility(View.GONE);
             main_preguntas_academia.bc = true;
         } else {
@@ -672,6 +675,7 @@ public class main_preguntasAleatorio_academia extends Activity {
             }).start();
         }
         if (pre[cont.getCont()].getImgD().equals("")) {
+            imgeD.setImageBitmap(null);
             imgeD.setVisibility(View.GONE);
             main_preguntas_academia.bd = true;
         } else {
@@ -683,6 +687,7 @@ public class main_preguntasAleatorio_academia extends Activity {
             }).start();
         }
         if (pre[cont.getCont()].getImgSol().equals("")) {
+            imgesol.setImageBitmap(null);
             imgesol.setVisibility(View.GONE);
             main_preguntas_academia.bsol = true;
         } else {
@@ -694,6 +699,7 @@ public class main_preguntasAleatorio_academia extends Activity {
             }).start();
         }
         if (pre[cont.getCont()].getImgExpli().equals("")) {
+            imgeExpl.setImageBitmap(null);
             imgeExpl.setVisibility(View.GONE);
             main_preguntas_academia.bexpl = true;
         } else {

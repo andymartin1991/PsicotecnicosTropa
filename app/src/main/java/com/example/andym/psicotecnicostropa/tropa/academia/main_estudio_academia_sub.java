@@ -225,6 +225,7 @@ public class main_estudio_academia_sub extends Activity {
                     switch (objetouser.get(i).getString("SOLUCION").toString()){
                         case "a":
                             if(objetouser.get(i).getString("RES_A").toString().equals("")) {
+                                solucion = "A)";
                             }else{
                                 solucion = ("A)" + objetouser.get(i).getString("RES_A").toString());
                             }
@@ -232,6 +233,7 @@ public class main_estudio_academia_sub extends Activity {
                             break;
                         case "b":
                             if(objetouser.get(i).getString("RES_B").toString().equals("")) {
+                                solucion = "B)";
                             }else{
                                 solucion = ("B)" + objetouser.get(i).getString("RES_B").toString());
                             }
@@ -239,6 +241,7 @@ public class main_estudio_academia_sub extends Activity {
                             break;
                         case "c":
                             if(objetouser.get(i).getString("RES_C").toString().equals("")) {
+                                solucion = "C)";
                             }else{
                                 solucion = ("C)"+objetouser.get(i).getString("RES_C").toString());
                             }
@@ -246,6 +249,7 @@ public class main_estudio_academia_sub extends Activity {
                             break;
                         case "d":
                             if(objetouser.get(i).getString("RES_D").toString().equals("")) {
+                                solucion = "D)";
                             }else{
                                 solucion = ("D)"+objetouser.get(i).getString("RES_D").toString());
                             }
