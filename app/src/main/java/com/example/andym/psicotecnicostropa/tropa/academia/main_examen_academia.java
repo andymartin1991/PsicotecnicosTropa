@@ -398,108 +398,154 @@ public class main_examen_academia extends Activity {
         siguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                main_preguntas_academia.limpiaImgUrl();
-                if (bloque == 7 && posi == 14) {
-                    if (arregloacabar == false) {
-                        Cronometro.pause();
-                        siguiente.setEnabled(false);
-                        new AlertDialog.Builder(main_examen_academia.this)
-                                .setIcon(getResources().getDrawable(R.drawable.iexc))
-                                .setTitle(getString(R.string.atencion))
-                                .setMessage(getString(R.string.bloqueterminado))
-                                .setCancelable(false)
-                                .setNegativeButton(getString(R.string.revisar), new DialogInterface.OnClickListener() {
-                                    @SuppressWarnings("deprecation")
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which) {
-                                        siguiente.setEnabled(true);
-                                        posi--;
-                                        Cronometro.pause();
-                                    }
-                                })
-                                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                                    @SuppressWarnings("deprecation")
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which) {
-                                        acabar();
-                                        Intent resultado = new Intent(main_examen_academia.this, main_resultado_exam_academia.class);
-                                        startActivity(resultado);
-                                        overridePendingTransition(R.anim.transpain, R.anim.transpaout);
+                if ((main_preguntas_academia.bpre && main_preguntas_academia.ba && main_preguntas_academia.bb &&
+                        main_preguntas_academia.bc && main_preguntas_academia.bd && main_preguntas_academia.bsol && main_preguntas_academia.bexpl)) {
+                    main_preguntas_academia.limpiaImgUrl();
+                    if (bloque == 7 && posi == 14) {
 
-                                    }
-                                }).create().show();
-                    } else {
-                        acabar();
-                        Intent resultado = new Intent(main_examen_academia.this, main_resultado_exam_academia.class);
-                        startActivity(resultado);
-                        overridePendingTransition(R.anim.transpain, R.anim.transpaout);
-                    }
-                } else if (acabar == false) {
-                    posi++;
-                    if (posi < 15) {
-                        imprimir(bloque, posi);
-                        contador.setText((posi + 1) + "/15");
-                        viewflipper.setInAnimation(animrightalante);
-                        viewflipper.showPrevious();
-                    } else {
+                        main_preguntas_academia.bpre = true;
+                        main_preguntas_academia.ba = true;
+                        main_preguntas_academia.bb = true;
+                        main_preguntas_academia.bc = true;
+                        main_preguntas_academia.bd = true;
+                        main_preguntas_academia.bsol = true;
+                        main_preguntas_academia.bexpl = true;
 
-                        Cronometro.pause();
-                        siguiente.setEnabled(false);
-                        new AlertDialog.Builder(main_examen_academia.this)
-                                .setIcon(getResources().getDrawable(R.drawable.iexc))
-                                .setTitle(getString(R.string.atencion))
-                                .setMessage(getString(R.string.bloqueterminado))
-                                .setCancelable(false)
-                                .setNegativeButton(getString(R.string.revisar), new DialogInterface.OnClickListener() {
-                                    @SuppressWarnings("deprecation")
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which) {
-                                        posi--;
-                                        Cronometro.pause();
-                                        siguiente.setEnabled(true);
-                                    }
-                                })
-                                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                                    @SuppressWarnings("deprecation")
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which) {
-                                        posi = 0;
-                                        bloque++;
-                                        siguiente.setEnabled(true);
-                                        if (bloque != 8) {
-                                            imprimir(bloque, posi);
-                                            cuentabloque.setText(bloque + "/7");
-                                            contador.setText((posi + 1) + "/15");
-                                            Cronometro.reiniciar();
-                                            memoria();
-                                            cuentatras.setText("00:07:00");
+                        if (arregloacabar == false) {
+                            Cronometro.pause();
+                            siguiente.setEnabled(false);
+                            new AlertDialog.Builder(main_examen_academia.this)
+                                    .setIcon(getResources().getDrawable(R.drawable.iexc))
+                                    .setTitle(getString(R.string.atencion))
+                                    .setMessage(getString(R.string.bloqueterminado))
+                                    .setCancelable(false)
+                                    .setNegativeButton(getString(R.string.revisar), new DialogInterface.OnClickListener() {
+                                        @SuppressWarnings("deprecation")
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int which) {
+                                            siguiente.setEnabled(true);
+                                            posi--;
+                                            Cronometro.pause();
                                         }
-                                        viewflipper.setInAnimation(animrightalante);
-                                        viewflipper.showPrevious();
-                                        limpiarselect();
-                                    }
-                                }).create().show();
-                    }
-                } else {
-                    //cuando acabo el examen
-                    if (bloque <= 7 && posi <= 14) {
-                        posi++;
-                        if (posi == 15) {
-                            bloque++;
-                        }
-                        if (posi > 14) {
-                            posi = 0;
-                        }
-                        imprimir(bloque, posi);
-                        cuentabloque.setText(bloque + "/7");
-                        contador.setText((posi + 1) + "/15");
-                        viewflipper.setInAnimation(animrightalante);
-                        viewflipper.showPrevious();
-                    }
+                                    })
+                                    .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                                        @SuppressWarnings("deprecation")
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int which) {
+                                            acabar();
+                                            Intent resultado = new Intent(main_examen_academia.this, main_resultado_exam_academia.class);
+                                            startActivity(resultado);
+                                            overridePendingTransition(R.anim.transpain, R.anim.transpaout);
 
+                                        }
+                                    }).create().show();
+                        } else {
+                            acabar();
+                            Intent resultado = new Intent(main_examen_academia.this, main_resultado_exam_academia.class);
+                            startActivity(resultado);
+                            overridePendingTransition(R.anim.transpain, R.anim.transpaout);
+                        }
+                    } else if (acabar == false) {
+                        posi++;
+                        if (posi < 15) {
+                            imprimir(bloque, posi);
+                            contador.setText((posi + 1) + "/15");
+                            viewflipper.setInAnimation(animrightalante);
+                            viewflipper.showPrevious();
+                        } else {
+
+                            Cronometro.pause();
+                            siguiente.setEnabled(false);
+                            new AlertDialog.Builder(main_examen_academia.this)
+                                    .setIcon(getResources().getDrawable(R.drawable.iexc))
+                                    .setTitle(getString(R.string.atencion))
+                                    .setMessage(getString(R.string.bloqueterminado))
+                                    .setCancelable(false)
+                                    .setNegativeButton(getString(R.string.revisar), new DialogInterface.OnClickListener() {
+                                        @SuppressWarnings("deprecation")
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int which) {
+                                            posi--;
+                                            Cronometro.pause();
+                                            siguiente.setEnabled(true);
+
+                                            main_preguntas_academia.bpre = true;
+                                            main_preguntas_academia.ba = true;
+                                            main_preguntas_academia.bb = true;
+                                            main_preguntas_academia.bc = true;
+                                            main_preguntas_academia.bd = true;
+                                            main_preguntas_academia.bsol = true;
+                                            main_preguntas_academia.bexpl = true;
+                                        }
+                                    })
+                                    .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                                        @SuppressWarnings("deprecation")
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int which) {
+                                            posi = 0;
+                                            bloque++;
+                                            siguiente.setEnabled(true);
+                                            if (bloque != 8) {
+                                                imprimir(bloque, posi);
+                                                cuentabloque.setText(bloque + "/7");
+                                                contador.setText((posi + 1) + "/15");
+                                                Cronometro.reiniciar();
+                                                memoria();
+                                                cuentatras.setText("00:07:00");
+                                            }
+                                            viewflipper.setInAnimation(animrightalante);
+                                            viewflipper.showPrevious();
+                                            limpiarselect();
+                                        }
+                                    }).create().show();
+                        }
+                    } else {
+                        //cuando acabo el examen
+                        if (bloque <= 7 && posi <= 14) {
+                            posi++;
+                            if (posi == 15) {
+                                bloque++;
+                            }
+                            if (posi > 14) {
+                                posi = 0;
+                            }else{
+                                main_preguntas_academia.bpre = true;
+                                main_preguntas_academia.ba = true;
+                                main_preguntas_academia.bb = true;
+                                main_preguntas_academia.bc = true;
+                                main_preguntas_academia.bd = true;
+                                main_preguntas_academia.bsol = true;
+                                main_preguntas_academia.bexpl = true;
+                            }
+                            imprimir(bloque, posi);
+                            cuentabloque.setText(bloque + "/7");
+                            contador.setText((posi + 1) + "/15");
+                            viewflipper.setInAnimation(animrightalante);
+                            viewflipper.showPrevious();
+                        }else{
+                            main_preguntas_academia.bpre = true;
+                            main_preguntas_academia.ba = true;
+                            main_preguntas_academia.bb = true;
+                            main_preguntas_academia.bc = true;
+                            main_preguntas_academia.bd = true;
+                            main_preguntas_academia.bsol = true;
+                            main_preguntas_academia.bexpl = true;
+                        }
+
+                    }
+                    recolocar();
+                    memoria();
+                    if(acabar == true && bloque ==6){
+
+                        main_preguntas_academia.bpre = true;
+                        main_preguntas_academia.ba = true;
+                        main_preguntas_academia.bb = true;
+                        main_preguntas_academia.bc = true;
+                        main_preguntas_academia.bd = true;
+                        main_preguntas_academia.bsol = true;
+                        main_preguntas_academia.bexpl = true;
+                    }
                 }
-                recolocar();
-                memoria();
             }
 
         });
@@ -508,24 +554,47 @@ public class main_examen_academia extends Activity {
         atras.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                main_preguntas_academia.limpiaImgUrl();
-                if (posi < 15 && posi >= 0) {
-                    if (posi == 0 && acabar == true) {
-                        if (bloque > 1) {
-                            posi = 14;
-                            bloque--;
+                if ((main_preguntas_academia.bpre && main_preguntas_academia.ba && main_preguntas_academia.bb &&
+                        main_preguntas_academia.bc && main_preguntas_academia.bd && main_preguntas_academia.bsol && main_preguntas_academia.bexpl)) {
+                    main_preguntas_academia.limpiaImgUrl();
+                    if (posi < 15 && posi >= 0) {
+                        if (posi == 0 && acabar == true) {
+                            if (bloque > 1) {
+                                posi = 14;
+                                bloque--;
+                                imprimir(bloque, posi);
+                                contador.setText((posi + 1) + "/15");
+                                recolocar();
+                                cuentabloque.setText(bloque + "/7");
+                            }
+
+                        } else if(posi == 0 && acabar == false){
+                            main_preguntas_academia.bpre = true;
+                            main_preguntas_academia.ba = true;
+                            main_preguntas_academia.bb = true;
+                            main_preguntas_academia.bc = true;
+                            main_preguntas_academia.bd = true;
+                            main_preguntas_academia.bsol = true;
+                            main_preguntas_academia.bexpl = true;
+
+                        }else if (posi > 0) {
+                            posi--;
                             imprimir(bloque, posi);
                             contador.setText((posi + 1) + "/15");
                             recolocar();
-                            cuentabloque.setText(bloque + "/7");
+                            viewflipper.setInAnimation(animrightatras);
+                            viewflipper.showPrevious();
                         }
-                    } else if (posi > 0) {
-                        posi--;
-                        imprimir(bloque, posi);
-                        contador.setText((posi + 1) + "/15");
-                        recolocar();
-                        viewflipper.setInAnimation(animrightatras);
-                        viewflipper.showPrevious();
+                    }
+                    if(acabar == true && bloque ==6){
+
+                        main_preguntas_academia.bpre = true;
+                        main_preguntas_academia.ba = true;
+                        main_preguntas_academia.bb = true;
+                        main_preguntas_academia.bc = true;
+                        main_preguntas_academia.bd = true;
+                        main_preguntas_academia.bsol = true;
+                        main_preguntas_academia.bexpl = true;
                     }
                 }
 
@@ -549,6 +618,7 @@ public class main_examen_academia extends Activity {
     }
 
     private void imprimir(final int bloque, final int posi) {
+        main_preguntas_academia.limpiaImgUrl();
         c = (RelativeLayout) findViewById(R.id.c);
         d = (RelativeLayout) findViewById(R.id.d);
         TextView bloq = (TextView) findViewById(R.id.bloque);
@@ -1440,149 +1510,156 @@ public class main_examen_academia extends Activity {
         a.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO Auto-generated method stub
-                String opt = "a";
-                verificarRes(opt);
-                switch (bloque) {
-                    case 1:
-                        notas.getBloqueverbal().get(posi).setRespulsada(1);
-                        break;
-                    case 2:
-                        notas.getBloquenumerico().get(posi).setRespulsada(1);
-                        break;
-                    case 3:
-                        notas.getBloqueespacial().get(posi).setRespulsada(1);
-                        break;
-                    case 4:
-                        notas.getBloquemecanico().get(posi).setRespulsada(1);
-                        break;
-                    case 5:
-                        notas.getBloqueperceptiva().get(posi).setRespulsada(1);
-                        break;
-                    case 6:
-                        notas.getBloquememoria().get(posi).setRespulsada(1);
-                        break;
-                    case 7:
-                        notas.getBloqueabstrapto().get(posi).setRespulsada(1);
+                if ((main_preguntas_academia.bpre && main_preguntas_academia.ba && main_preguntas_academia.bb &&
+                        main_preguntas_academia.bc && main_preguntas_academia.bd && main_preguntas_academia.bsol && main_preguntas_academia.bexpl)) {
+                    String opt = "a";
+                    verificarRes(opt);
+                    switch (bloque) {
+                        case 1:
+                            notas.getBloqueverbal().get(posi).setRespulsada(1);
+                            break;
+                        case 2:
+                            notas.getBloquenumerico().get(posi).setRespulsada(1);
+                            break;
+                        case 3:
+                            notas.getBloqueespacial().get(posi).setRespulsada(1);
+                            break;
+                        case 4:
+                            notas.getBloquemecanico().get(posi).setRespulsada(1);
+                            break;
+                        case 5:
+                            notas.getBloqueperceptiva().get(posi).setRespulsada(1);
+                            break;
+                        case 6:
+                            notas.getBloquememoria().get(posi).setRespulsada(1);
+                            break;
+                        case 7:
+                            notas.getBloqueabstrapto().get(posi).setRespulsada(1);
+                    }
+                    Button alante = (Button) findViewById(R.id.alante);
+                    alante.setVisibility(View.VISIBLE);
+                    if (bloque != 6) {
+                        Button atras = (Button) findViewById(R.id.atras);
+                        atras.setVisibility(View.VISIBLE);
+                    }
                 }
-                Button alante = (Button) findViewById(R.id.alante);
-                alante.setVisibility(View.VISIBLE);
-                if (bloque != 6) {
-                    Button atras = (Button) findViewById(R.id.atras);
-                    atras.setVisibility(View.VISIBLE);
-                }
-
             }
         });
         b = (RelativeLayout) findViewById(R.id.b);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String opt = "b";
-                verificarRes(opt);
-                switch (bloque) {
-                    case 1:
-                        notas.getBloqueverbal().get(posi).setRespulsada(2);
-                        break;
-                    case 2:
-                        notas.getBloquenumerico().get(posi).setRespulsada(2);
-                        break;
-                    case 3:
-                        notas.getBloqueespacial().get(posi).setRespulsada(2);
-                        break;
-                    case 4:
-                        notas.getBloquemecanico().get(posi).setRespulsada(2);
-                        break;
-                    case 5:
-                        notas.getBloqueperceptiva().get(posi).setRespulsada(2);
-                        break;
-                    case 6:
-                        notas.getBloquememoria().get(posi).setRespulsada(2);
-                        break;
-                    case 7:
-                        notas.getBloqueabstrapto().get(posi).setRespulsada(2);
+                if ((main_preguntas_academia.bpre && main_preguntas_academia.ba && main_preguntas_academia.bb &&
+                        main_preguntas_academia.bc && main_preguntas_academia.bd && main_preguntas_academia.bsol && main_preguntas_academia.bexpl)) {
+                    String opt = "b";
+                    verificarRes(opt);
+                    switch (bloque) {
+                        case 1:
+                            notas.getBloqueverbal().get(posi).setRespulsada(2);
+                            break;
+                        case 2:
+                            notas.getBloquenumerico().get(posi).setRespulsada(2);
+                            break;
+                        case 3:
+                            notas.getBloqueespacial().get(posi).setRespulsada(2);
+                            break;
+                        case 4:
+                            notas.getBloquemecanico().get(posi).setRespulsada(2);
+                            break;
+                        case 5:
+                            notas.getBloqueperceptiva().get(posi).setRespulsada(2);
+                            break;
+                        case 6:
+                            notas.getBloquememoria().get(posi).setRespulsada(2);
+                            break;
+                        case 7:
+                            notas.getBloqueabstrapto().get(posi).setRespulsada(2);
+                    }
+                    Button alante = (Button) findViewById(R.id.alante);
+                    alante.setVisibility(View.VISIBLE);
+                    if (bloque != 6) {
+                        Button atras = (Button) findViewById(R.id.atras);
+                        atras.setVisibility(View.VISIBLE);
+                    }
                 }
-                Button alante = (Button) findViewById(R.id.alante);
-                alante.setVisibility(View.VISIBLE);
-                if (bloque != 6) {
-                    Button atras = (Button) findViewById(R.id.atras);
-                    atras.setVisibility(View.VISIBLE);
-                }
-
             }
         });
         c = (RelativeLayout) findViewById(R.id.c);
         c.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String opt = "c";
-                verificarRes(opt);
-                switch (bloque) {
-                    case 1:
-                        notas.getBloqueverbal().get(posi).setRespulsada(3);
-                        break;
-                    case 2:
-                        notas.getBloquenumerico().get(posi).setRespulsada(3);
-                        break;
-                    case 3:
-                        notas.getBloqueespacial().get(posi).setRespulsada(3);
-                        break;
-                    case 4:
-                        notas.getBloquemecanico().get(posi).setRespulsada(3);
-                        break;
-                    case 5:
-                        notas.getBloqueperceptiva().get(posi).setRespulsada(3);
-                        break;
-                    case 6:
-                        notas.getBloquememoria().get(posi).setRespulsada(3);
-                        break;
-                    case 7:
-                        notas.getBloqueabstrapto().get(posi).setRespulsada(3);
+                if ((main_preguntas_academia.bpre && main_preguntas_academia.ba && main_preguntas_academia.bb &&
+                        main_preguntas_academia.bc && main_preguntas_academia.bd && main_preguntas_academia.bsol && main_preguntas_academia.bexpl)) {
+                    String opt = "c";
+                    verificarRes(opt);
+                    switch (bloque) {
+                        case 1:
+                            notas.getBloqueverbal().get(posi).setRespulsada(3);
+                            break;
+                        case 2:
+                            notas.getBloquenumerico().get(posi).setRespulsada(3);
+                            break;
+                        case 3:
+                            notas.getBloqueespacial().get(posi).setRespulsada(3);
+                            break;
+                        case 4:
+                            notas.getBloquemecanico().get(posi).setRespulsada(3);
+                            break;
+                        case 5:
+                            notas.getBloqueperceptiva().get(posi).setRespulsada(3);
+                            break;
+                        case 6:
+                            notas.getBloquememoria().get(posi).setRespulsada(3);
+                            break;
+                        case 7:
+                            notas.getBloqueabstrapto().get(posi).setRespulsada(3);
+                    }
+                    Button alante = (Button) findViewById(R.id.alante);
+                    alante.setVisibility(View.VISIBLE);
+                    if (bloque != 6) {
+                        Button atras = (Button) findViewById(R.id.atras);
+                        atras.setVisibility(View.VISIBLE);
+                    }
                 }
-                Button alante = (Button) findViewById(R.id.alante);
-                alante.setVisibility(View.VISIBLE);
-                if (bloque != 6) {
-                    Button atras = (Button) findViewById(R.id.atras);
-                    atras.setVisibility(View.VISIBLE);
-                }
-
             }
         });
         d = (RelativeLayout) findViewById(R.id.d);
         d.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String opt = "d";
-                verificarRes(opt);
-                switch (bloque) {
-                    case 1:
-                        notas.getBloqueverbal().get(posi).setRespulsada(4);
-                        break;
-                    case 2:
-                        notas.getBloquenumerico().get(posi).setRespulsada(4);
-                        break;
-                    case 3:
-                        notas.getBloqueespacial().get(posi).setRespulsada(4);
-                        break;
-                    case 4:
-                        notas.getBloquemecanico().get(posi).setRespulsada(4);
-                        break;
-                    case 5:
-                        notas.getBloqueperceptiva().get(posi).setRespulsada(4);
-                        break;
-                    case 6:
-                        notas.getBloquememoria().get(posi).setRespulsada(4);
-                        break;
-                    case 7:
-                        notas.getBloqueabstrapto().get(posi).setRespulsada(4);
+                if ((main_preguntas_academia.bpre && main_preguntas_academia.ba && main_preguntas_academia.bb &&
+                        main_preguntas_academia.bc && main_preguntas_academia.bd && main_preguntas_academia.bsol && main_preguntas_academia.bexpl)) {
+                    String opt = "d";
+                    verificarRes(opt);
+                    switch (bloque) {
+                        case 1:
+                            notas.getBloqueverbal().get(posi).setRespulsada(4);
+                            break;
+                        case 2:
+                            notas.getBloquenumerico().get(posi).setRespulsada(4);
+                            break;
+                        case 3:
+                            notas.getBloqueespacial().get(posi).setRespulsada(4);
+                            break;
+                        case 4:
+                            notas.getBloquemecanico().get(posi).setRespulsada(4);
+                            break;
+                        case 5:
+                            notas.getBloqueperceptiva().get(posi).setRespulsada(4);
+                            break;
+                        case 6:
+                            notas.getBloquememoria().get(posi).setRespulsada(4);
+                            break;
+                        case 7:
+                            notas.getBloqueabstrapto().get(posi).setRespulsada(4);
+                    }
+                    Button alante = (Button) findViewById(R.id.alante);
+                    alante.setVisibility(View.VISIBLE);
+                    if (bloque != 6) {
+                        Button atras = (Button) findViewById(R.id.atras);
+                        atras.setVisibility(View.VISIBLE);
+                    }
                 }
-                Button alante = (Button) findViewById(R.id.alante);
-                alante.setVisibility(View.VISIBLE);
-                if (bloque != 6) {
-                    Button atras = (Button) findViewById(R.id.atras);
-                    atras.setVisibility(View.VISIBLE);
-                }
-
             }
         });
     }
@@ -2297,6 +2374,14 @@ public class main_examen_academia extends Activity {
             alante.setVisibility(View.INVISIBLE);
             pasusaexamen = false;
             esperarYCerrar(memoria);
+
+            main_preguntas_academia.bpre = true;
+            main_preguntas_academia.ba = true;
+            main_preguntas_academia.bb = true;
+            main_preguntas_academia.bc = true;
+            main_preguntas_academia.bd = true;
+            main_preguntas_academia.bsol = true;
+            main_preguntas_academia.bexpl = true;
         }
         if (bloque != 6) {
             Button atras = (Button) findViewById(R.id.atras);
@@ -2308,9 +2393,15 @@ public class main_examen_academia extends Activity {
 
     private void acabar() {
         siguiente.setEnabled(true);
-        if (acabar == false) {
-            //th = null;
-        }
+
+        main_preguntas_academia.bpre = true;
+        main_preguntas_academia.ba = true;
+        main_preguntas_academia.bb = true;
+        main_preguntas_academia.bc = true;
+        main_preguntas_academia.bd = true;
+        main_preguntas_academia.bsol = true;
+        main_preguntas_academia.bexpl = true;
+
         acabar = true;
         arregloacabar = true;
         a.setEnabled(false);
@@ -2389,6 +2480,13 @@ public class main_examen_academia extends Activity {
                                 memoria();
                                 cuentatras.setText("00:07:00");
                             }
+                            main_preguntas_academia.bpre = true;
+                            main_preguntas_academia.ba = true;
+                            main_preguntas_academia.bb = true;
+                            main_preguntas_academia.bc = true;
+                            main_preguntas_academia.bd = true;
+                            main_preguntas_academia.bsol = true;
+                            main_preguntas_academia.bexpl = true;
                         }
                     }).create().show();
 
