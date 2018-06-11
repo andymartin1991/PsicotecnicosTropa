@@ -246,7 +246,186 @@
         <!--242--><item>Si dejamos un peso de 35kg sobre una balanza en una escalera mecánica, ¿cuándo peso marcará la balanza?</item>
         <!--243--><item>Si pesamos un tarro lleno de mariposas, ¿cuándo se marcará mayor peso?</item>
         <!--244--><item>¿Hacia dónde hay que mover para que se quede nivelado?</item>
-
+        <!--11-5-2018 1--><item>La caja pesa 1Kg y está situada a 4m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre A.</item>
+        <!--11-5-2018 2--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre B. Si la caja pesa 1Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 3--><item>La caja pesa 1Kg y está situada a 4m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre C.</item>
+        <!--11-5-2018 4--><item>Qué fuerza debemos hacer sobre el punto A para equilibrar la balanza, si la caja pesa 1Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 5--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre B. Si la caja pesa 1Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 6--><item>La caja pesa 1Kg y está situada a 2m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre C.</item>
+        <!--11-5-2018 7--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre A. Si la caja pesa 1Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 8--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre B. Si la caja pesa 1Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 9--><item>La caja pesa 1Kg y está situada a 1m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre C.</item>
+        <!--11-5-2018 10--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre A. Si la caja pesa 2Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 11--><item>La caja pesa 2Kg y está situada a 4m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 12--><item>Qué fuerza debemos hacer sobre el punto C para equilibrar la balanza, si la caja pesa 2Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 13--><item>Qué fuerza debemos hacer sobre el punto A para equilibrar la balanza, si la caja pesa 2Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 14--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre B. Si la caja pesa 2Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 15--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre C. Si la caja pesa 2Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 16--><item>Qué fuerza debemos hacer sobre el punto A para equilibrar la balanza, si la caja pesa 2Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 17--><item>La caja pesa 2Kg y está situada a 1m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 18--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre C. Si la caja pesa 2Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 19--><item>Qué fuerza debemos hacer sobre el punto A para equilibrar la balanza, si la caja pesa 3Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 20--><item>Qué fuerza debemos hacer sobre el punto B para equilibrar la balanza, si la caja pesa 3Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 21--><item>La caja pesa 3Kg y está situada a 4m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre C.</item>
+        <!--11-5-2018 22--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre A. Si la caja pesa 3Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 23--><item>La caja pesa 3Kg y está situada a 2m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 24--><item>La caja pesa 3Kg y está situada a 2m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre C.</item>
+        <!--11-5-2018 25--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre A. Si la caja pesa 3Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 26--><item>La caja pesa 3Kg y está situada a 1m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 27--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre C. Si la caja pesa 3Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 28--><item>La caja pesa 4Kg y está situada a 4m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre A.</item>
+        <!--11-5-2018 29--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre B. Si la caja pesa 4Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 30--><item>La caja pesa 4Kg y está situada a 4m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre C.</item>
+        <!--11-5-2018 31--><item>La caja pesa 4Kg y está situada a 2m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre A.</item>
+        <!--11-5-2018 32--><item>La caja pesa 4Kg y está situada a 2m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 33--><item>La caja pesa 4Kg y está situada a 2m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre C.</item>
+        <!--11-5-2018 34--><item>La caja pesa 4Kg y está situada a 1m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre A.</item>
+        <!--11-5-2018 35--><item>La caja pesa 4Kg y está situada a 1m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 36--><item>Qué fuerza debemos hacer sobre el punto C para equilibrar la balanza, si la caja pesa 4Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 37--><item>Qué fuerza debemos hacer sobre el punto A para equilibrar la balanza, si la caja pesa 5Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 38--><item>La caja pesa 5Kg y está situada a 4m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 39--><item>Qué fuerza debemos hacer sobre el punto C para equilibrar la balanza, si la caja pesa 5Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 40--><item>La caja pesa 5Kg y está situada a 2m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre A.</item>
+        <!--11-5-2018 41--><item>Qué fuerza debemos hacer sobre el punto B para equilibrar la balanza, si la caja pesa 5Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 42--><item>Qué fuerza debemos hacer sobre el punto C para equilibrar la balanza, si la caja pesa 5Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 43--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre A. Si la caja pesa 5Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 44--><item>La caja pesa 5Kg y está situada a 1m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 45--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre C. Si la caja pesa 5Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 46--><item>Qué fuerza debemos hacer sobre el punto A para equilibrar la balanza, si la caja pesa 6Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 47--><item>La caja pesa 6Kg y está situada a 4m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 48--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre C. Si la caja pesa 6Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 49--><item>Qué fuerza debemos hacer sobre el punto A para equilibrar la balanza, si la caja pesa 6Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 50--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre B. Si la caja pesa 6Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 51--><item>La caja pesa 6Kg y está situada a 2m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre C.</item>
+        <!--11-5-2018 52--><item>Qué fuerza debemos hacer sobre el punto A para equilibrar la balanza, si la caja pesa 6Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 53--><item>La caja pesa 6Kg y está situada a 1m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 54--><item>Qué fuerza debemos hacer sobre el punto C para equilibrar la balanza, si la caja pesa 6Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 55--><item>Qué fuerza debemos hacer sobre el punto A para equilibrar la balanza, si la caja pesa 7Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 56--><item>La caja pesa 7Kg y está situada a 4m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 57--><item>Qué fuerza debemos hacer sobre el punto C para equilibrar la balanza, si la caja pesa 7Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 58--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre A. Si la caja pesa 7Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 59--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre B. Si la caja pesa 7Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 60--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre C. Si la caja pesa 7Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 61--><item>Qué fuerza debemos hacer sobre el punto A para equilibrar la balanza, si la caja pesa 7Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 62--><item>Qué fuerza debemos hacer sobre el punto B para equilibrar la balanza, si la caja pesa 7Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 63--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre C. Si la caja pesa 7Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 64--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre A. Si la caja pesa 8Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 65--><item>La caja pesa 8Kg y está situada a 4m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 66--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre C. Si la caja pesa 8Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 67--><item>Qué fuerza debemos hacer sobre el punto A para equilibrar la balanza, si la caja pesa 8Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 68--><item>Qué fuerza debemos hacer sobre el punto B para equilibrar la balanza, si la caja pesa 8Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 69--><item>Qué fuerza debemos hacer sobre el punto C para equilibrar la balanza, si la caja pesa 8Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 70--><item>Qué fuerza debemos hacer sobre el punto A para equilibrar la balanza, si la caja pesa 8Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 71--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre B. Si la caja pesa 8Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 72--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre C. Si la caja pesa 8Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 73--><item>Qué fuerza debemos hacer sobre el punto A para equilibrar la balanza, si la caja pesa 9Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 74--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre B. Si la caja pesa 9Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 75--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre C. Si la caja pesa 9Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 76--><item>La caja pesa 9Kg y está situada a 2m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre A.</item>
+        <!--11-5-2018 77--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre B. Si la caja pesa 9Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 78--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre C. Si la caja pesa 9Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 79--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre A. Si la caja pesa 9Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 80--><item>La caja pesa 9Kg y está situada a 1m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 81--><item>La caja pesa 9Kg y está situada a 1m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre C.</item>
+        <!--11-5-2018 82--><item>La caja pesa 10Kg y está situada a 4m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre A.</item>
+        <!--11-5-2018 83--><item>La caja pesa 10Kg y está situada a 4m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 84--><item>Qué fuerza debemos hacer sobre el punto C para equilibrar la balanza, si la caja pesa 10Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 85--><item>Qué fuerza debemos hacer sobre el punto A para equilibrar la balanza, si la caja pesa 10Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 86--><item>Qué fuerza debemos hacer sobre el punto B para equilibrar la balanza, si la caja pesa 10Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 87--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre C. Si la caja pesa 10Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 88--><item>Qué fuerza debemos hacer sobre el punto A para equilibrar la balanza, si la caja pesa 10Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 89--><item>La caja pesa 10Kg y está situada a 1m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 90--><item>La caja pesa 10Kg y está situada a 1m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre C.</item>
+        <!--11-5-2018 91--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre A. Si la caja pesa 11Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 92--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre B. Si la caja pesa 11Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 93--><item>Qué fuerza debemos hacer sobre el punto C para equilibrar la balanza, si la caja pesa 11Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 94--><item>Qué fuerza debemos hacer sobre el punto A para equilibrar la balanza, si la caja pesa 11Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 95--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre B. Si la caja pesa 11Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 96--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre C. Si la caja pesa 11Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 97--><item>La caja pesa 11Kg y está situada a 1m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre A.</item>
+        <!--11-5-2018 98--><item>La caja pesa 11Kg y está situada a 1m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 99--><item>Qué fuerza debemos hacer sobre el punto C para equilibrar la balanza, si la caja pesa 11Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 100--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre A. Si la caja pesa 12Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 101--><item>La caja pesa 12Kg y está situada a 4m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 102--><item>Qué fuerza debemos hacer sobre el punto C para equilibrar la balanza, si la caja pesa 12Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 103--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre A. Si la caja pesa 12Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 104--><item>La caja pesa 12Kg y está situada a 2m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 105--><item>Qué fuerza debemos hacer sobre el punto C para equilibrar la balanza, si la caja pesa 12Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 106--><item>La caja pesa 12Kg y está situada a 1m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre A.</item>
+        <!--11-5-2018 107--><item>La caja pesa 12Kg y está situada a 1m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 108--><item>Qué fuerza debemos hacer sobre el punto C para equilibrar la balanza, si la caja pesa 12Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 109--><item>Qué fuerza debemos hacer sobre el punto A para equilibrar la balanza, si la caja pesa 13Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 110--><item>Qué fuerza debemos hacer sobre el punto B para equilibrar la balanza, si la caja pesa 13Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 111--><item>Qué fuerza debemos hacer sobre el punto C para equilibrar la balanza, si la caja pesa 13Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 112--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre A. Si la caja pesa 13Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 113--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre B. Si la caja pesa 13Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 114--><item>La caja pesa 13Kg y está situada a 2m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre C.</item>
+        <!--11-5-2018 115--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre A. Si la caja pesa 13Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 116--><item>La caja pesa 13Kg y está situada a 1m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 117--><item>Qué fuerza debemos hacer sobre el punto C para equilibrar la balanza, si la caja pesa 13Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 118--><item>La caja pesa 14Kg y está situada a 4m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre A.</item>
+        <!--11-5-2018 119--><item>Qué fuerza debemos hacer sobre el punto B para equilibrar la balanza, si la caja pesa 14Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 120--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre C. Si la caja pesa 14Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 121--><item>La caja pesa 14Kg y está situada a 2m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre A.</item>
+        <!--11-5-2018 122--><item>La caja pesa 14Kg y está situada a 2m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 123--><item>La caja pesa 14Kg y está situada a 2m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre C.</item>
+        <!--11-5-2018 124--><item>La caja pesa 14Kg y está situada a 1m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre A.</item>
+        <!--11-5-2018 125--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre B. Si la caja pesa 14Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 126--><item>Qué fuerza debemos hacer sobre el punto C para equilibrar la balanza, si la caja pesa 14Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 127--><item>Qué fuerza debemos hacer sobre el punto A para equilibrar la balanza, si la caja pesa 15Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 128--><item>La caja pesa 15Kg y está situada a 4m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 129--><item>La caja pesa 15Kg y está situada a 4m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre C.</item>
+        <!--11-5-2018 130--><item>La caja pesa 15Kg y está situada a 2m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre A.</item>
+        <!--11-5-2018 131--><item>Qué fuerza debemos hacer sobre el punto B para equilibrar la balanza, si la caja pesa 15Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 132--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre C. Si la caja pesa 15Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 133--><item>Qué fuerza debemos hacer sobre el punto A para equilibrar la balanza, si la caja pesa 15Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 134--><item>La caja pesa 15Kg y está situada a 1m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 135--><item>La caja pesa 15Kg y está situada a 1m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre C.</item>
+        <!--11-5-2018 136--><item>Qué fuerza debemos hacer sobre el punto A para equilibrar la balanza, si la caja pesa 16Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 137--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre B. Si la caja pesa 16Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 138--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre C. Si la caja pesa 16Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 139--><item>La caja pesa 16Kg y está situada a 2m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre A.</item>
+        <!--11-5-2018 140--><item>Qué fuerza debemos hacer sobre el punto B para equilibrar la balanza, si la caja pesa 16Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 141--><item>La caja pesa 16Kg y está situada a 2m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre C.</item>
+        <!--11-5-2018 142--><item>Qué fuerza debemos hacer sobre el punto A para equilibrar la balanza, si la caja pesa 16Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 143--><item>Qué fuerza debemos hacer sobre el punto B para equilibrar la balanza, si la caja pesa 16Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 144--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre C. Si la caja pesa 16Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 145--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre A. Si la caja pesa 17Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 146--><item>Qué fuerza debemos hacer sobre el punto B para equilibrar la balanza, si la caja pesa 17Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 147--><item>Qué fuerza debemos hacer sobre el punto C para equilibrar la balanza, si la caja pesa 17Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 148--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre A. Si la caja pesa 17Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 149--><item>La caja pesa 17Kg y está situada a 2m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 150--><item>La caja pesa 17Kg y está situada a 2m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre C.</item>
+        <!--11-5-2018 151--><item>Qué fuerza debemos hacer sobre el punto A para equilibrar la balanza, si la caja pesa 17Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 152--><item>Qué fuerza debemos hacer sobre el punto B para equilibrar la balanza, si la caja pesa 17Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 153--><item>La caja pesa 17Kg y está situada a 1m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre C.</item>
+        <!--11-5-2018 154--><item>Qué fuerza debemos hacer sobre el punto A para equilibrar la balanza, si la caja pesa 18Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 155--><item>La caja pesa 18Kg y está situada a 4m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 156--><item>Qué fuerza debemos hacer sobre el punto C para equilibrar la balanza, si la caja pesa 18Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 157--><item>Qué fuerza debemos hacer sobre el punto A para equilibrar la balanza, si la caja pesa 18Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 158--><item>La caja pesa 18Kg y está situada a 2m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 159--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre C. Si la caja pesa 18Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 160--><item>La caja pesa 18Kg y está situada a 1m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre A.</item>
+        <!--11-5-2018 161--><item>Qué fuerza debemos hacer sobre el punto B para equilibrar la balanza, si la caja pesa 18Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 162--><item>Qué fuerza debemos hacer sobre el punto C para equilibrar la balanza, si la caja pesa 18Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 163--><item>Qué fuerza debemos hacer sobre el punto A para equilibrar la balanza, si la caja pesa 19Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 164--><item>La caja pesa 19Kg y está situada a 4m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 165--><item>La caja pesa 19Kg y está situada a 4m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre C.</item>
+        <!--11-5-2018 166--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre A. Si la caja pesa 19Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 167--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre B. Si la caja pesa 19Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 168--><item>La caja pesa 19Kg y está situada a 2m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre C.</item>
+        <!--11-5-2018 169--><item>Qué fuerza debemos hacer sobre el punto A para equilibrar la balanza, si la caja pesa 19Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 170--><item>Qué fuerza debemos hacer sobre el punto B para equilibrar la balanza, si la caja pesa 19Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 171--><item>La caja pesa 19Kg y está situada a 1m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre C.</item>
+        <!--11-5-2018 172--><item>La caja pesa 20Kg y está situada a 4m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre A.</item>
+        <!--11-5-2018 173--><item>La caja pesa 20Kg y está situada a 4m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 174--><item>Para equilibrar la balanza qué fuerza hay que aplicar sobre C. Si la caja pesa 20Kg y está situada a 4m del centro.</item>
+        <!--11-5-2018 175--><item>La caja pesa 20Kg y está situada a 2m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre A.</item>
+        <!--11-5-2018 176--><item>La caja pesa 20Kg y está situada a 2m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 177--><item>Qué fuerza debemos hacer sobre el punto C para equilibrar la balanza, si la caja pesa 20Kg y está situada a 2m del centro.</item>
+        <!--11-5-2018 178--><item>Qué fuerza debemos hacer sobre el punto A para equilibrar la balanza, si la caja pesa 20Kg y está situada a 1m del centro.</item>
+        <!--11-5-2018 179--><item>La caja pesa 20Kg y está situada a 1m del centro de la palanca, para equilibrar la balanza qué fuerza hay que aplicar sobre B.</item>
+        <!--11-5-2018 180--><item>Qué fuerza debemos hacer sobre el punto C para equilibrar la balanza, si la caja pesa 20Kg y está situada a 1m del centro.</item>
 
 
     </array>
@@ -496,6 +675,186 @@
         <!--241--><item>A)Más de 35kg</item>
         <!--243--><item>A)Tendrá siempre el mismo peso</item>
         <!--244--><item>A)Hacia la derecha</item>
+        <!--11-5-2018 1--><item>a)8</item>
+        <!--11-5-2018 2--><item>a)6</item>
+        <!--11-5-2018 3--><item>a)1</item>
+        <!--11-5-2018 4--><item>a)6</item>
+        <!--11-5-2018 5--><item>a)2</item>
+        <!--11-5-2018 6--><item>a)1.5</item>
+        <!--11-5-2018 7--><item>a)2</item>
+        <!--11-5-2018 8--><item>a)1</item>
+        <!--11-5-2018 9--><item>a)0.5</item>
+        <!--11-5-2018 10--><item>a)24</item>
+        <!--11-5-2018 11--><item>a)12</item>
+        <!--11-5-2018 12--><item>a)2</item>
+        <!--11-5-2018 13--><item>a)12</item>
+        <!--11-5-2018 14--><item>a)2</item>
+        <!--11-5-2018 15--><item>a)2</item>
+        <!--11-5-2018 16--><item>a)6</item>
+        <!--11-5-2018 17--><item>a)4</item>
+        <!--11-5-2018 18--><item>a)0.5</item>
+        <!--11-5-2018 19--><item>a)36</item>
+        <!--11-5-2018 20--><item>a)6</item>
+        <!--11-5-2018 21--><item>a)6</item>
+        <!--11-5-2018 22--><item>a)12</item>
+        <!--11-5-2018 23--><item>a)9</item>
+        <!--11-5-2018 24--><item>a)1.5</item>
+        <!--11-5-2018 25--><item>a)3</item>
+        <!--11-5-2018 26--><item>a)1.5</item>
+        <!--11-5-2018 27--><item>a)1.5</item>
+        <!--11-5-2018 28--><item>a)32</item>
+        <!--11-5-2018 29--><item>a)32</item>
+        <!--11-5-2018 30--><item>a)16</item>
+        <!--11-5-2018 31--><item>a)24</item>
+        <!--11-5-2018 32--><item>a)8</item>
+        <!--11-5-2018 33--><item>a)8</item>
+        <!--11-5-2018 34--><item>a)4</item>
+        <!--11-5-2018 35--><item>a)6</item>
+        <!--11-5-2018 36--><item>a)2</item>
+        <!--11-5-2018 37--><item>a)80</item>
+        <!--11-5-2018 38--><item>a)40</item>
+        <!--11-5-2018 39--><item>a)5</item>
+        <!--11-5-2018 40--><item>a)30</item>
+        <!--11-5-2018 41--><item>a)20</item>
+        <!--11-5-2018 42--><item>a)10</item>
+        <!--11-5-2018 43--><item>a)20</item>
+        <!--11-5-2018 44--><item>a)2.5</item>
+        <!--11-5-2018 45--><item>a)5</item>
+        <!--11-5-2018 46--><item>a)96</item>
+        <!--11-5-2018 47--><item>a)36</item>
+        <!--11-5-2018 48--><item>a)24</item>
+        <!--11-5-2018 49--><item>a)36</item>
+        <!--11-5-2018 50--><item>a)24</item>
+        <!--11-5-2018 51--><item>a)12</item>
+        <!--11-5-2018 52--><item>a)18</item>
+        <!--11-5-2018 53--><item>a)3</item>
+        <!--11-5-2018 54--><item>a)3</item>
+        <!--11-5-2018 55--><item>a)112</item>
+        <!--11-5-2018 56--><item>a)56</item>
+        <!--11-5-2018 57--><item>a)28</item>
+        <!--11-5-2018 58--><item>a)56</item>
+        <!--11-5-2018 59--><item>a)7</item>
+        <!--11-5-2018 60--><item>a)10.5</item>
+        <!--11-5-2018 61--><item>a)28</item>
+        <!--11-5-2018 62--><item>a)7</item>
+        <!--11-5-2018 63--><item>a)5.25</item>
+        <!--11-5-2018 64--><item>a)128</item>
+        <!--11-5-2018 65--><item>a)64</item>
+        <!--11-5-2018 66--><item>a)16</item>
+        <!--11-5-2018 67--><item>a)32</item>
+        <!--11-5-2018 68--><item>a)8</item>
+        <!--11-5-2018 69--><item>a)16</item>
+        <!--11-5-2018 70--><item>a)8</item>
+        <!--11-5-2018 71--><item>a)8</item>
+        <!--11-5-2018 72--><item>a)4</item>
+        <!--11-5-2018 73--><item>a)72</item>
+        <!--11-5-2018 74--><item>a)18</item>
+        <!--11-5-2018 75--><item>a)36</item>
+        <!--11-5-2018 76--><item>a)36</item>
+        <!--11-5-2018 77--><item>a)9</item>
+        <!--11-5-2018 78--><item>a)9</item>
+        <!--11-5-2018 79--><item>a)36</item>
+        <!--11-5-2018 80--><item>a)9</item>
+        <!--11-5-2018 81--><item>a)9</item>
+        <!--11-5-2018 82--><item>a)120</item>
+        <!--11-5-2018 83--><item>a)20</item>
+        <!--11-5-2018 84--><item>a)20</item>
+        <!--11-5-2018 85--><item>a)20</item>
+        <!--11-5-2018 86--><item>a)10</item>
+        <!--11-5-2018 87--><item>a)10</item>
+        <!--11-5-2018 88--><item>a)10</item>
+        <!--11-5-2018 89--><item>a)10</item>
+        <!--11-5-2018 90--><item>a)2.5</item>
+        <!--11-5-2018 91--><item>a)44</item>
+        <!--11-5-2018 92--><item>a)44</item>
+        <!--11-5-2018 93--><item>a)22</item>
+        <!--11-5-2018 94--><item>a)22</item>
+        <!--11-5-2018 95--><item>a)33</item>
+        <!--11-5-2018 96--><item>a)11</item>
+        <!--11-5-2018 97--><item>a)33</item>
+        <!--11-5-2018 98--><item>a)22</item>
+        <!--11-5-2018 99--><item>a)11</item>
+        <!--11-5-2018 100--><item>a)96</item>
+        <!--11-5-2018 101--><item>a)24</item>
+        <!--11-5-2018 102--><item>a)36</item>
+        <!--11-5-2018 103--><item>a)72</item>
+        <!--11-5-2018 104--><item>a)48</item>
+        <!--11-5-2018 105--><item>a)12</item>
+        <!--11-5-2018 106--><item>a)48</item>
+        <!--11-5-2018 107--><item>a)6</item>
+        <!--11-5-2018 108--><item>a)9</item>
+        <!--11-5-2018 109--><item>a)156</item>
+        <!--11-5-2018 110--><item>a)104</item>
+        <!--11-5-2018 111--><item>a)26</item>
+        <!--11-5-2018 112--><item>a)52</item>
+        <!--11-5-2018 113--><item>a)39</item>
+        <!--11-5-2018 114--><item>a)13</item>
+        <!--11-5-2018 115--><item>a)52</item>
+        <!--11-5-2018 116--><item>a)6.5</item>
+        <!--11-5-2018 117--><item>a)13</item>
+        <!--11-5-2018 118--><item>a)112</item>
+        <!--11-5-2018 119--><item>a)112</item>
+        <!--11-5-2018 120--><item>a)14</item>
+        <!--11-5-2018 121--><item>a)56</item>
+        <!--11-5-2018 122--><item>a)56</item>
+        <!--11-5-2018 123--><item>a)7</item>
+        <!--11-5-2018 124--><item>a)14</item>
+        <!--11-5-2018 125--><item>a)28</item>
+        <!--11-5-2018 126--><item>a)3.5</item>
+        <!--11-5-2018 127--><item>a)60</item>
+        <!--11-5-2018 128--><item>a)30</item>
+        <!--11-5-2018 129--><item>a)15</item>
+        <!--11-5-2018 130--><item>a)60</item>
+        <!--11-5-2018 131--><item>a)30</item>
+        <!--11-5-2018 132--><item>a)7.5</item>
+        <!--11-5-2018 133--><item>a)60</item>
+        <!--11-5-2018 134--><item>a)22.5</item>
+        <!--11-5-2018 135--><item>a)7.5</item>
+        <!--11-5-2018 136--><item>a)128</item>
+        <!--11-5-2018 137--><item>a)32</item>
+        <!--11-5-2018 138--><item>a)16</item>
+        <!--11-5-2018 139--><item>a)128</item>
+        <!--11-5-2018 140--><item>a)16</item>
+        <!--11-5-2018 141--><item>a)16</item>
+        <!--11-5-2018 142--><item>a)64</item>
+        <!--11-5-2018 143--><item>a)16</item>
+        <!--11-5-2018 144--><item>a)12</item>
+        <!--11-5-2018 145--><item>a)272</item>
+        <!--11-5-2018 146--><item>a)68</item>
+        <!--11-5-2018 147--><item>a)51</item>
+        <!--11-5-2018 148--><item>a)34</item>
+        <!--11-5-2018 149--><item>a)17</item>
+        <!--11-5-2018 150--><item>a)17</item>
+        <!--11-5-2018 151--><item>a)51</item>
+        <!--11-5-2018 152--><item>a)17</item>
+        <!--11-5-2018 153--><item>a)17</item>
+        <!--11-5-2018 154--><item>a)144</item>
+        <!--11-5-2018 155--><item>a)36</item>
+        <!--11-5-2018 156--><item>a)72</item>
+        <!--11-5-2018 157--><item>a)108</item>
+        <!--11-5-2018 158--><item>a)18</item>
+        <!--11-5-2018 159--><item>a)27</item>
+        <!--11-5-2018 160--><item>a)72</item>
+        <!--11-5-2018 161--><item>a)27</item>
+        <!--11-5-2018 162--><item>a)9</item>
+        <!--11-5-2018 163--><item>a)228</item>
+        <!--11-5-2018 164--><item>a)114</item>
+        <!--11-5-2018 165--><item>a)57</item>
+        <!--11-5-2018 166--><item>a)76</item>
+        <!--11-5-2018 167--><item>a)19</item>
+        <!--11-5-2018 168--><item>a)38</item>
+        <!--11-5-2018 169--><item>a)19</item>
+        <!--11-5-2018 170--><item>a)19</item>
+        <!--11-5-2018 171--><item>a)14.25</item>
+        <!--11-5-2018 172--><item>a)160</item>
+        <!--11-5-2018 173--><item>a)160</item>
+        <!--11-5-2018 174--><item>a)80</item>
+        <!--11-5-2018 175--><item>a)40</item>
+        <!--11-5-2018 176--><item>a)80</item>
+        <!--11-5-2018 177--><item>a)20</item>
+        <!--11-5-2018 178--><item>a)60</item>
+        <!--11-5-2018 179--><item>a)20</item>
+        <!--11-5-2018 180--><item>a)5</item>
 
 
     </array>
@@ -745,6 +1104,186 @@
         <!--242--><item>B)Menos de 35kg</item>
         <!--243--><item>B)Cuando las mariposas estén paradas.</item>
         <!--244--><item>B)Hacia la izquierda</item>
+        <!--11-5-2018 1--><item>b)4</item>
+        <!--11-5-2018 2--><item>b)2</item>
+        <!--11-5-2018 3--><item>b)3</item>
+        <!--11-5-2018 4--><item>b)2</item>
+        <!--11-5-2018 5--><item>b)1</item>
+        <!--11-5-2018 6--><item>b)2</item>
+        <!--11-5-2018 7--><item>b)3</item>
+        <!--11-5-2018 8--><item>b)0.5</item>
+        <!--11-5-2018 9--><item>b)0.75</item>
+        <!--11-5-2018 10--><item>b)8</item>
+        <!--11-5-2018 11--><item>b)16</item>
+        <!--11-5-2018 12--><item>b)6</item>
+        <!--11-5-2018 13--><item>b)16</item>
+        <!--11-5-2018 14--><item>b)6</item>
+        <!--11-5-2018 15--><item>b)4</item>
+        <!--11-5-2018 16--><item>b)4</item>
+        <!--11-5-2018 17--><item>b)3</item>
+        <!--11-5-2018 18--><item>b)1</item>
+        <!--11-5-2018 19--><item>b)48</item>
+        <!--11-5-2018 20--><item>b)24</item>
+        <!--11-5-2018 21--><item>b)12</item>
+        <!--11-5-2018 22--><item>b)6</item>
+        <!--11-5-2018 23--><item>b)6</item>
+        <!--11-5-2018 24--><item>b)4.5</item>
+        <!--11-5-2018 25--><item>b)9</item>
+        <!--11-5-2018 26--><item>b)3</item>
+        <!--11-5-2018 27--><item>b)2.25</item>
+        <!--11-5-2018 28--><item>b)48</item>
+        <!--11-5-2018 29--><item>b)24</item>
+        <!--11-5-2018 30--><item>b)8</item>
+        <!--11-5-2018 31--><item>b)32</item>
+        <!--11-5-2018 32--><item>b)12</item>
+        <!--11-5-2018 33--><item>b)6</item>
+        <!--11-5-2018 34--><item>b)16</item>
+        <!--11-5-2018 35--><item>b)4</item>
+        <!--11-5-2018 36--><item>b)3</item>
+        <!--11-5-2018 37--><item>b)40</item>
+        <!--11-5-2018 38--><item>b)20</item>
+        <!--11-5-2018 39--><item>b)10</item>
+        <!--11-5-2018 40--><item>b)40</item>
+        <!--11-5-2018 41--><item>b)15</item>
+        <!--11-5-2018 42--><item>b)7.5</item>
+        <!--11-5-2018 43--><item>b)10</item>
+        <!--11-5-2018 44--><item>b)5</item>
+        <!--11-5-2018 45--><item>b)3.75</item>
+        <!--11-5-2018 46--><item>b)48</item>
+        <!--11-5-2018 47--><item>b)24</item>
+        <!--11-5-2018 48--><item>b)12</item>
+        <!--11-5-2018 49--><item>b)48</item>
+        <!--11-5-2018 50--><item>b)18</item>
+        <!--11-5-2018 51--><item>b)6</item>
+        <!--11-5-2018 52--><item>b)12</item>
+        <!--11-5-2018 53--><item>b)12</item>
+        <!--11-5-2018 54--><item>b)4.5</item>
+        <!--11-5-2018 55--><item>b)56</item>
+        <!--11-5-2018 56--><item>b)28</item>
+        <!--11-5-2018 57--><item>b)21</item>
+        <!--11-5-2018 58--><item>b)42</item>
+        <!--11-5-2018 59--><item>b)21</item>
+        <!--11-5-2018 60--><item>b)3.5</item>
+        <!--11-5-2018 61--><item>b)14</item>
+        <!--11-5-2018 62--><item>b)10.5</item>
+        <!--11-5-2018 63--><item>b)3.5</item>
+        <!--11-5-2018 64--><item>b)64</item>
+        <!--11-5-2018 65--><item>b)32</item>
+        <!--11-5-2018 66--><item>b)8</item>
+        <!--11-5-2018 67--><item>b)64</item>
+        <!--11-5-2018 68--><item>b)24</item>
+        <!--11-5-2018 69--><item>b)8</item>
+        <!--11-5-2018 70--><item>b)32</item>
+        <!--11-5-2018 71--><item>b)12</item>
+        <!--11-5-2018 72--><item>b)8</item>
+        <!--11-5-2018 73--><item>b)36</item>
+        <!--11-5-2018 74--><item>b)54</item>
+        <!--11-5-2018 75--><item>b)18</item>
+        <!--11-5-2018 76--><item>b)72</item>
+        <!--11-5-2018 77--><item>b)27</item>
+        <!--11-5-2018 78--><item>b)13.5</item>
+        <!--11-5-2018 79--><item>b)18</item>
+        <!--11-5-2018 80--><item>b)4.5</item>
+        <!--11-5-2018 81--><item>b)4.5</item>
+        <!--11-5-2018 82--><item>b)80</item>
+        <!--11-5-2018 83--><item>b)40</item>
+        <!--11-5-2018 84--><item>b)10</item>
+        <!--11-5-2018 85--><item>b)80</item>
+        <!--11-5-2018 86--><item>b)20</item>
+        <!--11-5-2018 87--><item>b)5</item>
+        <!--11-5-2018 88--><item>b)20</item>
+        <!--11-5-2018 89--><item>b)5</item>
+        <!--11-5-2018 90--><item>b)10</item>
+        <!--11-5-2018 91--><item>b)132</item>
+        <!--11-5-2018 92--><item>b)66</item>
+        <!--11-5-2018 93--><item>b)11</item>
+        <!--11-5-2018 94--><item>b)66</item>
+        <!--11-5-2018 95--><item>b)44</item>
+        <!--11-5-2018 96--><item>b)22</item>
+        <!--11-5-2018 97--><item>b)11</item>
+        <!--11-5-2018 98--><item>b)5.5</item>
+        <!--11-5-2018 99--><item>b)8.25</item>
+        <!--11-5-2018 100--><item>b)192</item>
+        <!--11-5-2018 101--><item>b)96</item>
+        <!--11-5-2018 102--><item>b)48</item>
+        <!--11-5-2018 103--><item>b)24</item>
+        <!--11-5-2018 104--><item>b)36</item>
+        <!--11-5-2018 105--><item>b)24</item>
+        <!--11-5-2018 106--><item>b)24</item>
+        <!--11-5-2018 107--><item>b)12</item>
+        <!--11-5-2018 108--><item>b)12</item>
+        <!--11-5-2018 109--><item>b)208</item>
+        <!--11-5-2018 110--><item>b)26</item>
+        <!--11-5-2018 111--><item>b)13</item>
+        <!--11-5-2018 112--><item>b)78</item>
+        <!--11-5-2018 113--><item>b)52</item>
+        <!--11-5-2018 114--><item>b)19.5</item>
+        <!--11-5-2018 115--><item>b)13</item>
+        <!--11-5-2018 116--><item>b)26</item>
+        <!--11-5-2018 117--><item>b)3.25</item>
+        <!--11-5-2018 118--><item>b)168</item>
+        <!--11-5-2018 119--><item>b)84</item>
+        <!--11-5-2018 120--><item>b)42</item>
+        <!--11-5-2018 121--><item>b)28</item>
+        <!--11-5-2018 122--><item>b)14</item>
+        <!--11-5-2018 123--><item>b)21</item>
+        <!--11-5-2018 124--><item>b)56</item>
+        <!--11-5-2018 125--><item>b)21</item>
+        <!--11-5-2018 126--><item>b)14</item>
+        <!--11-5-2018 127--><item>b)180</item>
+        <!--11-5-2018 128--><item>b)120</item>
+        <!--11-5-2018 129--><item>b)60</item>
+        <!--11-5-2018 130--><item>b)90</item>
+        <!--11-5-2018 131--><item>b)15</item>
+        <!--11-5-2018 132--><item>b)30</item>
+        <!--11-5-2018 133--><item>b)15</item>
+        <!--11-5-2018 134--><item>b)7.5</item>
+        <!--11-5-2018 135--><item>b)11.25</item>
+        <!--11-5-2018 136--><item>b)192</item>
+        <!--11-5-2018 137--><item>b)128</item>
+        <!--11-5-2018 138--><item>b)48</item>
+        <!--11-5-2018 139--><item>b)64</item>
+        <!--11-5-2018 140--><item>b)64</item>
+        <!--11-5-2018 141--><item>b)8</item>
+        <!--11-5-2018 142--><item>b)16</item>
+        <!--11-5-2018 143--><item>b)24</item>
+        <!--11-5-2018 144--><item>b)8</item>
+        <!--11-5-2018 145--><item>b)68</item>
+        <!--11-5-2018 146--><item>b)102</item>
+        <!--11-5-2018 147--><item>b)17</item>
+        <!--11-5-2018 148--><item>b)68</item>
+        <!--11-5-2018 149--><item>b)68</item>
+        <!--11-5-2018 150--><item>b)34</item>
+        <!--11-5-2018 151--><item>b)68</item>
+        <!--11-5-2018 152--><item>b)8.5</item>
+        <!--11-5-2018 153--><item>b)8.5</item>
+        <!--11-5-2018 154--><item>b)216</item>
+        <!--11-5-2018 155--><item>b)108</item>
+        <!--11-5-2018 156--><item>b)36</item>
+        <!--11-5-2018 157--><item>b)72</item>
+        <!--11-5-2018 158--><item>b)54</item>
+        <!--11-5-2018 159--><item>b)18</item>
+        <!--11-5-2018 160--><item>b)36</item>
+        <!--11-5-2018 161--><item>b)18</item>
+        <!--11-5-2018 162--><item>b)18</item>
+        <!--11-5-2018 163--><item>b)76</item>
+        <!--11-5-2018 164--><item>b)152</item>
+        <!--11-5-2018 165--><item>b)76</item>
+        <!--11-5-2018 166--><item>b)152</item>
+        <!--11-5-2018 167--><item>b)57</item>
+        <!--11-5-2018 168--><item>b)28.5</item>
+        <!--11-5-2018 169--><item>b)57</item>
+        <!--11-5-2018 170--><item>b)28.5</item>
+        <!--11-5-2018 171--><item>b)19</item>
+        <!--11-5-2018 172--><item>b)240</item>
+        <!--11-5-2018 173--><item>b)120</item>
+        <!--11-5-2018 174--><item>b)20</item>
+        <!--11-5-2018 175--><item>b)160</item>
+        <!--11-5-2018 176--><item>b)20</item>
+        <!--11-5-2018 177--><item>b)30</item>
+        <!--11-5-2018 178--><item>b)20</item>
+        <!--11-5-2018 179--><item>b)40</item>
+        <!--11-5-2018 180--><item>b)15</item>
 
     </array>
     
@@ -993,6 +1532,186 @@
         <!--242--><item>C)35kg</item>
         <!--243--><item>C)Cuando las mariposas estén volando.</item>
         <!--244--><item>C)Hacia delante</item>
+        <!--11-5-2018 1--><item>c)12</item>
+        <!--11-5-2018 2--><item>c)8</item>
+        <!--11-5-2018 3--><item>c)4</item>
+        <!--11-5-2018 4--><item>c)4</item>
+        <!--11-5-2018 5--><item>c)4</item>
+        <!--11-5-2018 6--><item>c)0.5</item>
+        <!--11-5-2018 7--><item>c)4</item>
+        <!--11-5-2018 8--><item>c)2</item>
+        <!--11-5-2018 9--><item>c)0.25</item>
+        <!--11-5-2018 10--><item>c)32</item>
+        <!--11-5-2018 11--><item>c)4</item>
+        <!--11-5-2018 12--><item>c)4</item>
+        <!--11-5-2018 13--><item>c)8</item>
+        <!--11-5-2018 14--><item>c)8</item>
+        <!--11-5-2018 15--><item>c)1</item>
+        <!--11-5-2018 16--><item>c)2</item>
+        <!--11-5-2018 17--><item>c)1</item>
+        <!--11-5-2018 18--><item>c)2</item>
+        <!--11-5-2018 19--><item>c)12</item>
+        <!--11-5-2018 20--><item>c)12</item>
+        <!--11-5-2018 21--><item>c)3</item>
+        <!--11-5-2018 22--><item>c)24</item>
+        <!--11-5-2018 23--><item>c)12</item>
+        <!--11-5-2018 24--><item>c)6</item>
+        <!--11-5-2018 25--><item>c)12</item>
+        <!--11-5-2018 26--><item>c)4.5</item>
+        <!--11-5-2018 27--><item>c)0.75</item>
+        <!--11-5-2018 28--><item>c)16</item>
+        <!--11-5-2018 29--><item>c)16</item>
+        <!--11-5-2018 30--><item>c)12</item>
+        <!--11-5-2018 31--><item>c)8</item>
+        <!--11-5-2018 32--><item>c)16</item>
+        <!--11-5-2018 33--><item>c)4</item>
+        <!--11-5-2018 34--><item>c)8</item>
+        <!--11-5-2018 35--><item>c)8</item>
+        <!--11-5-2018 36--><item>c)4</item>
+        <!--11-5-2018 37--><item>c)60</item>
+        <!--11-5-2018 38--><item>c)10</item>
+        <!--11-5-2018 39--><item>c)15</item>
+        <!--11-5-2018 40--><item>c)10</item>
+        <!--11-5-2018 41--><item>c)5</item>
+        <!--11-5-2018 42--><item>c)5</item>
+        <!--11-5-2018 43--><item>c)5</item>
+        <!--11-5-2018 44--><item>c)10</item>
+        <!--11-5-2018 45--><item>c)2.5</item>
+        <!--11-5-2018 46--><item>c)24</item>
+        <!--11-5-2018 47--><item>c)48</item>
+        <!--11-5-2018 48--><item>c)6</item>
+        <!--11-5-2018 49--><item>c)24</item>
+        <!--11-5-2018 50--><item>c)12</item>
+        <!--11-5-2018 51--><item>c)9</item>
+        <!--11-5-2018 52--><item>c)24</item>
+        <!--11-5-2018 53--><item>c)9</item>
+        <!--11-5-2018 54--><item>c)6</item>
+        <!--11-5-2018 55--><item>c)84</item>
+        <!--11-5-2018 56--><item>c)42</item>
+        <!--11-5-2018 57--><item>c)14</item>
+        <!--11-5-2018 58--><item>c)14</item>
+        <!--11-5-2018 59--><item>c)28</item>
+        <!--11-5-2018 60--><item>c)7</item>
+        <!--11-5-2018 61--><item>c)7</item>
+        <!--11-5-2018 62--><item>c)14</item>
+        <!--11-5-2018 63--><item>c)1.75</item>
+        <!--11-5-2018 64--><item>c)96</item>
+        <!--11-5-2018 65--><item>c)16</item>
+        <!--11-5-2018 66--><item>c)24</item>
+        <!--11-5-2018 67--><item>c)48</item>
+        <!--11-5-2018 68--><item>c)32</item>
+        <!--11-5-2018 69--><item>c)12</item>
+        <!--11-5-2018 70--><item>c)24</item>
+        <!--11-5-2018 71--><item>c)16</item>
+        <!--11-5-2018 72--><item>c)2</item>
+        <!--11-5-2018 73--><item>c)144</item>
+        <!--11-5-2018 74--><item>c)72</item>
+        <!--11-5-2018 75--><item>c)9</item>
+        <!--11-5-2018 76--><item>c)18</item>
+        <!--11-5-2018 77--><item>c)18</item>
+        <!--11-5-2018 78--><item>c)18</item>
+        <!--11-5-2018 79--><item>c)27</item>
+        <!--11-5-2018 80--><item>c)18</item>
+        <!--11-5-2018 81--><item>c)2.25</item>
+        <!--11-5-2018 82--><item>c)40</item>
+        <!--11-5-2018 83--><item>c)60</item>
+        <!--11-5-2018 84--><item>c)40</item>
+        <!--11-5-2018 85--><item>c)40</item>
+        <!--11-5-2018 86--><item>c)30</item>
+        <!--11-5-2018 87--><item>c)15</item>
+        <!--11-5-2018 88--><item>c)40</item>
+        <!--11-5-2018 89--><item>c)15</item>
+        <!--11-5-2018 90--><item>c)5</item>
+        <!--11-5-2018 91--><item>c)88</item>
+        <!--11-5-2018 92--><item>c)88</item>
+        <!--11-5-2018 93--><item>c)44</item>
+        <!--11-5-2018 94--><item>c)44</item>
+        <!--11-5-2018 95--><item>c)11</item>
+        <!--11-5-2018 96--><item>c)16.5</item>
+        <!--11-5-2018 97--><item>c)44</item>
+        <!--11-5-2018 98--><item>c)11</item>
+        <!--11-5-2018 99--><item>c)2.75</item>
+        <!--11-5-2018 100--><item>c)144</item>
+        <!--11-5-2018 101--><item>c)48</item>
+        <!--11-5-2018 102--><item>c)12</item>
+        <!--11-5-2018 103--><item>c)48</item>
+        <!--11-5-2018 104--><item>c)24</item>
+        <!--11-5-2018 105--><item>c)18</item>
+        <!--11-5-2018 106--><item>c)36</item>
+        <!--11-5-2018 107--><item>c)24</item>
+        <!--11-5-2018 108--><item>c)3</item>
+        <!--11-5-2018 109--><item>c)52</item>
+        <!--11-5-2018 110--><item>c)78</item>
+        <!--11-5-2018 111--><item>c)52</item>
+        <!--11-5-2018 112--><item>c)26</item>
+        <!--11-5-2018 113--><item>c)13</item>
+        <!--11-5-2018 114--><item>c)6.5</item>
+        <!--11-5-2018 115--><item>c)39</item>
+        <!--11-5-2018 116--><item>c)19.5</item>
+        <!--11-5-2018 117--><item>c)9.75</item>
+        <!--11-5-2018 118--><item>c)56</item>
+        <!--11-5-2018 119--><item>c)56</item>
+        <!--11-5-2018 120--><item>c)56</item>
+        <!--11-5-2018 121--><item>c)84</item>
+        <!--11-5-2018 122--><item>c)28</item>
+        <!--11-5-2018 123--><item>c)14</item>
+        <!--11-5-2018 124--><item>c)42</item>
+        <!--11-5-2018 125--><item>c)7</item>
+        <!--11-5-2018 126--><item>c)10.5</item>
+        <!--11-5-2018 127--><item>c)240</item>
+        <!--11-5-2018 128--><item>c)60</item>
+        <!--11-5-2018 129--><item>c)30</item>
+        <!--11-5-2018 130--><item>c)30</item>
+        <!--11-5-2018 131--><item>c)45</item>
+        <!--11-5-2018 132--><item>c)22.5</item>
+        <!--11-5-2018 133--><item>c)30</item>
+        <!--11-5-2018 134--><item>c)30</item>
+        <!--11-5-2018 135--><item>c)3.75</item>
+        <!--11-5-2018 136--><item>c)256</item>
+        <!--11-5-2018 137--><item>c)96</item>
+        <!--11-5-2018 138--><item>c)32</item>
+        <!--11-5-2018 139--><item>c)96</item>
+        <!--11-5-2018 140--><item>c)48</item>
+        <!--11-5-2018 141--><item>c)24</item>
+        <!--11-5-2018 142--><item>c)32</item>
+        <!--11-5-2018 143--><item>c)8</item>
+        <!--11-5-2018 144--><item>c)4</item>
+        <!--11-5-2018 145--><item>c)204</item>
+        <!--11-5-2018 146--><item>c)34</item>
+        <!--11-5-2018 147--><item>c)68</item>
+        <!--11-5-2018 148--><item>c)102</item>
+        <!--11-5-2018 149--><item>c)51</item>
+        <!--11-5-2018 150--><item>c)8.5</item>
+        <!--11-5-2018 151--><item>c)34</item>
+        <!--11-5-2018 152--><item>c)34</item>
+        <!--11-5-2018 153--><item>c)12.75</item>
+        <!--11-5-2018 154--><item>c)72</item>
+        <!--11-5-2018 155--><item>c)144</item>
+        <!--11-5-2018 156--><item>c)54</item>
+        <!--11-5-2018 157--><item>c)36</item>
+        <!--11-5-2018 158--><item>c)72</item>
+        <!--11-5-2018 159--><item>c)9</item>
+        <!--11-5-2018 160--><item>c)54</item>
+        <!--11-5-2018 161--><item>c)9</item>
+        <!--11-5-2018 162--><item>c)13.5</item>
+        <!--11-5-2018 163--><item>c)152</item>
+        <!--11-5-2018 164--><item>c)38</item>
+        <!--11-5-2018 165--><item>c)38</item>
+        <!--11-5-2018 166--><item>c)114</item>
+        <!--11-5-2018 167--><item>c)76</item>
+        <!--11-5-2018 168--><item>c)19</item>
+        <!--11-5-2018 169--><item>c)76</item>
+        <!--11-5-2018 170--><item>c)38</item>
+        <!--11-5-2018 171--><item>c)4.75</item>
+        <!--11-5-2018 172--><item>c)320</item>
+        <!--11-5-2018 173--><item>c)40</item>
+        <!--11-5-2018 174--><item>c)60</item>
+        <!--11-5-2018 175--><item>c)80</item>
+        <!--11-5-2018 176--><item>c)40</item>
+        <!--11-5-2018 177--><item>c)40</item>
+        <!--11-5-2018 178--><item>c)40</item>
+        <!--11-5-2018 179--><item>c)30</item>
+        <!--11-5-2018 180--><item>c)20</item>
 
     </array>
     
@@ -1241,6 +1960,187 @@
         <!--242--><item></item>
         <!--243--><item></item>
         <!--244--><item>A)Hacia atrás</item>
+        <!--11-5-2018 1--><item>d)16</item>
+        <!--11-5-2018 2--><item>d)4</item>
+        <!--11-5-2018 3--><item>d)2</item>
+        <!--11-5-2018 4--><item>d)8</item>
+        <!--11-5-2018 5--><item>d)3</item>
+        <!--11-5-2018 6--><item>d)1</item>
+        <!--11-5-2018 7--><item>d)1</item>
+        <!--11-5-2018 8--><item>d)1.5</item>
+        <!--11-5-2018 9--><item>d)1</item>
+        <!--11-5-2018 10--><item>d)16</item>
+        <!--11-5-2018 11--><item>d)8</item>
+        <!--11-5-2018 12--><item>d)8</item>
+        <!--11-5-2018 13--><item>d)4</item>
+        <!--11-5-2018 14--><item>d)4</item>
+        <!--11-5-2018 15--><item>d)3</item>
+        <!--11-5-2018 16--><item>d)8</item>
+        <!--11-5-2018 17--><item>d)2</item>
+        <!--11-5-2018 18--><item>d)1.5</item>
+        <!--11-5-2018 19--><item>d)24</item>
+        <!--11-5-2018 20--><item>d)18</item>
+        <!--11-5-2018 21--><item>d)9</item>
+        <!--11-5-2018 22--><item>d)18</item>
+        <!--11-5-2018 23--><item>d)3</item>
+        <!--11-5-2018 24--><item>d)3</item>
+        <!--11-5-2018 25--><item>d)6</item>
+        <!--11-5-2018 26--><item>d)6</item>
+        <!--11-5-2018 27--><item>d)3</item>
+        <!--11-5-2018 28--><item>d)64</item>
+        <!--11-5-2018 29--><item>d)8</item>
+        <!--11-5-2018 30--><item>d)4</item>
+        <!--11-5-2018 31--><item>d)16</item>
+        <!--11-5-2018 32--><item>d)4</item>
+        <!--11-5-2018 33--><item>d)2</item>
+        <!--11-5-2018 34--><item>d)12</item>
+        <!--11-5-2018 35--><item>d)2</item>
+        <!--11-5-2018 36--><item>d)1</item>
+        <!--11-5-2018 37--><item>d)20</item>
+        <!--11-5-2018 38--><item>d)30</item>
+        <!--11-5-2018 39--><item>d)20</item>
+        <!--11-5-2018 40--><item>d)20</item>
+        <!--11-5-2018 41--><item>d)10</item>
+        <!--11-5-2018 42--><item>d)2.5</item>
+        <!--11-5-2018 43--><item>d)15</item>
+        <!--11-5-2018 44--><item>d)7.5</item>
+        <!--11-5-2018 45--><item>d)1.25</item>
+        <!--11-5-2018 46--><item>d)72</item>
+        <!--11-5-2018 47--><item>d)12</item>
+        <!--11-5-2018 48--><item>d)18</item>
+        <!--11-5-2018 49--><item>d)12</item>
+        <!--11-5-2018 50--><item>d)6</item>
+        <!--11-5-2018 51--><item>d)3</item>
+        <!--11-5-2018 52--><item>d)6</item>
+        <!--11-5-2018 53--><item>d)6</item>
+        <!--11-5-2018 54--><item>d)1.5</item>
+        <!--11-5-2018 55--><item>d)28</item>
+        <!--11-5-2018 56--><item>d)14</item>
+        <!--11-5-2018 57--><item>d)7</item>
+        <!--11-5-2018 58--><item>d)28</item>
+        <!--11-5-2018 59--><item>d)14</item>
+        <!--11-5-2018 60--><item>d)14</item>
+        <!--11-5-2018 61--><item>d)21</item>
+        <!--11-5-2018 62--><item>d)3.5</item>
+        <!--11-5-2018 63--><item>d)7</item>
+        <!--11-5-2018 64--><item>d)32</item>
+        <!--11-5-2018 65--><item>d)48</item>
+        <!--11-5-2018 66--><item>d)32</item>
+        <!--11-5-2018 67--><item>d)16</item>
+        <!--11-5-2018 68--><item>d)16</item>
+        <!--11-5-2018 69--><item>d)4</item>
+        <!--11-5-2018 70--><item>d)16</item>
+        <!--11-5-2018 71--><item>d)4</item>
+        <!--11-5-2018 72--><item>d)6</item>
+        <!--11-5-2018 73--><item>d)108</item>
+        <!--11-5-2018 74--><item>d)36</item>
+        <!--11-5-2018 75--><item>d)27</item>
+        <!--11-5-2018 76--><item>d)54</item>
+        <!--11-5-2018 77--><item>d)36</item>
+        <!--11-5-2018 78--><item>d)4.5</item>
+        <!--11-5-2018 79--><item>d)9</item>
+        <!--11-5-2018 80--><item>d)13.5</item>
+        <!--11-5-2018 81--><item>d)6.75</item>
+        <!--11-5-2018 82--><item>d)160</item>
+        <!--11-5-2018 83--><item>d)80</item>
+        <!--11-5-2018 84--><item>d)30</item>
+        <!--11-5-2018 85--><item>d)60</item>
+        <!--11-5-2018 86--><item>d)40</item>
+        <!--11-5-2018 87--><item>d)20</item>
+        <!--11-5-2018 88--><item>d)30</item>
+        <!--11-5-2018 89--><item>d)20</item>
+        <!--11-5-2018 90--><item>d)7.5</item>
+        <!--11-5-2018 91--><item>d)176</item>
+        <!--11-5-2018 92--><item>d)22</item>
+        <!--11-5-2018 93--><item>d)33</item>
+        <!--11-5-2018 94--><item>d)88</item>
+        <!--11-5-2018 95--><item>d)22</item>
+        <!--11-5-2018 96--><item>d)5.5</item>
+        <!--11-5-2018 97--><item>d)22</item>
+        <!--11-5-2018 98--><item>d)16.5</item>
+        <!--11-5-2018 99--><item>d)5.5</item>
+        <!--11-5-2018 100--><item>d)48</item>
+        <!--11-5-2018 101--><item>d)72</item>
+        <!--11-5-2018 102--><item>d)24</item>
+        <!--11-5-2018 103--><item>d)96</item>
+        <!--11-5-2018 104--><item>d)12</item>
+        <!--11-5-2018 105--><item>d)6</item>
+        <!--11-5-2018 106--><item>d)12</item>
+        <!--11-5-2018 107--><item>d)18</item>
+        <!--11-5-2018 108--><item>d)6</item>
+        <!--11-5-2018 109--><item>d)104</item>
+        <!--11-5-2018 110--><item>d)52</item>
+        <!--11-5-2018 111--><item>d)39</item>
+        <!--11-5-2018 112--><item>d)104</item>
+        <!--11-5-2018 113--><item>d)26</item>
+        <!--11-5-2018 114--><item>d)26</item>
+        <!--11-5-2018 115--><item>d)26</item>
+        <!--11-5-2018 116--><item>d)13</item>
+        <!--11-5-2018 117--><item>d)6.5</item>
+        <!--11-5-2018 118--><item>d)224</item>
+        <!--11-5-2018 119--><item>d)28</item>
+        <!--11-5-2018 120--><item>d)28</item>
+        <!--11-5-2018 121--><item>d)112</item>
+        <!--11-5-2018 122--><item>d)42</item>
+        <!--11-5-2018 123--><item>d)28</item>
+        <!--11-5-2018 124--><item>d)28</item>
+        <!--11-5-2018 125--><item>d)14</item>
+        <!--11-5-2018 126--><item>d)7</item>
+        <!--11-5-2018 127--><item>d)120</item>
+        <!--11-5-2018 128--><item>d)90</item>
+        <!--11-5-2018 129--><item>d)45</item>
+        <!--11-5-2018 130--><item>d)120</item>
+        <!--11-5-2018 131--><item>d)60</item>
+        <!--11-5-2018 132--><item>d)15</item>
+        <!--11-5-2018 133--><item>d)45</item>
+        <!--11-5-2018 134--><item>d)15</item>
+        <!--11-5-2018 135--><item>d)15</item>
+        <!--11-5-2018 136--><item>d)64</item>
+        <!--11-5-2018 137--><item>d)64</item>
+        <!--11-5-2018 138--><item>d)64</item>
+        <!--11-5-2018 139--><item>d)32</item>
+        <!--11-5-2018 140--><item>d)32</item>
+        <!--11-5-2018 141--><item>d)32</item>
+        <!--11-5-2018 142--><item>d)48</item>
+        <!--11-5-2018 143--><item>d)32</item>
+        <!--11-5-2018 144--><item>d)16</item>
+        <!--11-5-2018 145--><item>d)136</item>
+        <!--11-5-2018 146--><item>d)136</item>
+        <!--11-5-2018 147--><item>d)34</item>
+        <!--11-5-2018 148--><item>d)136</item>
+        <!--11-5-2018 149--><item>d)34</item>
+        <!--11-5-2018 150--><item>d)25.5</item>
+        <!--11-5-2018 151--><item>d)17</item>
+        <!--11-5-2018 152--><item>d)25.5</item>
+        <!--11-5-2018 153--><item>d)4.25</item>
+        <!--11-5-2018 154--><item>d)288</item>
+        <!--11-5-2018 155--><item>d)72</item>
+        <!--11-5-2018 156--><item>d)18</item>
+        <!--11-5-2018 157--><item>d)144</item>
+        <!--11-5-2018 158--><item>d)36</item>
+        <!--11-5-2018 159--><item>d)36</item>
+        <!--11-5-2018 160--><item>d)18</item>
+        <!--11-5-2018 161--><item>d)36</item>
+        <!--11-5-2018 162--><item>d)4.5</item>
+        <!--11-5-2018 163--><item>d)304</item>
+        <!--11-5-2018 164--><item>d)76</item>
+        <!--11-5-2018 165--><item>d)19</item>
+        <!--11-5-2018 166--><item>d)38</item>
+        <!--11-5-2018 167--><item>d)38</item>
+        <!--11-5-2018 168--><item>d)9.5</item>
+        <!--11-5-2018 169--><item>d)38</item>
+        <!--11-5-2018 170--><item>d)9.5</item>
+        <!--11-5-2018 171--><item>d)9.5</item>
+        <!--11-5-2018 172--><item>d)80</item>
+        <!--11-5-2018 173--><item>d)80</item>
+        <!--11-5-2018 174--><item>d)40</item>
+        <!--11-5-2018 175--><item>d)120</item>
+        <!--11-5-2018 176--><item>d)60</item>
+        <!--11-5-2018 177--><item>d)10</item>
+        <!--11-5-2018 178--><item>d)80</item>
+        <!--11-5-2018 179--><item>d)10</item>
+        <!--11-5-2018 180--><item>d)10</item>
+
 
     </array>
     
@@ -1489,6 +2389,186 @@
         <!--242--><item>C)35kg</item>
         <!--243--><item>A)Tendrá siempre el mismo peso</item>
         <!--244--><item>B)Hacia la izquierda</item>
+        <!--11-5-2018 1--><item>b)4</item>
+        <!--11-5-2018 2--><item>b)2</item>
+        <!--11-5-2018 3--><item>a)1</item>
+        <!--11-5-2018 4--><item>b)2</item>
+        <!--11-5-2018 5--><item>b)1</item>
+        <!--11-5-2018 6--><item>c)0.5</item>
+        <!--11-5-2018 7--><item>d)1</item>
+        <!--11-5-2018 8--><item>b)0.5</item>
+        <!--11-5-2018 9--><item>c)0.25</item>
+        <!--11-5-2018 10--><item>b)8</item>
+        <!--11-5-2018 11--><item>c)4</item>
+        <!--11-5-2018 12--><item>a)2</item>
+        <!--11-5-2018 13--><item>d)4</item>
+        <!--11-5-2018 14--><item>a)2</item>
+        <!--11-5-2018 15--><item>c)1</item>
+        <!--11-5-2018 16--><item>c)2</item>
+        <!--11-5-2018 17--><item>c)1</item>
+        <!--11-5-2018 18--><item>a)0.5</item>
+        <!--11-5-2018 19--><item>c)12</item>
+        <!--11-5-2018 20--><item>a)6</item>
+        <!--11-5-2018 21--><item>c)3</item>
+        <!--11-5-2018 22--><item>b)6</item>
+        <!--11-5-2018 23--><item>d)3</item>
+        <!--11-5-2018 24--><item>a)1.5</item>
+        <!--11-5-2018 25--><item>a)3</item>
+        <!--11-5-2018 26--><item>a)1.5</item>
+        <!--11-5-2018 27--><item>c)0.75</item>
+        <!--11-5-2018 28--><item>c)16</item>
+        <!--11-5-2018 29--><item>d)8</item>
+        <!--11-5-2018 30--><item>d)4</item>
+        <!--11-5-2018 31--><item>c)8</item>
+        <!--11-5-2018 32--><item>d)4</item>
+        <!--11-5-2018 33--><item>d)2</item>
+        <!--11-5-2018 34--><item>a)4</item>
+        <!--11-5-2018 35--><item>d)2</item>
+        <!--11-5-2018 36--><item>d)1</item>
+        <!--11-5-2018 37--><item>d)20</item>
+        <!--11-5-2018 38--><item>c)10</item>
+        <!--11-5-2018 39--><item>a)5</item>
+        <!--11-5-2018 40--><item>c)10</item>
+        <!--11-5-2018 41--><item>c)5</item>
+        <!--11-5-2018 42--><item>d)2.5</item>
+        <!--11-5-2018 43--><item>c)5</item>
+        <!--11-5-2018 44--><item>a)2.5</item>
+        <!--11-5-2018 45--><item>d)1.25</item>
+        <!--11-5-2018 46--><item>c)24</item>
+        <!--11-5-2018 47--><item>d)12</item>
+        <!--11-5-2018 48--><item>c)6</item>
+        <!--11-5-2018 49--><item>d)12</item>
+        <!--11-5-2018 50--><item>d)6</item>
+        <!--11-5-2018 51--><item>d)3</item>
+        <!--11-5-2018 52--><item>d)6</item>
+        <!--11-5-2018 53--><item>a)3</item>
+        <!--11-5-2018 54--><item>d)1.5</item>
+        <!--11-5-2018 55--><item>d)28</item>
+        <!--11-5-2018 56--><item>d)14</item>
+        <!--11-5-2018 57--><item>d)7</item>
+        <!--11-5-2018 58--><item>c)14</item>
+        <!--11-5-2018 59--><item>a)7</item>
+        <!--11-5-2018 60--><item>b)3.5</item>
+        <!--11-5-2018 61--><item>c)7</item>
+        <!--11-5-2018 62--><item>d)3.5</item>
+        <!--11-5-2018 63--><item>c)1.75</item>
+        <!--11-5-2018 64--><item>d)32</item>
+        <!--11-5-2018 65--><item>c)16</item>
+        <!--11-5-2018 66--><item>b)8</item>
+        <!--11-5-2018 67--><item>d)16</item>
+        <!--11-5-2018 68--><item>a)8</item>
+        <!--11-5-2018 69--><item>d)4</item>
+        <!--11-5-2018 70--><item>a)8</item>
+        <!--11-5-2018 71--><item>d)4</item>
+        <!--11-5-2018 72--><item>c)2</item>
+        <!--11-5-2018 73--><item>b)36</item>
+        <!--11-5-2018 74--><item>a)18</item>
+        <!--11-5-2018 75--><item>c)9</item>
+        <!--11-5-2018 76--><item>c)18</item>
+        <!--11-5-2018 77--><item>a)9</item>
+        <!--11-5-2018 78--><item>d)4.5</item>
+        <!--11-5-2018 79--><item>d)9</item>
+        <!--11-5-2018 80--><item>b)4.5</item>
+        <!--11-5-2018 81--><item>c)2.25</item>
+        <!--11-5-2018 82--><item>c)40</item>
+        <!--11-5-2018 83--><item>a)20</item>
+        <!--11-5-2018 84--><item>b)10</item>
+        <!--11-5-2018 85--><item>a)20</item>
+        <!--11-5-2018 86--><item>a)10</item>
+        <!--11-5-2018 87--><item>b)5</item>
+        <!--11-5-2018 88--><item>a)10</item>
+        <!--11-5-2018 89--><item>b)5</item>
+        <!--11-5-2018 90--><item>a)2.5</item>
+        <!--11-5-2018 91--><item>a)44</item>
+        <!--11-5-2018 92--><item>d)22</item>
+        <!--11-5-2018 93--><item>b)11</item>
+        <!--11-5-2018 94--><item>a)22</item>
+        <!--11-5-2018 95--><item>c)11</item>
+        <!--11-5-2018 96--><item>d)5.5</item>
+        <!--11-5-2018 97--><item>b)11</item>
+        <!--11-5-2018 98--><item>b)5.5</item>
+        <!--11-5-2018 99--><item>c)2.75</item>
+        <!--11-5-2018 100--><item>d)48</item>
+        <!--11-5-2018 101--><item>a)24</item>
+        <!--11-5-2018 102--><item>c)12</item>
+        <!--11-5-2018 103--><item>b)24</item>
+        <!--11-5-2018 104--><item>d)12</item>
+        <!--11-5-2018 105--><item>d)6</item>
+        <!--11-5-2018 106--><item>d)12</item>
+        <!--11-5-2018 107--><item>a)6</item>
+        <!--11-5-2018 108--><item>c)3</item>
+        <!--11-5-2018 109--><item>c)52</item>
+        <!--11-5-2018 110--><item>b)26</item>
+        <!--11-5-2018 111--><item>b)13</item>
+        <!--11-5-2018 112--><item>c)26</item>
+        <!--11-5-2018 113--><item>c)13</item>
+        <!--11-5-2018 114--><item>c)6.5</item>
+        <!--11-5-2018 115--><item>b)13</item>
+        <!--11-5-2018 116--><item>a)6.5</item>
+        <!--11-5-2018 117--><item>b)3.25</item>
+        <!--11-5-2018 118--><item>c)56</item>
+        <!--11-5-2018 119--><item>d)28</item>
+        <!--11-5-2018 120--><item>a)14</item>
+        <!--11-5-2018 121--><item>b)28</item>
+        <!--11-5-2018 122--><item>b)14</item>
+        <!--11-5-2018 123--><item>a)7</item>
+        <!--11-5-2018 124--><item>a)14</item>
+        <!--11-5-2018 125--><item>c)7</item>
+        <!--11-5-2018 126--><item>a)3.5</item>
+        <!--11-5-2018 127--><item>a)60</item>
+        <!--11-5-2018 128--><item>a)30</item>
+        <!--11-5-2018 129--><item>a)15</item>
+        <!--11-5-2018 130--><item>c)30</item>
+        <!--11-5-2018 131--><item>b)15</item>
+        <!--11-5-2018 132--><item>a)7.5</item>
+        <!--11-5-2018 133--><item>b)15</item>
+        <!--11-5-2018 134--><item>b)7.5</item>
+        <!--11-5-2018 135--><item>c)3.75</item>
+        <!--11-5-2018 136--><item>d)64</item>
+        <!--11-5-2018 137--><item>a)32</item>
+        <!--11-5-2018 138--><item>a)16</item>
+        <!--11-5-2018 139--><item>d)32</item>
+        <!--11-5-2018 140--><item>a)16</item>
+        <!--11-5-2018 141--><item>b)8</item>
+        <!--11-5-2018 142--><item>b)16</item>
+        <!--11-5-2018 143--><item>c)8</item>
+        <!--11-5-2018 144--><item>c)4</item>
+        <!--11-5-2018 145--><item>b)68</item>
+        <!--11-5-2018 146--><item>c)34</item>
+        <!--11-5-2018 147--><item>b)17</item>
+        <!--11-5-2018 148--><item>a)34</item>
+        <!--11-5-2018 149--><item>a)17</item>
+        <!--11-5-2018 150--><item>c)8.5</item>
+        <!--11-5-2018 151--><item>d)17</item>
+        <!--11-5-2018 152--><item>b)8.5</item>
+        <!--11-5-2018 153--><item>d)4.25</item>
+        <!--11-5-2018 154--><item>c)72</item>
+        <!--11-5-2018 155--><item>a)36</item>
+        <!--11-5-2018 156--><item>d)18</item>
+        <!--11-5-2018 157--><item>c)36</item>
+        <!--11-5-2018 158--><item>a)18</item>
+        <!--11-5-2018 159--><item>c)9</item>
+        <!--11-5-2018 160--><item>d)18</item>
+        <!--11-5-2018 161--><item>c)9</item>
+        <!--11-5-2018 162--><item>d)4.5</item>
+        <!--11-5-2018 163--><item>b)76</item>
+        <!--11-5-2018 164--><item>c)38</item>
+        <!--11-5-2018 165--><item>d)19</item>
+        <!--11-5-2018 166--><item>d)38</item>
+        <!--11-5-2018 167--><item>a)19</item>
+        <!--11-5-2018 168--><item>d)9.5</item>
+        <!--11-5-2018 169--><item>a)19</item>
+        <!--11-5-2018 170--><item>d)9.5</item>
+        <!--11-5-2018 171--><item>c)4.75</item>
+        <!--11-5-2018 172--><item>d)80</item>
+        <!--11-5-2018 173--><item>c)40</item>
+        <!--11-5-2018 174--><item>b)20</item>
+        <!--11-5-2018 175--><item>a)40</item>
+        <!--11-5-2018 176--><item>b)20</item>
+        <!--11-5-2018 177--><item>d)10</item>
+        <!--11-5-2018 178--><item>b)20</item>
+        <!--11-5-2018 179--><item>d)10</item>
+        <!--11-5-2018 180--><item>a)5</item>
 
     </array>
     
@@ -1737,6 +2817,186 @@
         <!--242--><item>El movimiento de la escalera mecánica es uniforme, por lo que la balanza marcará el peso del objeto.</item>
         <!--243--><item>No importa si están volando o no, el peso total depende del peso del tarro y de su contenido.</item>
         <!--244--><item>La burbuja debe estar en el centro, por lo que hay que mover hacia la izquierda para que ésta se mueva hacia la derecha.</item>
+        <!--11-5-2018 1--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 2--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 3--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 4--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 5--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 6--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 7--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 8--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 9--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 10--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 11--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 12--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 13--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 14--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 15--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 16--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 17--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 18--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 19--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 20--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 21--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 22--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 23--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 24--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 25--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 26--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 27--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 28--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 29--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 30--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 31--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 32--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 33--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 34--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 35--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 36--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 37--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 38--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 39--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 40--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 41--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 42--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 43--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 44--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 45--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 46--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 47--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 48--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 49--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 50--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 51--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 52--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 53--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 54--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 55--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 56--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 57--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 58--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 59--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 60--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 61--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 62--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 63--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 64--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 65--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 66--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 67--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 68--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 69--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 70--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 71--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 72--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 73--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 74--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 75--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 76--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 77--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 78--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 79--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 80--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 81--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 82--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 83--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 84--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 85--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 86--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 87--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 88--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 89--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 90--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 91--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 92--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 93--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 94--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 95--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 96--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 97--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 98--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 99--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 100--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 101--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 102--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 103--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 104--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 105--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 106--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 107--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 108--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 109--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 110--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 111--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 112--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 113--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 114--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 115--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 116--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 117--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 118--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 119--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 120--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 121--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 122--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 123--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 124--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 125--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 126--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 127--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 128--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 129--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 130--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 131--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 132--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 133--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 134--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 135--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 136--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 137--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 138--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 139--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 140--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 141--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 142--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 143--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 144--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 145--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 146--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 147--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 148--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 149--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 150--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 151--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 152--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 153--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 154--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 155--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 156--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 157--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 158--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 159--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 160--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 161--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 162--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 163--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 164--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 165--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 166--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 167--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 168--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 169--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 170--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 171--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 172--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 173--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 174--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 175--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 176--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 177--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 178--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 179--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
+        <!--11-5-2018 180--><item>El peso de la caja, multiplicado por la distancia de la caja hasta el medio de la palanca, debe ser igual para ambas cajas.</item>
 
     </array>
     
@@ -1988,6 +3248,186 @@
         <!--242--><item></item>
         <!--243--><item></item>
         <!--244--><item>mecp244</item>
+        <!--11-5-2018 1--><item>mec09062018-1.png</item>
+        <!--11-5-2018 2--><item>mec09062018-1.png</item>
+        <!--11-5-2018 3--><item>mec09062018-1.png</item>
+        <!--11-5-2018 4--><item>mec09062018-2.png</item>
+        <!--11-5-2018 5--><item>mec09062018-2.png</item>
+        <!--11-5-2018 6--><item>mec09062018-2.png</item>
+        <!--11-5-2018 7--><item>mec09062018-3.png</item>
+        <!--11-5-2018 8--><item>mec09062018-3.png</item>
+        <!--11-5-2018 9--><item>mec09062018-3.png</item>
+        <!--11-5-2018 10--><item>mec09062018-1.png</item>
+        <!--11-5-2018 11--><item>mec09062018-1.png</item>
+        <!--11-5-2018 12--><item>mec09062018-1.png</item>
+        <!--11-5-2018 13--><item>mec09062018-2.png</item>
+        <!--11-5-2018 14--><item>mec09062018-2.png</item>
+        <!--11-5-2018 15--><item>mec09062018-2.png</item>
+        <!--11-5-2018 16--><item>mec09062018-3.png</item>
+        <!--11-5-2018 17--><item>mec09062018-3.png</item>
+        <!--11-5-2018 18--><item>mec09062018-3.png</item>
+        <!--11-5-2018 19--><item>mec09062018-1.png</item>
+        <!--11-5-2018 20--><item>mec09062018-1.png</item>
+        <!--11-5-2018 21--><item>mec09062018-1.png</item>
+        <!--11-5-2018 22--><item>mec09062018-2.png</item>
+        <!--11-5-2018 23--><item>mec09062018-2.png</item>
+        <!--11-5-2018 24--><item>mec09062018-2.png</item>
+        <!--11-5-2018 25--><item>mec09062018-3.png</item>
+        <!--11-5-2018 26--><item>mec09062018-3.png</item>
+        <!--11-5-2018 27--><item>mec09062018-3.png</item>
+        <!--11-5-2018 28--><item>mec09062018-1.png</item>
+        <!--11-5-2018 29--><item>mec09062018-1.png</item>
+        <!--11-5-2018 30--><item>mec09062018-1.png</item>
+        <!--11-5-2018 31--><item>mec09062018-2.png</item>
+        <!--11-5-2018 32--><item>mec09062018-2.png</item>
+        <!--11-5-2018 33--><item>mec09062018-2.png</item>
+        <!--11-5-2018 34--><item>mec09062018-3.png</item>
+        <!--11-5-2018 35--><item>mec09062018-3.png</item>
+        <!--11-5-2018 36--><item>mec09062018-3.png</item>
+        <!--11-5-2018 37--><item>mec09062018-1.png</item>
+        <!--11-5-2018 38--><item>mec09062018-1.png</item>
+        <!--11-5-2018 39--><item>mec09062018-1.png</item>
+        <!--11-5-2018 40--><item>mec09062018-2.png</item>
+        <!--11-5-2018 41--><item>mec09062018-2.png</item>
+        <!--11-5-2018 42--><item>mec09062018-2.png</item>
+        <!--11-5-2018 43--><item>mec09062018-3.png</item>
+        <!--11-5-2018 44--><item>mec09062018-3.png</item>
+        <!--11-5-2018 45--><item>mec09062018-3.png</item>
+        <!--11-5-2018 46--><item>mec09062018-1.png</item>
+        <!--11-5-2018 47--><item>mec09062018-1.png</item>
+        <!--11-5-2018 48--><item>mec09062018-1.png</item>
+        <!--11-5-2018 49--><item>mec09062018-2.png</item>
+        <!--11-5-2018 50--><item>mec09062018-2.png</item>
+        <!--11-5-2018 51--><item>mec09062018-2.png</item>
+        <!--11-5-2018 52--><item>mec09062018-3.png</item>
+        <!--11-5-2018 53--><item>mec09062018-3.png</item>
+        <!--11-5-2018 54--><item>mec09062018-3.png</item>
+        <!--11-5-2018 55--><item>mec09062018-1.png</item>
+        <!--11-5-2018 56--><item>mec09062018-1.png</item>
+        <!--11-5-2018 57--><item>mec09062018-1.png</item>
+        <!--11-5-2018 58--><item>mec09062018-2.png</item>
+        <!--11-5-2018 59--><item>mec09062018-2.png</item>
+        <!--11-5-2018 60--><item>mec09062018-2.png</item>
+        <!--11-5-2018 61--><item>mec09062018-3.png</item>
+        <!--11-5-2018 62--><item>mec09062018-3.png</item>
+        <!--11-5-2018 63--><item>mec09062018-3.png</item>
+        <!--11-5-2018 64--><item>mec09062018-1.png</item>
+        <!--11-5-2018 65--><item>mec09062018-1.png</item>
+        <!--11-5-2018 66--><item>mec09062018-1.png</item>
+        <!--11-5-2018 67--><item>mec09062018-2.png</item>
+        <!--11-5-2018 68--><item>mec09062018-2.png</item>
+        <!--11-5-2018 69--><item>mec09062018-2.png</item>
+        <!--11-5-2018 70--><item>mec09062018-3.png</item>
+        <!--11-5-2018 71--><item>mec09062018-3.png</item>
+        <!--11-5-2018 72--><item>mec09062018-3.png</item>
+        <!--11-5-2018 73--><item>mec09062018-1.png</item>
+        <!--11-5-2018 74--><item>mec09062018-1.png</item>
+        <!--11-5-2018 75--><item>mec09062018-1.png</item>
+        <!--11-5-2018 76--><item>mec09062018-2.png</item>
+        <!--11-5-2018 77--><item>mec09062018-2.png</item>
+        <!--11-5-2018 78--><item>mec09062018-2.png</item>
+        <!--11-5-2018 79--><item>mec09062018-3.png</item>
+        <!--11-5-2018 80--><item>mec09062018-3.png</item>
+        <!--11-5-2018 81--><item>mec09062018-3.png</item>
+        <!--11-5-2018 82--><item>mec09062018-1.png</item>
+        <!--11-5-2018 83--><item>mec09062018-1.png</item>
+        <!--11-5-2018 84--><item>mec09062018-1.png</item>
+        <!--11-5-2018 85--><item>mec09062018-2.png</item>
+        <!--11-5-2018 86--><item>mec09062018-2.png</item>
+        <!--11-5-2018 87--><item>mec09062018-2.png</item>
+        <!--11-5-2018 88--><item>mec09062018-3.png</item>
+        <!--11-5-2018 89--><item>mec09062018-3.png</item>
+        <!--11-5-2018 90--><item>mec09062018-3.png</item>
+        <!--11-5-2018 91--><item>mec09062018-1.png</item>
+        <!--11-5-2018 92--><item>mec09062018-1.png</item>
+        <!--11-5-2018 93--><item>mec09062018-1.png</item>
+        <!--11-5-2018 94--><item>mec09062018-2.png</item>
+        <!--11-5-2018 95--><item>mec09062018-2.png</item>
+        <!--11-5-2018 96--><item>mec09062018-2.png</item>
+        <!--11-5-2018 97--><item>mec09062018-3.png</item>
+        <!--11-5-2018 98--><item>mec09062018-3.png</item>
+        <!--11-5-2018 99--><item>mec09062018-3.png</item>
+        <!--11-5-2018 100--><item>mec09062018-1.png</item>
+        <!--11-5-2018 101--><item>mec09062018-1.png</item>
+        <!--11-5-2018 102--><item>mec09062018-1.png</item>
+        <!--11-5-2018 103--><item>mec09062018-2.png</item>
+        <!--11-5-2018 104--><item>mec09062018-2.png</item>
+        <!--11-5-2018 105--><item>mec09062018-2.png</item>
+        <!--11-5-2018 106--><item>mec09062018-3.png</item>
+        <!--11-5-2018 107--><item>mec09062018-3.png</item>
+        <!--11-5-2018 108--><item>mec09062018-3.png</item>
+        <!--11-5-2018 109--><item>mec09062018-1.png</item>
+        <!--11-5-2018 110--><item>mec09062018-1.png</item>
+        <!--11-5-2018 111--><item>mec09062018-1.png</item>
+        <!--11-5-2018 112--><item>mec09062018-2.png</item>
+        <!--11-5-2018 113--><item>mec09062018-2.png</item>
+        <!--11-5-2018 114--><item>mec09062018-2.png</item>
+        <!--11-5-2018 115--><item>mec09062018-3.png</item>
+        <!--11-5-2018 116--><item>mec09062018-3.png</item>
+        <!--11-5-2018 117--><item>mec09062018-3.png</item>
+        <!--11-5-2018 118--><item>mec09062018-1.png</item>
+        <!--11-5-2018 119--><item>mec09062018-1.png</item>
+        <!--11-5-2018 120--><item>mec09062018-1.png</item>
+        <!--11-5-2018 121--><item>mec09062018-2.png</item>
+        <!--11-5-2018 122--><item>mec09062018-2.png</item>
+        <!--11-5-2018 123--><item>mec09062018-2.png</item>
+        <!--11-5-2018 124--><item>mec09062018-3.png</item>
+        <!--11-5-2018 125--><item>mec09062018-3.png</item>
+        <!--11-5-2018 126--><item>mec09062018-3.png</item>
+        <!--11-5-2018 127--><item>mec09062018-1.png</item>
+        <!--11-5-2018 128--><item>mec09062018-1.png</item>
+        <!--11-5-2018 129--><item>mec09062018-1.png</item>
+        <!--11-5-2018 130--><item>mec09062018-2.png</item>
+        <!--11-5-2018 131--><item>mec09062018-2.png</item>
+        <!--11-5-2018 132--><item>mec09062018-2.png</item>
+        <!--11-5-2018 133--><item>mec09062018-3.png</item>
+        <!--11-5-2018 134--><item>mec09062018-3.png</item>
+        <!--11-5-2018 135--><item>mec09062018-3.png</item>
+        <!--11-5-2018 136--><item>mec09062018-1.png</item>
+        <!--11-5-2018 137--><item>mec09062018-1.png</item>
+        <!--11-5-2018 138--><item>mec09062018-1.png</item>
+        <!--11-5-2018 139--><item>mec09062018-2.png</item>
+        <!--11-5-2018 140--><item>mec09062018-2.png</item>
+        <!--11-5-2018 141--><item>mec09062018-2.png</item>
+        <!--11-5-2018 142--><item>mec09062018-3.png</item>
+        <!--11-5-2018 143--><item>mec09062018-3.png</item>
+        <!--11-5-2018 144--><item>mec09062018-3.png</item>
+        <!--11-5-2018 145--><item>mec09062018-1.png</item>
+        <!--11-5-2018 146--><item>mec09062018-1.png</item>
+        <!--11-5-2018 147--><item>mec09062018-1.png</item>
+        <!--11-5-2018 148--><item>mec09062018-2.png</item>
+        <!--11-5-2018 149--><item>mec09062018-2.png</item>
+        <!--11-5-2018 150--><item>mec09062018-2.png</item>
+        <!--11-5-2018 151--><item>mec09062018-3.png</item>
+        <!--11-5-2018 152--><item>mec09062018-3.png</item>
+        <!--11-5-2018 153--><item>mec09062018-3.png</item>
+        <!--11-5-2018 154--><item>mec09062018-1.png</item>
+        <!--11-5-2018 155--><item>mec09062018-1.png</item>
+        <!--11-5-2018 156--><item>mec09062018-1.png</item>
+        <!--11-5-2018 157--><item>mec09062018-2.png</item>
+        <!--11-5-2018 158--><item>mec09062018-2.png</item>
+        <!--11-5-2018 159--><item>mec09062018-2.png</item>
+        <!--11-5-2018 160--><item>mec09062018-3.png</item>
+        <!--11-5-2018 161--><item>mec09062018-3.png</item>
+        <!--11-5-2018 162--><item>mec09062018-3.png</item>
+        <!--11-5-2018 163--><item>mec09062018-1.png</item>
+        <!--11-5-2018 164--><item>mec09062018-1.png</item>
+        <!--11-5-2018 165--><item>mec09062018-1.png</item>
+        <!--11-5-2018 166--><item>mec09062018-2.png</item>
+        <!--11-5-2018 167--><item>mec09062018-2.png</item>
+        <!--11-5-2018 168--><item>mec09062018-2.png</item>
+        <!--11-5-2018 169--><item>mec09062018-3.png</item>
+        <!--11-5-2018 170--><item>mec09062018-3.png</item>
+        <!--11-5-2018 171--><item>mec09062018-3.png</item>
+        <!--11-5-2018 172--><item>mec09062018-1.png</item>
+        <!--11-5-2018 173--><item>mec09062018-1.png</item>
+        <!--11-5-2018 174--><item>mec09062018-1.png</item>
+        <!--11-5-2018 175--><item>mec09062018-2.png</item>
+        <!--11-5-2018 176--><item>mec09062018-2.png</item>
+        <!--11-5-2018 177--><item>mec09062018-2.png</item>
+        <!--11-5-2018 178--><item>mec09062018-3.png</item>
+        <!--11-5-2018 179--><item>mec09062018-3.png</item>
+        <!--11-5-2018 180--><item>mec09062018-3.png</item>
 
     </array>
     
@@ -2236,6 +3676,186 @@
         <!--242--><item></item>
         <!--243--><item></item>
         <!--244--><item></item>
+        <!--11-5-2018 1--><item></item>
+        <!--11-5-2018 2--><item></item>
+        <!--11-5-2018 3--><item></item>
+        <!--11-5-2018 4--><item></item>
+        <!--11-5-2018 5--><item></item>
+        <!--11-5-2018 6--><item></item>
+        <!--11-5-2018 7--><item></item>
+        <!--11-5-2018 8--><item></item>
+        <!--11-5-2018 9--><item></item>
+        <!--11-5-2018 10--><item></item>
+        <!--11-5-2018 11--><item></item>
+        <!--11-5-2018 12--><item></item>
+        <!--11-5-2018 13--><item></item>
+        <!--11-5-2018 14--><item></item>
+        <!--11-5-2018 15--><item></item>
+        <!--11-5-2018 16--><item></item>
+        <!--11-5-2018 17--><item></item>
+        <!--11-5-2018 18--><item></item>
+        <!--11-5-2018 19--><item></item>
+        <!--11-5-2018 20--><item></item>
+        <!--11-5-2018 21--><item></item>
+        <!--11-5-2018 22--><item></item>
+        <!--11-5-2018 23--><item></item>
+        <!--11-5-2018 24--><item></item>
+        <!--11-5-2018 25--><item></item>
+        <!--11-5-2018 26--><item></item>
+        <!--11-5-2018 27--><item></item>
+        <!--11-5-2018 28--><item></item>
+        <!--11-5-2018 29--><item></item>
+        <!--11-5-2018 30--><item></item>
+        <!--11-5-2018 31--><item></item>
+        <!--11-5-2018 32--><item></item>
+        <!--11-5-2018 33--><item></item>
+        <!--11-5-2018 34--><item></item>
+        <!--11-5-2018 35--><item></item>
+        <!--11-5-2018 36--><item></item>
+        <!--11-5-2018 37--><item></item>
+        <!--11-5-2018 38--><item></item>
+        <!--11-5-2018 39--><item></item>
+        <!--11-5-2018 40--><item></item>
+        <!--11-5-2018 41--><item></item>
+        <!--11-5-2018 42--><item></item>
+        <!--11-5-2018 43--><item></item>
+        <!--11-5-2018 44--><item></item>
+        <!--11-5-2018 45--><item></item>
+        <!--11-5-2018 46--><item></item>
+        <!--11-5-2018 47--><item></item>
+        <!--11-5-2018 48--><item></item>
+        <!--11-5-2018 49--><item></item>
+        <!--11-5-2018 50--><item></item>
+        <!--11-5-2018 51--><item></item>
+        <!--11-5-2018 52--><item></item>
+        <!--11-5-2018 53--><item></item>
+        <!--11-5-2018 54--><item></item>
+        <!--11-5-2018 55--><item></item>
+        <!--11-5-2018 56--><item></item>
+        <!--11-5-2018 57--><item></item>
+        <!--11-5-2018 58--><item></item>
+        <!--11-5-2018 59--><item></item>
+        <!--11-5-2018 60--><item></item>
+        <!--11-5-2018 61--><item></item>
+        <!--11-5-2018 62--><item></item>
+        <!--11-5-2018 63--><item></item>
+        <!--11-5-2018 64--><item></item>
+        <!--11-5-2018 65--><item></item>
+        <!--11-5-2018 66--><item></item>
+        <!--11-5-2018 67--><item></item>
+        <!--11-5-2018 68--><item></item>
+        <!--11-5-2018 69--><item></item>
+        <!--11-5-2018 70--><item></item>
+        <!--11-5-2018 71--><item></item>
+        <!--11-5-2018 72--><item></item>
+        <!--11-5-2018 73--><item></item>
+        <!--11-5-2018 74--><item></item>
+        <!--11-5-2018 75--><item></item>
+        <!--11-5-2018 76--><item></item>
+        <!--11-5-2018 77--><item></item>
+        <!--11-5-2018 78--><item></item>
+        <!--11-5-2018 79--><item></item>
+        <!--11-5-2018 80--><item></item>
+        <!--11-5-2018 81--><item></item>
+        <!--11-5-2018 82--><item></item>
+        <!--11-5-2018 83--><item></item>
+        <!--11-5-2018 84--><item></item>
+        <!--11-5-2018 85--><item></item>
+        <!--11-5-2018 86--><item></item>
+        <!--11-5-2018 87--><item></item>
+        <!--11-5-2018 88--><item></item>
+        <!--11-5-2018 89--><item></item>
+        <!--11-5-2018 90--><item></item>
+        <!--11-5-2018 91--><item></item>
+        <!--11-5-2018 92--><item></item>
+        <!--11-5-2018 93--><item></item>
+        <!--11-5-2018 94--><item></item>
+        <!--11-5-2018 95--><item></item>
+        <!--11-5-2018 96--><item></item>
+        <!--11-5-2018 97--><item></item>
+        <!--11-5-2018 98--><item></item>
+        <!--11-5-2018 99--><item></item>
+        <!--11-5-2018 100--><item></item>
+        <!--11-5-2018 101--><item></item>
+        <!--11-5-2018 102--><item></item>
+        <!--11-5-2018 103--><item></item>
+        <!--11-5-2018 104--><item></item>
+        <!--11-5-2018 105--><item></item>
+        <!--11-5-2018 106--><item></item>
+        <!--11-5-2018 107--><item></item>
+        <!--11-5-2018 108--><item></item>
+        <!--11-5-2018 109--><item></item>
+        <!--11-5-2018 110--><item></item>
+        <!--11-5-2018 111--><item></item>
+        <!--11-5-2018 112--><item></item>
+        <!--11-5-2018 113--><item></item>
+        <!--11-5-2018 114--><item></item>
+        <!--11-5-2018 115--><item></item>
+        <!--11-5-2018 116--><item></item>
+        <!--11-5-2018 117--><item></item>
+        <!--11-5-2018 118--><item></item>
+        <!--11-5-2018 119--><item></item>
+        <!--11-5-2018 120--><item></item>
+        <!--11-5-2018 121--><item></item>
+        <!--11-5-2018 122--><item></item>
+        <!--11-5-2018 123--><item></item>
+        <!--11-5-2018 124--><item></item>
+        <!--11-5-2018 125--><item></item>
+        <!--11-5-2018 126--><item></item>
+        <!--11-5-2018 127--><item></item>
+        <!--11-5-2018 128--><item></item>
+        <!--11-5-2018 129--><item></item>
+        <!--11-5-2018 130--><item></item>
+        <!--11-5-2018 131--><item></item>
+        <!--11-5-2018 132--><item></item>
+        <!--11-5-2018 133--><item></item>
+        <!--11-5-2018 134--><item></item>
+        <!--11-5-2018 135--><item></item>
+        <!--11-5-2018 136--><item></item>
+        <!--11-5-2018 137--><item></item>
+        <!--11-5-2018 138--><item></item>
+        <!--11-5-2018 139--><item></item>
+        <!--11-5-2018 140--><item></item>
+        <!--11-5-2018 141--><item></item>
+        <!--11-5-2018 142--><item></item>
+        <!--11-5-2018 143--><item></item>
+        <!--11-5-2018 144--><item></item>
+        <!--11-5-2018 145--><item></item>
+        <!--11-5-2018 146--><item></item>
+        <!--11-5-2018 147--><item></item>
+        <!--11-5-2018 148--><item></item>
+        <!--11-5-2018 149--><item></item>
+        <!--11-5-2018 150--><item></item>
+        <!--11-5-2018 151--><item></item>
+        <!--11-5-2018 152--><item></item>
+        <!--11-5-2018 153--><item></item>
+        <!--11-5-2018 154--><item></item>
+        <!--11-5-2018 155--><item></item>
+        <!--11-5-2018 156--><item></item>
+        <!--11-5-2018 157--><item></item>
+        <!--11-5-2018 158--><item></item>
+        <!--11-5-2018 159--><item></item>
+        <!--11-5-2018 160--><item></item>
+        <!--11-5-2018 161--><item></item>
+        <!--11-5-2018 162--><item></item>
+        <!--11-5-2018 163--><item></item>
+        <!--11-5-2018 164--><item></item>
+        <!--11-5-2018 165--><item></item>
+        <!--11-5-2018 166--><item></item>
+        <!--11-5-2018 167--><item></item>
+        <!--11-5-2018 168--><item></item>
+        <!--11-5-2018 169--><item></item>
+        <!--11-5-2018 170--><item></item>
+        <!--11-5-2018 171--><item></item>
+        <!--11-5-2018 172--><item></item>
+        <!--11-5-2018 173--><item></item>
+        <!--11-5-2018 174--><item></item>
+        <!--11-5-2018 175--><item></item>
+        <!--11-5-2018 176--><item></item>
+        <!--11-5-2018 177--><item></item>
+        <!--11-5-2018 178--><item></item>
+        <!--11-5-2018 179--><item></item>
+        <!--11-5-2018 180--><item></item>
 
     </array>
     
@@ -2484,6 +4104,186 @@
         <!--242--><item></item>
         <!--243--><item></item>
         <!--244--><item></item>
+        <!--11-5-2018 1--><item></item>
+        <!--11-5-2018 2--><item></item>
+        <!--11-5-2018 3--><item></item>
+        <!--11-5-2018 4--><item></item>
+        <!--11-5-2018 5--><item></item>
+        <!--11-5-2018 6--><item></item>
+        <!--11-5-2018 7--><item></item>
+        <!--11-5-2018 8--><item></item>
+        <!--11-5-2018 9--><item></item>
+        <!--11-5-2018 10--><item></item>
+        <!--11-5-2018 11--><item></item>
+        <!--11-5-2018 12--><item></item>
+        <!--11-5-2018 13--><item></item>
+        <!--11-5-2018 14--><item></item>
+        <!--11-5-2018 15--><item></item>
+        <!--11-5-2018 16--><item></item>
+        <!--11-5-2018 17--><item></item>
+        <!--11-5-2018 18--><item></item>
+        <!--11-5-2018 19--><item></item>
+        <!--11-5-2018 20--><item></item>
+        <!--11-5-2018 21--><item></item>
+        <!--11-5-2018 22--><item></item>
+        <!--11-5-2018 23--><item></item>
+        <!--11-5-2018 24--><item></item>
+        <!--11-5-2018 25--><item></item>
+        <!--11-5-2018 26--><item></item>
+        <!--11-5-2018 27--><item></item>
+        <!--11-5-2018 28--><item></item>
+        <!--11-5-2018 29--><item></item>
+        <!--11-5-2018 30--><item></item>
+        <!--11-5-2018 31--><item></item>
+        <!--11-5-2018 32--><item></item>
+        <!--11-5-2018 33--><item></item>
+        <!--11-5-2018 34--><item></item>
+        <!--11-5-2018 35--><item></item>
+        <!--11-5-2018 36--><item></item>
+        <!--11-5-2018 37--><item></item>
+        <!--11-5-2018 38--><item></item>
+        <!--11-5-2018 39--><item></item>
+        <!--11-5-2018 40--><item></item>
+        <!--11-5-2018 41--><item></item>
+        <!--11-5-2018 42--><item></item>
+        <!--11-5-2018 43--><item></item>
+        <!--11-5-2018 44--><item></item>
+        <!--11-5-2018 45--><item></item>
+        <!--11-5-2018 46--><item></item>
+        <!--11-5-2018 47--><item></item>
+        <!--11-5-2018 48--><item></item>
+        <!--11-5-2018 49--><item></item>
+        <!--11-5-2018 50--><item></item>
+        <!--11-5-2018 51--><item></item>
+        <!--11-5-2018 52--><item></item>
+        <!--11-5-2018 53--><item></item>
+        <!--11-5-2018 54--><item></item>
+        <!--11-5-2018 55--><item></item>
+        <!--11-5-2018 56--><item></item>
+        <!--11-5-2018 57--><item></item>
+        <!--11-5-2018 58--><item></item>
+        <!--11-5-2018 59--><item></item>
+        <!--11-5-2018 60--><item></item>
+        <!--11-5-2018 61--><item></item>
+        <!--11-5-2018 62--><item></item>
+        <!--11-5-2018 63--><item></item>
+        <!--11-5-2018 64--><item></item>
+        <!--11-5-2018 65--><item></item>
+        <!--11-5-2018 66--><item></item>
+        <!--11-5-2018 67--><item></item>
+        <!--11-5-2018 68--><item></item>
+        <!--11-5-2018 69--><item></item>
+        <!--11-5-2018 70--><item></item>
+        <!--11-5-2018 71--><item></item>
+        <!--11-5-2018 72--><item></item>
+        <!--11-5-2018 73--><item></item>
+        <!--11-5-2018 74--><item></item>
+        <!--11-5-2018 75--><item></item>
+        <!--11-5-2018 76--><item></item>
+        <!--11-5-2018 77--><item></item>
+        <!--11-5-2018 78--><item></item>
+        <!--11-5-2018 79--><item></item>
+        <!--11-5-2018 80--><item></item>
+        <!--11-5-2018 81--><item></item>
+        <!--11-5-2018 82--><item></item>
+        <!--11-5-2018 83--><item></item>
+        <!--11-5-2018 84--><item></item>
+        <!--11-5-2018 85--><item></item>
+        <!--11-5-2018 86--><item></item>
+        <!--11-5-2018 87--><item></item>
+        <!--11-5-2018 88--><item></item>
+        <!--11-5-2018 89--><item></item>
+        <!--11-5-2018 90--><item></item>
+        <!--11-5-2018 91--><item></item>
+        <!--11-5-2018 92--><item></item>
+        <!--11-5-2018 93--><item></item>
+        <!--11-5-2018 94--><item></item>
+        <!--11-5-2018 95--><item></item>
+        <!--11-5-2018 96--><item></item>
+        <!--11-5-2018 97--><item></item>
+        <!--11-5-2018 98--><item></item>
+        <!--11-5-2018 99--><item></item>
+        <!--11-5-2018 100--><item></item>
+        <!--11-5-2018 101--><item></item>
+        <!--11-5-2018 102--><item></item>
+        <!--11-5-2018 103--><item></item>
+        <!--11-5-2018 104--><item></item>
+        <!--11-5-2018 105--><item></item>
+        <!--11-5-2018 106--><item></item>
+        <!--11-5-2018 107--><item></item>
+        <!--11-5-2018 108--><item></item>
+        <!--11-5-2018 109--><item></item>
+        <!--11-5-2018 110--><item></item>
+        <!--11-5-2018 111--><item></item>
+        <!--11-5-2018 112--><item></item>
+        <!--11-5-2018 113--><item></item>
+        <!--11-5-2018 114--><item></item>
+        <!--11-5-2018 115--><item></item>
+        <!--11-5-2018 116--><item></item>
+        <!--11-5-2018 117--><item></item>
+        <!--11-5-2018 118--><item></item>
+        <!--11-5-2018 119--><item></item>
+        <!--11-5-2018 120--><item></item>
+        <!--11-5-2018 121--><item></item>
+        <!--11-5-2018 122--><item></item>
+        <!--11-5-2018 123--><item></item>
+        <!--11-5-2018 124--><item></item>
+        <!--11-5-2018 125--><item></item>
+        <!--11-5-2018 126--><item></item>
+        <!--11-5-2018 127--><item></item>
+        <!--11-5-2018 128--><item></item>
+        <!--11-5-2018 129--><item></item>
+        <!--11-5-2018 130--><item></item>
+        <!--11-5-2018 131--><item></item>
+        <!--11-5-2018 132--><item></item>
+        <!--11-5-2018 133--><item></item>
+        <!--11-5-2018 134--><item></item>
+        <!--11-5-2018 135--><item></item>
+        <!--11-5-2018 136--><item></item>
+        <!--11-5-2018 137--><item></item>
+        <!--11-5-2018 138--><item></item>
+        <!--11-5-2018 139--><item></item>
+        <!--11-5-2018 140--><item></item>
+        <!--11-5-2018 141--><item></item>
+        <!--11-5-2018 142--><item></item>
+        <!--11-5-2018 143--><item></item>
+        <!--11-5-2018 144--><item></item>
+        <!--11-5-2018 145--><item></item>
+        <!--11-5-2018 146--><item></item>
+        <!--11-5-2018 147--><item></item>
+        <!--11-5-2018 148--><item></item>
+        <!--11-5-2018 149--><item></item>
+        <!--11-5-2018 150--><item></item>
+        <!--11-5-2018 151--><item></item>
+        <!--11-5-2018 152--><item></item>
+        <!--11-5-2018 153--><item></item>
+        <!--11-5-2018 154--><item></item>
+        <!--11-5-2018 155--><item></item>
+        <!--11-5-2018 156--><item></item>
+        <!--11-5-2018 157--><item></item>
+        <!--11-5-2018 158--><item></item>
+        <!--11-5-2018 159--><item></item>
+        <!--11-5-2018 160--><item></item>
+        <!--11-5-2018 161--><item></item>
+        <!--11-5-2018 162--><item></item>
+        <!--11-5-2018 163--><item></item>
+        <!--11-5-2018 164--><item></item>
+        <!--11-5-2018 165--><item></item>
+        <!--11-5-2018 166--><item></item>
+        <!--11-5-2018 167--><item></item>
+        <!--11-5-2018 168--><item></item>
+        <!--11-5-2018 169--><item></item>
+        <!--11-5-2018 170--><item></item>
+        <!--11-5-2018 171--><item></item>
+        <!--11-5-2018 172--><item></item>
+        <!--11-5-2018 173--><item></item>
+        <!--11-5-2018 174--><item></item>
+        <!--11-5-2018 175--><item></item>
+        <!--11-5-2018 176--><item></item>
+        <!--11-5-2018 177--><item></item>
+        <!--11-5-2018 178--><item></item>
+        <!--11-5-2018 179--><item></item>
+        <!--11-5-2018 180--><item></item>
 
     </array>
     
@@ -2732,6 +4532,187 @@
         <!--242--><item></item>
         <!--243--><item></item>
         <!--244--><item></item>
+        <!--11-5-2018 1--><item></item>
+        <!--11-5-2018 2--><item></item>
+        <!--11-5-2018 3--><item></item>
+        <!--11-5-2018 4--><item></item>
+        <!--11-5-2018 5--><item></item>
+        <!--11-5-2018 6--><item></item>
+        <!--11-5-2018 7--><item></item>
+        <!--11-5-2018 8--><item></item>
+        <!--11-5-2018 9--><item></item>
+        <!--11-5-2018 10--><item></item>
+        <!--11-5-2018 11--><item></item>
+        <!--11-5-2018 12--><item></item>
+        <!--11-5-2018 13--><item></item>
+        <!--11-5-2018 14--><item></item>
+        <!--11-5-2018 15--><item></item>
+        <!--11-5-2018 16--><item></item>
+        <!--11-5-2018 17--><item></item>
+        <!--11-5-2018 18--><item></item>
+        <!--11-5-2018 19--><item></item>
+        <!--11-5-2018 20--><item></item>
+        <!--11-5-2018 21--><item></item>
+        <!--11-5-2018 22--><item></item>
+        <!--11-5-2018 23--><item></item>
+        <!--11-5-2018 24--><item></item>
+        <!--11-5-2018 25--><item></item>
+        <!--11-5-2018 26--><item></item>
+        <!--11-5-2018 27--><item></item>
+        <!--11-5-2018 28--><item></item>
+        <!--11-5-2018 29--><item></item>
+        <!--11-5-2018 30--><item></item>
+        <!--11-5-2018 31--><item></item>
+        <!--11-5-2018 32--><item></item>
+        <!--11-5-2018 33--><item></item>
+        <!--11-5-2018 34--><item></item>
+        <!--11-5-2018 35--><item></item>
+        <!--11-5-2018 36--><item></item>
+        <!--11-5-2018 37--><item></item>
+        <!--11-5-2018 38--><item></item>
+        <!--11-5-2018 39--><item></item>
+        <!--11-5-2018 40--><item></item>
+        <!--11-5-2018 41--><item></item>
+        <!--11-5-2018 42--><item></item>
+        <!--11-5-2018 43--><item></item>
+        <!--11-5-2018 44--><item></item>
+        <!--11-5-2018 45--><item></item>
+        <!--11-5-2018 46--><item></item>
+        <!--11-5-2018 47--><item></item>
+        <!--11-5-2018 48--><item></item>
+        <!--11-5-2018 49--><item></item>
+        <!--11-5-2018 50--><item></item>
+        <!--11-5-2018 51--><item></item>
+        <!--11-5-2018 52--><item></item>
+        <!--11-5-2018 53--><item></item>
+        <!--11-5-2018 54--><item></item>
+        <!--11-5-2018 55--><item></item>
+        <!--11-5-2018 56--><item></item>
+        <!--11-5-2018 57--><item></item>
+        <!--11-5-2018 58--><item></item>
+        <!--11-5-2018 59--><item></item>
+        <!--11-5-2018 60--><item></item>
+        <!--11-5-2018 61--><item></item>
+        <!--11-5-2018 62--><item></item>
+        <!--11-5-2018 63--><item></item>
+        <!--11-5-2018 64--><item></item>
+        <!--11-5-2018 65--><item></item>
+        <!--11-5-2018 66--><item></item>
+        <!--11-5-2018 67--><item></item>
+        <!--11-5-2018 68--><item></item>
+        <!--11-5-2018 69--><item></item>
+        <!--11-5-2018 70--><item></item>
+        <!--11-5-2018 71--><item></item>
+        <!--11-5-2018 72--><item></item>
+        <!--11-5-2018 73--><item></item>
+        <!--11-5-2018 74--><item></item>
+        <!--11-5-2018 75--><item></item>
+        <!--11-5-2018 76--><item></item>
+        <!--11-5-2018 77--><item></item>
+        <!--11-5-2018 78--><item></item>
+        <!--11-5-2018 79--><item></item>
+        <!--11-5-2018 80--><item></item>
+        <!--11-5-2018 81--><item></item>
+        <!--11-5-2018 82--><item></item>
+        <!--11-5-2018 83--><item></item>
+        <!--11-5-2018 84--><item></item>
+        <!--11-5-2018 85--><item></item>
+        <!--11-5-2018 86--><item></item>
+        <!--11-5-2018 87--><item></item>
+        <!--11-5-2018 88--><item></item>
+        <!--11-5-2018 89--><item></item>
+        <!--11-5-2018 90--><item></item>
+        <!--11-5-2018 91--><item></item>
+        <!--11-5-2018 92--><item></item>
+        <!--11-5-2018 93--><item></item>
+        <!--11-5-2018 94--><item></item>
+        <!--11-5-2018 95--><item></item>
+        <!--11-5-2018 96--><item></item>
+        <!--11-5-2018 97--><item></item>
+        <!--11-5-2018 98--><item></item>
+        <!--11-5-2018 99--><item></item>
+        <!--11-5-2018 100--><item></item>
+        <!--11-5-2018 101--><item></item>
+        <!--11-5-2018 102--><item></item>
+        <!--11-5-2018 103--><item></item>
+        <!--11-5-2018 104--><item></item>
+        <!--11-5-2018 105--><item></item>
+        <!--11-5-2018 106--><item></item>
+        <!--11-5-2018 107--><item></item>
+        <!--11-5-2018 108--><item></item>
+        <!--11-5-2018 109--><item></item>
+        <!--11-5-2018 110--><item></item>
+        <!--11-5-2018 111--><item></item>
+        <!--11-5-2018 112--><item></item>
+        <!--11-5-2018 113--><item></item>
+        <!--11-5-2018 114--><item></item>
+        <!--11-5-2018 115--><item></item>
+        <!--11-5-2018 116--><item></item>
+        <!--11-5-2018 117--><item></item>
+        <!--11-5-2018 118--><item></item>
+        <!--11-5-2018 119--><item></item>
+        <!--11-5-2018 120--><item></item>
+        <!--11-5-2018 121--><item></item>
+        <!--11-5-2018 122--><item></item>
+        <!--11-5-2018 123--><item></item>
+        <!--11-5-2018 124--><item></item>
+        <!--11-5-2018 125--><item></item>
+        <!--11-5-2018 126--><item></item>
+        <!--11-5-2018 127--><item></item>
+        <!--11-5-2018 128--><item></item>
+        <!--11-5-2018 129--><item></item>
+        <!--11-5-2018 130--><item></item>
+        <!--11-5-2018 131--><item></item>
+        <!--11-5-2018 132--><item></item>
+        <!--11-5-2018 133--><item></item>
+        <!--11-5-2018 134--><item></item>
+        <!--11-5-2018 135--><item></item>
+        <!--11-5-2018 136--><item></item>
+        <!--11-5-2018 137--><item></item>
+        <!--11-5-2018 138--><item></item>
+        <!--11-5-2018 139--><item></item>
+        <!--11-5-2018 140--><item></item>
+        <!--11-5-2018 141--><item></item>
+        <!--11-5-2018 142--><item></item>
+        <!--11-5-2018 143--><item></item>
+        <!--11-5-2018 144--><item></item>
+        <!--11-5-2018 145--><item></item>
+        <!--11-5-2018 146--><item></item>
+        <!--11-5-2018 147--><item></item>
+        <!--11-5-2018 148--><item></item>
+        <!--11-5-2018 149--><item></item>
+        <!--11-5-2018 150--><item></item>
+        <!--11-5-2018 151--><item></item>
+        <!--11-5-2018 152--><item></item>
+        <!--11-5-2018 153--><item></item>
+        <!--11-5-2018 154--><item></item>
+        <!--11-5-2018 155--><item></item>
+        <!--11-5-2018 156--><item></item>
+        <!--11-5-2018 157--><item></item>
+        <!--11-5-2018 158--><item></item>
+        <!--11-5-2018 159--><item></item>
+        <!--11-5-2018 160--><item></item>
+        <!--11-5-2018 161--><item></item>
+        <!--11-5-2018 162--><item></item>
+        <!--11-5-2018 163--><item></item>
+        <!--11-5-2018 164--><item></item>
+        <!--11-5-2018 165--><item></item>
+        <!--11-5-2018 166--><item></item>
+        <!--11-5-2018 167--><item></item>
+        <!--11-5-2018 168--><item></item>
+        <!--11-5-2018 169--><item></item>
+        <!--11-5-2018 170--><item></item>
+        <!--11-5-2018 171--><item></item>
+        <!--11-5-2018 172--><item></item>
+        <!--11-5-2018 173--><item></item>
+        <!--11-5-2018 174--><item></item>
+        <!--11-5-2018 175--><item></item>
+        <!--11-5-2018 176--><item></item>
+        <!--11-5-2018 177--><item></item>
+        <!--11-5-2018 178--><item></item>
+        <!--11-5-2018 179--><item></item>
+        <!--11-5-2018 180--><item></item>
+
 
     </array>
     
@@ -2980,6 +4961,187 @@
         <!--242--><item></item>
         <!--243--><item></item>
         <!--244--><item></item>
+        <!--11-5-2018 1--><item></item>
+        <!--11-5-2018 2--><item></item>
+        <!--11-5-2018 3--><item></item>
+        <!--11-5-2018 4--><item></item>
+        <!--11-5-2018 5--><item></item>
+        <!--11-5-2018 6--><item></item>
+        <!--11-5-2018 7--><item></item>
+        <!--11-5-2018 8--><item></item>
+        <!--11-5-2018 9--><item></item>
+        <!--11-5-2018 10--><item></item>
+        <!--11-5-2018 11--><item></item>
+        <!--11-5-2018 12--><item></item>
+        <!--11-5-2018 13--><item></item>
+        <!--11-5-2018 14--><item></item>
+        <!--11-5-2018 15--><item></item>
+        <!--11-5-2018 16--><item></item>
+        <!--11-5-2018 17--><item></item>
+        <!--11-5-2018 18--><item></item>
+        <!--11-5-2018 19--><item></item>
+        <!--11-5-2018 20--><item></item>
+        <!--11-5-2018 21--><item></item>
+        <!--11-5-2018 22--><item></item>
+        <!--11-5-2018 23--><item></item>
+        <!--11-5-2018 24--><item></item>
+        <!--11-5-2018 25--><item></item>
+        <!--11-5-2018 26--><item></item>
+        <!--11-5-2018 27--><item></item>
+        <!--11-5-2018 28--><item></item>
+        <!--11-5-2018 29--><item></item>
+        <!--11-5-2018 30--><item></item>
+        <!--11-5-2018 31--><item></item>
+        <!--11-5-2018 32--><item></item>
+        <!--11-5-2018 33--><item></item>
+        <!--11-5-2018 34--><item></item>
+        <!--11-5-2018 35--><item></item>
+        <!--11-5-2018 36--><item></item>
+        <!--11-5-2018 37--><item></item>
+        <!--11-5-2018 38--><item></item>
+        <!--11-5-2018 39--><item></item>
+        <!--11-5-2018 40--><item></item>
+        <!--11-5-2018 41--><item></item>
+        <!--11-5-2018 42--><item></item>
+        <!--11-5-2018 43--><item></item>
+        <!--11-5-2018 44--><item></item>
+        <!--11-5-2018 45--><item></item>
+        <!--11-5-2018 46--><item></item>
+        <!--11-5-2018 47--><item></item>
+        <!--11-5-2018 48--><item></item>
+        <!--11-5-2018 49--><item></item>
+        <!--11-5-2018 50--><item></item>
+        <!--11-5-2018 51--><item></item>
+        <!--11-5-2018 52--><item></item>
+        <!--11-5-2018 53--><item></item>
+        <!--11-5-2018 54--><item></item>
+        <!--11-5-2018 55--><item></item>
+        <!--11-5-2018 56--><item></item>
+        <!--11-5-2018 57--><item></item>
+        <!--11-5-2018 58--><item></item>
+        <!--11-5-2018 59--><item></item>
+        <!--11-5-2018 60--><item></item>
+        <!--11-5-2018 61--><item></item>
+        <!--11-5-2018 62--><item></item>
+        <!--11-5-2018 63--><item></item>
+        <!--11-5-2018 64--><item></item>
+        <!--11-5-2018 65--><item></item>
+        <!--11-5-2018 66--><item></item>
+        <!--11-5-2018 67--><item></item>
+        <!--11-5-2018 68--><item></item>
+        <!--11-5-2018 69--><item></item>
+        <!--11-5-2018 70--><item></item>
+        <!--11-5-2018 71--><item></item>
+        <!--11-5-2018 72--><item></item>
+        <!--11-5-2018 73--><item></item>
+        <!--11-5-2018 74--><item></item>
+        <!--11-5-2018 75--><item></item>
+        <!--11-5-2018 76--><item></item>
+        <!--11-5-2018 77--><item></item>
+        <!--11-5-2018 78--><item></item>
+        <!--11-5-2018 79--><item></item>
+        <!--11-5-2018 80--><item></item>
+        <!--11-5-2018 81--><item></item>
+        <!--11-5-2018 82--><item></item>
+        <!--11-5-2018 83--><item></item>
+        <!--11-5-2018 84--><item></item>
+        <!--11-5-2018 85--><item></item>
+        <!--11-5-2018 86--><item></item>
+        <!--11-5-2018 87--><item></item>
+        <!--11-5-2018 88--><item></item>
+        <!--11-5-2018 89--><item></item>
+        <!--11-5-2018 90--><item></item>
+        <!--11-5-2018 91--><item></item>
+        <!--11-5-2018 92--><item></item>
+        <!--11-5-2018 93--><item></item>
+        <!--11-5-2018 94--><item></item>
+        <!--11-5-2018 95--><item></item>
+        <!--11-5-2018 96--><item></item>
+        <!--11-5-2018 97--><item></item>
+        <!--11-5-2018 98--><item></item>
+        <!--11-5-2018 99--><item></item>
+        <!--11-5-2018 100--><item></item>
+        <!--11-5-2018 101--><item></item>
+        <!--11-5-2018 102--><item></item>
+        <!--11-5-2018 103--><item></item>
+        <!--11-5-2018 104--><item></item>
+        <!--11-5-2018 105--><item></item>
+        <!--11-5-2018 106--><item></item>
+        <!--11-5-2018 107--><item></item>
+        <!--11-5-2018 108--><item></item>
+        <!--11-5-2018 109--><item></item>
+        <!--11-5-2018 110--><item></item>
+        <!--11-5-2018 111--><item></item>
+        <!--11-5-2018 112--><item></item>
+        <!--11-5-2018 113--><item></item>
+        <!--11-5-2018 114--><item></item>
+        <!--11-5-2018 115--><item></item>
+        <!--11-5-2018 116--><item></item>
+        <!--11-5-2018 117--><item></item>
+        <!--11-5-2018 118--><item></item>
+        <!--11-5-2018 119--><item></item>
+        <!--11-5-2018 120--><item></item>
+        <!--11-5-2018 121--><item></item>
+        <!--11-5-2018 122--><item></item>
+        <!--11-5-2018 123--><item></item>
+        <!--11-5-2018 124--><item></item>
+        <!--11-5-2018 125--><item></item>
+        <!--11-5-2018 126--><item></item>
+        <!--11-5-2018 127--><item></item>
+        <!--11-5-2018 128--><item></item>
+        <!--11-5-2018 129--><item></item>
+        <!--11-5-2018 130--><item></item>
+        <!--11-5-2018 131--><item></item>
+        <!--11-5-2018 132--><item></item>
+        <!--11-5-2018 133--><item></item>
+        <!--11-5-2018 134--><item></item>
+        <!--11-5-2018 135--><item></item>
+        <!--11-5-2018 136--><item></item>
+        <!--11-5-2018 137--><item></item>
+        <!--11-5-2018 138--><item></item>
+        <!--11-5-2018 139--><item></item>
+        <!--11-5-2018 140--><item></item>
+        <!--11-5-2018 141--><item></item>
+        <!--11-5-2018 142--><item></item>
+        <!--11-5-2018 143--><item></item>
+        <!--11-5-2018 144--><item></item>
+        <!--11-5-2018 145--><item></item>
+        <!--11-5-2018 146--><item></item>
+        <!--11-5-2018 147--><item></item>
+        <!--11-5-2018 148--><item></item>
+        <!--11-5-2018 149--><item></item>
+        <!--11-5-2018 150--><item></item>
+        <!--11-5-2018 151--><item></item>
+        <!--11-5-2018 152--><item></item>
+        <!--11-5-2018 153--><item></item>
+        <!--11-5-2018 154--><item></item>
+        <!--11-5-2018 155--><item></item>
+        <!--11-5-2018 156--><item></item>
+        <!--11-5-2018 157--><item></item>
+        <!--11-5-2018 158--><item></item>
+        <!--11-5-2018 159--><item></item>
+        <!--11-5-2018 160--><item></item>
+        <!--11-5-2018 161--><item></item>
+        <!--11-5-2018 162--><item></item>
+        <!--11-5-2018 163--><item></item>
+        <!--11-5-2018 164--><item></item>
+        <!--11-5-2018 165--><item></item>
+        <!--11-5-2018 166--><item></item>
+        <!--11-5-2018 167--><item></item>
+        <!--11-5-2018 168--><item></item>
+        <!--11-5-2018 169--><item></item>
+        <!--11-5-2018 170--><item></item>
+        <!--11-5-2018 171--><item></item>
+        <!--11-5-2018 172--><item></item>
+        <!--11-5-2018 173--><item></item>
+        <!--11-5-2018 174--><item></item>
+        <!--11-5-2018 175--><item></item>
+        <!--11-5-2018 176--><item></item>
+        <!--11-5-2018 177--><item></item>
+        <!--11-5-2018 178--><item></item>
+        <!--11-5-2018 179--><item></item>
+        <!--11-5-2018 180--><item></item>
+
 
     </array>
     
@@ -3228,6 +5390,186 @@
         <!--242--><item></item>
         <!--243--><item></item>
         <!--244--><item></item>
+        <!--11-5-2018 1--><item></item>
+        <!--11-5-2018 2--><item></item>
+        <!--11-5-2018 3--><item></item>
+        <!--11-5-2018 4--><item></item>
+        <!--11-5-2018 5--><item></item>
+        <!--11-5-2018 6--><item></item>
+        <!--11-5-2018 7--><item></item>
+        <!--11-5-2018 8--><item></item>
+        <!--11-5-2018 9--><item></item>
+        <!--11-5-2018 10--><item></item>
+        <!--11-5-2018 11--><item></item>
+        <!--11-5-2018 12--><item></item>
+        <!--11-5-2018 13--><item></item>
+        <!--11-5-2018 14--><item></item>
+        <!--11-5-2018 15--><item></item>
+        <!--11-5-2018 16--><item></item>
+        <!--11-5-2018 17--><item></item>
+        <!--11-5-2018 18--><item></item>
+        <!--11-5-2018 19--><item></item>
+        <!--11-5-2018 20--><item></item>
+        <!--11-5-2018 21--><item></item>
+        <!--11-5-2018 22--><item></item>
+        <!--11-5-2018 23--><item></item>
+        <!--11-5-2018 24--><item></item>
+        <!--11-5-2018 25--><item></item>
+        <!--11-5-2018 26--><item></item>
+        <!--11-5-2018 27--><item></item>
+        <!--11-5-2018 28--><item></item>
+        <!--11-5-2018 29--><item></item>
+        <!--11-5-2018 30--><item></item>
+        <!--11-5-2018 31--><item></item>
+        <!--11-5-2018 32--><item></item>
+        <!--11-5-2018 33--><item></item>
+        <!--11-5-2018 34--><item></item>
+        <!--11-5-2018 35--><item></item>
+        <!--11-5-2018 36--><item></item>
+        <!--11-5-2018 37--><item></item>
+        <!--11-5-2018 38--><item></item>
+        <!--11-5-2018 39--><item></item>
+        <!--11-5-2018 40--><item></item>
+        <!--11-5-2018 41--><item></item>
+        <!--11-5-2018 42--><item></item>
+        <!--11-5-2018 43--><item></item>
+        <!--11-5-2018 44--><item></item>
+        <!--11-5-2018 45--><item></item>
+        <!--11-5-2018 46--><item></item>
+        <!--11-5-2018 47--><item></item>
+        <!--11-5-2018 48--><item></item>
+        <!--11-5-2018 49--><item></item>
+        <!--11-5-2018 50--><item></item>
+        <!--11-5-2018 51--><item></item>
+        <!--11-5-2018 52--><item></item>
+        <!--11-5-2018 53--><item></item>
+        <!--11-5-2018 54--><item></item>
+        <!--11-5-2018 55--><item></item>
+        <!--11-5-2018 56--><item></item>
+        <!--11-5-2018 57--><item></item>
+        <!--11-5-2018 58--><item></item>
+        <!--11-5-2018 59--><item></item>
+        <!--11-5-2018 60--><item></item>
+        <!--11-5-2018 61--><item></item>
+        <!--11-5-2018 62--><item></item>
+        <!--11-5-2018 63--><item></item>
+        <!--11-5-2018 64--><item></item>
+        <!--11-5-2018 65--><item></item>
+        <!--11-5-2018 66--><item></item>
+        <!--11-5-2018 67--><item></item>
+        <!--11-5-2018 68--><item></item>
+        <!--11-5-2018 69--><item></item>
+        <!--11-5-2018 70--><item></item>
+        <!--11-5-2018 71--><item></item>
+        <!--11-5-2018 72--><item></item>
+        <!--11-5-2018 73--><item></item>
+        <!--11-5-2018 74--><item></item>
+        <!--11-5-2018 75--><item></item>
+        <!--11-5-2018 76--><item></item>
+        <!--11-5-2018 77--><item></item>
+        <!--11-5-2018 78--><item></item>
+        <!--11-5-2018 79--><item></item>
+        <!--11-5-2018 80--><item></item>
+        <!--11-5-2018 81--><item></item>
+        <!--11-5-2018 82--><item></item>
+        <!--11-5-2018 83--><item></item>
+        <!--11-5-2018 84--><item></item>
+        <!--11-5-2018 85--><item></item>
+        <!--11-5-2018 86--><item></item>
+        <!--11-5-2018 87--><item></item>
+        <!--11-5-2018 88--><item></item>
+        <!--11-5-2018 89--><item></item>
+        <!--11-5-2018 90--><item></item>
+        <!--11-5-2018 91--><item></item>
+        <!--11-5-2018 92--><item></item>
+        <!--11-5-2018 93--><item></item>
+        <!--11-5-2018 94--><item></item>
+        <!--11-5-2018 95--><item></item>
+        <!--11-5-2018 96--><item></item>
+        <!--11-5-2018 97--><item></item>
+        <!--11-5-2018 98--><item></item>
+        <!--11-5-2018 99--><item></item>
+        <!--11-5-2018 100--><item></item>
+        <!--11-5-2018 101--><item></item>
+        <!--11-5-2018 102--><item></item>
+        <!--11-5-2018 103--><item></item>
+        <!--11-5-2018 104--><item></item>
+        <!--11-5-2018 105--><item></item>
+        <!--11-5-2018 106--><item></item>
+        <!--11-5-2018 107--><item></item>
+        <!--11-5-2018 108--><item></item>
+        <!--11-5-2018 109--><item></item>
+        <!--11-5-2018 110--><item></item>
+        <!--11-5-2018 111--><item></item>
+        <!--11-5-2018 112--><item></item>
+        <!--11-5-2018 113--><item></item>
+        <!--11-5-2018 114--><item></item>
+        <!--11-5-2018 115--><item></item>
+        <!--11-5-2018 116--><item></item>
+        <!--11-5-2018 117--><item></item>
+        <!--11-5-2018 118--><item></item>
+        <!--11-5-2018 119--><item></item>
+        <!--11-5-2018 120--><item></item>
+        <!--11-5-2018 121--><item></item>
+        <!--11-5-2018 122--><item></item>
+        <!--11-5-2018 123--><item></item>
+        <!--11-5-2018 124--><item></item>
+        <!--11-5-2018 125--><item></item>
+        <!--11-5-2018 126--><item></item>
+        <!--11-5-2018 127--><item></item>
+        <!--11-5-2018 128--><item></item>
+        <!--11-5-2018 129--><item></item>
+        <!--11-5-2018 130--><item></item>
+        <!--11-5-2018 131--><item></item>
+        <!--11-5-2018 132--><item></item>
+        <!--11-5-2018 133--><item></item>
+        <!--11-5-2018 134--><item></item>
+        <!--11-5-2018 135--><item></item>
+        <!--11-5-2018 136--><item></item>
+        <!--11-5-2018 137--><item></item>
+        <!--11-5-2018 138--><item></item>
+        <!--11-5-2018 139--><item></item>
+        <!--11-5-2018 140--><item></item>
+        <!--11-5-2018 141--><item></item>
+        <!--11-5-2018 142--><item></item>
+        <!--11-5-2018 143--><item></item>
+        <!--11-5-2018 144--><item></item>
+        <!--11-5-2018 145--><item></item>
+        <!--11-5-2018 146--><item></item>
+        <!--11-5-2018 147--><item></item>
+        <!--11-5-2018 148--><item></item>
+        <!--11-5-2018 149--><item></item>
+        <!--11-5-2018 150--><item></item>
+        <!--11-5-2018 151--><item></item>
+        <!--11-5-2018 152--><item></item>
+        <!--11-5-2018 153--><item></item>
+        <!--11-5-2018 154--><item></item>
+        <!--11-5-2018 155--><item></item>
+        <!--11-5-2018 156--><item></item>
+        <!--11-5-2018 157--><item></item>
+        <!--11-5-2018 158--><item></item>
+        <!--11-5-2018 159--><item></item>
+        <!--11-5-2018 160--><item></item>
+        <!--11-5-2018 161--><item></item>
+        <!--11-5-2018 162--><item></item>
+        <!--11-5-2018 163--><item></item>
+        <!--11-5-2018 164--><item></item>
+        <!--11-5-2018 165--><item></item>
+        <!--11-5-2018 166--><item></item>
+        <!--11-5-2018 167--><item></item>
+        <!--11-5-2018 168--><item></item>
+        <!--11-5-2018 169--><item></item>
+        <!--11-5-2018 170--><item></item>
+        <!--11-5-2018 171--><item></item>
+        <!--11-5-2018 172--><item></item>
+        <!--11-5-2018 173--><item></item>
+        <!--11-5-2018 174--><item></item>
+        <!--11-5-2018 175--><item></item>
+        <!--11-5-2018 176--><item></item>
+        <!--11-5-2018 177--><item></item>
+        <!--11-5-2018 178--><item></item>
+        <!--11-5-2018 179--><item></item>
+        <!--11-5-2018 180--><item></item>
 
     </array>
     
@@ -3476,6 +5818,188 @@
         <!--242--><item></item>
         <!--243--><item></item>
         <!--244--><item>mecp244exp</item>
+        <!--11-5-2018 1--><item></item>
+        <!--11-5-2018 2--><item></item>
+        <!--11-5-2018 3--><item></item>
+        <!--11-5-2018 4--><item></item>
+        <!--11-5-2018 5--><item></item>
+        <!--11-5-2018 6--><item></item>
+        <!--11-5-2018 7--><item></item>
+        <!--11-5-2018 8--><item></item>
+        <!--11-5-2018 9--><item></item>
+        <!--11-5-2018 10--><item></item>
+        <!--11-5-2018 11--><item></item>
+        <!--11-5-2018 12--><item></item>
+        <!--11-5-2018 13--><item></item>
+        <!--11-5-2018 14--><item></item>
+        <!--11-5-2018 15--><item></item>
+        <!--11-5-2018 16--><item></item>
+        <!--11-5-2018 17--><item></item>
+        <!--11-5-2018 18--><item></item>
+        <!--11-5-2018 19--><item></item>
+        <!--11-5-2018 20--><item></item>
+        <!--11-5-2018 21--><item></item>
+        <!--11-5-2018 22--><item></item>
+        <!--11-5-2018 23--><item></item>
+        <!--11-5-2018 24--><item></item>
+        <!--11-5-2018 25--><item></item>
+        <!--11-5-2018 26--><item></item>
+        <!--11-5-2018 27--><item></item>
+        <!--11-5-2018 28--><item></item>
+        <!--11-5-2018 29--><item></item>
+        <!--11-5-2018 30--><item></item>
+        <!--11-5-2018 31--><item></item>
+        <!--11-5-2018 32--><item></item>
+        <!--11-5-2018 33--><item></item>
+        <!--11-5-2018 34--><item></item>
+        <!--11-5-2018 35--><item></item>
+        <!--11-5-2018 36--><item></item>
+        <!--11-5-2018 37--><item></item>
+        <!--11-5-2018 38--><item></item>
+        <!--11-5-2018 39--><item></item>
+        <!--11-5-2018 40--><item></item>
+        <!--11-5-2018 41--><item></item>
+        <!--11-5-2018 42--><item></item>
+        <!--11-5-2018 43--><item></item>
+        <!--11-5-2018 44--><item></item>
+        <!--11-5-2018 45--><item></item>
+        <!--11-5-2018 46--><item></item>
+        <!--11-5-2018 47--><item></item>
+        <!--11-5-2018 48--><item></item>
+        <!--11-5-2018 49--><item></item>
+        <!--11-5-2018 50--><item></item>
+        <!--11-5-2018 51--><item></item>
+        <!--11-5-2018 52--><item></item>
+        <!--11-5-2018 53--><item></item>
+        <!--11-5-2018 54--><item></item>
+        <!--11-5-2018 55--><item></item>
+        <!--11-5-2018 56--><item></item>
+        <!--11-5-2018 57--><item></item>
+        <!--11-5-2018 58--><item></item>
+        <!--11-5-2018 59--><item></item>
+        <!--11-5-2018 60--><item></item>
+        <!--11-5-2018 61--><item></item>
+        <!--11-5-2018 62--><item></item>
+        <!--11-5-2018 63--><item></item>
+        <!--11-5-2018 64--><item></item>
+        <!--11-5-2018 65--><item></item>
+        <!--11-5-2018 66--><item></item>
+        <!--11-5-2018 67--><item></item>
+        <!--11-5-2018 68--><item></item>
+        <!--11-5-2018 69--><item></item>
+        <!--11-5-2018 70--><item></item>
+        <!--11-5-2018 71--><item></item>
+        <!--11-5-2018 72--><item></item>
+        <!--11-5-2018 73--><item></item>
+        <!--11-5-2018 74--><item></item>
+        <!--11-5-2018 75--><item></item>
+        <!--11-5-2018 76--><item></item>
+        <!--11-5-2018 77--><item></item>
+        <!--11-5-2018 78--><item></item>
+        <!--11-5-2018 79--><item></item>
+        <!--11-5-2018 80--><item></item>
+        <!--11-5-2018 81--><item></item>
+        <!--11-5-2018 82--><item></item>
+        <!--11-5-2018 83--><item></item>
+        <!--11-5-2018 84--><item></item>
+        <!--11-5-2018 85--><item></item>
+        <!--11-5-2018 86--><item></item>
+        <!--11-5-2018 87--><item></item>
+        <!--11-5-2018 88--><item></item>
+        <!--11-5-2018 89--><item></item>
+        <!--11-5-2018 90--><item></item>
+        <!--11-5-2018 91--><item></item>
+        <!--11-5-2018 92--><item></item>
+        <!--11-5-2018 93--><item></item>
+        <!--11-5-2018 94--><item></item>
+        <!--11-5-2018 95--><item></item>
+        <!--11-5-2018 96--><item></item>
+        <!--11-5-2018 97--><item></item>
+        <!--11-5-2018 98--><item></item>
+        <!--11-5-2018 99--><item></item>
+        <!--11-5-2018 100--><item></item>
+        <!--11-5-2018 101--><item></item>
+        <!--11-5-2018 102--><item></item>
+        <!--11-5-2018 103--><item></item>
+        <!--11-5-2018 104--><item></item>
+        <!--11-5-2018 105--><item></item>
+        <!--11-5-2018 106--><item></item>
+        <!--11-5-2018 107--><item></item>
+        <!--11-5-2018 108--><item></item>
+        <!--11-5-2018 109--><item></item>
+        <!--11-5-2018 110--><item></item>
+        <!--11-5-2018 111--><item></item>
+        <!--11-5-2018 112--><item></item>
+        <!--11-5-2018 113--><item></item>
+        <!--11-5-2018 114--><item></item>
+        <!--11-5-2018 115--><item></item>
+        <!--11-5-2018 116--><item></item>
+        <!--11-5-2018 117--><item></item>
+        <!--11-5-2018 118--><item></item>
+        <!--11-5-2018 119--><item></item>
+        <!--11-5-2018 120--><item></item>
+        <!--11-5-2018 121--><item></item>
+        <!--11-5-2018 122--><item></item>
+        <!--11-5-2018 123--><item></item>
+        <!--11-5-2018 124--><item></item>
+        <!--11-5-2018 125--><item></item>
+        <!--11-5-2018 126--><item></item>
+        <!--11-5-2018 127--><item></item>
+        <!--11-5-2018 128--><item></item>
+        <!--11-5-2018 129--><item></item>
+        <!--11-5-2018 130--><item></item>
+        <!--11-5-2018 131--><item></item>
+        <!--11-5-2018 132--><item></item>
+        <!--11-5-2018 133--><item></item>
+        <!--11-5-2018 134--><item></item>
+        <!--11-5-2018 135--><item></item>
+        <!--11-5-2018 136--><item></item>
+        <!--11-5-2018 137--><item></item>
+        <!--11-5-2018 138--><item></item>
+        <!--11-5-2018 139--><item></item>
+        <!--11-5-2018 140--><item></item>
+        <!--11-5-2018 141--><item></item>
+        <!--11-5-2018 142--><item></item>
+        <!--11-5-2018 143--><item></item>
+        <!--11-5-2018 144--><item></item>
+        <!--11-5-2018 145--><item></item>
+        <!--11-5-2018 146--><item></item>
+        <!--11-5-2018 147--><item></item>
+        <!--11-5-2018 148--><item></item>
+        <!--11-5-2018 149--><item></item>
+        <!--11-5-2018 150--><item></item>
+        <!--11-5-2018 151--><item></item>
+        <!--11-5-2018 152--><item></item>
+        <!--11-5-2018 153--><item></item>
+        <!--11-5-2018 154--><item></item>
+        <!--11-5-2018 155--><item></item>
+        <!--11-5-2018 156--><item></item>
+        <!--11-5-2018 157--><item></item>
+        <!--11-5-2018 158--><item></item>
+        <!--11-5-2018 159--><item></item>
+        <!--11-5-2018 160--><item></item>
+        <!--11-5-2018 161--><item></item>
+        <!--11-5-2018 162--><item></item>
+        <!--11-5-2018 163--><item></item>
+        <!--11-5-2018 164--><item></item>
+        <!--11-5-2018 165--><item></item>
+        <!--11-5-2018 166--><item></item>
+        <!--11-5-2018 167--><item></item>
+        <!--11-5-2018 168--><item></item>
+        <!--11-5-2018 169--><item></item>
+        <!--11-5-2018 170--><item></item>
+        <!--11-5-2018 171--><item></item>
+        <!--11-5-2018 172--><item></item>
+        <!--11-5-2018 173--><item></item>
+        <!--11-5-2018 174--><item></item>
+        <!--11-5-2018 175--><item></item>
+        <!--11-5-2018 176--><item></item>
+        <!--11-5-2018 177--><item></item>
+        <!--11-5-2018 178--><item></item>
+        <!--11-5-2018 179--><item></item>
+        <!--11-5-2018 180--><item></item>
+
+
 
 
     </array>
