@@ -19,6 +19,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TableLayout;
+import android.widget.TableRow;
 import android.widget.Toast;
 
 import com.example.andym.psicotecnicostropa.R;
@@ -46,6 +48,7 @@ public class main_principal extends Activity {
     String Correo="";
     String Password="";
     String Academia="";
+    int beta = 0;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -476,6 +479,12 @@ public class main_principal extends Activity {
         votar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                beta++;
+                if(beta == 10){
+                    TableRow temp= (TableRow)findViewById(R.id.betaaca);
+                    temp.setVisibility(View.VISIBLE);
+
+                }
                 if (entra[0] == true) {
                     entra[0] = false;
                     Animation animation = AnimationUtils.loadAnimation(

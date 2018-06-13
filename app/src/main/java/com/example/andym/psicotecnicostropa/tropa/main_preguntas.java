@@ -47,7 +47,7 @@ import java.util.GregorianCalendar;
 public class main_preguntas extends Activity {
 
     int arreglo = 0;
-
+    static public boolean desarrollo = false;
     boolean pp = false;
     Preguntas[] pre;
     contador cont = new contador();
@@ -330,13 +330,15 @@ public class main_preguntas extends Activity {
         calcularestado();
 
         if (getIntent().getExtras().getString("tipo").equals("memoria")) {
-            if (pos[cont.getCont() - 1] == 0) {
-                alante.setVisibility(View.INVISIBLE);
-                atras.setVisibility(View.INVISIBLE);
-            } else if (cont.getCont() == pregunta.length) {
-                alante.setVisibility(View.INVISIBLE);
-            } else {
-                alante.setVisibility(View.VISIBLE);
+            if(!desarrollo) {
+                if (pos[cont.getCont() - 1] == 0) {
+                    alante.setVisibility(View.INVISIBLE);
+                    atras.setVisibility(View.INVISIBLE);
+                } else if (cont.getCont() == pregunta.length) {
+                    alante.setVisibility(View.INVISIBLE);
+                } else {
+                    alante.setVisibility(View.VISIBLE);
+                }
             }
         }
         alante.setOnClickListener(new View.OnClickListener() {
@@ -346,13 +348,15 @@ public class main_preguntas extends Activity {
                 colocar++;
                 recolocar();
                 if (getIntent().getExtras().getString("tipo").equals("memoria")) {
-                    if (pos[cont.getCont() - 1] == 0) {
-                        alante.setVisibility(View.INVISIBLE);
-                        atras.setVisibility(View.INVISIBLE);
-                    } else if (cont.getCont() == pregunta.length) {
-                        alante.setVisibility(View.INVISIBLE);
-                    } else {
-                        alante.setVisibility(View.VISIBLE);
+                    if(!desarrollo) {
+                        if (pos[cont.getCont() - 1] == 0) {
+                            alante.setVisibility(View.INVISIBLE);
+                            atras.setVisibility(View.INVISIBLE);
+                        } else if (cont.getCont() == pregunta.length) {
+                            alante.setVisibility(View.INVISIBLE);
+                        } else {
+                            alante.setVisibility(View.VISIBLE);
+                        }
                     }
                 }
             }
@@ -417,13 +421,15 @@ public class main_preguntas extends Activity {
                 pos[colocar] = 2;
                 calcularestado();
                 if (getIntent().getExtras().getString("tipo").equals("memoria")) {
-                    if (pos[cont.getCont() - 1] == 0) {
-                        alante.setVisibility(View.INVISIBLE);
-                        atras.setVisibility(View.INVISIBLE);
-                    } else if (cont.getCont() == pregunta.length) {
-                        alante.setVisibility(View.INVISIBLE);
-                    } else {
-                        alante.setVisibility(View.VISIBLE);
+                    if(!desarrollo) {
+                        if (pos[cont.getCont() - 1] == 0) {
+                            alante.setVisibility(View.INVISIBLE);
+                            atras.setVisibility(View.INVISIBLE);
+                        } else if (cont.getCont() == pregunta.length) {
+                            alante.setVisibility(View.INVISIBLE);
+                        } else {
+                            alante.setVisibility(View.VISIBLE);
+                        }
                     }
                 }
             }
@@ -438,13 +444,15 @@ public class main_preguntas extends Activity {
                 pos[colocar] = 3;
                 calcularestado();
                 if (getIntent().getExtras().getString("tipo").equals("memoria")) {
-                    if (pos[cont.getCont() - 1] == 0) {
-                        alante.setVisibility(View.INVISIBLE);
-                        atras.setVisibility(View.INVISIBLE);
-                    } else if (cont.getCont() == pregunta.length) {
-                        alante.setVisibility(View.INVISIBLE);
-                    } else {
-                        alante.setVisibility(View.VISIBLE);
+                    if(!desarrollo) {
+                        if (pos[cont.getCont() - 1] == 0) {
+                            alante.setVisibility(View.INVISIBLE);
+                            atras.setVisibility(View.INVISIBLE);
+                        } else if (cont.getCont() == pregunta.length) {
+                            alante.setVisibility(View.INVISIBLE);
+                        } else {
+                            alante.setVisibility(View.VISIBLE);
+                        }
                     }
                 }
             }
@@ -459,13 +467,15 @@ public class main_preguntas extends Activity {
                 pos[colocar] = 4;
                 calcularestado();
                 if (getIntent().getExtras().getString("tipo").equals("memoria")) {
-                    if (pos[cont.getCont() - 1] == 0) {
-                        alante.setVisibility(View.INVISIBLE);
-                        atras.setVisibility(View.INVISIBLE);
-                    } else if (cont.getCont() == pregunta.length) {
-                        alante.setVisibility(View.INVISIBLE);
-                    } else {
-                        alante.setVisibility(View.VISIBLE);
+                    if(!desarrollo) {
+                        if (pos[cont.getCont() - 1] == 0) {
+                            alante.setVisibility(View.INVISIBLE);
+                            atras.setVisibility(View.INVISIBLE);
+                        } else if (cont.getCont() == pregunta.length) {
+                            alante.setVisibility(View.INVISIBLE);
+                        } else {
+                            alante.setVisibility(View.VISIBLE);
+                        }
                     }
                 }
             }
@@ -507,15 +517,17 @@ public class main_preguntas extends Activity {
                                         avanza();
                                         calcularestado();
                                         if (getIntent().getExtras().getString("tipo").equals("memoria")) {
-                                            Button alante = (Button) findViewById(R.id.alante);
-                                            Button atras = (Button) findViewById(R.id.atras);
-                                            if (pos[cont.getCont() - 1] == 0) {
-                                                alante.setVisibility(View.INVISIBLE);
-                                                atras.setVisibility(View.INVISIBLE);
-                                            } else if (cont.getCont() == pre.length) {
-                                                alante.setVisibility(View.INVISIBLE);
-                                            } else {
-                                                alante.setVisibility(View.VISIBLE);
+                                            if(!desarrollo) {
+                                                Button alante = (Button) findViewById(R.id.alante);
+                                                Button atras = (Button) findViewById(R.id.atras);
+                                                if (pos[cont.getCont() - 1] == 0) {
+                                                    alante.setVisibility(View.INVISIBLE);
+                                                    atras.setVisibility(View.INVISIBLE);
+                                                } else if (cont.getCont() == pre.length) {
+                                                    alante.setVisibility(View.INVISIBLE);
+                                                } else {
+                                                    alante.setVisibility(View.VISIBLE);
+                                                }
                                             }
                                         }
                                         contenedor.setVisibility(View.VISIBLE);
@@ -573,15 +585,17 @@ public class main_preguntas extends Activity {
                                         }
                                         calcularestado();
                                         if (getIntent().getExtras().getString("tipo").equals("memoria")) {
-                                            Button alante = (Button) findViewById(R.id.alante);
-                                            Button atras = (Button) findViewById(R.id.atras);
-                                            if (pos[cont.getCont() - 1] == 0) {
-                                                alante.setVisibility(View.INVISIBLE);
-                                                atras.setVisibility(View.INVISIBLE);
-                                            } else if (cont.getCont() == pre.length) {
-                                                alante.setVisibility(View.INVISIBLE);
-                                            } else {
-                                                alante.setVisibility(View.VISIBLE);
+                                            if(!desarrollo) {
+                                                Button alante = (Button) findViewById(R.id.alante);
+                                                Button atras = (Button) findViewById(R.id.atras);
+                                                if (pos[cont.getCont() - 1] == 0) {
+                                                    alante.setVisibility(View.INVISIBLE);
+                                                    atras.setVisibility(View.INVISIBLE);
+                                                } else if (cont.getCont() == pre.length) {
+                                                    alante.setVisibility(View.INVISIBLE);
+                                                } else {
+                                                    alante.setVisibility(View.VISIBLE);
+                                                }
                                             }
                                         }
                                         contenedor.setVisibility(View.VISIBLE);
@@ -595,15 +609,17 @@ public class main_preguntas extends Activity {
                 avanza();
                 calcularestado();
                 if (getIntent().getExtras().getString("tipo").equals("memoria")) {
-                    Button alante = (Button) findViewById(R.id.alante);
-                    Button atras = (Button) findViewById(R.id.atras);
-                    if (pos[cont.getCont() - 1] == 0) {
-                        alante.setVisibility(View.INVISIBLE);
-                        atras.setVisibility(View.INVISIBLE);
-                    } else if (cont.getCont() == pre.length) {
-                        alante.setVisibility(View.INVISIBLE);
-                    } else {
-                        alante.setVisibility(View.VISIBLE);
+                    if(!desarrollo) {
+                        Button alante = (Button) findViewById(R.id.alante);
+                        Button atras = (Button) findViewById(R.id.atras);
+                        if (pos[cont.getCont() - 1] == 0) {
+                            alante.setVisibility(View.INVISIBLE);
+                            atras.setVisibility(View.INVISIBLE);
+                        } else if (cont.getCont() == pre.length) {
+                            alante.setVisibility(View.INVISIBLE);
+                        } else {
+                            alante.setVisibility(View.VISIBLE);
+                        }
                     }
                 }
             }
@@ -878,7 +894,9 @@ public class main_preguntas extends Activity {
             }
         }
         if (getIntent().getExtras().getString("tipo").equals("memoria")) {
-            atras.setVisibility(View.INVISIBLE);
+            if(!desarrollo) {
+                atras.setVisibility(View.INVISIBLE);
+            }
         }
     }
 
@@ -1035,18 +1053,20 @@ public class main_preguntas extends Activity {
         }
 
         if (getIntent().getExtras().getString("tipo").equals("memoria")) {
-            //PONER AQUI LA FUNCION DE MEMORIA
-            if (pp == false) {
-                if (pos[cont.getCont()] == 0) {
-                    TextView pregunta = (TextView) findViewById(R.id.pregunta);
-                    ImageView imgpre = (ImageView) findViewById(R.id.imgpre);
-                    a.setVisibility(View.GONE);
-                    b.setVisibility(View.GONE);
-                    c.setVisibility(View.GONE);
-                    d.setVisibility(View.GONE);
-                    imgpre.setVisibility(View.VISIBLE);
-                    pregunta.setVisibility(View.GONE);
-                    esperarYCerrar(memoria);
+            if(!desarrollo) {
+                //PONER AQUI LA FUNCION DE MEMORIA
+                if (pp == false) {
+                    if (pos[cont.getCont()] == 0) {
+                        TextView pregunta = (TextView) findViewById(R.id.pregunta);
+                        ImageView imgpre = (ImageView) findViewById(R.id.imgpre);
+                        a.setVisibility(View.GONE);
+                        b.setVisibility(View.GONE);
+                        c.setVisibility(View.GONE);
+                        d.setVisibility(View.GONE);
+                        imgpre.setVisibility(View.VISIBLE);
+                        pregunta.setVisibility(View.GONE);
+                        esperarYCerrar(memoria);
+                    }
                 }
             }
         }
