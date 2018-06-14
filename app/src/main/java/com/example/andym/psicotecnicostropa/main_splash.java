@@ -36,7 +36,8 @@ public class main_splash extends Activity {
 
     //String version = "5.1.4";
     String version = String.valueOf((BuildConfig.VERSION_NAME));
-    private static final long SPLASH_SCREEN_DELAY = 2000;
+    private static final long SPLASH_SCREEN_DELAY = 5000;
+    TextView textoServi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,27 @@ public class main_splash extends Activity {
         setContentView(R.layout.main_splash);
 
         TextView mensaje = (TextView)findViewById(R.id.mensaje);
+        textoServi = (TextView)findViewById(R.id.textoServi);
+
+        try {
+
+            Thread leerarchivo = new Thread() {
+                public void run() {
+                    try {
+                        String contents;
+                        URLConnection conn = new URL("http://s593975491.mialojamiento.es/APPpsicotecnicostropa(1)/textoServi.txt").openConnection();
+                        InputStream in = conn.getInputStream();
+                        contents = readStream(in);
+                        textoServi.setText(contents);
+                    } catch (Exception e) {
+
+                    }
+                }
+            };
+            leerarchivo.start();
+        } catch (Exception e) {
+
+        }
 
         RelativeLayout padre = (RelativeLayout)findViewById(R.id.padre);
         ImageView imagen = (ImageView)findViewById(R.id.imageView1);
@@ -75,7 +97,7 @@ public class main_splash extends Activity {
             try {
 
                 Thread leerarchivo = new Thread() {
-                    public void run() {
+                        public void run() {
                         try {
                             String contents;
                             URLConnection conn = new URL("http://s593975491.mialojamiento.es/APPpsicotecnicostropa(1)/key.txt").openConnection();
