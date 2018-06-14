@@ -120,19 +120,13 @@ public class main_calculabaremo extends Activity {
                 } else if (checkedId == R.id.b1) {
                     meriAInt = 15;
                 } else if (checkedId == R.id.c1) {
-                    meriAInt = 13;
+                    meriAInt = 14;
                 } else if (checkedId == R.id.d1) {
-                    meriAInt = 12;
+                    meriAInt = 13;
                 } else if (checkedId == R.id.e1) {
                     meriAInt = 11;
                 } else if (checkedId == R.id.f1) {
-                    meriAInt = 8;
-                } else if (checkedId == R.id.g1) {
-                    meriAInt = 7;
-                } else if (checkedId == R.id.h1) {
                     meriAInt = 6;
-                } else if (checkedId == R.id.i1) {
-                    meriAInt = 4;
                 } else if (checkedId == R.id.j1) {
                     meriAInt = 0;
                 }
@@ -147,7 +141,7 @@ public class main_calculabaremo extends Activity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 // find which radio button is selected
                 if (checkedId == R.id.a2) {
-                    meriG1Int = 9;
+                    meriG1Int = 8;
                 } else if (checkedId == R.id.b2) {
                     meriG1Int = 6;
                 } else if (checkedId == R.id.c2) {
