@@ -524,7 +524,7 @@
                     android:layout_height="match_parent"
                     android:baselineAligned="false"
                     android:gravity="center_horizontal|center"
-                    android:visibility="gone">
+                    android:visibility="visible">
 
                     <LinearLayout
                         android:layout_width="wrap_content"

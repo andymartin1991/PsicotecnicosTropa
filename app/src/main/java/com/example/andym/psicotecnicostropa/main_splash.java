@@ -9,6 +9,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
@@ -55,10 +56,10 @@ public class main_splash extends Activity {
                 public void run() {
                     try {
                         String contents;
-                        URLConnection conn = new URL("http://s593975491.mialojamiento.es/APPpsicotecnicostropa(1)/textoServi.txt").openConnection();
+                        URLConnection conn = new URL("http://s593975491.mialojamiento.es/APPpsicotecnicostropa(1)/textoServi.html").openConnection();
                         InputStream in = conn.getInputStream();
                         contents = readStream(in);
-                        textoServi.setText(contents);
+                        textoServi.setText(Html.fromHtml(contents));
                     } catch (Exception e) {
 
                     }

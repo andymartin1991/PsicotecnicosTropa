@@ -6,9 +6,11 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.Animation;
@@ -16,6 +18,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -31,9 +34,15 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
@@ -48,6 +57,7 @@ public class main_principal extends Activity {
     String Correo="";
     String Password="";
     String Academia="";
+    boolean recordar = false;
     int beta = 0;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -642,6 +652,52 @@ public class main_principal extends Activity {
         final EditText password = (EditText) textEntryView.findViewById(R.id.password);
         final EditText search = (EditText) textEntryView.findViewById(R.id.search);
         final ListView academias = (ListView) textEntryView.findViewById(R.id.academias);
+        final CheckBox checRecord = (CheckBox)textEntryView.findViewById(R.id.recordar);
+        ///////////////////////////////////poner datos si existe guardado login
+        File ruta_sd;
+        String state = Environment.getExternalStorageState();
+        if (Environment.MEDIA_MOUNTED.equals(state)) {
+            // We can read and write the media
+            ruta_sd = getExternalFilesDir(null);
+        } else {
+            // Load another directory, probably local memory
+            ruta_sd = getFilesDir();
+        }
+        final File a = new File(ruta_sd.getAbsolutePath(), "login");
+        if(a.exists()) {
+            String fichero = "login";
+            try {
+                BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(a)));
+                String linea[] = {"","",""};
+                int i = 0;
+                String line;
+                while((line = br.readLine()) != null) {
+                    linea[i]=line;
+                    i++;
+                }
+                br.close();
+                correo.setText(linea[0]);
+                password.setText(linea[1]);
+                search.setText(linea[2]);
+                checRecord.setChecked(true);
+            }
+            catch(Exception e) {
+                System.out.println("Excepcion leyendo fichero "+ fichero + ": " + e);
+            }
+        }
+        ///////////////////////////fin de poner datos si existe guardado login
+        checRecord.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                boolean isChecked = ((CheckBox)v).isChecked();
+                if (isChecked) {
+                    recordar = true;
+                }
+                else {
+                    recordar = false;
+                }
+            }
+        });
 
         peticion();
 
@@ -716,6 +772,49 @@ public class main_principal extends Activity {
                     mensaje.show();
                     dialogrepetir();
                 }else{
+                    if(recordar){
+                        try {
+                            String state = Environment.getExternalStorageState();
+
+                            File ruta_sd;
+                            if (Environment.MEDIA_MOUNTED.equals(state)) {
+                                // We can read and write the media
+                                ruta_sd = getExternalFilesDir(null);
+                            } else {
+                                // Load another directory, probably local memory
+                                ruta_sd = getFilesDir();
+                            }
+                            //File ruta_sd = getExternalFilesDir(null);
+                            File f = new File(ruta_sd.getAbsolutePath(), "login");
+                            OutputStreamWriter fout =
+                                    new OutputStreamWriter(
+                                            new FileOutputStream(f));
+                            String aux = Correo+"\n"+Password+"\n"+Academia;
+                            fout.write(aux);
+                            fout.close();
+                            System.out.println(ruta_sd);
+                            System.out.println(f);
+                        } catch (Exception ex) {
+                            Log.e("Ficheros", "Error al escribir fichero a tarjeta SD");
+                            Toast mensaje = Toast.makeText(getApplicationContext(),
+                                    "Error al guardar login", Toast.LENGTH_SHORT);
+                            mensaje.show();
+                        }
+                    }else{
+                        File ruta_sd;
+                        String state = Environment.getExternalStorageState();
+                        if (Environment.MEDIA_MOUNTED.equals(state)) {
+                            // We can read and write the media
+                            ruta_sd = getExternalFilesDir(null);
+                        } else {
+                            // Load another directory, probably local memory
+                            ruta_sd = getFilesDir();
+                        }
+                        final File a = new File(ruta_sd.getAbsolutePath(), "login");
+                        if(a.exists()) {
+                            a.delete();
+                        }
+                    }
                     Toast mensaje = Toast.makeText(getApplicationContext(),
                             "Enviando...", Toast.LENGTH_SHORT);
                     mensaje.show();
