@@ -653,6 +653,19 @@ public class main_principal extends Activity {
         final EditText search = (EditText) textEntryView.findViewById(R.id.search);
         final ListView academias = (ListView) textEntryView.findViewById(R.id.academias);
         final CheckBox checRecord = (CheckBox)textEntryView.findViewById(R.id.recordar);
+        checRecord.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                boolean isChecked = ((CheckBox)v).isChecked();
+                if (isChecked) {
+                    recordar = true;
+                }
+                else {
+                    recordar = false;
+                }
+            }
+        });
+
         ///////////////////////////////////poner datos si existe guardado login
         File ruta_sd;
         String state = Environment.getExternalStorageState();
@@ -686,18 +699,6 @@ public class main_principal extends Activity {
             }
         }
         ///////////////////////////fin de poner datos si existe guardado login
-        checRecord.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                boolean isChecked = ((CheckBox)v).isChecked();
-                if (isChecked) {
-                    recordar = true;
-                }
-                else {
-                    recordar = false;
-                }
-            }
-        });
 
         peticion();
 
