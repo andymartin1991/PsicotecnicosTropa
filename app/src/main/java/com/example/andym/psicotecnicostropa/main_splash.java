@@ -35,7 +35,7 @@ import java.util.TimerTask;
 
 public class main_splash extends Activity {
 
-    //String version = "5.1.4";
+    //"Aprueba en tan solo 20 días con Éxito oposiciones"
     String version = String.valueOf((BuildConfig.VERSION_NAME));
     private static final long SPLASH_SCREEN_DELAY = 5000;
     TextView textoServi;

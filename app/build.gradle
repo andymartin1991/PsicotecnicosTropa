@@ -5,10 +5,10 @@ android {
     buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId 'com.naroh.tropaPsicotecnicoOficial'
-        minSdkVersion 21
+        minSdkVersion 15
         targetSdkVersion 27
-        versionCode 122
-        versionName '6.1.3'
+        versionCode 123
+        versionName '6.1.4'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

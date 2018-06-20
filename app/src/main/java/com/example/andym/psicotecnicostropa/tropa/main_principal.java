@@ -96,6 +96,27 @@ public class main_principal extends Activity {
         patatas = (Button) findViewById(R.id.papa);
         academia = (Button) findViewById(R.id.button6);
 
+        Button exiopo = (Button)findViewById(R.id.exitoopo);
+        exiopo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new Thread(new Runnable() {
+                    public void run() {
+                        try {
+                            Thread.sleep(500);
+                        } catch (InterruptedException e) {
+                        }
+                        Intent intent = new Intent(Intent.ACTION_VIEW,
+                                Uri.parse("http://www.exitooposiciones.es/tropa_tienda.html"));
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
+                                | Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+                        startActivity(intent);
+                        //entra[0] = true;
+                    }
+                }).start();
+            }
+        });
+
         final boolean[] entra = {true};
         estudio.setOnClickListener(new View.OnClickListener() {
             @Override
