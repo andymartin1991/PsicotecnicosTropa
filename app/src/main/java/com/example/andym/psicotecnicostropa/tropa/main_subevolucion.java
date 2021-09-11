@@ -26,8 +26,8 @@ import com.example.andym.psicotecnicostropa.R;
 import com.example.andym.psicotecnicostropa.tropa.implementacionesTropa.Cronometro;
 import com.example.andym.psicotecnicostropa.tropa.dtoTropa.Notas;
 
-import java.util.Calendar;
-import java.util.GregorianCalendar;
+//import java.util.Calendar;
+//import java.util.GregorianCalendar;
 
 
 /**

@@ -7,26 +7,26 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.net.Uri;
+//import android.net.Uri;
 import android.os.Bundle;
 import android.text.Html;
-import android.util.Log;
+//import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.example.andym.psicotecnicostropa.tropa.main_ayuda;
+//import com.example.andym.psicotecnicostropa.tropa.main_ayuda;
 import com.example.andym.psicotecnicostropa.tropa.main_principal;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.net.URLConnection;
+//import java.net.MalformedURLException;
+//import java.net.URL;
+//import java.net.URLConnection;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Timer;
@@ -49,8 +49,15 @@ public class main_splash extends Activity {
 
         TextView mensaje = (TextView)findViewById(R.id.mensaje);
         textoServi = (TextView)findViewById(R.id.textoServi);
-
-        try {
+        String contents = "<html>\n" +
+                "\t<body>\n" +
+                "\t\t<p>&iexcl;Considerada como la mejor APP para tropa y marineria!</p>\n" +
+                "\t\tComplementa tus oposiciones con<br>\n" +
+                "\t\t<b>PsicotecnicosTropa</b>\n" +
+                "\t</body>\n" +
+                "</html>";
+        textoServi.setText(Html.fromHtml(contents));
+        /*try {
 
             Thread leerarchivo = new Thread() {
                 public void run() {
@@ -68,7 +75,7 @@ public class main_splash extends Activity {
             leerarchivo.start();
         } catch (Exception e) {
 
-        }
+        }*/
 
         RelativeLayout padre = (RelativeLayout)findViewById(R.id.padre);
         ImageView imagen = (ImageView)findViewById(R.id.imageView1);
@@ -99,12 +106,12 @@ public class main_splash extends Activity {
 
                 Thread leerarchivo = new Thread() {
                         public void run() {
-                        try {
+                        //try {
                             String contents;
-                            URLConnection conn = new URL("http://s593975491.mialojamiento.es/APPpsicotecnicostropa(1)/key.txt").openConnection();
+                            /*URLConnection conn = new URL("http://s593975491.mialojamiento.es/APPpsicotecnicostropa(1)/key.txt").openConnection();
                             InputStream in = conn.getInputStream();
                             contents = readStream(in);
-                            if (contents.equals(version)) {
+                            if (contents.equals(version)) {*/
                                 TimerTask task = new TimerTask() {
                                     @Override
                                     public void run() {
@@ -119,7 +126,7 @@ public class main_splash extends Activity {
                                 };
                                 Timer timer = new Timer();
                                 timer.schedule(task, SPLASH_SCREEN_DELAY);
-                            } else {
+                            /*} else {
                                 runOnUiThread(new Runnable() {
                                     @Override
                                     public void run() {
@@ -159,7 +166,7 @@ public class main_splash extends Activity {
                             Log.w("", "MALFORMED URL EXCEPTION");
                         } catch (IOException e) {
                             Log.w(e.getMessage(), e);
-                        }
+                        }*/
                     }
 
                 };

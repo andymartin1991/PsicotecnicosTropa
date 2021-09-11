@@ -9,7 +9,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
+//import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -20,8 +20,8 @@ import com.example.andym.psicotecnicostropa.R;
 import com.example.andym.psicotecnicostropa.tropa.implementacionesTropa.textotruco;
 
 import java.nio.charset.Charset;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
+//import java.util.Calendar;
+//import java.util.GregorianCalendar;
 
 public class main_trucos extends Activity {
 
