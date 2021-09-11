@@ -35,7 +35,7 @@ public class main_optTipo extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_optipo);
 
-        LinearLayout padre = (LinearLayout)findViewById(R.id.padre);
+        /*LinearLayout padre = (LinearLayout)findViewById(R.id.padre);
         Calendar c1 = new GregorianCalendar();
         int dia = c1.get(Calendar.DAY_OF_MONTH);
         int mes = c1.get(Calendar.MONTH)+1;
@@ -43,7 +43,7 @@ public class main_optTipo extends Activity {
             padre.setBackgroundResource(R.color.rojonavidad);
         }else{
 
-        }
+        }*/
 
         LinearLayout oculto = (LinearLayout)findViewById(R.id.oculto);
         oculto.setOnClickListener(new View.OnClickListener() {

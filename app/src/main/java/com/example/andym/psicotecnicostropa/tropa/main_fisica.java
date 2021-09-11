@@ -41,7 +41,7 @@ public class main_fisica extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_fisica);
 
-        LinearLayout padre = (LinearLayout)findViewById(R.id.lytMain);
+        /*LinearLayout padre = (LinearLayout)findViewById(R.id.lytMain);
         Calendar c1 = new GregorianCalendar();
         int dia = c1.get(Calendar.DAY_OF_MONTH);
         int mes = c1.get(Calendar.MONTH)+1;
@@ -49,7 +49,7 @@ public class main_fisica extends Activity {
             padre.setBackgroundResource(R.color.rojonavidad);
         }else{
 
-        }
+        }*/
 
         //Resources res = getResources();
 

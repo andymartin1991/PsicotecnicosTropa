@@ -109,7 +109,7 @@ public class main_examen_academia extends Activity {
         imgenSol = (ImageView) findViewById(R.id.imgSol);
         imgenExp = (ImageView) findViewById(R.id.imgExp);
 
-        RelativeLayout padre = (RelativeLayout) findViewById(R.id.relativeLayout);
+        /*RelativeLayout padre = (RelativeLayout) findViewById(R.id.relativeLayout);
         RelativeLayout subcontenedor = (RelativeLayout) findViewById(R.id.subcontenedor);
         Calendar cc1 = new GregorianCalendar();
         int dia = cc1.get(Calendar.DAY_OF_MONTH);
@@ -119,7 +119,7 @@ public class main_examen_academia extends Activity {
             subcontenedor.setBackgroundResource(R.color.rojonavidad);
         } else {
 
-        }
+        }*/
 
         pasusaexamen = true;
         acabatiempo = false;

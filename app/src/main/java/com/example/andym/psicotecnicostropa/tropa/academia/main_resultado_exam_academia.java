@@ -60,7 +60,7 @@ public class main_resultado_exam_academia extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_resultado_exam);
 
-        LinearLayout padre = (LinearLayout) findViewById(R.id.padre);
+        /*LinearLayout padre = (LinearLayout) findViewById(R.id.padre);
         Calendar cc1 = new GregorianCalendar();
         int dia = cc1.get(Calendar.DAY_OF_MONTH);
         int mes = cc1.get(Calendar.MONTH)+1;
@@ -68,7 +68,7 @@ public class main_resultado_exam_academia extends Activity {
             padre.setBackgroundResource(R.color.rojonavidad);
         }else{
 
-        }
+        }*/
 
         // orientacion pantalla
         Configuration config = getResources().getConfiguration();

@@ -69,7 +69,7 @@ public class main_subevolucion extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_preguntas);
 
-        RelativeLayout padre = (RelativeLayout) findViewById(R.id.relativeLayout);
+        /*RelativeLayout padre = (RelativeLayout) findViewById(R.id.relativeLayout);
         RelativeLayout subcontenedor = (RelativeLayout) findViewById(R.id.subcontenedor);
         Calendar cc1 = new GregorianCalendar();
         int dia = cc1.get(Calendar.DAY_OF_MONTH);
@@ -79,7 +79,7 @@ public class main_subevolucion extends Activity {
             subcontenedor.setBackgroundResource(R.color.rojonavidad);
         }else{
 
-        }
+        }*/
 
         pasusaexamen = true;
         acabatiempo = false;

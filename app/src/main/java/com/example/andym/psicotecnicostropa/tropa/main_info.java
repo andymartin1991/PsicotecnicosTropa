@@ -30,7 +30,7 @@ public class main_info extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_info);
 
-        ScrollView padre = (ScrollView) findViewById(R.id.padre);
+        /*ScrollView padre = (ScrollView) findViewById(R.id.padre);
         Calendar cc1 = new GregorianCalendar();
         int dia = cc1.get(Calendar.DAY_OF_MONTH);
         int mes = cc1.get(Calendar.MONTH) + 1;
@@ -38,7 +38,7 @@ public class main_info extends Activity {
             padre.setBackgroundResource(R.color.rojonavidad);
         } else {
 
-        }
+        }*/
 
         TextView num = (TextView) findViewById(R.id.num);
         TextView verb = (TextView) findViewById(R.id.verb);

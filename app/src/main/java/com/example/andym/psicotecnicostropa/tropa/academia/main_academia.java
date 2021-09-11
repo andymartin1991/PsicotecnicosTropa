@@ -72,7 +72,7 @@ public class main_academia extends Activity {
 
 
 
-        ScrollView padre = (ScrollView)findViewById(R.id.padre);
+        /*ScrollView padre = (ScrollView)findViewById(R.id.padre);
         Calendar c1 = new GregorianCalendar();
         int dia = c1.get(Calendar.DAY_OF_MONTH);
         int mes = c1.get(Calendar.MONTH)+1;
@@ -80,7 +80,7 @@ public class main_academia extends Activity {
             padre.setBackgroundResource(R.color.rojonavidad);
         }else{
 
-        }
+        }*/
 
         correo = getIntent().getStringExtra("correo");
         password = getIntent().getStringExtra("pass");

@@ -48,7 +48,7 @@ public class main_estudio_academia_sub extends Activity {
 
 
 
-        LinearLayout padre = (LinearLayout)findViewById(R.id.lytMain);
+        /*LinearLayout padre = (LinearLayout)findViewById(R.id.lytMain);
         Calendar c1 = new GregorianCalendar();
         int dia = c1.get(Calendar.DAY_OF_MONTH);
         int mes = c1.get(Calendar.MONTH)+1;
@@ -56,7 +56,7 @@ public class main_estudio_academia_sub extends Activity {
             padre.setBackgroundResource(R.color.rojonavidad);
         }else{
 
-        }
+        }*/
 
         this.setTitle(getString(R.string.test_bloque));
 
