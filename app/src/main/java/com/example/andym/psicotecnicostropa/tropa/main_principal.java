@@ -550,7 +550,7 @@ public class main_principal extends Activity {
                             } catch (InterruptedException e) {
                             }
                             Intent intent = new Intent(Intent.ACTION_VIEW,
-                                    Uri.parse("https://patatasarmadas.sistec.es/"));
+                                    Uri.parse("https://patatasarmadas.es/"));
                             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                                     | Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
                             startActivity(intent);

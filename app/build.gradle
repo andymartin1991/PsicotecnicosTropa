@@ -1,14 +1,18 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    compileSdkVersion 29
     buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId 'com.naroh.tropaPsicotecnicoOficial'
         minSdkVersion 15
-        targetSdkVersion 27
-        versionCode 124
-        versionName '6.1.10'
+        targetSdkVersion 29
+        versionCode 201
+        versionName '7.0.1'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -22,14 +26,14 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:25.3.0'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.android.support:design:25.3.0'
-    testCompile 'junit:junit:4.12'
-    compile 'com.google.code.gson:gson:2.8.1'
-    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+    implementation 'com.android.support:appcompat-v7:25.3.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:25.3.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.google.code.gson:gson:2.8.1'
+    implementation 'com.astuetz:pagerslidingtabstrip:1.0.1'
 }
