@@ -114,19 +114,19 @@ public class main_calculabaremo extends Activity {
             @Override
 
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                // find which radio button is selected
+                // meritos academicos
                 if (checkedId == R.id.a1) {
                     meriAInt = 16;
                 } else if (checkedId == R.id.b1) {
-                    meriAInt = 15;
-                } else if (checkedId == R.id.c1) {
+                    meriAInt = 6;
+                /*} else if (checkedId == R.id.c1) {
                     meriAInt = 14;
                 } else if (checkedId == R.id.d1) {
                     meriAInt = 13;
                 } else if (checkedId == R.id.e1) {
                     meriAInt = 11;
                 } else if (checkedId == R.id.f1) {
-                    meriAInt = 6;
+                    meriAInt = 6;*/
                 } else if (checkedId == R.id.j1) {
                     meriAInt = 0;
                 }
@@ -139,16 +139,18 @@ public class main_calculabaremo extends Activity {
             @Override
 
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                // find which radio button is selected
+                // Permiso de conducción
                 if (checkedId == R.id.a2) {
-                    meriG1Int = 8;
+                    meriG1Int = 9;
                 } else if (checkedId == R.id.b2) {
-                    meriG1Int = 6;
+                    meriG1Int = 8;
                 } else if (checkedId == R.id.c2) {
-                    meriG1Int = 3;
+                    meriG1Int = 6;
                 } else if (checkedId == R.id.d2) {
-                    meriG1Int = 1;
+                    meriG1Int = 3;
                 } else if (checkedId == R.id.e2) {
+                    meriG1Int = 1;
+                } else if (checkedId == R.id.f2) {
                     meriG1Int = 0;
                 }
             }
@@ -160,7 +162,7 @@ public class main_calculabaremo extends Activity {
             @Override
 
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                // find which radio button is selected
+                // deportista alto nivel
                 if (checkedId == R.id.a3) {
                     meriG25Int = 3;
                 } else if (checkedId == R.id.b3) {
@@ -197,8 +199,8 @@ public class main_calculabaremo extends Activity {
                 // find which radio button is selected
                 if (checkedId == R.id.a5) {
                     meriM1Int = 2;
-                } else if (checkedId == R.id.b5) {
-                    meriM1Int = 1.5;
+                /*} else if (checkedId == R.id.b5) {
+                    meriM1Int = 1.5;*/
                 } else if (checkedId == R.id.c5) {
                     meriM1Int = 1;
                 } else if (checkedId == R.id.d5) {
