@@ -10,7 +10,7 @@ android {
     defaultConfig {
         applicationId 'com.naroh.tropaPsicotecnicoOficial'
         minSdkVersion 15
-        targetSdkVersion 31
+        targetSdkVersion 29
         versionCode 202
         versionName '7.0.2'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
