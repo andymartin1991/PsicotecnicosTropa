@@ -70,14 +70,16 @@ public class main_optTipo extends Activity {
 
         this.setTitle(getString(R.string.test_bloque));
 
-        listview_array = new String[7];
-        listview_array[0] = getString(R.string.aptitud1);
+        listview_array = new String[1];
+        /*listview_array[0] = getString(R.string.aptitud1);
         listview_array[1] = getString(R.string.aptitud2);
         listview_array[2] = getString(R.string.aptitud3);
         listview_array[3] = getString(R.string.aptitud4);
         listview_array[4] = getString(R.string.aptitud5);
         listview_array[5] = getString(R.string.aptitud6);
-        listview_array[6] = getString(R.string.aptitud7);
+        listview_array[6] = getString(R.string.aptitud7);*/
+
+        listview_array[0] = "ASO";
 
 
         final ListView lista = (ListView) findViewById(R.id.listadirectivos);
@@ -86,7 +88,7 @@ public class main_optTipo extends Activity {
         ArrayList<menu_optTest> arraydir = new ArrayList<menu_optTest>();
         menu_optTest directivo;
 
-        directivo = new menu_optTest(
+        /*directivo = new menu_optTest(
                 getResources().getDrawable(
                         R.drawable.verbal), getString(R.string.bloque1), getString(R.string.aptitud1));
         arraydir.add(directivo);
@@ -107,6 +109,11 @@ public class main_optTipo extends Activity {
         arraydir.add(directivo);
         directivo = new menu_optTest(getResources().getDrawable(
                 R.drawable.abstrapto), getString(R.string.bloque7), getString(R.string.aptitud7));
+        arraydir.add(directivo);*/
+
+        directivo = new menu_optTest(
+                getResources().getDrawable(
+                        R.drawable.verbal), "ASO", "Certificacion ASO");
         arraydir.add(directivo);
 
         // Creo el adapter personalizado
@@ -124,7 +131,7 @@ public class main_optTipo extends Activity {
                                     long arg3) {
                 // TODO Auto-generated method stub
                 switch (arg2) {
-                    case 0:
+                    /*case 0:
                         test = "verbal";
                         break;
                     case 1:
@@ -144,6 +151,9 @@ public class main_optTipo extends Activity {
                         break;
                     case 6:
                         test = "abstrapto";
+                        break;*/
+                    case 0:
+                        test = "ASO";
                         break;
 
                 }

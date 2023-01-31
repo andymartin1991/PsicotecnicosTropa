@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <array name="preASO">
+        <!--001--><item>Imagina que tienes que implementar un servicio con filtros. Qué componentes situarías en el dao: </item>
+        <!--002--><item>¿En cuál de estos estados del JIRA el responsable no es el equipo de desarrollo?</item>
+        <!--003--><item>¿Quién prueba un servicio la noche de implantación?</item>
+        <!--004--><item>¿Qué código de respuesta devuelve un servicio de creación cuando ha funcionado correctamente?</item>
+        <!--005--><item>¿De cual de los siguientes estados del ticket Jira es responsable el equipo de Gobierno?</item>
+    </array>
+    
+    <array name="resAASO">
+        <!--001--><item>A)Clases backend</item>
+        <!--002--><item>A)En Designing Metadata</item>
+        <!--003--><item>A)Las pruebas las realiza Integración y Desarrollo</item>
+        <!--004--><item>A)400</item>
+        <!--005--><item>A)En Under Construction</item>
+    </array>A)
+    
+    <array name="resBASO">
+        <!--001--><item>B)Clases backend y llamadas al backend</item>
+        <!--002--><item>B)En Designing Security</item>
+        <!--003--><item>B)Los responsables de las líneas</item>
+        <!--004--><item>B)201</item>
+        <!--005--><item>B)En Designing Metadata</item>
+    </array>B)
+    
+    <array name="resCASO">
+        <!--001--><item>C)Clases backend, llamadas al backend y mapper backend</item>
+        <!--002--><item>C)En Under Construction</item>
+        <!--003--><item>C)El responsable del desarrollo</item>
+        <!--004--><item>C)409</item>
+        <!--005--><item>C)En Validating Metadata</item>
+    </array>
+    
+    <array name="resDASO">
+        <!--001--><item>D)Clases backend, llamadas al backend, mapper backend y entidades internas</item>
+        <!--002--><item>D)En Designing Service</item>
+        <!--003--><item>D)El desarrollador, al día siguiente de la implantación</item>
+        <!--004--><item>D)204</item>
+        <!--005--><item>D)En Deployed</item>
+    </array>
+    
+    <array name="solASO">
+        <!--001--><item>A)Clases backend</item>
+        <!--002--><item>B)En Designing Security</item>
+        <!--003--><item>C)El responsable del desarrollo</item>
+        <!--004--><item>B)201</item>
+        <!--005--><item>D)En Deployed</item>
+    </array>
+    
+    <array name="expliSolASO">
+        <!--001--><item>Explicacion:</item>
+        <!--002--><item>Explicacion:</item>
+        <!--003--><item></item>
+        <!--004--><item></item>
+        <!--005--><item></item>
+    </array>
+    
+    <array name="imgPreASO">
+        <!--001--><item></item>
+        <!--002--><item></item>
+        <!--003--><item></item>
+        <!--004--><item></item>
+        <!--005--><item></item>
+    </array>
+    
+    <array name="imgAASO">
+        <!--001--><item></item>
+        <!--002--><item></item>
+        <!--003--><item></item>
+        <!--004--><item></item>
+        <!--005--><item></item>
+    </array>
+    
+    <array name="imgBASO">
+        <!--001--><item></item>
+        <!--002--><item></item>
+        <!--003--><item></item>
+        <!--004--><item></item>
+        <!--005--><item></item>
+    </array>
+    
+    <array name="imgCASO">
+        <!--001--><item></item>
+        <!--002--><item></item>
+        <!--003--><item></item>
+        <!--004--><item></item>
+        <!--005--><item></item>
+    </array>
+    
+    <array name="imgDASO">
+        <!--001--><item></item>
+        <!--002--><item></item>
+        <!--003--><item></item>
+        <!--004--><item></item>
+        <!--005--><item></item>
+    </array>
+    
+    <array name="imgSolASO">
+        <!--001--><item></item>
+        <!--002--><item></item>
+        <!--003--><item></item>
+        <!--004--><item></item>
+        <!--005--><item></item>
+    </array>
+    
+    <array name="imgExpliASO">
+        <!--001--><item></item>
+        <!--002--><item></item>
+        <!--003--><item></item>
+        <!--004--><item></item>
+        <!--005--><item></item>
+    </array>
+</resources>

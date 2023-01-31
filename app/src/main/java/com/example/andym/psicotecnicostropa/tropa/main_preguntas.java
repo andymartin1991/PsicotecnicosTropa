@@ -1,6 +1,8 @@
 package com.example.andym.psicotecnicostropa.tropa;
 
 
+import static java.lang.String.valueOf;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -303,6 +305,26 @@ public class main_preguntas extends Activity {
                 bloque.setText(getString(R.string.perceptiva));
                 break;
 
+            case "ASO":
+                this.setTitle("Certificacion ASO");
+                pregunta = getResources().getStringArray(R.array.preASO);
+                resA = getResources().getStringArray(R.array.resAASO);
+                resB = getResources().getStringArray(R.array.resBASO);
+                resC = getResources().getStringArray(R.array.resCASO);
+                resD = getResources().getStringArray(R.array.resDASO);
+                sol = getResources().getStringArray(R.array.solASO);
+                expliSol = getResources().getStringArray(R.array.expliSolASO);
+
+                imgPre = getResources().getStringArray(R.array.imgPreASO);
+                imgA = getResources().getStringArray(R.array.imgAASO);
+                imgB = getResources().getStringArray(R.array.imgBASO);
+                imgC = getResources().getStringArray(R.array.imgCASO);
+                imgD = getResources().getStringArray(R.array.imgDASO);
+                imgSol = getResources().getStringArray(R.array.imgSolASO);
+                imgExpli = getResources().getStringArray(R.array.imgExpliASO);
+                bloque.setText("ASO");
+                break;
+
         }
 
         carga(getIntent().getExtras().getString("tipo"));
@@ -570,7 +592,7 @@ public class main_preguntas extends Activity {
                                             cont.setCont(objetouser.get(3).getInt("cont")-1);
                                             arreglo = objetouser.get(4).getInt("arreglo");
                                             pos = new int[pre.length];
-                                            for(int o = 0; i < objetouser.get(5).getJSONArray("pos").length(); o++){
+                                            for(int o = 0; o < objetouser.get(5).getJSONArray("pos").length(); o++){
                                                 pos[o] = objetouser.get(5).getJSONArray("pos").getInt(o);
                                             }
                                             String sdg = "";
