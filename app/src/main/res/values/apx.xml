@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <array name="preAPX">
+        <!--001--><item>Imagina que tienes que implementar un servicio con filtros. Qué componentes situarías en el dao: </item>
+    </array>
+    
+    <array name="resAAPX">
+        <!--001--><item>A)Clases backend</item>
+    </array>
+    
+    <array name="resBAPX">
+        <!--001--><item>B)Clases backend y llamadas al backend</item>
+    </array>
+    
+    <array name="resCAPX">
+    </array>
+    
+    <array name="resDAPX">
+        <!--001--><item>D)Clases backend, llamadas al backend, mapper backend y entidades internas</item>
+    </array>
+    
+    <array name="solAPX">
+        <!--001--><item>A)Clases backend</item>
+    </array>
+    
+    <array name="expliSolAPX">
+        <!--001--><item></item>
+    </array>
+    
+    <array name="imgPreAPX">
+        <!--001--><item></item>
+    </array>
+    
+    <array name="imgAAPX">
+        <!--001--><item></item>
+    </array>
+    
+    <array name="imgBAPX">
+        <!--001--><item></item>
+    </array>
+    
+    <array name="imgCAPX">
+        <!--001--><item></item>
+    </array>
+    
+    <array name="imgDAPX">
+        <!--001--><item></item>
+    </array>
+    
+    <array name="imgSolAPX">
+        <!--001--><item></item>
+    </array>
+    
+    <array name="imgExpliAPX">
+        <!--001--><item></item>
+    </array>
+</resources>
