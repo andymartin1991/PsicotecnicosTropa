@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.andym.psicotecnicostropa">
+    package="com.andymarcial.psicotecnicostropa">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -15,41 +15,42 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".main_splash"
-            android:label="@string/app_name">
+            android:name="com.andymarcial.psicotecnicostropa.main_splash"
+            android:label="@string/app_name"
+            android:exported="true"> <!-- Añadido atributo android:exported -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".tropa.main_preguntas"></activity>
-        <activity android:name=".tropa.main_preguntasFatiga"></activity>
-        <activity android:name=".tropa.main_optTipo"></activity>
-        <activity android:name=".tropa.main_optTipoFatiga"></activity>
-        <activity android:name=".tropa.main_principal"></activity>
-        <activity android:name=".tropa.main_examen"></activity>
+        <activity android:name="com.andymarcial.psicotecnicostropa.tropa.main_preguntas"></activity>
+        <activity android:name="com.andymarcial.psicotecnicostropa.tropa.main_preguntasFatiga"></activity>
+        <activity android:name="com.andymarcial.psicotecnicostropa.tropa.main_optTipo"></activity>
+        <activity android:name="com.andymarcial.psicotecnicostropa.tropa.main_optTipoFatiga"></activity>
+        <activity android:name="com.andymarcial.psicotecnicostropa.tropa.main_principal"></activity>
+        <activity android:name="com.andymarcial.psicotecnicostropa.tropa.main_examen"></activity>
         <activity
-            android:name=".tropa.main_resultado_exam"
+            android:name="com.andymarcial.psicotecnicostropa.tropa.main_resultado_exam"
             android:windowSoftInputMode="stateHidden"></activity>
         <activity
-            android:name=".tropa.main_contacto"
+            android:name="com.andymarcial.psicotecnicostropa.tropa.main_contacto"
             android:windowSoftInputMode="stateHidden"></activity>
-        <activity android:name=".tropa.main_calculabaremo"></activity>
-        <activity android:name=".tropa.main_preguntasAleatorio"></activity>
-        <activity android:name=".tropa.main_info"></activity>
-        <activity android:name=".tropa.main_evolucion"></activity>
-        <activity android:name=".tropa.main_fisica"></activity>
-        <activity android:name=".tropa.main_trucos"></activity>
-        <activity android:name=".tropa.main_ayuda"></activity>
-        <activity android:name=".tropa.main_subevolucion"></activity>
-        <activity android:name=".tropa.main_preguntasDESARROLLO"></activity>
-        <activity android:name=".tropa.academia.main_academia"></activity>
-        <activity android:name=".tropa.academia.main_preguntas_academia"></activity>
-        <activity android:name=".tropa.academia.main_estudio_academia_sub"></activity>
-        <activity android:name=".tropa.academia.main_preguntasAleatorio_academia"></activity>
-        <activity android:name=".tropa.academia.main_examen_academia"></activity>
-        <activity android:name=".tropa.academia.main_resultado_exam_academia"></activity>
+        <activity android:name="com.andymarcial.psicotecnicostropa.tropa.main_calculabaremo"></activity>
+        <activity android:name="com.andymarcial.psicotecnicostropa.tropa.main_preguntasAleatorio"></activity>
+        <activity android:name="com.andymarcial.psicotecnicostropa.tropa.main_info"></activity>
+        <activity android:name="com.andymarcial.psicotecnicostropa.tropa.main_evolucion"></activity>
+        <activity android:name="com.andymarcial.psicotecnicostropa.tropa.main_fisica"></activity>
+        <activity android:name="com.andymarcial.psicotecnicostropa.tropa.main_trucos"></activity>
+        <activity android:name="com.andymarcial.psicotecnicostropa.tropa.main_ayuda"></activity>
+        <activity android:name="com.andymarcial.psicotecnicostropa.tropa.main_subevolucion"></activity>
+        <activity android:name="com.andymarcial.psicotecnicostropa.tropa.main_preguntasDESARROLLO"></activity>
+        <activity android:name="com.andymarcial.psicotecnicostropa.tropa.academia.main_academia"></activity>
+        <activity android:name="com.andymarcial.psicotecnicostropa.tropa.academia.main_preguntas_academia"></activity>
+        <activity android:name="com.andymarcial.psicotecnicostropa.tropa.academia.main_estudio_academia_sub"></activity>
+        <activity android:name="com.andymarcial.psicotecnicostropa.tropa.academia.main_preguntasAleatorio_academia"></activity>
+        <activity android:name="com.andymarcial.psicotecnicostropa.tropa.academia.main_examen_academia"></activity>
+        <activity android:name="com.andymarcial.psicotecnicostropa.tropa.academia.main_resultado_exam_academia"></activity>
     </application>
 
 </manifest>

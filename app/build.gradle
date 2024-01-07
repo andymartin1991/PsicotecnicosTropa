@@ -5,14 +5,14 @@ android {
         checkReleaseBuilds false
         abortOnError false
     }
-    compileSdkVersion 29
-    buildToolsVersion '27.0.3'
+    compileSdkVersion 32
+    buildToolsVersion '33.0.2'
     defaultConfig {
-        applicationId 'com.naroh.tropaPsicotecnicoOficial'
-        minSdkVersion 15
-        targetSdkVersion 29
-        versionCode 203
-        versionName '7.0.3'
+        applicationId 'com.andymarcial.psicotecnicostropa'
+        minSdkVersion 21
+        targetSdkVersion 32
+        versionCode 1
+        versionName '0.0.1'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
